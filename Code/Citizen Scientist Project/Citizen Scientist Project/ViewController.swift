@@ -12,6 +12,7 @@ class ViewController: UIViewController {
 
     // Initial commit
     //Testing commit from Xcode
+    // Try another commit. This time include git ignore files
     
     override func viewDidLoad() {
         super.viewDidLoad()
