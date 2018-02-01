@@ -1,34 +1,34 @@
 # This was taken from: https://github.com/github/gitignore/blob/master/Swift.gitignore
 
 ## Build generated
-build/
-DerivedData/
+**/build/
+**/DerivedData/
 
 ## Various settings
-*.pbxuser
-!default.pbxuser
-*.mode1v3
-!default.mode1v3
-*.mode2v3
-!default.mode2v3
-*.perspectivev3
-!default.perspectivev3
-Code/Citizen Scientist Project/Citizen Scientist Project.xcodeproj/project.xcworkspace/xcuserdata/
+**/*.pbxuser
+!**/default.pbxuser
+**/*.mode1v3
+!**/default.mode1v3
+**/*.mode2v3
+!**/default.mode2v3
+**/*.perspectivev3
+!**/default.perspectivev3
+**/xcuserdata/
 
 ## Other
-*.moved-aside
-*.xccheckout
-*.xcscmblueprint
+**/*.moved-aside
+**/*.xccheckout
+**/*.xcscmblueprint
 
 ## Obj-C/Swift specific
-*.hmap
-*.ipa
-*.dSYM.zip
-*.dSYM
+**/*.hmap
+**/*.ipa
+**/*.dSYM.zip
+**/*.dSYM
 
 ## Playgrounds
-timeline.xctimeline
-playground.xcworkspace
+**/timeline.xctimeline
+**/playground.xcworkspace
 
 # Swift Package Manager
 #
@@ -36,7 +36,7 @@ playground.xcworkspace
 # Packages/
 # Package.pins
 # Package.resolved
-.build/
+**/.build/
 
 ### Xcode ###
 # Xcode
@@ -50,8 +50,8 @@ playground.xcworkspace
 ## Other
 
 ### Xcode Patch ###
-*.xcodeproj/*
-!*.xcodeproj/project.pbxproj
-!*.xcodeproj/xcshareddata/
-!*.xcworkspace/contents.xcworkspacedata
-/*.gcno
+**/*.xcodeproj/*
+!**/*.xcodeproj/project.xcworkspace/
+!**/*.xcodeproj/project.pbxproj
+!**/*.xcodeproj/xcshareddata/
+**/*.gcno
