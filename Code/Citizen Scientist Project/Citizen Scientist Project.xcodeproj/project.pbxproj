@@ -15,6 +15,7 @@
 		229E61502022A79200D4BDDA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 229E614E2022A79200D4BDDA /* LaunchScreen.storyboard */; };
 		229E615B2022A79200D4BDDA /* Citizen_Scientist_ProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229E615A2022A79200D4BDDA /* Citizen_Scientist_ProjectTests.swift */; };
 		229E61662022A79200D4BDDA /* Citizen_Scientist_ProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229E61652022A79200D4BDDA /* Citizen_Scientist_ProjectUITests.swift */; };
+		22F78C8F202D0F900001049D /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F78C8E202D0F900001049D /* CollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		229E61612022A79200D4BDDA /* Citizen Scientist ProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Citizen Scientist ProjectUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		229E61652022A79200D4BDDA /* Citizen_Scientist_ProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Citizen_Scientist_ProjectUITests.swift; sourceTree = "<group>"; };
 		229E61672022A79200D4BDDA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22F78C8E202D0F900001049D /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,8 +101,10 @@
 		229E61412022A79200D4BDDA /* Citizen Scientist Project */ = {
 			isa = PBXGroup;
 			children = (
+				22F78C92202D15430001049D /* Controller */,
+				22F78C91202D153D0001049D /* View */,
+				22F78C90202D15290001049D /* Model */,
 				229E61422022A79200D4BDDA /* AppDelegate.swift */,
-				229E61442022A79200D4BDDA /* ViewController.swift */,
 				229E61462022A79200D4BDDA /* Main.storyboard */,
 				229E614C2022A79200D4BDDA /* Assets.xcassets */,
 				229E614E2022A79200D4BDDA /* LaunchScreen.storyboard */,
@@ -126,6 +130,29 @@
 				229E61672022A79200D4BDDA /* Info.plist */,
 			);
 			path = "Citizen Scientist ProjectUITests";
+			sourceTree = "<group>";
+		};
+		22F78C90202D15290001049D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		22F78C91202D153D0001049D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				22F78C8E202D0F900001049D /* CollectionViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		22F78C92202D15430001049D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				229E61442022A79200D4BDDA /* ViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,6 +291,7 @@
 			files = (
 				229E61452022A79200D4BDDA /* ViewController.swift in Sources */,
 				229E61432022A79200D4BDDA /* AppDelegate.swift in Sources */,
+				22F78C8F202D0F900001049D /* CollectionViewCell.swift in Sources */,
 				229E614B2022A79200D4BDDA /* Citizen_Scientist_Project.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -431,6 +459,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2EAVSD837T;
 				INFOPLIST_FILE = "Citizen Scientist Project/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Key.Biscayne.Citizen-Scientist-Project";
@@ -445,6 +474,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2EAVSD837T;
 				INFOPLIST_FILE = "Citizen Scientist Project/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Key.Biscayne.Citizen-Scientist-Project";
