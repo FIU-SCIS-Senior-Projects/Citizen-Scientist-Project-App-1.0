@@ -236,7 +236,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     @IBAction func toggleMenu(_ sender: Any) {
         
         if menuShowing{
-            leadingConstraint.constant = -210
+            leadingConstraint.constant = -260
         } else {
             leadingConstraint.constant = 0
             
@@ -246,6 +246,19 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         menuShowing = !menuShowing
     }
     
+    @IBAction func backButton(_ sender: Any) {
+        
+        if menuShowing{
+            leadingConstraint.constant = -260
+        } else {
+            leadingConstraint.constant = 0
+            
+            UIView.animate(withDuration: 0.3, animations: { self.view.layoutIfNeeded()})
+        }
+        
+        menuShowing = !menuShowing
+        
+    }
     
 }
 
