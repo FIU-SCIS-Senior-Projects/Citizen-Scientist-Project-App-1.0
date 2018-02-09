@@ -16,6 +16,11 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     
     @IBOutlet weak var collectionView: UICollectionView!
     
+    struct MainStoryBoard {
+        static let cellContentView = "Cell"
+        static let sectionFooterView = "FooterHomeView"
+    }
+    
     private let leftMargin = 15
     private let label1Height: CGFloat = 15
     private let label2Height: CGFloat = 25
@@ -77,6 +82,8 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         collectionView.delegate = self
     }
     
+    // MARK: - UICollectionViewDataSource
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return allCellItem.count
     }
@@ -95,7 +102,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) as!  CollectionViewCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: MainStoryBoard.cellContentView, for: indexPath) as!  CollectionViewCell
         
         cell.itemImageView.image = allCellItemImage[indexPath.item]
         cell.itemImageView.contentMode = UIViewContentMode.scaleAspectFill
@@ -164,6 +171,8 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         return cell
     }
     
+    // MARK: - Click Listener Event for a specific cell in the UICollectionView
+    
     //TODO: go to a different screen when a cell item is clicked
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let message = allCellItem[indexPath.row][0] + " " + allCellItem[indexPath.row][1]
@@ -176,6 +185,17 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + duration) {
             alert.dismiss(animated: true)
         }
+    }
+    
+    // MARK: - Section Footer View
+    
+    func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView
+    {
+        let sectionFooterView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: MainStoryBoard.sectionFooterView, for: indexPath) as! SectionFooterView
+        
+        
+        
+        return sectionFooterView
     }
     
 }

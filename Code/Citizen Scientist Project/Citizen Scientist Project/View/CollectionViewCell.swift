@@ -11,6 +11,13 @@ import UIKit
 class CollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var itemImageView: UIImageView!
+    
+    var imageName: String! {
+        didSet {
+            itemImageView.image = UIImage(named: imageName)
+        }
+    }
+    
     @IBOutlet weak var itemLabel1: UILabel!
     @IBOutlet weak var itemLabel2: UILabel!
 }
