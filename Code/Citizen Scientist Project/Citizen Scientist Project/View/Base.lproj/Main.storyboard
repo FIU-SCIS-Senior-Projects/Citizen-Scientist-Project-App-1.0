@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="eeJ-2F-iM6">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -18,18 +18,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aN0-2g-6tj">
-                                <rect key="frame" x="0.0" y="32" width="375" height="44"/>
-                                <color key="barTintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <textAttributes key="titleTextAttributes">
-                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </textAttributes>
-                                <items>
-                                    <navigationItem title="Title" id="QL4-qF-7ae"/>
-                                </items>
-                            </navigationBar>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="xZc-gr-ClJ">
-                                <rect key="frame" x="0.0" y="76" width="375" height="591"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <color key="backgroundColor" red="0.18823529411764706" green="0.19607843137254902" blue="0.25098039215686274" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="PVm-Qr-RrE">
                                     <size key="itemSize" width="185" height="185"/>
@@ -146,28 +136,65 @@
                                     </connections>
                                 </collectionReusableView>
                             </collectionView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7a3-Ps-wsV">
+                                <rect key="frame" x="-210" y="64" width="140" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="140" id="vtQ-C3-KS5"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="aN0-2g-6tj" secondAttribute="trailing" id="Cxc-6Y-vxh"/>
-                            <constraint firstItem="aN0-2g-6tj" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="EQm-Ad-jRf"/>
-                            <constraint firstItem="aN0-2g-6tj" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="12" id="GYu-f5-rSc"/>
-                            <constraint firstItem="xZc-gr-ClJ" firstAttribute="top" secondItem="aN0-2g-6tj" secondAttribute="bottom" id="IBg-XE-LuL"/>
-                            <constraint firstItem="aN0-2g-6tj" firstAttribute="leading" secondItem="xZc-gr-ClJ" secondAttribute="leading" id="Wne-XE-dR1"/>
+                            <constraint firstItem="xZc-gr-ClJ" firstAttribute="bottom" secondItem="7a3-Ps-wsV" secondAttribute="bottom" id="5Yl-os-HlH"/>
+                            <constraint firstAttribute="trailing" secondItem="xZc-gr-ClJ" secondAttribute="trailing" id="JHK-XR-lTP"/>
+                            <constraint firstItem="xZc-gr-ClJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="KQ0-wj-VN8"/>
+                            <constraint firstItem="7a3-Ps-wsV" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Kdg-lf-dj2"/>
+                            <constraint firstItem="7a3-Ps-wsV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="-210" id="Mim-Rq-DJy"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="7a3-Ps-wsV" secondAttribute="bottom" id="UNn-la-JXM"/>
                             <constraint firstItem="xZc-gr-ClJ" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="YWN-kZ-9k0"/>
-                            <constraint firstItem="aN0-2g-6tj" firstAttribute="trailing" secondItem="xZc-gr-ClJ" secondAttribute="trailing" id="vAc-wu-Jtv"/>
+                            <constraint firstItem="xZc-gr-ClJ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="ebh-9G-MJY"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="0Kv-bN-Sd6">
+                        <barButtonItem key="leftBarButtonItem" title="Item" id="HRX-aQ-Mn7">
+                            <connections>
+                                <action selector="toggleMenu:" destination="BYZ-38-t0r" id="TqX-Ie-u6J"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="0-csp-app-logo" id="Gh7-OW-mnD"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="collectionView" destination="xZc-gr-ClJ" id="JNg-qj-RvG"/>
+                        <outlet property="leadingConstraint" destination="Mim-Rq-DJy" id="lL0-lV-wud"/>
+                        <outlet property="navBar" destination="0Kv-bN-Sd6" id="MeF-Ng-nxM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="104.8" y="88.605697151424295"/>
+            <point key="canvasLocation" x="444" y="88.605697151424295"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Nv3-O2-eez">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="eeJ-2F-iM6" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="aod-46-WvX">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="MaY-5C-NJC"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="huF-em-cMF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="444" y="-714"/>
         </scene>
     </scenes>
     <resources>
+        <image name="0-csp-app-logo" width="1041" height="117"/>
         <image name="facebook-footer-icon" width="64" height="64"/>
         <image name="google-footer-icon" width="64" height="64"/>
         <image name="instagram-footer-icon" width="64" height="64"/>

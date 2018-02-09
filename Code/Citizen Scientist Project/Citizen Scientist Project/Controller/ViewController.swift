@@ -175,7 +175,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     
     // MARK: - Click Listener Event for a specific cell in the UICollectionView
     
-    //TODO: go to a different screen when a cell item is clicked
+    
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let message = allCellItem[indexPath.row][0] + " " + allCellItem[indexPath.row][1]
         let alert = UIAlertController(title: nil, message: message, preferredStyle: .alert)
@@ -224,6 +224,28 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         
         return sectionFooterView
     }
+    
+    var menuShowing = false
+    
+    @IBOutlet weak var navBar: UINavigationItem!
+    
+    @IBOutlet weak var leadingConstraint: NSLayoutConstraint!
+    
+    
+    
+    @IBAction func toggleMenu(_ sender: Any) {
+        
+        if menuShowing{
+            leadingConstraint.constant = -210
+        } else {
+            leadingConstraint.constant = 0
+            
+            UIView.animate(withDuration: 0.3, animations: { self.view.layoutIfNeeded()})
+        }
+        
+        menuShowing = !menuShowing
+    }
+    
     
 }
 
