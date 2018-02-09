@@ -34,7 +34,7 @@
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="PVm-Qr-RrE">
                                     <size key="itemSize" width="185" height="185"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="50" height="126"/>
                                     <inset key="sectionInset" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
@@ -51,7 +51,7 @@
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="las-03-Gas">
                                                     <rect key="frame" x="0.0" y="128" width="185" height="34"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="34" id="fIs-tm-VBz"/>
+                                                        <constraint firstAttribute="height" constant="34" id="Uvj-bh-eDh"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -60,7 +60,7 @@
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eAO-oU-eYA">
                                                     <rect key="frame" x="0.0" y="163" width="185" height="22"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="22" id="oOs-jJ-buW"/>
+                                                        <constraint firstAttribute="height" constant="22" id="KiQ-lF-jCc"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -69,16 +69,16 @@
                                             </subviews>
                                         </view>
                                         <constraints>
-                                            <constraint firstAttribute="bottom" secondItem="eAO-oU-eYA" secondAttribute="bottom" id="9Gt-Xe-eM3"/>
-                                            <constraint firstItem="gGP-4Q-pUl" firstAttribute="trailing" secondItem="las-03-Gas" secondAttribute="trailing" id="9Ic-Z1-lMm"/>
-                                            <constraint firstItem="gGP-4Q-pUl" firstAttribute="leading" secondItem="eAO-oU-eYA" secondAttribute="leading" id="Bex-h7-Mg2"/>
-                                            <constraint firstItem="gGP-4Q-pUl" firstAttribute="top" secondItem="wDA-Po-Iq5" secondAttribute="top" id="IvX-E7-HYR"/>
-                                            <constraint firstItem="las-03-Gas" firstAttribute="leading" secondItem="eAO-oU-eYA" secondAttribute="leading" id="KbH-UL-UwJ"/>
-                                            <constraint firstAttribute="trailing" secondItem="gGP-4Q-pUl" secondAttribute="trailing" id="PvS-wH-mCk"/>
-                                            <constraint firstItem="las-03-Gas" firstAttribute="trailing" secondItem="eAO-oU-eYA" secondAttribute="trailing" id="ScZ-ST-x66"/>
-                                            <constraint firstItem="gGP-4Q-pUl" firstAttribute="bottom" secondItem="eAO-oU-eYA" secondAttribute="bottom" id="ZXK-cc-M7B"/>
-                                            <constraint firstItem="gGP-4Q-pUl" firstAttribute="leading" secondItem="wDA-Po-Iq5" secondAttribute="leading" id="cAv-Ri-xUP"/>
-                                            <constraint firstItem="eAO-oU-eYA" firstAttribute="top" secondItem="las-03-Gas" secondAttribute="bottom" constant="1" id="uix-jF-qif"/>
+                                            <constraint firstItem="eAO-oU-eYA" firstAttribute="bottom" secondItem="gGP-4Q-pUl" secondAttribute="bottom" id="3lm-Yp-vq8"/>
+                                            <constraint firstAttribute="bottom" secondItem="gGP-4Q-pUl" secondAttribute="bottom" id="8Ec-Js-CAd"/>
+                                            <constraint firstItem="las-03-Gas" firstAttribute="trailing" secondItem="eAO-oU-eYA" secondAttribute="trailing" id="U87-Lh-Vq9"/>
+                                            <constraint firstItem="gGP-4Q-pUl" firstAttribute="leading" secondItem="wDA-Po-Iq5" secondAttribute="leading" id="Ujq-ly-kS2"/>
+                                            <constraint firstItem="gGP-4Q-pUl" firstAttribute="top" secondItem="wDA-Po-Iq5" secondAttribute="top" id="aCu-ym-JeX"/>
+                                            <constraint firstItem="eAO-oU-eYA" firstAttribute="top" secondItem="las-03-Gas" secondAttribute="bottom" constant="1" id="cch-nw-bgF"/>
+                                            <constraint firstItem="gGP-4Q-pUl" firstAttribute="trailing" secondItem="las-03-Gas" secondAttribute="trailing" id="exX-2O-oRK"/>
+                                            <constraint firstAttribute="trailing" secondItem="gGP-4Q-pUl" secondAttribute="trailing" id="re4-lh-Yvv"/>
+                                            <constraint firstItem="las-03-Gas" firstAttribute="leading" secondItem="eAO-oU-eYA" secondAttribute="leading" id="tGd-zl-dg1"/>
+                                            <constraint firstItem="gGP-4Q-pUl" firstAttribute="leading" secondItem="las-03-Gas" secondAttribute="leading" id="vwe-4f-oL1"/>
                                         </constraints>
                                         <connections>
                                             <outlet property="itemImageView" destination="gGP-4Q-pUl" id="VFc-gp-fDr"/>
@@ -87,44 +87,59 @@
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
+                                <collectionReusableView key="sectionFooterView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="FooterHomeView" id="9Bl-An-OuW" customClass="SectionFooterView" customModule="Citizen_Scientist_Project" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="185" width="375" height="126"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="vGs-2j-Vib">
+                                            <rect key="frame" x="25" y="31" width="324" height="64"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7yD-4G-ClX">
+                                                    <rect key="frame" x="0.0" y="0.0" width="64" height="64"/>
+                                                    <state key="normal" image="facebook-footer-icon"/>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ptI-cx-LJm">
+                                                    <rect key="frame" x="65" y="0.0" width="64" height="64"/>
+                                                    <state key="normal" image="twitter-footer-icon"/>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IXo-Iv-oek">
+                                                    <rect key="frame" x="130" y="0.0" width="64" height="64"/>
+                                                    <state key="normal" image="google-footer-icon"/>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u0z-w7-GU9">
+                                                    <rect key="frame" x="195" y="0.0" width="64" height="64"/>
+                                                    <state key="normal" image="youtube-footer-icon"/>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rdt-ln-9mc">
+                                                    <rect key="frame" x="260" y="0.0" width="64" height="64"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                    <state key="normal" image="instagram-footer-icon"/>
+                                                </button>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="vGs-2j-Vib" firstAttribute="centerY" secondItem="9Bl-An-OuW" secondAttribute="centerY" id="E0v-zc-t50"/>
+                                        <constraint firstItem="vGs-2j-Vib" firstAttribute="centerX" secondItem="9Bl-An-OuW" secondAttribute="centerX" id="fLK-bA-TzB"/>
+                                    </constraints>
+                                    <connections>
+                                        <outlet property="facebookButton" destination="7yD-4G-ClX" id="jvd-bT-3Yf"/>
+                                        <outlet property="googlePlusButton" destination="IXo-Iv-oek" id="XWN-lM-oQd"/>
+                                        <outlet property="instagramButton" destination="Rdt-ln-9mc" id="phK-Lk-CAB"/>
+                                        <outlet property="twitterButton" destination="ptI-cx-LJm" id="HUM-Rp-qca"/>
+                                        <outlet property="youtubeButton" destination="u0z-w7-GU9" id="Ivv-ev-vnz"/>
+                                    </connections>
+                                </collectionReusableView>
                             </collectionView>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="vGs-2j-Vib">
-                                <rect key="frame" x="25" y="603" width="324" height="64"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7yD-4G-ClX">
-                                        <rect key="frame" x="0.0" y="0.0" width="64" height="64"/>
-                                        <state key="normal" image="facebook-footer-icon"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ptI-cx-LJm">
-                                        <rect key="frame" x="65" y="0.0" width="64" height="64"/>
-                                        <state key="normal" image="twitter-footer-icon"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IXo-Iv-oek">
-                                        <rect key="frame" x="130" y="0.0" width="64" height="64"/>
-                                        <state key="normal" image="google-footer-icon"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u0z-w7-GU9">
-                                        <rect key="frame" x="195" y="0.0" width="64" height="64"/>
-                                        <state key="normal" image="youtube-footer-icon"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rdt-ln-9mc">
-                                        <rect key="frame" x="260" y="0.0" width="64" height="64"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                        <state key="normal" image="instagram-footer-icon"/>
-                                    </button>
-                                </subviews>
-                            </stackView>
                         </subviews>
                         <constraints>
-                            <constraint firstItem="vGs-2j-Vib" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottom" id="6aH-Cr-sX5"/>
-                            <constraint firstItem="aN0-2g-6tj" firstAttribute="centerX" secondItem="vGs-2j-Vib" secondAttribute="centerX" id="9oA-8b-K5m"/>
-                            <constraint firstItem="xZc-gr-ClJ" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="BDW-P2-VVd"/>
-                            <constraint firstItem="aN0-2g-6tj" firstAttribute="leading" secondItem="xZc-gr-ClJ" secondAttribute="leading" id="HlI-UX-ZS2"/>
-                            <constraint firstItem="xZc-gr-ClJ" firstAttribute="top" secondItem="aN0-2g-6tj" secondAttribute="bottom" id="UPJ-lD-0Cz"/>
-                            <constraint firstItem="aN0-2g-6tj" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="12" id="Y7n-1d-qUT"/>
-                            <constraint firstItem="aN0-2g-6tj" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="bRj-6I-gU3"/>
-                            <constraint firstAttribute="trailing" secondItem="aN0-2g-6tj" secondAttribute="trailing" id="rbL-wK-KgU"/>
-                            <constraint firstItem="aN0-2g-6tj" firstAttribute="trailing" secondItem="xZc-gr-ClJ" secondAttribute="trailing" id="reY-vR-cXW"/>
+                            <constraint firstAttribute="trailing" secondItem="aN0-2g-6tj" secondAttribute="trailing" id="Cxc-6Y-vxh"/>
+                            <constraint firstItem="aN0-2g-6tj" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="EQm-Ad-jRf"/>
+                            <constraint firstItem="aN0-2g-6tj" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="12" id="GYu-f5-rSc"/>
+                            <constraint firstItem="xZc-gr-ClJ" firstAttribute="top" secondItem="aN0-2g-6tj" secondAttribute="bottom" id="IBg-XE-LuL"/>
+                            <constraint firstItem="aN0-2g-6tj" firstAttribute="leading" secondItem="xZc-gr-ClJ" secondAttribute="leading" id="Wne-XE-dR1"/>
+                            <constraint firstItem="xZc-gr-ClJ" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="YWN-kZ-9k0"/>
+                            <constraint firstItem="aN0-2g-6tj" firstAttribute="trailing" secondItem="xZc-gr-ClJ" secondAttribute="trailing" id="vAc-wu-Jtv"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -134,7 +149,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="106" y="89"/>
+            <point key="canvasLocation" x="104.8" y="88.605697151424295"/>
         </scene>
     </scenes>
     <resources>

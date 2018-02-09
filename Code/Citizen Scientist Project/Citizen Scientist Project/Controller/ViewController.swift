@@ -16,6 +16,8 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     
     @IBOutlet weak var collectionView: UICollectionView!
     
+    var sectionFooter: [Icon] = SectionFooter.fetchIcons()
+    
     struct MainStoryBoard {
         static let cellContentView = "Cell"
         static let sectionFooterView = "FooterHomeView"
@@ -193,7 +195,8 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     {
         let sectionFooterView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: MainStoryBoard.sectionFooterView, for: indexPath) as! SectionFooterView
         
-        
+        let icon = sectionFooter[indexPath.row]
+        sectionFooterView.icon = icon
         
         return sectionFooterView
     }
