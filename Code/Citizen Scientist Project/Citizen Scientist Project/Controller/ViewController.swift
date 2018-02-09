@@ -191,6 +191,30 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     
     // MARK: - Section Footer View
     
+    
+    @IBAction func openFacebook(_ sender: UIButton) {
+        SocialNetwork.Facebook.openPage()
+    }
+    
+    @IBAction func openTwitter(_ sender: UIButton) {
+        SocialNetwork.Twitter.openPage()
+    }
+    
+    @IBAction func openGooglePlus(_ sender: UIButton) {
+        SocialNetwork.GooglePlus.openPage()
+    }
+    
+    @IBAction func openYoutube(_ sender: UIButton) {
+        SocialNetwork.YouTube.openPage()
+    }
+    
+    @IBAction func openInstagram(_ sender: UIButton) {
+        SocialNetwork.Instagram.openPage()
+    }
+    
+    
+    
+    // Setup footer icon images
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView
     {
         let sectionFooterView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: MainStoryBoard.sectionFooterView, for: indexPath) as! SectionFooterView

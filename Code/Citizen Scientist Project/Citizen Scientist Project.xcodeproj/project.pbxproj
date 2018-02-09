@@ -11,6 +11,7 @@
 		22594976202DA6EC0047E055 /* CollectionViewCellContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22594975202DA6EC0047E055 /* CollectionViewCellContent.swift */; };
 		22594978202DAA0C0047E055 /* CollectionViewContentManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22594977202DAA0C0047E055 /* CollectionViewContentManager.swift */; };
 		2259497B202DCCEC0047E055 /* SectionFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2259497A202DCCEC0047E055 /* SectionFooter.swift */; };
+		22891A3D202DEBE7000FEBB4 /* SocialNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22891A3C202DEBE7000FEBB4 /* SocialNetwork.swift */; };
 		229E61432022A79200D4BDDA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229E61422022A79200D4BDDA /* AppDelegate.swift */; };
 		229E61452022A79200D4BDDA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229E61442022A79200D4BDDA /* ViewController.swift */; };
 		229E61482022A79200D4BDDA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 229E61462022A79200D4BDDA /* Main.storyboard */; };
@@ -44,6 +45,7 @@
 		22594975202DA6EC0047E055 /* CollectionViewCellContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCellContent.swift; sourceTree = "<group>"; };
 		22594977202DAA0C0047E055 /* CollectionViewContentManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewContentManager.swift; sourceTree = "<group>"; };
 		2259497A202DCCEC0047E055 /* SectionFooter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionFooter.swift; sourceTree = "<group>"; };
+		22891A3C202DEBE7000FEBB4 /* SocialNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialNetwork.swift; sourceTree = "<group>"; };
 		229E613F2022A79200D4BDDA /* Citizen Scientist Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Citizen Scientist Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		229E61422022A79200D4BDDA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		229E61442022A79200D4BDDA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -153,6 +155,7 @@
 				22594975202DA6EC0047E055 /* CollectionViewCellContent.swift */,
 				22594977202DAA0C0047E055 /* CollectionViewContentManager.swift */,
 				2259497A202DCCEC0047E055 /* SectionFooter.swift */,
+				22891A3C202DEBE7000FEBB4 /* SocialNetwork.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -312,6 +315,7 @@
 				22594976202DA6EC0047E055 /* CollectionViewCellContent.swift in Sources */,
 				229E61452022A79200D4BDDA /* ViewController.swift in Sources */,
 				2259497B202DCCEC0047E055 /* SectionFooter.swift in Sources */,
+				22891A3D202DEBE7000FEBB4 /* SocialNetwork.swift in Sources */,
 				229E61432022A79200D4BDDA /* AppDelegate.swift in Sources */,
 				22F78C8F202D0F900001049D /* CollectionViewCell.swift in Sources */,
 				229E614B2022A79200D4BDDA /* Citizen_Scientist_Project.xcdatamodeld in Sources */,

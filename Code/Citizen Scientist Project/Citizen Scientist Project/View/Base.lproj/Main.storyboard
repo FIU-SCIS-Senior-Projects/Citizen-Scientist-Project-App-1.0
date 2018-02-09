@@ -97,23 +97,38 @@
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7yD-4G-ClX">
                                                     <rect key="frame" x="0.0" y="0.0" width="64" height="64"/>
                                                     <state key="normal" image="facebook-footer-icon"/>
+                                                    <connections>
+                                                        <action selector="openFacebook:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GUZ-2t-e09"/>
+                                                    </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ptI-cx-LJm">
                                                     <rect key="frame" x="65" y="0.0" width="64" height="64"/>
                                                     <state key="normal" image="twitter-footer-icon"/>
+                                                    <connections>
+                                                        <action selector="openTwitter:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JTr-oR-Oao"/>
+                                                    </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IXo-Iv-oek">
                                                     <rect key="frame" x="130" y="0.0" width="64" height="64"/>
                                                     <state key="normal" image="google-footer-icon"/>
+                                                    <connections>
+                                                        <action selector="openGooglePlus:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RKz-Lg-Mqd"/>
+                                                    </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u0z-w7-GU9">
                                                     <rect key="frame" x="195" y="0.0" width="64" height="64"/>
                                                     <state key="normal" image="youtube-footer-icon"/>
+                                                    <connections>
+                                                        <action selector="openYoutube:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hQG-nK-2HP"/>
+                                                    </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rdt-ln-9mc">
                                                     <rect key="frame" x="260" y="0.0" width="64" height="64"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                     <state key="normal" image="instagram-footer-icon"/>
+                                                    <connections>
+                                                        <action selector="openInstagram:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rap-vD-CEC"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                         </stackView>
