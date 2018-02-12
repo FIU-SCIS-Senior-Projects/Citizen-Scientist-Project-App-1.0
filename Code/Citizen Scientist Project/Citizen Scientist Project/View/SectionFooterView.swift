@@ -16,6 +16,7 @@ class SectionFooterView: UICollectionReusableView {
     @IBOutlet weak var googlePlusButton: UIButton!
     @IBOutlet weak var youtubeButton: UIButton!
     @IBOutlet weak var instagramButton: UIButton!
+    @IBOutlet weak var footerLabel: UILabel!
     
     var icon: Icon! {
         didSet {

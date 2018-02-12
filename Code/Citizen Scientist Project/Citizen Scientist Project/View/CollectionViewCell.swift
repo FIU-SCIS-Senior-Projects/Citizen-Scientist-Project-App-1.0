@@ -11,6 +11,8 @@ import UIKit
 class CollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var itemImageView: UIImageView!
+    @IBOutlet weak var itemLabel1: UILabel!
+    @IBOutlet weak var itemLabel2: UILabel!
     
     var imageName: String! {
         didSet {
@@ -18,6 +20,5 @@ class CollectionViewCell: UICollectionViewCell {
         }
     }
     
-    @IBOutlet weak var itemLabel1: UILabel!
-    @IBOutlet weak var itemLabel2: UILabel!
+    
 }
