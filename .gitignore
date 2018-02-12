@@ -55,3 +55,6 @@
 !**/*.xcodeproj/project.pbxproj
 !**/*.xcodeproj/xcshareddata/
 **/*.gcno
+
+// Exclude .DS_Store temp files created on MacOS
+**/.DS_Store
