@@ -10,42 +10,36 @@ import Foundation
 
 class ContentManager{
     
-    static let cellIdPrefix = "cell"
+    //static let cellIdPrefix = "cell"
     
     class func fetchCellContent() -> [CellContent]
     {
-        var collectionViewContent = [CellContent]()
-        let collectionViewData = getContentData()
-        
-        for cellContent in collectionViewData{
-            collectionViewContent.append(cellContent.value)
-        }
-        
-        return collectionViewContent
+        return getContentData()
     }
     
-    private class func getContentData() -> [String : CellContent]
+    private class func getContentData() -> [CellContent]
     {
         let labels = getContentLabels()
-        let imageNames = getContentImageNames()
+        let imageName_Type = getContentImageNames()
         
         // Get the minimum of the number of elements in labelData and imageNames
         // Ideally every image name should have a corresponding pair of label names. 1:1 relationship
         let numbOfLabels = labels.count
-        let numbOfImageNames = imageNames.count
+        let numbOfImageNames = imageName_Type.count
         let numbOfIterations = min(numbOfLabels, numbOfImageNames)
         
-        var contentData = [String : CellContent]()
+        var contentData = [CellContent]()
         
         for index in 0..<numbOfIterations{
             
-            let imageName = imageNames[index]
+            let imageName = imageName_Type[index].imageName
+            let cellType = imageName_Type[index].cellType
             let label1 = labels[index][0]
             let label2 = labels[index][1]
             
-            let cellContent = CellContent(imageName: imageName, labelHeader: label1, labelSubHeader: label2)
+            let cellContent = CellContent(imageName: imageName, labelHeader: label1, labelSubHeader: label2, cellType: cellType)
             
-            contentData["\(cellIdPrefix)\(index)"] = cellContent
+            contentData.append(cellContent)
         }
         
         return contentData
@@ -76,25 +70,26 @@ class ContentManager{
         return labelData
     }
     
-    private class func getContentImageNames() -> [String]{
-        let imageNames: [String] = [
-            "1-welcome-home",
-            "2-news-home",
-            "3-events-home",
-            "4-key-challenge-home",
-            "5-reef-restoration-home",
-            "6-lab-home",
-            "7-lab-learn",
-            "8-lab-explore",
-            "9-lab-record",
-            "10-lab-review",
-            "11-water-watch-home",
-            "12-sea-level-home",
-            "13-lectures-home",
-            "14-field-activities-home",
-            "15-partners-home",
-            "16-contact-home",
-            ]
-        return imageNames
+    private class func getContentImageNames() -> [(imageName: String, cellType: CellContent.CellType)]{
+        
+        var imageName_Type: [(imageName: String, cellType: CellContent.CellType)] = []
+        imageName_Type.append(("1-welcome-home", .Super))
+        imageName_Type.append(("2-news-home", .Regular))
+        imageName_Type.append(("3-events-home", .Regular))
+        imageName_Type.append(("4-key-challenge-home", .Regular))
+        imageName_Type.append(("5-reef-restoration-home", .Regular))
+        imageName_Type.append(("6-lab-home", .Super))
+        imageName_Type.append(("7-lab-learn", .Regular))
+        imageName_Type.append(("8-lab-explore", .Regular))
+        imageName_Type.append(("9-lab-record", .Regular))
+        imageName_Type.append(("10-lab-review", .Regular))
+        imageName_Type.append(("11-water-watch-home", .Regular))
+        imageName_Type.append(("12-sea-level-home", .Regular))
+        imageName_Type.append(("13-lectures-home", .Regular))
+        imageName_Type.append(("14-field-activities-home", .Regular))
+        imageName_Type.append(("15-partners-home", .Regular))
+        imageName_Type.append(("16-contact-home", .Regular))
+        
+        return imageName_Type
     }
 }

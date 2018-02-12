@@ -13,5 +13,11 @@ struct CellContent{
     var imageName: String
     var labelHeader: String
     var labelSubHeader: String
+    var cellType: CellType
+    
+    enum CellType {
+        case Regular // half of full width
+        case Super   // full width
+    }
     
 }

@@ -16,6 +16,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     
     @IBOutlet weak var collectionView: UICollectionView!
     
+    var cellContent: [CellContent] = ContentManager.fetchCellContent()
     var sectionFooter: [Icon] = SectionFooter.fetchIcons()
     
     struct MainStoryBoard {
@@ -87,16 +88,17 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     // MARK: - UICollectionViewDataSource
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return allCellItem.count
+        return cellContent.count
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        
+    
+        let index = indexPath.item
+        let cellCont = cellContent[index]
         let screenWidth = self.collectionView.frame.size.width
-        //let screenHeight = self.collectionView.frame.size.height
-        if indexPath.row == 0 || indexPath.row == 5
-        {
-            return CGSize(width: screenWidth-5, height: screenWidth/2)
+        
+        if cellCont.cellType == CellContent.CellType.Super {
+            return CGSize(width: screenWidth-5, height: screenWidth/2) // full width
         }
         return CGSize(width: (screenWidth/2)-3, height: screenWidth/2);
         
@@ -106,52 +108,67 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: MainStoryBoard.cellContentView, for: indexPath) as!  CollectionViewCell
         
-        cell.itemImageView.image = allCellItemImage[indexPath.item]
-        cell.itemImageView.contentMode = UIViewContentMode.scaleAspectFill
-        cell.itemImageView.clipsToBounds = true
-        
         let screenWidth = self.collectionView.frame.size.width
         
-        if indexPath.row == 0 || indexPath.row == 5 // TODO: unhardcode numbers
-        {
-            cell.itemImageView.frame = CGRect(origin: CGPoint(x: 0,y :0), size: CGSize(width: screenWidth-5, height: screenWidth/2)) // TODO: unhardcode numbers
-            
-            let superCellLabel1Height = label1Height * 2
-            let verticalCenter = screenWidth/2/2 - superCellLabel1Height
-            
-            cell.itemLabel1.frame = CGRect(origin: CGPoint(x: 0,y :verticalCenter), size: CGSize(width: screenWidth, height: superCellLabel1Height))
-            cell.itemLabel1.textAlignment = NSTextAlignment.center
-            //cell.itemLabel1.font = UIFont(name: cell.itemLabel1.font.fontName , size: superCellLabel1FontSize) // TODO: maybe change the font?
-            cell.itemLabel1.font = UIFont.italicSystemFont(ofSize: superCellLabel1FontSize)
-            cell.itemLabel1.textColor = UIColor.white
-            
-            cell.itemLabel2.frame = CGRect(origin: CGPoint(x: 0,y :verticalCenter + superCellHeightBetweenLabels), size: CGSize(width: screenWidth, height: label2Height + label1Height))
-            cell.itemLabel2.textAlignment = NSTextAlignment.center
-            cell.itemLabel2.font = UIFont(name: cell.itemLabel2.font.fontName , size: superCellLabel2FontSize)
+        let index = indexPath.item
+        let cellCont = cellContent[index]
+        
+        let imageName = cellCont.imageName
+        cell.imageName = imageName
+        cell.defaultSetup()
+        if cellCont.cellType == CellContent.CellType.Super {
+            cell.imageSize = (width: screenWidth, height: screenWidth/2) // full width
         }
-        else{
-            cell.itemImageView.frame = CGRect(origin: CGPoint(x: 0,y :0), size: CGSize(width: (screenWidth/2)-3, height: screenWidth/2)) // TODO: unhardcode numbers
-            
-            let calculatedWidth = (screenWidth/2) - (CGFloat)(leftMargin) - (CGFloat)(screenWidthMinusActualWidth)
-            cell.itemLabel1.frame = CGRect(origin: CGPoint(x: leftMargin,y :label1YPosition),
-                                           size: CGSize(width: calculatedWidth, height: label1Height))
-            cell.itemLabel1.font = UIFont.boldSystemFont(ofSize: normalCellLabel1FontSize)
-            cell.itemLabel1.textColor = globalLightBlue
-            cell.itemLabel1.font = UIFont(name: "Arial", size: normalCellLabel1FontSize)
-            cell.itemLabel1.textAlignment = NSTextAlignment.left
-            
-            cell.itemLabel2.frame = CGRect(origin: CGPoint(x: leftMargin,y :label2YPosition),
-                                           size: CGSize(width: calculatedWidth, height: label2Height))
-            cell.itemLabel2.font = UIFont.boldSystemFont(ofSize: normalCellLabel2FontSize)
-            cell.itemLabel2.textColor = UIColor.white
-            cell.itemLabel2.font = UIFont(name: "Kailasa", size: normalCellLabel2FontSize)
-            cell.itemLabel2.textAlignment = NSTextAlignment.left
-            
-            
-            //TODO: what happens for the rest of the cases (color. no italics, etc..)
-            
-            
+        else if cellCont.cellType == CellContent.CellType.Regular { // half of full width
+            cell.imageSize = (width: (screenWidth/2), height: screenWidth/2)
         }
+        else {
+            // internal error message
+        }
+        
+        
+        
+        
+//        if indexPath.row == 0 || indexPath.row == 5 // TODO: unhardcode numbers
+//        {
+//            cell.itemImageView.frame = CGRect(origin: CGPoint(x: 0,y :0), size: CGSize(width: screenWidth-5, height: screenWidth/2)) // TODO: unhardcode numbers
+//
+//            let superCellLabel1Height = label1Height * 2
+//            let verticalCenter = screenWidth/2/2 - superCellLabel1Height
+//
+//            cell.itemLabel1.frame = CGRect(origin: CGPoint(x: 0,y :verticalCenter), size: CGSize(width: screenWidth, height: superCellLabel1Height))
+//            cell.itemLabel1.textAlignment = NSTextAlignment.center
+//            //cell.itemLabel1.font = UIFont(name: cell.itemLabel1.font.fontName , size: superCellLabel1FontSize) // TODO: maybe change the font?
+//            cell.itemLabel1.font = UIFont.italicSystemFont(ofSize: superCellLabel1FontSize)
+//            cell.itemLabel1.textColor = UIColor.white
+//
+//            cell.itemLabel2.frame = CGRect(origin: CGPoint(x: 0,y :verticalCenter + superCellHeightBetweenLabels), size: CGSize(width: screenWidth, height: label2Height + label1Height))
+//            cell.itemLabel2.textAlignment = NSTextAlignment.center
+//            cell.itemLabel2.font = UIFont(name: cell.itemLabel2.font.fontName , size: superCellLabel2FontSize)
+//        }
+//        else{
+//            cell.itemImageView.frame = CGRect(origin: CGPoint(x: 0,y :0), size: CGSize(width: (screenWidth/2)-3, height: screenWidth/2)) // TODO: unhardcode numbers
+//
+//            let calculatedWidth = (screenWidth/2) - (CGFloat)(leftMargin) - (CGFloat)(screenWidthMinusActualWidth)
+//            cell.itemLabel1.frame = CGRect(origin: CGPoint(x: leftMargin,y :label1YPosition),
+//                                           size: CGSize(width: calculatedWidth, height: label1Height))
+//            cell.itemLabel1.font = UIFont.boldSystemFont(ofSize: normalCellLabel1FontSize)
+//            cell.itemLabel1.textColor = globalLightBlue
+//            cell.itemLabel1.font = UIFont(name: "Arial", size: normalCellLabel1FontSize)
+//            cell.itemLabel1.textAlignment = NSTextAlignment.left
+//
+//            cell.itemLabel2.frame = CGRect(origin: CGPoint(x: leftMargin,y :label2YPosition),
+//                                           size: CGSize(width: calculatedWidth, height: label2Height))
+//            cell.itemLabel2.font = UIFont.boldSystemFont(ofSize: normalCellLabel2FontSize)
+//            cell.itemLabel2.textColor = UIColor.white
+//            cell.itemLabel2.font = UIFont(name: "Kailasa", size: normalCellLabel2FontSize)
+//            cell.itemLabel2.textAlignment = NSTextAlignment.left
+//
+//
+//            //TODO: what happens for the rest of the cases (color. no italics, etc..)
+//
+//
+//        }
         
         //TODO: make this a function
         //        if indexPath.row == 6 || indexPath.row == 7 || indexPath.row == 8 || indexPath.row == 9
@@ -163,11 +180,11 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         //            cell.contentView.isHidden = false
         //        }
         //
-        cell.layer.borderColor = UIColor.white.cgColor
-        cell.layer.borderWidth = 1.0 // TODO: unhardcode numbers. Make global
-        cell.layer.backgroundColor = UIColor.darkGray.cgColor
-        cell.itemLabel1.text = allCellItem[indexPath.item][0]
-        cell.itemLabel2.text = allCellItem[indexPath.item][1]
+//        cell.layer.borderColor = UIColor.white.cgColor
+//        cell.layer.borderWidth = 1.0 // TODO: unhardcode numbers. Make global
+//        cell.layer.backgroundColor = UIColor.darkGray.cgColor
+//        cell.itemLabel1.text = allCellItem[indexPath.item][0]
+//        cell.itemLabel2.text = allCellItem[indexPath.item][1]
         
         
         return cell
