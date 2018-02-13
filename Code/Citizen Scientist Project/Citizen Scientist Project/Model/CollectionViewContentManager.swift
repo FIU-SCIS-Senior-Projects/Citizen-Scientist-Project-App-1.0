@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 class ContentManager{
     
@@ -36,14 +37,44 @@ class ContentManager{
             let cellType = imageName_Type[index].cellType
             let label1 = labels[index][0]
             let label2 = labels[index][1]
+            let cellLabelsProperties = getCellLabelsProperties(cellType: cellType)
             
-            let cellContent = CellContent(imageName: imageName, labelHeader: label1, labelSubHeader: label2, cellType: cellType)
+            let cellContent = CellContent(imageName: imageName, labelHeader: label1, labelSubHeader: label2, cellType: cellType, labelsPropetries: cellLabelsProperties)
             
             contentData.append(cellContent)
         }
         
         return contentData
         
+    }
+    
+    
+    private class func getCellLabelsProperties(cellType: CellContent.CellType) -> CellLabelsProperties
+    {
+        var cellLabelsProperties = CellLabelsProperties()
+        var headerLabelProperties = LabelProperties()
+        var subHeaderLabelProperties = LabelProperties()
+        
+        switch cellType {
+        case .Super:
+            headerLabelProperties.font = UIFont(name: "HelveticaNeue-MediumItalic", size: 16)!
+            headerLabelProperties.color = UIColor.white
+            headerLabelProperties.alignment = NSTextAlignment.center
+            subHeaderLabelProperties.font = UIFont(name: "HelveticaNeue-Bold", size: 22)!
+            subHeaderLabelProperties.color = UIColor.white
+            subHeaderLabelProperties.alignment = NSTextAlignment.center
+        default:
+            headerLabelProperties.font = UIFont(name: "HelveticaNeue-Bold", size: 10)!
+            headerLabelProperties.color = UIColor(displayP3Red: 95/255.0, green: 172/255.0, blue: 223/255.0, alpha: 1.0) // global light blue
+            headerLabelProperties.alignment = NSTextAlignment.left
+            subHeaderLabelProperties.font = UIFont(name: "HelveticaNeue-Bold", size: 18)!
+            subHeaderLabelProperties.color = UIColor.white
+            subHeaderLabelProperties.alignment = NSTextAlignment.left
+        }
+        
+        cellLabelsProperties.labelHeaderProperty = headerLabelProperties
+        cellLabelsProperties.labelSubHeaderProperty = subHeaderLabelProperties
+        return cellLabelsProperties
     }
     
     private class func getContentLabels() -> [[String]]

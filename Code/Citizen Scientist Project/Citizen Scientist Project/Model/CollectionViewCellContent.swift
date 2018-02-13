@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 struct CellContent{
     
@@ -14,10 +15,32 @@ struct CellContent{
     var labelHeader: String
     var labelSubHeader: String
     var cellType: CellType
+    var labelsPropetries: CellLabelsProperties
     
     enum CellType {
         case Regular // half of full width
         case Super   // full width
     }
     
+}
+
+struct CellLabelsProperties {
+    var labelHeaderProperty: LabelProperties?
+    var labelSubHeaderProperty: LabelProperties?
+    
+    init()
+    {
+        
+    }
+}
+
+struct LabelProperties {
+    var font: UIFont?
+    var color: UIColor?
+    var alignment: NSTextAlignment?
+    
+    init()
+    {
+        
+    }
 }

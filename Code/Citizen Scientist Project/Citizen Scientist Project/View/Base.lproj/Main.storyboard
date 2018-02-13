@@ -174,7 +174,7 @@
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="PVm-Qr-RrE">
                                     <size key="itemSize" width="185" height="185"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                    <size key="footerReferenceSize" width="50" height="151"/>
+                                    <size key="footerReferenceSize" width="50" height="125"/>
                                     <inset key="sectionInset" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
@@ -188,7 +188,7 @@
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gGP-4Q-pUl">
                                                     <rect key="frame" x="0.0" y="0.0" width="185" height="185"/>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="las-03-Gas">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="las-03-Gas">
                                                     <rect key="frame" x="0.0" y="128" width="185" height="34"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="34" id="Uvj-bh-eDh"/>
@@ -197,7 +197,7 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eAO-oU-eYA">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="eAO-oU-eYA">
                                                     <rect key="frame" x="0.0" y="163" width="185" height="22"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="22" id="KiQ-lF-jCc"/>
@@ -221,18 +221,18 @@
                                             <constraint firstItem="gGP-4Q-pUl" firstAttribute="leading" secondItem="las-03-Gas" secondAttribute="leading" id="vwe-4f-oL1"/>
                                         </constraints>
                                         <connections>
-                                            <outlet property="itemImageView" destination="gGP-4Q-pUl" id="VFc-gp-fDr"/>
-                                            <outlet property="itemLabel1" destination="las-03-Gas" id="Msx-6k-e4Z"/>
-                                            <outlet property="itemLabel2" destination="eAO-oU-eYA" id="PCG-61-Lcs"/>
+                                            <outlet property="headerLabel" destination="las-03-Gas" id="nLw-Kw-sU1"/>
+                                            <outlet property="imageView" destination="gGP-4Q-pUl" id="2v1-yb-GFk"/>
+                                            <outlet property="subHeaderLabel" destination="eAO-oU-eYA" id="OMU-6h-u5u"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
-                                <collectionReusableView key="sectionFooterView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="FooterHomeView" id="9Bl-An-OuW" customClass="SectionFooterView" customModule="Citizen_Scientist_Project" customModuleProvider="target">
-                                    <rect key="frame" x="0.0" y="185" width="375" height="151"/>
+                                <collectionReusableView key="sectionFooterView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="FooterView" id="9Bl-An-OuW" customClass="SectionFooterView" customModule="Citizen_Scientist_Project" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="185" width="375" height="125"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="fUT-Yo-O4E">
-                                            <rect key="frame" x="8" y="48.666666666666657" width="359" height="54.333333333333343"/>
+                                            <rect key="frame" x="8" y="35.333333333333329" width="359" height="54.333333333333329"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="center" text="KEY BISCAYNE COMMUNITY FOUNDATION" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pCV-uw-31F">
                                                     <rect key="frame" x="0.0" y="0.0" width="359" height="19.333333333333332"/>
@@ -494,6 +494,7 @@
                                 </constraints>
                             </view>
                         </subviews>
+                        <color key="backgroundColor" red="0.18823529410000001" green="0.1960784314" blue="0.25098039220000001" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="xZc-gr-ClJ" firstAttribute="bottom" secondItem="7a3-Ps-wsV" secondAttribute="bottom" id="5Yl-os-HlH"/>
                             <constraint firstAttribute="trailing" secondItem="xZc-gr-ClJ" secondAttribute="trailing" id="JHK-XR-lTP"/>
@@ -506,7 +507,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" id="0Kv-bN-Sd6">
+                    <navigationItem key="navigationItem" id="0Kv-bN-Sd6" colorLabel="IBBuiltInLabel-Gray">
                         <barButtonItem key="leftBarButtonItem" image="nav-icon" id="HRX-aQ-Mn7">
                             <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
@@ -524,7 +525,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="442.39999999999998" y="87.561576354679801"/>
+            <point key="canvasLocation" x="441.304347826087" y="86.820652173913047"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Nv3-O2-eez">
