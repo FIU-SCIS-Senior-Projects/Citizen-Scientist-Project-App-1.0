@@ -135,13 +135,10 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     
     var menuShowing = false
     
-    @IBOutlet weak var navBar: UINavigationItem!
     
     @IBOutlet weak var leadingConstraint: NSLayoutConstraint!
     
-    
-    
-    @IBAction func toggleMenu(_ sender: Any) {
+    @IBAction func openMenu(_ sender: Any) {
         
         if menuShowing{
             leadingConstraint.constant = -260
@@ -153,6 +150,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         
         menuShowing = !menuShowing
     }
+    
     
     @IBAction func backButton(_ sender: Any) {
         
