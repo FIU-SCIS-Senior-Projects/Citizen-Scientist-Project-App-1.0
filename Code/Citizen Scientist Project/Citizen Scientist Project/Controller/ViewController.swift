@@ -12,7 +12,7 @@ let RGB: CGFloat = 255.0
 let fullOpacity: CGFloat = 1.0
 
 //TODO: write comments
-class ViewControllerDavid: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+class ViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
     @IBOutlet weak var collectionView: UICollectionView!
     
