@@ -13,6 +13,12 @@ class ContentManager{
     
     //static let cellIdPrefix = "cell"
     
+    static let headerLabelFontSizeSuperCell: CGFloat = 14
+    static let subHeaderLabelFontSizeSuperCell: CGFloat = 22
+    static let headerLabelFontSizeRegularCell: CGFloat = 8
+    static let subHeaderLabelFontSizeRegularCell: CGFloat = 18
+    static let globalLightBlue = UIColor(displayP3Red: 95/255.0, green: 172/255.0, blue: 223/255.0, alpha: 1.0)
+    
     class func fetchCellContent() -> [CellContent]
     {
         return getContentData()
@@ -57,17 +63,17 @@ class ContentManager{
         
         switch cellType {
         case .Super:
-            headerLabelProperties.font = UIFont(name: "HelveticaNeue-MediumItalic", size: 16)!
+            headerLabelProperties.font = UIFont(name: "HelveticaNeue-MediumItalic", size: headerLabelFontSizeSuperCell)!
             headerLabelProperties.color = UIColor.white
             headerLabelProperties.alignment = NSTextAlignment.center
-            subHeaderLabelProperties.font = UIFont(name: "HelveticaNeue-Bold", size: 22)!
+            subHeaderLabelProperties.font = UIFont(name: "HelveticaNeue-Bold", size: subHeaderLabelFontSizeSuperCell)!
             subHeaderLabelProperties.color = UIColor.white
             subHeaderLabelProperties.alignment = NSTextAlignment.center
         default:
-            headerLabelProperties.font = UIFont(name: "HelveticaNeue-Bold", size: 10)!
-            headerLabelProperties.color = UIColor(displayP3Red: 95/255.0, green: 172/255.0, blue: 223/255.0, alpha: 1.0) // global light blue
+            headerLabelProperties.font = UIFont(name: "HelveticaNeue-Bold", size: headerLabelFontSizeRegularCell)!
+            headerLabelProperties.color = globalLightBlue
             headerLabelProperties.alignment = NSTextAlignment.left
-            subHeaderLabelProperties.font = UIFont(name: "HelveticaNeue-Bold", size: 18)!
+            subHeaderLabelProperties.font = UIFont(name: "HelveticaNeue-Bold", size: subHeaderLabelFontSizeRegularCell)!
             subHeaderLabelProperties.color = UIColor.white
             subHeaderLabelProperties.alignment = NSTextAlignment.left
         }
@@ -109,7 +115,7 @@ class ContentManager{
         imageName_Type.append(("3-events-home", .Regular))
         imageName_Type.append(("4-key-challenge-home", .Regular))
         imageName_Type.append(("5-reef-restoration-home", .Regular))
-        imageName_Type.append(("6-lab-home", .Super))
+        imageName_Type.append(("6-lab-home-new", .Super))
         imageName_Type.append(("7-lab-learn", .Regular))
         imageName_Type.append(("8-lab-explore", .Regular))
         imageName_Type.append(("9-lab-record", .Regular))

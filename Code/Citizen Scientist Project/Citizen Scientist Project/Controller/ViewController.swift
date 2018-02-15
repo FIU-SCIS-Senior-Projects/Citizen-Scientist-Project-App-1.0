@@ -12,7 +12,7 @@ let RGB: CGFloat = 255.0
 let fullOpacity: CGFloat = 1.0
 
 //TODO: write comments
-class ViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+class ViewControllerDavid: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
     @IBOutlet weak var collectionView: UICollectionView!
     
@@ -27,22 +27,6 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         static let numberOfItemsPerRow: CGFloat = 2.0
         static let cellBorderWidth: CGFloat = 1.0
     }
-    
-    //TODO: Must get rid of most of these
-    private let leftMargin = 15
-    private let label1Height: CGFloat = 15
-    private let label2Height: CGFloat = 25
-    private let globalLightBlue = UIColor(displayP3Red: 95/255.0, green: 172/255.0, blue: 223/255.0, alpha: fullOpacity)
-    private let label1YPosition = 140
-    private let label2YPosition = 152
-    private let normalCellLabel1FontSize: CGFloat = 8
-    private let normalCellLabel2FontSize: CGFloat = 16
-    private let superCellLabel1FontSize: CGFloat = 14
-    private let superCellLabel2FontSize: CGFloat = 20
-    private let superCellHeightBetweenLabels: CGFloat = 20
-    private let screenWidthMinusActualWidth = 2.5
-    
-    private var showCSPLabChildren = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -69,9 +53,9 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         let screenWidth = self.collectionView.frame.size.width
         
         if cellCont.cellType == CellContent.CellType.Super {
-            return CGSize(width: screenWidth-5, height: screenWidth/2) // full width
+            return CGSize(width: screenWidth, height: screenWidth/2) // full width
         }
-        return CGSize(width: (screenWidth/2)-3, height: screenWidth/2);
+        return CGSize(width: (screenWidth/2), height: screenWidth/2);
         
     }
     
@@ -84,18 +68,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         let index = indexPath.item
         let cellCont = cellContent[index]
         
-        cell.content = cellCont
-        
-        if cellCont.cellType == CellContent.CellType.Super {
-            cell.imageSize = (width: screenWidth, height: screenWidth/2) // full width
-        }
-        else if cellCont.cellType == CellContent.CellType.Regular { // half of full width
-            cell.imageSize = (width: (screenWidth/2), height: screenWidth/2)
-        }
-        else {
-            // internal error message
-        }
-        
+        cell.setUp(content: cellCont, screenWidth: screenWidth)
         cell.layer.borderColor = UIColor.white.cgColor
         cell.layer.borderWidth = StoryBoard.cellBorderWidth
 
@@ -103,8 +76,8 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         return cell
     }
     
-    // MARK: - Click Listener Event for a specific cell in the UICollectionView
     
+    // MARK: - Click Listener Event for a specific cell in the UICollectionView
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         

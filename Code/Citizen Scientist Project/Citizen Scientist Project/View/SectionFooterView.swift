@@ -8,8 +8,6 @@
 
 import UIKit
 
-//TODO: bind
-
 class SectionFooterView: UICollectionReusableView {
     @IBOutlet weak var facebookButton: UIButton!
     @IBOutlet weak var twitterButton: UIButton!
