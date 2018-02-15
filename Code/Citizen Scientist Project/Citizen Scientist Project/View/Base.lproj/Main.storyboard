@@ -518,17 +518,15 @@
                                     <action selector="openMenu:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tTK-dq-bbR"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="0-csp-app-logo" translatesAutoresizingMaskIntoConstraints="NO" id="hyi-UT-78n">
-                                <rect key="frame" x="75" y="20" width="280" height="45"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="280" id="a8L-mW-LHm"/>
-                                    <constraint firstAttribute="height" constant="45" id="ifd-v2-W6Y"/>
-                                </constraints>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="0-csp-app-logo" translatesAutoresizingMaskIntoConstraints="NO" id="FX6-a3-ZxT">
+                                <rect key="frame" x="74" y="20" width="285" height="44"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="xZc-gr-ClJ" firstAttribute="bottom" secondItem="7a3-Ps-wsV" secondAttribute="bottom" id="5Yl-os-HlH"/>
+                            <constraint firstItem="FX6-a3-ZxT" firstAttribute="top" secondItem="gFa-4a-Jvm" secondAttribute="top" id="7Xc-6o-6gw"/>
+                            <constraint firstItem="FX6-a3-ZxT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="74" id="ArP-YH-JUN"/>
                             <constraint firstItem="gFa-4a-Jvm" firstAttribute="top" secondItem="7a3-Ps-wsV" secondAttribute="top" constant="-44" id="Fg2-Gk-xmh"/>
                             <constraint firstAttribute="trailing" secondItem="xZc-gr-ClJ" secondAttribute="trailing" id="JHK-XR-lTP"/>
                             <constraint firstItem="xZc-gr-ClJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="KQ0-wj-VN8"/>
@@ -536,12 +534,12 @@
                             <constraint firstItem="7a3-Ps-wsV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="-260" id="Mim-Rq-DJy"/>
                             <constraint firstItem="JE5-S8-eXK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="P5m-UP-M2v"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="7a3-Ps-wsV" secondAttribute="bottom" id="UNn-la-JXM"/>
-                            <constraint firstItem="hyi-UT-78n" firstAttribute="top" secondItem="gFa-4a-Jvm" secondAttribute="top" id="VOU-bP-2o2"/>
+                            <constraint firstItem="FX6-a3-ZxT" firstAttribute="bottom" secondItem="JE5-S8-eXK" secondAttribute="bottom" id="W0V-zK-ZRE"/>
                             <constraint firstItem="xZc-gr-ClJ" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="YWN-kZ-9k0"/>
+                            <constraint firstItem="FX6-a3-ZxT" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="cWS-De-UfV"/>
                             <constraint firstItem="xZc-gr-ClJ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="44" id="ebh-9G-MJY"/>
                             <constraint firstItem="gFa-4a-Jvm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="jGQ-rQ-OqX"/>
                             <constraint firstItem="JE5-S8-eXK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="s0M-65-os9"/>
-                            <constraint firstItem="hyi-UT-78n" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="75" id="ykH-2m-QNW"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -553,7 +551,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="439.19999999999999" y="85.907046476761622"/>
+            <point key="canvasLocation" x="437.8125" y="85.625"/>
         </scene>
     </scenes>
     <resources>
