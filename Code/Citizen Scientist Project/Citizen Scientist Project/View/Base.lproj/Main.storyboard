@@ -81,7 +81,19 @@
                     <view key="view" contentMode="scaleToFill" id="19H-X7-AJC">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Profile Page" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mNT-Cn-dTA">
+                                <rect key="frame" x="114.5" y="230" width="91.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="mNT-Cn-dTA" firstAttribute="centerX" secondItem="19H-X7-AJC" secondAttribute="centerX" id="2NJ-RE-zXz"/>
+                            <constraint firstItem="mNT-Cn-dTA" firstAttribute="centerY" secondItem="19H-X7-AJC" secondAttribute="centerY" id="lS9-zG-Zo1"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="ypP-rE-Wdm"/>
                     </view>
                     <navigationItem key="navigationItem" id="8YG-Jf-cwH">
@@ -104,7 +116,19 @@
                     <view key="view" contentMode="scaleToFill" id="npd-UJ-15Z">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Geo Hunt Page" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S4F-Dy-cUN">
+                                <rect key="frame" x="102" y="230" width="116" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="S4F-Dy-cUN" firstAttribute="centerX" secondItem="npd-UJ-15Z" secondAttribute="centerX" id="d3n-Vm-9mF"/>
+                            <constraint firstItem="S4F-Dy-cUN" firstAttribute="centerY" secondItem="npd-UJ-15Z" secondAttribute="centerY" id="iC5-Hy-S6c"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="dPj-jg-M03"/>
                     </view>
                     <navigationItem key="navigationItem" id="nMa-f1-hUY">
@@ -127,7 +151,19 @@
                     <view key="view" contentMode="scaleToFill" id="lDF-8G-p1u">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CSP Lab Page" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BNe-kg-AFN">
+                                <rect key="frame" x="106" y="230" width="108.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="BNe-kg-AFN" firstAttribute="centerY" secondItem="lDF-8G-p1u" secondAttribute="centerY" id="16M-79-vFc"/>
+                            <constraint firstItem="BNe-kg-AFN" firstAttribute="centerX" secondItem="lDF-8G-p1u" secondAttribute="centerX" id="D1V-68-O7c"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="7qj-E0-cQV"/>
                     </view>
                     <navigationItem key="navigationItem" id="R1x-LO-Kgw">
@@ -150,7 +186,19 @@
                     <view key="view" contentMode="scaleToFill" id="9yQ-kL-6Yu">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Programs Page" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c0n-34-LDV">
+                                <rect key="frame" x="101.5" y="230" width="117" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="c0n-34-LDV" firstAttribute="centerY" secondItem="9yQ-kL-6Yu" secondAttribute="centerY" id="HQU-lv-L0N"/>
+                            <constraint firstItem="c0n-34-LDV" firstAttribute="centerX" secondItem="9yQ-kL-6Yu" secondAttribute="centerX" id="d62-yK-DxW"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Fmb-l5-KKC"/>
                     </view>
                     <navigationItem key="navigationItem" id="oIh-Dd-vzl">
@@ -173,7 +221,19 @@
                     <view key="view" contentMode="scaleToFill" id="k8F-ZC-saj">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Events Page" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YAH-4e-OM1">
+                                <rect key="frame" x="113" y="230" width="94" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="YAH-4e-OM1" firstAttribute="centerX" secondItem="k8F-ZC-saj" secondAttribute="centerX" id="Dcz-F0-jqa"/>
+                            <constraint firstItem="YAH-4e-OM1" firstAttribute="centerY" secondItem="k8F-ZC-saj" secondAttribute="centerY" id="dlB-eJ-M6V"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="dop-bf-hpN"/>
                     </view>
                     <navigationItem key="navigationItem" id="bfY-NM-hze">
@@ -196,7 +256,19 @@
                     <view key="view" contentMode="scaleToFill" id="w88-p1-YQL">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="News Page" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yw2-Dm-XiJ">
+                                <rect key="frame" x="117.5" y="230" width="85.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="yw2-Dm-XiJ" firstAttribute="centerY" secondItem="w88-p1-YQL" secondAttribute="centerY" id="c8h-ez-1pl"/>
+                            <constraint firstItem="yw2-Dm-XiJ" firstAttribute="centerX" secondItem="w88-p1-YQL" secondAttribute="centerX" id="maG-HX-VSu"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="ss0-A7-MUL"/>
                     </view>
                     <navigationItem key="navigationItem" id="hTe-nw-vee">
@@ -219,7 +291,19 @@
                     <view key="view" contentMode="scaleToFill" id="DKy-j2-5eL">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Resources Page" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hnc-3a-kC6">
+                                <rect key="frame" x="98.5" y="230" width="123.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="hnc-3a-kC6" firstAttribute="centerX" secondItem="DKy-j2-5eL" secondAttribute="centerX" id="CVa-Ca-8cq"/>
+                            <constraint firstItem="hnc-3a-kC6" firstAttribute="centerY" secondItem="DKy-j2-5eL" secondAttribute="centerY" id="r85-GB-12D"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Izn-XC-S2w"/>
                     </view>
                     <navigationItem key="navigationItem" id="1JZ-3b-0AM">
