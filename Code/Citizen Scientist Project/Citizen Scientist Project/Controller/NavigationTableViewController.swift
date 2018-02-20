@@ -50,25 +50,23 @@ class NavigationTableViewController: UITableViewController{
     }
     
     private func loadNavigationItems() {
-        let photo1 = UIImage(named: "back")
-        let photo2 = UIImage(named: "home")
-        let photo3 = UIImage(named: "profile")
-        let photo4 = UIImage(named: "geohunt")
-        let photo5 = UIImage(named: "csplab")
-        let photo6 = UIImage(named: "programs")
-        let photo7 = UIImage(named: "events")
-        let photo8 = UIImage(named: "news")
-        let photo9 = UIImage(named: "resources")
+        let photo1 = UIImage(named: "home")
+        let photo2 = UIImage(named: "profile")
+        let photo3 = UIImage(named: "geohunt")
+        let photo4 = UIImage(named: "csplab")
+        let photo5 = UIImage(named: "programs")
+        let photo6 = UIImage(named: "events")
+        let photo7 = UIImage(named: "news")
+        let photo8 = UIImage(named: "resources")
         
-        let name1 = "Close"
-        let name2 = "Home"
-        let name3 = "Profile"
-        let name4 = "Geo Hunt"
-        let name5 = "CSP Lab"
-        let name6 = "Programs"
-        let name7 = "Events"
-        let name8 = "News"
-        let name9 = "Resources"
+        let name1 = "Home"
+        let name2 = "Profile"
+        let name3 = "Geo Hunt"
+        let name4 = "CSP Lab"
+        let name5 = "Programs"
+        let name6 = "Events"
+        let name7 = "News"
+        let name8 = "Resources"
         
         navItem.append((image: photo1! , name: name1))
         navItem.append((image: photo2! , name: name2))
@@ -78,7 +76,6 @@ class NavigationTableViewController: UITableViewController{
         navItem.append((image: photo6! , name: name6))
         navItem.append((image: photo7! , name: name7))
         navItem.append((image: photo8! , name: name8))
-        navItem.append((image: photo9! , name: name9))
         
     }
     
@@ -90,20 +87,18 @@ class NavigationTableViewController: UITableViewController{
         case 0:
             segueIdentifier = "segueToHome"
         case 1:
-            segueIdentifier = "segueToHome"
-        case 2:
             segueIdentifier = "segueToProfile"
-        case 3:
+        case 2:
             segueIdentifier = "segueToGeoHunt"
-        case 4:
+        case 3:
             segueIdentifier = "segueToCSPLab"
-        case 5:
+        case 4:
             segueIdentifier = "segueToPrograms"
-        case 6:
+        case 5:
             segueIdentifier = "segueToNews"
-        case 7:
+        case 6:
             segueIdentifier = "segueToEvents"
-        case 8:
+        case 7:
             segueIdentifier = "segueToResoures"
         default:
             segueIdentifier = "segueToHome"

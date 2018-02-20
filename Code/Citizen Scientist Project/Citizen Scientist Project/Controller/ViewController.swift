@@ -34,6 +34,12 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         // Do any additional setup after loading the view, typically from a nib.
         collectionView.dataSource = self
         collectionView.delegate = self
+        
+        self.navigationController?.navigationBar.barStyle = UIBarStyle.blackTranslucent
+        
+        self.navigationController?.navigationBar.barTintColor  = UIColor(red:0.08, green:0.09, blue:0.15, alpha:1.0)
+        
+        self.navigationController?.navigationBar.tintColor = UIColor(red:0.60, green:0.66, blue:0.70, alpha:1.0)
     }
     
     // MARK: - UICollectionViewDataSource
@@ -131,39 +137,6 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         sectionFooterView.icon = icon
         
         return sectionFooterView
-    }
-    
-    var menuShowing = false
-    
-    
-    @IBOutlet weak var leadingConstraint: NSLayoutConstraint!
-    
-    @IBAction func openMenu(_ sender: Any) {
-        
-        if menuShowing{
-            leadingConstraint.constant = -260
-        } else {
-            leadingConstraint.constant = 0
-            
-            UIView.animate(withDuration: 0.3, animations: { self.view.layoutIfNeeded()})
-        }
-        
-        menuShowing = !menuShowing
-    }
-    
-    
-    @IBAction func backButton(_ sender: Any) {
-        
-        if menuShowing{
-            leadingConstraint.constant = -260
-        } else {
-            leadingConstraint.constant = 0
-            
-            UIView.animate(withDuration: 0.3, animations: { self.view.layoutIfNeeded()})
-        }
-        
-        menuShowing = !menuShowing
-        
     }
     
 }
