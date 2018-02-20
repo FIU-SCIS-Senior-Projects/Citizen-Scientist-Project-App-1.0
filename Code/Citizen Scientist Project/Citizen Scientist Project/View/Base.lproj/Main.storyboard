@@ -67,12 +67,12 @@
                         <segue destination="fUH-V3-26i" kind="show" identifier="segueToPrograms" id="6Q6-B9-pAA"/>
                         <segue destination="TpT-8q-rF1" kind="show" identifier="segueToEvents" id="ADW-B8-kMJ"/>
                         <segue destination="Bl3-Ls-afj" kind="show" identifier="segueToNews" id="QOI-bo-hKZ"/>
-                        <segue destination="0yF-bI-HM2" kind="show" identifier="segueToResources" id="s0e-DH-Drl"/>
+                        <segue destination="0yF-bI-HM2" kind="show" identifier="segueToResoures" id="s0e-DH-Drl"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LV7-D6-Q74" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="303.75" y="-2491.25"/>
+            <point key="canvasLocation" x="701" y="-3339"/>
         </scene>
         <!--Profile View Controller-->
         <scene sceneID="1as-4o-o2w">
@@ -577,6 +577,7 @@
         <image name="youtube-footer-icon" width="64" height="64"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="jW7-cl-Oxb"/>
+        <segue reference="s0e-DH-Drl"/>
+        <segue reference="Ozd-di-PS3"/>
     </inferredMetricsTieBreakers>
 </document>
