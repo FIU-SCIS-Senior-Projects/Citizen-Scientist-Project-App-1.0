@@ -20,17 +20,17 @@
         <scene sceneID="lZF-B5-je6">
             <objects>
                 <tableViewController id="OYm-TY-SzU" customClass="NavigationTableViewController" customModule="Citizen_Scientist_Project" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="50" sectionFooterHeight="28" id="zjp-Mz-DBi">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="70" sectionFooterHeight="28" id="zjp-Mz-DBi">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.18823529411764706" green="0.19607843137254902" blue="0.25098039215686274" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="sectionIndexBackgroundColor" red="0.18823529411764706" green="0.19607843137254902" blue="0.25098039215686274" alpha="1" colorSpace="calibratedRGB"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="NavigationTableViewCell" rowHeight="50" id="DoP-dB-lm9" customClass="NavigationTableViewCell" customModule="Citizen_Scientist_Project" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="50" width="320" height="50"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="NavigationTableViewCell" rowHeight="70" id="DoP-dB-lm9" customClass="NavigationTableViewCell" customModule="Citizen_Scientist_Project" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="70" width="320" height="70"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="DoP-dB-lm9" id="FkZ-ea-CP6">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="49.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="69.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nXV-i7-XdM">
@@ -97,7 +97,7 @@
                         <viewLayoutGuide key="safeArea" id="ypP-rE-Wdm"/>
                     </view>
                     <navigationItem key="navigationItem" id="8YG-Jf-cwH">
-                        <barButtonItem key="leftBarButtonItem" title="Item" image="1-header-nav-1" id="pFL-LY-iqg">
+                        <barButtonItem key="leftBarButtonItem" image="1-header-nav-1" id="pFL-LY-iqg">
                             <color key="tintColor" red="0.60392156860000001" green="0.6588235294" blue="0.69803921570000005" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <segue destination="OYm-TY-SzU" kind="show" identifier="segueToTable" id="ECI-Jr-g0F"/>
@@ -132,7 +132,7 @@
                         <viewLayoutGuide key="safeArea" id="dPj-jg-M03"/>
                     </view>
                     <navigationItem key="navigationItem" id="nMa-f1-hUY">
-                        <barButtonItem key="leftBarButtonItem" title="Item" image="1-header-nav-1" id="4Ia-bQ-0Qz">
+                        <barButtonItem key="leftBarButtonItem" image="1-header-nav-1" id="4Ia-bQ-0Qz">
                             <color key="tintColor" red="0.60392156860000001" green="0.6588235294" blue="0.69803921570000005" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <segue destination="OYm-TY-SzU" kind="show" identifier="segueToTable" id="dRt-0C-aNN"/>
@@ -167,7 +167,7 @@
                         <viewLayoutGuide key="safeArea" id="7qj-E0-cQV"/>
                     </view>
                     <navigationItem key="navigationItem" id="R1x-LO-Kgw">
-                        <barButtonItem key="leftBarButtonItem" title="Item" image="1-header-nav-1" id="dUd-jW-LWG">
+                        <barButtonItem key="leftBarButtonItem" image="1-header-nav-1" id="dUd-jW-LWG">
                             <color key="tintColor" red="0.60392156860000001" green="0.6588235294" blue="0.69803921570000005" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <segue destination="OYm-TY-SzU" kind="show" identifier="segueToTable" id="tAg-td-jQb"/>
@@ -202,7 +202,7 @@
                         <viewLayoutGuide key="safeArea" id="Fmb-l5-KKC"/>
                     </view>
                     <navigationItem key="navigationItem" id="oIh-Dd-vzl">
-                        <barButtonItem key="leftBarButtonItem" title="Item" image="1-header-nav-1" id="h1a-oR-ljb">
+                        <barButtonItem key="leftBarButtonItem" image="1-header-nav-1" id="h1a-oR-ljb">
                             <color key="tintColor" red="0.60392156860000001" green="0.6588235294" blue="0.69803921570000005" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <segue destination="OYm-TY-SzU" kind="show" identifier="segueToTable" id="aJM-qU-ycM"/>
@@ -237,7 +237,7 @@
                         <viewLayoutGuide key="safeArea" id="dop-bf-hpN"/>
                     </view>
                     <navigationItem key="navigationItem" id="bfY-NM-hze">
-                        <barButtonItem key="leftBarButtonItem" title="Item" image="1-header-nav-1" id="qSq-Ta-Orw">
+                        <barButtonItem key="leftBarButtonItem" image="1-header-nav-1" id="qSq-Ta-Orw">
                             <color key="tintColor" red="0.60392156860000001" green="0.6588235294" blue="0.69803921570000005" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <segue destination="OYm-TY-SzU" kind="show" identifier="segueToTable" id="zgb-V5-2Nl"/>
@@ -272,7 +272,7 @@
                         <viewLayoutGuide key="safeArea" id="ss0-A7-MUL"/>
                     </view>
                     <navigationItem key="navigationItem" id="hTe-nw-vee">
-                        <barButtonItem key="leftBarButtonItem" title="Item" image="1-header-nav-1" id="3n3-oW-0Ms">
+                        <barButtonItem key="leftBarButtonItem" image="1-header-nav-1" id="3n3-oW-0Ms">
                             <color key="tintColor" red="0.60392156860000001" green="0.6588235294" blue="0.69803921570000005" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <segue destination="OYm-TY-SzU" kind="show" identifier="segueToTable" id="JEv-A5-Cw7"/>
@@ -307,7 +307,7 @@
                         <viewLayoutGuide key="safeArea" id="Izn-XC-S2w"/>
                     </view>
                     <navigationItem key="navigationItem" id="1JZ-3b-0AM">
-                        <barButtonItem key="leftBarButtonItem" title="Item" image="1-header-nav-1" id="0Hk-zg-laY">
+                        <barButtonItem key="leftBarButtonItem" image="1-header-nav-1" id="0Hk-zg-laY">
                             <color key="tintColor" red="0.60392156860000001" green="0.6588235294" blue="0.69803921570000005" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <segue destination="OYm-TY-SzU" kind="show" identifier="segueToTable" id="Ozd-di-PS3"/>
@@ -661,7 +661,7 @@
         <image name="youtube-footer-icon" width="64" height="64"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="s0e-DH-Drl"/>
-        <segue reference="Ozd-di-PS3"/>
+        <segue reference="cK9-q5-tqV"/>
+        <segue reference="ECI-Jr-g0F"/>
     </inferredMetricsTieBreakers>
 </document>

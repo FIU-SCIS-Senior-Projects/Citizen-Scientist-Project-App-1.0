@@ -9,17 +9,25 @@
 import UIKit
 
 class NavigationTableViewController: UITableViewController{
-    
     let cellIdentifier = "NavigationTableViewCell"
     var navItem:[(image: UIImage, name: String)] = []
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         tableView.layoutMargins = UIEdgeInsets.zero
         tableView.separatorInset = UIEdgeInsets.zero
         loadNavigationItems()
-        
+        navigationBarImage()
     }
+    
+    func navigationBarImage() {
+        let image : UIImage = UIImage(named: "0-csp-app-logo.png")!
+        let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 70, height: 50))
+        imageView.contentMode = .scaleAspectFit
+        imageView.image = image
+        self.navigationItem.titleView = imageView    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -34,9 +42,8 @@ class NavigationTableViewController: UITableViewController{
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
         guard let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as? NavigationTableViewCell  else {
-            fatalError("The dequeued cell is not an instance of MealTableViewCell.")
+            fatalError("The dequeued cell is not an instance of NavigationTableViewCell.")
         }
         
         let item = navItem[indexPath.row]
@@ -47,6 +54,32 @@ class NavigationTableViewController: UITableViewController{
         cell.pageIconImage.image = item.image
         
         return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        _ = navItem[indexPath.row]
+        let segueIdentifier: String
+        switch indexPath.row {
+        case 0:
+            segueIdentifier = "segueToHome"
+        case 1:
+            segueIdentifier = "segueToProfile"
+        case 2:
+            segueIdentifier = "segueToGeoHunt"
+        case 3:
+            segueIdentifier = "segueToCSPLab"
+        case 4:
+            segueIdentifier = "segueToPrograms"
+        case 5:
+            segueIdentifier = "segueToNews"
+        case 6:
+            segueIdentifier = "segueToEvents"
+        case 7:
+            segueIdentifier = "segueToResoures"
+        default:
+            segueIdentifier = "segueToHome"
+        }
+        self.performSegue(withIdentifier: segueIdentifier, sender: self)
     }
     
     private func loadNavigationItems() {
@@ -76,36 +109,8 @@ class NavigationTableViewController: UITableViewController{
         navItem.append((image: photo6! , name: name6))
         navItem.append((image: photo7! , name: name7))
         navItem.append((image: photo8! , name: name8))
-        
     }
     
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("Row \(String(describing: indexPath)) Selected")
-        
-        let segueIdentifier: String
-        switch indexPath.row {
-        case 0:
-            segueIdentifier = "segueToHome"
-        case 1:
-            segueIdentifier = "segueToProfile"
-        case 2:
-            segueIdentifier = "segueToGeoHunt"
-        case 3:
-            segueIdentifier = "segueToCSPLab"
-        case 4:
-            segueIdentifier = "segueToPrograms"
-        case 5:
-            segueIdentifier = "segueToNews"
-        case 6:
-            segueIdentifier = "segueToEvents"
-        case 7:
-            segueIdentifier = "segueToResoures"
-        default:
-            segueIdentifier = "segueToHome"
-        }
-        self.performSegue(withIdentifier: segueIdentifier, sender: self)
-        
-    }
 
     /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

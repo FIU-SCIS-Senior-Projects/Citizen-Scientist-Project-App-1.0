@@ -27,6 +27,7 @@ class GeoHuntViewController: UIViewController {
         imageView.image = image
         self.navigationItem.titleView = imageView
     }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
