@@ -27,7 +27,8 @@ class NavigationTableViewController: UITableViewController{
         let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 70, height: 50))
         imageView.contentMode = .scaleAspectFit
         imageView.image = image
-        self.navigationItem.titleView = imageView    }
+        self.navigationItem.titleView = imageView
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
