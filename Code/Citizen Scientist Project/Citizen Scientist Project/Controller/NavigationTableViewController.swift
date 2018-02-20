@@ -72,9 +72,9 @@ class NavigationTableViewController: UITableViewController{
         case 4:
             segueIdentifier = "segueToPrograms"
         case 5:
-            segueIdentifier = "segueToNews"
-        case 6:
             segueIdentifier = "segueToEvents"
+        case 6:
+            segueIdentifier = "segueToNews"
         case 7:
             segueIdentifier = "segueToResoures"
         default:
