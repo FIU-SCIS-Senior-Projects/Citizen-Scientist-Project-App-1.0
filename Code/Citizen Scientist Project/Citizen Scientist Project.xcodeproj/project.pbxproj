@@ -21,6 +21,15 @@
 		229E615B2022A79200D4BDDA /* Citizen_Scientist_ProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229E615A2022A79200D4BDDA /* Citizen_Scientist_ProjectTests.swift */; };
 		229E61662022A79200D4BDDA /* Citizen_Scientist_ProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229E61652022A79200D4BDDA /* Citizen_Scientist_ProjectUITests.swift */; };
 		22F78C8F202D0F900001049D /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F78C8E202D0F900001049D /* CollectionViewCell.swift */; };
+		6D0DCF2E203B5AC3000F5D62 /* NavigationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0DCF2D203B5AC3000F5D62 /* NavigationTableViewCell.swift */; };
+		6D0DCF30203B6382000F5D62 /* NavigationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0DCF2F203B6382000F5D62 /* NavigationTableViewController.swift */; };
+		6D37E600203C869D00FF4BBA /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D37E5FF203C869D00FF4BBA /* ProfileViewController.swift */; };
+		6D37E602203C884B00FF4BBA /* GeoHuntViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D37E601203C884B00FF4BBA /* GeoHuntViewController.swift */; };
+		6D37E604203C88A300FF4BBA /* CSPLabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D37E603203C88A300FF4BBA /* CSPLabViewController.swift */; };
+		6D37E606203C88E700FF4BBA /* ProgramsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D37E605203C88E700FF4BBA /* ProgramsViewController.swift */; };
+		6D37E608203C893A00FF4BBA /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D37E607203C893A00FF4BBA /* EventsViewController.swift */; };
+		6D37E60A203C897100FF4BBA /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D37E609203C897100FF4BBA /* NewsViewController.swift */; };
+		6D37E60C203C898100FF4BBA /* ResourcesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D37E60B203C898100FF4BBA /* ResourcesViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +70,15 @@
 		229E61652022A79200D4BDDA /* Citizen_Scientist_ProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Citizen_Scientist_ProjectUITests.swift; sourceTree = "<group>"; };
 		229E61672022A79200D4BDDA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		22F78C8E202D0F900001049D /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		6D0DCF2D203B5AC3000F5D62 /* NavigationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationTableViewCell.swift; sourceTree = "<group>"; };
+		6D0DCF2F203B6382000F5D62 /* NavigationTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NavigationTableViewController.swift; path = "Citizen Scientist Project/Controller/NavigationTableViewController.swift"; sourceTree = SOURCE_ROOT; };
+		6D37E5FF203C869D00FF4BBA /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ProfileViewController.swift; path = "Citizen Scientist Project/Controller/ProfileViewController.swift"; sourceTree = SOURCE_ROOT; };
+		6D37E601203C884B00FF4BBA /* GeoHuntViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GeoHuntViewController.swift; path = "Citizen Scientist Project/Controller/GeoHuntViewController.swift"; sourceTree = SOURCE_ROOT; };
+		6D37E603203C88A300FF4BBA /* CSPLabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CSPLabViewController.swift; path = "Citizen Scientist Project/Controller/CSPLabViewController.swift"; sourceTree = SOURCE_ROOT; };
+		6D37E605203C88E700FF4BBA /* ProgramsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ProgramsViewController.swift; path = "Citizen Scientist Project/Controller/ProgramsViewController.swift"; sourceTree = SOURCE_ROOT; };
+		6D37E607203C893A00FF4BBA /* EventsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsViewController.swift; sourceTree = "<group>"; };
+		6D37E609203C897100FF4BBA /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
+		6D37E60B203C898100FF4BBA /* ResourcesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourcesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,9 +181,10 @@
 		22F78C91202D153D0001049D /* View */ = {
 			isa = PBXGroup;
 			children = (
+				229E61462022A79200D4BDDA /* Main.storyboard */,
 				22F78C8E202D0F900001049D /* CollectionViewCell.swift */,
 				22594971202D969F0047E055 /* SectionFooterView.swift */,
-				229E61462022A79200D4BDDA /* Main.storyboard */,
+				6D0DCF2D203B5AC3000F5D62 /* NavigationTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -173,7 +192,15 @@
 		22F78C92202D15430001049D /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				6D0DCF2F203B6382000F5D62 /* NavigationTableViewController.swift */,
 				229E61442022A79200D4BDDA /* ViewController.swift */,
+				6D37E5FF203C869D00FF4BBA /* ProfileViewController.swift */,
+				6D37E601203C884B00FF4BBA /* GeoHuntViewController.swift */,
+				6D37E603203C88A300FF4BBA /* CSPLabViewController.swift */,
+				6D37E605203C88E700FF4BBA /* ProgramsViewController.swift */,
+				6D37E607203C893A00FF4BBA /* EventsViewController.swift */,
+				6D37E609203C897100FF4BBA /* NewsViewController.swift */,
+				6D37E60B203C898100FF4BBA /* ResourcesViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -313,14 +340,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				22594976202DA6EC0047E055 /* CollectionViewCellContent.swift in Sources */,
+				6D37E604203C88A300FF4BBA /* CSPLabViewController.swift in Sources */,
+				6D37E606203C88E700FF4BBA /* ProgramsViewController.swift in Sources */,
+				6D0DCF30203B6382000F5D62 /* NavigationTableViewController.swift in Sources */,
 				229E61452022A79200D4BDDA /* ViewController.swift in Sources */,
 				2259497B202DCCEC0047E055 /* SectionFooter.swift in Sources */,
+				6D37E60C203C898100FF4BBA /* ResourcesViewController.swift in Sources */,
 				22891A3D202DEBE7000FEBB4 /* SocialNetwork.swift in Sources */,
 				229E61432022A79200D4BDDA /* AppDelegate.swift in Sources */,
+				6D37E600203C869D00FF4BBA /* ProfileViewController.swift in Sources */,
+				6D37E608203C893A00FF4BBA /* EventsViewController.swift in Sources */,
 				22F78C8F202D0F900001049D /* CollectionViewCell.swift in Sources */,
 				229E614B2022A79200D4BDDA /* Citizen_Scientist_Project.xcdatamodeld in Sources */,
+				6D37E60A203C897100FF4BBA /* NewsViewController.swift in Sources */,
 				22594978202DAA0C0047E055 /* CollectionViewContentManager.swift in Sources */,
 				22594972202D969F0047E055 /* SectionFooterView.swift in Sources */,
+				6D0DCF2E203B5AC3000F5D62 /* NavigationTableViewCell.swift in Sources */,
+				6D37E602203C884B00FF4BBA /* GeoHuntViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -486,12 +522,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = R89DGE8VGB;
 				INFOPLIST_FILE = "Citizen Scientist Project/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Key.Biscayne.Citizen-Scientist-Project";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -501,12 +539,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = R89DGE8VGB;
 				INFOPLIST_FILE = "Citizen Scientist Project/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Key.Biscayne.Citizen-Scientist-Project";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

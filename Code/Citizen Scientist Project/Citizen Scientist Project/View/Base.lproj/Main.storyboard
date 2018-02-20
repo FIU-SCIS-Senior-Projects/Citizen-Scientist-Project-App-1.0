@@ -16,149 +16,168 @@
         </array>
     </customFonts>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="JxL-RA-3Yt">
+        <!--Navigation Table View Controller-->
+        <scene sceneID="lZF-B5-je6">
             <objects>
-                <viewController id="FZc-NT-lsl" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="aal-pY-SZR">
+                <tableViewController id="OYm-TY-SzU" customClass="NavigationTableViewController" customModule="Citizen_Scientist_Project" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="50" sectionFooterHeight="28" id="zjp-Mz-DBi">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Profile Page" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XgO-9s-XVx">
-                                <rect key="frame" x="98" y="323" width="153" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="9K3-2p-R2Q"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="MSE-XE-tgg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                        <color key="backgroundColor" red="0.18823529411764706" green="0.19607843137254902" blue="0.25098039215686274" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="sectionIndexBackgroundColor" red="0.18823529411764706" green="0.19607843137254902" blue="0.25098039215686274" alpha="1" colorSpace="calibratedRGB"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="NavigationTableViewCell" rowHeight="50" id="DoP-dB-lm9" customClass="NavigationTableViewCell" customModule="Citizen_Scientist_Project" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="50" width="320" height="50"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="DoP-dB-lm9" id="FkZ-ea-CP6">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="49.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nXV-i7-XdM">
+                                            <rect key="frame" x="16" y="4" width="35" height="35"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rdz-0A-Ues">
+                                            <rect key="frame" x="59" y="9" width="261" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                            <color key="textColor" red="0.60392156862745094" green="0.6588235294117647" blue="0.69803921568627447" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" red="0.18823529411764706" green="0.19607843137254902" blue="0.25098039215686274" alpha="1" colorSpace="calibratedRGB"/>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" red="0.18823529411764706" green="0.19607843137254902" blue="0.25098039215686274" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <outlet property="pageIconImage" destination="nXV-i7-XdM" id="E91-BV-xYb"/>
+                                    <outlet property="pageNameLabel" destination="Rdz-0A-Ues" id="USf-xC-UKe"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="OYm-TY-SzU" id="z3m-gs-qT2"/>
+                            <outlet property="delegate" destination="OYm-TY-SzU" id="gDj-2s-5hV"/>
+                        </connections>
+                    </tableView>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="segueToHome" id="6h3-OW-xOR"/>
+                        <segue destination="ePw-MV-OSx" kind="show" identifier="segueToProfile" id="cK9-q5-tqV"/>
+                        <segue destination="Nhh-Xc-pD7" kind="show" identifier="segueToGeoHunt" id="TJo-FV-Wn8"/>
+                        <segue destination="qxP-cp-mYi" kind="show" identifier="segueToCSPLab" id="YSk-eb-9vV"/>
+                        <segue destination="Wz4-5j-wgX" kind="show" identifier="segueToPrograms" id="6Q6-B9-pAA"/>
+                        <segue destination="n0T-bo-uMI" kind="show" identifier="segueToEvents" id="ADW-B8-kMJ"/>
+                        <segue destination="Q5q-PP-8PV" kind="show" identifier="segueToNews" id="QOI-bo-hKZ"/>
+                        <segue destination="qpR-v5-FIX" kind="show" identifier="segueToResources" id="s0e-DH-Drl"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LV7-D6-Q74" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1284" y="893"/>
+            <point key="canvasLocation" x="303.75" y="-2491.25"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="l6B-xe-fK6">
+        <!--Profile View Controller-->
+        <scene sceneID="1as-4o-o2w">
             <objects>
-                <viewController id="qp0-Ku-TYu" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="a4i-fr-aQm">
+                <viewController id="ePw-MV-OSx" customClass="ProfileViewController" customModule="Citizen_Scientist_Project" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="19H-X7-AJC">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Geo Hunt Page" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="54t-vb-C3r">
-                                <rect key="frame" x="111" y="323" width="153" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="tBP-LP-SJP"/>
+                        <viewLayoutGuide key="safeArea" id="ypP-rE-Wdm"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="AcN-KF-jTa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="s6H-fx-AeR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-529" y="893"/>
+            <point key="canvasLocation" x="-459.375" y="-1285"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="ufL-HJ-Z9P">
+        <!--Geo Hunt View Controller-->
+        <scene sceneID="6uy-Nb-Gfx">
             <objects>
-                <viewController id="XR3-AA-uXf" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="ZbY-62-uAh">
+                <viewController id="Nhh-Xc-pD7" customClass="GeoHuntViewController" customModule="Citizen_Scientist_Project" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="npd-UJ-15Z">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="CSP Lab Page" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HtJ-Sb-Nz5">
-                                <rect key="frame" x="111" y="323" width="153" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="yvb-dV-O6U"/>
+                        <viewLayoutGuide key="safeArea" id="dPj-jg-M03"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="aTg-2k-luc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pxM-ul-s89" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="215" y="893"/>
+            <point key="canvasLocation" x="304" y="-1286"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="Myd-mg-S7Q">
+        <!--Lab View Controller-->
+        <scene sceneID="nSH-MN-qDz">
             <objects>
-                <viewController id="qvy-N6-Twn" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="DLW-x1-IbO">
+                <viewController id="qxP-cp-mYi" customClass="CSPLabViewController" customModule="Citizen_Scientist_Project" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lDF-8G-p1u">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Programs Page" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8zM-Wv-fHe">
-                                <rect key="frame" x="111" y="323" width="153" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="Aed-bo-H4j"/>
+                        <viewLayoutGuide key="safeArea" id="7qj-E0-cQV"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="7JP-z6-iax" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xcg-ae-w9i" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="922" y="885"/>
+            <point key="canvasLocation" x="1011" y="-1285"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="DXG-Tx-Lo9">
+        <!--Programs View Controller-->
+        <scene sceneID="sZ4-dK-d4a">
             <objects>
-                <viewController id="HfM-Eh-odY" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="tTM-iZ-Y9F">
+                <viewController id="Wz4-5j-wgX" customClass="ProgramsViewController" customModule="Citizen_Scientist_Project" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9yQ-kL-6Yu">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Events Page" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iWm-37-t91">
-                                <rect key="frame" x="111" y="323" width="153" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="hcE-ZG-uO8"/>
+                        <viewLayoutGuide key="safeArea" id="Fmb-l5-KKC"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="O13-pf-xq0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="U5k-Si-uq7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1617" y="885"/>
+            <point key="canvasLocation" x="1719" y="-1285"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="XAl-Tg-iJz">
+        <!--Events View Controller-->
+        <scene sceneID="DC7-fe-0il">
             <objects>
-                <viewController id="rOx-j6-Cmc" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="6rB-hJ-sv2">
+                <viewController id="n0T-bo-uMI" customClass="EventsViewController" customModule="Citizen_Scientist_Project" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="k8F-ZC-saj">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="News Page" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o17-nF-ZJD">
-                                <rect key="frame" x="111" y="323" width="153" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="mUL-eF-g0J"/>
+                        <viewLayoutGuide key="safeArea" id="dop-bf-hpN"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="T8b-V0-n4M" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wpb-eA-mL7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2436" y="885"/>
+            <point key="canvasLocation" x="2376" y="-1284"/>
+        </scene>
+        <!--News View Controller-->
+        <scene sceneID="RMW-Ps-OQy">
+            <objects>
+                <viewController id="Q5q-PP-8PV" customClass="NewsViewController" customModule="Citizen_Scientist_Project" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="w88-p1-YQL">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="ss0-A7-MUL"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oMC-1e-hoS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3143" y="-1285"/>
+        </scene>
+        <!--Resources View Controller-->
+        <scene sceneID="Dnm-ZH-no8">
+            <objects>
+                <viewController id="qpR-v5-FIX" customClass="ResourcesViewController" customModule="Citizen_Scientist_Project" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DKy-j2-5eL">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Izn-XC-S2w"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CA3-MV-TUF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3889" y="-1285"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -350,9 +369,6 @@
                                         <state key="normal" title="PROFILE">
                                             <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
-                                        <connections>
-                                            <segue destination="FZc-NT-lsl" kind="show" id="VGr-yc-cga"/>
-                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J6g-fO-0FD">
                                         <rect key="frame" x="46" y="311" width="161" height="30"/>
@@ -361,9 +377,6 @@
                                         <state key="normal" title="PROGRAMS">
                                             <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
-                                        <connections>
-                                            <segue destination="qvy-N6-Twn" kind="show" id="uKl-Vq-9Sb"/>
-                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="08B-j1-EFc">
                                         <rect key="frame" x="59" y="358" width="86" height="30"/>
@@ -372,9 +385,6 @@
                                         <state key="normal" title="EVENTS">
                                             <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
-                                        <connections>
-                                            <segue destination="HfM-Eh-odY" kind="show" id="Ba5-M7-zy4"/>
-                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Mo-bu-qRx">
                                         <rect key="frame" x="59" y="258" width="104" height="30"/>
@@ -383,9 +393,6 @@
                                         <state key="normal" title="CSP LAB">
                                             <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
-                                        <connections>
-                                            <segue destination="XR3-AA-uXf" kind="show" id="Q2f-8i-MVF"/>
-                                        </connections>
                                     </button>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="left-arrow" translatesAutoresizingMaskIntoConstraints="NO" id="3on-p7-s2G">
                                         <rect key="frame" x="18" y="33" width="25" height="25"/>
@@ -434,9 +441,6 @@
                                         <state key="normal" title="NEWS">
                                             <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
-                                        <connections>
-                                            <segue destination="rOx-j6-Cmc" kind="show" id="dzU-zQ-Umd"/>
-                                        </connections>
                                     </button>
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uIq-IJ-jq8">
                                         <rect key="frame" x="0.0" y="73" width="220" height="2"/>
@@ -485,9 +489,6 @@
                                         <state key="normal" title="GEO HUNT">
                                             <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
-                                        <connections>
-                                            <segue destination="qp0-Ku-TYu" kind="show" id="wJe-6D-jDX"/>
-                                        </connections>
                                     </button>
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="R2Q-bt-P2f">
                                         <rect key="frame" x="218" y="0.0" width="2" height="611"/>
@@ -516,7 +517,7 @@
                                 </constraints>
                                 <state key="normal" image="1-header-nav-1"/>
                                 <connections>
-                                    <action selector="openMenu:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tTK-dq-bbR"/>
+                                    <segue destination="OYm-TY-SzU" kind="show" identifier="" id="hzS-h0-Vr8"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="0-csp-app-logo" translatesAutoresizingMaskIntoConstraints="NO" id="FX6-a3-ZxT">
@@ -552,7 +553,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="445" y="-159"/>
+            <point key="canvasLocation" x="-1576" y="-1403"/>
         </scene>
     </scenes>
     <resources>
@@ -563,7 +564,7 @@
         <image name="calendar" width="64" height="64"/>
         <image name="facebook-footer-icon" width="64" height="64"/>
         <image name="google-footer-icon" width="64" height="64"/>
-        <image name="home" width="64" height="64"/>
+        <image name="home" width="120" height="120"/>
         <image name="instagram-footer-icon" width="64" height="64"/>
         <image name="leaf" width="64" height="64"/>
         <image name="left-arrow" width="32" height="32"/>
