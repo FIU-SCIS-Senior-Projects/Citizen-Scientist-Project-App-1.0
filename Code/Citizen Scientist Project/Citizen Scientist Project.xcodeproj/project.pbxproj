@@ -21,23 +21,27 @@
 		229E615B2022A79200D4BDDA /* Citizen_Scientist_ProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229E615A2022A79200D4BDDA /* Citizen_Scientist_ProjectTests.swift */; };
 		229E61662022A79200D4BDDA /* Citizen_Scientist_ProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229E61652022A79200D4BDDA /* Citizen_Scientist_ProjectUITests.swift */; };
 		22F78C8F202D0F900001049D /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F78C8E202D0F900001049D /* CollectionViewCell.swift */; };
+		6D021BFE203E2A0C003E35D5 /* LearnViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D021BFD203E2A0C003E35D5 /* LearnViewController.swift */; };
+		6D021C00203E2A36003E35D5 /* ExploreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D021BFF203E2A36003E35D5 /* ExploreViewController.swift */; };
+		6D021C02203E2A47003E35D5 /* RecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D021C01203E2A47003E35D5 /* RecordViewController.swift */; };
+		6D021C04203E2A52003E35D5 /* ReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D021C03203E2A52003E35D5 /* ReviewViewController.swift */; };
+		6D021C06203E2E1D003E35D5 /* KeyChallengeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D021C05203E2E1D003E35D5 /* KeyChallengeViewController.swift */; };
+		6D021C08203E2E2F003E35D5 /* SeaLevelRiseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D021C07203E2E2F003E35D5 /* SeaLevelRiseViewController.swift */; };
+		6D021C0A203E2E3F003E35D5 /* WaterWatchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D021C09203E2E3F003E35D5 /* WaterWatchViewController.swift */; };
+		6D021C0C203E2E52003E35D5 /* ReefRestorationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D021C0B203E2E52003E35D5 /* ReefRestorationViewController.swift */; };
+		6D021C0E203E2E63003E35D5 /* LectureSeriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D021C0D203E2E63003E35D5 /* LectureSeriesViewController.swift */; };
+		6D021C10203E2E72003E35D5 /* FieldActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D021C0F203E2E72003E35D5 /* FieldActivityViewController.swift */; };
+		6D021C12203E3117003E35D5 /* AboutUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D021C11203E3117003E35D5 /* AboutUsViewController.swift */; };
+		6D021C14203E3126003E35D5 /* OurBiomesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D021C13203E3126003E35D5 /* OurBiomesViewController.swift */; };
+		6D021C16203E3133003E35D5 /* NewslettersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D021C15203E3133003E35D5 /* NewslettersViewController.swift */; };
+		6D021C18203E3142003E35D5 /* OurPartnersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D021C17203E3142003E35D5 /* OurPartnersViewController.swift */; };
+		6D021C1A203E314E003E35D5 /* ContactUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D021C19203E314E003E35D5 /* ContactUsViewController.swift */; };
 		6D0DCF2E203B5AC3000F5D62 /* NavigationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0DCF2D203B5AC3000F5D62 /* NavigationTableViewCell.swift */; };
 		6D0DCF30203B6382000F5D62 /* NavigationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0DCF2F203B6382000F5D62 /* NavigationTableViewController.swift */; };
 		6D37E600203C869D00FF4BBA /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D37E5FF203C869D00FF4BBA /* ProfileViewController.swift */; };
 		6D37E602203C884B00FF4BBA /* GeoHuntViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D37E601203C884B00FF4BBA /* GeoHuntViewController.swift */; };
-		6D37E604203C88A300FF4BBA /* CSPLabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D37E603203C88A300FF4BBA /* CSPLabViewController.swift */; };
-		6D37E606203C88E700FF4BBA /* ProgramsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D37E605203C88E700FF4BBA /* ProgramsViewController.swift */; };
 		6D37E608203C893A00FF4BBA /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D37E607203C893A00FF4BBA /* EventsViewController.swift */; };
 		6D37E60A203C897100FF4BBA /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D37E609203C897100FF4BBA /* NewsViewController.swift */; };
-		6D37E60C203C898100FF4BBA /* ResourcesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D37E60B203C898100FF4BBA /* ResourcesViewController.swift */; };
-		6D37E60E203C979700FF4BBA /* ProfileNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D37E60D203C979700FF4BBA /* ProfileNavigationController.swift */; };
-		6D37E610203C996A00FF4BBA /* GeoHuntNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D37E60F203C996A00FF4BBA /* GeoHuntNavigationController.swift */; };
-		6D37E612203C99A900FF4BBA /* CSPLabNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D37E611203C99A900FF4BBA /* CSPLabNavigationController.swift */; };
-		6D37E614203C99DE00FF4BBA /* ProgramsNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D37E613203C99DE00FF4BBA /* ProgramsNavigationController.swift */; };
-		6D37E616203C99F200FF4BBA /* EventsNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D37E615203C99F200FF4BBA /* EventsNavigationController.swift */; };
-		6D37E618203C9A0800FF4BBA /* NewsNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D37E617203C9A0800FF4BBA /* NewsNavigationController.swift */; };
-		6D37E61A203C9A1E00FF4BBA /* ResourcesNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D37E619203C9A1E00FF4BBA /* ResourcesNavigationController.swift */; };
-		6D37E61C203C9AC800FF4BBA /* HomeNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D37E61B203C9AC800FF4BBA /* HomeNavigationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,23 +82,27 @@
 		229E61652022A79200D4BDDA /* Citizen_Scientist_ProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Citizen_Scientist_ProjectUITests.swift; sourceTree = "<group>"; };
 		229E61672022A79200D4BDDA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		22F78C8E202D0F900001049D /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		6D021BFD203E2A0C003E35D5 /* LearnViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnViewController.swift; sourceTree = "<group>"; };
+		6D021BFF203E2A36003E35D5 /* ExploreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreViewController.swift; sourceTree = "<group>"; };
+		6D021C01203E2A47003E35D5 /* RecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordViewController.swift; sourceTree = "<group>"; };
+		6D021C03203E2A52003E35D5 /* ReviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewViewController.swift; sourceTree = "<group>"; };
+		6D021C05203E2E1D003E35D5 /* KeyChallengeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyChallengeViewController.swift; sourceTree = "<group>"; };
+		6D021C07203E2E2F003E35D5 /* SeaLevelRiseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeaLevelRiseViewController.swift; sourceTree = "<group>"; };
+		6D021C09203E2E3F003E35D5 /* WaterWatchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterWatchViewController.swift; sourceTree = "<group>"; };
+		6D021C0B203E2E52003E35D5 /* ReefRestorationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReefRestorationViewController.swift; sourceTree = "<group>"; };
+		6D021C0D203E2E63003E35D5 /* LectureSeriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LectureSeriesViewController.swift; sourceTree = "<group>"; };
+		6D021C0F203E2E72003E35D5 /* FieldActivityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldActivityViewController.swift; sourceTree = "<group>"; };
+		6D021C11203E3117003E35D5 /* AboutUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsViewController.swift; sourceTree = "<group>"; };
+		6D021C13203E3126003E35D5 /* OurBiomesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OurBiomesViewController.swift; sourceTree = "<group>"; };
+		6D021C15203E3133003E35D5 /* NewslettersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewslettersViewController.swift; sourceTree = "<group>"; };
+		6D021C17203E3142003E35D5 /* OurPartnersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OurPartnersViewController.swift; sourceTree = "<group>"; };
+		6D021C19203E314E003E35D5 /* ContactUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactUsViewController.swift; sourceTree = "<group>"; };
 		6D0DCF2D203B5AC3000F5D62 /* NavigationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationTableViewCell.swift; sourceTree = "<group>"; };
 		6D0DCF2F203B6382000F5D62 /* NavigationTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NavigationTableViewController.swift; path = "Citizen Scientist Project/Controller/NavigationTableViewController.swift"; sourceTree = SOURCE_ROOT; };
 		6D37E5FF203C869D00FF4BBA /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ProfileViewController.swift; path = "Citizen Scientist Project/Controller/ProfileViewController.swift"; sourceTree = SOURCE_ROOT; };
 		6D37E601203C884B00FF4BBA /* GeoHuntViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GeoHuntViewController.swift; path = "Citizen Scientist Project/Controller/GeoHuntViewController.swift"; sourceTree = SOURCE_ROOT; };
-		6D37E603203C88A300FF4BBA /* CSPLabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CSPLabViewController.swift; path = "Citizen Scientist Project/Controller/CSPLabViewController.swift"; sourceTree = SOURCE_ROOT; };
-		6D37E605203C88E700FF4BBA /* ProgramsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ProgramsViewController.swift; path = "Citizen Scientist Project/Controller/ProgramsViewController.swift"; sourceTree = SOURCE_ROOT; };
 		6D37E607203C893A00FF4BBA /* EventsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsViewController.swift; sourceTree = "<group>"; };
 		6D37E609203C897100FF4BBA /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
-		6D37E60B203C898100FF4BBA /* ResourcesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourcesViewController.swift; sourceTree = "<group>"; };
-		6D37E60D203C979700FF4BBA /* ProfileNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileNavigationController.swift; sourceTree = "<group>"; };
-		6D37E60F203C996A00FF4BBA /* GeoHuntNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoHuntNavigationController.swift; sourceTree = "<group>"; };
-		6D37E611203C99A900FF4BBA /* CSPLabNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSPLabNavigationController.swift; sourceTree = "<group>"; };
-		6D37E613203C99DE00FF4BBA /* ProgramsNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgramsNavigationController.swift; sourceTree = "<group>"; };
-		6D37E615203C99F200FF4BBA /* EventsNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsNavigationController.swift; sourceTree = "<group>"; };
-		6D37E617203C9A0800FF4BBA /* NewsNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsNavigationController.swift; sourceTree = "<group>"; };
-		6D37E619203C9A1E00FF4BBA /* ResourcesNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourcesNavigationController.swift; sourceTree = "<group>"; };
-		6D37E61B203C9AC800FF4BBA /* HomeNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeNavigationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -209,22 +217,26 @@
 			isa = PBXGroup;
 			children = (
 				6D0DCF2F203B6382000F5D62 /* NavigationTableViewController.swift */,
-				6D37E61B203C9AC800FF4BBA /* HomeNavigationController.swift */,
 				229E61442022A79200D4BDDA /* ViewController.swift */,
-				6D37E60D203C979700FF4BBA /* ProfileNavigationController.swift */,
 				6D37E5FF203C869D00FF4BBA /* ProfileViewController.swift */,
-				6D37E60F203C996A00FF4BBA /* GeoHuntNavigationController.swift */,
 				6D37E601203C884B00FF4BBA /* GeoHuntViewController.swift */,
-				6D37E611203C99A900FF4BBA /* CSPLabNavigationController.swift */,
-				6D37E603203C88A300FF4BBA /* CSPLabViewController.swift */,
-				6D37E613203C99DE00FF4BBA /* ProgramsNavigationController.swift */,
-				6D37E605203C88E700FF4BBA /* ProgramsViewController.swift */,
-				6D37E615203C99F200FF4BBA /* EventsNavigationController.swift */,
+				6D021BFD203E2A0C003E35D5 /* LearnViewController.swift */,
+				6D021BFF203E2A36003E35D5 /* ExploreViewController.swift */,
+				6D021C01203E2A47003E35D5 /* RecordViewController.swift */,
+				6D021C03203E2A52003E35D5 /* ReviewViewController.swift */,
+				6D021C05203E2E1D003E35D5 /* KeyChallengeViewController.swift */,
+				6D021C07203E2E2F003E35D5 /* SeaLevelRiseViewController.swift */,
+				6D021C09203E2E3F003E35D5 /* WaterWatchViewController.swift */,
+				6D021C0B203E2E52003E35D5 /* ReefRestorationViewController.swift */,
+				6D021C0D203E2E63003E35D5 /* LectureSeriesViewController.swift */,
+				6D021C0F203E2E72003E35D5 /* FieldActivityViewController.swift */,
 				6D37E607203C893A00FF4BBA /* EventsViewController.swift */,
-				6D37E617203C9A0800FF4BBA /* NewsNavigationController.swift */,
 				6D37E609203C897100FF4BBA /* NewsViewController.swift */,
-				6D37E619203C9A1E00FF4BBA /* ResourcesNavigationController.swift */,
-				6D37E60B203C898100FF4BBA /* ResourcesViewController.swift */,
+				6D021C11203E3117003E35D5 /* AboutUsViewController.swift */,
+				6D021C13203E3126003E35D5 /* OurBiomesViewController.swift */,
+				6D021C15203E3133003E35D5 /* NewslettersViewController.swift */,
+				6D021C17203E3142003E35D5 /* OurPartnersViewController.swift */,
+				6D021C19203E314E003E35D5 /* ContactUsViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -363,31 +375,35 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D021C14203E3126003E35D5 /* OurBiomesViewController.swift in Sources */,
 				22594976202DA6EC0047E055 /* CollectionViewCellContent.swift in Sources */,
-				6D37E604203C88A300FF4BBA /* CSPLabViewController.swift in Sources */,
-				6D37E606203C88E700FF4BBA /* ProgramsViewController.swift in Sources */,
+				6D021C02203E2A47003E35D5 /* RecordViewController.swift in Sources */,
 				6D0DCF30203B6382000F5D62 /* NavigationTableViewController.swift in Sources */,
-				6D37E61C203C9AC800FF4BBA /* HomeNavigationController.swift in Sources */,
 				229E61452022A79200D4BDDA /* ViewController.swift in Sources */,
+				6D021C16203E3133003E35D5 /* NewslettersViewController.swift in Sources */,
 				2259497B202DCCEC0047E055 /* SectionFooter.swift in Sources */,
-				6D37E616203C99F200FF4BBA /* EventsNavigationController.swift in Sources */,
-				6D37E61A203C9A1E00FF4BBA /* ResourcesNavigationController.swift in Sources */,
-				6D37E60C203C898100FF4BBA /* ResourcesViewController.swift in Sources */,
+				6D021C0C203E2E52003E35D5 /* ReefRestorationViewController.swift in Sources */,
+				6D021C0E203E2E63003E35D5 /* LectureSeriesViewController.swift in Sources */,
+				6D021BFE203E2A0C003E35D5 /* LearnViewController.swift in Sources */,
 				22891A3D202DEBE7000FEBB4 /* SocialNetwork.swift in Sources */,
-				6D37E60E203C979700FF4BBA /* ProfileNavigationController.swift in Sources */,
 				229E61432022A79200D4BDDA /* AppDelegate.swift in Sources */,
+				6D021C06203E2E1D003E35D5 /* KeyChallengeViewController.swift in Sources */,
+				6D021C18203E3142003E35D5 /* OurPartnersViewController.swift in Sources */,
 				6D37E600203C869D00FF4BBA /* ProfileViewController.swift in Sources */,
 				6D37E608203C893A00FF4BBA /* EventsViewController.swift in Sources */,
+				6D021C00203E2A36003E35D5 /* ExploreViewController.swift in Sources */,
+				6D021C1A203E314E003E35D5 /* ContactUsViewController.swift in Sources */,
+				6D021C12203E3117003E35D5 /* AboutUsViewController.swift in Sources */,
+				6D021C0A203E2E3F003E35D5 /* WaterWatchViewController.swift in Sources */,
 				22F78C8F202D0F900001049D /* CollectionViewCell.swift in Sources */,
-				6D37E612203C99A900FF4BBA /* CSPLabNavigationController.swift in Sources */,
+				6D021C10203E2E72003E35D5 /* FieldActivityViewController.swift in Sources */,
 				229E614B2022A79200D4BDDA /* Citizen_Scientist_Project.xcdatamodeld in Sources */,
 				6D37E60A203C897100FF4BBA /* NewsViewController.swift in Sources */,
+				6D021C08203E2E2F003E35D5 /* SeaLevelRiseViewController.swift in Sources */,
 				22594978202DAA0C0047E055 /* CollectionViewContentManager.swift in Sources */,
-				6D37E618203C9A0800FF4BBA /* NewsNavigationController.swift in Sources */,
+				6D021C04203E2A52003E35D5 /* ReviewViewController.swift in Sources */,
 				22594972202D969F0047E055 /* SectionFooterView.swift in Sources */,
 				6D0DCF2E203B5AC3000F5D62 /* NavigationTableViewCell.swift in Sources */,
-				6D37E610203C996A00FF4BBA /* GeoHuntNavigationController.swift in Sources */,
-				6D37E614203C99DE00FF4BBA /* ProgramsNavigationController.swift in Sources */,
 				6D37E602203C884B00FF4BBA /* GeoHuntViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
