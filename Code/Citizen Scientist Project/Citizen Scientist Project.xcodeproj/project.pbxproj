@@ -79,11 +79,11 @@
 		229E61672022A79200D4BDDA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		22F78C8E202D0F900001049D /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		6D0DCF2D203B5AC3000F5D62 /* NavigationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationTableViewCell.swift; sourceTree = "<group>"; };
-		6D0DCF2F203B6382000F5D62 /* NavigationTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NavigationTableViewController.swift; path = "Citizen Scientist Project/Controller/NavigationTableViewController.swift"; sourceTree = SOURCE_ROOT; };
-		6D37E5FF203C869D00FF4BBA /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ProfileViewController.swift; path = "Citizen Scientist Project/Controller/ProfileViewController.swift"; sourceTree = SOURCE_ROOT; };
-		6D37E601203C884B00FF4BBA /* GeoHuntViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GeoHuntViewController.swift; path = "Citizen Scientist Project/Controller/GeoHuntViewController.swift"; sourceTree = SOURCE_ROOT; };
-		6D37E603203C88A300FF4BBA /* CSPLabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CSPLabViewController.swift; path = "Citizen Scientist Project/Controller/CSPLabViewController.swift"; sourceTree = SOURCE_ROOT; };
-		6D37E605203C88E700FF4BBA /* ProgramsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ProgramsViewController.swift; path = "Citizen Scientist Project/Controller/ProgramsViewController.swift"; sourceTree = SOURCE_ROOT; };
+		6D0DCF2F203B6382000F5D62 /* NavigationTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NavigationTableViewController.swift; path = "Citizen Scientist Project/Controller/Navigation/NavigationTableViewController.swift"; sourceTree = SOURCE_ROOT; };
+		6D37E5FF203C869D00FF4BBA /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ProfileViewController.swift; path = "Citizen Scientist Project/Controller/Profile/ProfileViewController.swift"; sourceTree = SOURCE_ROOT; };
+		6D37E601203C884B00FF4BBA /* GeoHuntViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GeoHuntViewController.swift; path = "Citizen Scientist Project/Controller/GeoHunt/GeoHuntViewController.swift"; sourceTree = SOURCE_ROOT; };
+		6D37E603203C88A300FF4BBA /* CSPLabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CSPLabViewController.swift; path = "Citizen Scientist Project/Controller/CSP Lab/CSPLabViewController.swift"; sourceTree = SOURCE_ROOT; };
+		6D37E605203C88E700FF4BBA /* ProgramsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ProgramsViewController.swift; path = "Citizen Scientist Project/Controller/Programs/ProgramsViewController.swift"; sourceTree = SOURCE_ROOT; };
 		6D37E607203C893A00FF4BBA /* EventsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsViewController.swift; sourceTree = "<group>"; };
 		6D37E609203C897100FF4BBA /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
 		6D37E60B203C898100FF4BBA /* ResourcesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourcesViewController.swift; sourceTree = "<group>"; };
@@ -130,6 +130,104 @@
 				229E61512022A79200D4BDDA /* Info.plist */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2262D2D9203E2DC000FB8AFB /* Homepage */ = {
+			isa = PBXGroup;
+			children = (
+				6D37E61B203C9AC800FF4BBA /* HomeNavigationController.swift */,
+				229E61442022A79200D4BDDA /* ViewController.swift */,
+			);
+			path = Homepage;
+			sourceTree = "<group>";
+		};
+		2262D2DB203E2ECD00FB8AFB /* News */ = {
+			isa = PBXGroup;
+			children = (
+				6D37E617203C9A0800FF4BBA /* NewsNavigationController.swift */,
+				6D37E609203C897100FF4BBA /* NewsViewController.swift */,
+			);
+			path = News;
+			sourceTree = "<group>";
+		};
+		2262D2DC203E2F4500FB8AFB /* Programs */ = {
+			isa = PBXGroup;
+			children = (
+				6D37E613203C99DE00FF4BBA /* ProgramsNavigationController.swift */,
+				6D37E605203C88E700FF4BBA /* ProgramsViewController.swift */,
+			);
+			path = Programs;
+			sourceTree = "<group>";
+		};
+		2262D2DD203E2F6100FB8AFB /* CSP Lab */ = {
+			isa = PBXGroup;
+			children = (
+				6D37E611203C99A900FF4BBA /* CSPLabNavigationController.swift */,
+				6D37E603203C88A300FF4BBA /* CSPLabViewController.swift */,
+			);
+			path = "CSP Lab";
+			sourceTree = "<group>";
+		};
+		2262D2DE203E2F8100FB8AFB /* GeoHunt */ = {
+			isa = PBXGroup;
+			children = (
+				6D37E60F203C996A00FF4BBA /* GeoHuntNavigationController.swift */,
+				6D37E601203C884B00FF4BBA /* GeoHuntViewController.swift */,
+			);
+			path = GeoHunt;
+			sourceTree = "<group>";
+		};
+		2262D2DF203E2F9200FB8AFB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6D37E619203C9A1E00FF4BBA /* ResourcesNavigationController.swift */,
+				6D37E60B203C898100FF4BBA /* ResourcesViewController.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		2262D2E0203E300900FB8AFB /* Events */ = {
+			isa = PBXGroup;
+			children = (
+				6D37E615203C99F200FF4BBA /* EventsNavigationController.swift */,
+				6D37E607203C893A00FF4BBA /* EventsViewController.swift */,
+			);
+			path = Events;
+			sourceTree = "<group>";
+		};
+		2262D2E1203E305600FB8AFB /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				6D37E60D203C979700FF4BBA /* ProfileNavigationController.swift */,
+				6D37E5FF203C869D00FF4BBA /* ProfileViewController.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		2262D2E2203E309800FB8AFB /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				6D0DCF2F203B6382000F5D62 /* NavigationTableViewController.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		2262D2E3203E316600FB8AFB /* Footer */ = {
+			isa = PBXGroup;
+			children = (
+				2259497A202DCCEC0047E055 /* SectionFooter.swift */,
+				22891A3C202DEBE7000FEBB4 /* SocialNetwork.swift */,
+			);
+			path = Footer;
+			sourceTree = "<group>";
+		};
+		2262D2E4203E318C00FB8AFB /* Homepage */ = {
+			isa = PBXGroup;
+			children = (
+				22594975202DA6EC0047E055 /* CollectionViewCellContent.swift */,
+				22594977202DAA0C0047E055 /* CollectionViewContentManager.swift */,
+			);
+			path = Homepage;
 			sourceTree = "<group>";
 		};
 		229E61362022A79200D4BDDA = {
@@ -186,10 +284,8 @@
 		22F78C90202D15290001049D /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				22594975202DA6EC0047E055 /* CollectionViewCellContent.swift */,
-				22594977202DAA0C0047E055 /* CollectionViewContentManager.swift */,
-				2259497A202DCCEC0047E055 /* SectionFooter.swift */,
-				22891A3C202DEBE7000FEBB4 /* SocialNetwork.swift */,
+				2262D2E4203E318C00FB8AFB /* Homepage */,
+				2262D2E3203E316600FB8AFB /* Footer */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -208,23 +304,15 @@
 		22F78C92202D15430001049D /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				6D0DCF2F203B6382000F5D62 /* NavigationTableViewController.swift */,
-				6D37E61B203C9AC800FF4BBA /* HomeNavigationController.swift */,
-				229E61442022A79200D4BDDA /* ViewController.swift */,
-				6D37E60D203C979700FF4BBA /* ProfileNavigationController.swift */,
-				6D37E5FF203C869D00FF4BBA /* ProfileViewController.swift */,
-				6D37E60F203C996A00FF4BBA /* GeoHuntNavigationController.swift */,
-				6D37E601203C884B00FF4BBA /* GeoHuntViewController.swift */,
-				6D37E611203C99A900FF4BBA /* CSPLabNavigationController.swift */,
-				6D37E603203C88A300FF4BBA /* CSPLabViewController.swift */,
-				6D37E613203C99DE00FF4BBA /* ProgramsNavigationController.swift */,
-				6D37E605203C88E700FF4BBA /* ProgramsViewController.swift */,
-				6D37E615203C99F200FF4BBA /* EventsNavigationController.swift */,
-				6D37E607203C893A00FF4BBA /* EventsViewController.swift */,
-				6D37E617203C9A0800FF4BBA /* NewsNavigationController.swift */,
-				6D37E609203C897100FF4BBA /* NewsViewController.swift */,
-				6D37E619203C9A1E00FF4BBA /* ResourcesNavigationController.swift */,
-				6D37E60B203C898100FF4BBA /* ResourcesViewController.swift */,
+				2262D2D9203E2DC000FB8AFB /* Homepage */,
+				2262D2E2203E309800FB8AFB /* Navigation */,
+				2262D2E1203E305600FB8AFB /* Profile */,
+				2262D2E0203E300900FB8AFB /* Events */,
+				2262D2DF203E2F9200FB8AFB /* Resources */,
+				2262D2DE203E2F8100FB8AFB /* GeoHunt */,
+				2262D2DD203E2F6100FB8AFB /* CSP Lab */,
+				2262D2DC203E2F4500FB8AFB /* Programs */,
+				2262D2DB203E2ECD00FB8AFB /* News */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
