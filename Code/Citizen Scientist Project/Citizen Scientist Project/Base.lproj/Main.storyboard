@@ -1353,6 +1353,7 @@
         <image name="youtube-footer-icon" width="64" height="64"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="dzX-0g-Yex"/>
         <segue reference="CDV-cc-EMe"/>
     </inferredMetricsTieBreakers>
 </document>
