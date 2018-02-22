@@ -1,5 +1,5 @@
 //
-//  LectureSeriesViewController.swift
+//  OurBiomesViewController.swift
 //  Citizen Scientist Project
 //
 //  Created by Emmanuel Malave on 2/21/18.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LectureSeriesViewController: UIViewController {
+class OurBiomesViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

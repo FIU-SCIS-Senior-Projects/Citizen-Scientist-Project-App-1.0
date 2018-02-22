@@ -223,8 +223,6 @@
 		2299222F203E53E2006CE1AB /* KeyChallenge */ = {
 			isa = PBXGroup;
 			children = (
-				22992232203E5412006CE1AB /* Model */,
-				22992231203E540D006CE1AB /* View */,
 				22992230203E5405006CE1AB /* Controller */,
 			);
 			path = KeyChallenge;
@@ -236,20 +234,6 @@
 				6D021C05203E2E1D003E35D5 /* KeyChallengeViewController.swift */,
 			);
 			path = Controller;
-			sourceTree = "<group>";
-		};
-		22992231203E540D006CE1AB /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		22992232203E5412006CE1AB /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		22992233203E5433006CE1AB /* AboutUs */ = {
@@ -327,8 +311,7 @@
 		2299223C203E5489006CE1AB /* OurBiomes */ = {
 			isa = PBXGroup;
 			children = (
-				2299224D203E5675006CE1AB /* Controller */,
-				6D021C13203E3126003E35D5 /* OurBiomesViewController.swift */,
+				6D8D70BC203E68EA00503CA9 /* Controller */,
 			);
 			path = OurBiomes;
 			sourceTree = "<group>";
@@ -457,13 +440,6 @@
 			isa = PBXGroup;
 			children = (
 				6D37E609203C897100FF4BBA /* NewsViewController.swift */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		2299224D203E5675006CE1AB /* Controller */ = {
-			isa = PBXGroup;
-			children = (
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -618,6 +594,14 @@
 				22992259203E58FA006CE1AB /* segueToTable.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		6D8D70BC203E68EA00503CA9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6D021C13203E3126003E35D5 /* OurBiomesViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -952,7 +936,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2EAVSD837T;
+				DEVELOPMENT_TEAM = R89DGE8VGB;
 				INFOPLIST_FILE = "Citizen Scientist Project/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Key.Biscayne.Citizen-Scientist-Project";
@@ -969,7 +953,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2EAVSD837T;
+				DEVELOPMENT_TEAM = R89DGE8VGB;
 				INFOPLIST_FILE = "Citizen Scientist Project/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Key.Biscayne.Citizen-Scientist-Project";
