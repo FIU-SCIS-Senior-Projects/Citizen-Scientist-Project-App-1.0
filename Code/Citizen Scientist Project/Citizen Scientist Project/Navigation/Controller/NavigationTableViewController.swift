@@ -19,16 +19,9 @@ class NavigationTableViewController: UITableViewController{
         tableView.layoutMargins = UIEdgeInsets.zero
         tableView.separatorInset = UIEdgeInsets.zero
         loadNavigationItems()
-        navigationBarImage()
+        
     }
-    
-    func navigationBarImage() {
-        let image : UIImage = UIImage(named: "0-csp-app-logo.png")!
-        let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 70, height: 50))
-        imageView.contentMode = .scaleAspectFit
-        imageView.image = image
-        self.navigationItem.titleView = imageView
-    }
+
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

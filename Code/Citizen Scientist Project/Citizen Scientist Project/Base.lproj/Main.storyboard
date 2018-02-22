@@ -1322,7 +1322,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="1-header-nav-1" width="120" height="120"/>
+        <image name="1-header-nav-1" width="37" height="37"/>
         <image name="facebook-footer-icon" width="64" height="64"/>
         <image name="google-footer-icon" width="64" height="64"/>
         <image name="instagram-footer-icon" width="64" height="64"/>
@@ -1330,6 +1330,6 @@
         <image name="youtube-footer-icon" width="64" height="64"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="s9q-xk-IIB"/>
+        <segue reference="In9-og-6dh"/>
     </inferredMetricsTieBreakers>
 </document>
