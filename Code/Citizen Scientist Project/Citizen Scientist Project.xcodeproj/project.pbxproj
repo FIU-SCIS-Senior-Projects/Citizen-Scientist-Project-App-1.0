@@ -12,6 +12,8 @@
 		22594978202DAA0C0047E055 /* CollectionViewContentManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22594977202DAA0C0047E055 /* CollectionViewContentManager.swift */; };
 		2259497B202DCCEC0047E055 /* SectionFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2259497A202DCCEC0047E055 /* SectionFooter.swift */; };
 		22891A3D202DEBE7000FEBB4 /* SocialNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22891A3C202DEBE7000FEBB4 /* SocialNetwork.swift */; };
+		22992258203E5814006CE1AB /* NavigationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22992257203E5814006CE1AB /* NavigationTableViewController.swift */; };
+		2299225A203E58FA006CE1AB /* segueToTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22992259203E58FA006CE1AB /* segueToTable.swift */; };
 		229E61432022A79200D4BDDA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229E61422022A79200D4BDDA /* AppDelegate.swift */; };
 		229E61452022A79200D4BDDA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229E61442022A79200D4BDDA /* ViewController.swift */; };
 		229E61482022A79200D4BDDA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 229E61462022A79200D4BDDA /* Main.storyboard */; };
@@ -37,7 +39,6 @@
 		6D021C18203E3142003E35D5 /* OurPartnersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D021C17203E3142003E35D5 /* OurPartnersViewController.swift */; };
 		6D021C1A203E314E003E35D5 /* ContactUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D021C19203E314E003E35D5 /* ContactUsViewController.swift */; };
 		6D0DCF2E203B5AC3000F5D62 /* NavigationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0DCF2D203B5AC3000F5D62 /* NavigationTableViewCell.swift */; };
-		6D0DCF30203B6382000F5D62 /* NavigationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0DCF2F203B6382000F5D62 /* NavigationTableViewController.swift */; };
 		6D37E600203C869D00FF4BBA /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D37E5FF203C869D00FF4BBA /* ProfileViewController.swift */; };
 		6D37E602203C884B00FF4BBA /* GeoHuntViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D37E601203C884B00FF4BBA /* GeoHuntViewController.swift */; };
 		6D37E608203C893A00FF4BBA /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D37E607203C893A00FF4BBA /* EventsViewController.swift */; };
@@ -67,6 +68,8 @@
 		22594977202DAA0C0047E055 /* CollectionViewContentManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewContentManager.swift; sourceTree = "<group>"; };
 		2259497A202DCCEC0047E055 /* SectionFooter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionFooter.swift; sourceTree = "<group>"; };
 		22891A3C202DEBE7000FEBB4 /* SocialNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialNetwork.swift; sourceTree = "<group>"; };
+		22992257203E5814006CE1AB /* NavigationTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationTableViewController.swift; sourceTree = "<group>"; };
+		22992259203E58FA006CE1AB /* segueToTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = segueToTable.swift; sourceTree = "<group>"; };
 		229E613F2022A79200D4BDDA /* Citizen Scientist Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Citizen Scientist Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		229E61422022A79200D4BDDA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		229E61442022A79200D4BDDA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -98,9 +101,8 @@
 		6D021C17203E3142003E35D5 /* OurPartnersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OurPartnersViewController.swift; sourceTree = "<group>"; };
 		6D021C19203E314E003E35D5 /* ContactUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactUsViewController.swift; sourceTree = "<group>"; };
 		6D0DCF2D203B5AC3000F5D62 /* NavigationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationTableViewCell.swift; sourceTree = "<group>"; };
-		6D0DCF2F203B6382000F5D62 /* NavigationTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NavigationTableViewController.swift; path = "Citizen Scientist Project/Controller/NavigationTableViewController.swift"; sourceTree = SOURCE_ROOT; };
-		6D37E5FF203C869D00FF4BBA /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ProfileViewController.swift; path = "Citizen Scientist Project/Controller/ProfileViewController.swift"; sourceTree = SOURCE_ROOT; };
-		6D37E601203C884B00FF4BBA /* GeoHuntViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GeoHuntViewController.swift; path = "Citizen Scientist Project/Controller/GeoHuntViewController.swift"; sourceTree = SOURCE_ROOT; };
+		6D37E5FF203C869D00FF4BBA /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ProfileViewController.swift; path = "Citizen Scientist Project/Profile/Controller/ProfileViewController.swift"; sourceTree = SOURCE_ROOT; };
+		6D37E601203C884B00FF4BBA /* GeoHuntViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GeoHuntViewController.swift; path = "Citizen Scientist Project/GeoHunt/Controller/GeoHuntViewController.swift"; sourceTree = SOURCE_ROOT; };
 		6D37E607203C893A00FF4BBA /* EventsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsViewController.swift; sourceTree = "<group>"; };
 		6D37E609203C897100FF4BBA /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -140,6 +142,404 @@
 			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		2262D2E3203E316600FB8AFB /* Footer */ = {
+			isa = PBXGroup;
+			children = (
+				2299222D203E5328006CE1AB /* Model */,
+				2299222C203E5303006CE1AB /* View */,
+			);
+			path = Footer;
+			sourceTree = "<group>";
+		};
+		22992227203E51FF006CE1AB /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				2299222E203E53A6006CE1AB /* Controller */,
+				22F78C91202D153D0001049D /* View */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		22992228203E5254006CE1AB /* Homepage */ = {
+			isa = PBXGroup;
+			children = (
+				2299222B203E5284006CE1AB /* Model */,
+				2299222A203E527B006CE1AB /* View */,
+				22992229203E5273006CE1AB /* Controller */,
+			);
+			path = Homepage;
+			sourceTree = "<group>";
+		};
+		22992229203E5273006CE1AB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				229E61442022A79200D4BDDA /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2299222A203E527B006CE1AB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				22F78C8E202D0F900001049D /* CollectionViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2299222B203E5284006CE1AB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				22594975202DA6EC0047E055 /* CollectionViewCellContent.swift */,
+				22594977202DAA0C0047E055 /* CollectionViewContentManager.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2299222C203E5303006CE1AB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				22594971202D969F0047E055 /* SectionFooterView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2299222D203E5328006CE1AB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2259497A202DCCEC0047E055 /* SectionFooter.swift */,
+				22891A3C202DEBE7000FEBB4 /* SocialNetwork.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2299222E203E53A6006CE1AB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				22992257203E5814006CE1AB /* NavigationTableViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2299222F203E53E2006CE1AB /* KeyChallenge */ = {
+			isa = PBXGroup;
+			children = (
+				22992232203E5412006CE1AB /* Model */,
+				22992231203E540D006CE1AB /* View */,
+				22992230203E5405006CE1AB /* Controller */,
+			);
+			path = KeyChallenge;
+			sourceTree = "<group>";
+		};
+		22992230203E5405006CE1AB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6D021C05203E2E1D003E35D5 /* KeyChallengeViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		22992231203E540D006CE1AB /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		22992232203E5412006CE1AB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		22992233203E5433006CE1AB /* AboutUs */ = {
+			isa = PBXGroup;
+			children = (
+				22992256203E56E2006CE1AB /* Controller */,
+			);
+			path = AboutUs;
+			sourceTree = "<group>";
+		};
+		22992234203E543F006CE1AB /* ContactUs */ = {
+			isa = PBXGroup;
+			children = (
+				22992255203E56D7006CE1AB /* Controller */,
+			);
+			path = ContactUs;
+			sourceTree = "<group>";
+		};
+		22992235203E5449006CE1AB /* Events */ = {
+			isa = PBXGroup;
+			children = (
+				22992254203E56CA006CE1AB /* Controller */,
+			);
+			path = Events;
+			sourceTree = "<group>";
+		};
+		22992236203E5453006CE1AB /* Explore */ = {
+			isa = PBXGroup;
+			children = (
+				22992253203E56C0006CE1AB /* Controller */,
+			);
+			path = Explore;
+			sourceTree = "<group>";
+		};
+		22992237203E5459006CE1AB /* FieldActivity */ = {
+			isa = PBXGroup;
+			children = (
+				22992252203E56B4006CE1AB /* Controller */,
+			);
+			path = FieldActivity;
+			sourceTree = "<group>";
+		};
+		22992238203E5462006CE1AB /* GeoHunt */ = {
+			isa = PBXGroup;
+			children = (
+				22992251203E56A9006CE1AB /* Controller */,
+			);
+			path = GeoHunt;
+			sourceTree = "<group>";
+		};
+		22992239203E546C006CE1AB /* Learn */ = {
+			isa = PBXGroup;
+			children = (
+				22992250203E569C006CE1AB /* Controller */,
+			);
+			path = Learn;
+			sourceTree = "<group>";
+		};
+		2299223A203E5475006CE1AB /* LectureSeries */ = {
+			isa = PBXGroup;
+			children = (
+				2299224F203E5690006CE1AB /* Controller */,
+			);
+			path = LectureSeries;
+			sourceTree = "<group>";
+		};
+		2299223B203E547D006CE1AB /* NewsLetters */ = {
+			isa = PBXGroup;
+			children = (
+				2299224E203E5682006CE1AB /* Controller */,
+			);
+			path = NewsLetters;
+			sourceTree = "<group>";
+		};
+		2299223C203E5489006CE1AB /* OurBiomes */ = {
+			isa = PBXGroup;
+			children = (
+				2299224D203E5675006CE1AB /* Controller */,
+				6D021C13203E3126003E35D5 /* OurBiomesViewController.swift */,
+			);
+			path = OurBiomes;
+			sourceTree = "<group>";
+		};
+		2299223D203E54F9006CE1AB /* News */ = {
+			isa = PBXGroup;
+			children = (
+				2299224C203E5668006CE1AB /* Controller */,
+			);
+			path = News;
+			sourceTree = "<group>";
+		};
+		2299223E203E5505006CE1AB /* OurPartners */ = {
+			isa = PBXGroup;
+			children = (
+				2299224B203E564C006CE1AB /* Controller */,
+			);
+			path = OurPartners;
+			sourceTree = "<group>";
+		};
+		2299223F203E5510006CE1AB /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				2299224A203E5630006CE1AB /* Controller */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		22992240203E5518006CE1AB /* Record */ = {
+			isa = PBXGroup;
+			children = (
+				22992249203E5626006CE1AB /* Controller */,
+			);
+			path = Record;
+			sourceTree = "<group>";
+		};
+		22992241203E551F006CE1AB /* ReefRestoration */ = {
+			isa = PBXGroup;
+			children = (
+				22992248203E561C006CE1AB /* Controller */,
+			);
+			path = ReefRestoration;
+			sourceTree = "<group>";
+		};
+		22992242203E5553006CE1AB /* Review */ = {
+			isa = PBXGroup;
+			children = (
+				22992247203E5611006CE1AB /* Controller */,
+			);
+			path = Review;
+			sourceTree = "<group>";
+		};
+		22992243203E555C006CE1AB /* SeaLevelRise */ = {
+			isa = PBXGroup;
+			children = (
+				22992246203E5608006CE1AB /* Controller */,
+			);
+			path = SeaLevelRise;
+			sourceTree = "<group>";
+		};
+		22992244203E5564006CE1AB /* WaterWatch */ = {
+			isa = PBXGroup;
+			children = (
+				22992245203E55FD006CE1AB /* Controller */,
+			);
+			path = WaterWatch;
+			sourceTree = "<group>";
+		};
+		22992245203E55FD006CE1AB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6D021C09203E2E3F003E35D5 /* WaterWatchViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		22992246203E5608006CE1AB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6D021C07203E2E2F003E35D5 /* SeaLevelRiseViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		22992247203E5611006CE1AB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6D021C03203E2A52003E35D5 /* ReviewViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		22992248203E561C006CE1AB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6D021C0B203E2E52003E35D5 /* ReefRestorationViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		22992249203E5626006CE1AB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6D021C01203E2A47003E35D5 /* RecordViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2299224A203E5630006CE1AB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6D37E5FF203C869D00FF4BBA /* ProfileViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2299224B203E564C006CE1AB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6D021C17203E3142003E35D5 /* OurPartnersViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2299224C203E5668006CE1AB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6D37E609203C897100FF4BBA /* NewsViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2299224D203E5675006CE1AB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2299224E203E5682006CE1AB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6D021C15203E3133003E35D5 /* NewslettersViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2299224F203E5690006CE1AB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6D021C0D203E2E63003E35D5 /* LectureSeriesViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		22992250203E569C006CE1AB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6D021BFD203E2A0C003E35D5 /* LearnViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		22992251203E56A9006CE1AB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6D37E601203C884B00FF4BBA /* GeoHuntViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		22992252203E56B4006CE1AB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6D021C0F203E2E72003E35D5 /* FieldActivityViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		22992253203E56C0006CE1AB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6D021BFF203E2A36003E35D5 /* ExploreViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		22992254203E56CA006CE1AB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6D37E607203C893A00FF4BBA /* EventsViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		22992255203E56D7006CE1AB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6D021C19203E314E003E35D5 /* ContactUsViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		22992256203E56E2006CE1AB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6D021C11203E3117003E35D5 /* AboutUsViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		229E61362022A79200D4BDDA = {
 			isa = PBXGroup;
 			children = (
@@ -163,9 +563,29 @@
 		229E61412022A79200D4BDDA /* Citizen Scientist Project */ = {
 			isa = PBXGroup;
 			children = (
-				22F78C90202D15290001049D /* Model */,
-				22F78C91202D153D0001049D /* View */,
-				22F78C92202D15430001049D /* Controller */,
+				229E61462022A79200D4BDDA /* Main.storyboard */,
+				22992228203E5254006CE1AB /* Homepage */,
+				2262D2E3203E316600FB8AFB /* Footer */,
+				22992227203E51FF006CE1AB /* Navigation */,
+				22992244203E5564006CE1AB /* WaterWatch */,
+				22992243203E555C006CE1AB /* SeaLevelRise */,
+				22992242203E5553006CE1AB /* Review */,
+				22992241203E551F006CE1AB /* ReefRestoration */,
+				2299222F203E53E2006CE1AB /* KeyChallenge */,
+				22992240203E5518006CE1AB /* Record */,
+				2299223F203E5510006CE1AB /* Profile */,
+				2299223E203E5505006CE1AB /* OurPartners */,
+				2299223D203E54F9006CE1AB /* News */,
+				2299223C203E5489006CE1AB /* OurBiomes */,
+				2299223B203E547D006CE1AB /* NewsLetters */,
+				2299223A203E5475006CE1AB /* LectureSeries */,
+				22992239203E546C006CE1AB /* Learn */,
+				22992238203E5462006CE1AB /* GeoHunt */,
+				22992237203E5459006CE1AB /* FieldActivity */,
+				22992236203E5453006CE1AB /* Explore */,
+				22992235203E5449006CE1AB /* Events */,
+				22992234203E543F006CE1AB /* ContactUs */,
+				22992233203E5433006CE1AB /* AboutUs */,
 				22594979202DBFFB0047E055 /* Supporting Files */,
 				229E614C2022A79200D4BDDA /* Assets.xcassets */,
 				229E61492022A79200D4BDDA /* Citizen_Scientist_Project.xcdatamodeld */,
@@ -191,54 +611,13 @@
 			path = "Citizen Scientist ProjectUITests";
 			sourceTree = "<group>";
 		};
-		22F78C90202D15290001049D /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				22594975202DA6EC0047E055 /* CollectionViewCellContent.swift */,
-				22594977202DAA0C0047E055 /* CollectionViewContentManager.swift */,
-				2259497A202DCCEC0047E055 /* SectionFooter.swift */,
-				22891A3C202DEBE7000FEBB4 /* SocialNetwork.swift */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
 		22F78C91202D153D0001049D /* View */ = {
 			isa = PBXGroup;
 			children = (
-				229E61462022A79200D4BDDA /* Main.storyboard */,
-				22F78C8E202D0F900001049D /* CollectionViewCell.swift */,
-				22594971202D969F0047E055 /* SectionFooterView.swift */,
 				6D0DCF2D203B5AC3000F5D62 /* NavigationTableViewCell.swift */,
+				22992259203E58FA006CE1AB /* segueToTable.swift */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		22F78C92202D15430001049D /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				6D0DCF2F203B6382000F5D62 /* NavigationTableViewController.swift */,
-				229E61442022A79200D4BDDA /* ViewController.swift */,
-				6D37E5FF203C869D00FF4BBA /* ProfileViewController.swift */,
-				6D37E601203C884B00FF4BBA /* GeoHuntViewController.swift */,
-				6D021BFD203E2A0C003E35D5 /* LearnViewController.swift */,
-				6D021BFF203E2A36003E35D5 /* ExploreViewController.swift */,
-				6D021C01203E2A47003E35D5 /* RecordViewController.swift */,
-				6D021C03203E2A52003E35D5 /* ReviewViewController.swift */,
-				6D021C05203E2E1D003E35D5 /* KeyChallengeViewController.swift */,
-				6D021C07203E2E2F003E35D5 /* SeaLevelRiseViewController.swift */,
-				6D021C09203E2E3F003E35D5 /* WaterWatchViewController.swift */,
-				6D021C0B203E2E52003E35D5 /* ReefRestorationViewController.swift */,
-				6D021C0D203E2E63003E35D5 /* LectureSeriesViewController.swift */,
-				6D021C0F203E2E72003E35D5 /* FieldActivityViewController.swift */,
-				6D37E607203C893A00FF4BBA /* EventsViewController.swift */,
-				6D37E609203C897100FF4BBA /* NewsViewController.swift */,
-				6D021C11203E3117003E35D5 /* AboutUsViewController.swift */,
-				6D021C13203E3126003E35D5 /* OurBiomesViewController.swift */,
-				6D021C15203E3133003E35D5 /* NewslettersViewController.swift */,
-				6D021C17203E3142003E35D5 /* OurPartnersViewController.swift */,
-				6D021C19203E314E003E35D5 /* ContactUsViewController.swift */,
-			);
-			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -378,10 +757,10 @@
 				6D021C14203E3126003E35D5 /* OurBiomesViewController.swift in Sources */,
 				22594976202DA6EC0047E055 /* CollectionViewCellContent.swift in Sources */,
 				6D021C02203E2A47003E35D5 /* RecordViewController.swift in Sources */,
-				6D0DCF30203B6382000F5D62 /* NavigationTableViewController.swift in Sources */,
 				229E61452022A79200D4BDDA /* ViewController.swift in Sources */,
 				6D021C16203E3133003E35D5 /* NewslettersViewController.swift in Sources */,
 				2259497B202DCCEC0047E055 /* SectionFooter.swift in Sources */,
+				2299225A203E58FA006CE1AB /* segueToTable.swift in Sources */,
 				6D021C0C203E2E52003E35D5 /* ReefRestorationViewController.swift in Sources */,
 				6D021C0E203E2E63003E35D5 /* LectureSeriesViewController.swift in Sources */,
 				6D021BFE203E2A0C003E35D5 /* LearnViewController.swift in Sources */,
@@ -391,6 +770,7 @@
 				6D021C18203E3142003E35D5 /* OurPartnersViewController.swift in Sources */,
 				6D37E600203C869D00FF4BBA /* ProfileViewController.swift in Sources */,
 				6D37E608203C893A00FF4BBA /* EventsViewController.swift in Sources */,
+				22992258203E5814006CE1AB /* NavigationTableViewController.swift in Sources */,
 				6D021C00203E2A36003E35D5 /* ExploreViewController.swift in Sources */,
 				6D021C1A203E314E003E35D5 /* ContactUsViewController.swift in Sources */,
 				6D021C12203E3117003E35D5 /* AboutUsViewController.swift in Sources */,
@@ -572,7 +952,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = R89DGE8VGB;
+				DEVELOPMENT_TEAM = 2EAVSD837T;
 				INFOPLIST_FILE = "Citizen Scientist Project/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Key.Biscayne.Citizen-Scientist-Project";
@@ -589,7 +969,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = R89DGE8VGB;
+				DEVELOPMENT_TEAM = 2EAVSD837T;
 				INFOPLIST_FILE = "Citizen Scientist Project/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Key.Biscayne.Citizen-Scientist-Project";

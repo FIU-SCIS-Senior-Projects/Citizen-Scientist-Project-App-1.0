@@ -15,7 +15,7 @@ class segueToTable: UIStoryboardSegue {
     }
     
     func scale(){
-    
+        
         let toViewController = self.destination
         let fromViewController = self.source
         
@@ -32,5 +32,6 @@ class segueToTable: UIStoryboardSegue {
         }, completion: { success in fromViewController.present(toViewController, animated: false, completion: nil)})
     }
     
-
+    
 }
+
