@@ -10,7 +10,7 @@ import UIKit
 
 class NavigationTableViewController: UITableViewController{
     let cellIdentifier = "NavigationTableViewCell"
-    var navItem:[(image: UIImage, name: String)] = []
+    var navItem:[(image: UIImage, name: String, openImage: UIImage)] = []
     
     
     override func viewDidLoad() {
@@ -58,6 +58,7 @@ class NavigationTableViewController: UITableViewController{
         
         cell.pageNameLabel.text = item.name
         cell.pageIconImage.image = item.image
+        cell.openImageView.image = item.openImage
         
         return cell
     }
@@ -188,29 +189,32 @@ class NavigationTableViewController: UITableViewController{
         let name22 = "Our Partners"
         let name23 = "Contact Us"
         
-        navItem.append((image: photo1! , name: name1))
-        navItem.append((image: photo2! , name: name2))
-        navItem.append((image: photo3! , name: name3))
-        navItem.append((image: photo4! , name: name4))
-        navItem.append((image: photo5! , name: name5))
-        navItem.append((image: photo6! , name: name6))
-        navItem.append((image: photo7! , name: name7))
-        navItem.append((image: photo8! , name: name8))
-        navItem.append((image: photo9! , name: name9))
-        navItem.append((image: photo10! , name: name10))
-        navItem.append((image: photo11! , name: name11))
-        navItem.append((image: photo12! , name: name12))
-        navItem.append((image: photo13! , name: name13))
-        navItem.append((image: photo14! , name: name14))
-        navItem.append((image: photo15! , name: name15))
-        navItem.append((image: photo16! , name: name16))
-        navItem.append((image: photo17! , name: name17))
-        navItem.append((image: photo18! , name: name18))
-        navItem.append((image: photo19! , name: name19))
-        navItem.append((image: photo20! , name: name20))
-        navItem.append((image: photo21! , name: name21))
-        navItem.append((image: photo22! , name: name22))
-        navItem.append((image: photo23! , name: name23))
+        let openPhoto1 = UIImage()
+        let openPhoto2 = UIImage(named: "downwards-arrow-key")
+        
+        navItem.append((image: photo1! , name: name1, openImage: openPhoto1))
+        navItem.append((image: photo2! , name: name2, openImage: openPhoto1))
+        navItem.append((image: photo3! , name: name3, openImage: openPhoto1))
+        navItem.append((image: photo4! , name: name4, openImage: openPhoto2!))
+        navItem.append((image: photo5! , name: name5, openImage: openPhoto1))
+        navItem.append((image: photo6! , name: name6, openImage: openPhoto1))
+        navItem.append((image: photo7! , name: name7, openImage: openPhoto1))
+        navItem.append((image: photo8! , name: name8, openImage: openPhoto1))
+        navItem.append((image: photo9! , name: name9, openImage: openPhoto2!))
+        navItem.append((image: photo10! , name: name10, openImage: openPhoto1))
+        navItem.append((image: photo11! , name: name11, openImage: openPhoto1))
+        navItem.append((image: photo12! , name: name12, openImage: openPhoto1))
+        navItem.append((image: photo13! , name: name13, openImage: openPhoto1))
+        navItem.append((image: photo14! , name: name14, openImage: openPhoto1))
+        navItem.append((image: photo15! , name: name15, openImage: openPhoto1))
+        navItem.append((image: photo16! , name: name16, openImage: openPhoto1))
+        navItem.append((image: photo17! , name: name17, openImage: openPhoto1))
+        navItem.append((image: photo18! , name: name18, openImage: openPhoto2!))
+        navItem.append((image: photo19! , name: name19, openImage: openPhoto1))
+        navItem.append((image: photo20! , name: name20, openImage: openPhoto1))
+        navItem.append((image: photo21! , name: name21, openImage: openPhoto1))
+        navItem.append((image: photo22! , name: name22, openImage: openPhoto1))
+        navItem.append((image: photo23! , name: name23, openImage: openPhoto1))
     }
     
     

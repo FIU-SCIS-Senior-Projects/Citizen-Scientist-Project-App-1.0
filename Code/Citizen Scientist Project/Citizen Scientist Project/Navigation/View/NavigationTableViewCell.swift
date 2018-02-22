@@ -12,6 +12,7 @@ class NavigationTableViewCell: UITableViewCell {
 
     @IBOutlet weak var pageNameLabel: UILabel!
     @IBOutlet weak var pageIconImage: UIImageView!
+    @IBOutlet weak var openImageView: UIImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
