@@ -10,10 +10,25 @@ import UIKit
 
 class SeaLevelRiseViewController: UIViewController {
 
+    let segueId = "goToWebView"
+    let PDF = "pdf"
+    
+    @IBAction func surveyResultsButtonPressed(_ sender: UIButton) {
+        displayFileResource(fileName: "Survey-Results-2-6-2017", fileExtension: PDF)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         setUpNavBar()
+    }
+    
+    func displayFileResource(fileName: String, fileExtension: String)
+    {
+        resourceName = fileName
+        resourceExtension = fileExtension
+        
+        performSegue(withIdentifier: segueId, sender: self)
     }
     
     func setUpNavBar(){

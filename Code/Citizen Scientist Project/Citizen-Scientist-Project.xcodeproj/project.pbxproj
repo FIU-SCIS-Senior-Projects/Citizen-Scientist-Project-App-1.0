@@ -7,11 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2249BDF620478590000354D0 /* Agenda-for-SLR-Townhall-11-10-2016.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 2249BDF520478590000354D0 /* Agenda-for-SLR-Townhall-11-10-2016.pdf */; };
+		2249BDF82047859C000354D0 /* Agenda-for-SLR-Townhall-02-16-2017.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 2249BDF72047859C000354D0 /* Agenda-for-SLR-Townhall-02-16-2017.pdf */; };
+		2249BDFA20478710000354D0 /* Townhall-Fact-Sheet-11-10-2016.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 2249BDF920478710000354D0 /* Townhall-Fact-Sheet-11-10-2016.pdf */; };
+		2249BDFC20478718000354D0 /* Vulnerability_assessment_11-11-2016.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 2249BDFB20478718000354D0 /* Vulnerability_assessment_11-11-2016.pdf */; };
+		2249BDFE2047871F000354D0 /* 100-Resilient-Cities.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 2249BDFD2047871E000354D0 /* 100-Resilient-Cities.pdf */; };
+		2249BE0020478726000354D0 /* CRC-VillageOfKeyBiscayne-FinaltVulnAssess-SM.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 2249BDFF20478726000354D0 /* CRC-VillageOfKeyBiscayne-FinaltVulnAssess-SM.pdf */; };
+		2249BE022047872D000354D0 /* Greater-Miami-and-the-Beaches-Resilience-Strategy.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 2249BE012047872D000354D0 /* Greater-Miami-and-the-Beaches-Resilience-Strategy.pdf */; };
+		2249BE0420478733000354D0 /* MDPL_17Feb2016.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 2249BE0320478733000354D0 /* MDPL_17Feb2016.pdf */; };
+		2249BE0620478739000354D0 /* SLR-Adaptation-Master-Plan.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 2249BE0520478739000354D0 /* SLR-Adaptation-Master-Plan.pdf */; };
+		2249BE0820478741000354D0 /* Townhall-Fact-Sheet-02-16-2017.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 2249BE0720478741000354D0 /* Townhall-Fact-Sheet-02-16-2017.pdf */; };
+		2249BE0A20478748000354D0 /* VKB-Adaptation-Strategies-v2.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 2249BE0920478748000354D0 /* VKB-Adaptation-Strategies-v2.pdf */; };
+		2249BE0C2047874F000354D0 /* Workshop-Powerpoint-Slides.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 2249BE0B2047874E000354D0 /* Workshop-Powerpoint-Slides.pdf */; };
+		2249BE0E20478754000354D0 /* Workshop-Summary-Report_06232017.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 2249BE0D20478754000354D0 /* Workshop-Summary-Report_06232017.pdf */; };
+		2249BE1020479681000354D0 /* Survey-Results-2-6-2017.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 2249BE0F20479680000354D0 /* Survey-Results-2-6-2017.pdf */; };
 		22594972202D969F0047E055 /* SectionFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22594971202D969F0047E055 /* SectionFooterView.swift */; };
 		22594976202DA6EC0047E055 /* CollectionViewCellContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22594975202DA6EC0047E055 /* CollectionViewCellContent.swift */; };
 		22594978202DAA0C0047E055 /* CollectionViewContentManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22594977202DAA0C0047E055 /* CollectionViewContentManager.swift */; };
 		2259497B202DCCEC0047E055 /* SectionFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2259497A202DCCEC0047E055 /* SectionFooter.swift */; };
 		22891A3D202DEBE7000FEBB4 /* SocialNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22891A3C202DEBE7000FEBB4 /* SocialNetwork.swift */; };
+		228FA9A02047788B003610B3 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228FA99F2047788B003610B3 /* WebViewController.swift */; };
+		228FA9A2204778B3003610B3 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228FA9A1204778B3003610B3 /* TableViewController.swift */; };
 		22992258203E5814006CE1AB /* NavigationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22992257203E5814006CE1AB /* NavigationTableViewController.swift */; };
 		2299225A203E58FA006CE1AB /* segueToTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22992259203E58FA006CE1AB /* segueToTable.swift */; };
 		229E61432022A79200D4BDDA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229E61422022A79200D4BDDA /* AppDelegate.swift */; };
@@ -63,14 +79,30 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2249BDF520478590000354D0 /* Agenda-for-SLR-Townhall-11-10-2016.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "Agenda-for-SLR-Townhall-11-10-2016.pdf"; path = "../../../../../../../../Desktop/FileResources/PDFs/Sea-Level-Rise/First/Agenda-for-SLR-Townhall-11-10-2016.pdf"; sourceTree = "<group>"; };
+		2249BDF72047859C000354D0 /* Agenda-for-SLR-Townhall-02-16-2017.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "Agenda-for-SLR-Townhall-02-16-2017.pdf"; path = "../../../../../../../../Desktop/FileResources/PDFs/Sea-Level-Rise/Second/Agenda-for-SLR-Townhall-02-16-2017.pdf"; sourceTree = "<group>"; };
+		2249BDF920478710000354D0 /* Townhall-Fact-Sheet-11-10-2016.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "Townhall-Fact-Sheet-11-10-2016.pdf"; path = "../../../../../../../../Desktop/FileResources/PDFs/Sea-Level-Rise/First/Townhall-Fact-Sheet-11-10-2016.pdf"; sourceTree = "<group>"; };
+		2249BDFB20478718000354D0 /* Vulnerability_assessment_11-11-2016.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "Vulnerability_assessment_11-11-2016.pdf"; path = "../../../../../../../../Desktop/FileResources/PDFs/Sea-Level-Rise/First/Vulnerability_assessment_11-11-2016.pdf"; sourceTree = "<group>"; };
+		2249BDFD2047871E000354D0 /* 100-Resilient-Cities.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "100-Resilient-Cities.pdf"; path = "../../../../../../../../Desktop/FileResources/PDFs/Sea-Level-Rise/Second/100-Resilient-Cities.pdf"; sourceTree = "<group>"; };
+		2249BDFF20478726000354D0 /* CRC-VillageOfKeyBiscayne-FinaltVulnAssess-SM.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "CRC-VillageOfKeyBiscayne-FinaltVulnAssess-SM.pdf"; path = "../../../../../../../../Desktop/FileResources/PDFs/Sea-Level-Rise/Second/CRC-VillageOfKeyBiscayne-FinaltVulnAssess-SM.pdf"; sourceTree = "<group>"; };
+		2249BE012047872D000354D0 /* Greater-Miami-and-the-Beaches-Resilience-Strategy.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "Greater-Miami-and-the-Beaches-Resilience-Strategy.pdf"; path = "../../../../../../../../Desktop/FileResources/PDFs/Sea-Level-Rise/Second/Greater-Miami-and-the-Beaches-Resilience-Strategy.pdf"; sourceTree = "<group>"; };
+		2249BE0320478733000354D0 /* MDPL_17Feb2016.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = MDPL_17Feb2016.pdf; path = "../../../../../../../../Desktop/FileResources/PDFs/Sea-Level-Rise/Second/MDPL_17Feb2016.pdf"; sourceTree = "<group>"; };
+		2249BE0520478739000354D0 /* SLR-Adaptation-Master-Plan.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "SLR-Adaptation-Master-Plan.pdf"; path = "../../../../../../../../Desktop/FileResources/PDFs/Sea-Level-Rise/Second/SLR-Adaptation-Master-Plan.pdf"; sourceTree = "<group>"; };
+		2249BE0720478741000354D0 /* Townhall-Fact-Sheet-02-16-2017.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "Townhall-Fact-Sheet-02-16-2017.pdf"; path = "../../../../../../../../Desktop/FileResources/PDFs/Sea-Level-Rise/Second/Townhall-Fact-Sheet-02-16-2017.pdf"; sourceTree = "<group>"; };
+		2249BE0920478748000354D0 /* VKB-Adaptation-Strategies-v2.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "VKB-Adaptation-Strategies-v2.pdf"; path = "../../../../../../../../Desktop/FileResources/PDFs/Sea-Level-Rise/Second/VKB-Adaptation-Strategies-v2.pdf"; sourceTree = "<group>"; };
+		2249BE0B2047874E000354D0 /* Workshop-Powerpoint-Slides.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "Workshop-Powerpoint-Slides.pdf"; path = "../../../../../../../../Desktop/FileResources/PDFs/Sea-Level-Rise/Third/Workshop-Powerpoint-Slides.pdf"; sourceTree = "<group>"; };
+		2249BE0D20478754000354D0 /* Workshop-Summary-Report_06232017.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "Workshop-Summary-Report_06232017.pdf"; path = "../../../../../../../../Desktop/FileResources/PDFs/Sea-Level-Rise/Third/Workshop-Summary-Report_06232017.pdf"; sourceTree = "<group>"; };
+		2249BE0F20479680000354D0 /* Survey-Results-2-6-2017.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "Survey-Results-2-6-2017.pdf"; path = "../../../../../../../../Desktop/FileResources/PDFs/Sea-Level-Rise/Survey-Results-2-6-2017.pdf"; sourceTree = "<group>"; };
 		22594971202D969F0047E055 /* SectionFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionFooterView.swift; sourceTree = "<group>"; };
 		22594975202DA6EC0047E055 /* CollectionViewCellContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCellContent.swift; sourceTree = "<group>"; };
 		22594977202DAA0C0047E055 /* CollectionViewContentManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewContentManager.swift; sourceTree = "<group>"; };
 		2259497A202DCCEC0047E055 /* SectionFooter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionFooter.swift; sourceTree = "<group>"; };
 		22891A3C202DEBE7000FEBB4 /* SocialNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialNetwork.swift; sourceTree = "<group>"; };
+		228FA99F2047788B003610B3 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		228FA9A1204778B3003610B3 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		22992257203E5814006CE1AB /* NavigationTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationTableViewController.swift; sourceTree = "<group>"; };
 		22992259203E58FA006CE1AB /* segueToTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = segueToTable.swift; sourceTree = "<group>"; };
-		229E613F2022A79200D4BDDA /* Citizen Scientist Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Citizen Scientist Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		229E613F2022A79200D4BDDA /* Citizen-Scientist-Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Citizen-Scientist-Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		229E61422022A79200D4BDDA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		229E61442022A79200D4BDDA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		229E61472022A79200D4BDDA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -78,10 +110,10 @@
 		229E614C2022A79200D4BDDA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		229E614F2022A79200D4BDDA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		229E61512022A79200D4BDDA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		229E61562022A79200D4BDDA /* Citizen Scientist ProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Citizen Scientist ProjectTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		229E61562022A79200D4BDDA /* Citizen-Scientist-ProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Citizen-Scientist-ProjectTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		229E615A2022A79200D4BDDA /* Citizen_Scientist_ProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Citizen_Scientist_ProjectTests.swift; sourceTree = "<group>"; };
 		229E615C2022A79200D4BDDA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		229E61612022A79200D4BDDA /* Citizen Scientist ProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Citizen Scientist ProjectUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		229E61612022A79200D4BDDA /* Citizen-Scientist-ProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Citizen-Scientist-ProjectUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		229E61652022A79200D4BDDA /* Citizen_Scientist_ProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Citizen_Scientist_ProjectUITests.swift; sourceTree = "<group>"; };
 		229E61672022A79200D4BDDA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		22F78C8E202D0F900001049D /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
@@ -149,6 +181,27 @@
 				2299222C203E5303006CE1AB /* View */,
 			);
 			path = Footer;
+			sourceTree = "<group>";
+		};
+		228FA9C320477E21003610B3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2249BE0F20479680000354D0 /* Survey-Results-2-6-2017.pdf */,
+				2249BE0D20478754000354D0 /* Workshop-Summary-Report_06232017.pdf */,
+				2249BE0B2047874E000354D0 /* Workshop-Powerpoint-Slides.pdf */,
+				2249BE0920478748000354D0 /* VKB-Adaptation-Strategies-v2.pdf */,
+				2249BE0720478741000354D0 /* Townhall-Fact-Sheet-02-16-2017.pdf */,
+				2249BE0520478739000354D0 /* SLR-Adaptation-Master-Plan.pdf */,
+				2249BE0320478733000354D0 /* MDPL_17Feb2016.pdf */,
+				2249BE012047872D000354D0 /* Greater-Miami-and-the-Beaches-Resilience-Strategy.pdf */,
+				2249BDFF20478726000354D0 /* CRC-VillageOfKeyBiscayne-FinaltVulnAssess-SM.pdf */,
+				2249BDFD2047871E000354D0 /* 100-Resilient-Cities.pdf */,
+				2249BDFB20478718000354D0 /* Vulnerability_assessment_11-11-2016.pdf */,
+				2249BDF920478710000354D0 /* Townhall-Fact-Sheet-11-10-2016.pdf */,
+				2249BDF72047859C000354D0 /* Agenda-for-SLR-Townhall-02-16-2017.pdf */,
+				2249BDF520478590000354D0 /* Agenda-for-SLR-Townhall-11-10-2016.pdf */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		22992227203E51FF006CE1AB /* Navigation */ = {
@@ -367,7 +420,10 @@
 		22992243203E555C006CE1AB /* SeaLevelRise */ = {
 			isa = PBXGroup;
 			children = (
+				22E33DB9203E900200A0259A /* Model */,
+				22E33DB8203E8FE100A0259A /* View */,
 				22992246203E5608006CE1AB /* Controller */,
+				228FA9C320477E21003610B3 /* Resources */,
 			);
 			path = SeaLevelRise;
 			sourceTree = "<group>";
@@ -392,6 +448,8 @@
 			isa = PBXGroup;
 			children = (
 				6D021C07203E2E2F003E35D5 /* SeaLevelRiseViewController.swift */,
+				228FA99F2047788B003610B3 /* WebViewController.swift */,
+				228FA9A1204778B3003610B3 /* TableViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -529,9 +587,9 @@
 		229E61402022A79200D4BDDA /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				229E613F2022A79200D4BDDA /* Citizen Scientist Project.app */,
-				229E61562022A79200D4BDDA /* Citizen Scientist ProjectTests.xctest */,
-				229E61612022A79200D4BDDA /* Citizen Scientist ProjectUITests.xctest */,
+				229E613F2022A79200D4BDDA /* Citizen-Scientist-Project.app */,
+				229E61562022A79200D4BDDA /* Citizen-Scientist-ProjectTests.xctest */,
+				229E61612022A79200D4BDDA /* Citizen-Scientist-ProjectUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -587,6 +645,20 @@
 			path = "Citizen Scientist ProjectUITests";
 			sourceTree = "<group>";
 		};
+		22E33DB8203E8FE100A0259A /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		22E33DB9203E900200A0259A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		22F78C91202D153D0001049D /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -607,9 +679,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		229E613E2022A79200D4BDDA /* Citizen Scientist Project */ = {
+		229E613E2022A79200D4BDDA /* Citizen-Scientist-Project */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 229E616A2022A79200D4BDDA /* Build configuration list for PBXNativeTarget "Citizen Scientist Project" */;
+			buildConfigurationList = 229E616A2022A79200D4BDDA /* Build configuration list for PBXNativeTarget "Citizen-Scientist-Project" */;
 			buildPhases = (
 				229E613B2022A79200D4BDDA /* Sources */,
 				229E613C2022A79200D4BDDA /* Frameworks */,
@@ -619,14 +691,14 @@
 			);
 			dependencies = (
 			);
-			name = "Citizen Scientist Project";
+			name = "Citizen-Scientist-Project";
 			productName = "Citizen Scientist Project";
-			productReference = 229E613F2022A79200D4BDDA /* Citizen Scientist Project.app */;
+			productReference = 229E613F2022A79200D4BDDA /* Citizen-Scientist-Project.app */;
 			productType = "com.apple.product-type.application";
 		};
-		229E61552022A79200D4BDDA /* Citizen Scientist ProjectTests */ = {
+		229E61552022A79200D4BDDA /* Citizen-Scientist-ProjectTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 229E616D2022A79200D4BDDA /* Build configuration list for PBXNativeTarget "Citizen Scientist ProjectTests" */;
+			buildConfigurationList = 229E616D2022A79200D4BDDA /* Build configuration list for PBXNativeTarget "Citizen-Scientist-ProjectTests" */;
 			buildPhases = (
 				229E61522022A79200D4BDDA /* Sources */,
 				229E61532022A79200D4BDDA /* Frameworks */,
@@ -637,14 +709,14 @@
 			dependencies = (
 				229E61582022A79200D4BDDA /* PBXTargetDependency */,
 			);
-			name = "Citizen Scientist ProjectTests";
+			name = "Citizen-Scientist-ProjectTests";
 			productName = "Citizen Scientist ProjectTests";
-			productReference = 229E61562022A79200D4BDDA /* Citizen Scientist ProjectTests.xctest */;
+			productReference = 229E61562022A79200D4BDDA /* Citizen-Scientist-ProjectTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		229E61602022A79200D4BDDA /* Citizen Scientist ProjectUITests */ = {
+		229E61602022A79200D4BDDA /* Citizen-Scientist-ProjectUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 229E61702022A79200D4BDDA /* Build configuration list for PBXNativeTarget "Citizen Scientist ProjectUITests" */;
+			buildConfigurationList = 229E61702022A79200D4BDDA /* Build configuration list for PBXNativeTarget "Citizen-Scientist-ProjectUITests" */;
 			buildPhases = (
 				229E615D2022A79200D4BDDA /* Sources */,
 				229E615E2022A79200D4BDDA /* Frameworks */,
@@ -655,9 +727,9 @@
 			dependencies = (
 				229E61632022A79200D4BDDA /* PBXTargetDependency */,
 			);
-			name = "Citizen Scientist ProjectUITests";
+			name = "Citizen-Scientist-ProjectUITests";
 			productName = "Citizen Scientist ProjectUITests";
-			productReference = 229E61612022A79200D4BDDA /* Citizen Scientist ProjectUITests.xctest */;
+			productReference = 229E61612022A79200D4BDDA /* Citizen-Scientist-ProjectUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -686,7 +758,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 229E613A2022A79200D4BDDA /* Build configuration list for PBXProject "Citizen Scientist Project" */;
+			buildConfigurationList = 229E613A2022A79200D4BDDA /* Build configuration list for PBXProject "Citizen-Scientist-Project" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -699,9 +771,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				229E613E2022A79200D4BDDA /* Citizen Scientist Project */,
-				229E61552022A79200D4BDDA /* Citizen Scientist ProjectTests */,
-				229E61602022A79200D4BDDA /* Citizen Scientist ProjectUITests */,
+				229E613E2022A79200D4BDDA /* Citizen-Scientist-Project */,
+				229E61552022A79200D4BDDA /* Citizen-Scientist-ProjectTests */,
+				229E61602022A79200D4BDDA /* Citizen-Scientist-ProjectUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -712,8 +784,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				229E61502022A79200D4BDDA /* LaunchScreen.storyboard in Resources */,
+				2249BE0E20478754000354D0 /* Workshop-Summary-Report_06232017.pdf in Resources */,
+				2249BDF620478590000354D0 /* Agenda-for-SLR-Townhall-11-10-2016.pdf in Resources */,
+				2249BE0A20478748000354D0 /* VKB-Adaptation-Strategies-v2.pdf in Resources */,
+				2249BE0620478739000354D0 /* SLR-Adaptation-Master-Plan.pdf in Resources */,
+				2249BE1020479681000354D0 /* Survey-Results-2-6-2017.pdf in Resources */,
 				229E614D2022A79200D4BDDA /* Assets.xcassets in Resources */,
+				2249BE0820478741000354D0 /* Townhall-Fact-Sheet-02-16-2017.pdf in Resources */,
+				2249BDFE2047871F000354D0 /* 100-Resilient-Cities.pdf in Resources */,
 				229E61482022A79200D4BDDA /* Main.storyboard in Resources */,
+				2249BE022047872D000354D0 /* Greater-Miami-and-the-Beaches-Resilience-Strategy.pdf in Resources */,
+				2249BDFC20478718000354D0 /* Vulnerability_assessment_11-11-2016.pdf in Resources */,
+				2249BE0420478733000354D0 /* MDPL_17Feb2016.pdf in Resources */,
+				2249BDF82047859C000354D0 /* Agenda-for-SLR-Townhall-02-16-2017.pdf in Resources */,
+				2249BE0C2047874F000354D0 /* Workshop-Powerpoint-Slides.pdf in Resources */,
+				2249BDFA20478710000354D0 /* Townhall-Fact-Sheet-11-10-2016.pdf in Resources */,
+				2249BE0020478726000354D0 /* CRC-VillageOfKeyBiscayne-FinaltVulnAssess-SM.pdf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -753,6 +839,7 @@
 				6D021C06203E2E1D003E35D5 /* KeyChallengeViewController.swift in Sources */,
 				6D021C18203E3142003E35D5 /* OurPartnersViewController.swift in Sources */,
 				6D37E600203C869D00FF4BBA /* ProfileViewController.swift in Sources */,
+				228FA9A02047788B003610B3 /* WebViewController.swift in Sources */,
 				6D37E608203C893A00FF4BBA /* EventsViewController.swift in Sources */,
 				22992258203E5814006CE1AB /* NavigationTableViewController.swift in Sources */,
 				6D021C00203E2A36003E35D5 /* ExploreViewController.swift in Sources */,
@@ -765,6 +852,7 @@
 				6D37E60A203C897100FF4BBA /* NewsViewController.swift in Sources */,
 				6D021C08203E2E2F003E35D5 /* SeaLevelRiseViewController.swift in Sources */,
 				22594978202DAA0C0047E055 /* CollectionViewContentManager.swift in Sources */,
+				228FA9A2204778B3003610B3 /* TableViewController.swift in Sources */,
 				6D021C04203E2A52003E35D5 /* ReviewViewController.swift in Sources */,
 				22594972202D969F0047E055 /* SectionFooterView.swift in Sources */,
 				6D0DCF2E203B5AC3000F5D62 /* NavigationTableViewCell.swift in Sources */,
@@ -793,12 +881,12 @@
 /* Begin PBXTargetDependency section */
 		229E61582022A79200D4BDDA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 229E613E2022A79200D4BDDA /* Citizen Scientist Project */;
+			target = 229E613E2022A79200D4BDDA /* Citizen-Scientist-Project */;
 			targetProxy = 229E61572022A79200D4BDDA /* PBXContainerItemProxy */;
 		};
 		229E61632022A79200D4BDDA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 229E613E2022A79200D4BDDA /* Citizen Scientist Project */;
+			target = 229E613E2022A79200D4BDDA /* Citizen-Scientist-Project */;
 			targetProxy = 229E61622022A79200D4BDDA /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -936,10 +1024,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = R89DGE8VGB;
+				DEVELOPMENT_TEAM = 2EAVSD837T;
 				INFOPLIST_FILE = "Citizen Scientist Project/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.Key.Biscayne.Citizen-Scientist-Project";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Key.Biscayne.Citizen-Scientist-Project2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
@@ -953,10 +1041,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = R89DGE8VGB;
+				DEVELOPMENT_TEAM = 2EAVSD837T;
 				INFOPLIST_FILE = "Citizen Scientist Project/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.Key.Biscayne.Citizen-Scientist-Project";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Key.Biscayne.Citizen-Scientist-Project2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
@@ -976,7 +1064,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Citizen Scientist Project.app/Citizen Scientist Project";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Citizen-Scientist-Project.app/Citizen-Scientist-Project";
 			};
 			name = Debug;
 		};
@@ -992,7 +1080,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Citizen Scientist Project.app/Citizen Scientist Project";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Citizen-Scientist-Project.app/Citizen-Scientist-Project";
 			};
 			name = Release;
 		};
@@ -1029,7 +1117,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		229E613A2022A79200D4BDDA /* Build configuration list for PBXProject "Citizen Scientist Project" */ = {
+		229E613A2022A79200D4BDDA /* Build configuration list for PBXProject "Citizen-Scientist-Project" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				229E61682022A79200D4BDDA /* Debug */,
@@ -1038,7 +1126,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		229E616A2022A79200D4BDDA /* Build configuration list for PBXNativeTarget "Citizen Scientist Project" */ = {
+		229E616A2022A79200D4BDDA /* Build configuration list for PBXNativeTarget "Citizen-Scientist-Project" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				229E616B2022A79200D4BDDA /* Debug */,
@@ -1047,7 +1135,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		229E616D2022A79200D4BDDA /* Build configuration list for PBXNativeTarget "Citizen Scientist ProjectTests" */ = {
+		229E616D2022A79200D4BDDA /* Build configuration list for PBXNativeTarget "Citizen-Scientist-ProjectTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				229E616E2022A79200D4BDDA /* Debug */,
@@ -1056,7 +1144,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		229E61702022A79200D4BDDA /* Build configuration list for PBXNativeTarget "Citizen Scientist ProjectUITests" */ = {
+		229E61702022A79200D4BDDA /* Build configuration list for PBXNativeTarget "Citizen-Scientist-ProjectUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				229E61712022A79200D4BDDA /* Debug */,
