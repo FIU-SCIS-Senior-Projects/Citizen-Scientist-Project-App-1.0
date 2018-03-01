@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0zI-XZ-BQA">
-    <device id="retina3_5" orientation="portrait">
+    <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -22,27 +22,27 @@
             <objects>
                 <tableViewController id="OYm-TY-SzU" customClass="NavigationTableViewController" customModule="Citizen_Scientist_Project" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="70" estimatedRowHeight="-1" sectionHeaderHeight="70" sectionFooterHeight="28" id="zjp-Mz-DBi">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.18823529411764706" green="0.19607843137254902" blue="0.25098039215686274" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="sectionIndexBackgroundColor" red="0.18823529411764706" green="0.19607843137254902" blue="0.25098039215686274" alpha="1" colorSpace="calibratedRGB"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="NavigationTableViewCell" rowHeight="70" id="DoP-dB-lm9" customClass="NavigationTableViewCell" customModule="Citizen_Scientist_Project" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="70" width="320" height="70"/>
+                                <rect key="frame" x="0.0" y="70" width="414" height="70"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="DoP-dB-lm9" id="FkZ-ea-CP6">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="69.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="69.666666666666671"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nXV-i7-XdM">
-                                            <rect key="frame" x="16" y="12.5" width="45" height="45"/>
+                                            <rect key="frame" x="16" y="12.666666666666664" width="45" height="45"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="45" id="VBS-fH-8gm"/>
                                                 <constraint firstAttribute="height" constant="45" id="jig-bb-ndE"/>
                                             </constraints>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rdz-0A-Ues">
-                                            <rect key="frame" x="69" y="20" width="200" height="30"/>
+                                            <rect key="frame" x="69" y="20" width="294" height="30"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="30" id="F6h-G1-xog"/>
                                                 <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="JQf-ue-i5Q"/>
@@ -52,7 +52,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mfd-u2-iLf" userLabel="Open Image View">
-                                            <rect key="frame" x="274" y="20" width="30" height="30"/>
+                                            <rect key="frame" x="368" y="20" width="30" height="30"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="30" id="57t-Sq-9uB"/>
                                                 <constraint firstAttribute="width" constant="30" id="GRP-0w-aQa"/>
@@ -117,11 +117,11 @@
             <objects>
                 <viewController id="ePw-MV-OSx" customClass="ProfileViewController" customModule="Citizen_Scientist_Project" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="19H-X7-AJC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Profile Page" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mNT-Cn-dTA">
-                                <rect key="frame" x="114.5" y="229.5" width="91" height="21"/>
+                                <rect key="frame" x="161.66666666666666" y="357.66666666666669" width="91" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -152,11 +152,11 @@
             <objects>
                 <viewController id="Nhh-Xc-pD7" customClass="GeoHuntViewController" customModule="Citizen_Scientist_Project" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="npd-UJ-15Z">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="ZCP-Qs-GKG">
-                                <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                                <rect key="frame" x="0.0" y="64" width="414" height="672"/>
                             </mapView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -193,11 +193,11 @@
             <objects>
                 <viewController id="ut8-Ko-Pu2" customClass="LearnViewController" customModule="Citizen_Scientist_Project" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rOH-nI-B4K">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Learn Page" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kO4-ge-wey">
-                                <rect key="frame" x="117" y="229.5" width="86" height="21"/>
+                                <rect key="frame" x="164" y="357.66666666666669" width="86" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -228,11 +228,11 @@
             <objects>
                 <viewController id="zQx-Jl-2DE" customClass="ExploreViewController" customModule="Citizen_Scientist_Project" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GAa-kn-jET">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Explore Page" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JmZ-bC-fBy">
-                                <rect key="frame" x="110" y="229.5" width="100" height="21"/>
+                                <rect key="frame" x="157" y="357.66666666666669" width="100" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -263,11 +263,11 @@
             <objects>
                 <viewController id="bCD-OY-gXb" customClass="RecordViewController" customModule="Citizen_Scientist_Project" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nth-Aq-8qx">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Record Page" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NeY-l3-V2D">
-                                <rect key="frame" x="111.5" y="229.5" width="97" height="21"/>
+                                <rect key="frame" x="158.66666666666666" y="357.66666666666669" width="97" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -298,11 +298,11 @@
             <objects>
                 <viewController id="8HI-9x-GoA" customClass="ReviewViewController" customModule="Citizen_Scientist_Project" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ftl-Ec-Y5g">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Review Page" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lP0-9L-PRc">
-                                <rect key="frame" x="111.5" y="229.5" width="97" height="21"/>
+                                <rect key="frame" x="158.66666666666666" y="357.66666666666669" width="97" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -333,11 +333,11 @@
             <objects>
                 <viewController id="jKh-MS-fXM" customClass="KeyChallengeViewController" customModule="Citizen_Scientist_Project" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Olz-eF-b0c">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Key Challenge Page" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3R4-Bd-eb8">
-                                <rect key="frame" x="84" y="229.5" width="152" height="21"/>
+                                <rect key="frame" x="131" y="357.66666666666669" width="152" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -368,11 +368,11 @@
             <objects>
                 <viewController id="lSf-Zo-CgR" customClass="SeaLevelRiseViewController" customModule="Citizen_Scientist_Project" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Y7Q-TV-AOR">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sea Level Rise Page" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lLf-YN-imV">
-                                <rect key="frame" x="83.5" y="229.5" width="153" height="21"/>
+                                <rect key="frame" x="130.66666666666666" y="357.66666666666669" width="152.99999999999997" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -403,11 +403,11 @@
             <objects>
                 <viewController id="ckQ-HU-6ed" customClass="WaterWatchViewController" customModule="Citizen_Scientist_Project" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="OAC-OM-tnd">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Water Watch Page" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V8d-AK-cUx">
-                                <rect key="frame" x="89.5" y="229.5" width="141" height="21"/>
+                                <rect key="frame" x="136.66666666666666" y="357.66666666666669" width="140.99999999999997" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -438,35 +438,36 @@
             <objects>
                 <viewController id="auj-5x-N91" customClass="ReefRestorationViewController" customModule="Citizen_Scientist_Project" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="h67-Xi-dxL">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="3300"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="2895"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hKC-3P-gS3">
-                                <rect key="frame" x="0.0" y="64" width="375" height="3236"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="2895"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dcp-QJ-Y9P">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="536"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="457"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="reef-restoration-1" translatesAutoresizingMaskIntoConstraints="NO" id="bhl-K5-Go3">
-                                                <rect key="frame" x="0.0" y="0.0" width="375" height="300"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="275"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="300" id="vzf-yI-0Ax"/>
+                                                    <constraint firstAttribute="width" secondItem="bhl-K5-Go3" secondAttribute="height" multiplier="15:11" id="DPJ-dT-OLp"/>
                                                 </constraints>
                                             </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Rescue A Reef Sponsored Dive Trip on September 16, 2017 has been postponed due to damage caused by Hurricane Irma." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="JAB-jk-deD">
-                                                <rect key="frame" x="8" y="308" width="359" height="137"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Rescue A Reef Sponsored Dive Trip on September 16, 2017 has been postponed due to damage caused by Hurricane Irma." lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="JAB-jk-deD">
+                                                <rect key="frame" x="8" y="283" width="359" height="94"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" secondItem="JAB-jk-deD" secondAttribute="height" multiplier="359:137" id="Fnk-aZ-k4C"/>
+                                                    <constraint firstAttribute="width" secondItem="JAB-jk-deD" secondAttribute="height" multiplier="359:94" id="7Fq-Kn-tqw"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DHE-A7-agz">
-                                                <rect key="frame" x="143.5" y="453" width="88" height="30"/>
+                                                <rect key="frame" x="137" y="385" width="100" height="50"/>
                                                 <color key="backgroundColor" red="0.94901960784313721" green="0.21176470588235294" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" secondItem="DHE-A7-agz" secondAttribute="height" multiplier="38:15" constant="12.466666666666669" id="2xx-i5-p0I"/>
+                                                    <constraint firstAttribute="height" constant="50" id="gpj-UH-QpZ"/>
+                                                    <constraint firstAttribute="width" secondItem="DHE-A7-agz" secondAttribute="height" multiplier="2:1" id="nup-3N-jeZ"/>
                                                 </constraints>
                                                 <state key="normal" title="Learn More">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -478,48 +479,48 @@
                                         </subviews>
                                         <color key="backgroundColor" red="0.35686274509803922" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
-                                            <constraint firstItem="bhl-K5-Go3" firstAttribute="top" secondItem="Dcp-QJ-Y9P" secondAttribute="top" id="4PT-JC-cEW"/>
-                                            <constraint firstItem="JAB-jk-deD" firstAttribute="top" secondItem="bhl-K5-Go3" secondAttribute="bottom" constant="8" id="AJ4-yL-Ffd"/>
-                                            <constraint firstAttribute="height" constant="536" id="E0J-bp-CbN"/>
-                                            <constraint firstItem="JAB-jk-deD" firstAttribute="leading" secondItem="Dcp-QJ-Y9P" secondAttribute="leading" constant="8" id="K3v-F0-xjD"/>
-                                            <constraint firstAttribute="trailing" secondItem="JAB-jk-deD" secondAttribute="trailing" constant="8" id="MIO-tj-qPq"/>
-                                            <constraint firstItem="DHE-A7-agz" firstAttribute="top" secondItem="JAB-jk-deD" secondAttribute="bottom" constant="8" id="WaM-lY-vr1"/>
-                                            <constraint firstItem="bhl-K5-Go3" firstAttribute="leading" secondItem="Dcp-QJ-Y9P" secondAttribute="leading" id="YtV-iF-EDs"/>
-                                            <constraint firstAttribute="trailing" secondItem="bhl-K5-Go3" secondAttribute="trailing" id="mWg-Tw-KFv"/>
-                                            <constraint firstItem="DHE-A7-agz" firstAttribute="centerX" secondItem="Dcp-QJ-Y9P" secondAttribute="centerX" id="pNM-mi-MP6"/>
+                                            <constraint firstAttribute="trailing" secondItem="JAB-jk-deD" secondAttribute="trailing" constant="8" id="30I-9m-Gdb"/>
+                                            <constraint firstItem="DHE-A7-agz" firstAttribute="centerX" secondItem="Dcp-QJ-Y9P" secondAttribute="centerX" id="8Ut-bL-gbv"/>
+                                            <constraint firstItem="bhl-K5-Go3" firstAttribute="top" secondItem="Dcp-QJ-Y9P" secondAttribute="top" id="DYy-fi-d7n"/>
+                                            <constraint firstItem="bhl-K5-Go3" firstAttribute="leading" secondItem="Dcp-QJ-Y9P" secondAttribute="leading" id="Eyg-xb-xOz"/>
+                                            <constraint firstItem="DHE-A7-agz" firstAttribute="top" secondItem="JAB-jk-deD" secondAttribute="bottom" constant="8" id="Kgy-kZ-1vR"/>
+                                            <constraint firstAttribute="trailing" secondItem="bhl-K5-Go3" secondAttribute="trailing" id="Ufg-fl-d6C"/>
+                                            <constraint firstAttribute="width" secondItem="Dcp-QJ-Y9P" secondAttribute="height" multiplier="375:457" id="lhp-f9-BYt"/>
+                                            <constraint firstItem="JAB-jk-deD" firstAttribute="top" secondItem="bhl-K5-Go3" secondAttribute="bottom" constant="8" id="lvY-YF-5dX"/>
+                                            <constraint firstItem="JAB-jk-deD" firstAttribute="leading" secondItem="Dcp-QJ-Y9P" secondAttribute="leading" constant="8" id="tgI-8j-nfY"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="poG-Un-ESq">
-                                        <rect key="frame" x="0.0" y="536" width="375" height="2692"/>
+                                        <rect key="frame" x="0.0" y="451" width="375" height="2444"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="reef-restoration-2" translatesAutoresizingMaskIntoConstraints="NO" id="Yad-2b-qat">
-                                                <rect key="frame" x="0.0" y="0.0" width="375" height="275"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" secondItem="Yad-2b-qat" secondAttribute="height" multiplier="15:11" id="JUV-RG-Ml1"/>
+                                                    <constraint firstAttribute="width" secondItem="Yad-2b-qat" secondAttribute="height" multiplier="5:2" id="bQ2-Ki-OuF"/>
                                                 </constraints>
                                             </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RESCUE A REEF SPONSORED DIVE TRIP" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="8e6-UJ-LuL">
-                                                <rect key="frame" x="8" y="283" width="359" height="41"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RESCUE A REEF SPONSORED DIVE TRIP" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="8e6-UJ-LuL">
+                                                <rect key="frame" x="8" y="158" width="359" height="41"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" secondItem="8e6-UJ-LuL" secondAttribute="height" multiplier="359:41" id="X5Z-6V-ggn"/>
+                                                    <constraint firstAttribute="width" secondItem="8e6-UJ-LuL" secondAttribute="height" multiplier="359:41" id="Mie-Lt-xuW"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
                                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Join the Key Biscayne Citizen Science Project for our second annual Reef Restoration Day! " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="BCe-6K-9pA">
-                                                <rect key="frame" x="8" y="332" width="359" height="53"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Join the Key Biscayne Citizen Science Project for our second annual Reef Restoration Day! " lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="BCe-6K-9pA">
+                                                <rect key="frame" x="8" y="199" width="359" height="53"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" secondItem="BCe-6K-9pA" secondAttribute="height" multiplier="359:53" id="uJX-os-vai"/>
+                                                    <constraint firstAttribute="width" secondItem="BCe-6K-9pA" secondAttribute="height" multiplier="359:53" id="ffv-XI-h2E"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="italicSystem" pointSize="17"/>
+                                                <fontDescription key="fontDescription" type="italicSystem" pointSize="15"/>
                                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="19" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="ZYA-Uw-2Uc">
-                                                <rect key="frame" x="8" y="393" width="359" height="306"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="19" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="ZYA-Uw-2Uc">
+                                                <rect key="frame" x="8" y="260" width="359" height="286"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" secondItem="ZYA-Uw-2Uc" secondAttribute="height" multiplier="359:306" id="DWt-RO-sZD"/>
+                                                    <constraint firstAttribute="width" secondItem="ZYA-Uw-2Uc" secondAttribute="height" multiplier="359:286" id="bO8-oQ-9jM"/>
                                                 </constraints>
                                                 <string key="text">Have you ever wondered what marine biologists do? Are you interested in diving alongside University of Miami coral reef experts? Rescue A Reef coral restoration expeditions offer you a hands-on experience to work with live corals in their natural habitat! 
 
@@ -528,19 +529,19 @@ Key Biscayne residents are invited to join a KBCF Citizen Scientist Project-spon
                                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="KEY BISCAYNE REEF RESTORATION" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="Vld-nI-2bH">
-                                                <rect key="frame" x="8" y="699" width="359" height="41"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="KEY BISCAYNE REEF RESTORATION" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="Vld-nI-2bH">
+                                                <rect key="frame" x="8" y="554" width="359" height="41"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" secondItem="Vld-nI-2bH" secondAttribute="height" multiplier="359:41" id="1Jf-Kf-U9A"/>
+                                                    <constraint firstAttribute="width" secondItem="Vld-nI-2bH" secondAttribute="height" multiplier="359:41" id="vic-9S-ral"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
                                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="46" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="5iB-Bs-TFE">
-                                                <rect key="frame" x="8" y="748" width="359" height="909"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="46" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="5iB-Bs-TFE">
+                                                <rect key="frame" x="8" y="603" width="359" height="894"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" secondItem="5iB-Bs-TFE" secondAttribute="height" multiplier="359:909" id="mDd-jN-iHA"/>
+                                                    <constraint firstAttribute="width" secondItem="5iB-Bs-TFE" secondAttribute="height" multiplier="359:894" id="FeY-MS-Isw"/>
                                                 </constraints>
                                                 <string key="text">Staghorn corals (Acropora cervicornis) are  important coral reef engineers, providing essential habitat for many other reef organisms. Unfortunately, coral populations have drastically declined and are threatened with extinction due to climate change, pollution, disease, overfishing, and habitat destruction. Staghorn corals have been designated on the IUCN red list as “critically endangered,” and are listed as “threatened” under the Endangered Species Act.  The National Marine Fisheries Service has designated Florida as one of four critical habitats in the world for staghorn coral.
 
@@ -556,163 +557,162 @@ The area around Key Biscayne and Virginia Key is part of the designated critical
                                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="reef-restoration-3" translatesAutoresizingMaskIntoConstraints="NO" id="E7v-dZ-aAS">
-                                                <rect key="frame" x="0.0" y="1665" width="375" height="275"/>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="reef-restoration-3" translatesAutoresizingMaskIntoConstraints="NO" id="Zw6-q6-2gb">
+                                                <rect key="frame" x="0.0" y="1505" width="375" height="175"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" secondItem="E7v-dZ-aAS" secondAttribute="height" multiplier="15:11" id="ThX-TT-Fqt"/>
+                                                    <constraint firstAttribute="width" secondItem="Zw6-q6-2gb" secondAttribute="height" multiplier="15:7" id="y0M-KX-5aj"/>
                                                 </constraints>
                                             </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HALF-DAY DIVE" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="SYP-oF-VRi">
-                                                <rect key="frame" x="8" y="1948" width="359" height="41"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HALF-DAY DIVE" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="SYP-oF-VRi">
+                                                <rect key="frame" x="8" y="1688" width="359" height="41"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" secondItem="SYP-oF-VRi" secondAttribute="height" multiplier="359:41" id="tjK-Jn-Kf1"/>
+                                                    <constraint firstAttribute="width" secondItem="SYP-oF-VRi" secondAttribute="height" multiplier="359:41" id="OL3-8O-Nou"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
                                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FAMILY ACTIVITIES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="A3w-F4-v87">
-                                                <rect key="frame" x="8" y="2324" width="359" height="41"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FAMILY ACTIVITIES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="A3w-F4-v87">
+                                                <rect key="frame" x="8" y="2029" width="359" height="41"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" secondItem="A3w-F4-v87" secondAttribute="height" multiplier="359:41" id="08Q-7H-gMh"/>
+                                                    <constraint firstAttribute="width" secondItem="A3w-F4-v87" secondAttribute="height" multiplier="359:41" id="wkU-Uk-nxZ"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
                                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="Ujv-GR-VCS">
-                                                <rect key="frame" x="8" y="1997" width="359" height="131"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="Ujv-GR-VCS">
+                                                <rect key="frame" x="8" y="1737" width="359" height="109"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" secondItem="Ujv-GR-VCS" secondAttribute="height" multiplier="359:131" id="EFZ-Pr-6KN"/>
+                                                    <constraint firstAttribute="width" secondItem="Ujv-GR-VCS" secondAttribute="height" multiplier="359:109" id="JOr-TP-Ttq"/>
                                                 </constraints>
                                                 <string key="text">The trip will be comprised of a half-day dive excursion leaving from Diver’s Paradise of Key Biscayne at 7:30am, beginning with a short demonstration on coral nursery maintenance and out-planting methods.</string>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CORAL OUT-PLANTING" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="9Wh-I6-7zW">
-                                                <rect key="frame" x="8" y="2136" width="359" height="41"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CORAL OUT-PLANTING" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="9Wh-I6-7zW">
+                                                <rect key="frame" x="8" y="1854" width="359" height="41"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" secondItem="9Wh-I6-7zW" secondAttribute="height" multiplier="359:41" id="JUE-dy-7P0"/>
+                                                    <constraint firstAttribute="width" secondItem="9Wh-I6-7zW" secondAttribute="height" multiplier="359:41" id="if0-dc-wHh"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
                                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="9" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="SLl-ve-DTi">
-                                                <rect key="frame" x="8" y="2185" width="359" height="131"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="9" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="SLl-ve-DTi">
+                                                <rect key="frame" x="8" y="1903" width="359" height="118"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" secondItem="SLl-ve-DTi" secondAttribute="height" multiplier="359:131" id="DCu-6x-w92"/>
+                                                    <constraint firstAttribute="width" secondItem="SLl-ve-DTi" secondAttribute="height" multiplier="359:118" id="Cy8-XZ-eD4"/>
                                                 </constraints>
                                                 <string key="text">At the Key Biscayne Coral Nursery, divers will help with cleaning the coral nursery trees and collecting coral clippings for out-planting, followed by a trip to Diver’s Paradise Reef where the coral fragments will be out-planted.</string>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="7cU-gz-ax7">
-                                                <rect key="frame" x="8" y="2373" width="359" height="131"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="7cU-gz-ax7">
+                                                <rect key="frame" x="8" y="2078" width="359" height="131"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" secondItem="7cU-gz-ax7" secondAttribute="height" multiplier="359:131" id="AqG-I1-kND"/>
+                                                    <constraint firstAttribute="width" secondItem="7cU-gz-ax7" secondAttribute="height" multiplier="359:131" id="3sa-92-DqE"/>
                                                 </constraints>
                                                 <string key="text">After returning from the dive at about 1:30pm, the families of the participants are encouraged to join the citizen scientist divers and the Rescue A Reef staff at Diver’s Paradise for some food and drinks. Our team will be hosting educational activities for all to learn about coral reefs.</string>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="foundation-key-logos" translatesAutoresizingMaskIntoConstraints="NO" id="Oo3-br-wR0">
-                                                <rect key="frame" x="0.0" y="2512" width="375" height="100"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" secondItem="Oo3-br-wR0" secondAttribute="height" multiplier="15:4" id="gtO-g2-kGi"/>
-                                                </constraints>
-                                            </imageView>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bYk-J0-poX">
-                                                <rect key="frame" x="0.0" y="2612" width="375" height="70"/>
+                                                <rect key="frame" x="0.0" y="2308" width="375" height="70"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Footer Holder" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Le0-oD-H5N">
-                                                        <rect key="frame" x="135" y="25" width="105.5" height="21"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Footer Holder" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Le0-oD-H5N">
+                                                        <rect key="frame" x="135" y="25" width="106" height="21"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                        <nil key="textColor"/>
+                                                        <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="backgroundColor" red="0.082352941176470587" green="0.090196078431372548" blue="0.15294117647058825" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
-                                                    <constraint firstItem="Le0-oD-H5N" firstAttribute="centerY" secondItem="bYk-J0-poX" secondAttribute="centerY" id="7L0-Lj-KbR"/>
-                                                    <constraint firstItem="Le0-oD-H5N" firstAttribute="centerX" secondItem="bYk-J0-poX" secondAttribute="centerX" id="RAV-vt-8Qz"/>
-                                                    <constraint firstAttribute="width" secondItem="bYk-J0-poX" secondAttribute="height" multiplier="75:14" id="vbt-p1-518"/>
+                                                    <constraint firstAttribute="width" secondItem="bYk-J0-poX" secondAttribute="height" multiplier="75:14" id="ULI-po-Mwa"/>
                                                 </constraints>
                                             </view>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="foundation-key-logos" translatesAutoresizingMaskIntoConstraints="NO" id="Oo3-br-wR0">
+                                                <rect key="frame" x="0.0" y="2229" width="375" height="83"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="Oo3-br-wR0" secondAttribute="height" multiplier="375:83" id="bfY-z6-hSO"/>
+                                                </constraints>
+                                            </imageView>
                                         </subviews>
                                         <color key="backgroundColor" red="0.0039215686274509803" green="0.17254901960784313" blue="0.28235294117647058" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
-                                            <constraint firstItem="A3w-F4-v87" firstAttribute="leading" secondItem="poG-Un-ESq" secondAttribute="leading" constant="8" id="404-Ug-hL5"/>
-                                            <constraint firstAttribute="trailing" secondItem="Oo3-br-wR0" secondAttribute="trailing" id="7Vd-K2-Shb"/>
-                                            <constraint firstItem="bYk-J0-poX" firstAttribute="leading" secondItem="poG-Un-ESq" secondAttribute="leading" id="7Xm-vA-koZ"/>
-                                            <constraint firstItem="BCe-6K-9pA" firstAttribute="top" secondItem="8e6-UJ-LuL" secondAttribute="bottom" constant="8" id="8Lx-h6-aNS"/>
-                                            <constraint firstItem="Yad-2b-qat" firstAttribute="top" secondItem="poG-Un-ESq" secondAttribute="top" id="Ag5-NS-6it"/>
-                                            <constraint firstItem="Yad-2b-qat" firstAttribute="leading" secondItem="poG-Un-ESq" secondAttribute="leading" id="C3V-JD-cjT"/>
-                                            <constraint firstItem="7cU-gz-ax7" firstAttribute="top" secondItem="A3w-F4-v87" secondAttribute="bottom" constant="8" id="D6L-BB-GQP"/>
-                                            <constraint firstItem="5iB-Bs-TFE" firstAttribute="top" secondItem="Vld-nI-2bH" secondAttribute="bottom" constant="8" id="Ej4-oL-C4j"/>
-                                            <constraint firstItem="Oo3-br-wR0" firstAttribute="leading" secondItem="poG-Un-ESq" secondAttribute="leading" id="IKz-VQ-6Vv"/>
-                                            <constraint firstItem="8e6-UJ-LuL" firstAttribute="leading" secondItem="poG-Un-ESq" secondAttribute="leading" constant="8" id="IYH-Dd-iiS"/>
-                                            <constraint firstItem="Vld-nI-2bH" firstAttribute="top" secondItem="ZYA-Uw-2Uc" secondAttribute="bottom" id="Ih2-dx-J34"/>
-                                            <constraint firstItem="ZYA-Uw-2Uc" firstAttribute="top" secondItem="BCe-6K-9pA" secondAttribute="bottom" constant="8" id="Itm-re-c3t"/>
-                                            <constraint firstItem="SYP-oF-VRi" firstAttribute="top" secondItem="E7v-dZ-aAS" secondAttribute="bottom" constant="8" id="J2j-9M-ML2"/>
-                                            <constraint firstItem="7cU-gz-ax7" firstAttribute="leading" secondItem="poG-Un-ESq" secondAttribute="leading" constant="8" id="J9z-jZ-BOl"/>
-                                            <constraint firstAttribute="trailing" secondItem="Vld-nI-2bH" secondAttribute="trailing" constant="8" id="JXc-kc-5Qq"/>
-                                            <constraint firstItem="BCe-6K-9pA" firstAttribute="leading" secondItem="poG-Un-ESq" secondAttribute="leading" constant="8" id="LUI-KW-NBV"/>
-                                            <constraint firstItem="E7v-dZ-aAS" firstAttribute="leading" secondItem="poG-Un-ESq" secondAttribute="leading" id="NPn-D8-gvF"/>
-                                            <constraint firstItem="A3w-F4-v87" firstAttribute="top" secondItem="SLl-ve-DTi" secondAttribute="bottom" constant="8" id="OAy-ES-HuP"/>
-                                            <constraint firstAttribute="trailing" secondItem="ZYA-Uw-2Uc" secondAttribute="trailing" constant="8" id="OKY-R1-m57"/>
-                                            <constraint firstAttribute="trailing" secondItem="A3w-F4-v87" secondAttribute="trailing" constant="8" id="Pa5-O3-CRx"/>
-                                            <constraint firstAttribute="trailing" secondItem="BCe-6K-9pA" secondAttribute="trailing" constant="8" id="QOc-8P-giF"/>
-                                            <constraint firstItem="SLl-ve-DTi" firstAttribute="leading" secondItem="poG-Un-ESq" secondAttribute="leading" constant="8" id="QZd-oa-IMg"/>
-                                            <constraint firstItem="Oo3-br-wR0" firstAttribute="top" secondItem="7cU-gz-ax7" secondAttribute="bottom" constant="8" id="Tza-OA-eBk"/>
-                                            <constraint firstAttribute="trailing" secondItem="Yad-2b-qat" secondAttribute="trailing" id="UIu-9o-ey8"/>
-                                            <constraint firstItem="Ujv-GR-VCS" firstAttribute="top" secondItem="SYP-oF-VRi" secondAttribute="bottom" constant="8" id="UzG-zK-qzw"/>
-                                            <constraint firstAttribute="trailing" secondItem="SLl-ve-DTi" secondAttribute="trailing" constant="8" id="Vb1-uT-mOF"/>
-                                            <constraint firstItem="9Wh-I6-7zW" firstAttribute="top" secondItem="Ujv-GR-VCS" secondAttribute="bottom" constant="8" id="ViZ-vJ-puK"/>
-                                            <constraint firstAttribute="trailing" secondItem="SYP-oF-VRi" secondAttribute="trailing" constant="8" id="Ysj-UI-YvO"/>
-                                            <constraint firstItem="SYP-oF-VRi" firstAttribute="leading" secondItem="poG-Un-ESq" secondAttribute="leading" constant="8" id="ah4-EP-qPU"/>
-                                            <constraint firstItem="8e6-UJ-LuL" firstAttribute="top" secondItem="Yad-2b-qat" secondAttribute="bottom" constant="8" id="amj-zT-Pft"/>
-                                            <constraint firstItem="Ujv-GR-VCS" firstAttribute="leading" secondItem="poG-Un-ESq" secondAttribute="leading" constant="8" id="bBe-5G-hii"/>
-                                            <constraint firstAttribute="trailing" secondItem="9Wh-I6-7zW" secondAttribute="trailing" constant="8" id="bRe-XV-4wv"/>
-                                            <constraint firstItem="bYk-J0-poX" firstAttribute="top" secondItem="Oo3-br-wR0" secondAttribute="bottom" id="bel-uD-oXb"/>
-                                            <constraint firstAttribute="trailing" secondItem="Ujv-GR-VCS" secondAttribute="trailing" constant="8" id="eGj-JZ-3lr"/>
-                                            <constraint firstAttribute="trailing" secondItem="8e6-UJ-LuL" secondAttribute="trailing" constant="8" id="eYh-mD-Y9K"/>
-                                            <constraint firstAttribute="height" constant="2692" id="ecx-bp-ZtB"/>
-                                            <constraint firstAttribute="trailing" secondItem="bYk-J0-poX" secondAttribute="trailing" id="edO-Hf-wrj"/>
-                                            <constraint firstItem="E7v-dZ-aAS" firstAttribute="top" secondItem="5iB-Bs-TFE" secondAttribute="bottom" constant="8" id="ibW-f3-ELO"/>
-                                            <constraint firstItem="9Wh-I6-7zW" firstAttribute="leading" secondItem="poG-Un-ESq" secondAttribute="leading" constant="8" id="jfy-X1-yvr"/>
-                                            <constraint firstItem="Vld-nI-2bH" firstAttribute="leading" secondItem="poG-Un-ESq" secondAttribute="leading" constant="8" id="ku1-jW-pyG"/>
-                                            <constraint firstItem="5iB-Bs-TFE" firstAttribute="leading" secondItem="poG-Un-ESq" secondAttribute="leading" constant="8" id="m52-qx-MfX"/>
-                                            <constraint firstItem="SLl-ve-DTi" firstAttribute="top" secondItem="9Wh-I6-7zW" secondAttribute="bottom" constant="8" id="m7a-TQ-N9D"/>
-                                            <constraint firstItem="ZYA-Uw-2Uc" firstAttribute="leading" secondItem="poG-Un-ESq" secondAttribute="leading" constant="8" id="okv-3q-rKf"/>
-                                            <constraint firstAttribute="trailing" secondItem="5iB-Bs-TFE" secondAttribute="trailing" constant="8" id="sAS-hQ-hyQ"/>
-                                            <constraint firstAttribute="trailing" secondItem="E7v-dZ-aAS" secondAttribute="trailing" id="wLV-KE-NSq"/>
-                                            <constraint firstAttribute="trailing" secondItem="7cU-gz-ax7" secondAttribute="trailing" constant="8" id="y0w-ur-1wV"/>
+                                            <constraint firstAttribute="trailing" secondItem="7cU-gz-ax7" secondAttribute="trailing" constant="8" id="09q-MO-ysL"/>
+                                            <constraint firstItem="Yad-2b-qat" firstAttribute="top" secondItem="poG-Un-ESq" secondAttribute="top" id="0wz-A1-fFQ"/>
+                                            <constraint firstItem="SLl-ve-DTi" firstAttribute="top" secondItem="9Wh-I6-7zW" secondAttribute="bottom" constant="8" id="1LW-Wd-E9u"/>
+                                            <constraint firstAttribute="trailing" secondItem="Yad-2b-qat" secondAttribute="trailing" id="1dF-Dm-zG3"/>
+                                            <constraint firstAttribute="trailing" secondItem="SLl-ve-DTi" secondAttribute="trailing" constant="8" id="34Q-zL-561"/>
+                                            <constraint firstAttribute="trailing" secondItem="8e6-UJ-LuL" secondAttribute="trailing" constant="8" id="6u9-Ob-ttc"/>
+                                            <constraint firstAttribute="trailing" secondItem="Zw6-q6-2gb" secondAttribute="trailing" id="9de-2t-ppn"/>
+                                            <constraint firstAttribute="trailing" secondItem="bYk-J0-poX" secondAttribute="trailing" id="9jS-Qg-wOh"/>
+                                            <constraint firstItem="7cU-gz-ax7" firstAttribute="top" secondItem="A3w-F4-v87" secondAttribute="bottom" constant="8" id="BBj-VZ-elH"/>
+                                            <constraint firstItem="9Wh-I6-7zW" firstAttribute="leading" secondItem="poG-Un-ESq" secondAttribute="leading" constant="8" id="BVh-Eq-9PF"/>
+                                            <constraint firstAttribute="trailing" secondItem="9Wh-I6-7zW" secondAttribute="trailing" constant="8" id="Cij-UI-9w6"/>
+                                            <constraint firstItem="Zw6-q6-2gb" firstAttribute="leading" secondItem="poG-Un-ESq" secondAttribute="leading" id="DHl-Qb-CAi"/>
+                                            <constraint firstAttribute="width" secondItem="poG-Un-ESq" secondAttribute="height" multiplier="75:557" constant="45.91561938958705" id="DW2-Q6-sK1"/>
+                                            <constraint firstItem="Oo3-br-wR0" firstAttribute="top" secondItem="7cU-gz-ax7" secondAttribute="bottom" constant="20" id="FD6-e4-L75"/>
+                                            <constraint firstAttribute="trailing" secondItem="5iB-Bs-TFE" secondAttribute="trailing" constant="8" id="Gd7-yq-tpm"/>
+                                            <constraint firstAttribute="trailing" secondItem="BCe-6K-9pA" secondAttribute="trailing" constant="8" id="HDa-K8-Hzk"/>
+                                            <constraint firstAttribute="bottom" secondItem="bYk-J0-poX" secondAttribute="bottom" constant="66" id="Jx4-ri-FOz"/>
+                                            <constraint firstItem="5iB-Bs-TFE" firstAttribute="top" secondItem="Vld-nI-2bH" secondAttribute="bottom" constant="8" id="KCi-ox-b7k"/>
+                                            <constraint firstItem="5iB-Bs-TFE" firstAttribute="leading" secondItem="poG-Un-ESq" secondAttribute="leading" constant="8" id="L6A-W5-OMo"/>
+                                            <constraint firstItem="Ujv-GR-VCS" firstAttribute="top" secondItem="SYP-oF-VRi" secondAttribute="bottom" constant="8" id="La1-FT-aOt"/>
+                                            <constraint firstItem="Vld-nI-2bH" firstAttribute="leading" secondItem="poG-Un-ESq" secondAttribute="leading" constant="8" id="LpZ-PL-dYb"/>
+                                            <constraint firstItem="SLl-ve-DTi" firstAttribute="leading" secondItem="poG-Un-ESq" secondAttribute="leading" constant="8" id="N4x-sF-Ysy"/>
+                                            <constraint firstItem="SYP-oF-VRi" firstAttribute="leading" secondItem="poG-Un-ESq" secondAttribute="leading" constant="8" id="SCB-e6-5jC"/>
+                                            <constraint firstItem="Zw6-q6-2gb" firstAttribute="top" secondItem="5iB-Bs-TFE" secondAttribute="bottom" constant="8" id="SP5-Gx-SgP"/>
+                                            <constraint firstItem="BCe-6K-9pA" firstAttribute="top" secondItem="8e6-UJ-LuL" secondAttribute="bottom" id="WNx-bR-PYO"/>
+                                            <constraint firstAttribute="trailing" secondItem="ZYA-Uw-2Uc" secondAttribute="trailing" constant="8" id="XZH-P5-ujZ"/>
+                                            <constraint firstItem="Vld-nI-2bH" firstAttribute="top" secondItem="ZYA-Uw-2Uc" secondAttribute="bottom" constant="8" id="Ya7-57-Ffd"/>
+                                            <constraint firstAttribute="trailing" secondItem="Ujv-GR-VCS" secondAttribute="trailing" constant="8" id="YkM-Ri-ULT"/>
+                                            <constraint firstItem="A3w-F4-v87" firstAttribute="leading" secondItem="poG-Un-ESq" secondAttribute="leading" constant="8" id="aVf-iN-T2n"/>
+                                            <constraint firstItem="ZYA-Uw-2Uc" firstAttribute="top" secondItem="BCe-6K-9pA" secondAttribute="bottom" constant="8" id="akg-A3-rE9"/>
+                                            <constraint firstItem="Ujv-GR-VCS" firstAttribute="leading" secondItem="poG-Un-ESq" secondAttribute="leading" constant="8" id="bcg-sx-9qj"/>
+                                            <constraint firstItem="7cU-gz-ax7" firstAttribute="leading" secondItem="poG-Un-ESq" secondAttribute="leading" constant="8" id="dxx-OY-deO"/>
+                                            <constraint firstAttribute="trailing" secondItem="A3w-F4-v87" secondAttribute="trailing" constant="8" id="eYB-V3-4EM"/>
+                                            <constraint firstAttribute="trailing" secondItem="Vld-nI-2bH" secondAttribute="trailing" constant="8" id="idZ-RR-SFt"/>
+                                            <constraint firstItem="SYP-oF-VRi" firstAttribute="top" secondItem="Zw6-q6-2gb" secondAttribute="bottom" constant="8" id="jOR-od-psU"/>
+                                            <constraint firstItem="BCe-6K-9pA" firstAttribute="leading" secondItem="poG-Un-ESq" secondAttribute="leading" constant="8" id="jaT-iy-dWF"/>
+                                            <constraint firstItem="9Wh-I6-7zW" firstAttribute="top" secondItem="Ujv-GR-VCS" secondAttribute="bottom" constant="8" id="mw3-fg-G8t"/>
+                                            <constraint firstItem="Oo3-br-wR0" firstAttribute="leading" secondItem="poG-Un-ESq" secondAttribute="leading" id="nOn-wk-jrR"/>
+                                            <constraint firstItem="A3w-F4-v87" firstAttribute="top" secondItem="SLl-ve-DTi" secondAttribute="bottom" constant="8" id="pbw-v0-eSK"/>
+                                            <constraint firstAttribute="trailing" secondItem="SYP-oF-VRi" secondAttribute="trailing" constant="8" id="t5v-VC-1gl"/>
+                                            <constraint firstItem="bYk-J0-poX" firstAttribute="leading" secondItem="poG-Un-ESq" secondAttribute="leading" id="tFC-Mm-LZt"/>
+                                            <constraint firstAttribute="trailing" secondItem="Oo3-br-wR0" secondAttribute="trailing" id="tVY-FI-gr2"/>
+                                            <constraint firstItem="8e6-UJ-LuL" firstAttribute="leading" secondItem="poG-Un-ESq" secondAttribute="leading" constant="8" id="tWS-iT-uEu"/>
+                                            <constraint firstItem="ZYA-Uw-2Uc" firstAttribute="leading" secondItem="poG-Un-ESq" secondAttribute="leading" constant="8" id="urB-qP-Pkg"/>
+                                            <constraint firstItem="Yad-2b-qat" firstAttribute="leading" secondItem="poG-Un-ESq" secondAttribute="leading" id="vYq-W6-owr"/>
+                                            <constraint firstItem="8e6-UJ-LuL" firstAttribute="top" secondItem="Yad-2b-qat" secondAttribute="bottom" constant="8" id="xKO-HB-nPZ"/>
                                         </constraints>
                                     </view>
                                 </subviews>
                                 <color key="backgroundColor" red="0.0039215686274509803" green="0.17254901960784313" blue="0.28235294117647058" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstItem="Dcp-QJ-Y9P" firstAttribute="top" secondItem="hKC-3P-gS3" secondAttribute="top" id="FEo-LP-qe0"/>
-                                    <constraint firstItem="Dcp-QJ-Y9P" firstAttribute="leading" secondItem="poG-Un-ESq" secondAttribute="leading" id="HAO-1i-7SV"/>
-                                    <constraint firstAttribute="trailing" secondItem="Dcp-QJ-Y9P" secondAttribute="trailing" id="IQB-6o-GSM"/>
-                                    <constraint firstItem="Dcp-QJ-Y9P" firstAttribute="centerX" secondItem="hKC-3P-gS3" secondAttribute="centerX" id="abs-MQ-PFg"/>
-                                    <constraint firstAttribute="bottom" secondItem="poG-Un-ESq" secondAttribute="bottom" constant="8" id="ayy-je-vpR"/>
-                                    <constraint firstItem="poG-Un-ESq" firstAttribute="top" secondItem="Dcp-QJ-Y9P" secondAttribute="bottom" id="g8o-lH-WEp"/>
-                                    <constraint firstItem="Dcp-QJ-Y9P" firstAttribute="leading" secondItem="hKC-3P-gS3" secondAttribute="leading" id="iFy-Yv-VEm"/>
-                                    <constraint firstItem="Dcp-QJ-Y9P" firstAttribute="trailing" secondItem="poG-Un-ESq" secondAttribute="trailing" id="nEm-qI-698"/>
+                                    <constraint firstItem="poG-Un-ESq" firstAttribute="leading" secondItem="hKC-3P-gS3" secondAttribute="leading" id="EsR-a3-P8F"/>
+                                    <constraint firstItem="poG-Un-ESq" firstAttribute="top" secondItem="hKC-3P-gS3" secondAttribute="top" constant="451" id="POB-Mb-zgg"/>
+                                    <constraint firstAttribute="trailing" secondItem="poG-Un-ESq" secondAttribute="trailing" id="TDV-Ia-IHu"/>
+                                    <constraint firstAttribute="trailing" secondItem="Dcp-QJ-Y9P" secondAttribute="trailing" id="Xsd-Vt-GGd"/>
+                                    <constraint firstAttribute="bottom" secondItem="Dcp-QJ-Y9P" secondAttribute="bottom" constant="2438" id="YZl-7A-J3P"/>
+                                    <constraint firstAttribute="bottom" secondItem="poG-Un-ESq" secondAttribute="bottom" id="jpz-J6-AkY"/>
+                                    <constraint firstItem="Dcp-QJ-Y9P" firstAttribute="top" secondItem="hKC-3P-gS3" secondAttribute="top" id="sTP-7A-fXO"/>
+                                    <constraint firstItem="Dcp-QJ-Y9P" firstAttribute="leading" secondItem="hKC-3P-gS3" secondAttribute="leading" id="xVS-DG-QON"/>
                                 </constraints>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="hKC-3P-gS3" firstAttribute="trailing" secondItem="8Mg-cV-hk6" secondAttribute="trailing" id="Mhn-0h-Yz9"/>
-                            <constraint firstItem="hKC-3P-gS3" firstAttribute="leading" secondItem="8Mg-cV-hk6" secondAttribute="leading" id="SOD-0m-bjR"/>
-                            <constraint firstItem="hKC-3P-gS3" firstAttribute="bottom" secondItem="8Mg-cV-hk6" secondAttribute="bottom" id="bpU-gZ-nNg"/>
-                            <constraint firstItem="hKC-3P-gS3" firstAttribute="top" secondItem="8Mg-cV-hk6" secondAttribute="top" id="mgf-vU-gcn"/>
+                            <constraint firstItem="hKC-3P-gS3" firstAttribute="leading" secondItem="8Mg-cV-hk6" secondAttribute="leading" id="2lf-Ub-Qsb"/>
+                            <constraint firstItem="hKC-3P-gS3" firstAttribute="bottom" secondItem="8Mg-cV-hk6" secondAttribute="bottom" constant="64" id="87e-QC-eX7"/>
+                            <constraint firstItem="hKC-3P-gS3" firstAttribute="top" secondItem="8Mg-cV-hk6" secondAttribute="top" id="mv3-xt-4B2"/>
+                            <constraint firstItem="hKC-3P-gS3" firstAttribute="trailing" secondItem="8Mg-cV-hk6" secondAttribute="trailing" id="w5N-C3-3R9"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="8Mg-cV-hk6"/>
                     </view>
@@ -724,113 +724,119 @@ The area around Key Biscayne and Virginia Key is part of the designated critical
                             </connections>
                         </barButtonItem>
                     </navigationItem>
-                    <size key="freeformSize" width="375" height="3300"/>
+                    <size key="freeformSize" width="375" height="2895"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fja-cD-AP4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7057" y="3259"/>
+            <point key="canvasLocation" x="7056.5625" y="3258.125"/>
         </scene>
         <!--Status Reef Restoration View Controller-->
         <scene sceneID="ORf-XF-zeu">
             <objects>
                 <viewController id="Xr8-7P-FUI" customClass="StatusReefRestorationViewController" customModule="Citizen_Scientist_Project" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zsw-lT-Lsj">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="670"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RESCUE A REEF SPONSORED DIVE TRIP POSTPONED " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="bwL-cQ-5B7">
-                                <rect key="frame" x="8" y="72" width="304" height="45.5"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="bwL-cQ-5B7" secondAttribute="height" multiplier="359:54" id="fxz-bC-FDQ"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="BqX-YY-gIz">
-                                <rect key="frame" x="8" y="240.5" width="304" height="77"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="BqX-YY-gIz" secondAttribute="height" multiplier="359:91" id="Eut-JW-ttm"/>
-                                </constraints>
-                                <string key="text">We will reschedule it as soon as possible and keep everyone informed of any developments. Feel free to reach out to us via Facebook or email at rescueareer@gmail.com with any questions.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="reef-restoration-learn-more" translatesAutoresizingMaskIntoConstraints="NO" id="k4J-QI-hQV">
-                                <rect key="frame" x="164" y="125.5" width="148" height="107"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="hkW-eL-ZH4">
-                                <rect key="frame" x="8" y="125.5" width="148" height="107"/>
-                                <string key="text">Due to damage caused by Hurricane Irma both to Key Biscayne and the Rescue a Reef coral nursery, we have canceled our Rescue a Reef diving expedition for September 16th. </string>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g0p-yg-kTn">
-                                <rect key="frame" x="0.0" y="420.5" width="320" height="59.5"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PNZ-5x-Rbm">
+                                <rect key="frame" x="0.0" y="64" width="375" height="606"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Footer Holder" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sr2-Ic-MCy">
-                                        <rect key="frame" x="135" y="25" width="106" height="21"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c2k-bU-56n">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="537"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="RESCUE A REEF SPONSORED DIVE TRIP POSTPONED " lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="bwL-cQ-5B7">
+                                                <rect key="frame" x="8" y="8" width="359" height="60"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="hkW-eL-ZH4">
+                                                <rect key="frame" x="8" y="76" width="176" height="251"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <string key="text">Due to damage caused by Hurricane Irma both to Key Biscayne and the Rescue a Reef coral nursery, we have canceled our Rescue a Reef diving expedition for September 16th. </string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="reef-restoration-learn-more" translatesAutoresizingMaskIntoConstraints="NO" id="k4J-QI-hQV">
+                                                <rect key="frame" x="188" y="76" width="179" height="251"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="foundation-key-logos" translatesAutoresizingMaskIntoConstraints="NO" id="fNe-YN-liU">
+                                                <rect key="frame" x="0.0" y="484" width="375" height="53"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="BqX-YY-gIz">
+                                                <rect key="frame" x="8" y="335" width="359" height="141"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <string key="text">We will reschedule it as soon as possible and keep everyone informed of any developments. Feel free to reach out to us via Facebook or email at rescueareer@gmail.com with any questions.</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.0039215686274509803" green="0.17254901960784313" blue="0.28235294117647058" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="537" id="eam-Vz-8w2"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g0p-yg-kTn">
+                                        <rect key="frame" x="0.0" y="536" width="375" height="70"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Footer Holder" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sr2-Ic-MCy">
+                                                <rect key="frame" x="134" y="24" width="106" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.082352941176470587" green="0.090196078431372548" blue="0.15294117647058825" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="Sr2-Ic-MCy" firstAttribute="centerY" secondItem="g0p-yg-kTn" secondAttribute="centerY" id="0FY-cC-m5C"/>
+                                            <constraint firstItem="Sr2-Ic-MCy" firstAttribute="top" secondItem="g0p-yg-kTn" secondAttribute="top" constant="24" id="2Rr-oK-iFl"/>
+                                            <constraint firstItem="Sr2-Ic-MCy" firstAttribute="centerX" secondItem="g0p-yg-kTn" secondAttribute="centerX" id="Duo-wC-S5d"/>
+                                        </constraints>
+                                    </view>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="g0p-yg-kTn" secondAttribute="height" multiplier="75:14" id="66f-Mk-V8F"/>
+                                    <constraint firstItem="c2k-bU-56n" firstAttribute="top" secondItem="PNZ-5x-Rbm" secondAttribute="top" id="Gvw-6W-qVX"/>
+                                    <constraint firstItem="c2k-bU-56n" firstAttribute="leading" secondItem="PNZ-5x-Rbm" secondAttribute="leading" id="UX6-Rx-rBH"/>
+                                    <constraint firstAttribute="bottom" secondItem="c2k-bU-56n" secondAttribute="bottom" constant="69" id="V4o-nv-KoN"/>
+                                    <constraint firstItem="c2k-bU-56n" firstAttribute="trailing" secondItem="g0p-yg-kTn" secondAttribute="trailing" id="VBC-pD-cLs"/>
+                                    <constraint firstItem="c2k-bU-56n" firstAttribute="leading" secondItem="g0p-yg-kTn" secondAttribute="leading" id="VhP-uG-FmI"/>
+                                    <constraint firstAttribute="trailing" secondItem="c2k-bU-56n" secondAttribute="trailing" id="ees-XF-Kqe"/>
+                                    <constraint firstAttribute="bottom" secondItem="g0p-yg-kTn" secondAttribute="bottom" id="epQ-Ab-dAv"/>
+                                    <constraint firstItem="c2k-bU-56n" firstAttribute="centerX" secondItem="PNZ-5x-Rbm" secondAttribute="centerX" id="ztf-oh-vgg"/>
                                 </constraints>
-                            </view>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="foundation-key-logos" translatesAutoresizingMaskIntoConstraints="NO" id="5pA-iE-sWx">
-                                <rect key="frame" x="0.0" y="325.5" width="320" height="85.5"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="5pA-iE-sWx" secondAttribute="height" multiplier="15:4" id="80j-yu-zWO"/>
-                                </constraints>
-                            </imageView>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" red="0.0039215686274509803" green="0.17254901960784313" blue="0.28235294117647058" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="qCq-CU-nuM" firstAttribute="trailing" secondItem="k4J-QI-hQV" secondAttribute="trailing" constant="8" id="2c3-aZ-ABP"/>
-                            <constraint firstItem="hkW-eL-ZH4" firstAttribute="top" secondItem="k4J-QI-hQV" secondAttribute="top" id="DbE-JF-ygb"/>
-                            <constraint firstItem="g0p-yg-kTn" firstAttribute="trailing" secondItem="qCq-CU-nuM" secondAttribute="trailing" id="GZH-98-Edi"/>
-                            <constraint firstItem="g0p-yg-kTn" firstAttribute="bottom" secondItem="qCq-CU-nuM" secondAttribute="bottom" id="JgX-03-D3d"/>
-                            <constraint firstItem="qCq-CU-nuM" firstAttribute="bottom" secondItem="5pA-iE-sWx" secondAttribute="bottom" constant="69" id="LAf-O6-uZS"/>
-                            <constraint firstItem="BqX-YY-gIz" firstAttribute="top" secondItem="hkW-eL-ZH4" secondAttribute="bottom" constant="8" symbolic="YES" id="VZZ-YT-ZvZ"/>
-                            <constraint firstItem="5pA-iE-sWx" firstAttribute="leading" secondItem="qCq-CU-nuM" secondAttribute="leading" id="bcb-6w-3DD"/>
-                            <constraint firstItem="5pA-iE-sWx" firstAttribute="top" secondItem="BqX-YY-gIz" secondAttribute="bottom" constant="8" id="cxS-D8-6RP"/>
-                            <constraint firstItem="qCq-CU-nuM" firstAttribute="trailing" secondItem="bwL-cQ-5B7" secondAttribute="trailing" constant="8" id="e3c-aa-9PP"/>
-                            <constraint firstItem="k4J-QI-hQV" firstAttribute="leading" secondItem="hkW-eL-ZH4" secondAttribute="trailing" constant="8" id="ft7-dQ-G3M"/>
-                            <constraint firstItem="k4J-QI-hQV" firstAttribute="width" secondItem="hkW-eL-ZH4" secondAttribute="width" id="iYH-pw-0sd"/>
-                            <constraint firstItem="k4J-QI-hQV" firstAttribute="height" secondItem="hkW-eL-ZH4" secondAttribute="height" id="jQD-aj-PCY"/>
-                            <constraint firstItem="BqX-YY-gIz" firstAttribute="leading" secondItem="qCq-CU-nuM" secondAttribute="leading" constant="8" id="jUc-Qd-ixG"/>
-                            <constraint firstItem="5pA-iE-sWx" firstAttribute="trailing" secondItem="qCq-CU-nuM" secondAttribute="trailing" id="kPU-c9-1qH"/>
-                            <constraint firstItem="qCq-CU-nuM" firstAttribute="trailing" secondItem="BqX-YY-gIz" secondAttribute="trailing" constant="8" id="l4S-UV-h21"/>
-                            <constraint firstItem="bwL-cQ-5B7" firstAttribute="leading" secondItem="qCq-CU-nuM" secondAttribute="leading" constant="8" id="nhY-z6-cg6"/>
-                            <constraint firstItem="hkW-eL-ZH4" firstAttribute="leading" secondItem="qCq-CU-nuM" secondAttribute="leading" constant="8" id="nmb-Op-9jy"/>
-                            <constraint firstItem="hkW-eL-ZH4" firstAttribute="top" secondItem="bwL-cQ-5B7" secondAttribute="bottom" constant="8" symbolic="YES" id="t6u-Tb-5Ee"/>
-                            <constraint firstItem="bwL-cQ-5B7" firstAttribute="top" secondItem="qCq-CU-nuM" secondAttribute="top" constant="8" id="vl6-I7-83V"/>
-                            <constraint firstItem="g0p-yg-kTn" firstAttribute="leading" secondItem="qCq-CU-nuM" secondAttribute="leading" id="ziC-vc-FaS"/>
+                            <constraint firstItem="PNZ-5x-Rbm" firstAttribute="bottom" secondItem="qCq-CU-nuM" secondAttribute="bottom" id="3Mx-AL-lzD"/>
+                            <constraint firstItem="PNZ-5x-Rbm" firstAttribute="top" secondItem="qCq-CU-nuM" secondAttribute="top" id="NuE-98-oWx"/>
+                            <constraint firstItem="PNZ-5x-Rbm" firstAttribute="leading" secondItem="zsw-lT-Lsj" secondAttribute="leading" id="UM0-sT-JTd"/>
+                            <constraint firstAttribute="trailing" secondItem="PNZ-5x-Rbm" secondAttribute="trailing" id="ghT-Oa-Ygm"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="qCq-CU-nuM"/>
                     </view>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <size key="freeformSize" width="375" height="670"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VHn-nE-Zys" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7005" y="5829"/>
+            <point key="canvasLocation" x="7004" y="5827.2863568215898"/>
         </scene>
         <!--Lecture Series View Controller-->
         <scene sceneID="Yfg-t0-XuT">
             <objects>
                 <viewController id="mfk-Gb-hXM" customClass="LectureSeriesViewController" customModule="Citizen_Scientist_Project" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="UVI-3Z-JG4">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lecture Series Page" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7EL-J1-WNJ">
-                                <rect key="frame" x="83.5" y="229.5" width="153" height="21"/>
+                                <rect key="frame" x="130.66666666666666" y="357.66666666666669" width="152.99999999999997" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -861,11 +867,11 @@ The area around Key Biscayne and Virginia Key is part of the designated critical
             <objects>
                 <viewController id="nHS-CV-4uQ" customClass="FieldActivityViewController" customModule="Citizen_Scientist_Project" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="H9p-bb-bgA">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Field Activity Page" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mY7-yZ-5WZ">
-                                <rect key="frame" x="89.5" y="229.5" width="141" height="21"/>
+                                <rect key="frame" x="136.66666666666666" y="357.66666666666669" width="140.99999999999997" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -896,11 +902,11 @@ The area around Key Biscayne and Virginia Key is part of the designated critical
             <objects>
                 <viewController id="n0T-bo-uMI" customClass="EventsViewController" customModule="Citizen_Scientist_Project" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="k8F-ZC-saj">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Events Page" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YAH-4e-OM1">
-                                <rect key="frame" x="113" y="229.5" width="94" height="21"/>
+                                <rect key="frame" x="160" y="357.66666666666669" width="94" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -931,11 +937,11 @@ The area around Key Biscayne and Virginia Key is part of the designated critical
             <objects>
                 <viewController id="Q5q-PP-8PV" customClass="NewsViewController" customModule="Citizen_Scientist_Project" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="w88-p1-YQL">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="News Page" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yw2-Dm-XiJ">
-                                <rect key="frame" x="117.5" y="229.5" width="85" height="21"/>
+                                <rect key="frame" x="164.66666666666666" y="357.66666666666669" width="85" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -966,11 +972,11 @@ The area around Key Biscayne and Virginia Key is part of the designated critical
             <objects>
                 <viewController id="xfI-ze-4sx" customClass="AboutUsViewController" customModule="Citizen_Scientist_Project" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="sNn-9x-QLT">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About Us Page" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QX4-Cp-yQv">
-                                <rect key="frame" x="102.5" y="229.5" width="115" height="21"/>
+                                <rect key="frame" x="149.66666666666666" y="357.66666666666669" width="114.99999999999997" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -1001,11 +1007,11 @@ The area around Key Biscayne and Virginia Key is part of the designated critical
             <objects>
                 <viewController id="Snx-wC-vtZ" customClass="OurBiomesViewController" customModule="Citizen_Scientist_Project" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pWS-AH-adv">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Our Biomes Page" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pBe-z3-Btv">
-                                <rect key="frame" x="94" y="229.5" width="132" height="21"/>
+                                <rect key="frame" x="141" y="357.66666666666669" width="132" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -1036,11 +1042,11 @@ The area around Key Biscayne and Virginia Key is part of the designated critical
             <objects>
                 <viewController id="I6g-3C-BHe" customClass="NewslettersViewController" customModule="Citizen_Scientist_Project" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ErL-C5-e6D">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Newsletter Page" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xSR-RV-UpO">
-                                <rect key="frame" x="97.5" y="229.5" width="125" height="21"/>
+                                <rect key="frame" x="144.66666666666666" y="357.66666666666669" width="124.99999999999997" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -1071,11 +1077,11 @@ The area around Key Biscayne and Virginia Key is part of the designated critical
             <objects>
                 <viewController id="YFL-T1-tRh" customClass="OurPartnersViewController" customModule="Citizen_Scientist_Project" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="K1N-G3-nc3">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Our Partners Page" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0br-b0-p7a">
-                                <rect key="frame" x="89.5" y="229.5" width="141" height="21"/>
+                                <rect key="frame" x="136.66666666666666" y="357.66666666666669" width="140.99999999999997" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -1106,11 +1112,11 @@ The area around Key Biscayne and Virginia Key is part of the designated critical
             <objects>
                 <viewController id="cPL-qk-5Bx" customClass="ContactUsViewController" customModule="Citizen_Scientist_Project" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hlh-2P-PPZ">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contact Us Page" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4VO-Cj-moy">
-                                <rect key="frame" x="95.5" y="229.5" width="129" height="21"/>
+                                <rect key="frame" x="142.66666666666666" y="357.66666666666669" width="128.99999999999997" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -1215,16 +1221,16 @@ The area around Key Biscayne and Virginia Key is part of the designated critical
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="fUT-Yo-O4E">
-                                            <rect key="frame" x="8" y="35.5" width="359" height="54.5"/>
+                                            <rect key="frame" x="8" y="35.666666666666657" width="359" height="54.333333333333343"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="center" text="KEY BISCAYNE COMMUNITY FOUNDATION" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pCV-uw-31F">
-                                                    <rect key="frame" x="0.0" y="0.0" width="359" height="19.5"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="359" height="19.333333333333332"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
                                                     <color key="textColor" red="0.37254901959999998" green="0.67450980390000004" blue="0.87450980389999999" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <stackView opaque="NO" contentMode="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="vGs-2j-Vib">
-                                                    <rect key="frame" x="69.5" y="34.5" width="220" height="20"/>
+                                                    <rect key="frame" x="69.666666666666686" y="34.333333333333336" width="220" height="20"/>
                                                     <subviews>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7yD-4G-ClX">
                                                             <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
@@ -1244,7 +1250,7 @@ The area around Key Biscayne and Virginia Key is part of the designated critical
                                                             </connections>
                                                         </button>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IXo-Iv-oek">
-                                                            <rect key="frame" x="100" y="0.0" width="20" height="20"/>
+                                                            <rect key="frame" x="99.999999999999986" y="0.0" width="20" height="20"/>
                                                             <state key="normal" image="google-footer-icon"/>
                                                             <connections>
                                                                 <action selector="openGooglePlus:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RKz-Lg-Mqd"/>
@@ -1330,7 +1336,7 @@ The area around Key Biscayne and Virginia Key is part of the designated critical
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="OoL-Ah-iZq" customClass="ProfileNavigationController" customModule="Citizen_Scientist_Project" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Kc5-a8-aSd">
-                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -1348,7 +1354,7 @@ The area around Key Biscayne and Virginia Key is part of the designated critical
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="8cU-F2-aca" customClass="GeoHuntNavigationController" customModule="Citizen_Scientist_Project" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="BwJ-dD-PXX">
-                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -1366,7 +1372,7 @@ The area around Key Biscayne and Virginia Key is part of the designated critical
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="TpT-8q-rF1" customClass="EventsNavigationController" customModule="Citizen_Scientist_Project" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="3Oa-g4-ZOk">
-                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -1384,7 +1390,7 @@ The area around Key Biscayne and Virginia Key is part of the designated critical
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Bl3-Ls-afj" customClass="NewsNavigationController" customModule="Citizen_Scientist_Project" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="vyb-u1-HRl">
-                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -1402,7 +1408,7 @@ The area around Key Biscayne and Virginia Key is part of the designated critical
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="0zI-XZ-BQA" customClass="HomeNavigationController" customModule="Citizen_Scientist_Project" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="oPL-9A-Lvy">
-                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -1420,7 +1426,7 @@ The area around Key Biscayne and Virginia Key is part of the designated critical
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="GSr-y6-Yzf" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="pcU-Hd-gIU">
-                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -1438,7 +1444,7 @@ The area around Key Biscayne and Virginia Key is part of the designated critical
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="V36-hW-6fS" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Msl-k1-s7t">
-                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -1456,7 +1462,7 @@ The area around Key Biscayne and Virginia Key is part of the designated critical
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="i3a-z8-pnh" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="hsI-Co-wn6">
-                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -1474,7 +1480,7 @@ The area around Key Biscayne and Virginia Key is part of the designated critical
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="RQa-57-CCW" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="MO8-uS-Y8u">
-                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -1492,7 +1498,7 @@ The area around Key Biscayne and Virginia Key is part of the designated critical
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="uCZ-0n-Qau" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="DTB-g5-YDY">
-                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -1510,7 +1516,7 @@ The area around Key Biscayne and Virginia Key is part of the designated critical
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="T60-z7-GPD" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="VUf-ln-Z96">
-                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -1528,7 +1534,7 @@ The area around Key Biscayne and Virginia Key is part of the designated critical
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="bwL-de-BWl" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="fCb-EU-vXv">
-                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -1546,7 +1552,7 @@ The area around Key Biscayne and Virginia Key is part of the designated critical
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="dWS-Ve-GqU" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="6Be-Jr-PQa">
-                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -1564,7 +1570,7 @@ The area around Key Biscayne and Virginia Key is part of the designated critical
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="o0Y-10-X6u" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="2DL-hG-1vX">
-                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -1582,7 +1588,7 @@ The area around Key Biscayne and Virginia Key is part of the designated critical
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="aaU-ns-Yhl" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="8jQ-pm-E0g">
-                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -1600,7 +1606,7 @@ The area around Key Biscayne and Virginia Key is part of the designated critical
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="tmZ-Zh-GZT" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="7bN-jm-WWN">
-                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -1618,7 +1624,7 @@ The area around Key Biscayne and Virginia Key is part of the designated critical
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="CQY-Sl-a2v" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="fWE-g7-GaL">
-                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -1636,7 +1642,7 @@ The area around Key Biscayne and Virginia Key is part of the designated critical
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ogO-ru-KcX" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ep7-6c-nGE">
-                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -1654,7 +1660,7 @@ The area around Key Biscayne and Virginia Key is part of the designated critical
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Oqh-WP-cFF" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="IDF-Da-U6j">
-                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -1672,7 +1678,7 @@ The area around Key Biscayne and Virginia Key is part of the designated critical
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Dac-uH-qyE" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="913-MB-cZz">
-                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -1690,7 +1696,7 @@ The area around Key Biscayne and Virginia Key is part of the designated critical
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="SXQ-RY-Zdd" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="7Ho-E0-Cow">
-                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -1717,6 +1723,6 @@ The area around Key Biscayne and Virginia Key is part of the designated critical
         <image name="youtube-footer-icon" width="64" height="64"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="CDV-cc-EMe"/>
+        <segue reference="CD7-0u-all"/>
     </inferredMetricsTieBreakers>
 </document>
