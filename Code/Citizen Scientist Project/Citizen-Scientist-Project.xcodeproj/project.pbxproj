@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2249BDF620478590000354D0 /* Agenda-for-SLR-Townhall-11-10-2016.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 2249BDF520478590000354D0 /* Agenda-for-SLR-Townhall-11-10-2016.pdf */; };
-		2249BDF82047859C000354D0 /* Agenda-for-SLR-Townhall-02-16-2017.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 2249BDF72047859C000354D0 /* Agenda-for-SLR-Townhall-02-16-2017.pdf */; };
 		2249BDFA20478710000354D0 /* Townhall-Fact-Sheet-11-10-2016.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 2249BDF920478710000354D0 /* Townhall-Fact-Sheet-11-10-2016.pdf */; };
 		2249BDFC20478718000354D0 /* Vulnerability_assessment_11-11-2016.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 2249BDFB20478718000354D0 /* Vulnerability_assessment_11-11-2016.pdf */; };
 		2249BDFE2047871F000354D0 /* 100-Resilient-Cities.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 2249BDFD2047871E000354D0 /* 100-Resilient-Cities.pdf */; };
@@ -26,6 +24,8 @@
 		22594978202DAA0C0047E055 /* CollectionViewContentManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22594977202DAA0C0047E055 /* CollectionViewContentManager.swift */; };
 		2259497B202DCCEC0047E055 /* SectionFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2259497A202DCCEC0047E055 /* SectionFooter.swift */; };
 		225B42812047F84300194AF7 /* VKB-Adaptation-Strategies-v2.pptx in Resources */ = {isa = PBXBuildFile; fileRef = 225B427E2047F30A00194AF7 /* VKB-Adaptation-Strategies-v2.pptx */; };
+		225B42822048085B00194AF7 /* Agenda-for-SLR-Townhall-02-16-2017.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 2249BDF72047859C000354D0 /* Agenda-for-SLR-Townhall-02-16-2017.pdf */; };
+		225B42832048085B00194AF7 /* Agenda-for-SLR-Townhall-11-10-2016.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 2249BDF520478590000354D0 /* Agenda-for-SLR-Townhall-11-10-2016.pdf */; };
 		22891A3D202DEBE7000FEBB4 /* SocialNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22891A3C202DEBE7000FEBB4 /* SocialNetwork.swift */; };
 		228FA9A02047788B003610B3 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228FA99F2047788B003610B3 /* WebViewController.swift */; };
 		228FA9A2204778B3003610B3 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228FA9A1204778B3003610B3 /* TableViewController.swift */; };
@@ -786,10 +786,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				225B42822048085B00194AF7 /* Agenda-for-SLR-Townhall-02-16-2017.pdf in Resources */,
+				225B42832048085B00194AF7 /* Agenda-for-SLR-Townhall-11-10-2016.pdf in Resources */,
 				225B42812047F84300194AF7 /* VKB-Adaptation-Strategies-v2.pptx in Resources */,
 				229E61502022A79200D4BDDA /* LaunchScreen.storyboard in Resources */,
 				2249BE0E20478754000354D0 /* Workshop-Summary-Report_06232017.pdf in Resources */,
-				2249BDF620478590000354D0 /* Agenda-for-SLR-Townhall-11-10-2016.pdf in Resources */,
 				2249BE0A20478748000354D0 /* VKB-Adaptation-Strategies-v2.pdf in Resources */,
 				2249BE0620478739000354D0 /* SLR-Adaptation-Master-Plan.pdf in Resources */,
 				2249BE1020479681000354D0 /* Survey-Results-2-6-2017.pdf in Resources */,
@@ -800,7 +801,6 @@
 				2249BE022047872D000354D0 /* Greater-Miami-and-the-Beaches-Resilience-Strategy.pdf in Resources */,
 				2249BDFC20478718000354D0 /* Vulnerability_assessment_11-11-2016.pdf in Resources */,
 				2249BE0420478733000354D0 /* MDPL_17Feb2016.pdf in Resources */,
-				2249BDF82047859C000354D0 /* Agenda-for-SLR-Townhall-02-16-2017.pdf in Resources */,
 				2249BE0C2047874F000354D0 /* Workshop-Powerpoint-Slides.pdf in Resources */,
 				2249BDFA20478710000354D0 /* Townhall-Fact-Sheet-11-10-2016.pdf in Resources */,
 				2249BE0020478726000354D0 /* CRC-VillageOfKeyBiscayne-FinaltVulnAssess-SM.pdf in Resources */,
