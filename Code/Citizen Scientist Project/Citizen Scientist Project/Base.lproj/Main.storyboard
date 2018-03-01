@@ -359,11 +359,11 @@
             <objects>
                 <viewController id="lSf-Zo-CgR" customClass="SeaLevelRiseViewController" customModule="Citizen_Scientist_Project" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Y7Q-TV-AOR">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="2750"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="2500"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IGE-9e-whM">
-                                <rect key="frame" x="0.0" y="64" width="375" height="2686"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="2436"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="sea-level-rise" translatesAutoresizingMaskIntoConstraints="NO" id="L5c-45-eLH">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="225"/>
@@ -399,6 +399,10 @@ The Village of Key Biscayne and the Key Biscayne Community Foundation are workin
                                                     <constraint firstAttribute="width" secondItem="83T-ct-Vzf" secondAttribute="height" multiplier="196:167" id="pxi-hP-H9B"/>
                                                 </constraints>
                                                 <state key="normal" image="prezi-sea-level-rise"/>
+                                                <connections>
+                                                    <action selector="preziButtonPressed:" destination="uch-s1-tHJ" eventType="touchUpInside" id="niU-v1-A4B"/>
+                                                    <action selector="preziPresentationButtonPressed:" destination="lSf-Zo-CgR" eventType="touchUpInside" id="qjg-mr-Sq3"/>
+                                                </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PUBLIC SURVEY ON SEA LEVEL RISE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Vld-j0-g5b">
                                                 <rect key="frame" x="15" y="545" width="345" height="24"/>
@@ -460,84 +464,98 @@ The Village of Key Biscayne and the Key Biscayne Community Foundation are workin
                                             <segue destination="Ukv-wq-SWZ" kind="embed" identifier="" id="Ibo-fv-HuK"/>
                                         </connections>
                                     </containerView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Eal-AG-8ey">
-                                        <rect key="frame" x="20" y="2331" width="335" height="55"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AZA-l5-HVi">
+                                        <rect key="frame" x="0.0" y="2260" width="375" height="76"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" text="KEY BISCAYNE COMMUNITY FOUNDATION" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BZc-DV-RAh">
-                                                <rect key="frame" x="0.0" y="0.0" width="335" height="19.5"/>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
-                                                <color key="textColor" red="0.37254901959999998" green="0.67450980390000004" blue="0.87450980389999999" alpha="1" colorSpace="calibratedRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <stackView opaque="NO" contentMode="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="d1D-Qr-7zo">
-                                                <rect key="frame" x="57.5" y="35" width="220" height="20"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="xro-0x-kSc">
+                                                <rect key="frame" x="20" y="11" width="335" height="54.5"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sjc-mf-lj8">
-                                                        <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="center" text="KEY BISCAYNE COMMUNITY FOUNDATION" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Eza-vv-Rjh">
+                                                        <rect key="frame" x="0.0" y="0.0" width="335" height="19.5"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
+                                                        <color key="textColor" red="0.37254901959999998" green="0.67450980390000004" blue="0.87450980389999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <stackView opaque="NO" contentMode="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="s9E-pO-jBW">
+                                                        <rect key="frame" x="57.5" y="34.5" width="220" height="20"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qax-9t-IIy">
+                                                                <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="20" id="aG7-ND-NbH"/>
+                                                                </constraints>
+                                                                <state key="normal" image="facebook-footer-icon"/>
+                                                                <connections>
+                                                                    <action selector="openFacebook:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IY9-KV-Wq1"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ong-Og-Ddl">
+                                                                <rect key="frame" x="50" y="0.0" width="20" height="20"/>
+                                                                <state key="normal" image="twitter-footer-icon"/>
+                                                                <connections>
+                                                                    <action selector="openTwitter:" destination="BYZ-38-t0r" eventType="touchUpInside" id="diJ-A8-EKB"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9f6-V2-5q5">
+                                                                <rect key="frame" x="100" y="0.0" width="20" height="20"/>
+                                                                <state key="normal" image="google-footer-icon"/>
+                                                                <connections>
+                                                                    <action selector="openGooglePlus:" destination="BYZ-38-t0r" eventType="touchUpInside" id="G4g-iQ-AUO"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LBO-Uc-o1z">
+                                                                <rect key="frame" x="150" y="0.0" width="20" height="20"/>
+                                                                <state key="normal" image="youtube-footer-icon"/>
+                                                                <connections>
+                                                                    <action selector="openYoutube:" destination="BYZ-38-t0r" eventType="touchUpInside" id="y2V-TZ-VFm"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h9p-tt-XzS">
+                                                                <rect key="frame" x="200" y="0.0" width="20" height="20"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                                <state key="normal" image="instagram-footer-icon"/>
+                                                                <connections>
+                                                                    <action selector="openInstagram:" destination="BYZ-38-t0r" eventType="touchUpInside" id="j3g-xp-fUG"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
                                                         <constraints>
-                                                            <constraint firstAttribute="width" constant="20" id="dYu-GJ-IUQ"/>
+                                                            <constraint firstItem="9f6-V2-5q5" firstAttribute="width" secondItem="Qax-9t-IIy" secondAttribute="width" id="FFI-qm-M0f"/>
+                                                            <constraint firstItem="LBO-Uc-o1z" firstAttribute="width" secondItem="Qax-9t-IIy" secondAttribute="width" id="Qo8-6F-EGL"/>
+                                                            <constraint firstItem="Ong-Og-Ddl" firstAttribute="width" secondItem="Qax-9t-IIy" secondAttribute="width" id="Sii-cR-cuf"/>
+                                                            <constraint firstAttribute="height" constant="20" id="aJv-Ij-uIN"/>
+                                                            <constraint firstItem="h9p-tt-XzS" firstAttribute="width" secondItem="Qax-9t-IIy" secondAttribute="width" id="hWB-hM-26y"/>
                                                         </constraints>
-                                                        <state key="normal" image="facebook-footer-icon"/>
-                                                        <connections>
-                                                            <action selector="openFacebook:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JQw-7d-hTX"/>
-                                                        </connections>
-                                                    </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dmz-Ei-dAU">
-                                                        <rect key="frame" x="50" y="0.0" width="20" height="20"/>
-                                                        <state key="normal" image="twitter-footer-icon"/>
-                                                        <connections>
-                                                            <action selector="openTwitter:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hYL-F6-H0D"/>
-                                                        </connections>
-                                                    </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fRe-ef-o9Q">
-                                                        <rect key="frame" x="100" y="0.0" width="20" height="20"/>
-                                                        <state key="normal" image="google-footer-icon"/>
-                                                        <connections>
-                                                            <action selector="openGooglePlus:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YgN-ba-6dw"/>
-                                                        </connections>
-                                                    </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EfT-wl-yQM">
-                                                        <rect key="frame" x="150" y="0.0" width="20" height="20"/>
-                                                        <state key="normal" image="youtube-footer-icon"/>
-                                                        <connections>
-                                                            <action selector="openYoutube:" destination="BYZ-38-t0r" eventType="touchUpInside" id="O9Z-zv-bLY"/>
-                                                        </connections>
-                                                    </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Br-Kw-xKE">
-                                                        <rect key="frame" x="200" y="0.0" width="20" height="20"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                                        <state key="normal" image="instagram-footer-icon"/>
-                                                        <connections>
-                                                            <action selector="openInstagram:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tnd-N4-Oyv"/>
-                                                        </connections>
-                                                    </button>
+                                                    </stackView>
                                                 </subviews>
                                                 <constraints>
-                                                    <constraint firstItem="EfT-wl-yQM" firstAttribute="width" secondItem="Sjc-mf-lj8" secondAttribute="width" id="0f6-RP-JAb"/>
-                                                    <constraint firstItem="fRe-ef-o9Q" firstAttribute="width" secondItem="Sjc-mf-lj8" secondAttribute="width" id="BNX-oE-7HZ"/>
-                                                    <constraint firstItem="dmz-Ei-dAU" firstAttribute="width" secondItem="Sjc-mf-lj8" secondAttribute="width" id="JDE-1b-0fe"/>
-                                                    <constraint firstAttribute="height" constant="20" id="KUE-2S-QQy"/>
-                                                    <constraint firstItem="2Br-Kw-xKE" firstAttribute="width" secondItem="Sjc-mf-lj8" secondAttribute="width" id="SF7-M6-gZm"/>
+                                                    <constraint firstItem="Eza-vv-Rjh" firstAttribute="leading" secondItem="xro-0x-kSc" secondAttribute="leading" id="PfB-4N-O6p"/>
+                                                    <constraint firstAttribute="trailing" secondItem="Eza-vv-Rjh" secondAttribute="trailing" id="xUY-3L-I3c"/>
                                                 </constraints>
                                             </stackView>
                                         </subviews>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="54.5" id="D8Q-U7-ITL"/>
+                                            <constraint firstAttribute="trailing" secondItem="xro-0x-kSc" secondAttribute="trailing" constant="20" id="CgV-3V-xzM"/>
+                                            <constraint firstItem="xro-0x-kSc" firstAttribute="centerX" secondItem="AZA-l5-HVi" secondAttribute="centerX" id="F5S-Se-K5t"/>
+                                            <constraint firstItem="xro-0x-kSc" firstAttribute="leading" secondItem="AZA-l5-HVi" secondAttribute="leading" constant="20" id="GQC-cy-6f7"/>
+                                            <constraint firstItem="xro-0x-kSc" firstAttribute="centerY" secondItem="AZA-l5-HVi" secondAttribute="centerY" id="J04-Mg-f6Y"/>
                                         </constraints>
-                                    </stackView>
+                                    </view>
                                 </subviews>
                                 <color key="backgroundColor" red="0.18823529410000001" green="0.1960784314" blue="0.25098039220000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="fEd-Y0-Frv" firstAttribute="trailing" secondItem="pHv-ec-8bK" secondAttribute="trailing" id="2JM-nw-Phg"/>
                                     <constraint firstItem="pHv-ec-8bK" firstAttribute="top" secondItem="L5c-45-eLH" secondAttribute="bottom" id="C40-v1-7Jp"/>
                                     <constraint firstItem="fEd-Y0-Frv" firstAttribute="leading" secondItem="pHv-ec-8bK" secondAttribute="leading" id="D1E-Jd-QhI"/>
-                                    <constraint firstItem="Eal-AG-8ey" firstAttribute="top" secondItem="fEd-Y0-Frv" secondAttribute="bottom" constant="71" id="ISD-pb-3PW"/>
+                                    <constraint firstAttribute="trailing" secondItem="AZA-l5-HVi" secondAttribute="trailing" id="HAi-oI-aNF"/>
                                     <constraint firstItem="pHv-ec-8bK" firstAttribute="trailing" secondItem="L5c-45-eLH" secondAttribute="trailing" id="R4n-nH-5NT"/>
                                     <constraint firstAttribute="bottom" secondItem="pHv-ec-8bK" secondAttribute="bottom" constant="1381" id="Wkp-yb-3I8"/>
+                                    <constraint firstItem="AZA-l5-HVi" firstAttribute="leading" secondItem="IGE-9e-whM" secondAttribute="leading" id="aRT-M5-Zmx"/>
+                                    <constraint firstAttribute="bottom" secondItem="AZA-l5-HVi" secondAttribute="bottom" id="d4S-rt-l6V"/>
+                                    <constraint firstItem="AZA-l5-HVi" firstAttribute="top" secondItem="fEd-Y0-Frv" secondAttribute="bottom" id="dSO-0G-0yD"/>
                                     <constraint firstItem="pHv-ec-8bK" firstAttribute="leading" secondItem="L5c-45-eLH" secondAttribute="leading" id="e3p-xZ-Fuw"/>
                                     <constraint firstItem="fEd-Y0-Frv" firstAttribute="top" secondItem="pHv-ec-8bK" secondAttribute="bottom" id="goS-TC-AA9"/>
                                     <constraint firstItem="L5c-45-eLH" firstAttribute="leading" secondItem="IGE-9e-whM" secondAttribute="leading" id="jmE-yA-ZI9"/>
-                                    <constraint firstItem="Eal-AG-8ey" firstAttribute="centerX" secondItem="fEd-Y0-Frv" secondAttribute="centerX" id="mZa-9t-CYU"/>
                                     <constraint firstItem="L5c-45-eLH" firstAttribute="top" secondItem="IGE-9e-whM" secondAttribute="top" id="oCn-Mt-qMl"/>
                                     <constraint firstItem="pHv-ec-8bK" firstAttribute="centerX" secondItem="IGE-9e-whM" secondAttribute="centerX" id="y3s-SH-lzN"/>
                                     <constraint firstAttribute="trailing" secondItem="L5c-45-eLH" secondAttribute="trailing" id="zJB-Qb-z0A"/>
@@ -561,14 +579,15 @@ The Village of Key Biscayne and the Key Biscayne Community Foundation are workin
                             </connections>
                         </barButtonItem>
                     </navigationItem>
-                    <size key="freeformSize" width="375" height="2750"/>
+                    <size key="freeformSize" width="375" height="2500"/>
                     <connections>
                         <segue destination="UNA-Ob-66Q" kind="show" identifier="goToWebView" id="fi6-GE-bpi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DhO-RC-9Cn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="uch-s1-tHJ" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="4176.8000000000002" y="2764.3178410794603"/>
+            <point key="canvasLocation" x="4141.6000000000004" y="2768.8155922038982"/>
         </scene>
         <!--Table View Controller-->
         <scene sceneID="W2l-xl-yxU">
@@ -612,6 +631,9 @@ The Village of Key Biscayne and the Key Biscayne Community Foundation are workin
                                                         <constraint firstAttribute="width" constant="21" id="V1g-VU-wQU"/>
                                                     </constraints>
                                                     <state key="normal" image="down-arrow"/>
+                                                    <connections>
+                                                        <action selector="openFirstTableCell:" destination="Ukv-wq-SWZ" eventType="touchUpInside" id="tZx-kI-nZE"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <color key="backgroundColor" red="0.87843137250000003" green="0.8980392157" blue="0.90980392160000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -790,6 +812,9 @@ The Village of Key Biscayne and the Key Biscayne Community Foundation are workin
                                                         <constraint firstAttribute="width" constant="21" id="Eqe-hM-VGt"/>
                                                     </constraints>
                                                     <state key="normal" image="down-arrow"/>
+                                                    <connections>
+                                                        <action selector="openSecondTableCell:" destination="Ukv-wq-SWZ" eventType="touchUpInside" id="XyN-s1-Hon"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <color key="backgroundColor" red="0.87843137250000003" green="0.8980392157" blue="0.90980392160000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -952,6 +977,9 @@ The Village of Key Biscayne and the Key Biscayne Community Foundation are workin
                                                                     <state key="normal" title="PPTX">
                                                                         <color key="titleColor" red="0.37254901959999998" green="0.67450980390000004" blue="0.87450980389999999" alpha="1" colorSpace="calibratedRGB"/>
                                                                     </state>
+                                                                    <connections>
+                                                                        <action selector="secondVulnerabilityAssesmentPPTXButtonPressed:" destination="Ukv-wq-SWZ" eventType="touchUpInside" id="5es-da-OuG"/>
+                                                                    </connections>
                                                                 </button>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="|" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ioF-Rx-V3z">
                                                                     <rect key="frame" x="50" y="0.0" width="4" height="30"/>
@@ -1060,6 +1088,9 @@ The Village of Key Biscayne and the Key Biscayne Community Foundation are workin
                                                         <constraint firstAttribute="width" constant="21" id="K8h-fK-frc"/>
                                                     </constraints>
                                                     <state key="normal" image="down-arrow"/>
+                                                    <connections>
+                                                        <action selector="openThirdTableCell:" destination="Ukv-wq-SWZ" eventType="touchUpInside" id="eRF-cf-Tnq"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <color key="backgroundColor" red="0.87843137250000003" green="0.8980392157" blue="0.90980392160000001" alpha="1" colorSpace="calibratedRGB"/>

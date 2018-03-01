@@ -18,10 +18,13 @@ class WebViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // TODO: error checking for path and url
         let path = Bundle.main.path(forResource: resourceName, ofType: resourceExtension)
         
         let url = NSURL(string: path!)
         let urlRequest = URLRequest(url: url! as URL)
+        webView.scalesPageToFit = true
+        webView.contentMode = .scaleAspectFit
         webView.loadRequest(urlRequest)
     }
     

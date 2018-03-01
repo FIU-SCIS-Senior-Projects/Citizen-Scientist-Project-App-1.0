@@ -13,9 +13,11 @@ class TableViewController: UITableViewController {
     
     let segueId = "goToWebView"
     let PDF = "pdf"
+    let PPTX = "pptx"
     
     //displayFileResource(fileName: "", fileExtension: PDF)
     //openPage(scheme: "", page: "")
+    
     
     
     // 1st Townhall Community Forum
@@ -56,7 +58,7 @@ class TableViewController: UITableViewController {
         displayFileResource(fileName: "SLR-Adaptation-Master-Plan", fileExtension: PDF)
     }
     @IBAction func secondVulnerabilityAssesmentPPTXButtonPressed(_ sender: UIButton) {
-        
+        displayFileResource(fileName: "VKB-Adaptation-Strategies-v2", fileExtension: PPTX)
     }
     @IBAction func secondVulnerabilityAssessmentButtonPressed(_ sender: UIButton) {
         displayFileResource(fileName: "VKB-Adaptation-Strategies-v2", fileExtension: PDF)
@@ -82,9 +84,25 @@ class TableViewController: UITableViewController {
     }
     
     
+    // Action buttons to handle openning and closing tableview cells
+    @IBAction func openFirstTableCell(_ sender: UIButton) {
+        print("Open first button")
+    }
+    @IBAction func openSecondTableCell(_ sender: UIButton) {
+        print("Open second button")
+    }
+    @IBAction func openThirdTableCell(_ sender: UIButton) {
+        print("Open third button")
+    }
+    
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        // Disable tableview scrolling
+        tableView.isScrollEnabled = false
     }
     
     func displayFileResource(fileName: String, fileExtension: String)

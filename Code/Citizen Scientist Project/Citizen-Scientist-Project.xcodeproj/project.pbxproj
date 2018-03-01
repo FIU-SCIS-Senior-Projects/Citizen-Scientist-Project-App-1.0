@@ -25,6 +25,7 @@
 		22594976202DA6EC0047E055 /* CollectionViewCellContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22594975202DA6EC0047E055 /* CollectionViewCellContent.swift */; };
 		22594978202DAA0C0047E055 /* CollectionViewContentManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22594977202DAA0C0047E055 /* CollectionViewContentManager.swift */; };
 		2259497B202DCCEC0047E055 /* SectionFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2259497A202DCCEC0047E055 /* SectionFooter.swift */; };
+		225B42812047F84300194AF7 /* VKB-Adaptation-Strategies-v2.pptx in Resources */ = {isa = PBXBuildFile; fileRef = 225B427E2047F30A00194AF7 /* VKB-Adaptation-Strategies-v2.pptx */; };
 		22891A3D202DEBE7000FEBB4 /* SocialNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22891A3C202DEBE7000FEBB4 /* SocialNetwork.swift */; };
 		228FA9A02047788B003610B3 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228FA99F2047788B003610B3 /* WebViewController.swift */; };
 		228FA9A2204778B3003610B3 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228FA9A1204778B3003610B3 /* TableViewController.swift */; };
@@ -97,6 +98,7 @@
 		22594975202DA6EC0047E055 /* CollectionViewCellContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCellContent.swift; sourceTree = "<group>"; };
 		22594977202DAA0C0047E055 /* CollectionViewContentManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewContentManager.swift; sourceTree = "<group>"; };
 		2259497A202DCCEC0047E055 /* SectionFooter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionFooter.swift; sourceTree = "<group>"; };
+		225B427E2047F30A00194AF7 /* VKB-Adaptation-Strategies-v2.pptx */ = {isa = PBXFileReference; lastKnownFileType = file; name = "VKB-Adaptation-Strategies-v2.pptx"; path = "../../../../../../../../Desktop/FileResources/PDFs/Sea-Level-Rise/Second/VKB-Adaptation-Strategies-v2.pptx"; sourceTree = "<group>"; };
 		22891A3C202DEBE7000FEBB4 /* SocialNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialNetwork.swift; sourceTree = "<group>"; };
 		228FA99F2047788B003610B3 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		228FA9A1204778B3003610B3 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
@@ -186,6 +188,7 @@
 		228FA9C320477E21003610B3 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				225B427E2047F30A00194AF7 /* VKB-Adaptation-Strategies-v2.pptx */,
 				2249BE0F20479680000354D0 /* Survey-Results-2-6-2017.pdf */,
 				2249BE0D20478754000354D0 /* Workshop-Summary-Report_06232017.pdf */,
 				2249BE0B2047874E000354D0 /* Workshop-Powerpoint-Slides.pdf */,
@@ -783,6 +786,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				225B42812047F84300194AF7 /* VKB-Adaptation-Strategies-v2.pptx in Resources */,
 				229E61502022A79200D4BDDA /* LaunchScreen.storyboard in Resources */,
 				2249BE0E20478754000354D0 /* Workshop-Summary-Report_06232017.pdf in Resources */,
 				2249BDF620478590000354D0 /* Agenda-for-SLR-Townhall-11-10-2016.pdf in Resources */,
