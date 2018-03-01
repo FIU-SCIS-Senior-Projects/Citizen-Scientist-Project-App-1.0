@@ -84,6 +84,7 @@
                             <outlet property="delegate" destination="OYm-TY-SzU" id="gDj-2s-5hV"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" id="y6S-Ei-NAk"/>
                     <connections>
                         <segue destination="0zI-XZ-BQA" kind="show" identifier="segueToHome" id="6h3-OW-xOR"/>
                         <segue destination="OoL-Ah-iZq" kind="show" identifier="segueToProfile" id="cK9-q5-tqV"/>
@@ -109,7 +110,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LV7-D6-Q74" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="697.5" y="-3341.25"/>
+            <point key="canvasLocation" x="7119" y="-4920"/>
         </scene>
         <!--Profile View Controller-->
         <scene sceneID="1as-4o-o2w">
@@ -137,7 +138,7 @@
                         <barButtonItem key="leftBarButtonItem" image="1-header-nav-1" id="pFL-LY-iqg">
                             <color key="tintColor" red="0.60392156860000001" green="0.6588235294" blue="0.69803921570000005" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
-                                <segue destination="OYm-TY-SzU" kind="show" identifier="segueToTable" id="ECI-Jr-g0F"/>
+                                <segue destination="SXQ-RY-Zdd" kind="show" identifier="segueToTable" id="ECI-Jr-g0F"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -175,7 +176,7 @@
                         <barButtonItem key="leftBarButtonItem" image="1-header-nav-1" id="4Ia-bQ-0Qz">
                             <color key="tintColor" red="0.60392156860000001" green="0.6588235294" blue="0.69803921570000005" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
-                                <segue destination="OYm-TY-SzU" kind="show" identifier="segueToTable" id="dRt-0C-aNN"/>
+                                <segue destination="SXQ-RY-Zdd" kind="show" identifier="segueToTable" id="dRt-0C-aNN"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -185,7 +186,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pxM-ul-s89" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-365.625" y="-345"/>
+            <point key="canvasLocation" x="-366" y="-291"/>
         </scene>
         <!--Learn View Controller-->
         <scene sceneID="lnK-eW-4un">
@@ -213,14 +214,14 @@
                         <barButtonItem key="leftBarButtonItem" image="1-header-nav-1" id="vnt-mJ-EfC">
                             <color key="tintColor" red="0.60392156860000001" green="0.6588235294" blue="0.69803921570000005" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
-                                <segue destination="OYm-TY-SzU" kind="show" id="j0B-C0-BcR"/>
+                                <segue destination="SXQ-RY-Zdd" kind="show" id="j0B-C0-BcR"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sU2-aU-yA2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="174" y="1209"/>
+            <point key="canvasLocation" x="709" y="-255"/>
         </scene>
         <!--Explore View Controller-->
         <scene sceneID="luG-3Q-zj9">
@@ -248,14 +249,14 @@
                         <barButtonItem key="leftBarButtonItem" image="1-header-nav-1" id="ahM-UU-5kq">
                             <color key="tintColor" red="0.60392156860000001" green="0.6588235294" blue="0.69803921570000005" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
-                                <segue destination="OYm-TY-SzU" kind="show" id="ZjZ-a5-mJg"/>
+                                <segue destination="SXQ-RY-Zdd" kind="show" id="ZjZ-a5-mJg"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xmz-2H-N9Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="975" y="1209"/>
+            <point key="canvasLocation" x="1800" y="-255"/>
         </scene>
         <!--Record View Controller-->
         <scene sceneID="Hg5-pF-d3E">
@@ -283,14 +284,14 @@
                         <barButtonItem key="leftBarButtonItem" image="1-header-nav-1" id="1ny-dm-Js6">
                             <color key="tintColor" red="0.60392156860000001" green="0.6588235294" blue="0.69803921570000005" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
-                                <segue destination="OYm-TY-SzU" kind="show" id="ItW-JS-NZw"/>
+                                <segue destination="SXQ-RY-Zdd" kind="show" id="ItW-JS-NZw"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PrC-C2-pIy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1800" y="1209"/>
+            <point key="canvasLocation" x="2959" y="-255"/>
         </scene>
         <!--Review View Controller-->
         <scene sceneID="bJy-Ls-oon">
@@ -318,14 +319,14 @@
                         <barButtonItem key="leftBarButtonItem" image="1-header-nav-1" id="cpt-K0-2FT">
                             <color key="tintColor" red="0.60392156860000001" green="0.6588235294" blue="0.69803921570000005" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
-                                <segue destination="OYm-TY-SzU" kind="show" id="U6M-JI-ydO"/>
+                                <segue destination="SXQ-RY-Zdd" kind="show" id="U6M-JI-ydO"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xZ0-DA-aUz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2558" y="1209"/>
+            <point key="canvasLocation" x="3986" y="-229"/>
         </scene>
         <!--Key Challenge View Controller-->
         <scene sceneID="ndF-Mn-Tda">
@@ -353,14 +354,14 @@
                         <barButtonItem key="leftBarButtonItem" image="1-header-nav-1" id="gDn-hp-jcr">
                             <color key="tintColor" red="0.60392156860000001" green="0.6588235294" blue="0.69803921570000005" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
-                                <segue destination="OYm-TY-SzU" kind="show" id="Y8q-9k-Bcb"/>
+                                <segue destination="SXQ-RY-Zdd" kind="show" id="Y8q-9k-Bcb"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dMw-2p-zKB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3351" y="1198"/>
+            <point key="canvasLocation" x="4905" y="-229"/>
         </scene>
         <!--Sea Level Rise View Controller-->
         <scene sceneID="aku-bo-uZE">
@@ -388,14 +389,14 @@
                         <barButtonItem key="leftBarButtonItem" image="1-header-nav-1" id="3ak-XH-5vH">
                             <color key="tintColor" red="0.60392156860000001" green="0.6588235294" blue="0.69803921570000005" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
-                                <segue destination="OYm-TY-SzU" kind="show" id="HLz-tX-r1Z"/>
+                                <segue destination="SXQ-RY-Zdd" kind="show" id="HLz-tX-r1Z"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DhO-RC-9Cn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4142" y="1203"/>
+            <point key="canvasLocation" x="5874" y="-255"/>
         </scene>
         <!--Water Watch View Controller-->
         <scene sceneID="VXV-Mw-c6d">
@@ -423,14 +424,14 @@
                         <barButtonItem key="leftBarButtonItem" image="1-header-nav-1" id="SSO-L9-OaD">
                             <color key="tintColor" red="0.60392156860000001" green="0.6588235294" blue="0.69803921570000005" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
-                                <segue destination="OYm-TY-SzU" kind="show" id="TXR-Kb-5Av"/>
+                                <segue destination="SXQ-RY-Zdd" kind="show" id="TXR-Kb-5Av"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="66B-xX-6ro" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4971" y="1198"/>
+            <point key="canvasLocation" x="6630" y="-229"/>
         </scene>
         <!--Reef Restoration View Controller-->
         <scene sceneID="9TZ-2L-dN6">
@@ -520,9 +521,9 @@
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="ZYA-Uw-2Uc" secondAttribute="height" multiplier="359:306" id="DWt-RO-sZD"/>
                                                 </constraints>
-                                                <mutableString key="text">Have you ever wondered what marine biologists do? Are you interested in diving alongside University of Miami coral reef experts? Rescue A Reef coral restoration expeditions offer you a hands-on experience to work with live corals in their natural habitat! 
+                                                <string key="text">Have you ever wondered what marine biologists do? Are you interested in diving alongside University of Miami coral reef experts? Rescue A Reef coral restoration expeditions offer you a hands-on experience to work with live corals in their natural habitat! 
 
-Key Biscayne residents are invited to join a KBCF Citizen Scientist Project-sponsored dive trip with University of Miami Rosenstiel School’s Rescue A Reef Program. Dive the Key Biscayne Coral Nursery, learn about the staghorn coral restoration efforts, and participate in a new coral out-planting project!</mutableString>
+Key Biscayne residents are invited to join a KBCF Citizen Scientist Project-sponsored dive trip with University of Miami Rosenstiel School’s Rescue A Reef Program. Dive the Key Biscayne Coral Nursery, learn about the staghorn coral restoration efforts, and participate in a new coral out-planting project!</string>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -541,7 +542,7 @@ Key Biscayne residents are invited to join a KBCF Citizen Scientist Project-spon
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="5iB-Bs-TFE" secondAttribute="height" multiplier="359:909" id="mDd-jN-iHA"/>
                                                 </constraints>
-                                                <mutableString key="text">Staghorn corals (Acropora cervicornis) are  important coral reef engineers, providing essential habitat for many other reef organisms. Unfortunately, coral populations have drastically declined and are threatened with extinction due to climate change, pollution, disease, overfishing, and habitat destruction. Staghorn corals have been designated on the IUCN red list as “critically endangered,” and are listed as “threatened” under the Endangered Species Act.  The National Marine Fisheries Service has designated Florida as one of four critical habitats in the world for staghorn coral.
+                                                <string key="text">Staghorn corals (Acropora cervicornis) are  important coral reef engineers, providing essential habitat for many other reef organisms. Unfortunately, coral populations have drastically declined and are threatened with extinction due to climate change, pollution, disease, overfishing, and habitat destruction. Staghorn corals have been designated on the IUCN red list as “critically endangered,” and are listed as “threatened” under the Endangered Species Act.  The National Marine Fisheries Service has designated Florida as one of four critical habitats in the world for staghorn coral.
 
 While populations of staghorn coral still exist throughout Florida and the Florida Keys, they are small, fragmented, and genetically isolated. Without the flow of genes between populations, they grow weaker over time and are less able to cope with changes in the environment.
 
@@ -550,7 +551,7 @@ propagating threatened Caribbean staghorn coral in underwater coral nurseries. N
 
 Out of the Lirman Lab came Rescue A Reef, a citizen science project designed to support coral reef research and restoration activities through outreach, education, and engagement. Their mission is to educate and engage the local community, increase scientific literacy in coastal and coral reef conservation, and foster ocean stewardship.
 
-The area around Key Biscayne and Virginia Key is part of the designated critical habitat of staghorn coral, and therefore its protection is paramount.  The aim of this and future trips are to get the Key Biscayne community involved in awareness, protection, and enhancement of their surrounding local environment.</mutableString>
+The area around Key Biscayne and Virginia Key is part of the designated critical habitat of staghorn coral, and therefore its protection is paramount.  The aim of this and future trips are to get the Key Biscayne community involved in awareness, protection, and enhancement of their surrounding local environment.</string>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -719,7 +720,7 @@ The area around Key Biscayne and Virginia Key is part of the designated critical
                         <barButtonItem key="leftBarButtonItem" image="1-header-nav-1" id="k4a-Z4-OEZ">
                             <color key="tintColor" red="0.60392156860000001" green="0.6588235294" blue="0.69803921570000005" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
-                                <segue destination="OYm-TY-SzU" kind="show" id="CDV-cc-EMe"/>
+                                <segue destination="SXQ-RY-Zdd" kind="show" id="CDV-cc-EMe"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -727,7 +728,7 @@ The area around Key Biscayne and Virginia Key is part of the designated critical
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fja-cD-AP4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5826.3999999999996" y="2106.7466266866568"/>
+            <point key="canvasLocation" x="7057" y="3259"/>
         </scene>
         <!--Status Reef Restoration View Controller-->
         <scene sceneID="ORf-XF-zeu">
@@ -818,7 +819,7 @@ The area around Key Biscayne and Virginia Key is part of the designated critical
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VHn-nE-Zys" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6629.6000000000004" y="2133.2833583208399"/>
+            <point key="canvasLocation" x="7005" y="5829"/>
         </scene>
         <!--Lecture Series View Controller-->
         <scene sceneID="Yfg-t0-XuT">
@@ -846,14 +847,14 @@ The area around Key Biscayne and Virginia Key is part of the designated critical
                         <barButtonItem key="leftBarButtonItem" image="1-header-nav-1" id="0wN-ea-rMX">
                             <color key="tintColor" red="0.60392156860000001" green="0.6588235294" blue="0.69803921570000005" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
-                                <segue destination="OYm-TY-SzU" kind="show" id="CD7-0u-all"/>
+                                <segue destination="SXQ-RY-Zdd" kind="show" id="CD7-0u-all"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8dT-7p-NMK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6630" y="1170"/>
+            <point key="canvasLocation" x="7506" y="-255"/>
         </scene>
         <!--Field Activity View Controller-->
         <scene sceneID="6gM-99-24f">
@@ -881,14 +882,14 @@ The area around Key Biscayne and Virginia Key is part of the designated critical
                         <barButtonItem key="leftBarButtonItem" image="1-header-nav-1" id="UYY-a2-wXO">
                             <color key="tintColor" red="0.60392156860000001" green="0.6588235294" blue="0.69803921570000005" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
-                                <segue destination="OYm-TY-SzU" kind="show" id="Aj9-OJ-ThH"/>
+                                <segue destination="SXQ-RY-Zdd" kind="show" id="Aj9-OJ-ThH"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ed6-pe-Hau" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7414" y="1198"/>
+            <point key="canvasLocation" x="8274" y="-255"/>
         </scene>
         <!--Events View Controller-->
         <scene sceneID="DC7-fe-0il">
@@ -916,14 +917,14 @@ The area around Key Biscayne and Virginia Key is part of the designated critical
                         <barButtonItem key="leftBarButtonItem" image="1-header-nav-1" id="qSq-Ta-Orw">
                             <color key="tintColor" red="0.60392156860000001" green="0.6588235294" blue="0.69803921570000005" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
-                                <segue destination="OYm-TY-SzU" kind="show" identifier="segueToTable" id="zgb-V5-2Nl"/>
+                                <segue destination="SXQ-RY-Zdd" kind="show" identifier="segueToTable" id="zgb-V5-2Nl"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wpb-eA-mL7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="8141" y="-291"/>
+            <point key="canvasLocation" x="10022" y="-229"/>
         </scene>
         <!--News View Controller-->
         <scene sceneID="RMW-Ps-OQy">
@@ -951,7 +952,7 @@ The area around Key Biscayne and Virginia Key is part of the designated critical
                         <barButtonItem key="leftBarButtonItem" image="1-header-nav-1" id="3n3-oW-0Ms">
                             <color key="tintColor" red="0.60392156860000001" green="0.6588235294" blue="0.69803921570000005" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
-                                <segue destination="OYm-TY-SzU" kind="show" identifier="segueToTable" id="JEv-A5-Cw7"/>
+                                <segue destination="SXQ-RY-Zdd" kind="show" identifier="segueToTable" id="JEv-A5-Cw7"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -986,14 +987,14 @@ The area around Key Biscayne and Virginia Key is part of the designated critical
                         <barButtonItem key="leftBarButtonItem" image="1-header-nav-1" id="X3Y-tH-MFt">
                             <color key="tintColor" red="0.60392156860000001" green="0.6588235294" blue="0.69803921570000005" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
-                                <segue destination="OYm-TY-SzU" kind="show" id="y2m-bG-xMB"/>
+                                <segue destination="SXQ-RY-Zdd" kind="show" id="y2m-bG-xMB"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vRi-Jm-hzO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="9649" y="1198"/>
+            <point key="canvasLocation" x="10976" y="-255"/>
         </scene>
         <!--Our Biomes View Controller-->
         <scene sceneID="dsO-GJ-igp">
@@ -1021,14 +1022,14 @@ The area around Key Biscayne and Virginia Key is part of the designated critical
                         <barButtonItem key="leftBarButtonItem" image="1-header-nav-1" id="kLM-Oh-g66">
                             <color key="tintColor" red="0.60392156860000001" green="0.6588235294" blue="0.69803921570000005" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
-                                <segue destination="OYm-TY-SzU" kind="show" id="b8H-jD-YEn"/>
+                                <segue destination="SXQ-RY-Zdd" kind="show" id="b8H-jD-YEn"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jpw-ZD-hPz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="10433" y="1198"/>
+            <point key="canvasLocation" x="11869" y="-229"/>
         </scene>
         <!--Newsletters View Controller-->
         <scene sceneID="cL4-Wq-ugE">
@@ -1056,14 +1057,14 @@ The area around Key Biscayne and Virginia Key is part of the designated critical
                         <barButtonItem key="leftBarButtonItem" image="1-header-nav-1" id="vzE-4y-YM4">
                             <color key="tintColor" red="0.60392156860000001" green="0.6588235294" blue="0.69803921570000005" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
-                                <segue destination="OYm-TY-SzU" kind="show" id="XDC-r5-o9p"/>
+                                <segue destination="SXQ-RY-Zdd" kind="show" id="XDC-r5-o9p"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fqj-GA-NEb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="11179" y="1198"/>
+            <point key="canvasLocation" x="12804" y="-230"/>
         </scene>
         <!--Our Partners View Controller-->
         <scene sceneID="pmH-YC-lEr">
@@ -1091,14 +1092,14 @@ The area around Key Biscayne and Virginia Key is part of the designated critical
                         <barButtonItem key="leftBarButtonItem" image="1-header-nav-1" id="ilN-Jp-7j1">
                             <color key="tintColor" red="0.60392156860000001" green="0.6588235294" blue="0.69803921570000005" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
-                                <segue destination="OYm-TY-SzU" kind="show" id="fHn-Zz-xbB"/>
+                                <segue destination="SXQ-RY-Zdd" kind="show" id="fHn-Zz-xbB"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cIE-zd-pRV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="11933" y="1203"/>
+            <point key="canvasLocation" x="13718" y="-230"/>
         </scene>
         <!--Contact Us View Controller-->
         <scene sceneID="eVg-Fc-5sC">
@@ -1126,14 +1127,14 @@ The area around Key Biscayne and Virginia Key is part of the designated critical
                         <barButtonItem key="leftBarButtonItem" image="1-header-nav-1" id="PTt-lm-8Un">
                             <color key="tintColor" red="0.60392156860000001" green="0.6588235294" blue="0.69803921570000005" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
-                                <segue destination="OYm-TY-SzU" kind="show" id="s9q-xk-IIB"/>
+                                <segue destination="SXQ-RY-Zdd" kind="show" id="s9q-xk-IIB"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dYm-YE-M1p" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="12699" y="1209"/>
+            <point key="canvasLocation" x="14599" y="-255"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -1310,7 +1311,7 @@ The area around Key Biscayne and Virginia Key is part of the designated critical
                         <barButtonItem key="leftBarButtonItem" title="Item" image="1-header-nav-1" id="IW0-Pd-8ay">
                             <color key="tintColor" red="0.60392156860000001" green="0.6588235294" blue="0.69803921570000005" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
-                                <segue destination="OYm-TY-SzU" kind="show" id="In9-og-6dh"/>
+                                <segue destination="SXQ-RY-Zdd" kind="show" id="In9-og-6dh"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -1375,7 +1376,7 @@ The area around Key Biscayne and Virginia Key is part of the designated critical
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="u0f-v6-O0l" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="8139" y="-1095"/>
+            <point key="canvasLocation" x="10022" y="-1095"/>
         </scene>
         <!--News Navigation Controller-->
         <scene sceneID="4YP-Ua-uwx">
@@ -1393,7 +1394,7 @@ The area around Key Biscayne and Virginia Key is part of the designated critical
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zv3-Az-SsX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="9024" y="-1095"/>
+            <point key="canvasLocation" x="9090" y="-1095"/>
         </scene>
         <!--Home Navigation Controller-->
         <scene sceneID="h6q-75-bAi">
@@ -1429,7 +1430,7 @@ The area around Key Biscayne and Virginia Key is part of the designated critical
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XBT-LS-u68" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="176" y="405"/>
+            <point key="canvasLocation" x="709" y="-1131"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="TMC-qb-QMN">
@@ -1447,7 +1448,7 @@ The area around Key Biscayne and Virginia Key is part of the designated critical
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fle-A0-4cp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="975" y="405"/>
+            <point key="canvasLocation" x="1800" y="-1131"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="MCC-5A-c6c">
@@ -1465,7 +1466,7 @@ The area around Key Biscayne and Virginia Key is part of the designated critical
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LOd-qM-Rst" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1800" y="405"/>
+            <point key="canvasLocation" x="2959" y="-1131"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="tMW-0L-UQP">
@@ -1483,7 +1484,7 @@ The area around Key Biscayne and Virginia Key is part of the designated critical
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qLm-Lb-LGS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2559" y="405"/>
+            <point key="canvasLocation" x="3988" y="-1131"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Scr-ql-UvW">
@@ -1501,7 +1502,7 @@ The area around Key Biscayne and Virginia Key is part of the designated critical
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Iw-OW-IfU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3351" y="405"/>
+            <point key="canvasLocation" x="4905" y="-1131"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="FvS-ZA-KoI">
@@ -1519,7 +1520,7 @@ The area around Key Biscayne and Virginia Key is part of the designated critical
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eAS-zZ-YEI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4142" y="405"/>
+            <point key="canvasLocation" x="5876" y="-1131"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Na7-RK-10b">
@@ -1537,7 +1538,7 @@ The area around Key Biscayne and Virginia Key is part of the designated critical
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ILO-YA-hLi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4971" y="405"/>
+            <point key="canvasLocation" x="6630" y="-1131"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Tti-3x-GmR">
@@ -1555,7 +1556,7 @@ The area around Key Biscayne and Virginia Key is part of the designated critical
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hAz-EU-9OU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5828" y="405"/>
+            <point key="canvasLocation" x="7056" y="569"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="mpL-yI-IzY">
@@ -1573,7 +1574,7 @@ The area around Key Biscayne and Virginia Key is part of the designated critical
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XNS-rv-QWD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6630" y="405"/>
+            <point key="canvasLocation" x="7506" y="-1095"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="gCd-fp-o9q">
@@ -1591,7 +1592,7 @@ The area around Key Biscayne and Virginia Key is part of the designated critical
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pi5-sD-vPS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7414" y="405"/>
+            <point key="canvasLocation" x="8276" y="-1131"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="rRA-BZ-bLl">
@@ -1609,7 +1610,7 @@ The area around Key Biscayne and Virginia Key is part of the designated critical
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dCK-ag-Ep5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="9649" y="415"/>
+            <point key="canvasLocation" x="10978" y="-1131"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="I1Q-MU-gnu">
@@ -1627,7 +1628,7 @@ The area around Key Biscayne and Virginia Key is part of the designated critical
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mic-PI-hzT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="10433" y="415"/>
+            <point key="canvasLocation" x="11869" y="-1131"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="kco-LU-jvd">
@@ -1645,7 +1646,7 @@ The area around Key Biscayne and Virginia Key is part of the designated critical
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iIx-pc-aze" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="11179" y="415"/>
+            <point key="canvasLocation" x="12806" y="-1131"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="2Qy-Ha-vvk">
@@ -1663,7 +1664,7 @@ The area around Key Biscayne and Virginia Key is part of the designated critical
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c2b-yZ-pEo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="11933" y="415"/>
+            <point key="canvasLocation" x="13718" y="-1095"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="6kd-MA-vWc">
@@ -1681,7 +1682,25 @@ The area around Key Biscayne and Virginia Key is part of the designated critical
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6ME-Pi-8iH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="12699" y="415"/>
+            <point key="canvasLocation" x="14599" y="-1131"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ruI-K3-Om8">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="SXQ-RY-Zdd" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="7Ho-E0-Cow">
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="OYm-TY-SzU" kind="relationship" relationship="rootViewController" id="ndl-Mk-jWS"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="r3z-O9-Qur" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7198" y="8800"/>
         </scene>
     </scenes>
     <resources>
