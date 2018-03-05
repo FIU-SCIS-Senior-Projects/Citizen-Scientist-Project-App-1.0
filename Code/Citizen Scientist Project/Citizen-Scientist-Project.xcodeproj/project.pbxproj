@@ -71,7 +71,7 @@
 		22891A3C202DEBE7000FEBB4 /* SocialNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialNetwork.swift; sourceTree = "<group>"; };
 		22992257203E5814006CE1AB /* NavigationTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationTableViewController.swift; sourceTree = "<group>"; };
 		22992259203E58FA006CE1AB /* segueToTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = segueToTable.swift; sourceTree = "<group>"; };
-		229E613F2022A79200D4BDDA /* Citizen Scientist Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Citizen Scientist Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		229E613F2022A79200D4BDDA /* Citizen-Scientist-Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Citizen-Scientist-Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		229E61422022A79200D4BDDA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		229E61442022A79200D4BDDA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		229E61472022A79200D4BDDA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -79,10 +79,10 @@
 		229E614C2022A79200D4BDDA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		229E614F2022A79200D4BDDA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		229E61512022A79200D4BDDA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		229E61562022A79200D4BDDA /* Citizen Scientist ProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Citizen Scientist ProjectTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		229E61562022A79200D4BDDA /* Citizen-Scientist-ProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Citizen-Scientist-ProjectTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		229E615A2022A79200D4BDDA /* Citizen_Scientist_ProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Citizen_Scientist_ProjectTests.swift; sourceTree = "<group>"; };
 		229E615C2022A79200D4BDDA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		229E61612022A79200D4BDDA /* Citizen Scientist ProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Citizen Scientist ProjectUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		229E61612022A79200D4BDDA /* Citizen-Scientist-ProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Citizen-Scientist-ProjectUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		229E61652022A79200D4BDDA /* Citizen_Scientist_ProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Citizen_Scientist_ProjectUITests.swift; sourceTree = "<group>"; };
 		229E61672022A79200D4BDDA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		22F78C8E202D0F900001049D /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
@@ -532,9 +532,9 @@
 		229E61402022A79200D4BDDA /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				229E613F2022A79200D4BDDA /* Citizen Scientist Project.app */,
-				229E61562022A79200D4BDDA /* Citizen Scientist ProjectTests.xctest */,
-				229E61612022A79200D4BDDA /* Citizen Scientist ProjectUITests.xctest */,
+				229E613F2022A79200D4BDDA /* Citizen-Scientist-Project.app */,
+				229E61562022A79200D4BDDA /* Citizen-Scientist-ProjectTests.xctest */,
+				229E61612022A79200D4BDDA /* Citizen-Scientist-ProjectUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -610,9 +610,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		229E613E2022A79200D4BDDA /* Citizen Scientist Project */ = {
+		229E613E2022A79200D4BDDA /* Citizen-Scientist-Project */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 229E616A2022A79200D4BDDA /* Build configuration list for PBXNativeTarget "Citizen Scientist Project" */;
+			buildConfigurationList = 229E616A2022A79200D4BDDA /* Build configuration list for PBXNativeTarget "Citizen-Scientist-Project" */;
 			buildPhases = (
 				229E613B2022A79200D4BDDA /* Sources */,
 				229E613C2022A79200D4BDDA /* Frameworks */,
@@ -622,14 +622,14 @@
 			);
 			dependencies = (
 			);
-			name = "Citizen Scientist Project";
+			name = "Citizen-Scientist-Project";
 			productName = "Citizen Scientist Project";
-			productReference = 229E613F2022A79200D4BDDA /* Citizen Scientist Project.app */;
+			productReference = 229E613F2022A79200D4BDDA /* Citizen-Scientist-Project.app */;
 			productType = "com.apple.product-type.application";
 		};
-		229E61552022A79200D4BDDA /* Citizen Scientist ProjectTests */ = {
+		229E61552022A79200D4BDDA /* Citizen-Scientist-ProjectTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 229E616D2022A79200D4BDDA /* Build configuration list for PBXNativeTarget "Citizen Scientist ProjectTests" */;
+			buildConfigurationList = 229E616D2022A79200D4BDDA /* Build configuration list for PBXNativeTarget "Citizen-Scientist-ProjectTests" */;
 			buildPhases = (
 				229E61522022A79200D4BDDA /* Sources */,
 				229E61532022A79200D4BDDA /* Frameworks */,
@@ -640,14 +640,14 @@
 			dependencies = (
 				229E61582022A79200D4BDDA /* PBXTargetDependency */,
 			);
-			name = "Citizen Scientist ProjectTests";
+			name = "Citizen-Scientist-ProjectTests";
 			productName = "Citizen Scientist ProjectTests";
-			productReference = 229E61562022A79200D4BDDA /* Citizen Scientist ProjectTests.xctest */;
+			productReference = 229E61562022A79200D4BDDA /* Citizen-Scientist-ProjectTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		229E61602022A79200D4BDDA /* Citizen Scientist ProjectUITests */ = {
+		229E61602022A79200D4BDDA /* Citizen-Scientist-ProjectUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 229E61702022A79200D4BDDA /* Build configuration list for PBXNativeTarget "Citizen Scientist ProjectUITests" */;
+			buildConfigurationList = 229E61702022A79200D4BDDA /* Build configuration list for PBXNativeTarget "Citizen-Scientist-ProjectUITests" */;
 			buildPhases = (
 				229E615D2022A79200D4BDDA /* Sources */,
 				229E615E2022A79200D4BDDA /* Frameworks */,
@@ -658,9 +658,9 @@
 			dependencies = (
 				229E61632022A79200D4BDDA /* PBXTargetDependency */,
 			);
-			name = "Citizen Scientist ProjectUITests";
+			name = "Citizen-Scientist-ProjectUITests";
 			productName = "Citizen Scientist ProjectUITests";
-			productReference = 229E61612022A79200D4BDDA /* Citizen Scientist ProjectUITests.xctest */;
+			productReference = 229E61612022A79200D4BDDA /* Citizen-Scientist-ProjectUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -689,7 +689,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 229E613A2022A79200D4BDDA /* Build configuration list for PBXProject "Citizen Scientist Project" */;
+			buildConfigurationList = 229E613A2022A79200D4BDDA /* Build configuration list for PBXProject "Citizen-Scientist-Project" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -702,9 +702,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				229E613E2022A79200D4BDDA /* Citizen Scientist Project */,
-				229E61552022A79200D4BDDA /* Citizen Scientist ProjectTests */,
-				229E61602022A79200D4BDDA /* Citizen Scientist ProjectUITests */,
+				229E613E2022A79200D4BDDA /* Citizen-Scientist-Project */,
+				229E61552022A79200D4BDDA /* Citizen-Scientist-ProjectTests */,
+				229E61602022A79200D4BDDA /* Citizen-Scientist-ProjectUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -797,12 +797,12 @@
 /* Begin PBXTargetDependency section */
 		229E61582022A79200D4BDDA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 229E613E2022A79200D4BDDA /* Citizen Scientist Project */;
+			target = 229E613E2022A79200D4BDDA /* Citizen-Scientist-Project */;
 			targetProxy = 229E61572022A79200D4BDDA /* PBXContainerItemProxy */;
 		};
 		229E61632022A79200D4BDDA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 229E613E2022A79200D4BDDA /* Citizen Scientist Project */;
+			target = 229E613E2022A79200D4BDDA /* Citizen-Scientist-Project */;
 			targetProxy = 229E61622022A79200D4BDDA /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -940,7 +940,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = R89DGE8VGB;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "Citizen Scientist Project/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Key.Biscayne.Citizen-Scientist-Project";
@@ -957,7 +957,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = R89DGE8VGB;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "Citizen Scientist Project/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Key.Biscayne.Citizen-Scientist-Project";
@@ -980,7 +980,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Citizen Scientist Project.app/Citizen Scientist Project";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Citizen-Scientist-Project.app/Citizen-Scientist-Project";
 			};
 			name = Debug;
 		};
@@ -996,7 +996,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Citizen Scientist Project.app/Citizen Scientist Project";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Citizen-Scientist-Project.app/Citizen-Scientist-Project";
 			};
 			name = Release;
 		};
@@ -1033,7 +1033,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		229E613A2022A79200D4BDDA /* Build configuration list for PBXProject "Citizen Scientist Project" */ = {
+		229E613A2022A79200D4BDDA /* Build configuration list for PBXProject "Citizen-Scientist-Project" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				229E61682022A79200D4BDDA /* Debug */,
@@ -1042,7 +1042,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		229E616A2022A79200D4BDDA /* Build configuration list for PBXNativeTarget "Citizen Scientist Project" */ = {
+		229E616A2022A79200D4BDDA /* Build configuration list for PBXNativeTarget "Citizen-Scientist-Project" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				229E616B2022A79200D4BDDA /* Debug */,
@@ -1051,7 +1051,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		229E616D2022A79200D4BDDA /* Build configuration list for PBXNativeTarget "Citizen Scientist ProjectTests" */ = {
+		229E616D2022A79200D4BDDA /* Build configuration list for PBXNativeTarget "Citizen-Scientist-ProjectTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				229E616E2022A79200D4BDDA /* Debug */,
@@ -1060,7 +1060,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		229E61702022A79200D4BDDA /* Build configuration list for PBXNativeTarget "Citizen Scientist ProjectUITests" */ = {
+		229E61702022A79200D4BDDA /* Build configuration list for PBXNativeTarget "Citizen-Scientist-ProjectUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				229E61712022A79200D4BDDA /* Debug */,
