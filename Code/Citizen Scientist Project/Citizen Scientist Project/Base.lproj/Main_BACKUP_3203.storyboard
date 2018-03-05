@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0zI-XZ-BQA">
+<<<<<<< HEAD
+=======
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
+>>>>>>> user-story-677
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
@@ -21,17 +24,29 @@
         <scene sceneID="lZF-B5-je6">
             <objects>
                 <tableViewController id="OYm-TY-SzU" customClass="NavigationTableViewController" customModule="Citizen_Scientist_Project" customModuleProvider="target" sceneMemberID="viewController">
+<<<<<<< HEAD
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="70" estimatedRowHeight="-1" sectionHeaderHeight="70" sectionFooterHeight="28" id="zjp-Mz-DBi">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+=======
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="70" sectionFooterHeight="28" id="zjp-Mz-DBi">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+>>>>>>> user-story-677
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.18823529411764706" green="0.19607843137254902" blue="0.25098039215686274" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="sectionIndexBackgroundColor" red="0.18823529411764706" green="0.19607843137254902" blue="0.25098039215686274" alpha="1" colorSpace="calibratedRGB"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="NavigationTableViewCell" rowHeight="70" id="DoP-dB-lm9" customClass="NavigationTableViewCell" customModule="Citizen_Scientist_Project" customModuleProvider="target">
+<<<<<<< HEAD
                                 <rect key="frame" x="0.0" y="70" width="600" height="70"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="DoP-dB-lm9" id="FkZ-ea-CP6">
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="69.5"/>
+=======
+                                <rect key="frame" x="0.0" y="70" width="375" height="70"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="DoP-dB-lm9" id="FkZ-ea-CP6">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="69.5"/>
+>>>>>>> user-story-677
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nXV-i7-XdM">
@@ -42,11 +57,15 @@
                                             </constraints>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rdz-0A-Ues">
+<<<<<<< HEAD
                                             <rect key="frame" x="69" y="20" width="480" height="30"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="30" id="F6h-G1-xog"/>
                                                 <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="JQf-ue-i5Q"/>
                                             </constraints>
+=======
+                                            <rect key="frame" x="65" y="2" width="310" height="66.5"/>
+>>>>>>> user-story-677
                                             <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
                                             <color key="textColor" red="0.60392156862745094" green="0.6588235294117647" blue="0.69803921568627447" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
@@ -117,11 +136,19 @@
             <objects>
                 <viewController id="ePw-MV-OSx" customClass="ProfileViewController" customModule="Citizen_Scientist_Project" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="19H-X7-AJC">
+<<<<<<< HEAD
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Profile Page" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mNT-Cn-dTA">
                                 <rect key="frame" x="254" y="289" width="91" height="21"/>
+=======
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Profile Page" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mNT-Cn-dTA">
+                                <rect key="frame" x="142" y="323" width="91.5" height="21"/>
+>>>>>>> user-story-677
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -152,15 +179,24 @@
             <objects>
                 <viewController id="Nhh-Xc-pD7" customClass="GeoHuntViewController" customModule="Citizen_Scientist_Project" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="npd-UJ-15Z">
+<<<<<<< HEAD
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="ZCP-Qs-GKG">
                                 <rect key="frame" x="0.0" y="20" width="600" height="580"/>
+=======
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="ZCP-Qs-GKG">
+                                <rect key="frame" x="0.0" y="64" width="375" height="416"/>
+>>>>>>> user-story-677
                             </mapView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+<<<<<<< HEAD
                             <constraint firstItem="ZCP-Qs-GKG" firstAttribute="trailing" secondItem="dPj-jg-M03" secondAttribute="trailing" id="2Yz-5t-e0a"/>
                             <constraint firstItem="ZCP-Qs-GKG" firstAttribute="leading" secondItem="dPj-jg-M03" secondAttribute="leading" id="Hvr-b7-zAg"/>
                             <constraint firstItem="ZCP-Qs-GKG" firstAttribute="leading" secondItem="dPj-jg-M03" secondAttribute="leading" id="Xem-dj-UOz"/>
@@ -169,6 +205,12 @@
                             <constraint firstItem="ZCP-Qs-GKG" firstAttribute="top" secondItem="dPj-jg-M03" secondAttribute="top" id="cy3-ew-MLB"/>
                             <constraint firstItem="ZCP-Qs-GKG" firstAttribute="top" secondItem="dPj-jg-M03" secondAttribute="top" id="ia7-Xj-twT"/>
                             <constraint firstItem="ZCP-Qs-GKG" firstAttribute="bottom" secondItem="dPj-jg-M03" secondAttribute="bottom" id="r6P-Fr-1QT"/>
+=======
+                            <constraint firstAttribute="trailing" secondItem="ZCP-Qs-GKG" secondAttribute="trailing" id="9yv-RS-yDs"/>
+                            <constraint firstItem="ZCP-Qs-GKG" firstAttribute="leading" secondItem="npd-UJ-15Z" secondAttribute="leading" id="IeK-cm-ZU2"/>
+                            <constraint firstItem="ZCP-Qs-GKG" firstAttribute="top" secondItem="dPj-jg-M03" secondAttribute="top" id="hKx-Si-pGK"/>
+                            <constraint firstItem="dPj-jg-M03" firstAttribute="bottom" secondItem="ZCP-Qs-GKG" secondAttribute="bottom" constant="187" id="jbl-Nd-3xU"/>
+>>>>>>> user-story-677
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="dPj-jg-M03"/>
                     </view>
@@ -193,11 +235,19 @@
             <objects>
                 <viewController id="ut8-Ko-Pu2" customClass="LearnViewController" customModule="Citizen_Scientist_Project" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rOH-nI-B4K">
+<<<<<<< HEAD
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Learn Page" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kO4-ge-wey">
                                 <rect key="frame" x="257" y="289" width="86" height="21"/>
+=======
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Learn Page" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kO4-ge-wey">
+                                <rect key="frame" x="144.5" y="323" width="86" height="21"/>
+>>>>>>> user-story-677
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -228,11 +278,19 @@
             <objects>
                 <viewController id="zQx-Jl-2DE" customClass="ExploreViewController" customModule="Citizen_Scientist_Project" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GAa-kn-jET">
+<<<<<<< HEAD
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Explore Page" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JmZ-bC-fBy">
                                 <rect key="frame" x="250" y="289" width="100" height="21"/>
+=======
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Explore Page" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JmZ-bC-fBy">
+                                <rect key="frame" x="137.5" y="323" width="100" height="21"/>
+>>>>>>> user-story-677
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -263,11 +321,19 @@
             <objects>
                 <viewController id="bCD-OY-gXb" customClass="RecordViewController" customModule="Citizen_Scientist_Project" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nth-Aq-8qx">
+<<<<<<< HEAD
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Record Page" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NeY-l3-V2D">
                                 <rect key="frame" x="251" y="289" width="97" height="21"/>
+=======
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Record Page" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NeY-l3-V2D">
+                                <rect key="frame" x="139" y="323" width="97.5" height="21"/>
+>>>>>>> user-story-677
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -298,11 +364,19 @@
             <objects>
                 <viewController id="8HI-9x-GoA" customClass="ReviewViewController" customModule="Citizen_Scientist_Project" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ftl-Ec-Y5g">
+<<<<<<< HEAD
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Review Page" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lP0-9L-PRc">
                                 <rect key="frame" x="251" y="289" width="97" height="21"/>
+=======
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Review Page" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lP0-9L-PRc">
+                                <rect key="frame" x="139" y="323" width="97.5" height="21"/>
+>>>>>>> user-story-677
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -333,11 +407,19 @@
             <objects>
                 <viewController id="jKh-MS-fXM" customClass="KeyChallengeViewController" customModule="Citizen_Scientist_Project" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Olz-eF-b0c">
+<<<<<<< HEAD
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Key Challenge Page" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3R4-Bd-eb8">
                                 <rect key="frame" x="224" y="289" width="152" height="21"/>
+=======
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Key Challenge Page" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3R4-Bd-eb8">
+                                <rect key="frame" x="111.5" y="323" width="152" height="21"/>
+>>>>>>> user-story-677
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -368,6 +450,17 @@
             <objects>
                 <viewController id="lSf-Zo-CgR" customClass="SeaLevelRiseViewController" customModule="Citizen_Scientist_Project" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Y7Q-TV-AOR">
+<<<<<<< HEAD
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sea Level Rise Page" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lLf-YN-imV">
+                                <rect key="frame" x="223" y="289" width="153" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+=======
                         <rect key="frame" x="0.0" y="0.0" width="375" height="2500"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -570,6 +663,7 @@ The Village of Key Biscayne and the Key Biscayne Community Foundation are workin
                                     <constraint firstAttribute="trailing" secondItem="L5c-45-eLH" secondAttribute="trailing" id="zJB-Qb-z0A"/>
                                 </constraints>
                             </scrollView>
+>>>>>>> user-story-677
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -584,7 +678,7 @@ The Village of Key Biscayne and the Key Biscayne Community Foundation are workin
                         <barButtonItem key="leftBarButtonItem" image="1-header-nav-1" id="3ak-XH-5vH">
                             <color key="tintColor" red="0.60392156860000001" green="0.6588235294" blue="0.69803921570000005" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
-                                <segue destination="OYm-TY-SzU" kind="show" id="HLz-tX-r1Z"/>
+                                <segue destination="SXQ-RY-Zdd" kind="show" id="HLz-tX-r1Z"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -596,6 +690,9 @@ The Village of Key Biscayne and the Key Biscayne Community Foundation are workin
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DhO-RC-9Cn" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="uch-s1-tHJ" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
+<<<<<<< HEAD
+            <point key="canvasLocation" x="5874" y="-255"/>
+=======
             <point key="canvasLocation" x="4142" y="2033"/>
         </scene>
         <!--Table View Controller-->
@@ -1220,17 +1317,26 @@ The Village of Key Biscayne and the Key Biscayne Community Foundation are workin
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qGv-vg-E9C" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="5050" y="2947"/>
+>>>>>>> user-story-677
         </scene>
         <!--Water Watch View Controller-->
         <scene sceneID="VXV-Mw-c6d">
             <objects>
                 <viewController id="ckQ-HU-6ed" customClass="WaterWatchViewController" customModule="Citizen_Scientist_Project" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="OAC-OM-tnd">
+<<<<<<< HEAD
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Water Watch Page" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V8d-AK-cUx">
                                 <rect key="frame" x="229" y="289" width="141" height="21"/>
+=======
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Water Watch Page" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V8d-AK-cUx">
+                                <rect key="frame" x="117" y="323" width="141.5" height="21"/>
+>>>>>>> user-story-677
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -1260,6 +1366,7 @@ The Village of Key Biscayne and the Key Biscayne Community Foundation are workin
         <scene sceneID="9TZ-2L-dN6">
             <objects>
                 <viewController id="auj-5x-N91" customClass="ReefRestorationViewController" customModule="Citizen_Scientist_Project" customModuleProvider="target" sceneMemberID="viewController">
+<<<<<<< HEAD
                     <view key="view" contentMode="scaleToFill" id="h67-Xi-dxL">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="2895"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1529,6 +1636,18 @@ The area around Key Biscayne and Virginia Key is part of the designated critical
                                     <constraint firstItem="Dcp-QJ-Y9P" firstAttribute="leading" secondItem="hKC-3P-gS3" secondAttribute="leading" id="xVS-DG-QON"/>
                                 </constraints>
                             </scrollView>
+=======
+                    <view key="view" contentMode="scaleToFill" id="5RZ-dT-Jrd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reef Restoration Page" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JDj-24-Dul">
+                                <rect key="frame" x="103" y="323" width="169.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+>>>>>>> user-story-677
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -1673,11 +1792,19 @@ We will reschedule it as soon as possible and keep everyone informed of any deve
             <objects>
                 <viewController id="mfk-Gb-hXM" customClass="LectureSeriesViewController" customModule="Citizen_Scientist_Project" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="UVI-3Z-JG4">
+<<<<<<< HEAD
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lecture Series Page" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7EL-J1-WNJ">
                                 <rect key="frame" x="223" y="289" width="153" height="21"/>
+=======
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lecture Series Page" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7EL-J1-WNJ">
+                                <rect key="frame" x="111" y="323" width="153" height="21"/>
+>>>>>>> user-story-677
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -1708,11 +1835,19 @@ We will reschedule it as soon as possible and keep everyone informed of any deve
             <objects>
                 <viewController id="nHS-CV-4uQ" customClass="FieldActivityViewController" customModule="Citizen_Scientist_Project" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="H9p-bb-bgA">
+<<<<<<< HEAD
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Field Activity Page" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mY7-yZ-5WZ">
                                 <rect key="frame" x="229" y="289" width="141" height="21"/>
+=======
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Field Activity Page" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mY7-yZ-5WZ">
+                                <rect key="frame" x="117.5" y="323" width="140.5" height="21"/>
+>>>>>>> user-story-677
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -1743,11 +1878,19 @@ We will reschedule it as soon as possible and keep everyone informed of any deve
             <objects>
                 <viewController id="n0T-bo-uMI" customClass="EventsViewController" customModule="Citizen_Scientist_Project" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="k8F-ZC-saj">
+<<<<<<< HEAD
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Events Page" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YAH-4e-OM1">
                                 <rect key="frame" x="253" y="289" width="94" height="21"/>
+=======
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Events Page" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YAH-4e-OM1">
+                                <rect key="frame" x="140.5" y="323" width="94" height="21"/>
+>>>>>>> user-story-677
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -1778,11 +1921,19 @@ We will reschedule it as soon as possible and keep everyone informed of any deve
             <objects>
                 <viewController id="Q5q-PP-8PV" customClass="NewsViewController" customModule="Citizen_Scientist_Project" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="w88-p1-YQL">
+<<<<<<< HEAD
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="News Page" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yw2-Dm-XiJ">
                                 <rect key="frame" x="257" y="289" width="85" height="21"/>
+=======
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="News Page" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yw2-Dm-XiJ">
+                                <rect key="frame" x="145" y="323" width="85.5" height="21"/>
+>>>>>>> user-story-677
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -1813,11 +1964,19 @@ We will reschedule it as soon as possible and keep everyone informed of any deve
             <objects>
                 <viewController id="xfI-ze-4sx" customClass="AboutUsViewController" customModule="Citizen_Scientist_Project" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="sNn-9x-QLT">
+<<<<<<< HEAD
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About Us Page" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QX4-Cp-yQv">
                                 <rect key="frame" x="242" y="289" width="115" height="21"/>
+=======
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About Us Page" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QX4-Cp-yQv">
+                                <rect key="frame" x="130.5" y="323" width="114.5" height="21"/>
+>>>>>>> user-story-677
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -1848,11 +2007,19 @@ We will reschedule it as soon as possible and keep everyone informed of any deve
             <objects>
                 <viewController id="Snx-wC-vtZ" customClass="OurBiomesViewController" customModule="Citizen_Scientist_Project" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pWS-AH-adv">
+<<<<<<< HEAD
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Our Biomes Page" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pBe-z3-Btv">
+                                <rect key="frame" x="234" y="289" width="132" height="21"/>
+=======
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Our Biomes Page" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pBe-z3-Btv">
                                 <rect key="frame" x="121.5" y="323" width="132" height="21"/>
+>>>>>>> user-story-677
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -1883,11 +2050,19 @@ We will reschedule it as soon as possible and keep everyone informed of any deve
             <objects>
                 <viewController id="I6g-3C-BHe" customClass="NewslettersViewController" customModule="Citizen_Scientist_Project" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ErL-C5-e6D">
+<<<<<<< HEAD
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Newsletter Page" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xSR-RV-UpO">
                                 <rect key="frame" x="237" y="289" width="125" height="21"/>
+=======
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Newsletter Page" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xSR-RV-UpO">
+                                <rect key="frame" x="125" y="323" width="125.5" height="21"/>
+>>>>>>> user-story-677
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -1918,11 +2093,19 @@ We will reschedule it as soon as possible and keep everyone informed of any deve
             <objects>
                 <viewController id="YFL-T1-tRh" customClass="OurPartnersViewController" customModule="Citizen_Scientist_Project" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="K1N-G3-nc3">
+<<<<<<< HEAD
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Our Partners Page" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0br-b0-p7a">
                                 <rect key="frame" x="229" y="289" width="141" height="21"/>
+=======
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Our Partners Page" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0br-b0-p7a">
+                                <rect key="frame" x="117.5" y="323" width="140.5" height="21"/>
+>>>>>>> user-story-677
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -1953,11 +2136,19 @@ We will reschedule it as soon as possible and keep everyone informed of any deve
             <objects>
                 <viewController id="cPL-qk-5Bx" customClass="ContactUsViewController" customModule="Citizen_Scientist_Project" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hlh-2P-PPZ">
+<<<<<<< HEAD
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contact Us Page" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4VO-Cj-moy">
                                 <rect key="frame" x="235" y="289" width="129" height="21"/>
+=======
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contact Us Page" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4VO-Cj-moy">
+                                <rect key="frame" x="123" y="323" width="129" height="21"/>
+>>>>>>> user-story-677
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -2177,7 +2368,11 @@ We will reschedule it as soon as possible and keep everyone informed of any deve
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="OoL-Ah-iZq" customClass="ProfileNavigationController" customModule="Citizen_Scientist_Project" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Kc5-a8-aSd">
+<<<<<<< HEAD
                         <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+=======
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+>>>>>>> user-story-677
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -2195,7 +2390,11 @@ We will reschedule it as soon as possible and keep everyone informed of any deve
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="8cU-F2-aca" customClass="GeoHuntNavigationController" customModule="Citizen_Scientist_Project" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="BwJ-dD-PXX">
+<<<<<<< HEAD
                         <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+=======
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+>>>>>>> user-story-677
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -2213,7 +2412,11 @@ We will reschedule it as soon as possible and keep everyone informed of any deve
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="TpT-8q-rF1" customClass="EventsNavigationController" customModule="Citizen_Scientist_Project" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="3Oa-g4-ZOk">
+<<<<<<< HEAD
                         <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+=======
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+>>>>>>> user-story-677
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -2231,7 +2434,11 @@ We will reschedule it as soon as possible and keep everyone informed of any deve
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Bl3-Ls-afj" customClass="NewsNavigationController" customModule="Citizen_Scientist_Project" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="vyb-u1-HRl">
+<<<<<<< HEAD
                         <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+=======
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+>>>>>>> user-story-677
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -2249,7 +2456,11 @@ We will reschedule it as soon as possible and keep everyone informed of any deve
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="0zI-XZ-BQA" customClass="HomeNavigationController" customModule="Citizen_Scientist_Project" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="oPL-9A-Lvy">
+<<<<<<< HEAD
                         <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+=======
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+>>>>>>> user-story-677
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -2267,7 +2478,11 @@ We will reschedule it as soon as possible and keep everyone informed of any deve
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="GSr-y6-Yzf" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="pcU-Hd-gIU">
+<<<<<<< HEAD
                         <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+=======
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+>>>>>>> user-story-677
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -2285,7 +2500,11 @@ We will reschedule it as soon as possible and keep everyone informed of any deve
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="V36-hW-6fS" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Msl-k1-s7t">
+<<<<<<< HEAD
                         <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+=======
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+>>>>>>> user-story-677
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -2303,7 +2522,11 @@ We will reschedule it as soon as possible and keep everyone informed of any deve
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="i3a-z8-pnh" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="hsI-Co-wn6">
+<<<<<<< HEAD
                         <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+=======
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+>>>>>>> user-story-677
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -2321,7 +2544,11 @@ We will reschedule it as soon as possible and keep everyone informed of any deve
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="RQa-57-CCW" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="MO8-uS-Y8u">
+<<<<<<< HEAD
                         <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+=======
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+>>>>>>> user-story-677
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -2339,7 +2566,11 @@ We will reschedule it as soon as possible and keep everyone informed of any deve
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="uCZ-0n-Qau" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="DTB-g5-YDY">
+<<<<<<< HEAD
                         <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+=======
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+>>>>>>> user-story-677
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -2357,7 +2588,11 @@ We will reschedule it as soon as possible and keep everyone informed of any deve
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="T60-z7-GPD" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="VUf-ln-Z96">
+<<<<<<< HEAD
                         <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+=======
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+>>>>>>> user-story-677
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -2375,7 +2610,11 @@ We will reschedule it as soon as possible and keep everyone informed of any deve
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="bwL-de-BWl" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="fCb-EU-vXv">
+<<<<<<< HEAD
                         <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+=======
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+>>>>>>> user-story-677
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -2393,7 +2632,11 @@ We will reschedule it as soon as possible and keep everyone informed of any deve
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="dWS-Ve-GqU" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="6Be-Jr-PQa">
+<<<<<<< HEAD
                         <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+=======
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+>>>>>>> user-story-677
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -2411,7 +2654,11 @@ We will reschedule it as soon as possible and keep everyone informed of any deve
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="o0Y-10-X6u" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="2DL-hG-1vX">
+<<<<<<< HEAD
                         <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+=======
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+>>>>>>> user-story-677
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -2429,7 +2676,11 @@ We will reschedule it as soon as possible and keep everyone informed of any deve
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="aaU-ns-Yhl" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="8jQ-pm-E0g">
+<<<<<<< HEAD
                         <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+=======
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+>>>>>>> user-story-677
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -2447,7 +2698,11 @@ We will reschedule it as soon as possible and keep everyone informed of any deve
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="tmZ-Zh-GZT" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="7bN-jm-WWN">
+<<<<<<< HEAD
                         <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+=======
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+>>>>>>> user-story-677
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -2465,7 +2720,11 @@ We will reschedule it as soon as possible and keep everyone informed of any deve
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="CQY-Sl-a2v" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="fWE-g7-GaL">
+<<<<<<< HEAD
                         <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+=======
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+>>>>>>> user-story-677
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -2483,7 +2742,11 @@ We will reschedule it as soon as possible and keep everyone informed of any deve
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ogO-ru-KcX" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ep7-6c-nGE">
+<<<<<<< HEAD
                         <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+=======
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+>>>>>>> user-story-677
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -2501,7 +2764,11 @@ We will reschedule it as soon as possible and keep everyone informed of any deve
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Oqh-WP-cFF" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="IDF-Da-U6j">
+<<<<<<< HEAD
                         <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+=======
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+>>>>>>> user-story-677
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -2519,7 +2786,11 @@ We will reschedule it as soon as possible and keep everyone informed of any deve
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Dac-uH-qyE" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="913-MB-cZz">
+<<<<<<< HEAD
                         <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+=======
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+>>>>>>> user-story-677
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -2557,18 +2828,24 @@ We will reschedule it as soon as possible and keep everyone informed of any deve
         <image name="foundation-key-logos" width="1000" height="206"/>
         <image name="google-footer-icon" width="64" height="64"/>
         <image name="instagram-footer-icon" width="64" height="64"/>
+<<<<<<< HEAD
         <image name="reef-restoration-1" width="1800" height="1000"/>
         <image name="reef-restoration-2" width="640" height="480"/>
         <image name="reef-restoration-3" width="640" height="480"/>
         <image name="reef-restoration-learn-more" width="1080" height="1350"/>
+=======
         <image name="prezi-sea-level-rise" width="603" height="495"/>
         <image name="sea-level-rise" width="1800" height="1000"/>
+>>>>>>> user-story-677
         <image name="twitter-footer-icon" width="64" height="64"/>
         <image name="youtube-footer-icon" width="64" height="64"/>
     </resources>
     <inferredMetricsTieBreakers>
+<<<<<<< HEAD
         <segue reference="CDV-cc-EMe"/>
+=======
         <segue reference="z0S-Ow-gou"/>
         <segue reference="HLz-tX-r1Z"/>
+>>>>>>> user-story-677
     </inferredMetricsTieBreakers>
 </document>
