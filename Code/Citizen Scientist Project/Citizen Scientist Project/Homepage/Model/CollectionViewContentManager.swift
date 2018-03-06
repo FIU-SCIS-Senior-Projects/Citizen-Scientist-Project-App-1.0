@@ -18,6 +18,8 @@ class ContentManager{
     static let headerLabelFontSizeRegularCell: CGFloat = 8
     static let subHeaderLabelFontSizeRegularCell: CGFloat = 18
     static let globalLightBlue = UIColor(displayP3Red: 95/255.0, green: 172/255.0, blue: 223/255.0, alpha: 1.0)
+    static let labelLeftRightPadding: CGFloat = 8
+    private static let SHADOW_IMAGE_NAME = "20-homepage-image-shadow"
     
     class func fetchCellContent() -> [CellContent]
     {
@@ -45,7 +47,7 @@ class ContentManager{
             let label2 = labels[index][1]
             let cellLabelsProperties = getCellLabelsProperties(cellType: cellType)
             
-            let cellContent = CellContent(imageName: imageName, labelHeader: label1, labelSubHeader: label2, cellType: cellType, labelsPropetries: cellLabelsProperties)
+            let cellContent = CellContent(imageName: imageName, shadowImageName: SHADOW_IMAGE_NAME, labelHeader: label1, labelSubHeader: label2, cellType: cellType, labelsPropetries: cellLabelsProperties)
             
             contentData.append(cellContent)
         }

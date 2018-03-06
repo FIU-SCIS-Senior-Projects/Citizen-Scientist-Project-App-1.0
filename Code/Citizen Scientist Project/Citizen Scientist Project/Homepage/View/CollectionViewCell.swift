@@ -11,29 +11,29 @@ import UIKit
 class CollectionViewCell: UICollectionViewCell {
     
     @IBOutlet private weak var imageView: UIImageView!
+    @IBOutlet private weak var shadowImageView: UIImageView!
     @IBOutlet private weak var headerLabel: UILabel!
     @IBOutlet private weak var subHeaderLabel: UILabel!
     
     @IBOutlet private weak var labelsStackContainer: UIStackView!
     
     @IBOutlet private weak var leftMarginLabelsConstraint: NSLayoutConstraint!
+    @IBOutlet private weak var rightMarginLabelsConstraint: NSLayoutConstraint!
     @IBOutlet private weak var bottomMarginLabelsConstraint: NSLayoutConstraint!
-    @IBOutlet weak var headerLabelHeightConstraint: NSLayoutConstraint!
-    @IBOutlet weak var subHeaderLabelHeightConstraint: NSLayoutConstraint!
+    @IBOutlet private weak var headerLabelHeightConstraint: NSLayoutConstraint!
+    @IBOutlet private weak var subHeaderLabelHeightConstraint: NSLayoutConstraint!
     
     static let leftMarginPercentage:  CGFloat = 5.0
     static let bottomMarginPercentage: CGFloat = leftMarginPercentage * 2
     static let inBetweenLabelSpacing: CGFloat = 5.0
     static let noInBetweenLabelSpacing: CGFloat = 0.0
     
-    
+    //shadowImageView constraints set in StoryBoard. Height set to 40% of width
     func setUp(content: CellContent, screenWidth: CGFloat)
     {
         
         // Populate cell with content
-        imageView.image = UIImage(named: content.imageName)
-        headerLabel.text = content.labelHeader
-        subHeaderLabel.text = content.labelSubHeader
+        populateCellContent(content: content)
         
         // Setup some default properties to image view
         imageView.contentMode = UIViewContentMode.scaleAspectFill
@@ -51,6 +51,15 @@ class CollectionViewCell: UICollectionViewCell {
         setUpLabelsConstrainsts(cellType: content.cellType, screenWidth: screenWidth)
         
     }
+    
+    private func populateCellContent(content: CellContent)
+    {
+        imageView.image = UIImage(named: content.imageName)
+        shadowImageView.image = UIImage(named: content.shadowImageName)
+        headerLabel.text = content.labelHeader
+        subHeaderLabel.text = content.labelSubHeader
+    }
+    
     
     private func setUpLabelProperties(properties: CellLabelsProperties)
     {
@@ -74,10 +83,16 @@ class CollectionViewCell: UICollectionViewCell {
         if cellType == CellContent.CellType.Super
         {
             imageView.frame = CGRect(origin: CGPoint(x: 0, y: 0), size: CGSize(width: screenWidth, height: cellHeight))
+            
+            // hide shadowing
+            shadowImageView.isHidden = true
         }
         else if cellType == CellContent.CellType.Regular
         {
             imageView.frame = CGRect(origin: CGPoint(x: 0, y: 0), size: CGSize(width: regularCellWidth, height: cellHeight))
+            
+            // show shadowing
+            shadowImageView.isHidden = false
         }
         else
         {
@@ -100,7 +115,8 @@ class CollectionViewCell: UICollectionViewCell {
             let stackHeight = CollectionViewCell.inBetweenLabelSpacing + ContentManager.headerLabelFontSizeSuperCell + ContentManager.subHeaderLabelFontSizeSuperCell
             
             // Stack constraints
-            leftMarginLabelsConstraint.constant = 0
+            leftMarginLabelsConstraint.constant = ContentManager.labelLeftRightPadding
+            rightMarginLabelsConstraint.constant = ContentManager.labelLeftRightPadding
             bottomMarginLabelsConstraint.constant = -(cellHeight - stackHeight)/2
             
             // Setup height of labels using a constraints
@@ -115,6 +131,7 @@ class CollectionViewCell: UICollectionViewCell {
         {
             // Stack constraints
             leftMarginLabelsConstraint.constant = leftMargin
+            rightMarginLabelsConstraint.constant = 0
             bottomMarginLabelsConstraint.constant = -bottomMagin
             
             // Setup height of labels using a constraints

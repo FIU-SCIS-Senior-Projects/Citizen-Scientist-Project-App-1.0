@@ -95,20 +95,27 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
-        let index = indexPath.item
-        let cellCont = cellContent[index]
-        
-        let message = cellCont.labelHeader + " " + cellCont.labelSubHeader
-        
-        let alert = UIAlertController(title: nil, message: message, preferredStyle: .alert)
-        self.present(alert, animated: true)
-        
-        // duration in seconds
-        let duration: Double = 1.5
-        
-        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + duration) {
-            alert.dismiss(animated: true)
+        switch indexPath.row {
+            // Welcome cell does not take you anywhere
+            case 1: Page.News.goTo(from: self)
+            case 2: Page.Events.goTo(from: self)
+            case 3: Page.KeyChallenge.goTo(from: self)
+            case 4: Page.ReefRestoration.goTo(from: self)
+            // CSP Lab cell does not take you anywhere
+            //TODO: implement expanding or retracting from CSP Lab
+            case 6: Page.Learn.goTo(from: self)
+            case 7: Page.Explore.goTo(from: self)
+            case 8: Page.Record.goTo(from: self)
+            case 9: Page.Review.goTo(from: self)
+            case 10: Page.WaterWatch.goTo(from: self)
+            case 11: Page.SeaLevelRise.goTo(from: self)
+            case 12: Page.LectureSeries.goTo(from: self)
+            case 13: Page.FieldActivities.goTo(from: self)
+            case 14: Page.OurPartners.goTo(from: self)
+            case 15: Page.ContactUs.goTo(from: self)
+            default: print("Cell \(indexPath.row) clicked!")
         }
+        
     }
     
     // MARK: - Section Footer View

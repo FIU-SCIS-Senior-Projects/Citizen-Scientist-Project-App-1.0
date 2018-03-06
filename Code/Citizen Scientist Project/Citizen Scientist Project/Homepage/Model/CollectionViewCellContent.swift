@@ -9,9 +9,10 @@
 import Foundation
 import UIKit
 
-struct CellContent{
+struct CellContent {
     
     var imageName: String
+    var shadowImageName: String
     var labelHeader: String
     var labelSubHeader: String
     var cellType: CellType
