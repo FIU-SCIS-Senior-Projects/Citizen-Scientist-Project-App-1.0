@@ -24,10 +24,12 @@ class NavigationPage {
 
 
 enum Page{
+    case Home
     case News
     case Events
     case KeyChallenge
     case ReefRestoration
+    case CSPLab
     case Learn
     case Explore
     case Record
@@ -41,10 +43,12 @@ enum Page{
     
     private func page() -> NavigationPage{
         switch self {
+            case .Home: return NavigationPage(segueId: "segueToHome") // TODO: verify this is the actual id
             case .News: return NavigationPage(segueId: "segueToNews")
             case .Events: return NavigationPage(segueId: "segueToEvents")
             case .KeyChallenge: return NavigationPage(segueId: "segueToKeyChallenge")
             case .ReefRestoration: return NavigationPage(segueId: "segueToReefRestoration")
+            case .CSPLab: return NavigationPage(segueId: "default") // Not an actual page
             case .Learn: return NavigationPage(segueId: "segueToLearn")
             case .Explore: return NavigationPage(segueId: "segueToExplore")
             case .Record: return NavigationPage(segueId: "segueToRecord")
@@ -61,20 +65,22 @@ enum Page{
     
     func getSegueId() -> String {
         switch self {
-        case .News: return "segueToNews"
-        case .Events: return "segueToEvents"
-        case .KeyChallenge: return "segueToKeyChallenge"
-        case .ReefRestoration: return "segueToReefRestoration"
-        case .Learn: return "segueToLearn"
-        case .Explore: return "segueToExplore"
-        case .Record: return "segueToRecord"
-        case .Review: return "segueToReview"
-        case .WaterWatch: return "segueToWaterWatch"
-        case .SeaLevelRise: return "segueToSeaLevelRise"
-        case .LectureSeries: return "segueToLectureSeries"
-        case .FieldActivities: return "segueToFieldActivities"
-        case .OurPartners: return "segueToOurPartners"
-        case .ContactUs: return "segueToContactUs"
+            case .Home: return "segueToHome"
+            case .News: return "segueToNews"
+            case .Events: return "segueToEvents"
+            case .KeyChallenge: return "segueToKeyChallenge"
+            case .ReefRestoration: return "segueToReefRestoration"
+            case .CSPLab: return "default" // Not an actual page
+            case .Learn: return "segueToLearn"
+            case .Explore: return "segueToExplore"
+            case .Record: return "segueToRecord"
+            case .Review: return "segueToReview"
+            case .WaterWatch: return "segueToWaterWatch"
+            case .SeaLevelRise: return "segueToSeaLevelRise"
+            case .LectureSeries: return "segueToLectureSeries"
+            case .FieldActivities: return "segueToFieldActivities"
+            case .OurPartners: return "segueToOurPartners"
+            case .ContactUs: return "segueToContactUs"
         }
     }
     

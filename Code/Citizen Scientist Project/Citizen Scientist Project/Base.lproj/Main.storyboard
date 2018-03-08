@@ -1197,11 +1197,11 @@ The Village of Key Biscayne and the Key Biscayne Community Foundation are workin
             <objects>
                 <viewController id="UNA-Ob-66Q" customClass="WebViewController" customModule="Citizen_Scientist_Project" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="BCc-By-RTu">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="1305"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YuS-nc-cgL">
-                                <rect key="frame" x="0.0" y="20" width="375" height="1285"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </webView>
                         </subviews>
@@ -2605,12 +2605,12 @@ We will reschedule it as soon as possible and keep everyone informed of any deve
         <segue reference="Sys-Vp-ayk"/>
         <segue reference="Oy0-zP-VTa"/>
         <segue reference="3wA-ku-GBQ"/>
-        <segue reference="z0S-Ow-gou"/>
+        <segue reference="fi6-GE-bpi"/>
         <segue reference="OXl-cU-HuW"/>
         <segue reference="qUt-tQ-sok"/>
         <segue reference="3gI-fe-vtX"/>
         <segue reference="hno-WS-Bw2"/>
         <segue reference="bpx-hV-XQv"/>
-        <segue reference="ndl-Mk-jWS"/>
+        <segue reference="HLz-tX-r1Z"/>
     </inferredMetricsTieBreakers>
 </document>

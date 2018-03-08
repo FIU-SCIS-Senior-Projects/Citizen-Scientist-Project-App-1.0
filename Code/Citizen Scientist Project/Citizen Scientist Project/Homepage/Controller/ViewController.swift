@@ -16,6 +16,8 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     
     @IBOutlet weak var collectionView: UICollectionView!
     
+    var cspLabExpanded = ContentManager.CSPLAB_CHILDREN_DEFAULT_VISIBILITY
+    
     var cellContent: [CellContent] = ContentManager.fetchCellContent()
     var sectionFooter: [Icon] = SectionFooter.fetchIcons()
     
@@ -57,7 +59,8 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return cellContent.count
+        let count = cellContent.numberOfExpandedCells()
+        return  count// Returns the number of visible cells
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
@@ -79,13 +82,15 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         
         let screenWidth = self.collectionView.frame.size.width
         
-        let index = indexPath.item
-        let cellCont = cellContent[index]
+        let index = indexPath.row
+        guard let cellCont = cellContent.nextAvailableCell(fromIndex: index) else {
+            print("Unable to get the next available cell. Make sure there is no error in the data.")
+            return cell
+        }
         
         cell.setUp(content: cellCont, screenWidth: screenWidth)
         cell.layer.borderColor = UIColor.white.cgColor
         cell.layer.borderWidth = StoryBoard.cellBorderWidth
-
         
         return cell
     }
@@ -97,25 +102,52 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         
         switch indexPath.row {
             // Welcome cell does not take you anywhere
-            case 1: Page.News.goTo(from: self)
-            case 2: Page.Events.goTo(from: self)
-            case 3: Page.KeyChallenge.goTo(from: self)
-            case 4: Page.ReefRestoration.goTo(from: self)
-            // CSP Lab cell does not take you anywhere
-            //TODO: implement expanding or retracting from CSP Lab
-            case 6: Page.Learn.goTo(from: self)
-            case 7: Page.Explore.goTo(from: self)
-            case 8: Page.Record.goTo(from: self)
-            case 9: Page.Review.goTo(from: self)
-            case 10: Page.WaterWatch.goTo(from: self)
-            case 11: Page.SeaLevelRise.goTo(from: self)
-            case 12: Page.LectureSeries.goTo(from: self)
-            case 13: Page.FieldActivities.goTo(from: self)
-            case 14: Page.OurPartners.goTo(from: self)
-            case 15: Page.ContactUs.goTo(from: self)
+            case ContentManager.cellToIdMap[.News]!: Page.News.goTo(from: self)
+            case ContentManager.cellToIdMap[.Events]!: Page.Events.goTo(from: self)
+            case ContentManager.cellToIdMap[.KeyChallenge]!: Page.KeyChallenge.goTo(from: self)
+            case ContentManager.cellToIdMap[.ReefRestoration]!: Page.ReefRestoration.goTo(from: self)
+            case ContentManager.cellToIdMap[.CSPLab]!: expandCollapseCSPLab()
+            case ContentManager.cellToIdMap[.Learn]!: Page.Learn.goTo(from: self)
+            case ContentManager.cellToIdMap[.Explore]!: Page.Explore.goTo(from: self)
+            case ContentManager.cellToIdMap[.Record]!: Page.Record.goTo(from: self)
+            case ContentManager.cellToIdMap[.Review]!: Page.Review.goTo(from: self)
+            case ContentManager.cellToIdMap[.WaterWatch]!: Page.WaterWatch.goTo(from: self)
+            case ContentManager.cellToIdMap[.SeaLevelRise]!: Page.SeaLevelRise.goTo(from: self)
+            case ContentManager.cellToIdMap[.LectureSeries]!: Page.LectureSeries.goTo(from: self)
+            case ContentManager.cellToIdMap[.FieldActivities]!: Page.FieldActivities.goTo(from: self)
+            case ContentManager.cellToIdMap[.OurPartners]!: Page.OurPartners.goTo(from: self)
+            case ContentManager.cellToIdMap[.ContactUs]!: Page.ContactUs.goTo(from: self)
             default: print("Cell \(indexPath.row) clicked!")
         }
         
+    }
+    
+    func expandCollapseCSPLab()
+    {
+        cspLabExpanded = !cspLabExpanded
+        // Cells to be expanded/collapsed when CSPLab Cell is clicked
+        // TODO: dynamically get the CSPLab children
+        let indexPaths: [IndexPath] = [
+            IndexPath(row: ContentManager.cellToIdMap[.Learn]!, section: 0),
+            IndexPath(row: ContentManager.cellToIdMap[.Explore]!, section: 0),
+            IndexPath(row: ContentManager.cellToIdMap[.Record]!, section: 0),
+            IndexPath(row: ContentManager.cellToIdMap[.Review]!, section: 0),
+            ]
+        
+        collectionView.performBatchUpdates({
+            if cspLabExpanded {
+                collectionView.insertItems(at: indexPaths)
+            }else{
+                collectionView.deleteItems(at: indexPaths)
+            }
+            
+            
+            let cspLabCellId = ContentManager.cellToIdMap[.CSPLab]
+            cellContent[cspLabCellId!].expandableProperty.isExpanded = cspLabExpanded
+            
+        }, completion: { (true) in
+            self.collectionView.reloadItems(at: self.collectionView.indexPathsForVisibleItems)
+        })
     }
     
     // MARK: - Section Footer View
