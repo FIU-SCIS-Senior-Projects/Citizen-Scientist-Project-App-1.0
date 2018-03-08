@@ -9,13 +9,17 @@
 import Foundation
 import UIKit
 
-struct CellContent{
+struct CellContent {
     
+    var id: Int
     var imageName: String
+    var shadowImageName: String
     var labelHeader: String
     var labelSubHeader: String
     var cellType: CellType
     var labelsPropetries: CellLabelsProperties
+    var expandableProperty: Expandable
+    var parentId: Int
     
     enum CellType {
         case Regular // half of full width
@@ -43,4 +47,9 @@ struct LabelProperties {
     {
         
     }
+}
+
+struct Expandable {
+    var isExpanded: Bool
+    var childrenCount: Int
 }
