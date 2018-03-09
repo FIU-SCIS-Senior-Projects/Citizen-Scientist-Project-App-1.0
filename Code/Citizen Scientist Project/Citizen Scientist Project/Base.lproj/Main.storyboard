@@ -354,9 +354,6 @@
                     <navigationItem key="navigationItem" id="G0u-x3-ERU">
                         <barButtonItem key="leftBarButtonItem" image="1-header-nav-1" id="gDn-hp-jcr">
                             <color key="tintColor" red="0.60392156860000001" green="0.6588235294" blue="0.69803921570000005" alpha="1" colorSpace="calibratedRGB"/>
-                            <connections>
-                                <segue destination="SXQ-RY-Zdd" kind="show" id="Y8q-9k-Bcb"/>
-                            </connections>
                         </barButtonItem>
                     </navigationItem>
                 </viewController>
@@ -585,7 +582,7 @@ The Village of Key Biscayne and the Key Biscayne Community Foundation are workin
                         <barButtonItem key="leftBarButtonItem" image="1-header-nav-1" id="3ak-XH-5vH">
                             <color key="tintColor" red="0.60392156860000001" green="0.6588235294" blue="0.69803921570000005" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
-                                <segue destination="OYm-TY-SzU" kind="show" id="HLz-tX-r1Z"/>
+                                <segue destination="SXQ-RY-Zdd" kind="show" id="EZs-ez-5YL"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -597,7 +594,7 @@ The Village of Key Biscayne and the Key Biscayne Community Foundation are workin
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DhO-RC-9Cn" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="uch-s1-tHJ" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="5876" y="596"/>
+            <point key="canvasLocation" x="5556" y="697"/>
         </scene>
         <!--Table View Controller-->
         <scene sceneID="W2l-xl-yxU">
@@ -1255,18 +1252,18 @@ The Village of Key Biscayne and the Key Biscayne Community Foundation are workin
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="66B-xX-6ro" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6630" y="-229"/>
+            <point key="canvasLocation" x="6588" y="-213"/>
         </scene>
         <!--Reef Restoration View Controller-->
         <scene sceneID="9TZ-2L-dN6">
             <objects>
                 <viewController id="auj-5x-N91" customClass="ReefRestorationViewController" customModule="Citizen_Scientist_Project" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="h67-Xi-dxL">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="2895"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="3000"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hKC-3P-gS3">
-                                <rect key="frame" x="0.0" y="64" width="375" height="2895"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="3000"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dcp-QJ-Y9P">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="457"/>
@@ -1318,13 +1315,66 @@ The Village of Key Biscayne and the Key Biscayne Community Foundation are workin
                                         <rect key="frame" x="0.0" y="451" width="375" height="2444"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="reef-restoration-2" translatesAutoresizingMaskIntoConstraints="NO" id="Yad-2b-qat">
-                                                <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="225"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" secondItem="Yad-2b-qat" secondAttribute="height" multiplier="5:2" id="bQ2-Ki-OuF"/>
+                                                    <constraint firstAttribute="width" secondItem="Yad-2b-qat" secondAttribute="height" multiplier="5:2" constant="-187.5" id="bQ2-Ki-OuF"/>
                                                 </constraints>
                                             </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="reef-restoration-3" translatesAutoresizingMaskIntoConstraints="NO" id="Zw6-q6-2gb">
+                                                <rect key="frame" x="0.0" y="1580" width="375" height="225"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="Zw6-q6-2gb" secondAttribute="height" multiplier="15:7" constant="-107.14285714285711" id="y0M-KX-5aj"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HALF-DAY DIVE" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="SYP-oF-VRi">
+                                                <rect key="frame" x="8" y="1813" width="359" height="41"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="SYP-oF-VRi" secondAttribute="height" multiplier="359:41" id="OL3-8O-Nou"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FAMILY ACTIVITIES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="A3w-F4-v87">
+                                                <rect key="frame" x="8" y="2154" width="359" height="41"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="A3w-F4-v87" secondAttribute="height" multiplier="359:41" id="wkU-Uk-nxZ"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="Ujv-GR-VCS">
+                                                <rect key="frame" x="8" y="1862" width="359" height="109"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="Ujv-GR-VCS" secondAttribute="height" multiplier="359:109" id="JOr-TP-Ttq"/>
+                                                </constraints>
+                                                <string key="text">The trip will be comprised of a half-day dive excursion leaving from Diver’s Paradise of Key Biscayne at 7:30am, beginning with a short demonstration on coral nursery maintenance and out-planting methods.</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CORAL OUT-PLANTING" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="9Wh-I6-7zW">
+                                                <rect key="frame" x="8" y="1979" width="359" height="41"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="9Wh-I6-7zW" secondAttribute="height" multiplier="359:41" id="if0-dc-wHh"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="9" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="SLl-ve-DTi">
+                                                <rect key="frame" x="8" y="2028" width="359" height="118"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="SLl-ve-DTi" secondAttribute="height" multiplier="359:118" id="Cy8-XZ-eD4"/>
+                                                </constraints>
+                                                <string key="text">At the Key Biscayne Coral Nursery, divers will help with cleaning the coral nursery trees and collecting coral clippings for out-planting, followed by a trip to Diver’s Paradise Reef where the coral fragments will be out-planted.</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RESCUE A REEF SPONSORED DIVE TRIP" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="8e6-UJ-LuL">
-                                                <rect key="frame" x="8" y="158" width="359" height="41"/>
+                                                <rect key="frame" x="8" y="233" width="359" height="41"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="8e6-UJ-LuL" secondAttribute="height" multiplier="359:41" id="Mie-Lt-xuW"/>
                                                 </constraints>
@@ -1333,7 +1383,7 @@ The Village of Key Biscayne and the Key Biscayne Community Foundation are workin
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Join the Key Biscayne Citizen Science Project for our second annual Reef Restoration Day! " lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="BCe-6K-9pA">
-                                                <rect key="frame" x="8" y="199" width="359" height="53"/>
+                                                <rect key="frame" x="8" y="274" width="359" height="53"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="BCe-6K-9pA" secondAttribute="height" multiplier="359:53" id="ffv-XI-h2E"/>
                                                 </constraints>
@@ -1342,7 +1392,7 @@ The Village of Key Biscayne and the Key Biscayne Community Foundation are workin
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="19" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="ZYA-Uw-2Uc">
-                                                <rect key="frame" x="8" y="260" width="359" height="286"/>
+                                                <rect key="frame" x="8" y="335" width="359" height="286"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="ZYA-Uw-2Uc" secondAttribute="height" multiplier="359:286" id="bO8-oQ-9jM"/>
                                                 </constraints>
@@ -1354,7 +1404,7 @@ Key Biscayne residents are invited to join a KBCF Citizen-Scientist-Project-spon
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="KEY BISCAYNE REEF RESTORATION" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="Vld-nI-2bH">
-                                                <rect key="frame" x="8" y="554" width="359" height="41"/>
+                                                <rect key="frame" x="8" y="629" width="359" height="41"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="Vld-nI-2bH" secondAttribute="height" multiplier="359:41" id="vic-9S-ral"/>
                                                 </constraints>
@@ -1363,7 +1413,7 @@ Key Biscayne residents are invited to join a KBCF Citizen-Scientist-Project-spon
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="46" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="5iB-Bs-TFE">
-                                                <rect key="frame" x="8" y="603" width="359" height="894"/>
+                                                <rect key="frame" x="8" y="678" width="359" height="894"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="5iB-Bs-TFE" secondAttribute="height" multiplier="359:894" id="FeY-MS-Isw"/>
                                                 </constraints>
@@ -1381,61 +1431,8 @@ The area around Key Biscayne and Virginia Key is part of the designated critical
                                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="reef-restoration-3" translatesAutoresizingMaskIntoConstraints="NO" id="Zw6-q6-2gb">
-                                                <rect key="frame" x="0.0" y="1505" width="375" height="175"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" secondItem="Zw6-q6-2gb" secondAttribute="height" multiplier="15:7" id="y0M-KX-5aj"/>
-                                                </constraints>
-                                            </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HALF-DAY DIVE" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="SYP-oF-VRi">
-                                                <rect key="frame" x="8" y="1688" width="359" height="41"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" secondItem="SYP-oF-VRi" secondAttribute="height" multiplier="359:41" id="OL3-8O-Nou"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
-                                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FAMILY ACTIVITIES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="A3w-F4-v87">
-                                                <rect key="frame" x="8" y="2029" width="359" height="41"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" secondItem="A3w-F4-v87" secondAttribute="height" multiplier="359:41" id="wkU-Uk-nxZ"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
-                                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="Ujv-GR-VCS">
-                                                <rect key="frame" x="8" y="1737" width="359" height="109"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" secondItem="Ujv-GR-VCS" secondAttribute="height" multiplier="359:109" id="JOr-TP-Ttq"/>
-                                                </constraints>
-                                                <string key="text">The trip will be comprised of a half-day dive excursion leaving from Diver’s Paradise of Key Biscayne at 7:30am, beginning with a short demonstration on coral nursery maintenance and out-planting methods.</string>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CORAL OUT-PLANTING" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="9Wh-I6-7zW">
-                                                <rect key="frame" x="8" y="1854" width="359" height="41"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" secondItem="9Wh-I6-7zW" secondAttribute="height" multiplier="359:41" id="if0-dc-wHh"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
-                                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="9" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="SLl-ve-DTi">
-                                                <rect key="frame" x="8" y="1903" width="359" height="118"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" secondItem="SLl-ve-DTi" secondAttribute="height" multiplier="359:118" id="Cy8-XZ-eD4"/>
-                                                </constraints>
-                                                <string key="text">At the Key Biscayne Coral Nursery, divers will help with cleaning the coral nursery trees and collecting coral clippings for out-planting, followed by a trip to Diver’s Paradise Reef where the coral fragments will be out-planted.</string>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="7cU-gz-ax7">
-                                                <rect key="frame" x="8" y="2078" width="359" height="131"/>
+                                                <rect key="frame" x="8" y="2203" width="359" height="131"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="7cU-gz-ax7" secondAttribute="height" multiplier="359:131" id="3sa-92-DqE"/>
                                                 </constraints>
@@ -1445,23 +1442,90 @@ The area around Key Biscayne and Virginia Key is part of the designated critical
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bYk-J0-poX">
-                                                <rect key="frame" x="0.0" y="2308" width="375" height="70"/>
+                                                <rect key="frame" x="0.0" y="2421" width="375" height="70"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Footer Holder" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Le0-oD-H5N">
-                                                        <rect key="frame" x="135" y="25" width="106" height="21"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                        <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="KJS-ul-8wD">
+                                                        <rect key="frame" x="20" y="7" width="335" height="54.5"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" text="KEY BISCAYNE COMMUNITY FOUNDATION" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rxI-t2-bty">
+                                                                <rect key="frame" x="0.0" y="0.0" width="335" height="19.5"/>
+                                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
+                                                                <color key="textColor" red="0.37254901959999998" green="0.67450980390000004" blue="0.87450980389999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <stackView opaque="NO" contentMode="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="1u4-4i-fo9">
+                                                                <rect key="frame" x="57.5" y="34.5" width="220" height="20"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jR4-q1-CBs">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="width" constant="20" id="PJB-32-5Bj"/>
+                                                                        </constraints>
+                                                                        <state key="normal" image="facebook-footer-icon"/>
+                                                                        <connections>
+                                                                            <action selector="openFacebook:" destination="auj-5x-N91" eventType="touchUpInside" id="j1i-c6-U7a"/>
+                                                                            <action selector="openFacebook:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sXZ-NC-ztI"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a6J-BV-qsi">
+                                                                        <rect key="frame" x="50" y="0.0" width="20" height="20"/>
+                                                                        <state key="normal" image="twitter-footer-icon"/>
+                                                                        <connections>
+                                                                            <action selector="openTwitter:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BLh-nt-376"/>
+                                                                            <action selector="openTwitter:" destination="auj-5x-N91" eventType="touchUpInside" id="Sgb-37-UD7"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0dl-C5-AoD">
+                                                                        <rect key="frame" x="100" y="0.0" width="20" height="20"/>
+                                                                        <state key="normal" image="google-footer-icon"/>
+                                                                        <connections>
+                                                                            <action selector="openGooglePlus:" destination="auj-5x-N91" eventType="touchUpInside" id="L9V-kz-4lC"/>
+                                                                            <action selector="openGooglePlus:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Pag-Vk-dTS"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FaO-7G-KbD">
+                                                                        <rect key="frame" x="150" y="0.0" width="20" height="20"/>
+                                                                        <state key="normal" image="youtube-footer-icon"/>
+                                                                        <connections>
+                                                                            <action selector="openYoutube:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5n7-U0-X8S"/>
+                                                                            <action selector="openYoutube:" destination="auj-5x-N91" eventType="touchUpInside" id="MjB-Qx-tJG"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vtG-T8-5cB">
+                                                                        <rect key="frame" x="200" y="0.0" width="20" height="20"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                                        <state key="normal" image="instagram-footer-icon"/>
+                                                                        <connections>
+                                                                            <action selector="openInstagram:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bH5-ap-KAp"/>
+                                                                            <action selector="openInstagram:" destination="auj-5x-N91" eventType="touchUpInside" id="yFE-G4-lOL"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                </subviews>
+                                                                <constraints>
+                                                                    <constraint firstItem="vtG-T8-5cB" firstAttribute="width" secondItem="jR4-q1-CBs" secondAttribute="width" id="FLJ-2U-OnU"/>
+                                                                    <constraint firstItem="a6J-BV-qsi" firstAttribute="width" secondItem="jR4-q1-CBs" secondAttribute="width" id="HWY-DY-dLE"/>
+                                                                    <constraint firstAttribute="height" constant="20" id="VsU-Sa-UKG"/>
+                                                                    <constraint firstItem="FaO-7G-KbD" firstAttribute="width" secondItem="jR4-q1-CBs" secondAttribute="width" id="eDR-Fm-YEN"/>
+                                                                    <constraint firstItem="0dl-C5-AoD" firstAttribute="width" secondItem="jR4-q1-CBs" secondAttribute="width" id="evo-3D-hxa"/>
+                                                                </constraints>
+                                                            </stackView>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstAttribute="trailing" secondItem="rxI-t2-bty" secondAttribute="trailing" id="I3m-5P-GdZ"/>
+                                                            <constraint firstItem="rxI-t2-bty" firstAttribute="leading" secondItem="KJS-ul-8wD" secondAttribute="leading" id="QhE-a7-Oh9"/>
+                                                            <constraint firstItem="rxI-t2-bty" firstAttribute="top" secondItem="KJS-ul-8wD" secondAttribute="top" id="mE3-qF-8OY"/>
+                                                        </constraints>
+                                                    </stackView>
                                                 </subviews>
                                                 <color key="backgroundColor" red="0.082352941176470587" green="0.090196078431372548" blue="0.15294117647058825" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
+                                                    <constraint firstItem="KJS-ul-8wD" firstAttribute="centerX" secondItem="bYk-J0-poX" secondAttribute="centerX" id="FB2-1g-iOo"/>
                                                     <constraint firstAttribute="width" secondItem="bYk-J0-poX" secondAttribute="height" multiplier="75:14" id="ULI-po-Mwa"/>
+                                                    <constraint firstItem="KJS-ul-8wD" firstAttribute="centerY" secondItem="bYk-J0-poX" secondAttribute="centerY" id="lk5-kc-6g0"/>
                                                 </constraints>
                                             </view>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="foundation-key-logos" translatesAutoresizingMaskIntoConstraints="NO" id="Oo3-br-wR0">
-                                                <rect key="frame" x="0.0" y="2229" width="375" height="83"/>
+                                                <rect key="frame" x="0.0" y="2342" width="375" height="83"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="Oo3-br-wR0" secondAttribute="height" multiplier="375:83" id="bfY-z6-hSO"/>
                                                 </constraints>
@@ -1482,10 +1546,10 @@ The area around Key Biscayne and Virginia Key is part of the designated critical
                                             <constraint firstAttribute="trailing" secondItem="9Wh-I6-7zW" secondAttribute="trailing" constant="8" id="Cij-UI-9w6"/>
                                             <constraint firstItem="Zw6-q6-2gb" firstAttribute="leading" secondItem="poG-Un-ESq" secondAttribute="leading" id="DHl-Qb-CAi"/>
                                             <constraint firstAttribute="width" secondItem="poG-Un-ESq" secondAttribute="height" multiplier="75:557" constant="45.91561938958705" id="DW2-Q6-sK1"/>
-                                            <constraint firstItem="Oo3-br-wR0" firstAttribute="top" secondItem="7cU-gz-ax7" secondAttribute="bottom" constant="20" id="FD6-e4-L75"/>
+                                            <constraint firstItem="Oo3-br-wR0" firstAttribute="top" secondItem="7cU-gz-ax7" secondAttribute="bottom" constant="8" id="FD6-e4-L75"/>
                                             <constraint firstAttribute="trailing" secondItem="5iB-Bs-TFE" secondAttribute="trailing" constant="8" id="Gd7-yq-tpm"/>
                                             <constraint firstAttribute="trailing" secondItem="BCe-6K-9pA" secondAttribute="trailing" constant="8" id="HDa-K8-Hzk"/>
-                                            <constraint firstAttribute="bottom" secondItem="bYk-J0-poX" secondAttribute="bottom" constant="66" id="Jx4-ri-FOz"/>
+                                            <constraint firstAttribute="bottom" secondItem="bYk-J0-poX" secondAttribute="bottom" constant="-47" id="Jx4-ri-FOz"/>
                                             <constraint firstItem="5iB-Bs-TFE" firstAttribute="top" secondItem="Vld-nI-2bH" secondAttribute="bottom" constant="8" id="KCi-ox-b7k"/>
                                             <constraint firstItem="5iB-Bs-TFE" firstAttribute="leading" secondItem="poG-Un-ESq" secondAttribute="leading" constant="8" id="L6A-W5-OMo"/>
                                             <constraint firstItem="Ujv-GR-VCS" firstAttribute="top" secondItem="SYP-oF-VRi" secondAttribute="bottom" constant="8" id="La1-FT-aOt"/>
@@ -1524,8 +1588,8 @@ The area around Key Biscayne and Virginia Key is part of the designated critical
                                     <constraint firstItem="poG-Un-ESq" firstAttribute="top" secondItem="hKC-3P-gS3" secondAttribute="top" constant="451" id="POB-Mb-zgg"/>
                                     <constraint firstAttribute="trailing" secondItem="poG-Un-ESq" secondAttribute="trailing" id="TDV-Ia-IHu"/>
                                     <constraint firstAttribute="trailing" secondItem="Dcp-QJ-Y9P" secondAttribute="trailing" id="Xsd-Vt-GGd"/>
-                                    <constraint firstAttribute="bottom" secondItem="Dcp-QJ-Y9P" secondAttribute="bottom" constant="2438" id="YZl-7A-J3P"/>
-                                    <constraint firstAttribute="bottom" secondItem="poG-Un-ESq" secondAttribute="bottom" id="jpz-J6-AkY"/>
+                                    <constraint firstAttribute="bottom" secondItem="Dcp-QJ-Y9P" secondAttribute="bottom" constant="2543" id="YZl-7A-J3P"/>
+                                    <constraint firstAttribute="bottom" secondItem="poG-Un-ESq" secondAttribute="bottom" constant="105" id="jpz-J6-AkY"/>
                                     <constraint firstItem="Dcp-QJ-Y9P" firstAttribute="top" secondItem="hKC-3P-gS3" secondAttribute="top" id="sTP-7A-fXO"/>
                                     <constraint firstItem="Dcp-QJ-Y9P" firstAttribute="leading" secondItem="hKC-3P-gS3" secondAttribute="leading" id="xVS-DG-QON"/>
                                 </constraints>
@@ -1548,11 +1612,11 @@ The area around Key Biscayne and Virginia Key is part of the designated critical
                             </connections>
                         </barButtonItem>
                     </navigationItem>
-                    <size key="freeformSize" width="375" height="2895"/>
+                    <size key="freeformSize" width="375" height="3000"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fja-cD-AP4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7396" y="772"/>
+            <point key="canvasLocation" x="7396" y="771.36431784107947"/>
         </scene>
         <!--Status Reef Restoration View Controller-->
         <scene sceneID="ORf-XF-zeu">
@@ -1623,17 +1687,84 @@ We will reschedule it as soon as possible and keep everyone informed of any deve
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g0p-yg-kTn">
                                         <rect key="frame" x="0.0" y="666" width="375" height="70"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Footer Holder" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sr2-Ic-MCy">
-                                                <rect key="frame" x="134" y="24" width="106" height="21"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="cYz-dj-PeT">
+                                                <rect key="frame" x="20" y="7" width="335" height="54.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="center" text="KEY BISCAYNE COMMUNITY FOUNDATION" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tMT-Zu-Zbe">
+                                                        <rect key="frame" x="0.0" y="0.0" width="335" height="19.5"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
+                                                        <color key="textColor" red="0.37254901959999998" green="0.67450980390000004" blue="0.87450980389999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <stackView opaque="NO" contentMode="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="SMt-WJ-dLY">
+                                                        <rect key="frame" x="57.5" y="34.5" width="220" height="20"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SsV-iw-J71">
+                                                                <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="20" id="y0a-GC-QEr"/>
+                                                                </constraints>
+                                                                <state key="normal" image="facebook-footer-icon"/>
+                                                                <connections>
+                                                                    <action selector="openFacebook:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5ax-lJ-R8e"/>
+                                                                    <action selector="openFacebook:" destination="auj-5x-N91" eventType="touchUpInside" id="IWr-1H-OhD"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bkf-oQ-TwB">
+                                                                <rect key="frame" x="50" y="0.0" width="20" height="20"/>
+                                                                <state key="normal" image="twitter-footer-icon"/>
+                                                                <connections>
+                                                                    <action selector="openTwitter:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0jU-hp-dga"/>
+                                                                    <action selector="openTwitter:" destination="auj-5x-N91" eventType="touchUpInside" id="g4O-0H-CwF"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ldg-V7-B00">
+                                                                <rect key="frame" x="100" y="0.0" width="20" height="20"/>
+                                                                <state key="normal" image="google-footer-icon"/>
+                                                                <connections>
+                                                                    <action selector="openGooglePlus:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YN7-nu-HJv"/>
+                                                                    <action selector="openGooglePlus:" destination="auj-5x-N91" eventType="touchUpInside" id="a0I-9n-eTi"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bS6-kR-IgV">
+                                                                <rect key="frame" x="150" y="0.0" width="20" height="20"/>
+                                                                <state key="normal" image="youtube-footer-icon"/>
+                                                                <connections>
+                                                                    <action selector="openYoutube:" destination="auj-5x-N91" eventType="touchUpInside" id="KFi-uk-W0v"/>
+                                                                    <action selector="openYoutube:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oQ9-8j-c52"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dOQ-fz-cFb">
+                                                                <rect key="frame" x="200" y="0.0" width="20" height="20"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                                <state key="normal" image="instagram-footer-icon"/>
+                                                                <connections>
+                                                                    <action selector="openInstagram:" destination="auj-5x-N91" eventType="touchUpInside" id="0r5-Cv-Ukv"/>
+                                                                    <action selector="openInstagram:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lnO-24-XPz"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstItem="Bkf-oQ-TwB" firstAttribute="width" secondItem="SsV-iw-J71" secondAttribute="width" id="7Vi-iP-B0v"/>
+                                                            <constraint firstItem="bS6-kR-IgV" firstAttribute="width" secondItem="SsV-iw-J71" secondAttribute="width" id="ZLi-c3-VHM"/>
+                                                            <constraint firstAttribute="height" constant="20" id="Zsg-Rw-IDu"/>
+                                                            <constraint firstItem="dOQ-fz-cFb" firstAttribute="width" secondItem="SsV-iw-J71" secondAttribute="width" id="daZ-MK-pYe"/>
+                                                            <constraint firstItem="ldg-V7-B00" firstAttribute="width" secondItem="SsV-iw-J71" secondAttribute="width" id="or9-FU-pU9"/>
+                                                        </constraints>
+                                                    </stackView>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="tMT-Zu-Zbe" firstAttribute="leading" secondItem="cYz-dj-PeT" secondAttribute="leading" id="B3L-ry-HxZ"/>
+                                                    <constraint firstItem="tMT-Zu-Zbe" firstAttribute="top" secondItem="cYz-dj-PeT" secondAttribute="top" id="fiq-bo-WNh"/>
+                                                    <constraint firstAttribute="trailing" secondItem="tMT-Zu-Zbe" secondAttribute="trailing" id="wTX-pt-ab7"/>
+                                                </constraints>
+                                            </stackView>
                                         </subviews>
                                         <color key="backgroundColor" red="0.082352941176470587" green="0.090196078431372548" blue="0.15294117647058825" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
+                                            <constraint firstItem="cYz-dj-PeT" firstAttribute="centerX" secondItem="g0p-yg-kTn" secondAttribute="centerX" id="QWQ-95-5Dg"/>
                                             <constraint firstAttribute="width" secondItem="g0p-yg-kTn" secondAttribute="height" multiplier="75:14" id="STd-W7-XQy"/>
+                                            <constraint firstItem="cYz-dj-PeT" firstAttribute="centerY" secondItem="g0p-yg-kTn" secondAttribute="centerY" id="dNu-Z4-Trm"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -1667,7 +1798,7 @@ We will reschedule it as soon as possible and keep everyone informed of any deve
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VHn-nE-Zys" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7394.9275362318849" y="2342.934782608696"/>
+            <point key="canvasLocation" x="8238" y="2315"/>
         </scene>
         <!--Lecture Series View Controller-->
         <scene sceneID="Yfg-t0-XuT">
@@ -2595,7 +2726,7 @@ We will reschedule it as soon as possible and keep everyone informed of any deve
         <image name="youtube-footer-icon" width="64" height="64"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="In9-og-6dh"/>
+        <segue reference="EZs-ez-5YL"/>
         <segue reference="whp-l0-94s"/>
         <segue reference="8FM-DV-Ffe"/>
         <segue reference="Ndr-sr-hkv"/>
@@ -2611,6 +2742,5 @@ We will reschedule it as soon as possible and keep everyone informed of any deve
         <segue reference="3gI-fe-vtX"/>
         <segue reference="hno-WS-Bw2"/>
         <segue reference="bpx-hV-XQv"/>
-        <segue reference="HLz-tX-r1Z"/>
     </inferredMetricsTieBreakers>
 </document>

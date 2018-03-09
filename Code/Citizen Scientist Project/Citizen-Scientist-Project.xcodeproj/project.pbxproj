@@ -7,22 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		22395CED204DF22E00177243 /* Greater-Miami-and-the-Beaches-Resilience-Strategy.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 22395CDD204DF22B00177243 /* Greater-Miami-and-the-Beaches-Resilience-Strategy.pdf */; };
-		22395CEE204DF22E00177243 /* Vulnerability_assessment_11-11-2016.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 22395CDE204DF22C00177243 /* Vulnerability_assessment_11-11-2016.pdf */; };
-		22395CEF204DF22E00177243 /* MDPL_17Feb2016.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 22395CDF204DF22C00177243 /* MDPL_17Feb2016.pdf */; };
-		22395CF0204DF22E00177243 /* VKB-Adaptation-Strategies-v2.ppt in Resources */ = {isa = PBXBuildFile; fileRef = 22395CE0204DF22C00177243 /* VKB-Adaptation-Strategies-v2.ppt */; };
-		22395CF1204DF22E00177243 /* 100-Resilient-Cities.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 22395CE1204DF22C00177243 /* 100-Resilient-Cities.pdf */; };
-		22395CF2204DF22E00177243 /* Survey-Results-2-6-2017.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 22395CE2204DF22C00177243 /* Survey-Results-2-6-2017.pdf */; };
-		22395CF3204DF22E00177243 /* CRC-VillageOfKeyBiscayne-FinaltVulnAssess-SM.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 22395CE3204DF22C00177243 /* CRC-VillageOfKeyBiscayne-FinaltVulnAssess-SM.pdf */; };
-		22395CF4204DF22E00177243 /* Agenda-for-SLR-Townhall-02-16-2017.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 22395CE4204DF22C00177243 /* Agenda-for-SLR-Townhall-02-16-2017.pdf */; };
-		22395CF5204DF22E00177243 /* Townhall-Fact-Sheet-11-10-2016.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 22395CE5204DF22C00177243 /* Townhall-Fact-Sheet-11-10-2016.pdf */; };
-		22395CF6204DF22E00177243 /* VKB-Adaptation-Strategies-v2.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 22395CE6204DF22D00177243 /* VKB-Adaptation-Strategies-v2.pdf */; };
-		22395CF7204DF22E00177243 /* Workshop-Powerpoint-Slides.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 22395CE7204DF22D00177243 /* Workshop-Powerpoint-Slides.pdf */; };
-		22395CF8204DF22E00177243 /* Workshop-Summary-Report_06232017.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 22395CE8204DF22D00177243 /* Workshop-Summary-Report_06232017.pdf */; };
-		22395CF9204DF22E00177243 /* VKB-Adaptation-Strategies-v2.pptx in Resources */ = {isa = PBXBuildFile; fileRef = 22395CE9204DF22D00177243 /* VKB-Adaptation-Strategies-v2.pptx */; };
-		22395CFA204DF22E00177243 /* SLR-Adaptation-Master-Plan.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 22395CEA204DF22D00177243 /* SLR-Adaptation-Master-Plan.pdf */; };
-		22395CFB204DF22E00177243 /* Townhall-Fact-Sheet-02-16-2017.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 22395CEB204DF22D00177243 /* Townhall-Fact-Sheet-02-16-2017.pdf */; };
-		22395CFC204DF22E00177243 /* Agenda-for-SLR-Townhall-11-10-2016.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 22395CEC204DF22D00177243 /* Agenda-for-SLR-Townhall-11-10-2016.pdf */; };
 		22395D01204E432600177243 /* NavigationPages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22395D00204E432600177243 /* NavigationPages.swift */; };
 		22594972202D969F0047E055 /* SectionFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22594971202D969F0047E055 /* SectionFooterView.swift */; };
 		22594976202DA6EC0047E055 /* CollectionViewCellContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22594975202DA6EC0047E055 /* CollectionViewCellContent.swift */; };
@@ -63,6 +47,22 @@
 		6D37E608203C893A00FF4BBA /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D37E607203C893A00FF4BBA /* EventsViewController.swift */; };
 		6D37E60A203C897100FF4BBA /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D37E609203C897100FF4BBA /* NewsViewController.swift */; };
 		6D9DF564203F3FAC0036C0E2 /* StatusReefRestorationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D9DF563203F3FAC0036C0E2 /* StatusReefRestorationViewController.swift */; };
+		FAEC2B0E2052CE7400308EE6 /* MDPL_17Feb2016.pdf in Resources */ = {isa = PBXBuildFile; fileRef = FAEC2AFE2052CE7000308EE6 /* MDPL_17Feb2016.pdf */; };
+		FAEC2B0F2052CE7400308EE6 /* VKB-Adaptation-Strategies-v2.pptx in Resources */ = {isa = PBXBuildFile; fileRef = FAEC2AFF2052CE7000308EE6 /* VKB-Adaptation-Strategies-v2.pptx */; };
+		FAEC2B102052CE7400308EE6 /* CRC-VillageOfKeyBiscayne-FinaltVulnAssess-SM.pdf in Resources */ = {isa = PBXBuildFile; fileRef = FAEC2B002052CE7000308EE6 /* CRC-VillageOfKeyBiscayne-FinaltVulnAssess-SM.pdf */; };
+		FAEC2B112052CE7400308EE6 /* Workshop-Summary-Report_06232017.pdf in Resources */ = {isa = PBXBuildFile; fileRef = FAEC2B012052CE7100308EE6 /* Workshop-Summary-Report_06232017.pdf */; };
+		FAEC2B122052CE7400308EE6 /* VKB-Adaptation-Strategies-v2.ppt in Resources */ = {isa = PBXBuildFile; fileRef = FAEC2B022052CE7100308EE6 /* VKB-Adaptation-Strategies-v2.ppt */; };
+		FAEC2B132052CE7400308EE6 /* Workshop-Powerpoint-Slides.pdf in Resources */ = {isa = PBXBuildFile; fileRef = FAEC2B032052CE7100308EE6 /* Workshop-Powerpoint-Slides.pdf */; };
+		FAEC2B142052CE7400308EE6 /* Vulnerability_assessment_11-11-2016.pdf in Resources */ = {isa = PBXBuildFile; fileRef = FAEC2B042052CE7100308EE6 /* Vulnerability_assessment_11-11-2016.pdf */; };
+		FAEC2B152052CE7400308EE6 /* Townhall-Fact-Sheet-11-10-2016.pdf in Resources */ = {isa = PBXBuildFile; fileRef = FAEC2B052052CE7100308EE6 /* Townhall-Fact-Sheet-11-10-2016.pdf */; };
+		FAEC2B162052CE7400308EE6 /* VKB-Adaptation-Strategies-v2.pdf in Resources */ = {isa = PBXBuildFile; fileRef = FAEC2B062052CE7200308EE6 /* VKB-Adaptation-Strategies-v2.pdf */; };
+		FAEC2B172052CE7400308EE6 /* 100-Resilient-Cities.pdf in Resources */ = {isa = PBXBuildFile; fileRef = FAEC2B072052CE7200308EE6 /* 100-Resilient-Cities.pdf */; };
+		FAEC2B182052CE7400308EE6 /* SLR-Adaptation-Master-Plan.pdf in Resources */ = {isa = PBXBuildFile; fileRef = FAEC2B082052CE7200308EE6 /* SLR-Adaptation-Master-Plan.pdf */; };
+		FAEC2B192052CE7400308EE6 /* Agenda-for-SLR-Townhall-11-10-2016.pdf in Resources */ = {isa = PBXBuildFile; fileRef = FAEC2B092052CE7200308EE6 /* Agenda-for-SLR-Townhall-11-10-2016.pdf */; };
+		FAEC2B1A2052CE7400308EE6 /* Survey-Results-2-6-2017.pdf in Resources */ = {isa = PBXBuildFile; fileRef = FAEC2B0A2052CE7200308EE6 /* Survey-Results-2-6-2017.pdf */; };
+		FAEC2B1B2052CE7400308EE6 /* Agenda-for-SLR-Townhall-02-16-2017.pdf in Resources */ = {isa = PBXBuildFile; fileRef = FAEC2B0B2052CE7300308EE6 /* Agenda-for-SLR-Townhall-02-16-2017.pdf */; };
+		FAEC2B1C2052CE7400308EE6 /* Greater-Miami-and-the-Beaches-Resilience-Strategy.pdf in Resources */ = {isa = PBXBuildFile; fileRef = FAEC2B0C2052CE7300308EE6 /* Greater-Miami-and-the-Beaches-Resilience-Strategy.pdf */; };
+		FAEC2B1D2052CE7400308EE6 /* Townhall-Fact-Sheet-02-16-2017.pdf in Resources */ = {isa = PBXBuildFile; fileRef = FAEC2B0D2052CE7300308EE6 /* Townhall-Fact-Sheet-02-16-2017.pdf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,22 +83,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		22395CDD204DF22B00177243 /* Greater-Miami-and-the-Beaches-Resilience-Strategy.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "Greater-Miami-and-the-Beaches-Resilience-Strategy.pdf"; path = "../../../../../../../../Desktop/FileResources/Sea-Level-Rise/Greater-Miami-and-the-Beaches-Resilience-Strategy.pdf"; sourceTree = "<group>"; };
-		22395CDE204DF22C00177243 /* Vulnerability_assessment_11-11-2016.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "Vulnerability_assessment_11-11-2016.pdf"; path = "../../../../../../../../Desktop/FileResources/Sea-Level-Rise/Vulnerability_assessment_11-11-2016.pdf"; sourceTree = "<group>"; };
-		22395CDF204DF22C00177243 /* MDPL_17Feb2016.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = MDPL_17Feb2016.pdf; path = "../../../../../../../../Desktop/FileResources/Sea-Level-Rise/MDPL_17Feb2016.pdf"; sourceTree = "<group>"; };
-		22395CE0204DF22C00177243 /* VKB-Adaptation-Strategies-v2.ppt */ = {isa = PBXFileReference; lastKnownFileType = file; name = "VKB-Adaptation-Strategies-v2.ppt"; path = "../../../../../../../../Desktop/FileResources/Sea-Level-Rise/VKB-Adaptation-Strategies-v2.ppt"; sourceTree = "<group>"; };
-		22395CE1204DF22C00177243 /* 100-Resilient-Cities.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "100-Resilient-Cities.pdf"; path = "../../../../../../../../Desktop/FileResources/Sea-Level-Rise/100-Resilient-Cities.pdf"; sourceTree = "<group>"; };
-		22395CE2204DF22C00177243 /* Survey-Results-2-6-2017.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "Survey-Results-2-6-2017.pdf"; path = "../../../../../../../../Desktop/FileResources/Sea-Level-Rise/Survey-Results-2-6-2017.pdf"; sourceTree = "<group>"; };
-		22395CE3204DF22C00177243 /* CRC-VillageOfKeyBiscayne-FinaltVulnAssess-SM.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "CRC-VillageOfKeyBiscayne-FinaltVulnAssess-SM.pdf"; path = "../../../../../../../../Desktop/FileResources/Sea-Level-Rise/CRC-VillageOfKeyBiscayne-FinaltVulnAssess-SM.pdf"; sourceTree = "<group>"; };
-		22395CE4204DF22C00177243 /* Agenda-for-SLR-Townhall-02-16-2017.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "Agenda-for-SLR-Townhall-02-16-2017.pdf"; path = "../../../../../../../../Desktop/FileResources/Sea-Level-Rise/Agenda-for-SLR-Townhall-02-16-2017.pdf"; sourceTree = "<group>"; };
-		22395CE5204DF22C00177243 /* Townhall-Fact-Sheet-11-10-2016.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "Townhall-Fact-Sheet-11-10-2016.pdf"; path = "../../../../../../../../Desktop/FileResources/Sea-Level-Rise/Townhall-Fact-Sheet-11-10-2016.pdf"; sourceTree = "<group>"; };
-		22395CE6204DF22D00177243 /* VKB-Adaptation-Strategies-v2.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "VKB-Adaptation-Strategies-v2.pdf"; path = "../../../../../../../../Desktop/FileResources/Sea-Level-Rise/VKB-Adaptation-Strategies-v2.pdf"; sourceTree = "<group>"; };
-		22395CE7204DF22D00177243 /* Workshop-Powerpoint-Slides.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "Workshop-Powerpoint-Slides.pdf"; path = "../../../../../../../../Desktop/FileResources/Sea-Level-Rise/Workshop-Powerpoint-Slides.pdf"; sourceTree = "<group>"; };
-		22395CE8204DF22D00177243 /* Workshop-Summary-Report_06232017.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "Workshop-Summary-Report_06232017.pdf"; path = "../../../../../../../../Desktop/FileResources/Sea-Level-Rise/Workshop-Summary-Report_06232017.pdf"; sourceTree = "<group>"; };
-		22395CE9204DF22D00177243 /* VKB-Adaptation-Strategies-v2.pptx */ = {isa = PBXFileReference; lastKnownFileType = file; name = "VKB-Adaptation-Strategies-v2.pptx"; path = "../../../../../../../../Desktop/FileResources/Sea-Level-Rise/VKB-Adaptation-Strategies-v2.pptx"; sourceTree = "<group>"; };
-		22395CEA204DF22D00177243 /* SLR-Adaptation-Master-Plan.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "SLR-Adaptation-Master-Plan.pdf"; path = "../../../../../../../../Desktop/FileResources/Sea-Level-Rise/SLR-Adaptation-Master-Plan.pdf"; sourceTree = "<group>"; };
-		22395CEB204DF22D00177243 /* Townhall-Fact-Sheet-02-16-2017.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "Townhall-Fact-Sheet-02-16-2017.pdf"; path = "../../../../../../../../Desktop/FileResources/Sea-Level-Rise/Townhall-Fact-Sheet-02-16-2017.pdf"; sourceTree = "<group>"; };
-		22395CEC204DF22D00177243 /* Agenda-for-SLR-Townhall-11-10-2016.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "Agenda-for-SLR-Townhall-11-10-2016.pdf"; path = "../../../../../../../../Desktop/FileResources/Sea-Level-Rise/Agenda-for-SLR-Townhall-11-10-2016.pdf"; sourceTree = "<group>"; };
 		22395D00204E432600177243 /* NavigationPages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationPages.swift; sourceTree = "<group>"; };
 		22594971202D969F0047E055 /* SectionFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionFooterView.swift; sourceTree = "<group>"; };
 		22594975202DA6EC0047E055 /* CollectionViewCellContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCellContent.swift; sourceTree = "<group>"; };
@@ -145,6 +129,22 @@
 		6D37E607203C893A00FF4BBA /* EventsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsViewController.swift; sourceTree = "<group>"; };
 		6D37E609203C897100FF4BBA /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
 		6D9DF563203F3FAC0036C0E2 /* StatusReefRestorationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusReefRestorationViewController.swift; sourceTree = "<group>"; };
+		FAEC2AFE2052CE7000308EE6 /* MDPL_17Feb2016.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = MDPL_17Feb2016.pdf; path = ../../../../../../../../Desktop/FileResources/Resources/MDPL_17Feb2016.pdf; sourceTree = "<group>"; };
+		FAEC2AFF2052CE7000308EE6 /* VKB-Adaptation-Strategies-v2.pptx */ = {isa = PBXFileReference; lastKnownFileType = file; name = "VKB-Adaptation-Strategies-v2.pptx"; path = "../../../../../../../../Desktop/FileResources/Resources/VKB-Adaptation-Strategies-v2.pptx"; sourceTree = "<group>"; };
+		FAEC2B002052CE7000308EE6 /* CRC-VillageOfKeyBiscayne-FinaltVulnAssess-SM.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "CRC-VillageOfKeyBiscayne-FinaltVulnAssess-SM.pdf"; path = "../../../../../../../../Desktop/FileResources/Resources/CRC-VillageOfKeyBiscayne-FinaltVulnAssess-SM.pdf"; sourceTree = "<group>"; };
+		FAEC2B012052CE7100308EE6 /* Workshop-Summary-Report_06232017.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "Workshop-Summary-Report_06232017.pdf"; path = "../../../../../../../../Desktop/FileResources/Resources/Workshop-Summary-Report_06232017.pdf"; sourceTree = "<group>"; };
+		FAEC2B022052CE7100308EE6 /* VKB-Adaptation-Strategies-v2.ppt */ = {isa = PBXFileReference; lastKnownFileType = file; name = "VKB-Adaptation-Strategies-v2.ppt"; path = "../../../../../../../../Desktop/FileResources/Resources/VKB-Adaptation-Strategies-v2.ppt"; sourceTree = "<group>"; };
+		FAEC2B032052CE7100308EE6 /* Workshop-Powerpoint-Slides.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "Workshop-Powerpoint-Slides.pdf"; path = "../../../../../../../../Desktop/FileResources/Resources/Workshop-Powerpoint-Slides.pdf"; sourceTree = "<group>"; };
+		FAEC2B042052CE7100308EE6 /* Vulnerability_assessment_11-11-2016.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "Vulnerability_assessment_11-11-2016.pdf"; path = "../../../../../../../../Desktop/FileResources/Resources/Vulnerability_assessment_11-11-2016.pdf"; sourceTree = "<group>"; };
+		FAEC2B052052CE7100308EE6 /* Townhall-Fact-Sheet-11-10-2016.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "Townhall-Fact-Sheet-11-10-2016.pdf"; path = "../../../../../../../../Desktop/FileResources/Resources/Townhall-Fact-Sheet-11-10-2016.pdf"; sourceTree = "<group>"; };
+		FAEC2B062052CE7200308EE6 /* VKB-Adaptation-Strategies-v2.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "VKB-Adaptation-Strategies-v2.pdf"; path = "../../../../../../../../Desktop/FileResources/Resources/VKB-Adaptation-Strategies-v2.pdf"; sourceTree = "<group>"; };
+		FAEC2B072052CE7200308EE6 /* 100-Resilient-Cities.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "100-Resilient-Cities.pdf"; path = "../../../../../../../../Desktop/FileResources/Resources/100-Resilient-Cities.pdf"; sourceTree = "<group>"; };
+		FAEC2B082052CE7200308EE6 /* SLR-Adaptation-Master-Plan.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "SLR-Adaptation-Master-Plan.pdf"; path = "../../../../../../../../Desktop/FileResources/Resources/SLR-Adaptation-Master-Plan.pdf"; sourceTree = "<group>"; };
+		FAEC2B092052CE7200308EE6 /* Agenda-for-SLR-Townhall-11-10-2016.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "Agenda-for-SLR-Townhall-11-10-2016.pdf"; path = "../../../../../../../../Desktop/FileResources/Resources/Agenda-for-SLR-Townhall-11-10-2016.pdf"; sourceTree = "<group>"; };
+		FAEC2B0A2052CE7200308EE6 /* Survey-Results-2-6-2017.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "Survey-Results-2-6-2017.pdf"; path = "../../../../../../../../Desktop/FileResources/Resources/Survey-Results-2-6-2017.pdf"; sourceTree = "<group>"; };
+		FAEC2B0B2052CE7300308EE6 /* Agenda-for-SLR-Townhall-02-16-2017.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "Agenda-for-SLR-Townhall-02-16-2017.pdf"; path = "../../../../../../../../Desktop/FileResources/Resources/Agenda-for-SLR-Townhall-02-16-2017.pdf"; sourceTree = "<group>"; };
+		FAEC2B0C2052CE7300308EE6 /* Greater-Miami-and-the-Beaches-Resilience-Strategy.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "Greater-Miami-and-the-Beaches-Resilience-Strategy.pdf"; path = "../../../../../../../../Desktop/FileResources/Resources/Greater-Miami-and-the-Beaches-Resilience-Strategy.pdf"; sourceTree = "<group>"; };
+		FAEC2B0D2052CE7300308EE6 /* Townhall-Fact-Sheet-02-16-2017.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "Townhall-Fact-Sheet-02-16-2017.pdf"; path = "../../../../../../../../Desktop/FileResources/Resources/Townhall-Fact-Sheet-02-16-2017.pdf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -202,22 +202,22 @@
 		228FA9C320477E21003610B3 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				22395CE1204DF22C00177243 /* 100-Resilient-Cities.pdf */,
-				22395CE4204DF22C00177243 /* Agenda-for-SLR-Townhall-02-16-2017.pdf */,
-				22395CEC204DF22D00177243 /* Agenda-for-SLR-Townhall-11-10-2016.pdf */,
-				22395CE3204DF22C00177243 /* CRC-VillageOfKeyBiscayne-FinaltVulnAssess-SM.pdf */,
-				22395CDD204DF22B00177243 /* Greater-Miami-and-the-Beaches-Resilience-Strategy.pdf */,
-				22395CDF204DF22C00177243 /* MDPL_17Feb2016.pdf */,
-				22395CEA204DF22D00177243 /* SLR-Adaptation-Master-Plan.pdf */,
-				22395CE2204DF22C00177243 /* Survey-Results-2-6-2017.pdf */,
-				22395CEB204DF22D00177243 /* Townhall-Fact-Sheet-02-16-2017.pdf */,
-				22395CE5204DF22C00177243 /* Townhall-Fact-Sheet-11-10-2016.pdf */,
-				22395CE6204DF22D00177243 /* VKB-Adaptation-Strategies-v2.pdf */,
-				22395CE0204DF22C00177243 /* VKB-Adaptation-Strategies-v2.ppt */,
-				22395CE9204DF22D00177243 /* VKB-Adaptation-Strategies-v2.pptx */,
-				22395CDE204DF22C00177243 /* Vulnerability_assessment_11-11-2016.pdf */,
-				22395CE7204DF22D00177243 /* Workshop-Powerpoint-Slides.pdf */,
-				22395CE8204DF22D00177243 /* Workshop-Summary-Report_06232017.pdf */,
+				FAEC2B072052CE7200308EE6 /* 100-Resilient-Cities.pdf */,
+				FAEC2B0B2052CE7300308EE6 /* Agenda-for-SLR-Townhall-02-16-2017.pdf */,
+				FAEC2B092052CE7200308EE6 /* Agenda-for-SLR-Townhall-11-10-2016.pdf */,
+				FAEC2B002052CE7000308EE6 /* CRC-VillageOfKeyBiscayne-FinaltVulnAssess-SM.pdf */,
+				FAEC2B0C2052CE7300308EE6 /* Greater-Miami-and-the-Beaches-Resilience-Strategy.pdf */,
+				FAEC2AFE2052CE7000308EE6 /* MDPL_17Feb2016.pdf */,
+				FAEC2B082052CE7200308EE6 /* SLR-Adaptation-Master-Plan.pdf */,
+				FAEC2B0A2052CE7200308EE6 /* Survey-Results-2-6-2017.pdf */,
+				FAEC2B0D2052CE7300308EE6 /* Townhall-Fact-Sheet-02-16-2017.pdf */,
+				FAEC2B052052CE7100308EE6 /* Townhall-Fact-Sheet-11-10-2016.pdf */,
+				FAEC2B062052CE7200308EE6 /* VKB-Adaptation-Strategies-v2.pdf */,
+				FAEC2B022052CE7100308EE6 /* VKB-Adaptation-Strategies-v2.ppt */,
+				FAEC2AFF2052CE7000308EE6 /* VKB-Adaptation-Strategies-v2.pptx */,
+				FAEC2B042052CE7100308EE6 /* Vulnerability_assessment_11-11-2016.pdf */,
+				FAEC2B032052CE7100308EE6 /* Workshop-Powerpoint-Slides.pdf */,
+				FAEC2B012052CE7100308EE6 /* Workshop-Summary-Report_06232017.pdf */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -803,25 +803,25 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				22395CF3204DF22E00177243 /* CRC-VillageOfKeyBiscayne-FinaltVulnAssess-SM.pdf in Resources */,
-				22395CEF204DF22E00177243 /* MDPL_17Feb2016.pdf in Resources */,
-				22395CF7204DF22E00177243 /* Workshop-Powerpoint-Slides.pdf in Resources */,
-				22395CF6204DF22E00177243 /* VKB-Adaptation-Strategies-v2.pdf in Resources */,
+				FAEC2B122052CE7400308EE6 /* VKB-Adaptation-Strategies-v2.ppt in Resources */,
+				FAEC2B172052CE7400308EE6 /* 100-Resilient-Cities.pdf in Resources */,
+				FAEC2B1B2052CE7400308EE6 /* Agenda-for-SLR-Townhall-02-16-2017.pdf in Resources */,
+				FAEC2B182052CE7400308EE6 /* SLR-Adaptation-Master-Plan.pdf in Resources */,
+				FAEC2B0E2052CE7400308EE6 /* MDPL_17Feb2016.pdf in Resources */,
 				229E61502022A79200D4BDDA /* LaunchScreen.storyboard in Resources */,
-				22395CEE204DF22E00177243 /* Vulnerability_assessment_11-11-2016.pdf in Resources */,
-				22395CF1204DF22E00177243 /* 100-Resilient-Cities.pdf in Resources */,
-				22395CF9204DF22E00177243 /* VKB-Adaptation-Strategies-v2.pptx in Resources */,
-				22395CF0204DF22E00177243 /* VKB-Adaptation-Strategies-v2.ppt in Resources */,
+				FAEC2B132052CE7400308EE6 /* Workshop-Powerpoint-Slides.pdf in Resources */,
+				FAEC2B162052CE7400308EE6 /* VKB-Adaptation-Strategies-v2.pdf in Resources */,
+				FAEC2B102052CE7400308EE6 /* CRC-VillageOfKeyBiscayne-FinaltVulnAssess-SM.pdf in Resources */,
+				FAEC2B1D2052CE7400308EE6 /* Townhall-Fact-Sheet-02-16-2017.pdf in Resources */,
+				FAEC2B192052CE7400308EE6 /* Agenda-for-SLR-Townhall-11-10-2016.pdf in Resources */,
+				FAEC2B1A2052CE7400308EE6 /* Survey-Results-2-6-2017.pdf in Resources */,
+				FAEC2B1C2052CE7400308EE6 /* Greater-Miami-and-the-Beaches-Resilience-Strategy.pdf in Resources */,
+				FAEC2B112052CE7400308EE6 /* Workshop-Summary-Report_06232017.pdf in Resources */,
+				FAEC2B142052CE7400308EE6 /* Vulnerability_assessment_11-11-2016.pdf in Resources */,
 				229E614D2022A79200D4BDDA /* Assets.xcassets in Resources */,
+				FAEC2B152052CE7400308EE6 /* Townhall-Fact-Sheet-11-10-2016.pdf in Resources */,
+				FAEC2B0F2052CE7400308EE6 /* VKB-Adaptation-Strategies-v2.pptx in Resources */,
 				229E61482022A79200D4BDDA /* Main.storyboard in Resources */,
-				22395CED204DF22E00177243 /* Greater-Miami-and-the-Beaches-Resilience-Strategy.pdf in Resources */,
-				22395CFC204DF22E00177243 /* Agenda-for-SLR-Townhall-11-10-2016.pdf in Resources */,
-				22395CFB204DF22E00177243 /* Townhall-Fact-Sheet-02-16-2017.pdf in Resources */,
-				22395CF4204DF22E00177243 /* Agenda-for-SLR-Townhall-02-16-2017.pdf in Resources */,
-				22395CF2204DF22E00177243 /* Survey-Results-2-6-2017.pdf in Resources */,
-				22395CF8204DF22E00177243 /* Workshop-Summary-Report_06232017.pdf in Resources */,
-				22395CFA204DF22E00177243 /* SLR-Adaptation-Master-Plan.pdf in Resources */,
-				22395CF5204DF22E00177243 /* Townhall-Fact-Sheet-11-10-2016.pdf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1048,7 +1048,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2EAVSD837T;
+				DEVELOPMENT_TEAM = R89DGE8VGB;
 				INFOPLIST_FILE = "Citizen Scientist Project/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Key.Biscayne.Citizen-Scientist-Project2";
@@ -1065,7 +1065,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2EAVSD837T;
+				DEVELOPMENT_TEAM = R89DGE8VGB;
 				INFOPLIST_FILE = "Citizen Scientist Project/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Key.Biscayne.Citizen-Scientist-Project2";

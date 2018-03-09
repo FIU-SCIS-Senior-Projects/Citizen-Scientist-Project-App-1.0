@@ -10,6 +10,26 @@ import UIKit
 
 class ReefRestorationViewController: UIViewController {
 
+    @IBAction func openFacebook(_ sender: Any) {
+        SocialNetwork.Facebook.openPage()
+    }
+  
+    @IBAction func openTwitter(_ sender: UIButton) {
+        SocialNetwork.Twitter.openPage()
+    }
+    
+    @IBAction func openGooglePlus(_ sender: UIButton) {
+        SocialNetwork.GooglePlus.openPage()
+    }
+    
+    @IBAction func openYoutube(_ sender: UIButton) {
+        SocialNetwork.YouTube.openPage()
+    }
+    
+    @IBAction func openInstagram(_ sender: UIButton) {
+        SocialNetwork.Instagram.openPage()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpNavBar()
