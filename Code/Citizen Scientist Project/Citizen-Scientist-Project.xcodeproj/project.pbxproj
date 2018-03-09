@@ -26,6 +26,7 @@
 		22395D01204E432600177243 /* NavigationPages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22395D00204E432600177243 /* NavigationPages.swift */; };
 		22395D052052798600177243 /* WaterWatchContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22395D042052798600177243 /* WaterWatchContent.swift */; };
 		22395D072052830600177243 /* WaterWatchContentManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22395D062052830600177243 /* WaterWatchContentManager.swift */; };
+		22395D0B20528DE800177243 /* WaterWatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22395D0A20528DE800177243 /* WaterWatchView.swift */; };
 		22594972202D969F0047E055 /* SectionFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22594971202D969F0047E055 /* SectionFooterView.swift */; };
 		22594976202DA6EC0047E055 /* CollectionViewCellContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22594975202DA6EC0047E055 /* CollectionViewCellContent.swift */; };
 		22594978202DAA0C0047E055 /* CollectionViewContentManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22594977202DAA0C0047E055 /* CollectionViewContentManager.swift */; };
@@ -104,6 +105,7 @@
 		22395D00204E432600177243 /* NavigationPages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationPages.swift; sourceTree = "<group>"; };
 		22395D042052798600177243 /* WaterWatchContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterWatchContent.swift; sourceTree = "<group>"; };
 		22395D062052830600177243 /* WaterWatchContentManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterWatchContentManager.swift; sourceTree = "<group>"; };
+		22395D0A20528DE800177243 /* WaterWatchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterWatchView.swift; sourceTree = "<group>"; };
 		22594971202D969F0047E055 /* SectionFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionFooterView.swift; sourceTree = "<group>"; };
 		22594975202DA6EC0047E055 /* CollectionViewCellContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCellContent.swift; sourceTree = "<group>"; };
 		22594977202DAA0C0047E055 /* CollectionViewContentManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewContentManager.swift; sourceTree = "<group>"; };
@@ -187,6 +189,7 @@
 		22395D022052791000177243 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				22395D0A20528DE800177243 /* WaterWatchView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -870,6 +873,7 @@
 			files = (
 				6D021C14203E3126003E35D5 /* OurBiomesViewController.swift in Sources */,
 				22594976202DA6EC0047E055 /* CollectionViewCellContent.swift in Sources */,
+				22395D0B20528DE800177243 /* WaterWatchView.swift in Sources */,
 				6D021C02203E2A47003E35D5 /* RecordViewController.swift in Sources */,
 				6D9DF564203F3FAC0036C0E2 /* StatusReefRestorationViewController.swift in Sources */,
 				229E61452022A79200D4BDDA /* ViewController.swift in Sources */,
