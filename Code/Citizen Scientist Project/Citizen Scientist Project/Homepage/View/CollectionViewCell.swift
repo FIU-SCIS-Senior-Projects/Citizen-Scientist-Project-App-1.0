@@ -50,6 +50,8 @@ class CollectionViewCell: UICollectionViewCell {
         // Setup cell labels position and constraints
         setUpLabelsConstrainsts(cellType: content.cellType, screenWidth: screenWidth)
         
+        // Arrow position and constraints were set using the Storyboard
+        
     }
     
     private func populateCellContent(content: HomepageCell)
