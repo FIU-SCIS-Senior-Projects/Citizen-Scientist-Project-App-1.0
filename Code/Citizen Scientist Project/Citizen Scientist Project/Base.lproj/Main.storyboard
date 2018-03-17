@@ -2172,12 +2172,21 @@ We will reschedule it as soon as possible and keep everyone informed of any deve
                                                         </label>
                                                     </subviews>
                                                 </stackView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="white-down-arrow" translatesAutoresizingMaskIntoConstraints="NO" id="QfT-W6-hEq">
+                                                    <rect key="frame" x="81" y="86" width="22" height="12"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="12" id="yR2-jd-4Cu"/>
+                                                        <constraint firstAttribute="width" constant="22" id="z3X-cK-2fN"/>
+                                                    </constraints>
+                                                </imageView>
                                             </subviews>
                                         </view>
                                         <constraints>
+                                            <constraint firstItem="QfT-W6-hEq" firstAttribute="centerY" secondItem="wDA-Po-Iq5" secondAttribute="centerY" id="0Dh-eQ-Uem"/>
                                             <constraint firstItem="u1I-QE-gXL" firstAttribute="width" secondItem="wDA-Po-Iq5" secondAttribute="width" id="1IV-im-ZYP"/>
                                             <constraint firstAttribute="bottom" secondItem="gGP-4Q-pUl" secondAttribute="bottom" id="8Ec-Js-CAd"/>
                                             <constraint firstAttribute="trailing" secondItem="sp2-1L-j3U" secondAttribute="trailing" id="CeP-pi-mVG"/>
+                                            <constraint firstItem="QfT-W6-hEq" firstAttribute="centerX" secondItem="wDA-Po-Iq5" secondAttribute="centerX" id="GtO-ag-usQ"/>
                                             <constraint firstItem="sp2-1L-j3U" firstAttribute="leading" secondItem="wDA-Po-Iq5" secondAttribute="leading" id="Hpu-s1-m09"/>
                                             <constraint firstAttribute="trailing" secondItem="u1I-QE-gXL" secondAttribute="trailing" id="SEr-pw-jBW"/>
                                             <constraint firstItem="u1I-QE-gXL" firstAttribute="leading" secondItem="wDA-Po-Iq5" secondAttribute="leading" id="T1U-Bl-4Mf"/>
@@ -2188,6 +2197,7 @@ We will reschedule it as soon as possible and keep everyone informed of any deve
                                             <constraint firstItem="sp2-1L-j3U" firstAttribute="bottom" secondItem="gGP-4Q-pUl" secondAttribute="bottom" id="sJO-ci-Ils"/>
                                         </constraints>
                                         <connections>
+                                            <outlet property="arrowImageView" destination="QfT-W6-hEq" id="F3C-rb-wkG"/>
                                             <outlet property="bottomMarginLabelsConstraint" destination="sJO-ci-Ils" id="uqK-WX-4zc"/>
                                             <outlet property="headerLabel" destination="las-03-Gas" id="nLw-Kw-sU1"/>
                                             <outlet property="headerLabelHeightConstraint" destination="Uvj-bh-eDh" id="J0i-qX-APJ"/>
@@ -2323,11 +2333,12 @@ We will reschedule it as soon as possible and keep everyone informed of any deve
                         <segue destination="n0T-bo-uMI" kind="show" identifier="segueToEvents" id="987-cs-BJW"/>
                         <segue destination="YFL-T1-tRh" kind="show" identifier="segueToOurPartners" id="Ndr-sr-hkv"/>
                         <segue destination="cPL-qk-5Bx" kind="show" identifier="segueToContactUs" id="8FM-DV-Ffe"/>
+                        <segue destination="tmZ-Zh-GZT" kind="show" identifier="segueToAboutUs" id="UXe-4g-zrx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5318" y="-3161"/>
+            <point key="canvasLocation" x="5440.8000000000002" y="-3161.4692653673164"/>
         </scene>
         <!--Profile Navigation Controller-->
         <scene sceneID="EJo-HN-r3F">
@@ -2723,10 +2734,12 @@ We will reschedule it as soon as possible and keep everyone informed of any deve
         <image name="reef-restoration-learn-more" width="1080" height="1350"/>
         <image name="sea-level-rise" width="1800" height="1000"/>
         <image name="twitter-footer-icon" width="64" height="64"/>
+        <image name="white-down-arrow" width="980" height="582"/>
         <image name="youtube-footer-icon" width="64" height="64"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="EZs-ez-5YL"/>
+        <segue reference="In9-og-6dh"/>
+        <segue reference="UXe-4g-zrx"/>
         <segue reference="whp-l0-94s"/>
         <segue reference="8FM-DV-Ffe"/>
         <segue reference="Ndr-sr-hkv"/>

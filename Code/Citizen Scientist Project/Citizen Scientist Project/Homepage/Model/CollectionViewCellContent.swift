@@ -9,22 +9,32 @@
 import Foundation
 import UIKit
 
-struct CellContent {
+struct HomepageCell {
     
     var id: Int
+    var page: Page
+    var parent: Page
     var imageName: String
-    var shadowImageName: String
     var labelHeader: String
     var labelSubHeader: String
     var cellType: CellType
-    var labelsPropetries: CellLabelsProperties
-    var expandableProperty: Expandable
-    var parentId: Int
+    var expandableProperty: Expandable?
     
     enum CellType {
         case Regular // half of full width
         case Super   // full width
     }
+    
+    init(id: Int, page: Page, parent: Page, imageName: String, labelHeader: String, labelSubHeader: String, cellType: CellType){
+        self.id = id
+        self.page = page
+        self.parent = parent
+        self.imageName = imageName
+        self.labelHeader = labelHeader
+        self.labelSubHeader = labelSubHeader
+        self.cellType = cellType
+    }
+    
     
 }
 
@@ -32,10 +42,7 @@ struct CellLabelsProperties {
     var labelHeaderProperty: LabelProperties?
     var labelSubHeaderProperty: LabelProperties?
     
-    init()
-    {
-        
-    }
+    init(){}
 }
 
 struct LabelProperties {
@@ -43,10 +50,7 @@ struct LabelProperties {
     var color: UIColor?
     var alignment: NSTextAlignment?
     
-    init()
-    {
-        
-    }
+    init(){}
 }
 
 struct Expandable {

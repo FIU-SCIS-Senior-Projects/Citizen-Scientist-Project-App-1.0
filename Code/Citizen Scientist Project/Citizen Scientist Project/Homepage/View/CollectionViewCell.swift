@@ -11,6 +11,7 @@ import UIKit
 class CollectionViewCell: UICollectionViewCell {
     
     @IBOutlet private weak var imageView: UIImageView!
+    @IBOutlet private weak var arrowImageView: UIImageView!
     @IBOutlet private weak var shadowImageView: UIImageView!
     @IBOutlet private weak var headerLabel: UILabel!
     @IBOutlet private weak var subHeaderLabel: UILabel!
@@ -29,7 +30,7 @@ class CollectionViewCell: UICollectionViewCell {
     static let noInBetweenLabelSpacing: CGFloat = 0.0
     
     //shadowImageView constraints set in StoryBoard. Height set to 40% of width
-    func setUp(content: CellContent, screenWidth: CGFloat)
+    func setUp(content: HomepageCell, screenWidth: CGFloat)
     {
         
         // Populate cell with content
@@ -40,22 +41,22 @@ class CollectionViewCell: UICollectionViewCell {
         imageView.clipsToBounds = true
         
         // Setup label properties
-        let properties = content.labelsPropetries
+        let properties = ContentManager.getCellLabelsProperties(cell: content)
         setUpLabelProperties(properties: properties)
         
         // Setup cell image dimensions
-        setUpImageViewFrame(cellType: content.cellType, screenWidth: screenWidth)
-        
+        setUpImageViewFrame(cell: content, screenWidth: screenWidth)
         
         // Setup cell labels position and constraints
         setUpLabelsConstrainsts(cellType: content.cellType, screenWidth: screenWidth)
         
     }
     
-    private func populateCellContent(content: CellContent)
+    private func populateCellContent(content: HomepageCell)
     {
         imageView.image = UIImage(named: content.imageName)
-        shadowImageView.image = UIImage(named: content.shadowImageName)
+        shadowImageView.image = UIImage(named: ContentManager.SHADOW_IMAGE_NAME)
+        arrowImageView.image = UIImage(named: ContentManager.arrowImageName)
         headerLabel.text = content.labelHeader
         subHeaderLabel.text = content.labelSubHeader
     }
@@ -75,32 +76,41 @@ class CollectionViewCell: UICollectionViewCell {
         subHeaderLabel.textAlignment = (properties.labelSubHeaderProperty?.alignment)!
     }
     
-    private func setUpImageViewFrame(cellType: CellContent.CellType, screenWidth: CGFloat)
+    private func setUpImageViewFrame(cell: HomepageCell, screenWidth: CGFloat)
     {
         let cellHeight = screenWidth / 2.0
         let regularCellWidth = cellHeight
         
-        if cellType == CellContent.CellType.Super
-        {
+        
+        switch cell.cellType{
+            
+        case .Super:
             imageView.frame = CGRect(origin: CGPoint(x: 0, y: 0), size: CGSize(width: screenWidth, height: cellHeight))
             
             // hide shadowing
             shadowImageView.isHidden = true
-        }
-        else if cellType == CellContent.CellType.Regular
-        {
+            
+            // only show arrow for CSP Lab cell
+            if cell.page == .CSPLab {
+                arrowImageView.isHidden = false
+            }
+            else {
+                arrowImageView.isHidden = true
+            }
+            
+        case .Regular:
             imageView.frame = CGRect(origin: CGPoint(x: 0, y: 0), size: CGSize(width: regularCellWidth, height: cellHeight))
             
             // show shadowing
             shadowImageView.isHidden = false
+            
+            // hide arrow
+            arrowImageView.isHidden = true
         }
-        else
-        {
-            // opps... internal error occurred!
-        }
+        
     }
     
-    private func setUpLabelsConstrainsts(cellType: CellContent.CellType, screenWidth: CGFloat)
+    private func setUpLabelsConstrainsts(cellType: HomepageCell.CellType, screenWidth: CGFloat)
     {
         let regularCellWidth = screenWidth / 2
         let cellHeight = regularCellWidth
@@ -109,7 +119,7 @@ class CollectionViewCell: UICollectionViewCell {
         let bottomMagin = cellHeight * CollectionViewCell.bottomMarginPercentage / 100.0
         
         
-        if cellType == CellContent.CellType.Super
+        if cellType == HomepageCell.CellType.Super
         {
             // Here the height of the stacks is equal to the sum of the height of both labels and the spacing between the labels
             let stackHeight = CollectionViewCell.inBetweenLabelSpacing + ContentManager.headerLabelFontSizeSuperCell + ContentManager.subHeaderLabelFontSizeSuperCell
@@ -127,7 +137,7 @@ class CollectionViewCell: UICollectionViewCell {
             labelsStackContainer.spacing = CollectionViewCell.inBetweenLabelSpacing
             
         }
-        else if cellType == CellContent.CellType.Regular
+        else if cellType == HomepageCell.CellType.Regular
         {
             // Stack constraints
             leftMarginLabelsConstraint.constant = leftMargin

@@ -9,16 +9,17 @@
 import Foundation
 import UIKit
 
-extension Array where Iterator.Element == CellContent {
-    func nextAvailableCell(fromIndex: Int) -> CellContent?{
-        let parentCellId = self[fromIndex].parentId
-        let cellParent = self[parentCellId]
-        let isParentCellExpanded = cellParent.expandableProperty.isExpanded
-        let parentCellChildrenCount = cellParent.expandableProperty.childrenCount
+var cspLabExpanded = ContentManager.CSPLAB_CHILDREN_DEFAULT_VISIBILITY
+
+extension Array where Iterator.Element == HomepageCell {
+    func nextAvailableCell(fromIndex: Int) -> HomepageCell{
         
-        // If the parent of the cell is not expanded
-        if isParentCellExpanded == false  && parentCellId != fromIndex{
-            return self[fromIndex + parentCellChildrenCount]
+        let cpsLabIndex = ContentManager.getPageId(page: .CSPLab)
+        let cspLabChildren = self[cpsLabIndex].expandableProperty?.childrenCount
+        
+        // check if CSP Lab cell has been expanded
+        if cspLabExpanded == false  && fromIndex > cpsLabIndex {
+            return self[fromIndex + cspLabChildren!]
         }
         return self[fromIndex]
     }
@@ -28,20 +29,29 @@ extension Array where Iterator.Element == CellContent {
         for index in 0..<self.count {
             count = count + 1
             
+            let expandable = self[index].expandableProperty?.isExpanded
+        
             // If a particular cell is not expanded, substract the number of children hidden under that cell
-            if self[index].expandableProperty.isExpanded == false {
-                count = count - self[index].expandableProperty.childrenCount
+            if expandable == false {
+                let childrenCount = self[index].expandableProperty?.childrenCount
+                count = count - childrenCount!
             }
         }
         return count
     }
 }
 
+//TODO: extend Page enum to get Homepage Id
+//extension Page {
+//    static var HomepageId: Int {
+//
+//        return ContentManager.getPageId(page: Page.Home)
+//    }
+//}
+
 
 
 class ContentManager{
-    
-    //static let cellIdPrefix = "cell"
     
     static let headerLabelFontSizeSuperCell: CGFloat = 14
     static let subHeaderLabelFontSizeSuperCell: CGFloat = 22
@@ -50,114 +60,87 @@ class ContentManager{
     static let globalLightBlue = UIColor(displayP3Red: 95/255.0, green: 172/255.0, blue: 223/255.0, alpha: 1.0)
     static let labelLeftRightPadding: CGFloat = 8
     static let NUMBER_OF_CELLS = 16
-    private static let SHADOW_IMAGE_NAME = "20-homepage-image-shadow"
+    static let SHADOW_IMAGE_NAME = "20-homepage-image-shadow"
+    static let UP_ARROW_IMAGE_NAME = "white-up-arrow"
+    static let DOWN_ARROW_IMAGE_NAME = "white-down-arrow"
     private static let CSPLAB_CHILDREN_COUNT = 4
     static let CSPLAB_CHILDREN_DEFAULT_VISIBILITY = false // false = children not visible by default, true children visible by default
     
-    static let cellToIdMap: Dictionary<Page, Int> = [
-        Page.Home: 0,
-        Page.News: 1,
-        Page.Events: 2,
-        Page.KeyChallenge: 3,
-        Page.ReefRestoration: 4,
-        Page.CSPLab: 5,
-        Page.Learn: 6,
-        Page.Explore: 7,
-        Page.Record: 8,
-        Page.Review: 9,
-        Page.WaterWatch: 10,
-        Page.SeaLevelRise: 11,
-        Page.LectureSeries: 12,
-        Page.FieldActivities: 13,
-        Page.OurPartners: 14,
-        Page.ContactUs: 15,
+    static var arrowImageName = DOWN_ARROW_IMAGE_NAME // arrow is pointing down by default
+    
+    
+    private static var HomepageContent: Dictionary<Page, HomepageCell> = [
+        
+        .Home: HomepageCell(id: 0, page: .Home, parent: .Home, imageName: "1-welcome-home", labelHeader: "Welcome to the", labelSubHeader: "CITIZEN SCIENTIST PROJECT", cellType: .Super),
+        
+        .News: HomepageCell(id: 1, page: .News, parent: .News, imageName: "2-news-home", labelHeader: "CITIZEN SCIENTIST PROJECT", labelSubHeader: "LOCAL NEWS", cellType: .Regular),
+        
+        .Events: HomepageCell(id: 2, page: .Events, parent: .Events, imageName: "3-events-home", labelHeader: "CITIZEN SCIENTIST PROJECT", labelSubHeader: "EVENTS", cellType: .Regular),
+        
+        .KeyChallenge: HomepageCell(id: 3, page: .KeyChallenge, parent: .KeyChallenge, imageName: "4-key-challenge-home", labelHeader: "CSP 2017-18", labelSubHeader: "KEY CHALLENGE", cellType: .Regular),
+        
+        .ReefRestoration: HomepageCell(id: 4, page: .ReefRestoration, parent: .ReefRestoration, imageName: "5-reef-restoration-home", labelHeader: "KEY BISCAYNE", labelSubHeader: "REEF RESTORATION", cellType: .Regular),
+        
+        .CSPLab: HomepageCell(id: 5, page: .CSPLab, parent: .CSPLab, imageName: "6-lab-home-new", labelHeader: "Welcome to the", labelSubHeader: "CSP LAB", cellType: .Super),
+        
+        .Learn: HomepageCell(id: 6, page: .Learn, parent: .CSPLab, imageName: "7-lab-learn", labelHeader: "CSP LAB", labelSubHeader: "LEARN", cellType: .Regular),
+        
+        .Explore: HomepageCell(id: 7, page: .Explore, parent: .CSPLab, imageName: "8-lab-explore", labelHeader: "CSP LAB", labelSubHeader: "EXPLORE", cellType: .Regular),
+        
+        .Record: HomepageCell(id: 8, page: .Record, parent: .CSPLab, imageName: "9-lab-record", labelHeader: "CSP LAB", labelSubHeader: "RECORD", cellType: .Regular),
+        
+        .Review: HomepageCell(id: 9, page: .Review, parent: .CSPLab, imageName: "10-lab-review", labelHeader: "CSP LAB", labelSubHeader: "REVIEW", cellType: .Regular),
+        
+        .WaterWatch: HomepageCell(id: 10, page: .WaterWatch, parent: .WaterWatch, imageName: "11-water-watch-home", labelHeader: "KEY BISCAYNE", labelSubHeader: "WATER WATCH", cellType: .Regular),
+        
+        .SeaLevelRise: HomepageCell(id: 11, page: .SeaLevelRise, parent: .SeaLevelRise, imageName: "12-sea-level-home", labelHeader: "KEY BISCAYNE", labelSubHeader: "SEA LEVEL RISE", cellType: .Regular),
+        
+        .LectureSeries: HomepageCell(id: 12, page: .LectureSeries, parent: .LectureSeries, imageName: "13-lectures-home", labelHeader: "CITIZEN SCIENTIST PROJECT", labelSubHeader: "LECTURE SERIES", cellType: .Regular),
+        
+        .FieldActivities: HomepageCell(id: 13, page: .FieldActivities, parent: .FieldActivities, imageName: "14-field-activities-home", labelHeader: "CITIZEN SCIENTIST PROJECT", labelSubHeader: "FIELD ACTIVITIES", cellType: .Regular),
+        
+        .OurPartners: HomepageCell(id: 14, page: .OurPartners, parent: .OurPartners, imageName: "15-partners-home", labelHeader: "CITIZEN SCIENTIST PROJECT", labelSubHeader: "OUR PARTNERS", cellType: .Regular),
+        
+        .ContactUs: HomepageCell(id: 15, page: .ContactUs, parent: .ContactUs, imageName: "16-contact-home", labelHeader: "CITIZEN SCIENTIST PROJECT", labelSubHeader: "CONTACT US", cellType: .Regular),
     ]
     
-    static let IdToCellMap: Dictionary<Int, Page> = [
-        0: Page.Home,
-        1: Page.News,
-        2: Page.Events,
-        3: Page.KeyChallenge,
-        4: Page.ReefRestoration,
-        5: Page.CSPLab,
-        6: Page.Learn,
-        7: Page.Explore,
-        8: Page.Record,
-        9: Page.Review,
-        10: Page.WaterWatch,
-        11: Page.SeaLevelRise,
-        12: Page.LectureSeries,
-        13: Page.FieldActivities,
-        14: Page.OurPartners,
-        15: Page.ContactUs,
-    ]
-    
-    static let cellParentMap: Dictionary<Page, Page> = [
-        Page.Home: Page.Home,
-        Page.News: Page.News,
-        Page.Events: Page.Events,
-        Page.KeyChallenge: Page.KeyChallenge,
-        Page.ReefRestoration: Page.ReefRestoration,
-        Page.CSPLab: Page.CSPLab,
-        Page.Learn: Page.CSPLab,
-        Page.Explore: Page.CSPLab,
-        Page.Record: Page.CSPLab,
-        Page.Review: Page.CSPLab,
-        Page.WaterWatch: Page.WaterWatch,
-        Page.SeaLevelRise: Page.SeaLevelRise,
-        Page.LectureSeries: Page.LectureSeries,
-        Page.FieldActivities: Page.FieldActivities,
-        Page.OurPartners: Page.OurPartners,
-        Page.ContactUs: Page.ContactUs,
-    ]
-    
-    class func fetchCellContent() -> [CellContent]
+    class func fetchCellContent() -> [HomepageCell]
     {
         return getContentData()
     }
     
-    private class func getContentData() -> [CellContent]
-    {
-        let labels = getContentLabels()
-        let imageName_Type = getContentImageNames()
-        let cellExpandableProperty = getCellsExpandableProperty()
-        
-        // Get the minimum of the number of elements in labelData and imageNames
-        // Ideally every image name should have a corresponding pair of label names. 1:1 relationship
-        let numbOfLabels = labels.count
-        let numbOfImageNames = imageName_Type.count
-        let numbOfCellProperties = cellExpandableProperty.count
-        let numbOfIterations = min(numbOfLabels, min(numbOfImageNames, numbOfCellProperties))
-        
-        var contentData = [CellContent]()
-        
-        for index in 0..<numbOfIterations{
-            
-            let imageName = imageName_Type[index].imageName
-            let cellType = imageName_Type[index].cellType
-            let expandableProperty = cellExpandableProperty[index]
-            let label1 = labels[index][0]
-            let label2 = labels[index][1]
-            let cellLabelsProperties = getCellLabelsProperties(cellType: cellType)
-            
-            
-            let indexCell = IdToCellMap[index] // cell corresponding to index
-            let parentCell = cellParentMap[indexCell!] // parent of the cell
-            let parentId = cellToIdMap[parentCell!] // id of the parent cell. Id is the index position in [CellContent]
-            
-            // Set parent id to self id by default
-            let cellContent = CellContent(id: index, imageName: imageName, shadowImageName: SHADOW_IMAGE_NAME, labelHeader: label1, labelSubHeader: label2, cellType: cellType, labelsPropetries: cellLabelsProperties, expandableProperty: expandableProperty, parentId: parentId!)
-            
-            contentData.append(cellContent)
-        }
-        
-        return contentData
-        
+    private class func getNumberOfCells() -> Int {
+        return HomepageContent.count
     }
     
-    
-    private class func getCellLabelsProperties(cellType: CellContent.CellType) -> CellLabelsProperties
+    private class func getContentData() -> [HomepageCell]
     {
+        let numbOfCells = ContentManager.getNumberOfCells()
+        var contentData = [HomepageCell?](repeating: nil, count: numbOfCells)
+        
+        let pages = Array(HomepageContent.keys)
+        
+        for page in pages {
+            
+            if var cell = HomepageContent[page] {
+                // get Expandable property
+                cell.expandableProperty = getCellExpandableProperty(cell: cell)
+                // Insert HomepageCell at position specified in the cell id property
+                let index = cell.id
+                contentData[index] = cell
+            }
+            
+        }
+        
+        return contentData as! [HomepageCell]
+    }
+
+    // Used by the CollectionViewCell to set up label properties
+    class func getCellLabelsProperties(cell: HomepageCell) -> CellLabelsProperties
+    {
+        
+        let cellType = cell.cellType
+        
         var cellLabelsProperties = CellLabelsProperties()
         var headerLabelProperties = LabelProperties()
         var subHeaderLabelProperties = LabelProperties()
@@ -184,65 +167,33 @@ class ContentManager{
         return cellLabelsProperties
     }
     
-    private class func getContentLabels() -> [[String]]
-    {
-        let labelData = [
-            ["Welcome to the","CITIZEN SCIENTIST PROJECT"], // 1
-            ["CITIZEN SCIENTIST PROJECT","LOCAL NEWS"], // 2
-            ["CITIZEN SCIENTIST PROJECT","EVENTS"], // 3
-            ["CSP 2017-18","KEY CHALLENGE"], // 4
-            ["KEY BISCAYNE","REEF RESTORATION"], // 5
-            ["Welcome to the","CSP LAB"], // 6
-            ["CSP LAB","LEARN"], // 6.1
-            ["CSP LAB","EXPLORE"], // 6.2
-            ["CSP LAB","RECORD"], // 6.3
-            ["CSP LAB","REVIEW"], // 6.4
-            ["KEY BISCAYNE","WATER WATCH"], // 7
-            ["KEY BISCAYNE","SEA LEVEL RISE"], // 8
-            ["CITIZEN SCIENTIST PROJECT","LECTURE SERIES"], // 9
-            ["CITIZEN SCIENTIST PROJECT","FIELD ACTIVITIES"], // 10
-            ["CITIZEN SCIENTIST PROJECT","OUR PARTNERS"], // 11
-            ["CITIZEN SCIENTIST PROJECT","CONTACT US"], // 12
-        ]
-        
-        return labelData
-    }
     
-    private class func getContentImageNames() -> [(imageName: String, cellType: CellContent.CellType)]{
+    class func getCellExpandableProperty(cell: HomepageCell) -> Expandable {
         
-        var imageName_Type: [(imageName: String, cellType: CellContent.CellType)] = []
-        imageName_Type.append(("1-welcome-home", .Super))
-        imageName_Type.append(("2-news-home", .Regular))
-        imageName_Type.append(("3-events-home", .Regular))
-        imageName_Type.append(("4-key-challenge-home", .Regular))
-        imageName_Type.append(("5-reef-restoration-home", .Regular))
-        imageName_Type.append(("6-lab-home-new", .Super))
-        imageName_Type.append(("7-lab-learn", .Regular))
-        imageName_Type.append(("8-lab-explore", .Regular))
-        imageName_Type.append(("9-lab-record", .Regular))
-        imageName_Type.append(("10-lab-review", .Regular))
-        imageName_Type.append(("11-water-watch-home", .Regular))
-        imageName_Type.append(("12-sea-level-home", .Regular))
-        imageName_Type.append(("13-lectures-home", .Regular))
-        imageName_Type.append(("14-field-activities-home", .Regular))
-        imageName_Type.append(("15-partners-home", .Regular))
-        imageName_Type.append(("16-contact-home", .Regular))
+        let page = cell.page
         
-        return imageName_Type
-    }
-    
-    private class func getCellsExpandableProperty() -> [Expandable] {
-        var result: [Expandable] = []
-        for _ in 0..<NUMBER_OF_CELLS {
-            let property = Expandable(isExpanded: true, childrenCount: 0) // default
-            result.append(property)
+        switch page {
+            
+        case .CSPLab:
+            return Expandable(isExpanded: CSPLAB_CHILDREN_DEFAULT_VISIBILITY, childrenCount: CSPLAB_CHILDREN_COUNT)
+        default:
+            return Expandable(isExpanded: true, childrenCount: 0)
+            
         }
+    }
+    
+    class func getPageId(page: Page) -> Int {
+        return HomepageContent[page]!.id
+    }
+    
+    class func getPageChildren(page: Page) -> [Page] {
+        var children = [Page]()
         
-        // Change CSP Lab Expandable property
-        let cspLabCellId = ContentManager.cellToIdMap[Page.CSPLab]
-        result[cspLabCellId!].isExpanded = CSPLAB_CHILDREN_DEFAULT_VISIBILITY
-        result[cspLabCellId!].childrenCount = CSPLAB_CHILDREN_COUNT
-        
-        return result
+        for (_, cell) in HomepageContent {
+            if (cell.page != cell.parent) && (cell.parent == page) {
+                children.append(cell.page)
+            }
+        }
+        return children
     }
 }

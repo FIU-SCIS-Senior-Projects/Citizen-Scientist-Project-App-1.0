@@ -40,10 +40,11 @@ enum Page{
     case FieldActivities
     case OurPartners
     case ContactUs
+    case AboutUs
     
     private func page() -> NavigationPage{
         switch self {
-            case .Home: return NavigationPage(segueId: "segueToHome") // TODO: verify this is the actual id
+            case .Home: return NavigationPage(segueId: "segueToHome")
             case .News: return NavigationPage(segueId: "segueToNews")
             case .Events: return NavigationPage(segueId: "segueToEvents")
             case .KeyChallenge: return NavigationPage(segueId: "segueToKeyChallenge")
@@ -59,11 +60,12 @@ enum Page{
             case .FieldActivities: return NavigationPage(segueId: "segueToFieldActivities")
             case .OurPartners: return NavigationPage(segueId: "segueToOurPartners")
             case .ContactUs: return NavigationPage(segueId: "segueToContactUs")
+            case .AboutUs: return NavigationPage(segueId: "segueToAboutUs")
         }
         
     }
     
-    func getSegueId() -> String {
+    private func getSegueId() -> String {
         switch self {
             case .Home: return "segueToHome"
             case .News: return "segueToNews"
@@ -81,6 +83,7 @@ enum Page{
             case .FieldActivities: return "segueToFieldActivities"
             case .OurPartners: return "segueToOurPartners"
             case .ContactUs: return "segueToContactUs"
+            case .AboutUs: return "segueToAboutUs"
         }
     }
     

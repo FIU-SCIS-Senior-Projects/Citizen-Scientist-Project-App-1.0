@@ -11,14 +11,12 @@ import UIKit
 let RGB: CGFloat = 255.0
 let fullOpacity: CGFloat = 1.0
 
-//TODO: write comments
+
 class ViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
     @IBOutlet weak var collectionView: UICollectionView!
     
-    var cspLabExpanded = ContentManager.CSPLAB_CHILDREN_DEFAULT_VISIBILITY
-    
-    var cellContent: [CellContent] = ContentManager.fetchCellContent()
+    var cellContent: [HomepageCell] = ContentManager.fetchCellContent()
     var sectionFooter: [Icon] = SectionFooter.fetchIcons()
     
     struct StoryBoard {
@@ -59,8 +57,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        let count = cellContent.numberOfExpandedCells()
-        return  count// Returns the number of visible cells
+        return  cellContent.numberOfExpandedCells() // Returns the number of visible cells
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
@@ -69,7 +66,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         let cellCont = cellContent[index]
         let screenWidth = self.collectionView.frame.size.width
         
-        if cellCont.cellType == CellContent.CellType.Super {
+        if cellCont.cellType == HomepageCell.CellType.Super {
             return CGSize(width: screenWidth, height: screenWidth/2) // full width
         }
         return CGSize(width: (screenWidth/2), height: screenWidth/2);
@@ -83,10 +80,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         let screenWidth = self.collectionView.frame.size.width
         
         let index = indexPath.row
-        guard let cellCont = cellContent.nextAvailableCell(fromIndex: index) else {
-            print("Unable to get the next available cell. Make sure there is no error in the data.")
-            return cell
-        }
+        let cellCont = cellContent.nextAvailableCell(fromIndex: index)
         
         cell.setUp(content: cellCont, screenWidth: screenWidth)
         cell.layer.borderColor = UIColor.white.cgColor
@@ -99,51 +93,62 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     // MARK: - Click Listener Event for a specific cell in the UICollectionView
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        
         switch indexPath.row {
-            // Welcome cell does not take you anywhere
-            case ContentManager.cellToIdMap[.News]!: Page.News.goTo(from: self)
-            case ContentManager.cellToIdMap[.Events]!: Page.Events.goTo(from: self)
-            case ContentManager.cellToIdMap[.KeyChallenge]!: Page.KeyChallenge.goTo(from: self)
-            case ContentManager.cellToIdMap[.ReefRestoration]!: Page.ReefRestoration.goTo(from: self)
-            case ContentManager.cellToIdMap[.CSPLab]!: expandCollapseCSPLab()
-            case ContentManager.cellToIdMap[.Learn]!: Page.Learn.goTo(from: self)
-            case ContentManager.cellToIdMap[.Explore]!: Page.Explore.goTo(from: self)
-            case ContentManager.cellToIdMap[.Record]!: Page.Record.goTo(from: self)
-            case ContentManager.cellToIdMap[.Review]!: Page.Review.goTo(from: self)
-            case ContentManager.cellToIdMap[.WaterWatch]!: Page.WaterWatch.goTo(from: self)
-            case ContentManager.cellToIdMap[.SeaLevelRise]!: Page.SeaLevelRise.goTo(from: self)
-            case ContentManager.cellToIdMap[.LectureSeries]!: Page.LectureSeries.goTo(from: self)
-            case ContentManager.cellToIdMap[.FieldActivities]!: Page.FieldActivities.goTo(from: self)
-            case ContentManager.cellToIdMap[.OurPartners]!: Page.OurPartners.goTo(from: self)
-            case ContentManager.cellToIdMap[.ContactUs]!: Page.ContactUs.goTo(from: self)
+            case ContentManager.getPageId(page: .Home): Page.AboutUs.goTo(from: self)
+            case ContentManager.getPageId(page: .News): Page.News.goTo(from: self)
+            case ContentManager.getPageId(page: .Events): Page.Events.goTo(from: self)
+            case ContentManager.getPageId(page: .KeyChallenge): Page.KeyChallenge.goTo(from: self)
+            case ContentManager.getPageId(page: .ReefRestoration): Page.ReefRestoration.goTo(from: self)
+            case ContentManager.getPageId(page: .CSPLab): expandCollapseCSPLab()
+            case ContentManager.getPageId(page: .Learn): Page.Learn.goTo(from: self)
+            case ContentManager.getPageId(page: .Explore): Page.Explore.goTo(from: self)
+            case ContentManager.getPageId(page: .Record): Page.Record.goTo(from: self)
+            case ContentManager.getPageId(page: .Review): Page.Review.goTo(from: self)
+            case ContentManager.getPageId(page: .WaterWatch): Page.WaterWatch.goTo(from: self)
+            case ContentManager.getPageId(page: .SeaLevelRise): Page.SeaLevelRise.goTo(from: self)
+            case ContentManager.getPageId(page: .LectureSeries): Page.LectureSeries.goTo(from: self)
+            case ContentManager.getPageId(page: .FieldActivities): Page.FieldActivities.goTo(from: self)
+            case ContentManager.getPageId(page: .OurPartners): Page.OurPartners.goTo(from: self)
+            case ContentManager.getPageId(page: .ContactUs): Page.ContactUs.goTo(from: self)
             default: print("Cell \(indexPath.row) clicked!")
         }
         
     }
     
-    func expandCollapseCSPLab()
+    private func expandCollapseCSPLab()
     {
+        // Change CSP Lab expandable property to its opposite
         cspLabExpanded = !cspLabExpanded
+        
         // Cells to be expanded/collapsed when CSPLab Cell is clicked
-        // TODO: dynamically get the CSPLab children
-        let indexPaths: [IndexPath] = [
-            IndexPath(row: ContentManager.cellToIdMap[.Learn]!, section: 0),
-            IndexPath(row: ContentManager.cellToIdMap[.Explore]!, section: 0),
-            IndexPath(row: ContentManager.cellToIdMap[.Record]!, section: 0),
-            IndexPath(row: ContentManager.cellToIdMap[.Review]!, section: 0),
-            ]
+        var indexPaths = [IndexPath]()
+        let cspLabChildren = ContentManager.getPageChildren(page: .CSPLab) // dynamically get the CSPLab children
+        for page in cspLabChildren {
+            indexPaths.append(IndexPath(row: ContentManager.getPageId(page: page), section: 0))
+        }
         
         collectionView.performBatchUpdates({
             if cspLabExpanded {
                 collectionView.insertItems(at: indexPaths)
+                
+                // Updates the arrow image to 'up' when CSP Lab children are 'expanded'
+                ContentManager.arrowImageName = ContentManager.UP_ARROW_IMAGE_NAME
+                
             }else{
                 collectionView.deleteItems(at: indexPaths)
+                
+                // Updates the arrow image to 'down' when CSP Lab children are 'hidden'
+                ContentManager.arrowImageName = ContentManager.DOWN_ARROW_IMAGE_NAME
+                
             }
             
+            // This forces the CSP Lab cell to load before other cells. Arrow change animation speed is significantly increased
+            let cspLabIndexPath = IndexPath(row: ContentManager.getPageId(page: .CSPLab), section: 0)
+            self.collectionView.reloadItems(at: [cspLabIndexPath])
             
-            let cspLabCellId = ContentManager.cellToIdMap[.CSPLab]
-            cellContent[cspLabCellId!].expandableProperty.isExpanded = cspLabExpanded
+            // Updates CSP Lab expandable property
+            let cspLabCellId = ContentManager.getPageId(page: .CSPLab)
+            cellContent[cspLabCellId].expandableProperty?.isExpanded = cspLabExpanded
             
         }, completion: { (true) in
             self.collectionView.reloadItems(at: self.collectionView.indexPathsForVisibleItems)
