@@ -30,6 +30,9 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // Update Id of cell content. Hidden cells should not have a valid id
+        ContentManager.updateCellContentIds(cells: &cellContent)
 
         collectionView.dataSource = self
         collectionView.delegate = self
