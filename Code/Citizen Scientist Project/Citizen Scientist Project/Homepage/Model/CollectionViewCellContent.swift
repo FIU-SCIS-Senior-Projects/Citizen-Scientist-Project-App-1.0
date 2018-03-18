@@ -35,6 +35,15 @@ struct HomepageCell {
         self.cellType = cellType
     }
     
+    var setCellId:Int {
+        get {
+            return id
+        }
+        mutating set(ID) {
+            id = ID
+        }
+    }
+    
     
 }
 

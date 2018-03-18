@@ -94,22 +94,22 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         switch indexPath.row {
-            case ContentManager.getPageId(page: .Home): Page.AboutUs.goTo(from: self)
-            case ContentManager.getPageId(page: .News): Page.News.goTo(from: self)
-            case ContentManager.getPageId(page: .Events): Page.Events.goTo(from: self)
-            case ContentManager.getPageId(page: .KeyChallenge): Page.KeyChallenge.goTo(from: self)
-            case ContentManager.getPageId(page: .ReefRestoration): Page.ReefRestoration.goTo(from: self)
-            case ContentManager.getPageId(page: .CSPLab): expandCollapseCSPLab()
-            case ContentManager.getPageId(page: .Learn): Page.Learn.goTo(from: self)
-            case ContentManager.getPageId(page: .Explore): Page.Explore.goTo(from: self)
-            case ContentManager.getPageId(page: .Record): Page.Record.goTo(from: self)
-            case ContentManager.getPageId(page: .Review): Page.Review.goTo(from: self)
-            case ContentManager.getPageId(page: .WaterWatch): Page.WaterWatch.goTo(from: self)
-            case ContentManager.getPageId(page: .SeaLevelRise): Page.SeaLevelRise.goTo(from: self)
-            case ContentManager.getPageId(page: .LectureSeries): Page.LectureSeries.goTo(from: self)
-            case ContentManager.getPageId(page: .FieldActivities): Page.FieldActivities.goTo(from: self)
-            case ContentManager.getPageId(page: .OurPartners): Page.OurPartners.goTo(from: self)
-            case ContentManager.getPageId(page: .ContactUs): Page.ContactUs.goTo(from: self)
+            case cellContent.getCellId(page: .Home): Page.AboutUs.goTo(from: self)
+            case cellContent.getCellId(page: .News): Page.News.goTo(from: self)
+            case cellContent.getCellId(page: .Events): Page.Events.goTo(from: self)
+            case cellContent.getCellId(page: .KeyChallenge): Page.KeyChallenge.goTo(from: self)
+            case cellContent.getCellId(page: .ReefRestoration): Page.ReefRestoration.goTo(from: self)
+            case cellContent.getCellId(page: .CSPLab): expandCollapseCSPLab()
+            case cellContent.getCellId(page: .Learn): Page.Learn.goTo(from: self)
+            case cellContent.getCellId(page: .Explore): Page.Explore.goTo(from: self)
+            case cellContent.getCellId(page: .Record): Page.Record.goTo(from: self)
+            case cellContent.getCellId(page: .Review): Page.Review.goTo(from: self)
+            case cellContent.getCellId(page: .WaterWatch): Page.WaterWatch.goTo(from: self)
+            case cellContent.getCellId(page: .SeaLevelRise): Page.SeaLevelRise.goTo(from: self)
+            case cellContent.getCellId(page: .LectureSeries): Page.LectureSeries.goTo(from: self)
+            case cellContent.getCellId(page: .FieldActivities): Page.FieldActivities.goTo(from: self)
+            case cellContent.getCellId(page: .OurPartners): Page.OurPartners.goTo(from: self)
+            case cellContent.getCellId(page: .ContactUs): Page.ContactUs.goTo(from: self)
             default: print("Cell \(indexPath.row) clicked!")
         }
         
@@ -118,17 +118,32 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     private func expandCollapseCSPLab()
     {
         // Change CSP Lab expandable property to its opposite
-        cspLabExpanded = !cspLabExpanded
+        let cspLabIndex = cellContent.getCellId(page: .CSPLab)
+        var cspLabExpanded = cellContent[cspLabIndex].expandableProperty?.isExpanded
+        cspLabExpanded = !cspLabExpanded!
+        cellContent[cspLabIndex].expandableProperty?.isExpanded = cspLabExpanded!
         
+        // Update Id of cell content. Hidden cells should not have a valid id
+        if cspLabExpanded! {
+            ContentManager.updateCellContentIds(cells: &cellContent)
+        }
+        
+        // If expanded, update all cells' id before getting the cell ids for CSP Lab children
+        // If not expanded, update all cells' id after getting cell ids for CSP Lab children
         // Cells to be expanded/collapsed when CSPLab Cell is clicked
         var indexPaths = [IndexPath]()
         let cspLabChildren = ContentManager.getPageChildren(page: .CSPLab) // dynamically get the CSPLab children
         for page in cspLabChildren {
-            indexPaths.append(IndexPath(row: ContentManager.getPageId(page: page), section: 0))
+            indexPaths.append(IndexPath(row: cellContent.getCellId(page: page), section: 0))
+        }
+        
+        // Update Id of cell content. Hidden cells should not have a valid id
+        if !cspLabExpanded! {
+            ContentManager.updateCellContentIds(cells: &cellContent)
         }
         
         collectionView.performBatchUpdates({
-            if cspLabExpanded {
+            if cspLabExpanded! {
                 collectionView.insertItems(at: indexPaths)
                 
                 // Updates the arrow image to 'up' when CSP Lab children are 'expanded'
@@ -143,17 +158,18 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
             }
             
             // This forces the CSP Lab cell to load before other cells. Arrow change animation speed is significantly increased
-            let cspLabIndexPath = IndexPath(row: ContentManager.getPageId(page: .CSPLab), section: 0)
+            let cspLabIndexPath = IndexPath(row: cellContent.getCellId(page: .CSPLab), section: 0)
             self.collectionView.reloadItems(at: [cspLabIndexPath])
             
             // Updates CSP Lab expandable property
-            let cspLabCellId = ContentManager.getPageId(page: .CSPLab)
-            cellContent[cspLabCellId].expandableProperty?.isExpanded = cspLabExpanded
+            let cspLabCellId = cellContent.getCellId(page: .CSPLab)
+            cellContent[cspLabCellId].expandableProperty?.isExpanded = cspLabExpanded!
             
         }, completion: { (true) in
             self.collectionView.reloadItems(at: self.collectionView.indexPathsForVisibleItems)
         })
     }
+    
     
     // MARK: - Section Footer View
     

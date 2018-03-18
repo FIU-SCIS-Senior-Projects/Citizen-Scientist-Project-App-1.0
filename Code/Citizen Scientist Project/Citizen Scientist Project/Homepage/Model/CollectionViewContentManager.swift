@@ -9,16 +9,16 @@
 import Foundation
 import UIKit
 
-var cspLabExpanded = ContentManager.CSPLAB_CHILDREN_DEFAULT_VISIBILITY
 
 extension Array where Iterator.Element == HomepageCell {
     func nextAvailableCell(fromIndex: Int) -> HomepageCell{
         
         let cpsLabIndex = ContentManager.getPageId(page: .CSPLab)
         let cspLabChildren = self[cpsLabIndex].expandableProperty?.childrenCount
+        let cspLabExpandedProperty = self[cpsLabIndex].expandableProperty?.isExpanded
         
         // check if CSP Lab cell has been expanded
-        if cspLabExpanded == false  && fromIndex > cpsLabIndex {
+        if cspLabExpandedProperty == false  && fromIndex > cpsLabIndex {
             return self[fromIndex + cspLabChildren!]
         }
         return self[fromIndex]
@@ -39,6 +39,13 @@ extension Array where Iterator.Element == HomepageCell {
         }
         return count
     }
+    
+    func getCellId(page: Page) -> Int {
+        let index = ContentManager.getPageId(page: page)
+        return self[index].id
+    }
+    
+    
 }
 
 //TODO: extend Page enum to get Homepage Id
@@ -71,37 +78,37 @@ class ContentManager{
     
     private static var HomepageContent: Dictionary<Page, HomepageCell> = [
         
-        .Home: HomepageCell(id: 0, page: .Home, parent: .Home, imageName: "1-welcome-home", labelHeader: "Welcome to the", labelSubHeader: "CITIZEN SCIENTIST PROJECT", cellType: .Super),
+        .Home: HomepageCell(id: nextPageId(), page: .Home, parent: .Home, imageName: "1-welcome-home", labelHeader: "Welcome to the", labelSubHeader: "CITIZEN SCIENTIST PROJECT", cellType: .Super),
         
-        .News: HomepageCell(id: 1, page: .News, parent: .News, imageName: "2-news-home", labelHeader: "CITIZEN SCIENTIST PROJECT", labelSubHeader: "LOCAL NEWS", cellType: .Regular),
+        .News: HomepageCell(id: nextPageId(), page: .News, parent: .News, imageName: "2-news-home", labelHeader: "CITIZEN SCIENTIST PROJECT", labelSubHeader: "LOCAL NEWS", cellType: .Regular),
         
-        .Events: HomepageCell(id: 2, page: .Events, parent: .Events, imageName: "3-events-home", labelHeader: "CITIZEN SCIENTIST PROJECT", labelSubHeader: "EVENTS", cellType: .Regular),
+        .Events: HomepageCell(id: nextPageId(), page: .Events, parent: .Events, imageName: "3-events-home", labelHeader: "CITIZEN SCIENTIST PROJECT", labelSubHeader: "EVENTS", cellType: .Regular),
         
-        .KeyChallenge: HomepageCell(id: 3, page: .KeyChallenge, parent: .KeyChallenge, imageName: "4-key-challenge-home", labelHeader: "CSP 2017-18", labelSubHeader: "KEY CHALLENGE", cellType: .Regular),
+        .KeyChallenge: HomepageCell(id: nextPageId(), page: .KeyChallenge, parent: .KeyChallenge, imageName: "4-key-challenge-home", labelHeader: "CSP 2017-18", labelSubHeader: "KEY CHALLENGE", cellType: .Regular),
         
-        .ReefRestoration: HomepageCell(id: 4, page: .ReefRestoration, parent: .ReefRestoration, imageName: "5-reef-restoration-home", labelHeader: "KEY BISCAYNE", labelSubHeader: "REEF RESTORATION", cellType: .Regular),
+        .ReefRestoration: HomepageCell(id: nextPageId(), page: .ReefRestoration, parent: .ReefRestoration, imageName: "5-reef-restoration-home", labelHeader: "KEY BISCAYNE", labelSubHeader: "REEF RESTORATION", cellType: .Regular),
         
-        .CSPLab: HomepageCell(id: 5, page: .CSPLab, parent: .CSPLab, imageName: "6-lab-home-new", labelHeader: "Welcome to the", labelSubHeader: "CSP LAB", cellType: .Super),
+        .CSPLab: HomepageCell(id: nextPageId(), page: .CSPLab, parent: .CSPLab, imageName: "6-lab-home-new", labelHeader: "Welcome to the", labelSubHeader: "CSP LAB", cellType: .Super),
         
-        .Learn: HomepageCell(id: 6, page: .Learn, parent: .CSPLab, imageName: "7-lab-learn", labelHeader: "CSP LAB", labelSubHeader: "LEARN", cellType: .Regular),
+        .Learn: HomepageCell(id: nextPageId(), page: .Learn, parent: .CSPLab, imageName: "7-lab-learn", labelHeader: "CSP LAB", labelSubHeader: "LEARN", cellType: .Regular),
         
-        .Explore: HomepageCell(id: 7, page: .Explore, parent: .CSPLab, imageName: "8-lab-explore", labelHeader: "CSP LAB", labelSubHeader: "EXPLORE", cellType: .Regular),
+        .Explore: HomepageCell(id: nextPageId(), page: .Explore, parent: .CSPLab, imageName: "8-lab-explore", labelHeader: "CSP LAB", labelSubHeader: "EXPLORE", cellType: .Regular),
         
-        .Record: HomepageCell(id: 8, page: .Record, parent: .CSPLab, imageName: "9-lab-record", labelHeader: "CSP LAB", labelSubHeader: "RECORD", cellType: .Regular),
+        .Record: HomepageCell(id: nextPageId(), page: .Record, parent: .CSPLab, imageName: "9-lab-record", labelHeader: "CSP LAB", labelSubHeader: "RECORD", cellType: .Regular),
         
-        .Review: HomepageCell(id: 9, page: .Review, parent: .CSPLab, imageName: "10-lab-review", labelHeader: "CSP LAB", labelSubHeader: "REVIEW", cellType: .Regular),
+        .Review: HomepageCell(id: nextPageId(), page: .Review, parent: .CSPLab, imageName: "10-lab-review", labelHeader: "CSP LAB", labelSubHeader: "REVIEW", cellType: .Regular),
         
-        .WaterWatch: HomepageCell(id: 10, page: .WaterWatch, parent: .WaterWatch, imageName: "11-water-watch-home", labelHeader: "KEY BISCAYNE", labelSubHeader: "WATER WATCH", cellType: .Regular),
+        .WaterWatch: HomepageCell(id: nextPageId(), page: .WaterWatch, parent: .WaterWatch, imageName: "11-water-watch-home", labelHeader: "KEY BISCAYNE", labelSubHeader: "WATER WATCH", cellType: .Regular),
         
-        .SeaLevelRise: HomepageCell(id: 11, page: .SeaLevelRise, parent: .SeaLevelRise, imageName: "12-sea-level-home", labelHeader: "KEY BISCAYNE", labelSubHeader: "SEA LEVEL RISE", cellType: .Regular),
+        .SeaLevelRise: HomepageCell(id: nextPageId(), page: .SeaLevelRise, parent: .SeaLevelRise, imageName: "12-sea-level-home", labelHeader: "KEY BISCAYNE", labelSubHeader: "SEA LEVEL RISE", cellType: .Regular),
         
-        .LectureSeries: HomepageCell(id: 12, page: .LectureSeries, parent: .LectureSeries, imageName: "13-lectures-home", labelHeader: "CITIZEN SCIENTIST PROJECT", labelSubHeader: "LECTURE SERIES", cellType: .Regular),
+        .LectureSeries: HomepageCell(id: nextPageId(), page: .LectureSeries, parent: .LectureSeries, imageName: "13-lectures-home", labelHeader: "CITIZEN SCIENTIST PROJECT", labelSubHeader: "LECTURE SERIES", cellType: .Regular),
         
-        .FieldActivities: HomepageCell(id: 13, page: .FieldActivities, parent: .FieldActivities, imageName: "14-field-activities-home", labelHeader: "CITIZEN SCIENTIST PROJECT", labelSubHeader: "FIELD ACTIVITIES", cellType: .Regular),
+        .FieldActivities: HomepageCell(id: nextPageId(), page: .FieldActivities, parent: .FieldActivities, imageName: "14-field-activities-home", labelHeader: "CITIZEN SCIENTIST PROJECT", labelSubHeader: "FIELD ACTIVITIES", cellType: .Regular),
         
-        .OurPartners: HomepageCell(id: 14, page: .OurPartners, parent: .OurPartners, imageName: "15-partners-home", labelHeader: "CITIZEN SCIENTIST PROJECT", labelSubHeader: "OUR PARTNERS", cellType: .Regular),
+        .OurPartners: HomepageCell(id: nextPageId(), page: .OurPartners, parent: .OurPartners, imageName: "15-partners-home", labelHeader: "CITIZEN SCIENTIST PROJECT", labelSubHeader: "OUR PARTNERS", cellType: .Regular),
         
-        .ContactUs: HomepageCell(id: 15, page: .ContactUs, parent: .ContactUs, imageName: "16-contact-home", labelHeader: "CITIZEN SCIENTIST PROJECT", labelSubHeader: "CONTACT US", cellType: .Regular),
+        .ContactUs: HomepageCell(id: nextPageId(), page: .ContactUs, parent: .ContactUs, imageName: "16-contact-home", labelHeader: "CITIZEN SCIENTIST PROJECT", labelSubHeader: "CONTACT US", cellType: .Regular),
     ]
     
     class func fetchCellContent() -> [HomepageCell]
@@ -195,5 +202,39 @@ class ContentManager{
             }
         }
         return children
+    }
+    
+    private class func nextPageId() -> Int{
+        struct IDHolder {
+            static var id = 0
+        }
+        let id = IDHolder.id
+        IDHolder.id += 1
+        return id
+    }
+    
+    class func updateCellContentIds(cells: inout [HomepageCell]) {
+        var hiddenCells = 0
+        var invalidCells = 0
+        var invalidId = 1
+        for index in 0..<cells.count {
+            if (cells[index].expandableProperty?.isExpanded)! == false{
+                let children = cells[index].expandableProperty?.childrenCount
+                cells[index].id = index - hiddenCells
+                hiddenCells += children!
+                invalidCells += children!
+            }
+            else {
+                if (invalidCells > 0) && (cells[index].page != cells[index].parent) { // this cell is hidden, therefore no id
+                    cells[index].id = -invalidId // make ids of invalid/hidden cells some unique negative number
+                    invalidId += 1
+                    invalidCells -= 1 // this value returns back to zero after the last hidden children is processed
+                }
+                else {
+                    cells[index].id = index - hiddenCells
+                }
+            }
+            
+        }
     }
 }
