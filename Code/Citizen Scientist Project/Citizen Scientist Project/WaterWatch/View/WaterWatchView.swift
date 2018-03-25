@@ -8,6 +8,10 @@
 
 import UIKit
 
+//protocol WaterWatchViewDelegate: class {
+//    func setUp(content: WaterWatchContent)
+//}
+
 class WaterWatchView: UIView {
     
     @IBOutlet weak var imageView: UIImageView!
@@ -22,7 +26,6 @@ class WaterWatchView: UIView {
     @IBOutlet weak var dissolvedOxygenLinkButton: UIButton!
     @IBOutlet weak var nutrientsLinkButton: UIButton!
     @IBOutlet weak var chlorophyllALinkButton: UIButton!
-    
     
     func setUp(content: WaterWatchContent)
     {
