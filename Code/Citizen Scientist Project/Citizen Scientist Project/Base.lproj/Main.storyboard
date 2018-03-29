@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0zI-XZ-BQA">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Mz7-pG-jEA">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -146,7 +146,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="s6H-fx-AeR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1164" y="-255"/>
+            <point key="canvasLocation" x="-146.40000000000001" y="-255.02248875562222"/>
         </scene>
         <!--Geo Hunt View Controller-->
         <scene sceneID="6uy-Nb-Gfx">
@@ -187,7 +187,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pxM-ul-s89" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-364" y="-255"/>
+            <point key="canvasLocation" x="653.60000000000002" y="-255.02248875562222"/>
         </scene>
         <!--Learn View Controller-->
         <scene sceneID="lnK-eW-4un">
@@ -222,7 +222,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sU2-aU-yA2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="709" y="-255"/>
+            <point key="canvasLocation" x="1725.5999999999999" y="-255.02248875562222"/>
         </scene>
         <!--Explore View Controller-->
         <scene sceneID="luG-3Q-zj9">
@@ -257,7 +257,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xmz-2H-N9Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1800" y="-255"/>
+            <point key="canvasLocation" x="2816.8000000000002" y="-255.02248875562222"/>
         </scene>
         <!--Record View Controller-->
         <scene sceneID="Hg5-pF-d3E">
@@ -292,7 +292,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PrC-C2-pIy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2959" y="-255"/>
+            <point key="canvasLocation" x="3975.1999999999998" y="-255.02248875562222"/>
         </scene>
         <!--Review View Controller-->
         <scene sceneID="bJy-Ls-oon">
@@ -327,7 +327,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xZ0-DA-aUz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3986" y="-229"/>
+            <point key="canvasLocation" x="5002.3999999999996" y="-229.83508245877064"/>
         </scene>
         <!--Key Challenge View Controller-->
         <scene sceneID="ndF-Mn-Tda">
@@ -359,7 +359,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dMw-2p-zKB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4905" y="-229"/>
+            <point key="canvasLocation" x="5922.3999999999996" y="-229.83508245877064"/>
         </scene>
         <!--Sea Level Rise View Controller-->
         <scene sceneID="aku-bo-uZE">
@@ -594,7 +594,7 @@ The Village of Key Biscayne and the Key Biscayne Community Foundation are workin
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DhO-RC-9Cn" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="uch-s1-tHJ" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="5556" y="697"/>
+            <point key="canvasLocation" x="6573.6000000000004" y="696.25187406296857"/>
         </scene>
         <!--Table View Controller-->
         <scene sceneID="W2l-xl-yxU">
@@ -1187,7 +1187,7 @@ The Village of Key Biscayne and the Key Biscayne Community Foundation are workin
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tH4-8y-6ae" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5951" y="4533"/>
+            <point key="canvasLocation" x="6288.8000000000002" y="4532.3838080959522"/>
         </scene>
         <!--Web View Controller-->
         <scene sceneID="Lyz-bx-RKP">
@@ -1252,7 +1252,7 @@ The Village of Key Biscayne and the Key Biscayne Community Foundation are workin
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="66B-xX-6ro" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6588" y="-213"/>
+            <point key="canvasLocation" x="7605.6000000000004" y="-213.64317841079463"/>
         </scene>
         <!--Reef Restoration View Controller-->
         <scene sceneID="9TZ-2L-dN6">
@@ -1616,7 +1616,7 @@ The area around Key Biscayne and Virginia Key is part of the designated critical
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fja-cD-AP4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7396" y="771.36431784107947"/>
+            <point key="canvasLocation" x="8413.6000000000004" y="770.91454272863575"/>
         </scene>
         <!--Status Reef Restoration View Controller-->
         <scene sceneID="ORf-XF-zeu">
@@ -1798,7 +1798,7 @@ We will reschedule it as soon as possible and keep everyone informed of any deve
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VHn-nE-Zys" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="8238" y="2315"/>
+            <point key="canvasLocation" x="8916" y="2313.6431784107949"/>
         </scene>
         <!--Lecture Series View Controller-->
         <scene sceneID="Yfg-t0-XuT">
@@ -1833,7 +1833,7 @@ We will reschedule it as soon as possible and keep everyone informed of any deve
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8dT-7p-NMK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="8158" y="-231"/>
+            <point key="canvasLocation" x="9175.2000000000007" y="-231.63418290854574"/>
         </scene>
         <!--Field Activity View Controller-->
         <scene sceneID="6gM-99-24f">
@@ -1868,7 +1868,7 @@ We will reschedule it as soon as possible and keep everyone informed of any deve
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ed6-pe-Hau" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="8916" y="-255"/>
+            <point key="canvasLocation" x="9933.6000000000004" y="-255.02248875562222"/>
         </scene>
         <!--Events View Controller-->
         <scene sceneID="DC7-fe-0il">
@@ -1903,7 +1903,7 @@ We will reschedule it as soon as possible and keep everyone informed of any deve
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wpb-eA-mL7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="10428" y="-255"/>
+            <point key="canvasLocation" x="11445.6" y="-255.02248875562222"/>
         </scene>
         <!--News View Controller-->
         <scene sceneID="RMW-Ps-OQy">
@@ -1938,7 +1938,7 @@ We will reschedule it as soon as possible and keep everyone informed of any deve
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oMC-1e-hoS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="9625" y="-255"/>
+            <point key="canvasLocation" x="10642.4" y="-255.02248875562222"/>
         </scene>
         <!--About Us View Controller-->
         <scene sceneID="P3u-Jb-Inm">
@@ -1973,7 +1973,7 @@ We will reschedule it as soon as possible and keep everyone informed of any deve
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vRi-Jm-hzO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="11230" y="-255"/>
+            <point key="canvasLocation" x="12247.200000000001" y="-255.02248875562222"/>
         </scene>
         <!--Our Biomes View Controller-->
         <scene sceneID="dsO-GJ-igp">
@@ -2008,7 +2008,7 @@ We will reschedule it as soon as possible and keep everyone informed of any deve
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jpw-ZD-hPz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="11985" y="-255"/>
+            <point key="canvasLocation" x="13002.4" y="-255.02248875562222"/>
         </scene>
         <!--Newsletters View Controller-->
         <scene sceneID="cL4-Wq-ugE">
@@ -2043,7 +2043,7 @@ We will reschedule it as soon as possible and keep everyone informed of any deve
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fqj-GA-NEb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="12806" y="-255"/>
+            <point key="canvasLocation" x="13823.200000000001" y="-255.02248875562222"/>
         </scene>
         <!--Our Partners View Controller-->
         <scene sceneID="pmH-YC-lEr">
@@ -2078,7 +2078,7 @@ We will reschedule it as soon as possible and keep everyone informed of any deve
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cIE-zd-pRV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="13748" y="-255"/>
+            <point key="canvasLocation" x="14765.6" y="-255.02248875562222"/>
         </scene>
         <!--Contact Us View Controller-->
         <scene sceneID="eVg-Fc-5sC">
@@ -2113,7 +2113,7 @@ We will reschedule it as soon as possible and keep everyone informed of any deve
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dYm-YE-M1p" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="14598" y="-255"/>
+            <point key="canvasLocation" x="15615.200000000001" y="-255.02248875562222"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -2727,7 +2727,443 @@ We will reschedule it as soon as possible and keep everyone informed of any deve
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="r3z-O9-Qur" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7174" y="4238"/>
+            <point key="canvasLocation" x="7512.8000000000002" y="4237.3313343328336"/>
+        </scene>
+        <!--Mini Challenge View Controller-->
+        <scene sceneID="sfP-Tu-nh6">
+            <objects>
+                <viewController id="zgW-s1-nEC" customClass="MiniChallengeViewController" customModule="Citizen_Scientist_Project" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jUq-Bv-iux">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="5000"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8J8-uU-Tu4">
+                                <rect key="frame" x="0.0" y="64" width="375" height="4936"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WA9-Qa-Z5H" userLabel="Mini Challenge View">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="3526.5"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mini-challenge-header" translatesAutoresizingMaskIntoConstraints="NO" id="Fgs-Fd-Adk">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="225"/>
+                                            </imageView>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DKh-Xm-cPl" userLabel="Red Box 1">
+                                                <rect key="frame" x="0.0" y="225" width="375" height="779"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2017-18 MINI CHALLENGE #2" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="SPm-Rg-c7S">
+                                                        <rect key="frame" x="16" y="16" width="343" height="24"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" bouncesZoom="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eFU-5C-jgX">
+                                                        <rect key="frame" x="16" y="48" width="343" height="117.5"/>
+                                                        <string key="text">The 2017-18 Mini Challenge #2 focuses on iNaturalist Species observations. To participate, register below and then download the iNaturalist app to add observations to our iNaturalist project.</string>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                    </textView>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lSW-ZZ-cXr">
+                                                        <rect key="frame" x="16" y="173" width="343" height="32"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                        <state key="normal" title=" Download iNaturalist">
+                                                            <color key="titleColor" red="0.37254901959999998" green="0.67450980390000004" blue="0.87450980389999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </state>
+                                                    </button>
+                                                    <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" bouncesZoom="NO" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cOn-SU-gj9">
+                                                        <rect key="frame" x="16" y="212.5" width="343" height="482.5"/>
+                                                        <mutableString key="text">Florida is host to thousands of species of plants and animals.  Some of them are unique just to this region of the country, while some are nonnative or invasive, having been introduced from other countries.
+
+Many of us are familiar with the more visible species: natives like turtles, manatees, green anoles, and mangroves, and nonnatives like iguanas, brown anoles, Burmese pythons, and Australian pine.  However, there are thousands more that go unnoticed in our everyday lives. With advances in technology and more games and apps to keep our minds occupied, we are spending less time noticing the world around us.  Combining technology and environmentalism is new technique that allows people to not just live in the world, but to see it and experience their environment as well.
+</mutableString>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                    </textView>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sig-fI-yUt">
+                                                        <rect key="frame" x="16" y="703" width="343" height="44"/>
+                                                        <color key="backgroundColor" red="0.93485409019999999" green="0.33095580340000003" blue="0.31995838879999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="44" id="Jp3-Ls-AIb"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                                        <state key="normal" title="Make an Observation">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.33296501639999998" green="0.072392754259999997" blue="0.087315432730000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstItem="sig-fI-yUt" firstAttribute="leading" secondItem="DKh-Xm-cPl" secondAttribute="leading" constant="16" id="1wV-W3-qyu"/>
+                                                    <constraint firstItem="lSW-ZZ-cXr" firstAttribute="top" secondItem="eFU-5C-jgX" secondAttribute="bottom" constant="8" id="337-yC-Cya"/>
+                                                    <constraint firstAttribute="trailing" secondItem="sig-fI-yUt" secondAttribute="trailing" constant="16" id="3za-dW-hAv"/>
+                                                    <constraint firstAttribute="trailing" secondItem="lSW-ZZ-cXr" secondAttribute="trailing" constant="16" id="74h-YK-HbN"/>
+                                                    <constraint firstItem="sig-fI-yUt" firstAttribute="top" secondItem="cOn-SU-gj9" secondAttribute="bottom" constant="8" id="9IZ-4D-B6y"/>
+                                                    <constraint firstItem="cOn-SU-gj9" firstAttribute="top" secondItem="lSW-ZZ-cXr" secondAttribute="bottom" constant="8" id="A0V-YQ-dfY"/>
+                                                    <constraint firstAttribute="trailing" secondItem="eFU-5C-jgX" secondAttribute="trailing" constant="16" id="Ab4-7v-ftr"/>
+                                                    <constraint firstItem="eFU-5C-jgX" firstAttribute="leading" secondItem="DKh-Xm-cPl" secondAttribute="leading" constant="16" id="Edb-wD-Rn8"/>
+                                                    <constraint firstItem="cOn-SU-gj9" firstAttribute="leading" secondItem="DKh-Xm-cPl" secondAttribute="leading" constant="16" id="PQv-z9-f2h"/>
+                                                    <constraint firstItem="eFU-5C-jgX" firstAttribute="top" secondItem="SPm-Rg-c7S" secondAttribute="bottom" constant="8" id="WEC-vo-xnH"/>
+                                                    <constraint firstItem="SPm-Rg-c7S" firstAttribute="top" secondItem="DKh-Xm-cPl" secondAttribute="top" constant="16" id="bNQ-Lq-gKp"/>
+                                                    <constraint firstItem="SPm-Rg-c7S" firstAttribute="leading" secondItem="DKh-Xm-cPl" secondAttribute="leading" constant="16" id="eI6-zZ-M9w"/>
+                                                    <constraint firstItem="lSW-ZZ-cXr" firstAttribute="leading" secondItem="DKh-Xm-cPl" secondAttribute="leading" constant="16" id="gem-8A-o8m"/>
+                                                    <constraint firstAttribute="bottom" secondItem="sig-fI-yUt" secondAttribute="bottom" constant="32" id="gwS-QZ-NcC"/>
+                                                    <constraint firstAttribute="trailing" secondItem="cOn-SU-gj9" secondAttribute="trailing" constant="16" id="rQg-Xl-2d4"/>
+                                                    <constraint firstAttribute="trailing" secondItem="SPm-Rg-c7S" secondAttribute="trailing" constant="16" id="szF-QR-Yt3"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AXc-QD-9P6" userLabel="Blue Box 1">
+                                                <rect key="frame" x="0.0" y="1004.5" width="375" height="626"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GETTING STARTED WITH THE MINI-CHALLENGE &amp; iNATURALIST" lineBreakMode="wordWrap" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yqD-0R-4aW">
+                                                        <rect key="frame" x="16" y="16" width="343" height="48"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" bouncesZoom="NO" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EKu-GU-Bi2">
+                                                        <rect key="frame" x="16" y="72" width="343" height="239.5"/>
+                                                        <string key="text">The 2017-18 Mini Challenge #2 focuses on iNaturalist Species observations. To participate, register below and then download the iNaturalist app (iPhone and Android). Once your account is setup, you will need to search for the “2017-18 Mini Challenge #2” project to find and join the project. When posting your observations, you can add your observations to the project via the Projects button typically located just above the Save button.</string>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                    </textView>
+                                                    <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LD8-b9-UJE">
+                                                        <rect key="frame" x="0.0" y="328" width="375" height="282"/>
+                                                        <color key="backgroundColor" red="0.95877975230000001" green="0.36855339999999998" blue="0.3537264168" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="282.5" id="qwq-Zf-6Sp"/>
+                                                        </constraints>
+                                                        <connections>
+                                                            <segue destination="uEl-Fe-Lin" kind="embed" id="9QF-BQ-B78"/>
+                                                        </connections>
+                                                    </containerView>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.0039215686269999999" green="0.17254901959999999" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="yqD-0R-4aW" secondAttribute="trailing" constant="16" id="9Lq-F7-RJO"/>
+                                                    <constraint firstItem="yqD-0R-4aW" firstAttribute="top" secondItem="AXc-QD-9P6" secondAttribute="top" constant="16" id="9l1-5f-Im7"/>
+                                                    <constraint firstItem="LD8-b9-UJE" firstAttribute="top" secondItem="EKu-GU-Bi2" secondAttribute="bottom" constant="16" id="Icf-AT-fuG"/>
+                                                    <constraint firstItem="EKu-GU-Bi2" firstAttribute="leading" secondItem="AXc-QD-9P6" secondAttribute="leading" constant="16" id="KZ2-ss-8ai"/>
+                                                    <constraint firstItem="yqD-0R-4aW" firstAttribute="leading" secondItem="AXc-QD-9P6" secondAttribute="leading" constant="16" id="RKT-5h-I79"/>
+                                                    <constraint firstAttribute="trailing" secondItem="LD8-b9-UJE" secondAttribute="trailing" id="c4w-i1-iXk"/>
+                                                    <constraint firstItem="LD8-b9-UJE" firstAttribute="leading" secondItem="AXc-QD-9P6" secondAttribute="leading" id="j6e-c9-Lpd"/>
+                                                    <constraint firstItem="EKu-GU-Bi2" firstAttribute="top" secondItem="yqD-0R-4aW" secondAttribute="bottom" constant="8" id="n5h-9P-vWY"/>
+                                                    <constraint firstAttribute="trailing" secondItem="EKu-GU-Bi2" secondAttribute="trailing" constant="16" id="xvC-v6-aJ7"/>
+                                                    <constraint firstAttribute="bottom" secondItem="LD8-b9-UJE" secondAttribute="bottom" constant="16" id="yJn-P4-tCK"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IaR-Vd-cj4" userLabel="Blue Box 2">
+                                                <rect key="frame" x="0.0" y="1631" width="375" height="402"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NEED HELP WITH iNATURALIST? CHECK OUT THESE TUTORIALS FROM iNATURALIST" lineBreakMode="wordWrap" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y95-WB-wkr">
+                                                        <rect key="frame" x="16" y="16" width="343" height="72"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nV5-Ml-6eu">
+                                                        <rect key="frame" x="0.0" y="104" width="375" height="282"/>
+                                                        <color key="backgroundColor" red="0.95877975230000001" green="0.44700162562095447" blue="0.35499176971577318" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="282" id="cB4-hv-d1o"/>
+                                                        </constraints>
+                                                        <connections>
+                                                            <segue destination="sNI-dz-Ggn" kind="embed" id="6Ux-Ee-MFl"/>
+                                                        </connections>
+                                                    </containerView>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.0039215686269999999" green="0.17254901959999999" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="nV5-Ml-6eu" secondAttribute="bottom" constant="16" id="2NJ-3w-W32"/>
+                                                    <constraint firstAttribute="trailing" secondItem="nV5-Ml-6eu" secondAttribute="trailing" id="V62-mj-q7E"/>
+                                                    <constraint firstItem="Y95-WB-wkr" firstAttribute="top" secondItem="IaR-Vd-cj4" secondAttribute="top" constant="16" id="Vuf-kw-2og"/>
+                                                    <constraint firstItem="nV5-Ml-6eu" firstAttribute="leading" secondItem="IaR-Vd-cj4" secondAttribute="leading" id="kS4-Hg-JtR"/>
+                                                    <constraint firstItem="nV5-Ml-6eu" firstAttribute="top" secondItem="Y95-WB-wkr" secondAttribute="bottom" constant="16" id="ucE-Cf-ndl"/>
+                                                    <constraint firstItem="Y95-WB-wkr" firstAttribute="leading" secondItem="IaR-Vd-cj4" secondAttribute="leading" constant="16" id="vWA-oK-Vi5"/>
+                                                    <constraint firstAttribute="trailing" secondItem="Y95-WB-wkr" secondAttribute="trailing" constant="16" id="z3s-xx-oeh"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j9t-VQ-64G" userLabel="Red Box 1">
+                                                <rect key="frame" x="0.0" y="2033" width="375" height="1368.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2017-18 MINI CHALLENGE #2 RULES" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="QNR-CK-voD">
+                                                        <rect key="frame" x="16" y="16" width="343" height="48"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" bouncesZoom="NO" editable="NO" text="• The Mini Challenge will run from February 15, 2018 through March 14, 2018" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lDw-vt-D3w">
+                                                        <rect key="frame" x="16" y="72" width="343" height="57"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                    </textView>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ltS-zD-9x2">
+                                                        <rect key="frame" x="16" y="1292.5" width="343" height="44"/>
+                                                        <color key="backgroundColor" red="0.93485409019999999" green="0.33095580340000003" blue="0.31995838879999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="44" id="7os-P6-cwB"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                                        <state key="normal" title="Register Online">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                    </button>
+                                                    <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" bouncesZoom="NO" editable="NO" text="• The Mini Challenge involves observing, photographing, and identifying organisms using iNaturalist." selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QQw-vI-XdU">
+                                                        <rect key="frame" x="16" y="137" width="343" height="77"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                    </textView>
+                                                    <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" bouncesZoom="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DLh-nK-uRD">
+                                                        <rect key="frame" x="16" y="222" width="343" height="117.5"/>
+                                                        <string key="text">• The goal is to identify the largest number of organisms and most species. Two awards will be given out: (1) One for the most total observations; and (2) One for most number of different species observed.</string>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                    </textView>
+                                                    <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" bouncesZoom="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bUJ-GP-qXP">
+                                                        <rect key="frame" x="16" y="347.5" width="343" height="199"/>
+                                                        <string key="text">• The observations must be made on Virginia Key or Key Biscayne. Observations made outside Virginia Key or Key Biscayne will not be counted! Observations can be made in the parks on the Keys (i.e. Crandon, Bill Baggs, Virginia Key Park), in Key Biscayne municipality, or offshore of either island (as long as it is not too far that it can be confused for another coast).</string>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                    </textView>
+                                                    <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" bouncesZoom="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dc1-kj-bDc">
+                                                        <rect key="frame" x="16" y="554.5" width="343" height="178.5"/>
+                                                        <string key="text">• In order to participate in the mini challenge, you must register online and provide the following information: iNaturalist username, Your full name (if participating as an individual), School name, Grade, Teacher’s name, and Whether you are participating as an individual or as a class.</string>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                    </textView>
+                                                    <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" bouncesZoom="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6C8-7t-ci8">
+                                                        <rect key="frame" x="16" y="741" width="343" height="320.5"/>
+                                                        <mutableString key="text">• Entire classes may participate in the challenge by having their teacher manage an iNaturalist account for the whole class. This may be better for younger classes, especially if the children in younger classes do not have phones. Individual students may also participate in the mini challenge by using their own iNaturalist accounts. Classes with older students will probably be better suited for participating in this manner. However, either way of participating is acceptable for all grades. Please be sure to note on the registration form if you are participating as an individual or a class.</mutableString>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                    </textView>
+                                                    <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" bouncesZoom="NO" editable="NO" text="• Registration must be submitted by February 22, 2018." selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4gd-NA-ZdC">
+                                                        <rect key="frame" x="16" y="1069.5" width="343" height="57"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                    </textView>
+                                                    <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" bouncesZoom="NO" editable="NO" text="• Tutorials on how to use iNaturalist will be uploaded online. If you have any questions or concerns, please contact us." selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jNb-dg-iZ3">
+                                                        <rect key="frame" x="16" y="1134.5" width="343" height="77"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                    </textView>
+                                                    <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" bouncesZoom="NO" editable="NO" text="• Make sure photographs are clear. Unclear photos will be difficult to identify." selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vzS-j6-NyD">
+                                                        <rect key="frame" x="16" y="1219.5" width="343" height="57"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                    </textView>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.33296501639999998" green="0.072392754259999997" blue="0.087315432730000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="ltS-zD-9x2" secondAttribute="trailing" constant="16" id="2F0-lO-Hk1"/>
+                                                    <constraint firstItem="jNb-dg-iZ3" firstAttribute="top" secondItem="4gd-NA-ZdC" secondAttribute="bottom" constant="8" id="3cD-tx-OLs"/>
+                                                    <constraint firstAttribute="trailing" secondItem="QQw-vI-XdU" secondAttribute="trailing" constant="16" id="6Tj-xO-LhR"/>
+                                                    <constraint firstItem="vzS-j6-NyD" firstAttribute="top" secondItem="jNb-dg-iZ3" secondAttribute="bottom" constant="8" id="6ab-6g-wb6"/>
+                                                    <constraint firstItem="dc1-kj-bDc" firstAttribute="leading" secondItem="j9t-VQ-64G" secondAttribute="leading" constant="16" id="75Y-xr-Sx4"/>
+                                                    <constraint firstItem="bUJ-GP-qXP" firstAttribute="top" secondItem="DLh-nK-uRD" secondAttribute="bottom" constant="8" id="FGf-UJ-6Vc"/>
+                                                    <constraint firstItem="QNR-CK-voD" firstAttribute="leading" secondItem="j9t-VQ-64G" secondAttribute="leading" constant="16" id="GNm-GD-CvB"/>
+                                                    <constraint firstAttribute="trailing" secondItem="dc1-kj-bDc" secondAttribute="trailing" constant="16" id="J8X-a4-deu"/>
+                                                    <constraint firstItem="6C8-7t-ci8" firstAttribute="top" secondItem="dc1-kj-bDc" secondAttribute="bottom" constant="8" id="JVx-T3-8fW"/>
+                                                    <constraint firstItem="6C8-7t-ci8" firstAttribute="leading" secondItem="j9t-VQ-64G" secondAttribute="leading" constant="16" id="KPH-rK-7TH"/>
+                                                    <constraint firstItem="lDw-vt-D3w" firstAttribute="top" secondItem="QNR-CK-voD" secondAttribute="bottom" constant="8" id="LVQ-Xv-TVR"/>
+                                                    <constraint firstItem="bUJ-GP-qXP" firstAttribute="leading" secondItem="j9t-VQ-64G" secondAttribute="leading" constant="16" id="O1a-tK-5nC"/>
+                                                    <constraint firstAttribute="trailing" secondItem="QNR-CK-voD" secondAttribute="trailing" constant="16" id="QOq-cs-g6L"/>
+                                                    <constraint firstItem="ltS-zD-9x2" firstAttribute="leading" secondItem="j9t-VQ-64G" secondAttribute="leading" constant="16" id="S0Z-nI-fCh"/>
+                                                    <constraint firstAttribute="trailing" secondItem="4gd-NA-ZdC" secondAttribute="trailing" constant="16" id="T2E-yd-UeI"/>
+                                                    <constraint firstItem="ltS-zD-9x2" firstAttribute="top" secondItem="vzS-j6-NyD" secondAttribute="bottom" constant="16" id="Udp-6E-BHt"/>
+                                                    <constraint firstAttribute="trailing" secondItem="bUJ-GP-qXP" secondAttribute="trailing" constant="16" id="WJV-C6-4vj"/>
+                                                    <constraint firstItem="QQw-vI-XdU" firstAttribute="top" secondItem="lDw-vt-D3w" secondAttribute="bottom" constant="8" id="YoS-52-mL3"/>
+                                                    <constraint firstItem="jNb-dg-iZ3" firstAttribute="leading" secondItem="j9t-VQ-64G" secondAttribute="leading" constant="16" id="aPw-Xp-Z9C"/>
+                                                    <constraint firstItem="vzS-j6-NyD" firstAttribute="leading" secondItem="j9t-VQ-64G" secondAttribute="leading" constant="16" id="bT0-uh-yO2"/>
+                                                    <constraint firstAttribute="trailing" secondItem="jNb-dg-iZ3" secondAttribute="trailing" constant="16" id="cXx-wh-FYQ"/>
+                                                    <constraint firstAttribute="trailing" secondItem="DLh-nK-uRD" secondAttribute="trailing" constant="16" id="cl7-du-528"/>
+                                                    <constraint firstAttribute="trailing" secondItem="vzS-j6-NyD" secondAttribute="trailing" constant="16" id="cvf-Rb-3u2"/>
+                                                    <constraint firstItem="dc1-kj-bDc" firstAttribute="top" secondItem="bUJ-GP-qXP" secondAttribute="bottom" constant="8" id="d8d-2d-4vD"/>
+                                                    <constraint firstItem="DLh-nK-uRD" firstAttribute="top" secondItem="QQw-vI-XdU" secondAttribute="bottom" constant="8" id="dP2-7h-szc"/>
+                                                    <constraint firstItem="DLh-nK-uRD" firstAttribute="leading" secondItem="j9t-VQ-64G" secondAttribute="leading" constant="16" id="gl6-Io-5kA"/>
+                                                    <constraint firstItem="QQw-vI-XdU" firstAttribute="leading" secondItem="j9t-VQ-64G" secondAttribute="leading" constant="16" id="iKV-Mu-tNP"/>
+                                                    <constraint firstItem="lDw-vt-D3w" firstAttribute="leading" secondItem="j9t-VQ-64G" secondAttribute="leading" constant="16" id="p84-B5-xgD"/>
+                                                    <constraint firstAttribute="trailing" secondItem="lDw-vt-D3w" secondAttribute="trailing" constant="16" id="r1b-EJ-KAF"/>
+                                                    <constraint firstAttribute="trailing" secondItem="6C8-7t-ci8" secondAttribute="trailing" constant="16" id="tjX-FI-JgS"/>
+                                                    <constraint firstItem="4gd-NA-ZdC" firstAttribute="top" secondItem="6C8-7t-ci8" secondAttribute="bottom" constant="8" id="uDM-e7-jO9"/>
+                                                    <constraint firstItem="QNR-CK-voD" firstAttribute="top" secondItem="j9t-VQ-64G" secondAttribute="top" constant="16" id="v5x-Sk-M8c"/>
+                                                    <constraint firstAttribute="bottom" secondItem="ltS-zD-9x2" secondAttribute="bottom" constant="32" id="yFT-5d-Shf"/>
+                                                    <constraint firstItem="4gd-NA-ZdC" firstAttribute="leading" secondItem="j9t-VQ-64G" secondAttribute="leading" constant="16" id="ydS-zd-J7e"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g7C-eY-egX" userLabel="Footer View">
+                                                <rect key="frame" x="0.0" y="3401.5" width="375" height="125"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Uv3-nJ-CO6">
+                                                        <rect key="frame" x="20" y="35" width="335" height="54.5"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" text="KEY BISCAYNE COMMUNITY FOUNDATION" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0Ck-7b-Sf0">
+                                                                <rect key="frame" x="0.0" y="0.0" width="335" height="19.5"/>
+                                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
+                                                                <color key="textColor" red="0.37254901959999998" green="0.67450980390000004" blue="0.87450980389999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <stackView opaque="NO" contentMode="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="fvZ-Lr-jHu">
+                                                                <rect key="frame" x="57.5" y="34.5" width="220" height="20"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6BP-Hv-NMh">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="width" constant="20" id="xsG-iA-pds"/>
+                                                                        </constraints>
+                                                                        <state key="normal" image="facebook-footer-icon"/>
+                                                                    </button>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="grf-wc-sRB">
+                                                                        <rect key="frame" x="50" y="0.0" width="20" height="20"/>
+                                                                        <state key="normal" image="twitter-footer-icon"/>
+                                                                    </button>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VQI-rk-cis">
+                                                                        <rect key="frame" x="100" y="0.0" width="20" height="20"/>
+                                                                        <state key="normal" image="google-footer-icon"/>
+                                                                    </button>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2vF-cF-eKf">
+                                                                        <rect key="frame" x="150" y="0.0" width="20" height="20"/>
+                                                                        <state key="normal" image="youtube-footer-icon"/>
+                                                                    </button>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H6d-fJ-Ley">
+                                                                        <rect key="frame" x="200" y="0.0" width="20" height="20"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                                        <state key="normal" image="instagram-footer-icon"/>
+                                                                    </button>
+                                                                </subviews>
+                                                                <constraints>
+                                                                    <constraint firstItem="H6d-fJ-Ley" firstAttribute="width" secondItem="6BP-Hv-NMh" secondAttribute="width" id="BzN-Iv-aYf"/>
+                                                                    <constraint firstItem="VQI-rk-cis" firstAttribute="width" secondItem="6BP-Hv-NMh" secondAttribute="width" id="Fml-DV-PyN"/>
+                                                                    <constraint firstItem="grf-wc-sRB" firstAttribute="width" secondItem="6BP-Hv-NMh" secondAttribute="width" id="XZd-6e-drW"/>
+                                                                    <constraint firstItem="2vF-cF-eKf" firstAttribute="width" secondItem="6BP-Hv-NMh" secondAttribute="width" id="fPx-s4-i47"/>
+                                                                    <constraint firstAttribute="height" constant="20" id="hsH-HX-oJE"/>
+                                                                </constraints>
+                                                            </stackView>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstAttribute="trailing" secondItem="0Ck-7b-Sf0" secondAttribute="trailing" id="9Ja-Ud-zow"/>
+                                                            <constraint firstItem="0Ck-7b-Sf0" firstAttribute="leading" secondItem="Uv3-nJ-CO6" secondAttribute="leading" id="Evd-Qj-Kgp"/>
+                                                        </constraints>
+                                                    </stackView>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.18823529410000001" green="0.1960784314" blue="0.25098039220000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="125" id="1Qh-VI-WA6"/>
+                                                    <constraint firstItem="Uv3-nJ-CO6" firstAttribute="centerY" secondItem="g7C-eY-egX" secondAttribute="centerY" id="5jP-HU-BWx"/>
+                                                    <constraint firstItem="Uv3-nJ-CO6" firstAttribute="centerX" secondItem="g7C-eY-egX" secondAttribute="centerX" id="UWn-Be-VVq"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.18823529410000001" green="0.1960784314" blue="0.25098039220000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="IaR-Vd-cj4" secondAttribute="trailing" id="1JM-Vc-l6x"/>
+                                            <constraint firstItem="IaR-Vd-cj4" firstAttribute="top" secondItem="AXc-QD-9P6" secondAttribute="bottom" id="3Ad-zF-WYV"/>
+                                            <constraint firstAttribute="bottom" secondItem="g7C-eY-egX" secondAttribute="bottom" id="6nh-rj-mxC"/>
+                                            <constraint firstItem="AXc-QD-9P6" firstAttribute="leading" secondItem="WA9-Qa-Z5H" secondAttribute="leading" id="F4Q-Qg-8ko"/>
+                                            <constraint firstItem="AXc-QD-9P6" firstAttribute="top" secondItem="DKh-Xm-cPl" secondAttribute="bottom" id="H38-aj-iDR"/>
+                                            <constraint firstItem="DKh-Xm-cPl" firstAttribute="top" secondItem="Fgs-Fd-Adk" secondAttribute="bottom" id="HK2-5a-dZ6"/>
+                                            <constraint firstItem="IaR-Vd-cj4" firstAttribute="leading" secondItem="WA9-Qa-Z5H" secondAttribute="leading" id="HPw-NC-xcA"/>
+                                            <constraint firstItem="j9t-VQ-64G" firstAttribute="leading" secondItem="WA9-Qa-Z5H" secondAttribute="leading" id="MVg-M0-xrY"/>
+                                            <constraint firstAttribute="trailing" secondItem="g7C-eY-egX" secondAttribute="trailing" id="Vp3-5q-Qh5"/>
+                                            <constraint firstAttribute="trailing" secondItem="AXc-QD-9P6" secondAttribute="trailing" id="YSG-uJ-ErT"/>
+                                            <constraint firstAttribute="trailing" secondItem="j9t-VQ-64G" secondAttribute="trailing" id="axK-VK-Wa7"/>
+                                            <constraint firstAttribute="trailing" secondItem="DKh-Xm-cPl" secondAttribute="trailing" id="bq7-oN-6vG"/>
+                                            <constraint firstItem="Fgs-Fd-Adk" firstAttribute="width" secondItem="Fgs-Fd-Adk" secondAttribute="height" multiplier="5:3" identifier="WaterWatchMainImageAspectRatio" id="ial-u5-eFU"/>
+                                            <constraint firstItem="g7C-eY-egX" firstAttribute="top" secondItem="j9t-VQ-64G" secondAttribute="bottom" id="ibh-tS-OoK"/>
+                                            <constraint firstItem="g7C-eY-egX" firstAttribute="leading" secondItem="WA9-Qa-Z5H" secondAttribute="leading" id="lqY-kb-FKy"/>
+                                            <constraint firstItem="Fgs-Fd-Adk" firstAttribute="leading" secondItem="WA9-Qa-Z5H" secondAttribute="leading" id="odm-IG-Ubo"/>
+                                            <constraint firstItem="DKh-Xm-cPl" firstAttribute="leading" secondItem="WA9-Qa-Z5H" secondAttribute="leading" id="uH7-Wb-V88"/>
+                                            <constraint firstItem="j9t-VQ-64G" firstAttribute="top" secondItem="IaR-Vd-cj4" secondAttribute="bottom" id="yXf-n0-N5P"/>
+                                            <constraint firstAttribute="trailing" secondItem="Fgs-Fd-Adk" secondAttribute="trailing" id="zF1-LF-xWM"/>
+                                            <constraint firstItem="Fgs-Fd-Adk" firstAttribute="top" secondItem="WA9-Qa-Z5H" secondAttribute="top" id="zIj-sH-rSX"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.18823529410000001" green="0.1960784314" blue="0.25098039220000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="WA9-Qa-Z5H" secondAttribute="bottom" identifier="WaterWatchMainViewBottom" id="1jF-S2-AYl"/>
+                                    <constraint firstAttribute="trailing" secondItem="WA9-Qa-Z5H" secondAttribute="trailing" identifier="WaterWatchMainViewTrailing" id="7fo-bL-pMi"/>
+                                    <constraint firstItem="WA9-Qa-Z5H" firstAttribute="height" secondItem="8J8-uU-Tu4" secondAttribute="height" priority="250" identifier="WaterWatchMainViewHeight" id="CeY-a1-ft9"/>
+                                    <constraint firstItem="WA9-Qa-Z5H" firstAttribute="top" secondItem="8J8-uU-Tu4" secondAttribute="top" identifier="WaterWatchMainViewTop" id="LdK-rs-kqF"/>
+                                    <constraint firstItem="WA9-Qa-Z5H" firstAttribute="leading" secondItem="8J8-uU-Tu4" secondAttribute="leading" identifier="WaterWatchMainViewLeading" id="VsP-zV-shx"/>
+                                    <constraint firstItem="WA9-Qa-Z5H" firstAttribute="width" secondItem="8J8-uU-Tu4" secondAttribute="width" identifier="WaterWatchMainViewWidth" id="rgv-iu-8vJ"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="tDf-sr-kTa" firstAttribute="bottom" secondItem="8J8-uU-Tu4" secondAttribute="bottom" identifier="WaterWatchScrollViewBottom" id="4Oo-xf-6lP"/>
+                            <constraint firstItem="8J8-uU-Tu4" firstAttribute="leading" secondItem="tDf-sr-kTa" secondAttribute="leading" identifier="WaterWatchScrollViewLeading" id="61q-q5-ntv"/>
+                            <constraint firstItem="8J8-uU-Tu4" firstAttribute="top" secondItem="tDf-sr-kTa" secondAttribute="top" identifier="WaterWatchScrollViewTop" id="J4e-ZH-Brp"/>
+                            <constraint firstItem="tDf-sr-kTa" firstAttribute="trailing" secondItem="8J8-uU-Tu4" secondAttribute="trailing" identifier="WaterWatchScrollViewTrailing" id="REd-36-ovs"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="tDf-sr-kTa"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Ifr-Tr-f6I">
+                        <barButtonItem key="leftBarButtonItem" image="1-header-nav-1" id="vqw-Ax-bLR">
+                            <color key="tintColor" red="0.60392156860000001" green="0.6588235294" blue="0.69803921570000005" alpha="1" colorSpace="calibratedRGB"/>
+                        </barButtonItem>
+                    </navigationItem>
+                    <size key="freeformSize" width="375" height="5000"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IWo-dj-Ypv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2143.1999999999998" y="1693.8530734632684"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="PMa-aq-C0l">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Mz7-pG-jEA" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="69x-hy-4CG">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="zgW-s1-nEC" kind="relationship" relationship="rootViewController" id="1x9-Sg-ehR"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XzS-4H-V4c" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2142" y="-1131"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="2rs-CR-Va4">
+            <objects>
+                <viewController id="uEl-Fe-Lin" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WmD-ae-Pjg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="282"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.95877975230000001" green="0.89025263369999996" blue="0.35838207599999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZgV-dS-HLT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1308" y="892"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="qua-AF-rfD">
+            <objects>
+                <viewController id="sNI-dz-Ggn" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ado-qQ-xuE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="282"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.95877975230000001" green="0.89025263369999996" blue="0.35838207599999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5J2-Ua-MqM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2819" y="909"/>
         </scene>
     </scenes>
     <resources>
@@ -2738,6 +3174,7 @@ We will reschedule it as soon as possible and keep everyone informed of any deve
         <image name="foundation-key-logos" width="1000" height="206"/>
         <image name="google-footer-icon" width="64" height="64"/>
         <image name="instagram-footer-icon" width="64" height="64"/>
+        <image name="mini-challenge-header" width="1400" height="695"/>
         <image name="prezi-sea-level-rise" width="603" height="495"/>
         <image name="reef-restoration-1" width="1800" height="1000"/>
         <image name="reef-restoration-2" width="640" height="480"/>
@@ -2750,8 +3187,8 @@ We will reschedule it as soon as possible and keep everyone informed of any deve
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="In9-og-6dh"/>
-        <segue reference="UXe-4g-zrx"/>
-        <segue reference="whp-l0-94s"/>
+        <segue reference="jmv-Kw-uXq"/>
+        <segue reference="7eI-6o-bzn"/>
         <segue reference="8FM-DV-Ffe"/>
         <segue reference="Ndr-sr-hkv"/>
         <segue reference="BU9-tW-n6z"/>
@@ -2761,7 +3198,7 @@ We will reschedule it as soon as possible and keep everyone informed of any deve
         <segue reference="Oy0-zP-VTa"/>
         <segue reference="3wA-ku-GBQ"/>
         <segue reference="fi6-GE-bpi"/>
-        <segue reference="OXl-cU-HuW"/>
+        <segue reference="2ff-8a-an3"/>
         <segue reference="qUt-tQ-sok"/>
         <segue reference="3gI-fe-vtX"/>
         <segue reference="hno-WS-Bw2"/>
