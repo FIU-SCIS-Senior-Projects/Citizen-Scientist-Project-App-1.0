@@ -41,6 +41,7 @@
 		229E61502022A79200D4BDDA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 229E614E2022A79200D4BDDA /* LaunchScreen.storyboard */; };
 		229E615B2022A79200D4BDDA /* Citizen_Scientist_ProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229E615A2022A79200D4BDDA /* Citizen_Scientist_ProjectTests.swift */; };
 		229E61662022A79200D4BDDA /* Citizen_Scientist_ProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229E61652022A79200D4BDDA /* Citizen_Scientist_ProjectUITests.swift */; };
+		22E377B9206CE29300D277F2 /* MiniChallengeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E377B8206CE29300D277F2 /* MiniChallengeViewController.swift */; };
 		22F78C8F202D0F900001049D /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F78C8E202D0F900001049D /* CollectionViewCell.swift */; };
 		6D021BFE203E2A0C003E35D5 /* LearnViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D021BFD203E2A0C003E35D5 /* LearnViewController.swift */; };
 		6D021C00203E2A36003E35D5 /* ExploreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D021BFF203E2A36003E35D5 /* ExploreViewController.swift */; };
@@ -123,6 +124,7 @@
 		229E61612022A79200D4BDDA /* Citizen-Scientist-ProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Citizen-Scientist-ProjectUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		229E61652022A79200D4BDDA /* Citizen_Scientist_ProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Citizen_Scientist_ProjectUITests.swift; sourceTree = "<group>"; };
 		229E61672022A79200D4BDDA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22E377B8206CE29300D277F2 /* MiniChallengeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniChallengeViewController.swift; sourceTree = "<group>"; };
 		22F78C8E202D0F900001049D /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		6D021BFD203E2A0C003E35D5 /* LearnViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnViewController.swift; sourceTree = "<group>"; };
 		6D021BFF203E2A36003E35D5 /* ExploreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreViewController.swift; sourceTree = "<group>"; };
@@ -626,6 +628,7 @@
 				22992242203E5553006CE1AB /* Review */,
 				22992241203E551F006CE1AB /* ReefRestoration */,
 				2299222F203E53E2006CE1AB /* KeyChallenge */,
+				22E377B4206CE22F00D277F2 /* MiniChallenge */,
 				22992240203E5518006CE1AB /* Record */,
 				2299223F203E5510006CE1AB /* Profile */,
 				2299223E203E5505006CE1AB /* OurPartners */,
@@ -673,6 +676,38 @@
 			sourceTree = "<group>";
 		};
 		22E33DB9203E900200A0259A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		22E377B4206CE22F00D277F2 /* MiniChallenge */ = {
+			isa = PBXGroup;
+			children = (
+				22E377B7206CE25B00D277F2 /* Model */,
+				22E377B6206CE25400D277F2 /* View */,
+				22E377B5206CE24B00D277F2 /* Controller */,
+			);
+			path = MiniChallenge;
+			sourceTree = "<group>";
+		};
+		22E377B5206CE24B00D277F2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				22E377B8206CE29300D277F2 /* MiniChallengeViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		22E377B6206CE25400D277F2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		22E377B7206CE25B00D277F2 /* Model */ = {
 			isa = PBXGroup;
 			children = (
 			);
@@ -859,6 +894,7 @@
 				6D021BFE203E2A0C003E35D5 /* LearnViewController.swift in Sources */,
 				22891A3D202DEBE7000FEBB4 /* SocialNetwork.swift in Sources */,
 				229E61432022A79200D4BDDA /* AppDelegate.swift in Sources */,
+				22E377B9206CE29300D277F2 /* MiniChallengeViewController.swift in Sources */,
 				6D021C06203E2E1D003E35D5 /* KeyChallengeViewController.swift in Sources */,
 				6D021C18203E3142003E35D5 /* OurPartnersViewController.swift in Sources */,
 				6D37E600203C869D00FF4BBA /* ProfileViewController.swift in Sources */,
