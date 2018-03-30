@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0zI-XZ-BQA">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="wCb-qg-20e">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -23,16 +23,16 @@
             <objects>
                 <tableViewController id="OYm-TY-SzU" customClass="NavigationTableViewController" customModule="Citizen_Scientist_Project" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="70" estimatedRowHeight="-1" sectionHeaderHeight="70" sectionFooterHeight="28" id="zjp-Mz-DBi">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.18823529411764706" green="0.19607843137254902" blue="0.25098039215686274" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="sectionIndexBackgroundColor" red="0.18823529411764706" green="0.19607843137254902" blue="0.25098039215686274" alpha="1" colorSpace="calibratedRGB"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="NavigationTableViewCell" rowHeight="70" id="DoP-dB-lm9" customClass="NavigationTableViewCell" customModule="Citizen_Scientist_Project" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="70" width="600" height="70"/>
+                                <rect key="frame" x="0.0" y="70" width="375" height="70"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="DoP-dB-lm9" id="FkZ-ea-CP6">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="69.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="69.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nXV-i7-XdM">
@@ -43,7 +43,7 @@
                                             </constraints>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rdz-0A-Ues">
-                                            <rect key="frame" x="69" y="20" width="480" height="30"/>
+                                            <rect key="frame" x="69" y="20" width="255" height="30"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="30" id="F6h-G1-xog"/>
                                                 <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="JQf-ue-i5Q"/>
@@ -53,7 +53,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mfd-u2-iLf" userLabel="Open Image View">
-                                            <rect key="frame" x="554" y="20" width="30" height="30"/>
+                                            <rect key="frame" x="329" y="20" width="30" height="30"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="30" id="57t-Sq-9uB"/>
                                                 <constraint firstAttribute="width" constant="30" id="GRP-0w-aQa"/>
@@ -111,7 +111,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LV7-D6-Q74" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7174" y="-3143"/>
+            <point key="canvasLocation" x="7174" y="-3160"/>
         </scene>
         <!--Profile View Controller-->
         <scene sceneID="1as-4o-o2w">
@@ -122,7 +122,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Profile Page" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mNT-Cn-dTA">
-                                <rect key="frame" x="142" y="323" width="91.5" height="21"/>
+                                <rect key="frame" x="142" y="323" width="91" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -146,7 +146,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="s6H-fx-AeR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1164" y="-345"/>
+            <point key="canvasLocation" x="-1164" y="-255"/>
         </scene>
         <!--Geo Hunt View Controller-->
         <scene sceneID="6uy-Nb-Gfx">
@@ -157,15 +157,19 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="ZCP-Qs-GKG">
-                                <rect key="frame" x="0.0" y="64" width="375" height="416"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                             </mapView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="ZCP-Qs-GKG" secondAttribute="trailing" id="9yv-RS-yDs"/>
-                            <constraint firstItem="ZCP-Qs-GKG" firstAttribute="leading" secondItem="npd-UJ-15Z" secondAttribute="leading" id="IeK-cm-ZU2"/>
-                            <constraint firstItem="ZCP-Qs-GKG" firstAttribute="top" secondItem="dPj-jg-M03" secondAttribute="top" id="hKx-Si-pGK"/>
-                            <constraint firstItem="dPj-jg-M03" firstAttribute="bottom" secondItem="ZCP-Qs-GKG" secondAttribute="bottom" constant="187" id="jbl-Nd-3xU"/>
+                            <constraint firstItem="ZCP-Qs-GKG" firstAttribute="trailing" secondItem="dPj-jg-M03" secondAttribute="trailing" id="2Yz-5t-e0a"/>
+                            <constraint firstItem="ZCP-Qs-GKG" firstAttribute="leading" secondItem="dPj-jg-M03" secondAttribute="leading" id="Hvr-b7-zAg"/>
+                            <constraint firstItem="ZCP-Qs-GKG" firstAttribute="leading" secondItem="dPj-jg-M03" secondAttribute="leading" id="Xem-dj-UOz"/>
+                            <constraint firstItem="dPj-jg-M03" firstAttribute="bottom" secondItem="ZCP-Qs-GKG" secondAttribute="bottom" id="ZJF-9j-6hs"/>
+                            <constraint firstItem="ZCP-Qs-GKG" firstAttribute="trailing" secondItem="dPj-jg-M03" secondAttribute="trailing" id="c9I-9K-abc"/>
+                            <constraint firstItem="ZCP-Qs-GKG" firstAttribute="top" secondItem="dPj-jg-M03" secondAttribute="top" id="cy3-ew-MLB"/>
+                            <constraint firstItem="ZCP-Qs-GKG" firstAttribute="top" secondItem="dPj-jg-M03" secondAttribute="top" id="ia7-Xj-twT"/>
+                            <constraint firstItem="ZCP-Qs-GKG" firstAttribute="bottom" secondItem="dPj-jg-M03" secondAttribute="bottom" id="r6P-Fr-1QT"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="dPj-jg-M03"/>
                     </view>
@@ -183,7 +187,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pxM-ul-s89" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-366" y="-291"/>
+            <point key="canvasLocation" x="-364" y="-255"/>
         </scene>
         <!--Learn View Controller-->
         <scene sceneID="lnK-eW-4un">
@@ -264,7 +268,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Record Page" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NeY-l3-V2D">
-                                <rect key="frame" x="139" y="323" width="97.5" height="21"/>
+                                <rect key="frame" x="139" y="323" width="97" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -299,7 +303,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Review Page" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lP0-9L-PRc">
-                                <rect key="frame" x="139" y="323" width="97.5" height="21"/>
+                                <rect key="frame" x="139" y="323" width="97" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -581,7 +585,7 @@ The Village of Key Biscayne and the Key Biscayne Community Foundation are workin
                         <barButtonItem key="leftBarButtonItem" image="1-header-nav-1" id="3ak-XH-5vH">
                             <color key="tintColor" red="0.60392156860000001" green="0.6588235294" blue="0.69803921570000005" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
-                                <segue destination="SXQ-RY-Zdd" kind="show" id="HLz-tX-r1Z"/>
+                                <segue destination="SXQ-RY-Zdd" kind="show" id="EZs-ez-5YL"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -593,7 +597,7 @@ The Village of Key Biscayne and the Key Biscayne Community Foundation are workin
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DhO-RC-9Cn" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="uch-s1-tHJ" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="4142" y="2033"/>
+            <point key="canvasLocation" x="5556" y="697"/>
         </scene>
         <!--Table View Controller-->
         <scene sceneID="W2l-xl-yxU">
@@ -1186,14 +1190,14 @@ The Village of Key Biscayne and the Key Biscayne Community Foundation are workin
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tH4-8y-6ae" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4142" y="3940"/>
+            <point key="canvasLocation" x="5951" y="4533"/>
         </scene>
         <!--Web View Controller-->
         <scene sceneID="Lyz-bx-RKP">
             <objects>
                 <viewController id="UNA-Ob-66Q" customClass="WebViewController" customModule="Citizen_Scientist_Project" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="BCc-By-RTu">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="1305"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YuS-nc-cgL">
@@ -1216,7 +1220,35 @@ The Village of Key Biscayne and the Key Biscayne Community Foundation are workin
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qGv-vg-E9C" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5050" y="2947"/>
+            <point key="canvasLocation" x="5951" y="5883"/>
+        </scene>
+        <!--Collapsible Table View Controller-->
+        <scene sceneID="PH3-ag-MWV">
+            <objects>
+                <tableViewController id="nMm-wm-Xm8" customClass="CollapsibleTableViewController" customModule="Citizen_Scientist_Project" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="yeY-49-vIK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="315"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="AIm-Mr-erz">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="AIm-Mr-erz" id="5r3-rT-UER">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="nMm-wm-Xm8" id="09X-tz-A77"/>
+                            <outlet property="delegate" destination="nMm-wm-Xm8" id="Xoo-Tl-lQD"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RGb-Fl-5NL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6673" y="1755"/>
         </scene>
         <!--Water Watch View Controller-->
         <scene sceneID="VXV-Mw-c6d">
@@ -1227,7 +1259,7 @@ The Village of Key Biscayne and the Key Biscayne Community Foundation are workin
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Water Watch Page" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V8d-AK-cUx">
-                                <rect key="frame" x="117" y="323" width="141.5" height="21"/>
+                                <rect key="frame" x="117" y="323" width="141" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -1251,22 +1283,347 @@ The Village of Key Biscayne and the Key Biscayne Community Foundation are workin
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="66B-xX-6ro" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6630" y="-229"/>
         </scene>
         <!--Reef Restoration View Controller-->
         <scene sceneID="9TZ-2L-dN6">
             <objects>
                 <viewController id="auj-5x-N91" customClass="ReefRestorationViewController" customModule="Citizen_Scientist_Project" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="5RZ-dT-Jrd">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <view key="view" contentMode="scaleToFill" id="h67-Xi-dxL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="3000"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reef Restoration Page" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JDj-24-Dul">
-                                <rect key="frame" x="103" y="323" width="169.5" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hKC-3P-gS3">
+                                <rect key="frame" x="0.0" y="64" width="375" height="3000"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dcp-QJ-Y9P">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="457"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="reef-restoration-1" translatesAutoresizingMaskIntoConstraints="NO" id="bhl-K5-Go3">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="275"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="bhl-K5-Go3" secondAttribute="height" multiplier="15:11" id="DPJ-dT-OLp"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Rescue A Reef Sponsored Dive Trip on September 16, 2017 has been postponed due to damage caused by Hurricane Irma." lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="JAB-jk-deD">
+                                                <rect key="frame" x="8" y="283" width="359" height="94"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="JAB-jk-deD" secondAttribute="height" multiplier="359:94" id="7Fq-Kn-tqw"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DHE-A7-agz">
+                                                <rect key="frame" x="137" y="385" width="100" height="50"/>
+                                                <color key="backgroundColor" red="0.94901960784313721" green="0.21176470588235294" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="gpj-UH-QpZ"/>
+                                                    <constraint firstAttribute="width" secondItem="DHE-A7-agz" secondAttribute="height" multiplier="2:1" id="nup-3N-jeZ"/>
+                                                </constraints>
+                                                <state key="normal" title="Learn More">
+                                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="Xr8-7P-FUI" kind="show" id="YXo-IT-QqT"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.35686274509803922" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="JAB-jk-deD" secondAttribute="trailing" constant="8" id="30I-9m-Gdb"/>
+                                            <constraint firstItem="DHE-A7-agz" firstAttribute="centerX" secondItem="Dcp-QJ-Y9P" secondAttribute="centerX" id="8Ut-bL-gbv"/>
+                                            <constraint firstItem="bhl-K5-Go3" firstAttribute="top" secondItem="Dcp-QJ-Y9P" secondAttribute="top" id="DYy-fi-d7n"/>
+                                            <constraint firstItem="bhl-K5-Go3" firstAttribute="leading" secondItem="Dcp-QJ-Y9P" secondAttribute="leading" id="Eyg-xb-xOz"/>
+                                            <constraint firstItem="DHE-A7-agz" firstAttribute="top" secondItem="JAB-jk-deD" secondAttribute="bottom" constant="8" id="Kgy-kZ-1vR"/>
+                                            <constraint firstAttribute="trailing" secondItem="bhl-K5-Go3" secondAttribute="trailing" id="Ufg-fl-d6C"/>
+                                            <constraint firstAttribute="width" secondItem="Dcp-QJ-Y9P" secondAttribute="height" multiplier="375:457" id="lhp-f9-BYt"/>
+                                            <constraint firstItem="JAB-jk-deD" firstAttribute="top" secondItem="bhl-K5-Go3" secondAttribute="bottom" constant="8" id="lvY-YF-5dX"/>
+                                            <constraint firstItem="JAB-jk-deD" firstAttribute="leading" secondItem="Dcp-QJ-Y9P" secondAttribute="leading" constant="8" id="tgI-8j-nfY"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="poG-Un-ESq">
+                                        <rect key="frame" x="0.0" y="451" width="375" height="2444"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="reef-restoration-2" translatesAutoresizingMaskIntoConstraints="NO" id="Yad-2b-qat">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="225"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="Yad-2b-qat" secondAttribute="height" multiplier="5:2" constant="-187.5" id="bQ2-Ki-OuF"/>
+                                                </constraints>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="reef-restoration-3" translatesAutoresizingMaskIntoConstraints="NO" id="Zw6-q6-2gb">
+                                                <rect key="frame" x="0.0" y="1580" width="375" height="225"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="Zw6-q6-2gb" secondAttribute="height" multiplier="15:7" constant="-107.14285714285711" id="y0M-KX-5aj"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HALF-DAY DIVE" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="SYP-oF-VRi">
+                                                <rect key="frame" x="8" y="1813" width="359" height="41"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="SYP-oF-VRi" secondAttribute="height" multiplier="359:41" id="OL3-8O-Nou"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FAMILY ACTIVITIES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="A3w-F4-v87">
+                                                <rect key="frame" x="8" y="2154" width="359" height="41"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="A3w-F4-v87" secondAttribute="height" multiplier="359:41" id="wkU-Uk-nxZ"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="Ujv-GR-VCS">
+                                                <rect key="frame" x="8" y="1862" width="359" height="109"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="Ujv-GR-VCS" secondAttribute="height" multiplier="359:109" id="JOr-TP-Ttq"/>
+                                                </constraints>
+                                                <string key="text">The trip will be comprised of a half-day dive excursion leaving from Diver’s Paradise of Key Biscayne at 7:30am, beginning with a short demonstration on coral nursery maintenance and out-planting methods.</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CORAL OUT-PLANTING" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="9Wh-I6-7zW">
+                                                <rect key="frame" x="8" y="1979" width="359" height="41"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="9Wh-I6-7zW" secondAttribute="height" multiplier="359:41" id="if0-dc-wHh"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="9" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="SLl-ve-DTi">
+                                                <rect key="frame" x="8" y="2028" width="359" height="118"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="SLl-ve-DTi" secondAttribute="height" multiplier="359:118" id="Cy8-XZ-eD4"/>
+                                                </constraints>
+                                                <string key="text">At the Key Biscayne Coral Nursery, divers will help with cleaning the coral nursery trees and collecting coral clippings for out-planting, followed by a trip to Diver’s Paradise Reef where the coral fragments will be out-planted.</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RESCUE A REEF SPONSORED DIVE TRIP" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="8e6-UJ-LuL">
+                                                <rect key="frame" x="8" y="233" width="359" height="41"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="8e6-UJ-LuL" secondAttribute="height" multiplier="359:41" id="Mie-Lt-xuW"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Join the Key Biscayne Citizen Science Project for our second annual Reef Restoration Day! " lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="BCe-6K-9pA">
+                                                <rect key="frame" x="8" y="274" width="359" height="53"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="BCe-6K-9pA" secondAttribute="height" multiplier="359:53" id="ffv-XI-h2E"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="italicSystem" pointSize="15"/>
+                                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="19" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="ZYA-Uw-2Uc">
+                                                <rect key="frame" x="8" y="335" width="359" height="286"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="ZYA-Uw-2Uc" secondAttribute="height" multiplier="359:286" id="bO8-oQ-9jM"/>
+                                                </constraints>
+                                                <string key="text">Have you ever wondered what marine biologists do? Are you interested in diving alongside University of Miami coral reef experts? Rescue A Reef coral restoration expeditions offer you a hands-on experience to work with live corals in their natural habitat! 
+
+Key Biscayne residents are invited to join a KBCF Citizen-Scientist-Project-sponsored dive trip with University of Miami Rosenstiel School’s Rescue A Reef Program. Dive the Key Biscayne Coral Nursery, learn about the staghorn coral restoration efforts, and participate in a new coral out-planting project!</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="KEY BISCAYNE REEF RESTORATION" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="Vld-nI-2bH">
+                                                <rect key="frame" x="8" y="629" width="359" height="41"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="Vld-nI-2bH" secondAttribute="height" multiplier="359:41" id="vic-9S-ral"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="46" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="5iB-Bs-TFE">
+                                                <rect key="frame" x="8" y="678" width="359" height="894"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="5iB-Bs-TFE" secondAttribute="height" multiplier="359:894" id="FeY-MS-Isw"/>
+                                                </constraints>
+                                                <string key="text">Staghorn corals (Acropora cervicornis) are  important coral reef engineers, providing essential habitat for many other reef organisms. Unfortunately, coral populations have drastically declined and are threatened with extinction due to climate change, pollution, disease, overfishing, and habitat destruction. Staghorn corals have been designated on the IUCN red list as “critically endangered,” and are listed as “threatened” under the Endangered Species Act.  The National Marine Fisheries Service has designated Florida as one of four critical habitats in the world for staghorn coral.
+
+While populations of staghorn coral still exist throughout Florida and the Florida Keys, they are small, fragmented, and genetically isolated. Without the flow of genes between populations, they grow weaker over time and are less able to cope with changes in the environment.
+
+The University of Miami’s (UM) coral restoration lab (Lirman Lab) focuses on
+propagating threatened Caribbean staghorn coral in underwater coral nurseries. Nursery-reared corals are then out-planted to local reefs to enhance staghorn populations and promote natural recovery.
+
+Out of the Lirman Lab came Rescue A Reef, a citizen science project designed to support coral reef research and restoration activities through outreach, education, and engagement. Their mission is to educate and engage the local community, increase scientific literacy in coastal and coral reef conservation, and foster ocean stewardship.
+
+The area around Key Biscayne and Virginia Key is part of the designated critical habitat of staghorn coral, and therefore its protection is paramount.  The aim of this and future trips are to get the Key Biscayne community involved in awareness, protection, and enhancement of their surrounding local environment.</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="7cU-gz-ax7">
+                                                <rect key="frame" x="8" y="2203" width="359" height="131"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="7cU-gz-ax7" secondAttribute="height" multiplier="359:131" id="3sa-92-DqE"/>
+                                                </constraints>
+                                                <string key="text">After returning from the dive at about 1:30pm, the families of the participants are encouraged to join the citizen scientist divers and the Rescue A Reef staff at Diver’s Paradise for some food and drinks. Our team will be hosting educational activities for all to learn about coral reefs.</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bYk-J0-poX">
+                                                <rect key="frame" x="0.0" y="2421" width="375" height="70"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="KJS-ul-8wD">
+                                                        <rect key="frame" x="20" y="7" width="335" height="54.5"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" text="KEY BISCAYNE COMMUNITY FOUNDATION" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rxI-t2-bty">
+                                                                <rect key="frame" x="0.0" y="0.0" width="335" height="19.5"/>
+                                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
+                                                                <color key="textColor" red="0.37254901959999998" green="0.67450980390000004" blue="0.87450980389999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <stackView opaque="NO" contentMode="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="1u4-4i-fo9">
+                                                                <rect key="frame" x="57.5" y="34.5" width="220" height="20"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jR4-q1-CBs">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="width" constant="20" id="PJB-32-5Bj"/>
+                                                                        </constraints>
+                                                                        <state key="normal" image="facebook-footer-icon"/>
+                                                                        <connections>
+                                                                            <action selector="openFacebook:" destination="auj-5x-N91" eventType="touchUpInside" id="j1i-c6-U7a"/>
+                                                                            <action selector="openFacebook:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sXZ-NC-ztI"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a6J-BV-qsi">
+                                                                        <rect key="frame" x="50" y="0.0" width="20" height="20"/>
+                                                                        <state key="normal" image="twitter-footer-icon"/>
+                                                                        <connections>
+                                                                            <action selector="openTwitter:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BLh-nt-376"/>
+                                                                            <action selector="openTwitter:" destination="auj-5x-N91" eventType="touchUpInside" id="Sgb-37-UD7"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0dl-C5-AoD">
+                                                                        <rect key="frame" x="100" y="0.0" width="20" height="20"/>
+                                                                        <state key="normal" image="google-footer-icon"/>
+                                                                        <connections>
+                                                                            <action selector="openGooglePlus:" destination="auj-5x-N91" eventType="touchUpInside" id="L9V-kz-4lC"/>
+                                                                            <action selector="openGooglePlus:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Pag-Vk-dTS"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FaO-7G-KbD">
+                                                                        <rect key="frame" x="150" y="0.0" width="20" height="20"/>
+                                                                        <state key="normal" image="youtube-footer-icon"/>
+                                                                        <connections>
+                                                                            <action selector="openYoutube:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5n7-U0-X8S"/>
+                                                                            <action selector="openYoutube:" destination="auj-5x-N91" eventType="touchUpInside" id="MjB-Qx-tJG"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vtG-T8-5cB">
+                                                                        <rect key="frame" x="200" y="0.0" width="20" height="20"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                                        <state key="normal" image="instagram-footer-icon"/>
+                                                                        <connections>
+                                                                            <action selector="openInstagram:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bH5-ap-KAp"/>
+                                                                            <action selector="openInstagram:" destination="auj-5x-N91" eventType="touchUpInside" id="yFE-G4-lOL"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                </subviews>
+                                                                <constraints>
+                                                                    <constraint firstItem="vtG-T8-5cB" firstAttribute="width" secondItem="jR4-q1-CBs" secondAttribute="width" id="FLJ-2U-OnU"/>
+                                                                    <constraint firstItem="a6J-BV-qsi" firstAttribute="width" secondItem="jR4-q1-CBs" secondAttribute="width" id="HWY-DY-dLE"/>
+                                                                    <constraint firstAttribute="height" constant="20" id="VsU-Sa-UKG"/>
+                                                                    <constraint firstItem="FaO-7G-KbD" firstAttribute="width" secondItem="jR4-q1-CBs" secondAttribute="width" id="eDR-Fm-YEN"/>
+                                                                    <constraint firstItem="0dl-C5-AoD" firstAttribute="width" secondItem="jR4-q1-CBs" secondAttribute="width" id="evo-3D-hxa"/>
+                                                                </constraints>
+                                                            </stackView>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstAttribute="trailing" secondItem="rxI-t2-bty" secondAttribute="trailing" id="I3m-5P-GdZ"/>
+                                                            <constraint firstItem="rxI-t2-bty" firstAttribute="leading" secondItem="KJS-ul-8wD" secondAttribute="leading" id="QhE-a7-Oh9"/>
+                                                            <constraint firstItem="rxI-t2-bty" firstAttribute="top" secondItem="KJS-ul-8wD" secondAttribute="top" id="mE3-qF-8OY"/>
+                                                        </constraints>
+                                                    </stackView>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.082352941176470587" green="0.090196078431372548" blue="0.15294117647058825" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstItem="KJS-ul-8wD" firstAttribute="centerX" secondItem="bYk-J0-poX" secondAttribute="centerX" id="FB2-1g-iOo"/>
+                                                    <constraint firstAttribute="width" secondItem="bYk-J0-poX" secondAttribute="height" multiplier="75:14" id="ULI-po-Mwa"/>
+                                                    <constraint firstItem="KJS-ul-8wD" firstAttribute="centerY" secondItem="bYk-J0-poX" secondAttribute="centerY" id="lk5-kc-6g0"/>
+                                                </constraints>
+                                            </view>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="foundation-key-logos" translatesAutoresizingMaskIntoConstraints="NO" id="Oo3-br-wR0">
+                                                <rect key="frame" x="0.0" y="2342" width="375" height="83"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="Oo3-br-wR0" secondAttribute="height" multiplier="375:83" id="bfY-z6-hSO"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.0039215686274509803" green="0.17254901960784313" blue="0.28235294117647058" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="7cU-gz-ax7" secondAttribute="trailing" constant="8" id="09q-MO-ysL"/>
+                                            <constraint firstItem="Yad-2b-qat" firstAttribute="top" secondItem="poG-Un-ESq" secondAttribute="top" id="0wz-A1-fFQ"/>
+                                            <constraint firstItem="SLl-ve-DTi" firstAttribute="top" secondItem="9Wh-I6-7zW" secondAttribute="bottom" constant="8" id="1LW-Wd-E9u"/>
+                                            <constraint firstAttribute="trailing" secondItem="Yad-2b-qat" secondAttribute="trailing" id="1dF-Dm-zG3"/>
+                                            <constraint firstAttribute="trailing" secondItem="SLl-ve-DTi" secondAttribute="trailing" constant="8" id="34Q-zL-561"/>
+                                            <constraint firstAttribute="trailing" secondItem="8e6-UJ-LuL" secondAttribute="trailing" constant="8" id="6u9-Ob-ttc"/>
+                                            <constraint firstAttribute="trailing" secondItem="Zw6-q6-2gb" secondAttribute="trailing" id="9de-2t-ppn"/>
+                                            <constraint firstAttribute="trailing" secondItem="bYk-J0-poX" secondAttribute="trailing" id="9jS-Qg-wOh"/>
+                                            <constraint firstItem="7cU-gz-ax7" firstAttribute="top" secondItem="A3w-F4-v87" secondAttribute="bottom" constant="8" id="BBj-VZ-elH"/>
+                                            <constraint firstItem="9Wh-I6-7zW" firstAttribute="leading" secondItem="poG-Un-ESq" secondAttribute="leading" constant="8" id="BVh-Eq-9PF"/>
+                                            <constraint firstAttribute="trailing" secondItem="9Wh-I6-7zW" secondAttribute="trailing" constant="8" id="Cij-UI-9w6"/>
+                                            <constraint firstItem="Zw6-q6-2gb" firstAttribute="leading" secondItem="poG-Un-ESq" secondAttribute="leading" id="DHl-Qb-CAi"/>
+                                            <constraint firstAttribute="width" secondItem="poG-Un-ESq" secondAttribute="height" multiplier="75:557" constant="45.91561938958705" id="DW2-Q6-sK1"/>
+                                            <constraint firstItem="Oo3-br-wR0" firstAttribute="top" secondItem="7cU-gz-ax7" secondAttribute="bottom" constant="8" id="FD6-e4-L75"/>
+                                            <constraint firstAttribute="trailing" secondItem="5iB-Bs-TFE" secondAttribute="trailing" constant="8" id="Gd7-yq-tpm"/>
+                                            <constraint firstAttribute="trailing" secondItem="BCe-6K-9pA" secondAttribute="trailing" constant="8" id="HDa-K8-Hzk"/>
+                                            <constraint firstAttribute="bottom" secondItem="bYk-J0-poX" secondAttribute="bottom" constant="-47" id="Jx4-ri-FOz"/>
+                                            <constraint firstItem="5iB-Bs-TFE" firstAttribute="top" secondItem="Vld-nI-2bH" secondAttribute="bottom" constant="8" id="KCi-ox-b7k"/>
+                                            <constraint firstItem="5iB-Bs-TFE" firstAttribute="leading" secondItem="poG-Un-ESq" secondAttribute="leading" constant="8" id="L6A-W5-OMo"/>
+                                            <constraint firstItem="Ujv-GR-VCS" firstAttribute="top" secondItem="SYP-oF-VRi" secondAttribute="bottom" constant="8" id="La1-FT-aOt"/>
+                                            <constraint firstItem="Vld-nI-2bH" firstAttribute="leading" secondItem="poG-Un-ESq" secondAttribute="leading" constant="8" id="LpZ-PL-dYb"/>
+                                            <constraint firstItem="SLl-ve-DTi" firstAttribute="leading" secondItem="poG-Un-ESq" secondAttribute="leading" constant="8" id="N4x-sF-Ysy"/>
+                                            <constraint firstItem="SYP-oF-VRi" firstAttribute="leading" secondItem="poG-Un-ESq" secondAttribute="leading" constant="8" id="SCB-e6-5jC"/>
+                                            <constraint firstItem="Zw6-q6-2gb" firstAttribute="top" secondItem="5iB-Bs-TFE" secondAttribute="bottom" constant="8" id="SP5-Gx-SgP"/>
+                                            <constraint firstItem="BCe-6K-9pA" firstAttribute="top" secondItem="8e6-UJ-LuL" secondAttribute="bottom" id="WNx-bR-PYO"/>
+                                            <constraint firstAttribute="trailing" secondItem="ZYA-Uw-2Uc" secondAttribute="trailing" constant="8" id="XZH-P5-ujZ"/>
+                                            <constraint firstItem="Vld-nI-2bH" firstAttribute="top" secondItem="ZYA-Uw-2Uc" secondAttribute="bottom" constant="8" id="Ya7-57-Ffd"/>
+                                            <constraint firstAttribute="trailing" secondItem="Ujv-GR-VCS" secondAttribute="trailing" constant="8" id="YkM-Ri-ULT"/>
+                                            <constraint firstItem="A3w-F4-v87" firstAttribute="leading" secondItem="poG-Un-ESq" secondAttribute="leading" constant="8" id="aVf-iN-T2n"/>
+                                            <constraint firstItem="ZYA-Uw-2Uc" firstAttribute="top" secondItem="BCe-6K-9pA" secondAttribute="bottom" constant="8" id="akg-A3-rE9"/>
+                                            <constraint firstItem="Ujv-GR-VCS" firstAttribute="leading" secondItem="poG-Un-ESq" secondAttribute="leading" constant="8" id="bcg-sx-9qj"/>
+                                            <constraint firstItem="7cU-gz-ax7" firstAttribute="leading" secondItem="poG-Un-ESq" secondAttribute="leading" constant="8" id="dxx-OY-deO"/>
+                                            <constraint firstAttribute="trailing" secondItem="A3w-F4-v87" secondAttribute="trailing" constant="8" id="eYB-V3-4EM"/>
+                                            <constraint firstAttribute="trailing" secondItem="Vld-nI-2bH" secondAttribute="trailing" constant="8" id="idZ-RR-SFt"/>
+                                            <constraint firstItem="SYP-oF-VRi" firstAttribute="top" secondItem="Zw6-q6-2gb" secondAttribute="bottom" constant="8" id="jOR-od-psU"/>
+                                            <constraint firstItem="BCe-6K-9pA" firstAttribute="leading" secondItem="poG-Un-ESq" secondAttribute="leading" constant="8" id="jaT-iy-dWF"/>
+                                            <constraint firstItem="9Wh-I6-7zW" firstAttribute="top" secondItem="Ujv-GR-VCS" secondAttribute="bottom" constant="8" id="mw3-fg-G8t"/>
+                                            <constraint firstItem="Oo3-br-wR0" firstAttribute="leading" secondItem="poG-Un-ESq" secondAttribute="leading" id="nOn-wk-jrR"/>
+                                            <constraint firstItem="A3w-F4-v87" firstAttribute="top" secondItem="SLl-ve-DTi" secondAttribute="bottom" constant="8" id="pbw-v0-eSK"/>
+                                            <constraint firstAttribute="trailing" secondItem="SYP-oF-VRi" secondAttribute="trailing" constant="8" id="t5v-VC-1gl"/>
+                                            <constraint firstItem="bYk-J0-poX" firstAttribute="leading" secondItem="poG-Un-ESq" secondAttribute="leading" id="tFC-Mm-LZt"/>
+                                            <constraint firstAttribute="trailing" secondItem="Oo3-br-wR0" secondAttribute="trailing" id="tVY-FI-gr2"/>
+                                            <constraint firstItem="8e6-UJ-LuL" firstAttribute="leading" secondItem="poG-Un-ESq" secondAttribute="leading" constant="8" id="tWS-iT-uEu"/>
+                                            <constraint firstItem="ZYA-Uw-2Uc" firstAttribute="leading" secondItem="poG-Un-ESq" secondAttribute="leading" constant="8" id="urB-qP-Pkg"/>
+                                            <constraint firstItem="Yad-2b-qat" firstAttribute="leading" secondItem="poG-Un-ESq" secondAttribute="leading" id="vYq-W6-owr"/>
+                                            <constraint firstItem="8e6-UJ-LuL" firstAttribute="top" secondItem="Yad-2b-qat" secondAttribute="bottom" constant="8" id="xKO-HB-nPZ"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0039215686274509803" green="0.17254901960784313" blue="0.28235294117647058" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="poG-Un-ESq" firstAttribute="leading" secondItem="hKC-3P-gS3" secondAttribute="leading" id="EsR-a3-P8F"/>
+                                    <constraint firstItem="poG-Un-ESq" firstAttribute="top" secondItem="hKC-3P-gS3" secondAttribute="top" constant="451" id="POB-Mb-zgg"/>
+                                    <constraint firstAttribute="trailing" secondItem="poG-Un-ESq" secondAttribute="trailing" id="TDV-Ia-IHu"/>
+                                    <constraint firstAttribute="trailing" secondItem="Dcp-QJ-Y9P" secondAttribute="trailing" id="Xsd-Vt-GGd"/>
+                                    <constraint firstAttribute="bottom" secondItem="Dcp-QJ-Y9P" secondAttribute="bottom" constant="2543" id="YZl-7A-J3P"/>
+                                    <constraint firstAttribute="bottom" secondItem="poG-Un-ESq" secondAttribute="bottom" constant="105" id="jpz-J6-AkY"/>
+                                    <constraint firstItem="Dcp-QJ-Y9P" firstAttribute="top" secondItem="hKC-3P-gS3" secondAttribute="top" id="sTP-7A-fXO"/>
+                                    <constraint firstItem="Dcp-QJ-Y9P" firstAttribute="leading" secondItem="hKC-3P-gS3" secondAttribute="leading" id="xVS-DG-QON"/>
+                                </constraints>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -1285,11 +1642,11 @@ The Village of Key Biscayne and the Key Biscayne Community Foundation are workin
                             </connections>
                         </barButtonItem>
                     </navigationItem>
-                    <size key="freeformSize" width="375" height="2895"/>
+                    <size key="freeformSize" width="375" height="3000"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fja-cD-AP4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7396" y="625"/>
+            <point key="canvasLocation" x="7396" y="771.36431784107947"/>
         </scene>
         <!--Status Reef Restoration View Controller-->
         <scene sceneID="ORf-XF-zeu">
@@ -1300,7 +1657,7 @@ The Village of Key Biscayne and the Key Biscayne Community Foundation are workin
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PNZ-5x-Rbm">
-                                <rect key="frame" x="0.0" y="20" width="375" height="780"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="736"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c2k-bU-56n">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="665"/>
@@ -1360,17 +1717,84 @@ We will reschedule it as soon as possible and keep everyone informed of any deve
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g0p-yg-kTn">
                                         <rect key="frame" x="0.0" y="666" width="375" height="70"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Footer Holder" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sr2-Ic-MCy">
-                                                <rect key="frame" x="134" y="24" width="106" height="21"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="cYz-dj-PeT">
+                                                <rect key="frame" x="20" y="7" width="335" height="54.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="center" text="KEY BISCAYNE COMMUNITY FOUNDATION" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tMT-Zu-Zbe">
+                                                        <rect key="frame" x="0.0" y="0.0" width="335" height="19.5"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
+                                                        <color key="textColor" red="0.37254901959999998" green="0.67450980390000004" blue="0.87450980389999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <stackView opaque="NO" contentMode="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="SMt-WJ-dLY">
+                                                        <rect key="frame" x="57.5" y="34.5" width="220" height="20"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SsV-iw-J71">
+                                                                <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="20" id="y0a-GC-QEr"/>
+                                                                </constraints>
+                                                                <state key="normal" image="facebook-footer-icon"/>
+                                                                <connections>
+                                                                    <action selector="openFacebook:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5ax-lJ-R8e"/>
+                                                                    <action selector="openFacebook:" destination="auj-5x-N91" eventType="touchUpInside" id="IWr-1H-OhD"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bkf-oQ-TwB">
+                                                                <rect key="frame" x="50" y="0.0" width="20" height="20"/>
+                                                                <state key="normal" image="twitter-footer-icon"/>
+                                                                <connections>
+                                                                    <action selector="openTwitter:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0jU-hp-dga"/>
+                                                                    <action selector="openTwitter:" destination="auj-5x-N91" eventType="touchUpInside" id="g4O-0H-CwF"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ldg-V7-B00">
+                                                                <rect key="frame" x="100" y="0.0" width="20" height="20"/>
+                                                                <state key="normal" image="google-footer-icon"/>
+                                                                <connections>
+                                                                    <action selector="openGooglePlus:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YN7-nu-HJv"/>
+                                                                    <action selector="openGooglePlus:" destination="auj-5x-N91" eventType="touchUpInside" id="a0I-9n-eTi"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bS6-kR-IgV">
+                                                                <rect key="frame" x="150" y="0.0" width="20" height="20"/>
+                                                                <state key="normal" image="youtube-footer-icon"/>
+                                                                <connections>
+                                                                    <action selector="openYoutube:" destination="auj-5x-N91" eventType="touchUpInside" id="KFi-uk-W0v"/>
+                                                                    <action selector="openYoutube:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oQ9-8j-c52"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dOQ-fz-cFb">
+                                                                <rect key="frame" x="200" y="0.0" width="20" height="20"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                                <state key="normal" image="instagram-footer-icon"/>
+                                                                <connections>
+                                                                    <action selector="openInstagram:" destination="auj-5x-N91" eventType="touchUpInside" id="0r5-Cv-Ukv"/>
+                                                                    <action selector="openInstagram:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lnO-24-XPz"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstItem="Bkf-oQ-TwB" firstAttribute="width" secondItem="SsV-iw-J71" secondAttribute="width" id="7Vi-iP-B0v"/>
+                                                            <constraint firstItem="bS6-kR-IgV" firstAttribute="width" secondItem="SsV-iw-J71" secondAttribute="width" id="ZLi-c3-VHM"/>
+                                                            <constraint firstAttribute="height" constant="20" id="Zsg-Rw-IDu"/>
+                                                            <constraint firstItem="dOQ-fz-cFb" firstAttribute="width" secondItem="SsV-iw-J71" secondAttribute="width" id="daZ-MK-pYe"/>
+                                                            <constraint firstItem="ldg-V7-B00" firstAttribute="width" secondItem="SsV-iw-J71" secondAttribute="width" id="or9-FU-pU9"/>
+                                                        </constraints>
+                                                    </stackView>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="tMT-Zu-Zbe" firstAttribute="leading" secondItem="cYz-dj-PeT" secondAttribute="leading" id="B3L-ry-HxZ"/>
+                                                    <constraint firstItem="tMT-Zu-Zbe" firstAttribute="top" secondItem="cYz-dj-PeT" secondAttribute="top" id="fiq-bo-WNh"/>
+                                                    <constraint firstAttribute="trailing" secondItem="tMT-Zu-Zbe" secondAttribute="trailing" id="wTX-pt-ab7"/>
+                                                </constraints>
+                                            </stackView>
                                         </subviews>
                                         <color key="backgroundColor" red="0.082352941176470587" green="0.090196078431372548" blue="0.15294117647058825" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
+                                            <constraint firstItem="cYz-dj-PeT" firstAttribute="centerX" secondItem="g0p-yg-kTn" secondAttribute="centerX" id="QWQ-95-5Dg"/>
                                             <constraint firstAttribute="width" secondItem="g0p-yg-kTn" secondAttribute="height" multiplier="75:14" id="STd-W7-XQy"/>
+                                            <constraint firstItem="cYz-dj-PeT" firstAttribute="centerY" secondItem="g0p-yg-kTn" secondAttribute="centerY" id="dNu-Z4-Trm"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -1404,7 +1828,275 @@ We will reschedule it as soon as possible and keep everyone informed of any deve
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VHn-nE-Zys" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7394.9275362318849" y="2342.934782608696"/>
+            <point key="canvasLocation" x="8238" y="2315"/>
+        </scene>
+        <!--Water Watch View Controller-->
+        <scene sceneID="6Ma-gY-FEs">
+            <objects>
+                <viewController id="0Xh-d4-XbP" customClass="WaterWatchViewController" customModule="Citizen_Scientist_Project" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ilh-eC-uLg" customClass="WaterWatchView" customModule="Citizen_Scientist_Project" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="2000"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b9k-5Z-zM5">
+                                <rect key="frame" x="0.0" y="64" width="375" height="1936"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="svg-37-pVo" customClass="WaterWatchView" customModule="Citizen_Scientist_Project" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1952"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="water-watch" translatesAutoresizingMaskIntoConstraints="NO" id="SbY-lp-uuT">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="225"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="SbY-lp-uuT" secondAttribute="height" multiplier="5:3" id="9KQ-hn-DJj"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BISCAYNE BAY WATER WATCH" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="8ij-jM-YkO">
+                                                <rect key="frame" x="8" y="233" width="359" height="24"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9CB-Ep-Ph1">
+                                                <rect key="frame" x="0.0" y="265" width="375" height="150"/>
+                                                <subviews>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="key-biscayne-water-watch-logo" translatesAutoresizingMaskIntoConstraints="NO" id="zSf-zk-gkY">
+                                                        <rect key="frame" x="113.5" y="8" width="147" height="134"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="zSf-zk-gkY" secondAttribute="height" multiplier="1.1:1" id="6Wb-R8-hA3"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="zSf-zk-gkY" firstAttribute="top" secondItem="9CB-Ep-Ph1" secondAttribute="top" constant="8" id="CFD-7G-sHO"/>
+                                                    <constraint firstAttribute="width" secondItem="9CB-Ep-Ph1" secondAttribute="height" multiplier="5:2" id="HhZ-lO-kUi"/>
+                                                    <constraint firstItem="zSf-zk-gkY" firstAttribute="centerY" secondItem="9CB-Ep-Ph1" secondAttribute="centerY" id="PYE-Cu-iin"/>
+                                                    <constraint firstAttribute="bottom" secondItem="zSf-zk-gkY" secondAttribute="bottom" constant="8" id="QQ2-gf-Hdq"/>
+                                                    <constraint firstItem="zSf-zk-gkY" firstAttribute="centerX" secondItem="9CB-Ep-Ph1" secondAttribute="centerX" id="haG-m1-kfZ"/>
+                                                </constraints>
+                                            </view>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n5r-9l-7jU">
+                                                <rect key="frame" x="8" y="423" width="359" height="722.5"/>
+                                                <string key="text">Biscayne Bay Water Watch (BBWW) is a community-based volunteer water quality monitoring program developed and managed by the UF/IFAS Sea Grant Extension Program in Miami-Dade County. The goal of BBWW is to garner attention to the health of Biscayne Bay and promote awareness about the importance of water quality on our local environment and economy.
+
+UF/IFAS Sea Grant Extension is partnering with local organizations to adopt water monitoring sites throughout Biscayne Bay and surrounding waters. Their volunteers are trained to collect chemical and physical parameters once a month at their adopted site(s). Field-based data includes temperature, pH, salinity, and dissolved oxygen. Water samples are collected for analysis of total nitrogen, total phosphorus, ammonia, silica, and chlorophyll a.
+
+The Key Biscayne Community Foundation (through the Citizen Science Project) received a two-year Environmental Education grant from the EPA for water quality and shoreline conservation on Key Biscayne. We are using this grant not only to create educational opportunities for the residents and visitors of the Key, but also to set up more water testing sites. In 2017, we’re sponsoring the first year of a new site near Bear Cut, where one of our partners, Miami Rowing Club, will begin monthly water testing starting in March.
+
+We also hope to set up three Atlantic sites for less intense testing which will include temperature, pH, salinity, and dissolved oxygen.</string>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FACT SHEETS" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="oEX-sE-FBo">
+                                                <rect key="frame" x="8" y="1161.5" width="359" height="24"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yF5-7s-UQx">
+                                                <rect key="frame" x="8" y="1185.5" width="359" height="73.5"/>
+                                                <string key="text">Here are some fact sheets from the Biscayne Bay Water Watch to better understand the following data being collected and reported.</string>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="vav-2J-h4r">
+                                                <rect key="frame" x="36" y="1267" width="331" height="30"/>
+                                                <state key="normal" title="Learn more about the Biscayne Bay Water Watch.">
+                                                    <color key="titleColor" red="0.37254901959999998" green="0.67450980390000004" blue="0.87450980389999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="toW-h3-UTP">
+                                                <rect key="frame" x="36" y="1305" width="331" height="30"/>
+                                                <state key="normal" title="Temperature, Salinity and pH">
+                                                    <color key="titleColor" red="0.37254901959999998" green="0.67450980390000004" blue="0.87450980389999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="pLZ-xi-EJj">
+                                                <rect key="frame" x="36" y="1343" width="331" height="30"/>
+                                                <state key="normal" title="Dissolved Oxygen">
+                                                    <color key="titleColor" red="0.37254901959999998" green="0.67450980390000004" blue="0.87450980389999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="X2p-g5-aeA">
+                                                <rect key="frame" x="36" y="1381" width="331" height="30"/>
+                                                <state key="normal" title="Nutrients">
+                                                    <color key="titleColor" red="0.37254901959999998" green="0.67450980390000004" blue="0.87450980389999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="WEb-PM-wdh">
+                                                <rect key="frame" x="36" y="1419" width="331" height="30"/>
+                                                <state key="normal" title="Chlorophyll a">
+                                                    <color key="titleColor" red="0.37254901959999998" green="0.67450980390000004" blue="0.87450980389999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                            </button>
+                                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BMO-PZ-BRH">
+                                                <rect key="frame" x="0.0" y="1485" width="375" height="315"/>
+                                                <color key="backgroundColor" red="1" green="0.64332873150000003" blue="0.474152827" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="315" id="sgr-W9-7xe"/>
+                                                </constraints>
+                                                <connections>
+                                                    <segue destination="nMm-wm-Xm8" kind="embed" id="0d3-Zi-nXY"/>
+                                                </connections>
+                                            </containerView>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hor-Ek-98h">
+                                                <rect key="frame" x="0.0" y="1827" width="375" height="125"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="NYS-Vk-cZ0">
+                                                        <rect key="frame" x="20" y="35" width="335" height="54.5"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" text="KEY BISCAYNE COMMUNITY FOUNDATION" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="s9J-h6-iRV">
+                                                                <rect key="frame" x="0.0" y="0.0" width="335" height="19.5"/>
+                                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
+                                                                <color key="textColor" red="0.37254901959999998" green="0.67450980390000004" blue="0.87450980389999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <stackView opaque="NO" contentMode="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="E5U-7f-UPy">
+                                                                <rect key="frame" x="57.5" y="34.5" width="220" height="20"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BXl-gs-tTt">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="width" constant="20" id="IeE-Zu-m3I"/>
+                                                                        </constraints>
+                                                                        <state key="normal" image="facebook-footer-icon"/>
+                                                                    </button>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3sw-T3-n1S">
+                                                                        <rect key="frame" x="50" y="0.0" width="20" height="20"/>
+                                                                        <state key="normal" image="twitter-footer-icon"/>
+                                                                    </button>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2g7-d3-VyZ">
+                                                                        <rect key="frame" x="100" y="0.0" width="20" height="20"/>
+                                                                        <state key="normal" image="google-footer-icon"/>
+                                                                    </button>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wi1-wu-cbk">
+                                                                        <rect key="frame" x="150" y="0.0" width="20" height="20"/>
+                                                                        <state key="normal" image="youtube-footer-icon"/>
+                                                                    </button>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nHu-Ei-f4F">
+                                                                        <rect key="frame" x="200" y="0.0" width="20" height="20"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                                        <state key="normal" image="instagram-footer-icon"/>
+                                                                    </button>
+                                                                </subviews>
+                                                                <constraints>
+                                                                    <constraint firstItem="3sw-T3-n1S" firstAttribute="width" secondItem="BXl-gs-tTt" secondAttribute="width" id="GFo-c0-xRL"/>
+                                                                    <constraint firstItem="2g7-d3-VyZ" firstAttribute="width" secondItem="BXl-gs-tTt" secondAttribute="width" id="Mbx-MQ-HTs"/>
+                                                                    <constraint firstAttribute="height" constant="20" id="YJS-q6-JbU"/>
+                                                                    <constraint firstItem="Wi1-wu-cbk" firstAttribute="width" secondItem="BXl-gs-tTt" secondAttribute="width" id="iWh-ke-Xga"/>
+                                                                    <constraint firstItem="nHu-Ei-f4F" firstAttribute="width" secondItem="BXl-gs-tTt" secondAttribute="width" id="ipD-h4-pVG"/>
+                                                                </constraints>
+                                                            </stackView>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstItem="s9J-h6-iRV" firstAttribute="leading" secondItem="NYS-Vk-cZ0" secondAttribute="leading" id="CFV-C3-nmM"/>
+                                                            <constraint firstAttribute="trailing" secondItem="s9J-h6-iRV" secondAttribute="trailing" id="TdH-zd-Y3p"/>
+                                                        </constraints>
+                                                    </stackView>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.18823529410000001" green="0.1960784314" blue="0.25098039220000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstItem="NYS-Vk-cZ0" firstAttribute="centerY" secondItem="hor-Ek-98h" secondAttribute="centerY" id="Dki-Iv-ppc"/>
+                                                    <constraint firstAttribute="height" constant="125" id="egz-Ql-1mv"/>
+                                                    <constraint firstItem="NYS-Vk-cZ0" firstAttribute="centerX" secondItem="hor-Ek-98h" secondAttribute="centerX" id="qa4-aW-wTZ"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.0039215686269999999" green="0.17254901959999999" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="9CB-Ep-Ph1" firstAttribute="leading" secondItem="svg-37-pVo" secondAttribute="leading" id="0Cz-XV-fth"/>
+                                            <constraint firstItem="WEb-PM-wdh" firstAttribute="top" secondItem="X2p-g5-aeA" secondAttribute="bottom" constant="8" id="17l-JK-jHN"/>
+                                            <constraint firstAttribute="trailing" secondItem="n5r-9l-7jU" secondAttribute="trailing" constant="8" id="1MI-Wz-p0t"/>
+                                            <constraint firstItem="toW-h3-UTP" firstAttribute="top" secondItem="vav-2J-h4r" secondAttribute="bottom" constant="8" id="1RN-Hn-iZZ"/>
+                                            <constraint firstItem="hor-Ek-98h" firstAttribute="top" secondItem="BMO-PZ-BRH" secondAttribute="bottom" constant="27" id="2gz-1Q-jYV"/>
+                                            <constraint firstAttribute="trailing" secondItem="vav-2J-h4r" secondAttribute="trailing" constant="8" id="2zH-8m-kIg"/>
+                                            <constraint firstAttribute="trailing" secondItem="8ij-jM-YkO" secondAttribute="trailing" constant="8" id="3Gh-3o-y6c"/>
+                                            <constraint firstAttribute="trailing" secondItem="pLZ-xi-EJj" secondAttribute="trailing" constant="8" id="50r-6N-ArN"/>
+                                            <constraint firstItem="8ij-jM-YkO" firstAttribute="leading" secondItem="svg-37-pVo" secondAttribute="leading" constant="8" id="6kN-Pv-Und"/>
+                                            <constraint firstItem="vav-2J-h4r" firstAttribute="leading" secondItem="svg-37-pVo" secondAttribute="leading" constant="36" id="7c0-a6-kg6"/>
+                                            <constraint firstItem="SbY-lp-uuT" firstAttribute="leading" secondItem="svg-37-pVo" secondAttribute="leading" id="8WE-tQ-tlQ"/>
+                                            <constraint firstAttribute="trailing" secondItem="oEX-sE-FBo" secondAttribute="trailing" constant="8" id="A98-WM-UKY"/>
+                                            <constraint firstItem="vav-2J-h4r" firstAttribute="top" secondItem="yF5-7s-UQx" secondAttribute="bottom" constant="8" id="Cq9-2Z-Evm"/>
+                                            <constraint firstAttribute="trailing" secondItem="hor-Ek-98h" secondAttribute="trailing" id="Den-bZ-w7x"/>
+                                            <constraint firstItem="n5r-9l-7jU" firstAttribute="leading" secondItem="svg-37-pVo" secondAttribute="leading" constant="8" id="E37-Qw-RQh"/>
+                                            <constraint firstAttribute="trailing" secondItem="9CB-Ep-Ph1" secondAttribute="trailing" id="HNz-ih-ebo"/>
+                                            <constraint firstItem="yF5-7s-UQx" firstAttribute="leading" secondItem="svg-37-pVo" secondAttribute="leading" constant="8" id="I9J-p1-LDT"/>
+                                            <constraint firstAttribute="trailing" secondItem="BMO-PZ-BRH" secondAttribute="trailing" id="LOq-3m-GqL"/>
+                                            <constraint firstItem="9CB-Ep-Ph1" firstAttribute="top" secondItem="8ij-jM-YkO" secondAttribute="bottom" constant="8" id="LjT-Mh-6OS"/>
+                                            <constraint firstItem="toW-h3-UTP" firstAttribute="leading" secondItem="vav-2J-h4r" secondAttribute="leading" id="O6Q-vr-Wr3"/>
+                                            <constraint firstAttribute="trailing" secondItem="SbY-lp-uuT" secondAttribute="trailing" id="Qbe-nv-tU5"/>
+                                            <constraint firstItem="BMO-PZ-BRH" firstAttribute="top" secondItem="WEb-PM-wdh" secondAttribute="bottom" constant="36" id="RWz-vB-0Qq"/>
+                                            <constraint firstItem="X2p-g5-aeA" firstAttribute="leading" secondItem="vav-2J-h4r" secondAttribute="leading" id="Vxu-BC-hk4"/>
+                                            <constraint firstItem="SbY-lp-uuT" firstAttribute="top" secondItem="svg-37-pVo" secondAttribute="top" id="WT4-27-LIX"/>
+                                            <constraint firstAttribute="bottom" secondItem="hor-Ek-98h" secondAttribute="bottom" id="Ywe-Mv-7t3"/>
+                                            <constraint firstItem="n5r-9l-7jU" firstAttribute="top" secondItem="9CB-Ep-Ph1" secondAttribute="bottom" constant="8" id="be8-9e-Fmt"/>
+                                            <constraint firstItem="pLZ-xi-EJj" firstAttribute="top" secondItem="toW-h3-UTP" secondAttribute="bottom" constant="8" id="bst-8c-ciH"/>
+                                            <constraint firstItem="oEX-sE-FBo" firstAttribute="leading" secondItem="svg-37-pVo" secondAttribute="leading" constant="8" id="byJ-sm-AhR"/>
+                                            <constraint firstItem="yF5-7s-UQx" firstAttribute="top" secondItem="oEX-sE-FBo" secondAttribute="bottom" id="dHF-s2-Jre"/>
+                                            <constraint firstItem="oEX-sE-FBo" firstAttribute="top" secondItem="n5r-9l-7jU" secondAttribute="bottom" constant="16" id="dtB-Ae-ti5"/>
+                                            <constraint firstAttribute="trailing" secondItem="X2p-g5-aeA" secondAttribute="trailing" constant="8" id="eqB-on-a35"/>
+                                            <constraint firstItem="8ij-jM-YkO" firstAttribute="top" secondItem="SbY-lp-uuT" secondAttribute="bottom" constant="8" id="fEH-xc-GEf"/>
+                                            <constraint firstItem="WEb-PM-wdh" firstAttribute="leading" secondItem="vav-2J-h4r" secondAttribute="leading" id="gOO-HF-LLN"/>
+                                            <constraint firstItem="pLZ-xi-EJj" firstAttribute="leading" secondItem="vav-2J-h4r" secondAttribute="leading" id="gPb-6u-mE7"/>
+                                            <constraint firstItem="BMO-PZ-BRH" firstAttribute="leading" secondItem="svg-37-pVo" secondAttribute="leading" id="j3P-64-DOP"/>
+                                            <constraint firstAttribute="trailing" secondItem="WEb-PM-wdh" secondAttribute="trailing" constant="8" id="oOc-AN-V45"/>
+                                            <constraint firstItem="X2p-g5-aeA" firstAttribute="top" secondItem="pLZ-xi-EJj" secondAttribute="bottom" constant="8" id="qKY-Nr-ydd"/>
+                                            <constraint firstAttribute="trailing" secondItem="yF5-7s-UQx" secondAttribute="trailing" constant="8" id="rLf-E3-UbY"/>
+                                            <constraint firstItem="hor-Ek-98h" firstAttribute="leading" secondItem="svg-37-pVo" secondAttribute="leading" id="tPr-P2-XfD"/>
+                                            <constraint firstAttribute="trailing" secondItem="toW-h3-UTP" secondAttribute="trailing" constant="8" id="wL6-5x-Ro6"/>
+                                            <constraint firstItem="9CB-Ep-Ph1" firstAttribute="width" secondItem="9CB-Ep-Ph1" secondAttribute="height" multiplier="5:2" id="wig-ml-9AW"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="biscayneBayWaterWatchLogo" destination="zSf-zk-gkY" id="0gC-uN-ZoX"/>
+                                            <outlet property="bodyTextView1" destination="n5r-9l-7jU" id="4vq-8r-TwQ"/>
+                                            <outlet property="bodyTextView2" destination="yF5-7s-UQx" id="USi-IA-c24"/>
+                                            <outlet property="chlorophyllALinkButton" destination="WEb-PM-wdh" id="vgk-7g-yJq"/>
+                                            <outlet property="dissolvedOxygenLinkButton" destination="pLZ-xi-EJj" id="XoE-31-tac"/>
+                                            <outlet property="headerLabel1" destination="8ij-jM-YkO" id="VRq-Ym-3Ng"/>
+                                            <outlet property="headerLabel2" destination="oEX-sE-FBo" id="k4f-yA-9Ni"/>
+                                            <outlet property="imageView" destination="SbY-lp-uuT" id="40o-UI-64P"/>
+                                            <outlet property="learnMoreLinkButton" destination="vav-2J-h4r" id="sCW-qy-hOt"/>
+                                            <outlet property="nutrientsLinkButton" destination="X2p-g5-aeA" id="9U7-LJ-Ras"/>
+                                            <outlet property="temperatureLinkButton" destination="toW-h3-UTP" id="G5b-O0-Al2"/>
+                                        </connections>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.18823529410000001" green="0.1960784314" blue="0.25098039220000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="svg-37-pVo" firstAttribute="leading" secondItem="b9k-5Z-zM5" secondAttribute="leading" id="BU4-on-Lvm"/>
+                                    <constraint firstItem="svg-37-pVo" firstAttribute="top" secondItem="b9k-5Z-zM5" secondAttribute="top" id="NKk-id-bJt"/>
+                                    <constraint firstAttribute="trailing" secondItem="svg-37-pVo" secondAttribute="trailing" id="VC3-Qx-tPN"/>
+                                    <constraint firstAttribute="bottom" secondItem="svg-37-pVo" secondAttribute="bottom" id="aeP-FQ-NSf"/>
+                                    <constraint firstItem="svg-37-pVo" firstAttribute="height" secondItem="b9k-5Z-zM5" secondAttribute="height" priority="250" id="b9X-oo-UGk"/>
+                                    <constraint firstItem="svg-37-pVo" firstAttribute="width" secondItem="b9k-5Z-zM5" secondAttribute="width" id="inU-we-Wpf"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="MQq-8r-cmJ" firstAttribute="trailing" secondItem="b9k-5Z-zM5" secondAttribute="trailing" id="MWJ-jH-RkV"/>
+                            <constraint firstItem="b9k-5Z-zM5" firstAttribute="leading" secondItem="MQq-8r-cmJ" secondAttribute="leading" id="Y0K-71-2k3"/>
+                            <constraint firstItem="b9k-5Z-zM5" firstAttribute="top" secondItem="MQq-8r-cmJ" secondAttribute="top" id="aJb-eb-U9l"/>
+                            <constraint firstItem="MQq-8r-cmJ" firstAttribute="bottom" secondItem="b9k-5Z-zM5" secondAttribute="bottom" id="gxw-ac-2Tk"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="MQq-8r-cmJ"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Lk9-Ge-eih">
+                        <barButtonItem key="leftBarButtonItem" image="1-header-nav-1" id="7RU-1i-jcP">
+                            <color key="tintColor" red="0.60392156860000001" green="0.6588235294" blue="0.69803921570000005" alpha="1" colorSpace="calibratedRGB"/>
+                        </barButtonItem>
+                    </navigationItem>
+                    <size key="freeformSize" width="375" height="2000"/>
+                    <connections>
+                        <outlet property="collapsibleTableViewContainerHeight" destination="sgr-W9-7xe" id="mCr-Fc-xCR"/>
+                        <outlet property="waterWatchView" destination="svg-37-pVo" id="zc4-FU-wZ7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BEa-gW-xK0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6673" y="371"/>
         </scene>
         <!--Lecture Series View Controller-->
         <scene sceneID="Yfg-t0-XuT">
@@ -1439,7 +2131,7 @@ We will reschedule it as soon as possible and keep everyone informed of any deve
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8dT-7p-NMK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="8093" y="-255"/>
+            <point key="canvasLocation" x="8158" y="-231"/>
         </scene>
         <!--Field Activity View Controller-->
         <scene sceneID="6gM-99-24f">
@@ -1450,7 +2142,7 @@ We will reschedule it as soon as possible and keep everyone informed of any deve
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Field Activity Page" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mY7-yZ-5WZ">
-                                <rect key="frame" x="117.5" y="323" width="140.5" height="21"/>
+                                <rect key="frame" x="117" y="323" width="141" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -1474,7 +2166,7 @@ We will reschedule it as soon as possible and keep everyone informed of any deve
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ed6-pe-Hau" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="8916" y="-291"/>
+            <point key="canvasLocation" x="8916" y="-255"/>
         </scene>
         <!--Events View Controller-->
         <scene sceneID="DC7-fe-0il">
@@ -1509,7 +2201,7 @@ We will reschedule it as soon as possible and keep everyone informed of any deve
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wpb-eA-mL7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="10429" y="-291"/>
+            <point key="canvasLocation" x="10428" y="-255"/>
         </scene>
         <!--News View Controller-->
         <scene sceneID="RMW-Ps-OQy">
@@ -1520,7 +2212,7 @@ We will reschedule it as soon as possible and keep everyone informed of any deve
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="News Page" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yw2-Dm-XiJ">
-                                <rect key="frame" x="145" y="323" width="85.5" height="21"/>
+                                <rect key="frame" x="145" y="323" width="85" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -1544,7 +2236,7 @@ We will reschedule it as soon as possible and keep everyone informed of any deve
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oMC-1e-hoS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="9625" y="-291"/>
+            <point key="canvasLocation" x="9625" y="-255"/>
         </scene>
         <!--About Us View Controller-->
         <scene sceneID="P3u-Jb-Inm">
@@ -1555,7 +2247,7 @@ We will reschedule it as soon as possible and keep everyone informed of any deve
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About Us Page" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QX4-Cp-yQv">
-                                <rect key="frame" x="130.5" y="323" width="114.5" height="21"/>
+                                <rect key="frame" x="130" y="323" width="115" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -1579,7 +2271,7 @@ We will reschedule it as soon as possible and keep everyone informed of any deve
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vRi-Jm-hzO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="11229" y="-291"/>
+            <point key="canvasLocation" x="11230" y="-255"/>
         </scene>
         <!--Our Biomes View Controller-->
         <scene sceneID="dsO-GJ-igp">
@@ -1614,7 +2306,7 @@ We will reschedule it as soon as possible and keep everyone informed of any deve
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jpw-ZD-hPz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="11986" y="-291"/>
+            <point key="canvasLocation" x="11985" y="-255"/>
         </scene>
         <!--Newsletters View Controller-->
         <scene sceneID="cL4-Wq-ugE">
@@ -1625,7 +2317,7 @@ We will reschedule it as soon as possible and keep everyone informed of any deve
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Newsletter Page" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xSR-RV-UpO">
-                                <rect key="frame" x="125" y="323" width="125.5" height="21"/>
+                                <rect key="frame" x="125" y="323" width="125" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -1649,7 +2341,7 @@ We will reschedule it as soon as possible and keep everyone informed of any deve
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fqj-GA-NEb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="12806" y="-291"/>
+            <point key="canvasLocation" x="12806" y="-255"/>
         </scene>
         <!--Our Partners View Controller-->
         <scene sceneID="pmH-YC-lEr">
@@ -1660,7 +2352,7 @@ We will reschedule it as soon as possible and keep everyone informed of any deve
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Our Partners Page" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0br-b0-p7a">
-                                <rect key="frame" x="117.5" y="323" width="140.5" height="21"/>
+                                <rect key="frame" x="117" y="323" width="141" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -1684,7 +2376,7 @@ We will reschedule it as soon as possible and keep everyone informed of any deve
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cIE-zd-pRV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="13749" y="-291"/>
+            <point key="canvasLocation" x="13748" y="-255"/>
         </scene>
         <!--Contact Us View Controller-->
         <scene sceneID="eVg-Fc-5sC">
@@ -1719,7 +2411,7 @@ We will reschedule it as soon as possible and keep everyone informed of any deve
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dYm-YE-M1p" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="14599" y="-291"/>
+            <point key="canvasLocation" x="14598" y="-255"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -1730,7 +2422,7 @@ We will reschedule it as soon as possible and keep everyone informed of any deve
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="xZc-gr-ClJ">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <color key="backgroundColor" red="0.18823529410000001" green="0.1960784314" blue="0.25098039220000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="PVm-Qr-RrE">
                                     <size key="itemSize" width="185" height="185"/>
@@ -1749,8 +2441,14 @@ We will reschedule it as soon as possible and keep everyone informed of any deve
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gGP-4Q-pUl">
                                                     <rect key="frame" x="0.0" y="0.0" width="185" height="185"/>
                                                 </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="20-homepage-image-shadow" translatesAutoresizingMaskIntoConstraints="NO" id="u1I-QE-gXL">
+                                                    <rect key="frame" x="0.0" y="111" width="185" height="74"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="u1I-QE-gXL" secondAttribute="height" multiplier="5:2" id="hjQ-kb-LnK"/>
+                                                    </constraints>
+                                                </imageView>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="sp2-1L-j3U">
-                                                    <rect key="frame" x="0.0" y="142" width="185" height="43"/>
+                                                    <rect key="frame" x="0.0" y="113" width="185" height="43"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="las-03-Gas">
                                                             <rect key="frame" x="0.0" y="0.0" width="185" height="18"/>
@@ -1758,7 +2456,7 @@ We will reschedule it as soon as possible and keep everyone informed of any deve
                                                                 <constraint firstAttribute="height" constant="18" id="Uvj-bh-eDh"/>
                                                             </constraints>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                            <nil key="textColor"/>
+                                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="eAO-oU-eYA">
@@ -1767,29 +2465,56 @@ We will reschedule it as soon as possible and keep everyone informed of any deve
                                                                 <constraint firstAttribute="height" constant="25" id="KiQ-lF-jCc"/>
                                                             </constraints>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                            <nil key="textColor"/>
+                                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                     </subviews>
                                                 </stackView>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vqk-VG-wKi">
+                                                    <rect key="frame" x="0.0" y="156" width="185" height="22"/>
+                                                    <subviews>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="white-down-arrow" translatesAutoresizingMaskIntoConstraints="NO" id="QfT-W6-hEq">
+                                                            <rect key="frame" x="81" y="5" width="22" height="12"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="22" id="rEQ-FZ-gZA"/>
+                                                                <constraint firstAttribute="height" constant="12" id="yZI-tS-Zrr"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="22" id="5Lv-SQ-zgB"/>
+                                                        <constraint firstItem="QfT-W6-hEq" firstAttribute="centerY" secondItem="vqk-VG-wKi" secondAttribute="centerY" id="5P2-U6-on6"/>
+                                                        <constraint firstItem="QfT-W6-hEq" firstAttribute="centerX" secondItem="vqk-VG-wKi" secondAttribute="centerX" id="eVx-w1-kbl"/>
+                                                    </constraints>
+                                                </view>
                                             </subviews>
                                         </view>
                                         <constraints>
+                                            <constraint firstItem="vqk-VG-wKi" firstAttribute="leading" secondItem="wDA-Po-Iq5" secondAttribute="leading" id="1Fo-zt-BCi"/>
+                                            <constraint firstItem="u1I-QE-gXL" firstAttribute="width" secondItem="wDA-Po-Iq5" secondAttribute="width" id="1IV-im-ZYP"/>
+                                            <constraint firstItem="vqk-VG-wKi" firstAttribute="top" secondItem="sp2-1L-j3U" secondAttribute="bottom" id="3I4-Mq-nKL"/>
                                             <constraint firstAttribute="bottom" secondItem="gGP-4Q-pUl" secondAttribute="bottom" id="8Ec-Js-CAd"/>
+                                            <constraint firstAttribute="trailing" secondItem="sp2-1L-j3U" secondAttribute="trailing" id="CeP-pi-mVG"/>
+                                            <constraint firstItem="sp2-1L-j3U" firstAttribute="leading" secondItem="wDA-Po-Iq5" secondAttribute="leading" id="Hpu-s1-m09"/>
+                                            <constraint firstAttribute="trailing" secondItem="u1I-QE-gXL" secondAttribute="trailing" id="SEr-pw-jBW"/>
+                                            <constraint firstItem="u1I-QE-gXL" firstAttribute="leading" secondItem="wDA-Po-Iq5" secondAttribute="leading" id="T1U-Bl-4Mf"/>
                                             <constraint firstItem="gGP-4Q-pUl" firstAttribute="leading" secondItem="wDA-Po-Iq5" secondAttribute="leading" id="Ujq-ly-kS2"/>
+                                            <constraint firstAttribute="bottom" secondItem="u1I-QE-gXL" secondAttribute="bottom" id="YdE-d5-mXH"/>
                                             <constraint firstItem="gGP-4Q-pUl" firstAttribute="top" secondItem="wDA-Po-Iq5" secondAttribute="top" id="aCu-ym-JeX"/>
-                                            <constraint firstAttribute="trailing" secondItem="sp2-1L-j3U" secondAttribute="trailing" id="e3m-XM-f1h"/>
+                                            <constraint firstAttribute="trailing" secondItem="vqk-VG-wKi" secondAttribute="trailing" id="bhM-M3-Mjb"/>
                                             <constraint firstAttribute="trailing" secondItem="gGP-4Q-pUl" secondAttribute="trailing" id="re4-lh-Yvv"/>
-                                            <constraint firstItem="sp2-1L-j3U" firstAttribute="bottom" secondItem="gGP-4Q-pUl" secondAttribute="bottom" id="sJO-ci-Ils"/>
-                                            <constraint firstItem="sp2-1L-j3U" firstAttribute="leading" secondItem="gGP-4Q-pUl" secondAttribute="leading" id="zzr-8v-AEH"/>
+                                            <constraint firstItem="sp2-1L-j3U" firstAttribute="bottom" secondItem="gGP-4Q-pUl" secondAttribute="bottom" constant="-29" id="sJO-ci-Ils"/>
                                         </constraints>
                                         <connections>
+                                            <outlet property="arrowImageView" destination="QfT-W6-hEq" id="F3C-rb-wkG"/>
                                             <outlet property="bottomMarginLabelsConstraint" destination="sJO-ci-Ils" id="uqK-WX-4zc"/>
                                             <outlet property="headerLabel" destination="las-03-Gas" id="nLw-Kw-sU1"/>
                                             <outlet property="headerLabelHeightConstraint" destination="Uvj-bh-eDh" id="J0i-qX-APJ"/>
                                             <outlet property="imageView" destination="gGP-4Q-pUl" id="2v1-yb-GFk"/>
                                             <outlet property="labelsStackContainer" destination="sp2-1L-j3U" id="vTS-l9-zhS"/>
-                                            <outlet property="leftMarginLabelsConstraint" destination="zzr-8v-AEH" id="wh9-sg-dgQ"/>
+                                            <outlet property="leftMarginLabelsConstraint" destination="Hpu-s1-m09" id="Oma-8i-XnO"/>
+                                            <outlet property="rightMarginLabelsConstraint" destination="CeP-pi-mVG" id="pfj-NS-ul4"/>
+                                            <outlet property="shadowImageView" destination="u1I-QE-gXL" id="GTU-EY-1b4"/>
                                             <outlet property="subHeaderLabel" destination="eAO-oU-eYA" id="OMU-6h-u5u"/>
                                             <outlet property="subHeaderLabelHeightConstraint" destination="KiQ-lF-jCc" id="ySN-q3-y2R"/>
                                         </connections>
@@ -1800,16 +2525,16 @@ We will reschedule it as soon as possible and keep everyone informed of any deve
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="fUT-Yo-O4E">
-                                            <rect key="frame" x="16" y="45" width="343" height="35"/>
+                                            <rect key="frame" x="8" y="35.5" width="359" height="54.5"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="center" text="KEY BISCAYNE COMMUNITY FOUNDATION" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pCV-uw-31F">
-                                                    <rect key="frame" x="0.0" y="0.0" width="343" height="0.0"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="359" height="19.5"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
                                                     <color key="textColor" red="0.37254901959999998" green="0.67450980390000004" blue="0.87450980389999999" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <stackView opaque="NO" contentMode="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="vGs-2j-Vib">
-                                                    <rect key="frame" x="61" y="15" width="220" height="20"/>
+                                                    <rect key="frame" x="69.5" y="34.5" width="220" height="20"/>
                                                     <subviews>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7yD-4G-ClX">
                                                             <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
@@ -1903,11 +2628,26 @@ We will reschedule it as soon as possible and keep everyone informed of any deve
                     <size key="freeformSize" width="375" height="667"/>
                     <connections>
                         <outlet property="collectionView" destination="xZc-gr-ClJ" id="JNg-qj-RvG"/>
+                        <segue destination="GSr-y6-Yzf" kind="show" identifier="segueToLearn" id="whp-l0-94s"/>
+                        <segue destination="bCD-OY-gXb" kind="show" identifier="segueToRecord" id="hno-WS-Bw2"/>
+                        <segue destination="zQx-Jl-2DE" kind="show" identifier="segueToExplore" id="bpx-hV-XQv"/>
+                        <segue destination="8HI-9x-GoA" kind="show" identifier="segueToReview" id="3gI-fe-vtX"/>
+                        <segue destination="jKh-MS-fXM" kind="show" identifier="segueToKeyChallenge" id="qUt-tQ-sok"/>
+                        <segue destination="lSf-Zo-CgR" kind="show" identifier="segueToSeaLevelRise" id="OXl-cU-HuW"/>
+                        <segue destination="ckQ-HU-6ed" kind="show" identifier="segueToWaterWatch" id="3wA-ku-GBQ"/>
+                        <segue destination="auj-5x-N91" kind="show" identifier="segueToReefRestoration" id="Oy0-zP-VTa"/>
+                        <segue destination="mfk-Gb-hXM" kind="show" identifier="segueToLectureSeries" id="Sys-Vp-ayk"/>
+                        <segue destination="nHS-CV-4uQ" kind="show" identifier="segueToFieldActivities" id="XNF-o3-VLY"/>
+                        <segue destination="Q5q-PP-8PV" kind="show" identifier="segueToNews" id="BU9-tW-n6z"/>
+                        <segue destination="n0T-bo-uMI" kind="show" identifier="segueToEvents" id="987-cs-BJW"/>
+                        <segue destination="YFL-T1-tRh" kind="show" identifier="segueToOurPartners" id="Ndr-sr-hkv"/>
+                        <segue destination="cPL-qk-5Bx" kind="show" identifier="segueToContactUs" id="8FM-DV-Ffe"/>
+                        <segue destination="tmZ-Zh-GZT" kind="show" identifier="segueToAboutUs" id="UXe-4g-zrx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2045" y="-228"/>
+            <point key="canvasLocation" x="5440.8000000000002" y="-3161.4692653673164"/>
         </scene>
         <!--Profile Navigation Controller-->
         <scene sceneID="EJo-HN-r3F">
@@ -1997,7 +2737,7 @@ We will reschedule it as soon as possible and keep everyone informed of any deve
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fEf-HY-mWt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2044" y="-1131"/>
+            <point key="canvasLocation" x="4279" y="-3161"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="bh0-rM-yhT">
@@ -2159,7 +2899,7 @@ We will reschedule it as soon as possible and keep everyone informed of any deve
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XNS-rv-QWD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="8093" y="-1132"/>
+            <point key="canvasLocation" x="8158" y="-1131"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="gCd-fp-o9q">
@@ -2269,13 +3009,41 @@ We will reschedule it as soon as possible and keep everyone informed of any deve
             </objects>
             <point key="canvasLocation" x="14599" y="-1132"/>
         </scene>
+        <!--Collapsible Table View Controller-->
+        <scene sceneID="lNG-0f-dYd">
+            <objects>
+                <tableViewController id="wBg-Dd-7hD" customClass="CollapsibleTableViewController" customModule="Citizen_Scientist_Project" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" sectionHeaderHeight="1" sectionFooterHeight="1" id="321-JM-9xi">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="yIR-A4-6Qh">
+                                <rect key="frame" x="0.0" y="1" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="yIR-A4-6Qh" id="p3L-Fg-0Bj">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="wBg-Dd-7hD" id="nnR-uO-Qnm"/>
+                            <outlet property="delegate" destination="wBg-Dd-7hD" id="T2R-Dk-2CX"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6yT-2h-X0m" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6673" y="10897"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="ruI-K3-Om8">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="SXQ-RY-Zdd" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="7Ho-E0-Cow">
-                        <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -2287,21 +3055,62 @@ We will reschedule it as soon as possible and keep everyone informed of any deve
             </objects>
             <point key="canvasLocation" x="7174" y="4238"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="dHe-AO-WRc">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="wCb-qg-20e" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="xP0-Fc-LHJ">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="0Xh-d4-XbP" kind="relationship" relationship="rootViewController" id="IL9-yI-o8P"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Tfj-SY-FsU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6673" y="-1132"/>
+        </scene>
     </scenes>
     <resources>
         <image name="1-header-nav-1" width="37" height="37"/>
+        <image name="20-homepage-image-shadow" width="600" height="300"/>
         <image name="down-arrow" width="980" height="582"/>
         <image name="facebook-footer-icon" width="64" height="64"/>
         <image name="foundation-key-logos" width="1000" height="206"/>
         <image name="google-footer-icon" width="64" height="64"/>
         <image name="instagram-footer-icon" width="64" height="64"/>
+        <image name="key-biscayne-water-watch-logo" width="206" height="180"/>
         <image name="prezi-sea-level-rise" width="603" height="495"/>
+        <image name="reef-restoration-1" width="1800" height="1000"/>
+        <image name="reef-restoration-2" width="640" height="480"/>
+        <image name="reef-restoration-3" width="640" height="480"/>
+        <image name="reef-restoration-learn-more" width="1080" height="1350"/>
         <image name="sea-level-rise" width="1800" height="1000"/>
         <image name="twitter-footer-icon" width="64" height="64"/>
+        <image name="white-down-arrow" width="980" height="582"/>
+        <image name="water-watch" width="1800" height="1000"/>
         <image name="youtube-footer-icon" width="64" height="64"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="z0S-Ow-gou"/>
-        <segue reference="HLz-tX-r1Z"/>
+        <segue reference="In9-og-6dh"/>
+        <segue reference="UXe-4g-zrx"/>
+        <segue reference="whp-l0-94s"/>
+        <segue reference="8FM-DV-Ffe"/>
+        <segue reference="Ndr-sr-hkv"/>
+        <segue reference="BU9-tW-n6z"/>
+        <segue reference="987-cs-BJW"/>
+        <segue reference="XNF-o3-VLY"/>
+        <segue reference="Sys-Vp-ayk"/>
+        <segue reference="IL9-yI-o8P"/>
+        <segue reference="Oy0-zP-VTa"/>
+        <segue reference="fi6-GE-bpi"/>
+        <segue reference="OXl-cU-HuW"/>
+        <segue reference="qUt-tQ-sok"/>
+        <segue reference="3gI-fe-vtX"/>
+        <segue reference="hno-WS-Bw2"/>
+        <segue reference="bpx-hV-XQv"/>
     </inferredMetricsTieBreakers>
 </document>
