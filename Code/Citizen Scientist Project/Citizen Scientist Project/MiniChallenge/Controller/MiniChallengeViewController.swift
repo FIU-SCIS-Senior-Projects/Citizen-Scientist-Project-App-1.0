@@ -11,6 +11,7 @@ import UIKit
 class MiniChallengeViewController: UIViewController {
 
     @IBOutlet weak var iNaturalistDownloadView: iNaturalistDownloadView!
+    @IBOutlet weak var iNaturalistVimeoTutorialView: iNaturalistVimeoTutorialView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,7 +19,7 @@ class MiniChallengeViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    // MARK: - iNaturalist Download Steps Navigation
+    // MARK: - iNaturalist Download Steps & Vimeo Tutorial Navigation
     
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -29,6 +30,15 @@ class MiniChallengeViewController: UIViewController {
                 iNaturalistDownloadStepPageVC.pageViewControllerDelegate = iNaturalistDownloadView
             }
         }
+        
+        if segue.identifier == Storyboard.showiNaturalistVimeoTutorialPageVC{
+            if let iNaturalistVimeoTutorialPageVC = segue.destination as? iNaturalistVimeoTutorialsPageViewController{
+                // TODO: here you can assign the data to prepare for the PageViewController
+                //iNaturalistDownloadStepPageVC.images = images
+                iNaturalistVimeoTutorialPageVC.pageViewControllerDelegate = iNaturalistVimeoTutorialView
+            }
+        }
+        
     }
     
     func setUpNavBar(){

@@ -42,6 +42,9 @@
 		229E615B2022A79200D4BDDA /* Citizen_Scientist_ProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229E615A2022A79200D4BDDA /* Citizen_Scientist_ProjectTests.swift */; };
 		229E61662022A79200D4BDDA /* Citizen_Scientist_ProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229E61652022A79200D4BDDA /* Citizen_Scientist_ProjectUITests.swift */; };
 		22CA83B2206E348800287889 /* iNaturalistDownloadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CA83B1206E348800287889 /* iNaturalistDownloadView.swift */; };
+		22CA83B6206E52EC00287889 /* iNaturalistVimeoTutorialsPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CA83B5206E52EC00287889 /* iNaturalistVimeoTutorialsPageViewController.swift */; };
+		22CA83B8206E55D300287889 /* iNaturalistVimeoTutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CA83B7206E55D300287889 /* iNaturalistVimeoTutorialViewController.swift */; };
+		22CA83BA206E593600287889 /* iNaturalistVimeoTutorialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CA83B9206E593600287889 /* iNaturalistVimeoTutorialView.swift */; };
 		22E377B9206CE29300D277F2 /* MiniChallengeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E377B8206CE29300D277F2 /* MiniChallengeViewController.swift */; };
 		22E377BB206E22AA00D277F2 /* iNaturalistDownloadStepViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E377BA206E22AA00D277F2 /* iNaturalistDownloadStepViewController.swift */; };
 		22E377BD206E23DB00D277F2 /* iNaturalistDownloadStepsPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E377BC206E23DB00D277F2 /* iNaturalistDownloadStepsPageViewController.swift */; };
@@ -129,6 +132,9 @@
 		229E61652022A79200D4BDDA /* Citizen_Scientist_ProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Citizen_Scientist_ProjectUITests.swift; sourceTree = "<group>"; };
 		229E61672022A79200D4BDDA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		22CA83B1206E348800287889 /* iNaturalistDownloadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iNaturalistDownloadView.swift; sourceTree = "<group>"; };
+		22CA83B5206E52EC00287889 /* iNaturalistVimeoTutorialsPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iNaturalistVimeoTutorialsPageViewController.swift; sourceTree = "<group>"; };
+		22CA83B7206E55D300287889 /* iNaturalistVimeoTutorialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iNaturalistVimeoTutorialViewController.swift; sourceTree = "<group>"; };
+		22CA83B9206E593600287889 /* iNaturalistVimeoTutorialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iNaturalistVimeoTutorialView.swift; sourceTree = "<group>"; };
 		22E377B8206CE29300D277F2 /* MiniChallengeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniChallengeViewController.swift; sourceTree = "<group>"; };
 		22E377BA206E22AA00D277F2 /* iNaturalistDownloadStepViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iNaturalistDownloadStepViewController.swift; sourceTree = "<group>"; };
 		22E377BC206E23DB00D277F2 /* iNaturalistDownloadStepsPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iNaturalistDownloadStepsPageViewController.swift; sourceTree = "<group>"; };
@@ -677,6 +683,24 @@
 			path = "Citizen Scientist ProjectUITests";
 			sourceTree = "<group>";
 		};
+		22CA83B3206E527C00287889 /* iNaturalistDownload */ = {
+			isa = PBXGroup;
+			children = (
+				22E377BC206E23DB00D277F2 /* iNaturalistDownloadStepsPageViewController.swift */,
+				22E377BA206E22AA00D277F2 /* iNaturalistDownloadStepViewController.swift */,
+			);
+			path = iNaturalistDownload;
+			sourceTree = "<group>";
+		};
+		22CA83B4206E52A000287889 /* iNaturalistVimeoTutorials */ = {
+			isa = PBXGroup;
+			children = (
+				22CA83B5206E52EC00287889 /* iNaturalistVimeoTutorialsPageViewController.swift */,
+				22CA83B7206E55D300287889 /* iNaturalistVimeoTutorialViewController.swift */,
+			);
+			path = iNaturalistVimeoTutorials;
+			sourceTree = "<group>";
+		};
 		22E33DB8203E8FE100A0259A /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -697,6 +721,7 @@
 				22E377B7206CE25B00D277F2 /* Model */,
 				22E377B6206CE25400D277F2 /* View */,
 				22E377B5206CE24B00D277F2 /* Controller */,
+				22CA83B4206E52A000287889 /* iNaturalistVimeoTutorials */,
 			);
 			path = MiniChallenge;
 			sourceTree = "<group>";
@@ -705,8 +730,7 @@
 			isa = PBXGroup;
 			children = (
 				22E377B8206CE29300D277F2 /* MiniChallengeViewController.swift */,
-				22E377BA206E22AA00D277F2 /* iNaturalistDownloadStepViewController.swift */,
-				22E377BC206E23DB00D277F2 /* iNaturalistDownloadStepsPageViewController.swift */,
+				22CA83B3206E527C00287889 /* iNaturalistDownload */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -715,6 +739,7 @@
 			isa = PBXGroup;
 			children = (
 				22CA83B1206E348800287889 /* iNaturalistDownloadView.swift */,
+				22CA83B9206E593600287889 /* iNaturalistVimeoTutorialView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -893,11 +918,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22CA83BA206E593600287889 /* iNaturalistVimeoTutorialView.swift in Sources */,
 				6D021C14203E3126003E35D5 /* OurBiomesViewController.swift in Sources */,
 				22594976202DA6EC0047E055 /* CollectionViewCellContent.swift in Sources */,
+				22CA83B8206E55D300287889 /* iNaturalistVimeoTutorialViewController.swift in Sources */,
 				6D021C02203E2A47003E35D5 /* RecordViewController.swift in Sources */,
 				22CA83B2206E348800287889 /* iNaturalistDownloadView.swift in Sources */,
 				6D9DF564203F3FAC0036C0E2 /* StatusReefRestorationViewController.swift in Sources */,
+				22CA83B6206E52EC00287889 /* iNaturalistVimeoTutorialsPageViewController.swift in Sources */,
 				22E377BF206E24FB00D277F2 /* Storyboard.swift in Sources */,
 				229E61452022A79200D4BDDA /* ViewController.swift in Sources */,
 				6D021C16203E3133003E35D5 /* NewslettersViewController.swift in Sources */,

@@ -26,4 +26,8 @@ struct Storyboard {
     
     static let iNaturalistStepViewController = "iNaturalistDownloadStepViewController"
     static let showiNaturalistDownloadStepsPageVC = "showiNaturalistDownloadStepsPageVC"
+    
+    static let iNaturalistVimeoTutorialViewController = "iNaturalistVimeoTutorialViewController"
+    static let showiNaturalistVimeoTutorialPageVC = "showiNaturalistVimeoTutorialPageVC"
+    
 }

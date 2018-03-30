@@ -2729,6 +2729,14 @@ We will reschedule it as soon as possible and keep everyone informed of any deve
             </objects>
             <point key="canvasLocation" x="7512.8000000000002" y="4237.3313343328336"/>
         </scene>
+        <!--Naturalist Vimeo Tutorials Page View Controller-->
+        <scene sceneID="kQj-G4-S5B">
+            <objects>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="S4E-j8-r8H" customClass="iNaturalistVimeoTutorialsPageViewController" customModule="Citizen_Scientist_Project" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QBe-IY-Vat" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2914" y="1354"/>
+        </scene>
         <!--Mini Challenge View Controller-->
         <scene sceneID="sfP-Tu-nh6">
             <objects>
@@ -2880,22 +2888,44 @@ Many of us are familiar with the more visible species: natives like turtles, man
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nV5-Ml-6eu">
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vm8-yp-M5v" customClass="iNaturalistVimeoTutorialView" customModule="Citizen_Scientist_Project" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="104" width="375" height="375"/>
-                                                        <color key="backgroundColor" red="0.95877975230000001" green="0.44700162562095447" blue="0.35499176971577318" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <subviews>
+                                                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nV5-Ml-6eu">
+                                                                <rect key="frame" x="0.0" y="0.0" width="375" height="375"/>
+                                                                <connections>
+                                                                    <segue destination="S4E-j8-r8H" kind="embed" identifier="showiNaturalistVimeoTutorialPageVC" id="3bt-d9-e8j"/>
+                                                                </connections>
+                                                            </containerView>
+                                                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="5ky-Ly-PW0">
+                                                                <rect key="frame" x="168" y="330" width="39" height="37"/>
+                                                                <color key="pageIndicatorTintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <color key="currentPageIndicatorTintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </pageControl>
+                                                        </subviews>
+                                                        <color key="backgroundColor" red="0.34139746430000001" green="0.056113466620000003" blue="0.076615460220000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="width" secondItem="nV5-Ml-6eu" secondAttribute="height" multiplier="1:1" id="a8L-yM-SfG"/>
+                                                            <constraint firstItem="5ky-Ly-PW0" firstAttribute="centerX" secondItem="vm8-yp-M5v" secondAttribute="centerX" id="8I8-95-qbP"/>
+                                                            <constraint firstAttribute="width" secondItem="vm8-yp-M5v" secondAttribute="height" multiplier="1:1" id="Omx-se-Pjf"/>
+                                                            <constraint firstAttribute="bottom" secondItem="5ky-Ly-PW0" secondAttribute="bottom" constant="8" id="WFD-wy-NZw"/>
+                                                            <constraint firstItem="nV5-Ml-6eu" firstAttribute="leading" secondItem="vm8-yp-M5v" secondAttribute="leading" id="Xxh-QP-DRd"/>
+                                                            <constraint firstAttribute="trailing" secondItem="nV5-Ml-6eu" secondAttribute="trailing" id="YwJ-Yn-oUr"/>
+                                                            <constraint firstAttribute="bottom" secondItem="nV5-Ml-6eu" secondAttribute="bottom" id="cIE-mq-Wir"/>
+                                                            <constraint firstItem="nV5-Ml-6eu" firstAttribute="top" secondItem="vm8-yp-M5v" secondAttribute="top" id="lWg-GP-XUP"/>
                                                         </constraints>
-                                                    </containerView>
+                                                        <connections>
+                                                            <outlet property="pageControl" destination="5ky-Ly-PW0" id="rtH-AI-UBU"/>
+                                                        </connections>
+                                                    </view>
                                                 </subviews>
                                                 <color key="backgroundColor" red="0.0039215686269999999" green="0.17254901959999999" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="bottom" secondItem="nV5-Ml-6eu" secondAttribute="bottom" constant="16" id="2NJ-3w-W32"/>
-                                                    <constraint firstAttribute="trailing" secondItem="nV5-Ml-6eu" secondAttribute="trailing" id="V62-mj-q7E"/>
+                                                    <constraint firstItem="vm8-yp-M5v" firstAttribute="top" secondItem="Y95-WB-wkr" secondAttribute="bottom" constant="16" id="0Mp-Wf-9cO"/>
+                                                    <constraint firstAttribute="trailing" secondItem="vm8-yp-M5v" secondAttribute="trailing" id="H1Z-Cr-ZsR"/>
                                                     <constraint firstItem="Y95-WB-wkr" firstAttribute="top" secondItem="IaR-Vd-cj4" secondAttribute="top" constant="16" id="Vuf-kw-2og"/>
-                                                    <constraint firstItem="nV5-Ml-6eu" firstAttribute="leading" secondItem="IaR-Vd-cj4" secondAttribute="leading" id="kS4-Hg-JtR"/>
-                                                    <constraint firstItem="nV5-Ml-6eu" firstAttribute="top" secondItem="Y95-WB-wkr" secondAttribute="bottom" constant="16" id="ucE-Cf-ndl"/>
+                                                    <constraint firstAttribute="bottom" secondItem="vm8-yp-M5v" secondAttribute="bottom" constant="16" id="qqp-83-WDH"/>
                                                     <constraint firstItem="Y95-WB-wkr" firstAttribute="leading" secondItem="IaR-Vd-cj4" secondAttribute="leading" constant="16" id="vWA-oK-Vi5"/>
+                                                    <constraint firstItem="vm8-yp-M5v" firstAttribute="leading" secondItem="IaR-Vd-cj4" secondAttribute="leading" id="y84-OL-fO9"/>
                                                     <constraint firstAttribute="trailing" secondItem="Y95-WB-wkr" secondAttribute="trailing" constant="16" id="z3s-xx-oeh"/>
                                                 </constraints>
                                             </view>
@@ -3132,6 +3162,7 @@ Many of us are familiar with the more visible species: natives like turtles, man
                     <size key="freeformSize" width="375" height="5000"/>
                     <connections>
                         <outlet property="iNaturalistDownloadView" destination="SI9-Ku-9b8" id="FlO-VE-bGs"/>
+                        <outlet property="iNaturalistVimeoTutorialView" destination="vm8-yp-M5v" id="D95-wq-nH2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IWo-dj-Ypv" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -3185,7 +3216,7 @@ Many of us are familiar with the more visible species: natives like turtles, man
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="m4V-Nd-G22" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-388" y="842.42878560719646"/>
+            <point key="canvasLocation" x="-1330" y="1410"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="PMa-aq-C0l">
@@ -3205,6 +3236,47 @@ Many of us are familiar with the more visible species: natives like turtles, man
             </objects>
             <point key="canvasLocation" x="-2142" y="-1131"/>
         </scene>
+        <!--Naturalist Vimeo Tutorial View Controller-->
+        <scene sceneID="iJw-Lq-Of2">
+            <objects>
+                <viewController storyboardIdentifier="iNaturalistVimeoTutorialViewController" id="veh-Vo-oWP" customClass="iNaturalistVimeoTutorialViewController" customModule="Citizen_Scientist_Project" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aPW-lz-BIL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" verticalHuggingPriority="252" image="vimeo-1" translatesAutoresizingMaskIntoConstraints="NO" id="py8-5a-YLe">
+                                <rect key="frame" x="16" y="52" width="343" height="190"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="py8-5a-YLe" secondAttribute="height" multiplier="343:190" id="Mm8-C2-oR7"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" verticalHuggingPriority="248" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" bouncesZoom="NO" editable="NO" text="1. DOWNLOAD THE iNATURALIST APP AND CREATE AN ACCOUNT." textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wB7-gT-78L">
+                                <rect key="frame" x="0.0" y="274" width="375" height="393"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="beP-nL-CUO" firstAttribute="bottom" secondItem="wB7-gT-78L" secondAttribute="bottom" id="8IS-ga-BXu"/>
+                            <constraint firstItem="beP-nL-CUO" firstAttribute="trailing" secondItem="wB7-gT-78L" secondAttribute="trailing" id="JI8-vX-50A"/>
+                            <constraint firstItem="beP-nL-CUO" firstAttribute="trailing" secondItem="py8-5a-YLe" secondAttribute="trailing" constant="16" id="LD8-Mu-DGh"/>
+                            <constraint firstItem="py8-5a-YLe" firstAttribute="top" secondItem="beP-nL-CUO" secondAttribute="top" constant="32" id="ZNV-Jx-oo0"/>
+                            <constraint firstItem="wB7-gT-78L" firstAttribute="top" secondItem="py8-5a-YLe" secondAttribute="bottom" constant="32" id="ePG-ZJ-VHp"/>
+                            <constraint firstItem="wB7-gT-78L" firstAttribute="leading" secondItem="beP-nL-CUO" secondAttribute="leading" id="mll-UA-UCp"/>
+                            <constraint firstItem="py8-5a-YLe" firstAttribute="leading" secondItem="beP-nL-CUO" secondAttribute="leading" constant="16" id="nLP-kA-dxH"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="beP-nL-CUO"/>
+                    </view>
+                    <connections>
+                        <outlet property="vimeoTutorialTextView" destination="wB7-gT-78L" id="uFO-sY-pBI"/>
+                        <outlet property="vimeoTutorialView" destination="py8-5a-YLe" id="uY6-s0-yV7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cce-VT-1hB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3663.1999999999998" y="1484.7076461769116"/>
+        </scene>
     </scenes>
     <resources>
         <image name="1-header-nav-1" width="37" height="37"/>
@@ -3223,6 +3295,7 @@ Many of us are familiar with the more visible species: natives like turtles, man
         <image name="reef-restoration-learn-more" width="1080" height="1350"/>
         <image name="sea-level-rise" width="1800" height="1000"/>
         <image name="twitter-footer-icon" width="64" height="64"/>
+        <image name="vimeo-1" width="1400" height="785"/>
         <image name="white-down-arrow" width="980" height="582"/>
         <image name="youtube-footer-icon" width="64" height="64"/>
     </resources>
