@@ -10,10 +10,25 @@ import UIKit
 
 class MiniChallengeViewController: UIViewController {
 
+    @IBOutlet weak var iNaturalistDownloadView: iNaturalistDownloadView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+    }
+    
+    // MARK: - iNaturalist Download Steps Navigation
+    
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == Storyboard.showiNaturalistDownloadStepsPageVC{
+            if let iNaturalistDownloadStepPageVC = segue.destination as? iNaturalistDownloadStepsPageViewController{
+                // TODO: here you can assign the data to prepare for the PageViewController
+                //iNaturalistDownloadStepPageVC.images = images
+                iNaturalistDownloadStepPageVC.pageViewControllerDelegate = iNaturalistDownloadView
+            }
+        }
     }
     
     func setUpNavBar(){

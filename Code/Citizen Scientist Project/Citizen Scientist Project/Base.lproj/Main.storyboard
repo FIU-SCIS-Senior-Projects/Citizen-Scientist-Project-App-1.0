@@ -1263,7 +1263,7 @@ The Village of Key Biscayne and the Key Biscayne Community Foundation are workin
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hKC-3P-gS3">
-                                <rect key="frame" x="0.0" y="64" width="375" height="3000"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="3044"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dcp-QJ-Y9P">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="457"/>
@@ -2741,7 +2741,7 @@ We will reschedule it as soon as possible and keep everyone informed of any deve
                                 <rect key="frame" x="0.0" y="64" width="375" height="4936"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WA9-Qa-Z5H" userLabel="Mini Challenge View">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="3526.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="3712.5"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mini-challenge-header" translatesAutoresizingMaskIntoConstraints="NO" id="Fgs-Fd-Adk">
                                                 <rect key="frame" x="0.0" y="0.0" width="375" height="225"/>
@@ -2771,10 +2771,10 @@ We will reschedule it as soon as possible and keep everyone informed of any deve
                                                     </button>
                                                     <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" bouncesZoom="NO" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cOn-SU-gj9">
                                                         <rect key="frame" x="16" y="212.5" width="343" height="482.5"/>
-                                                        <mutableString key="text">Florida is host to thousands of species of plants and animals.  Some of them are unique just to this region of the country, while some are nonnative or invasive, having been introduced from other countries.
+                                                        <string key="text">Florida is host to thousands of species of plants and animals.  Some of them are unique just to this region of the country, while some are nonnative or invasive, having been introduced from other countries.
 
 Many of us are familiar with the more visible species: natives like turtles, manatees, green anoles, and mangroves, and nonnatives like iguanas, brown anoles, Burmese pythons, and Australian pine.  However, there are thousands more that go unnoticed in our everyday lives. With advances in technology and more games and apps to keep our minds occupied, we are spending less time noticing the world around us.  Combining technology and environmentalism is new technique that allows people to not just live in the world, but to see it and experience their environment as well.
-</mutableString>
+</string>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -2812,7 +2812,7 @@ Many of us are familiar with the more visible species: natives like turtles, man
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AXc-QD-9P6" userLabel="Blue Box 1">
-                                                <rect key="frame" x="0.0" y="1004.5" width="375" height="626"/>
+                                                <rect key="frame" x="0.0" y="1004.5" width="375" height="719"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GETTING STARTED WITH THE MINI-CHALLENGE &amp; iNATURALIST" lineBreakMode="wordWrap" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yqD-0R-4aW">
                                                         <rect key="frame" x="16" y="16" width="343" height="48"/>
@@ -2827,33 +2827,52 @@ Many of us are familiar with the more visible species: natives like turtles, man
                                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                     </textView>
-                                                    <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LD8-b9-UJE">
-                                                        <rect key="frame" x="0.0" y="328" width="375" height="282"/>
-                                                        <color key="backgroundColor" red="0.95877975230000001" green="0.36855339999999998" blue="0.3537264168" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SI9-Ku-9b8" customClass="iNaturalistDownloadView" customModule="Citizen_Scientist_Project" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="328" width="375" height="375"/>
+                                                        <subviews>
+                                                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LD8-b9-UJE">
+                                                                <rect key="frame" x="0.0" y="-0.5" width="375" height="375"/>
+                                                                <connections>
+                                                                    <segue destination="cdt-wZ-fwc" kind="embed" identifier="showiNaturalistDownloadStepsPageVC" id="9fE-Kk-hWW"/>
+                                                                </connections>
+                                                            </containerView>
+                                                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="JvB-HH-yjy">
+                                                                <rect key="frame" x="168" y="330" width="39" height="37"/>
+                                                                <color key="pageIndicatorTintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <color key="currentPageIndicatorTintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </pageControl>
+                                                        </subviews>
+                                                        <color key="backgroundColor" red="0.34139746430000001" green="0.056113466620000003" blue="0.076615460220000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="height" constant="282.5" id="qwq-Zf-6Sp"/>
+                                                            <constraint firstAttribute="width" secondItem="SI9-Ku-9b8" secondAttribute="height" multiplier="1:1" id="9tN-bH-sNG"/>
+                                                            <constraint firstAttribute="bottom" secondItem="LD8-b9-UJE" secondAttribute="bottom" id="MkD-69-VKH"/>
+                                                            <constraint firstItem="JvB-HH-yjy" firstAttribute="centerX" secondItem="SI9-Ku-9b8" secondAttribute="centerX" id="Oic-l2-TwL"/>
+                                                            <constraint firstItem="LD8-b9-UJE" firstAttribute="top" secondItem="SI9-Ku-9b8" secondAttribute="top" id="ZQ1-Bt-b3P"/>
+                                                            <constraint firstItem="LD8-b9-UJE" firstAttribute="leading" secondItem="SI9-Ku-9b8" secondAttribute="leading" id="a9p-0w-0vB"/>
+                                                            <constraint firstAttribute="bottom" secondItem="JvB-HH-yjy" secondAttribute="bottom" constant="8" id="fFd-dP-4CL"/>
+                                                            <constraint firstAttribute="trailing" secondItem="LD8-b9-UJE" secondAttribute="trailing" id="jdP-p5-wUO"/>
                                                         </constraints>
                                                         <connections>
-                                                            <segue destination="uEl-Fe-Lin" kind="embed" id="9QF-BQ-B78"/>
+                                                            <outlet property="pageControl" destination="JvB-HH-yjy" id="rlb-Hj-VbY"/>
                                                         </connections>
-                                                    </containerView>
+                                                    </view>
                                                 </subviews>
                                                 <color key="backgroundColor" red="0.0039215686269999999" green="0.17254901959999999" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="SI9-Ku-9b8" secondAttribute="trailing" id="6DP-Mb-0mj"/>
                                                     <constraint firstAttribute="trailing" secondItem="yqD-0R-4aW" secondAttribute="trailing" constant="16" id="9Lq-F7-RJO"/>
                                                     <constraint firstItem="yqD-0R-4aW" firstAttribute="top" secondItem="AXc-QD-9P6" secondAttribute="top" constant="16" id="9l1-5f-Im7"/>
-                                                    <constraint firstItem="LD8-b9-UJE" firstAttribute="top" secondItem="EKu-GU-Bi2" secondAttribute="bottom" constant="16" id="Icf-AT-fuG"/>
                                                     <constraint firstItem="EKu-GU-Bi2" firstAttribute="leading" secondItem="AXc-QD-9P6" secondAttribute="leading" constant="16" id="KZ2-ss-8ai"/>
                                                     <constraint firstItem="yqD-0R-4aW" firstAttribute="leading" secondItem="AXc-QD-9P6" secondAttribute="leading" constant="16" id="RKT-5h-I79"/>
-                                                    <constraint firstAttribute="trailing" secondItem="LD8-b9-UJE" secondAttribute="trailing" id="c4w-i1-iXk"/>
-                                                    <constraint firstItem="LD8-b9-UJE" firstAttribute="leading" secondItem="AXc-QD-9P6" secondAttribute="leading" id="j6e-c9-Lpd"/>
+                                                    <constraint firstItem="SI9-Ku-9b8" firstAttribute="top" secondItem="EKu-GU-Bi2" secondAttribute="bottom" constant="16" id="X7Z-NO-VGK"/>
+                                                    <constraint firstAttribute="bottom" secondItem="SI9-Ku-9b8" secondAttribute="bottom" constant="16" id="Yut-g2-dOG"/>
                                                     <constraint firstItem="EKu-GU-Bi2" firstAttribute="top" secondItem="yqD-0R-4aW" secondAttribute="bottom" constant="8" id="n5h-9P-vWY"/>
+                                                    <constraint firstItem="SI9-Ku-9b8" firstAttribute="leading" secondItem="AXc-QD-9P6" secondAttribute="leading" id="nGb-hr-FQE"/>
                                                     <constraint firstAttribute="trailing" secondItem="EKu-GU-Bi2" secondAttribute="trailing" constant="16" id="xvC-v6-aJ7"/>
-                                                    <constraint firstAttribute="bottom" secondItem="LD8-b9-UJE" secondAttribute="bottom" constant="16" id="yJn-P4-tCK"/>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IaR-Vd-cj4" userLabel="Blue Box 2">
-                                                <rect key="frame" x="0.0" y="1631" width="375" height="402"/>
+                                                <rect key="frame" x="0.0" y="1724" width="375" height="495"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NEED HELP WITH iNATURALIST? CHECK OUT THESE TUTORIALS FROM iNATURALIST" lineBreakMode="wordWrap" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y95-WB-wkr">
                                                         <rect key="frame" x="16" y="16" width="343" height="72"/>
@@ -2862,14 +2881,11 @@ Many of us are familiar with the more visible species: natives like turtles, man
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nV5-Ml-6eu">
-                                                        <rect key="frame" x="0.0" y="104" width="375" height="282"/>
+                                                        <rect key="frame" x="0.0" y="104" width="375" height="375"/>
                                                         <color key="backgroundColor" red="0.95877975230000001" green="0.44700162562095447" blue="0.35499176971577318" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="height" constant="282" id="cB4-hv-d1o"/>
+                                                            <constraint firstAttribute="width" secondItem="nV5-Ml-6eu" secondAttribute="height" multiplier="1:1" id="a8L-yM-SfG"/>
                                                         </constraints>
-                                                        <connections>
-                                                            <segue destination="sNI-dz-Ggn" kind="embed" id="6Ux-Ee-MFl"/>
-                                                        </connections>
                                                     </containerView>
                                                 </subviews>
                                                 <color key="backgroundColor" red="0.0039215686269999999" green="0.17254901959999999" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -2884,7 +2900,7 @@ Many of us are familiar with the more visible species: natives like turtles, man
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j9t-VQ-64G" userLabel="Red Box 1">
-                                                <rect key="frame" x="0.0" y="2033" width="375" height="1368.5"/>
+                                                <rect key="frame" x="0.0" y="2219" width="375" height="1368.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2017-18 MINI CHALLENGE #2 RULES" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="QNR-CK-voD">
                                                         <rect key="frame" x="16" y="16" width="343" height="48"/>
@@ -2938,7 +2954,7 @@ Many of us are familiar with the more visible species: natives like turtles, man
                                                     </textView>
                                                     <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" bouncesZoom="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6C8-7t-ci8">
                                                         <rect key="frame" x="16" y="741" width="343" height="320.5"/>
-                                                        <mutableString key="text">• Entire classes may participate in the challenge by having their teacher manage an iNaturalist account for the whole class. This may be better for younger classes, especially if the children in younger classes do not have phones. Individual students may also participate in the mini challenge by using their own iNaturalist accounts. Classes with older students will probably be better suited for participating in this manner. However, either way of participating is acceptable for all grades. Please be sure to note on the registration form if you are participating as an individual or a class.</mutableString>
+                                                        <string key="text">• Entire classes may participate in the challenge by having their teacher manage an iNaturalist account for the whole class. This may be better for younger classes, especially if the children in younger classes do not have phones. Individual students may also participate in the mini challenge by using their own iNaturalist accounts. Classes with older students will probably be better suited for participating in this manner. However, either way of participating is acceptable for all grades. Please be sure to note on the registration form if you are participating as an individual or a class.</string>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -3001,7 +3017,7 @@ Many of us are familiar with the more visible species: natives like turtles, man
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g7C-eY-egX" userLabel="Footer View">
-                                                <rect key="frame" x="0.0" y="3401.5" width="375" height="125"/>
+                                                <rect key="frame" x="0.0" y="3587.5" width="375" height="125"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Uv3-nJ-CO6">
                                                         <rect key="frame" x="20" y="35" width="335" height="54.5"/>
@@ -3114,10 +3130,62 @@ Many of us are familiar with the more visible species: natives like turtles, man
                         </barButtonItem>
                     </navigationItem>
                     <size key="freeformSize" width="375" height="5000"/>
+                    <connections>
+                        <outlet property="iNaturalistDownloadView" destination="SI9-Ku-9b8" id="FlO-VE-bGs"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IWo-dj-Ypv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-2143.1999999999998" y="1693.8530734632684"/>
+        </scene>
+        <!--Naturalist Download Steps Page View Controller-->
+        <scene sceneID="WeO-ER-gxo">
+            <objects>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="cdt-wZ-fwc" customClass="iNaturalistDownloadStepsPageViewController" customModule="Citizen_Scientist_Project" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="32F-0s-I30" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1330" y="822"/>
+        </scene>
+        <!--Naturalist Download Step View Controller-->
+        <scene sceneID="Jsz-Hq-sr5">
+            <objects>
+                <viewController storyboardIdentifier="iNaturalistDownloadStepViewController" id="6hM-7w-071" customClass="iNaturalistDownloadStepViewController" customModule="Citizen_Scientist_Project" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BN1-DW-hXS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="key-science" translatesAutoresizingMaskIntoConstraints="NO" id="9hU-GG-DSg">
+                                <rect key="frame" x="90" y="48" width="195" height="195"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="9hU-GG-DSg" secondAttribute="height" multiplier="1:1" id="cB3-7R-LEC"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" bouncesZoom="NO" editable="NO" text="1. DOWNLOAD THE iNATURALIST APP AND CREATE AN ACCOUNT." textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vby-lH-KoE">
+                                <rect key="frame" x="0.0" y="307" width="375" height="360"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="Vby-lH-KoE" firstAttribute="leading" secondItem="oQ6-TE-gU3" secondAttribute="leading" id="3d1-6N-I8S"/>
+                            <constraint firstItem="9hU-GG-DSg" firstAttribute="centerX" secondItem="BN1-DW-hXS" secondAttribute="centerX" id="A5q-RT-JuG"/>
+                            <constraint firstItem="oQ6-TE-gU3" firstAttribute="bottom" secondItem="Vby-lH-KoE" secondAttribute="bottom" id="Ftt-UP-t91"/>
+                            <constraint firstItem="9hU-GG-DSg" firstAttribute="top" secondItem="oQ6-TE-gU3" secondAttribute="top" constant="28" id="GT5-by-HtN"/>
+                            <constraint firstItem="oQ6-TE-gU3" firstAttribute="trailing" secondItem="Vby-lH-KoE" secondAttribute="trailing" id="kAD-eb-1YK"/>
+                            <constraint firstItem="9hU-GG-DSg" firstAttribute="width" secondItem="BN1-DW-hXS" secondAttribute="height" multiplier="7:24" id="l2h-b7-1OT"/>
+                            <constraint firstItem="Vby-lH-KoE" firstAttribute="top" secondItem="9hU-GG-DSg" secondAttribute="bottom" constant="64" id="mpc-Nt-dz5"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="oQ6-TE-gU3"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="9hU-GG-DSg" id="MPQ-1a-1z3"/>
+                        <outlet property="stepsTextView" destination="Vby-lH-KoE" id="iUD-EG-Qjz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="m4V-Nd-G22" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-388" y="842.42878560719646"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="PMa-aq-C0l">
@@ -3137,34 +3205,6 @@ Many of us are familiar with the more visible species: natives like turtles, man
             </objects>
             <point key="canvasLocation" x="-2142" y="-1131"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="2rs-CR-Va4">
-            <objects>
-                <viewController id="uEl-Fe-Lin" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="WmD-ae-Pjg">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="282"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.95877975230000001" green="0.89025263369999996" blue="0.35838207599999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ZgV-dS-HLT" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1308" y="892"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="qua-AF-rfD">
-            <objects>
-                <viewController id="sNI-dz-Ggn" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Ado-qQ-xuE">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="282"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.95877975230000001" green="0.89025263369999996" blue="0.35838207599999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="5J2-Ua-MqM" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-2819" y="909"/>
-        </scene>
     </scenes>
     <resources>
         <image name="1-header-nav-1" width="37" height="37"/>
@@ -3174,6 +3214,7 @@ Many of us are familiar with the more visible species: natives like turtles, man
         <image name="foundation-key-logos" width="1000" height="206"/>
         <image name="google-footer-icon" width="64" height="64"/>
         <image name="instagram-footer-icon" width="64" height="64"/>
+        <image name="key-science" width="172" height="172"/>
         <image name="mini-challenge-header" width="1400" height="695"/>
         <image name="prezi-sea-level-rise" width="603" height="495"/>
         <image name="reef-restoration-1" width="1800" height="1000"/>
@@ -3186,7 +3227,7 @@ Many of us are familiar with the more visible species: natives like turtles, man
         <image name="youtube-footer-icon" width="64" height="64"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="In9-og-6dh"/>
+        <segue reference="s9q-xk-IIB"/>
         <segue reference="jmv-Kw-uXq"/>
         <segue reference="7eI-6o-bzn"/>
         <segue reference="8FM-DV-Ffe"/>

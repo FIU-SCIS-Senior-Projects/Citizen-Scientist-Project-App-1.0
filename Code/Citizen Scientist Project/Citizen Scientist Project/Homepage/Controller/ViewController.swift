@@ -19,14 +19,6 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     var cellContent: [HomepageCell] = ContentManager.fetchCellContent()
     var sectionFooter: [Icon] = SectionFooter.fetchIcons()
     
-    struct StoryBoard {
-        static let cellContentView = "Cell"
-        static let sectionFooterView = "FooterView"
-        
-        static let numberOfSections = 1
-        static let numberOfItemsPerRow: CGFloat = 2.0
-        static let cellBorderWidth: CGFloat = 1.0
-    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -56,7 +48,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     // MARK: - UICollectionViewDataSource
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return StoryBoard.numberOfSections
+        return Storyboard.numberOfSections
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -78,7 +70,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: StoryBoard.cellContentView, for: indexPath) as!  CollectionViewCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: Storyboard.cellContentView, for: indexPath) as!  CollectionViewCell
         
         let screenWidth = self.collectionView.frame.size.width
         
@@ -87,7 +79,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         
         cell.setUp(content: cellCont, screenWidth: screenWidth)
         cell.layer.borderColor = UIColor.white.cgColor
-        cell.layer.borderWidth = StoryBoard.cellBorderWidth
+        cell.layer.borderWidth = Storyboard.cellBorderWidth
         
         return cell
     }
@@ -202,7 +194,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     // Setup footer icon images
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView
     {
-        let sectionFooterView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: StoryBoard.sectionFooterView, for: indexPath) as! SectionFooterView
+        let sectionFooterView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: Storyboard.sectionFooterView, for: indexPath) as! SectionFooterView
         
         let icon = sectionFooter[indexPath.row]
         sectionFooterView.icon = icon
