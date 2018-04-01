@@ -112,7 +112,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LV7-D6-Q74" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7174" y="-3160"/>
+            <point key="canvasLocation" x="7512.8000000000002" y="-3160.5697151424292"/>
         </scene>
         <!--Profile View Controller-->
         <scene sceneID="1as-4o-o2w">
@@ -123,13 +123,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Profile Page" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mNT-Cn-dTA">
-                                <rect key="frame" x="142" y="323" width="91" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <rect key="frame" x="141.5" y="323.5" width="92" height="20"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.0039215686274509803" green="0.17254901960784313" blue="0.28235294117647058" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="mNT-Cn-dTA" firstAttribute="centerX" secondItem="19H-X7-AJC" secondAttribute="centerX" id="2NJ-RE-zXz"/>
                             <constraint firstItem="mNT-Cn-dTA" firstAttribute="centerY" secondItem="19H-X7-AJC" secondAttribute="centerY" id="lS9-zG-Zo1"/>
@@ -140,7 +140,7 @@
                         <barButtonItem key="leftBarButtonItem" image="1-header-nav-1" id="pFL-LY-iqg">
                             <color key="tintColor" red="0.60392156860000001" green="0.6588235294" blue="0.69803921570000005" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
-                                <segue destination="SXQ-RY-Zdd" kind="show" identifier="segueToTable" id="ECI-Jr-g0F"/>
+                                <segue destination="OYm-TY-SzU" kind="show" id="kcQ-J0-M3e"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -178,7 +178,7 @@
                         <barButtonItem key="leftBarButtonItem" image="1-header-nav-1" id="4Ia-bQ-0Qz">
                             <color key="tintColor" red="0.60392156860000001" green="0.6588235294" blue="0.69803921570000005" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
-                                <segue destination="SXQ-RY-Zdd" kind="show" identifier="segueToTable" id="dRt-0C-aNN"/>
+                                <segue destination="OYm-TY-SzU" kind="show" id="QwA-X7-nDt"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -199,13 +199,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Learn Page" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kO4-ge-wey">
-                                <rect key="frame" x="144.5" y="323" width="86" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <rect key="frame" x="144" y="323.5" width="87" height="20"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.0039215686274509803" green="0.17254901960784313" blue="0.28235294117647058" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="kO4-ge-wey" firstAttribute="centerX" secondItem="rOH-nI-B4K" secondAttribute="centerX" id="nrI-w4-wSo"/>
                             <constraint firstItem="kO4-ge-wey" firstAttribute="centerY" secondItem="rOH-nI-B4K" secondAttribute="centerY" id="pWK-d2-lDH"/>
@@ -216,7 +216,7 @@
                         <barButtonItem key="leftBarButtonItem" image="1-header-nav-1" id="vnt-mJ-EfC">
                             <color key="tintColor" red="0.60392156860000001" green="0.6588235294" blue="0.69803921570000005" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
-                                <segue destination="SXQ-RY-Zdd" kind="show" id="j0B-C0-BcR"/>
+                                <segue destination="OYm-TY-SzU" kind="show" id="vBL-R3-Fym"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -234,13 +234,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Explore Page" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JmZ-bC-fBy">
-                                <rect key="frame" x="137.5" y="323" width="100" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <rect key="frame" x="137" y="323.5" width="101.5" height="20"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.0039215686274509803" green="0.17254901960784313" blue="0.28235294117647058" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="JmZ-bC-fBy" firstAttribute="centerY" secondItem="GAa-kn-jET" secondAttribute="centerY" id="Gt5-Xk-mAA"/>
                             <constraint firstItem="JmZ-bC-fBy" firstAttribute="centerX" secondItem="GAa-kn-jET" secondAttribute="centerX" id="q7x-y4-lBm"/>
@@ -251,7 +251,7 @@
                         <barButtonItem key="leftBarButtonItem" image="1-header-nav-1" id="ahM-UU-5kq">
                             <color key="tintColor" red="0.60392156860000001" green="0.6588235294" blue="0.69803921570000005" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
-                                <segue destination="SXQ-RY-Zdd" kind="show" id="ZjZ-a5-mJg"/>
+                                <segue destination="OYm-TY-SzU" kind="show" id="Kys-j2-B0f"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -269,13 +269,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Record Page" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NeY-l3-V2D">
-                                <rect key="frame" x="139" y="323" width="97" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <rect key="frame" x="138" y="323.5" width="99" height="20"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.0039215686274509803" green="0.17254901960784313" blue="0.28235294117647058" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="NeY-l3-V2D" firstAttribute="centerX" secondItem="nth-Aq-8qx" secondAttribute="centerX" id="Uku-7o-5ka"/>
                             <constraint firstItem="NeY-l3-V2D" firstAttribute="centerY" secondItem="nth-Aq-8qx" secondAttribute="centerY" id="VZh-pp-UPH"/>
@@ -286,7 +286,7 @@
                         <barButtonItem key="leftBarButtonItem" image="1-header-nav-1" id="1ny-dm-Js6">
                             <color key="tintColor" red="0.60392156860000001" green="0.6588235294" blue="0.69803921570000005" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
-                                <segue destination="SXQ-RY-Zdd" kind="show" id="ItW-JS-NZw"/>
+                                <segue destination="OYm-TY-SzU" kind="show" id="uYb-e5-bbn"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -304,13 +304,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Review Page" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lP0-9L-PRc">
-                                <rect key="frame" x="139" y="323" width="97" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <rect key="frame" x="138" y="323.5" width="99" height="20"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.0039215686274509803" green="0.17254901960784313" blue="0.28235294117647058" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="lP0-9L-PRc" firstAttribute="centerX" secondItem="Ftl-Ec-Y5g" secondAttribute="centerX" id="3f0-1a-7jf"/>
                             <constraint firstItem="lP0-9L-PRc" firstAttribute="centerY" secondItem="Ftl-Ec-Y5g" secondAttribute="centerY" id="ljm-0d-6R4"/>
@@ -321,7 +321,7 @@
                         <barButtonItem key="leftBarButtonItem" image="1-header-nav-1" id="cpt-K0-2FT">
                             <color key="tintColor" red="0.60392156860000001" green="0.6588235294" blue="0.69803921570000005" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
-                                <segue destination="SXQ-RY-Zdd" kind="show" id="U6M-JI-ydO"/>
+                                <segue destination="OYm-TY-SzU" kind="show" id="egr-tp-wX7"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -551,7 +551,7 @@ The Village of Key Biscayne and the Key Biscayne Community Foundation are workin
                         <barButtonItem key="leftBarButtonItem" image="1-header-nav-1" id="3ak-XH-5vH">
                             <color key="tintColor" red="0.60392156860000001" green="0.6588235294" blue="0.69803921570000005" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
-                                <segue destination="SXQ-RY-Zdd" kind="show" id="EZs-ez-5YL"/>
+                                <segue destination="OYm-TY-SzU" kind="show" id="bqd-KC-zWv"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -1156,7 +1156,7 @@ The Village of Key Biscayne and the Key Biscayne Community Foundation are workin
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tH4-8y-6ae" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5951" y="4533"/>
+            <point key="canvasLocation" x="6215" y="2606"/>
         </scene>
         <!--Web View Controller-->
         <scene sceneID="Lyz-bx-RKP">
@@ -1186,7 +1186,7 @@ The Village of Key Biscayne and the Key Biscayne Community Foundation are workin
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qGv-vg-E9C" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5951" y="5883"/>
+            <point key="canvasLocation" x="6942" y="2597"/>
         </scene>
         <!--Collapsible Table View Controller-->
         <scene sceneID="PH3-ag-MWV">
@@ -1214,7 +1214,7 @@ The Village of Key Biscayne and the Key Biscayne Community Foundation are workin
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RGb-Fl-5NL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7012" y="1754.5727136431785"/>
+            <point key="canvasLocation" x="7012" y="1576"/>
         </scene>
         <!--Water Watch View Controller-->
         <scene sceneID="6Ma-gY-FEs">
@@ -1472,6 +1472,9 @@ We also hope to set up three Atlantic sites for less intense testing which will 
                     <navigationItem key="navigationItem" id="Lk9-Ge-eih">
                         <barButtonItem key="leftBarButtonItem" image="1-header-nav-1" id="7RU-1i-jcP">
                             <color key="tintColor" red="0.60392156860000001" green="0.6588235294" blue="0.69803921570000005" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <segue destination="OYm-TY-SzU" kind="show" id="KDE-r3-jMd"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <size key="freeformSize" width="375" height="2000"/>
@@ -1493,13 +1496,13 @@ We also hope to set up three Atlantic sites for less intense testing which will 
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lecture Series Page" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7EL-J1-WNJ">
-                                <rect key="frame" x="111" y="323" width="153" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <rect key="frame" x="111" y="323.5" width="153" height="20"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.0039215686274509803" green="0.17254901960784313" blue="0.28235294117647058" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="7EL-J1-WNJ" firstAttribute="centerY" secondItem="UVI-3Z-JG4" secondAttribute="centerY" id="L7C-xX-X04"/>
                             <constraint firstItem="7EL-J1-WNJ" firstAttribute="centerX" secondItem="UVI-3Z-JG4" secondAttribute="centerX" id="e9v-9a-KrN"/>
@@ -1510,7 +1513,7 @@ We also hope to set up three Atlantic sites for less intense testing which will 
                         <barButtonItem key="leftBarButtonItem" image="1-header-nav-1" id="0wN-ea-rMX">
                             <color key="tintColor" red="0.60392156860000001" green="0.6588235294" blue="0.69803921570000005" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
-                                <segue destination="SXQ-RY-Zdd" kind="show" id="CD7-0u-all"/>
+                                <segue destination="OYm-TY-SzU" kind="show" id="VEk-0k-hbO"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -1528,13 +1531,13 @@ We also hope to set up three Atlantic sites for less intense testing which will 
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Field Activity Page" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mY7-yZ-5WZ">
-                                <rect key="frame" x="117" y="323" width="141" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <rect key="frame" x="117" y="323.5" width="141" height="20"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.0039215686274509803" green="0.17254901960784313" blue="0.28235294117647058" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="mY7-yZ-5WZ" firstAttribute="centerX" secondItem="H9p-bb-bgA" secondAttribute="centerX" id="Z4f-UY-fjB"/>
                             <constraint firstItem="mY7-yZ-5WZ" firstAttribute="centerY" secondItem="H9p-bb-bgA" secondAttribute="centerY" id="i75-RB-ReX"/>
@@ -1545,7 +1548,7 @@ We also hope to set up three Atlantic sites for less intense testing which will 
                         <barButtonItem key="leftBarButtonItem" image="1-header-nav-1" id="UYY-a2-wXO">
                             <color key="tintColor" red="0.60392156860000001" green="0.6588235294" blue="0.69803921570000005" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
-                                <segue destination="SXQ-RY-Zdd" kind="show" id="Aj9-OJ-ThH"/>
+                                <segue destination="OYm-TY-SzU" kind="show" id="cGG-6e-SzH"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -1563,13 +1566,13 @@ We also hope to set up three Atlantic sites for less intense testing which will 
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Events Page" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YAH-4e-OM1">
-                                <rect key="frame" x="140.5" y="323" width="94" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <rect key="frame" x="140" y="323.5" width="95.5" height="20"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.0039215686274509803" green="0.17254901960784313" blue="0.28235294117647058" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="YAH-4e-OM1" firstAttribute="centerX" secondItem="k8F-ZC-saj" secondAttribute="centerX" id="Dcz-F0-jqa"/>
                             <constraint firstItem="YAH-4e-OM1" firstAttribute="centerY" secondItem="k8F-ZC-saj" secondAttribute="centerY" id="dlB-eJ-M6V"/>
@@ -1580,7 +1583,7 @@ We also hope to set up three Atlantic sites for less intense testing which will 
                         <barButtonItem key="leftBarButtonItem" image="1-header-nav-1" id="qSq-Ta-Orw">
                             <color key="tintColor" red="0.60392156860000001" green="0.6588235294" blue="0.69803921570000005" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
-                                <segue destination="SXQ-RY-Zdd" kind="show" identifier="segueToTable" id="zgb-V5-2Nl"/>
+                                <segue destination="OYm-TY-SzU" kind="show" id="0zw-ze-4Kh"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -1598,13 +1601,13 @@ We also hope to set up three Atlantic sites for less intense testing which will 
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="News Page" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yw2-Dm-XiJ">
-                                <rect key="frame" x="145" y="323" width="85" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <rect key="frame" x="144" y="323.5" width="87" height="20"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.0039215686274509803" green="0.17254901960784313" blue="0.28235294117647058" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="yw2-Dm-XiJ" firstAttribute="centerY" secondItem="w88-p1-YQL" secondAttribute="centerY" id="c8h-ez-1pl"/>
                             <constraint firstItem="yw2-Dm-XiJ" firstAttribute="centerX" secondItem="w88-p1-YQL" secondAttribute="centerX" id="maG-HX-VSu"/>
@@ -1615,7 +1618,7 @@ We also hope to set up three Atlantic sites for less intense testing which will 
                         <barButtonItem key="leftBarButtonItem" image="1-header-nav-1" id="3n3-oW-0Ms">
                             <color key="tintColor" red="0.60392156860000001" green="0.6588235294" blue="0.69803921570000005" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
-                                <segue destination="SXQ-RY-Zdd" kind="show" identifier="segueToTable" id="JEv-A5-Cw7"/>
+                                <segue destination="OYm-TY-SzU" kind="show" id="rmt-kl-S7c"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -1633,13 +1636,13 @@ We also hope to set up three Atlantic sites for less intense testing which will 
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Our Biomes Page" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pBe-z3-Btv">
-                                <rect key="frame" x="121.5" y="323" width="132" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <rect key="frame" x="120.5" y="323.5" width="134" height="20"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.0039215686274509803" green="0.17254901960784313" blue="0.28235294117647058" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="pBe-z3-Btv" firstAttribute="centerX" secondItem="pWS-AH-adv" secondAttribute="centerX" id="1Ju-oO-cjm"/>
                             <constraint firstItem="pBe-z3-Btv" firstAttribute="centerY" secondItem="pWS-AH-adv" secondAttribute="centerY" id="gRt-An-XrU"/>
@@ -1650,7 +1653,7 @@ We also hope to set up three Atlantic sites for less intense testing which will 
                         <barButtonItem key="leftBarButtonItem" image="1-header-nav-1" id="kLM-Oh-g66">
                             <color key="tintColor" red="0.60392156860000001" green="0.6588235294" blue="0.69803921570000005" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
-                                <segue destination="SXQ-RY-Zdd" kind="show" id="b8H-jD-YEn"/>
+                                <segue destination="OYm-TY-SzU" kind="show" id="PY1-hQ-BNi"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -1668,13 +1671,13 @@ We also hope to set up three Atlantic sites for less intense testing which will 
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Newsletter Page" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xSR-RV-UpO">
-                                <rect key="frame" x="125" y="323" width="125" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <rect key="frame" x="125" y="323.5" width="125" height="20"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.0039215686274509803" green="0.17254901960784313" blue="0.28235294117647058" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="xSR-RV-UpO" firstAttribute="centerX" secondItem="ErL-C5-e6D" secondAttribute="centerX" id="61a-6O-0Gw"/>
                             <constraint firstItem="xSR-RV-UpO" firstAttribute="centerY" secondItem="ErL-C5-e6D" secondAttribute="centerY" id="eHQ-ur-Lkd"/>
@@ -1685,7 +1688,7 @@ We also hope to set up three Atlantic sites for less intense testing which will 
                         <barButtonItem key="leftBarButtonItem" image="1-header-nav-1" id="vzE-4y-YM4">
                             <color key="tintColor" red="0.60392156860000001" green="0.6588235294" blue="0.69803921570000005" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
-                                <segue destination="SXQ-RY-Zdd" kind="show" id="XDC-r5-o9p"/>
+                                <segue destination="OYm-TY-SzU" kind="show" id="HlY-A9-F64"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -1703,13 +1706,13 @@ We also hope to set up three Atlantic sites for less intense testing which will 
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Our Partners Page" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0br-b0-p7a">
-                                <rect key="frame" x="117" y="323" width="141" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <rect key="frame" x="117" y="323.5" width="141" height="20"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.0039215686274509803" green="0.17254901960784313" blue="0.28235294117647058" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="0br-b0-p7a" firstAttribute="centerY" secondItem="K1N-G3-nc3" secondAttribute="centerY" id="1ZN-Y9-e1B"/>
                             <constraint firstItem="0br-b0-p7a" firstAttribute="centerX" secondItem="K1N-G3-nc3" secondAttribute="centerX" id="Nsj-9H-Q1G"/>
@@ -1720,7 +1723,7 @@ We also hope to set up three Atlantic sites for less intense testing which will 
                         <barButtonItem key="leftBarButtonItem" image="1-header-nav-1" id="ilN-Jp-7j1">
                             <color key="tintColor" red="0.60392156860000001" green="0.6588235294" blue="0.69803921570000005" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
-                                <segue destination="SXQ-RY-Zdd" kind="show" id="fHn-Zz-xbB"/>
+                                <segue destination="OYm-TY-SzU" kind="show" id="G2L-k2-uvh"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -1738,13 +1741,13 @@ We also hope to set up three Atlantic sites for less intense testing which will 
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contact Us Page" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4VO-Cj-moy">
-                                <rect key="frame" x="123" y="323" width="129" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <rect key="frame" x="122.5" y="323.5" width="130" height="20"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.0039215686274509803" green="0.17254901960784313" blue="0.28235294117647058" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="4VO-Cj-moy" firstAttribute="centerY" secondItem="hlh-2P-PPZ" secondAttribute="centerY" id="U4v-1z-caP"/>
                             <constraint firstItem="4VO-Cj-moy" firstAttribute="centerX" secondItem="hlh-2P-PPZ" secondAttribute="centerX" id="hy1-2C-OzG"/>
@@ -1755,7 +1758,7 @@ We also hope to set up three Atlantic sites for less intense testing which will 
                         <barButtonItem key="leftBarButtonItem" image="1-header-nav-1" id="PTt-lm-8Un">
                             <color key="tintColor" red="0.60392156860000001" green="0.6588235294" blue="0.69803921570000005" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
-                                <segue destination="SXQ-RY-Zdd" kind="show" id="s9q-xk-IIB"/>
+                                <segue destination="OYm-TY-SzU" kind="show" id="sKg-fI-YSX"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -1972,7 +1975,7 @@ We also hope to set up three Atlantic sites for less intense testing which will 
                         <barButtonItem key="leftBarButtonItem" title="Item" image="1-header-nav-1" id="IW0-Pd-8ay">
                             <color key="tintColor" red="0.60392156860000001" green="0.6588235294" blue="0.69803921570000005" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
-                                <segue destination="OYm-TY-SzU" kind="show" id="QBG-qv-yON"/>
+                                <segue destination="OYm-TY-SzU" kind="show" id="7TH-r5-Fee"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -2085,7 +2088,7 @@ We also hope to set up three Atlantic sites for less intense testing which will 
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fEf-HY-mWt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4279" y="-3161"/>
+            <point key="canvasLocation" x="5441" y="-3896"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="bh0-rM-yhT">
@@ -2311,25 +2314,7 @@ We also hope to set up three Atlantic sites for less intense testing which will 
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6yT-2h-X0m" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6673" y="10897"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="ruI-K3-Om8">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="SXQ-RY-Zdd" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="7Ho-E0-Cow">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="OYm-TY-SzU" kind="relationship" relationship="rootViewController" id="ndl-Mk-jWS"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="r3z-O9-Qur" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="7174" y="4238"/>
+            <point key="canvasLocation" x="6215" y="7663"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="dHe-AO-WRc">
@@ -2355,7 +2340,7 @@ We also hope to set up three Atlantic sites for less intense testing which will 
                 <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="S4E-j8-r8H" customClass="iNaturalistVimeoTutorialsPageViewController" customModule="Citizen_Scientist_Project" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QBe-IY-Vat" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2914" y="1354"/>
+            <point key="canvasLocation" x="4158" y="8566"/>
         </scene>
         <!--Mini Challenge View Controller-->
         <scene sceneID="sfP-Tu-nh6">
@@ -2791,7 +2776,7 @@ Many of us are familiar with the more visible species: natives like turtles, man
                 <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="cdt-wZ-fwc" customClass="iNaturalistDownloadStepsPageViewController" customModule="Citizen_Scientist_Project" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="32F-0s-I30" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1330" y="822"/>
+            <point key="canvasLocation" x="5193" y="8566"/>
         </scene>
         <!--Naturalist Download Step View Controller-->
         <scene sceneID="Jsz-Hq-sr5">
@@ -2832,7 +2817,7 @@ Many of us are familiar with the more visible species: natives like turtles, man
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="m4V-Nd-G22" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1330" y="1410"/>
+            <point key="canvasLocation" x="-1746" y="1660"/>
         </scene>
         <!--Naturalist Vimeo Tutorial View Controller-->
         <scene sceneID="iJw-Lq-Of2">
@@ -2873,7 +2858,7 @@ Many of us are familiar with the more visible species: natives like turtles, man
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cce-VT-1hB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3663.1999999999998" y="1484.7076461769116"/>
+            <point key="canvasLocation" x="-2646" y="1661"/>
         </scene>
         <!--Key Challenge View Controller-->
         <scene sceneID="I8I-89-x3F">
@@ -2983,7 +2968,7 @@ The Challenge incorporates 4 disciplines – art, writing, informatics, and scie
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KZs-nc-Or0">
-                                                <rect key="frame" x="174" y="2241.5" width="26" height="22"/>
+                                                <rect key="frame" x="89" y="2241.5" width="196" height="167"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" relation="lessThanOrEqual" constant="167" id="Pp4-TB-5k3"/>
                                                     <constraint firstAttribute="width" secondItem="KZs-nc-Or0" secondAttribute="height" multiplier="196:167" id="k9F-iZ-b51"/>
@@ -2991,7 +2976,7 @@ The Challenge incorporates 4 disciplines – art, writing, informatics, and scie
                                                 <state key="normal" image="key-challenge-prezi"/>
                                             </button>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cfn-wm-HZQ">
-                                                <rect key="frame" x="8" y="2279.5" width="359" height="125"/>
+                                                <rect key="frame" x="8" y="2424.5" width="359" height="125"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="KEY CHALLENGE REGISTRATION CAN ONLY BE COMPLETED ONLINE" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="dwd-jZ-4mu">
                                                         <rect key="frame" x="8" y="16" width="343" height="47"/>
@@ -3019,26 +3004,26 @@ The Challenge incorporates 4 disciplines – art, writing, informatics, and scie
                                                 </constraints>
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="REGISTERED &amp; READY TO PARTICIPATE? HERE ARE THE 2017-18 KEY CHALLENGE PROJECTS" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="SAV-Fg-GtT">
-                                                <rect key="frame" x="8" y="2420.5" width="359" height="119.5"/>
+                                                <rect key="frame" x="8" y="2565.5" width="359" height="119.5"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="25"/>
                                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="20" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="kGO-7O-QIz">
-                                                <rect key="frame" x="8" y="2556" width="359" height="158.5"/>
+                                                <rect key="frame" x="8" y="2701" width="359" height="158.5"/>
                                                 <string key="text">The Citizen Scientist Project’s goal is to secure a future Key Biscayne characterized by the same bounty of natural resources that exist today, thus maintaining the title of “Island Paradise,” while the Key Biscayne Citizen Scientist Lab provides a place to record and organize your findings in and around our island and to learn more about our island.</string>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="key-challenge-pollution" translatesAutoresizingMaskIntoConstraints="NO" id="zom-y9-UlB">
-                                                <rect key="frame" x="0.0" y="2730.5" width="375" height="284"/>
+                                                <rect key="frame" x="0.0" y="2875.5" width="375" height="284"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="zom-y9-UlB" secondAttribute="height" multiplier="375:284" id="VmO-V9-dDX"/>
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="19" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="If1-r5-wni">
-                                                <rect key="frame" x="8" y="3030.5" width="359" height="376.5"/>
+                                                <rect key="frame" x="8" y="3175.5" width="359" height="376.5"/>
                                                 <string key="text">This year’s Key Challenge theme will revolve around Human Impact. The Citizen Science Project is proud to be the recipient of a grant from the Environmental Protection Agency for the purpose of ensuring long term health of shoreline waters of Key Biscayne. As such, it is important to remember that humans have a major impact on all environments, and that aquatic and shoreline environments in particular have been critical to Key Biscayne’s development and history. We will therefore be focusing our challenges broadly on human impacts on these important environments.
 
 The Citizen Scientist Project’s Key Challenge is sponsored by the Key Biscayne Community Foundation, the Village of Key Biscayne, the Fairchild Tropical Botanic Garden, the University of Miami Rosenstiel School of Marine &amp; Atmospheric Science, and the Knight Foundation.</string>
@@ -3047,22 +3032,22 @@ The Citizen Scientist Project’s Key Challenge is sponsored by the Key Biscayne
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w5Q-Vi-kpl">
-                                                <rect key="frame" x="0.0" y="3415" width="375" height="350"/>
+                                                <rect key="frame" x="0.0" y="3560" width="375" height="350"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="w5Q-Vi-kpl" secondAttribute="height" multiplier="15:14" id="N8G-Ic-G6w"/>
                                                 </constraints>
                                             </containerView>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="foundation-key-logos" translatesAutoresizingMaskIntoConstraints="NO" id="jdV-DX-fsh">
-                                                <rect key="frame" x="0.0" y="3765" width="375" height="79"/>
+                                                <rect key="frame" x="0.0" y="3910" width="375" height="79"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="jdV-DX-fsh" secondAttribute="height" multiplier="375:79" id="0Pk-dN-ATY"/>
                                                 </constraints>
                                             </imageView>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WeL-Gi-SAB">
-                                                <rect key="frame" x="0.0" y="3845" width="375" height="221"/>
+                                                <rect key="frame" x="0.0" y="3990" width="375" height="76"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Qob-iF-8XJ">
-                                                        <rect key="frame" x="20" y="83.5" width="335" height="54.5"/>
+                                                        <rect key="frame" x="20" y="11" width="335" height="54.5"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="center" text="KEY BISCAYNE COMMUNITY FOUNDATION" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SrZ-V3-kAF">
                                                                 <rect key="frame" x="0.0" y="0.0" width="335" height="19.5"/>
@@ -3226,7 +3211,7 @@ As such, it is important to remember that humans have a major impact on all envi
                         <barButtonItem key="leftBarButtonItem" image="1-header-nav-1" id="nPK-Y8-qQ7">
                             <color key="tintColor" red="0.60392156860000001" green="0.6588235294" blue="0.69803921570000005" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
-                                <segue destination="SXQ-RY-Zdd" kind="show" id="huv-v1-U71"/>
+                                <segue destination="OYm-TY-SzU" kind="show" id="MsN-RX-87f"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -3662,13 +3647,16 @@ The Citizen Scientist Project falls under the charitable umbrella of the Key Bis
                     <navigationItem key="navigationItem" id="qg9-JR-vAB">
                         <barButtonItem key="leftBarButtonItem" image="1-header-nav-1" id="ktg-dv-MVf">
                             <color key="tintColor" red="0.60392156860000001" green="0.6588235294" blue="0.69803921570000005" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <segue destination="OYm-TY-SzU" kind="show" id="mdV-S4-830"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <size key="freeformSize" width="375" height="3000"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8O0-od-4Bs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="12277.6" y="793.40329835082468"/>
+            <point key="canvasLocation" x="12052" y="794"/>
         </scene>
         <!--Reef Restoration View Controller-->
         <scene sceneID="xmK-Dy-evz">
@@ -3966,6 +3954,9 @@ The area around Key Biscayne and Virginia Key is part of the designated critical
                     <navigationItem key="navigationItem" id="Bcd-E6-jHT">
                         <barButtonItem key="leftBarButtonItem" image="1-header-nav-1" id="ijk-II-fk1">
                             <color key="tintColor" red="0.60392156860000001" green="0.6588235294" blue="0.69803921570000005" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <segue destination="OYm-TY-SzU" kind="show" id="yB9-Fn-Gpf"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
@@ -4133,7 +4124,7 @@ The area around Key Biscayne and Virginia Key is part of the designated critical
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IRt-CL-ib3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="8940" y="570.76461769115451"/>
+            <point key="canvasLocation" x="8124" y="2976"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="DEX-tj-dju">
@@ -4194,17 +4185,17 @@ The area around Key Biscayne and Virginia Key is part of the designated critical
         <image name="1-header-nav-1" width="37" height="37"/>
         <image name="20-homepage-image-shadow" width="600" height="300"/>
         <image name="7-lab-learn" width="600" height="400"/>
-        <image name="about-header" width="16" height="16"/>
+        <image name="about-header" width="1800" height="1000"/>
         <image name="down-arrow" width="980" height="582"/>
         <image name="facebook-footer-icon" width="64" height="64"/>
         <image name="foundation-key-logos" width="1000" height="206"/>
         <image name="google-footer-icon" width="64" height="64"/>
         <image name="instagram-footer-icon" width="64" height="64"/>
         <image name="key-biscayne-water-watch-logo" width="206" height="180"/>
-        <image name="key-challenge-1" width="16" height="16"/>
-        <image name="key-challenge-barnacle" width="16" height="16"/>
-        <image name="key-challenge-pollution" width="16" height="16"/>
-        <image name="key-challenge-prezi" width="16" height="16"/>
+        <image name="key-challenge-1" width="1800" height="1000"/>
+        <image name="key-challenge-barnacle" width="800" height="508"/>
+        <image name="key-challenge-pollution" width="1200" height="800"/>
+        <image name="key-challenge-prezi" width="722" height="771"/>
         <image name="key-science" width="172" height="172"/>
         <image name="mini-challenge-header" width="1400" height="695"/>
         <image name="prezi-sea-level-rise" width="603" height="495"/>
@@ -4220,11 +4211,10 @@ The area around Key Biscayne and Virginia Key is part of the designated critical
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="q65-Rn-6fj"/>
-        <segue reference="huv-v1-U71"/>
         <segue reference="7eI-6o-bzn"/>
         <segue reference="8FM-DV-Ffe"/>
         <segue reference="Ndr-sr-hkv"/>
-        <segue reference="fmx-oL-JuZ"/>
+        <segue reference="BU9-tW-n6z"/>
         <segue reference="987-cs-BJW"/>
         <segue reference="XNF-o3-VLY"/>
         <segue reference="Sys-Vp-ayk"/>
@@ -4233,6 +4223,6 @@ The area around Key Biscayne and Virginia Key is part of the designated critical
         <segue reference="3gI-fe-vtX"/>
         <segue reference="hno-WS-Bw2"/>
         <segue reference="bpx-hV-XQv"/>
-        <segue reference="ndl-Mk-jWS"/>
+        <segue reference="sKg-fI-YSX"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -20,7 +20,11 @@
                         <color key="backgroundColor" red="0.0039215686274509803" green="0.17254901960784313" blue="0.27450980392156865" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" id="GMb-mE-sQf"/>
+                    <navigationItem key="navigationItem" id="GMb-mE-sQf">
+                        <barButtonItem key="leftBarButtonItem" enabled="NO" image="1-header-nav-1" id="YW0-kg-E64">
+                            <color key="tintColor" red="0.60392156860000001" green="0.6588235294" blue="0.69803921570000005" alpha="1" colorSpace="calibratedRGB"/>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -47,4 +51,7 @@
             <point key="canvasLocation" x="417" y="-330"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="1-header-nav-1" width="37" height="37"/>
+    </resources>
 </document>
