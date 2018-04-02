@@ -41,7 +41,7 @@ class WaterWatchViewController: UIViewController, WaterWatchContainerViewDelegat
         
 //        let storyboard = UIStoryboard(name: "ChecklistDetail", bundle: nil)
 //        let aVC = storyboard.instantiateViewController(withIdentifier: "ChecklistDetailViewController") as? ChecklistDetailViewController
-        setUpNavBar()
+        ReusableHeader.setUpNavBar(navigationController: self.navigationController, navigationItem: self.navigationItem)
         
         waterWatchView.setUp(content: waterWatchContent)
         
@@ -57,19 +57,6 @@ class WaterWatchViewController: UIViewController, WaterWatchContainerViewDelegat
         //let vc = storyboard?.instantiateViewControllerWithIdentifier("test") as! UIViewController
         //self
         //container.addSubview(vc.view)
-    }
-    
-    func setUpNavBar(){
-        self.navigationController?.navigationBar.barStyle = UIBarStyle.blackTranslucent
-        self.navigationController?.navigationBar.isTranslucent = false
-        self.navigationController?.navigationBar.barTintColor  = UIColor(red:0.08, green:0.09, blue:0.15, alpha:1.0)
-        self.navigationController?.navigationBar.tintColor = UIColor(red:0.60, green:0.66, blue:0.70, alpha:1.0)
-        
-        let image : UIImage = UIImage(named: "csp-app-logo.png")!
-        let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 730, height: 30))
-        imageView.contentMode = .scaleAspectFit
-        imageView.image = image
-        self.navigationItem.titleView = imageView
     }
 
 }
