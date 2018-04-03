@@ -32,11 +32,10 @@ class WaterWatchContentManager {
         "bodyText1" : bodyText1,
         "labelHeader2" : "FACT SHEETS",
         "bodyText2" : bodyText2,
-        "learnMore" : Link(text: "Learn more about the Biscayne Bay Water Watch.", url: URL(string: "http://sfyl.ifas.ufl.edu/miami-dade/")!),
-        "temperature" : Link(text: "Temperature, Salinity and pH", url: URL(string: "http://sfyl.ifas.ufl.edu/miami-dade/")!),
-        "dissolvedOxygen" : Link(text: "Dissolved Oxygen", url: URL(string: "http://sfyl.ifas.ufl.edu/miami-dade/")!),
-        "nutrients" : Link(text: "Nutrients", url: URL(string: "http://sfyl.ifas.ufl.edu/miami-dade/")!),
-        "chlorophyllA" : Link(text: "Chlorophyll a", url: URL(string: "http://sfyl.ifas.ufl.edu/miami-dade/")!),
+        "learnMore" : Link(text: "Learn more about the Biscayne Bay Water Watch.", url: URL(string: "http://sfyl.ifas.ufl.edu/miami-dade/natural-resources/biscayne-bay-water-watch-/")!),
+        "dissolvedOxygen" : Link(text: "Dissolved Oxygen", url: URL(string: "http://sfyl.ifas.ufl.edu/media/sfylifasufledu/miami-dade/documents/sea-grant/Dissolved-Oxygen.pdf")!),
+        "nutrients" : Link(text: "Nutrients", url: URL(string: "http://sfyl.ifas.ufl.edu/media/sfylifasufledu/miami-dade/documents/sea-grant/Nutrients.pdf")!),
+        "chlorophyllA" : Link(text: "Chlorophyll a", url: URL(string: "http://sfyl.ifas.ufl.edu/media/sfylifasufledu/miami-dade/documents/sea-grant/Chlorophyll-a.pdf")!),
     ]
     
     private class func getContentData() -> WaterWatchContent
@@ -49,7 +48,6 @@ class WaterWatchContentManager {
             headerLabel2: DataMap["labelHeader2"] as! String,
             bodyText2: DataMap["bodyText2"] as! String,
             learnMore: DataMap["learnMore"] as! Link,
-            temperature: DataMap["temperature"] as! Link,
             dissolvedOxygen: DataMap["dissolvedOxygen"] as! Link,
             nutrients: DataMap["nutrients"] as! Link,
             chlorophyllA: DataMap["chlorophyllA"] as! Link

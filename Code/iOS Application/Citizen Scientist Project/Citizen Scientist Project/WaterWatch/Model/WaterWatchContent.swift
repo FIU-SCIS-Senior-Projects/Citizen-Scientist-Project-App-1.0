@@ -17,7 +17,6 @@ struct WaterWatchContent {
     var headerLabel2: String
     var bodyText2: String
     var learnMore: Link
-    var temperature: Link
     var dissolvedOxygen: Link
     var nutrients: Link
     var chlorophyllA: Link

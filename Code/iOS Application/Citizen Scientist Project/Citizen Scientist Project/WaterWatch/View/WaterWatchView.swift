@@ -22,7 +22,6 @@ class WaterWatchView: UIView {
     @IBOutlet weak var bodyTextView2: UITextView!
     
     @IBOutlet weak var learnMoreLinkButton: UIButton!
-    @IBOutlet weak var temperatureLinkButton: UIButton!
     @IBOutlet weak var dissolvedOxygenLinkButton: UIButton!
     @IBOutlet weak var nutrientsLinkButton: UIButton!
     @IBOutlet weak var chlorophyllALinkButton: UIButton!
@@ -38,7 +37,6 @@ class WaterWatchView: UIView {
         bodyTextView2.text = content.bodyText2
         
         learnMoreLinkButton.setTitle(content.learnMore.text, for: .normal)
-        temperatureLinkButton.setTitle(content.temperature.text, for: .normal)
         dissolvedOxygenLinkButton.setTitle(content.dissolvedOxygen.text, for: .normal)
         nutrientsLinkButton.setTitle(content.nutrients.text, for: .normal)
         chlorophyllALinkButton.setTitle(content.chlorophyllA.text, for: .normal)

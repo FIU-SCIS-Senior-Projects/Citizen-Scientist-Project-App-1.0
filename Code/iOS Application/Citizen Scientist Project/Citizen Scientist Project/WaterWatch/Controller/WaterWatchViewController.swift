@@ -15,11 +15,25 @@ protocol WaterWatchContainerViewDelegate: class {
 //TODO: create an extension with implementation
 class WaterWatchViewController: UIViewController, WaterWatchContainerViewDelegate {
     
+    let waterWatchContent = WaterWatchContentManager.fetchContentData()
+    
     @IBOutlet weak var waterWatchView: WaterWatchView!
     
-    @IBOutlet public weak var collapsibleTableViewContainerHeight: NSLayoutConstraint!
+    @IBAction func clickLearnMoreButton(_ sender: UIButton) {
+        UIApplication.shared.open(waterWatchContent.learnMore.url, options: [:], completionHandler: nil)
+    }
+    @IBAction func clickDissolvedOxygenButton(_ sender: UIButton) {
+        UIApplication.shared.open(waterWatchContent.dissolvedOxygen.url, options: [:], completionHandler: nil)
+    }
+    @IBAction func clickNutrientsButton(_ sender: UIButton) {
+        UIApplication.shared.open(waterWatchContent.nutrients.url, options: [:], completionHandler: nil)
+    }
+    @IBAction func clickChlorophyllButton(_ sender: UIButton) {
+        UIApplication.shared.open(waterWatchContent.chlorophyllA.url, options: [:], completionHandler: nil)
+    }
     
-    let waterWatchContent = WaterWatchContentManager.fetchContentData()
+    
+    @IBOutlet public weak var collapsibleTableViewContainerHeight: NSLayoutConstraint!
     
     //TODO: create an extension with implementation
     // Set Container View height constraint to resize depending on its internal table collapsible state
