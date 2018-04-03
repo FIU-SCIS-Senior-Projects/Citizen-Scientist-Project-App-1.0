@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hyM-hC-Sa7">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="lDN-C8-6GM">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -14,318 +14,9 @@
         <array key="HelveticaNeue.ttc">
             <string>HelveticaNeue</string>
             <string>HelveticaNeue-Bold</string>
-            <string>HelveticaNeue-Italic</string>
         </array>
     </customFonts>
     <scenes>
-        <!--Reef Restoration View Controller-->
-        <scene sceneID="xmK-Dy-evz">
-            <objects>
-                <viewController id="jm9-KL-Fp0" customClass="ReefRestorationViewController" customModule="Citizen_Scientist_Project" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleAspectFill" id="7tf-uW-nWY">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="3230"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TBt-fg-Tl3">
-                                <rect key="frame" x="0.0" y="64" width="375" height="3122"/>
-                                <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aPk-Bt-5c0">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="3122"/>
-                                        <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="reef-restoration" translatesAutoresizingMaskIntoConstraints="NO" id="0cL-Ge-tRH">
-                                                <rect key="frame" x="0.0" y="0.0" width="375" height="225"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" secondItem="0cL-Ge-tRH" secondAttribute="height" multiplier="5:3" id="63h-Pa-Ntl"/>
-                                                </constraints>
-                                            </imageView>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="laL-Yy-VTm">
-                                                <rect key="frame" x="8" y="241" width="359" height="128"/>
-                                                <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="THE RESCUE A REEF SPONSORED DIVE TRIP ON SEPTEMBER 16, 2017 HAS BEEN POSTPONED DUE TO DAMAGE CAUSED BY HURRICANE IRMA." lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" minimumFontSize="10" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9cc-cN-LUp">
-                                                        <rect key="frame" x="8" y="16" width="343" height="50"/>
-                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
-                                                        <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nhY-h0-w6r">
-                                                        <rect key="frame" x="130.5" y="82" width="97" height="30"/>
-                                                        <color key="backgroundColor" red="0.94901960780000005" green="0.21176470589999999" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
-                                                        <state key="normal" title="LEARN MORE">
-                                                            <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        </state>
-                                                        <connections>
-                                                            <segue destination="xBd-dB-EE5" kind="show" id="lBf-e4-ga1"/>
-                                                        </connections>
-                                                    </button>
-                                                </subviews>
-                                                <color key="backgroundColor" red="0.35686274509999999" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                <constraints>
-                                                    <constraint firstItem="nhY-h0-w6r" firstAttribute="top" secondItem="9cc-cN-LUp" secondAttribute="bottom" constant="16" id="4bN-OX-SIY"/>
-                                                    <constraint firstItem="9cc-cN-LUp" firstAttribute="top" secondItem="laL-Yy-VTm" secondAttribute="top" constant="16" id="Hdp-gG-XGh"/>
-                                                    <constraint firstAttribute="trailing" secondItem="9cc-cN-LUp" secondAttribute="trailing" constant="8" id="iG9-vA-guv"/>
-                                                    <constraint firstItem="nhY-h0-w6r" firstAttribute="centerX" secondItem="laL-Yy-VTm" secondAttribute="centerX" id="lZV-eQ-9Fb"/>
-                                                    <constraint firstAttribute="bottom" secondItem="nhY-h0-w6r" secondAttribute="bottom" constant="16" id="qye-j8-Y7y"/>
-                                                    <constraint firstItem="9cc-cN-LUp" firstAttribute="leading" secondItem="laL-Yy-VTm" secondAttribute="leading" constant="8" id="vkf-8g-KvU"/>
-                                                    <constraint firstAttribute="width" secondItem="laL-Yy-VTm" secondAttribute="height" multiplier="359:128" id="wZg-xG-Qz1"/>
-                                                </constraints>
-                                            </view>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="reef-restoration-2" translatesAutoresizingMaskIntoConstraints="NO" id="gzg-aS-58N">
-                                                <rect key="frame" x="0.0" y="385" width="375" height="284"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" secondItem="gzg-aS-58N" secondAttribute="height" multiplier="375:284" id="ulc-hp-3Co"/>
-                                                </constraints>
-                                            </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RESCUE A REEF SPONSORED DIVE TRIP" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="ryb-hx-x6x">
-                                                <rect key="frame" x="8" y="685" width="359" height="60"/>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="25"/>
-                                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Join the Key Biscayne Citizen Science Project for our second annual Reef Restoration Day! " lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="SeD-5T-dBA">
-                                                <rect key="frame" x="8" y="761" width="359" height="40"/>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue-Italic" family="Helvetica Neue" pointSize="17"/>
-                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="19" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="VHy-lc-j0p">
-                                                <rect key="frame" x="8" y="809" width="359" height="277.5"/>
-                                                <string key="text">Have you ever wondered what marine biologists do? Are you interested in diving alongside University of Miami coral reef experts? Rescue A Reef coral restoration expeditions offer you a hands-on experience to work with live corals in their natural habitat! 
-
-Key Biscayne residents are invited to join a KBCF Citizen-Scientist-Project-sponsored dive trip with University of Miami Rosenstiel School’s Rescue A Reef Program. Dive the Key Biscayne Coral Nursery, learn about the staghorn coral restoration efforts, and participate in a new coral out-planting project!</string>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
-                                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="KEY BISCAYNE REEF RESTORATION" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="jLF-H3-KqG">
-                                                <rect key="frame" x="8" y="1103" width="359" height="60"/>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="25"/>
-                                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="47" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="Eda-t1-ete">
-                                                <rect key="frame" x="8" y="1179" width="359" height="931"/>
-                                                <string key="text">Staghorn corals (Acropora cervicornis) are  important coral reef engineers, providing essential habitat for many other reef organisms. Unfortunately, coral populations have drastically declined and are threatened with extinction due to climate change, pollution, disease, overfishing, and habitat destruction. Staghorn corals have been designated on the IUCN red list as “critically endangered,” and are listed as “threatened” under the Endangered Species Act.  The National Marine Fisheries Service has designated Florida as one of four critical habitats in the world for staghorn coral.
-
-While populations of staghorn coral still exist throughout Florida and the Florida Keys, they are small, fragmented, and genetically isolated. Without the flow of genes between populations, they grow weaker over time and are less able to cope with changes in the environment.
-
-The University of Miami’s (UM) coral restoration lab (Lirman Lab) focuses on
-propagating threatened Caribbean staghorn coral in underwater coral nurseries. Nursery-reared corals are then out-planted to local reefs to enhance staghorn populations and promote natural recovery.
-
-Out of the Lirman Lab came Rescue A Reef, a citizen science project designed to support coral reef research and restoration activities through outreach, education, and engagement. Their mission is to educate and engage the local community, increase scientific literacy in coastal and coral reef conservation, and foster ocean stewardship.
-
-The area around Key Biscayne and Virginia Key is part of the designated critical habitat of staghorn coral, and therefore its protection is paramount.  The aim of this and future trips are to get the Key Biscayne community involved in awareness, protection, and enhancement of their surrounding local environment.</string>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
-                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="reef-restoration-3" translatesAutoresizingMaskIntoConstraints="NO" id="H1r-BY-grL">
-                                                <rect key="frame" x="0.0" y="2126" width="375" height="280"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" secondItem="H1r-BY-grL" secondAttribute="height" multiplier="75:56" id="8bW-mW-s4F"/>
-                                                </constraints>
-                                            </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HALF-DAY DIVE" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="La4-sL-T1G">
-                                                <rect key="frame" x="8" y="2422" width="359" height="30"/>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="25"/>
-                                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="czx-Ve-dLn">
-                                                <rect key="frame" x="8" y="2468" width="359" height="99.5"/>
-                                                <string key="text">The trip will be comprised of a half-day dive excursion leaving from Diver’s Paradise of Key Biscayne at 7:30am, beginning with a short demonstration on coral nursery maintenance and out-planting methods.</string>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
-                                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CORAL OUT-PLANTING" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="dJH-ys-74H">
-                                                <rect key="frame" x="8" y="2583" width="359" height="30"/>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="25"/>
-                                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="9" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="7X8-aR-pFt">
-                                                <rect key="frame" x="8" y="2629" width="359" height="99.5"/>
-                                                <string key="text">At the Key Biscayne Coral Nursery, divers will help with cleaning the coral nursery trees and collecting coral clippings for out-planting, followed by a trip to Diver’s Paradise Reef where the coral fragments will be out-planted.</string>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
-                                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FAMILY ACTIVITIES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="92G-XL-fGc">
-                                                <rect key="frame" x="8" y="2745" width="359" height="30"/>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="25"/>
-                                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="vee-bf-ChS">
-                                                <rect key="frame" x="8" y="2791" width="359" height="139"/>
-                                                <string key="text">After returning from the dive at about 1:30pm, the families of the participants are encouraged to join the citizen scientist divers and the Rescue A Reef staff at Diver’s Paradise for some food and drinks. Our team will be hosting educational activities for all to learn about coral reefs.</string>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
-                                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="foundation-key-logos" translatesAutoresizingMaskIntoConstraints="NO" id="IeH-0i-kxs">
-                                                <rect key="frame" x="0.0" y="2946" width="375" height="79"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" secondItem="IeH-0i-kxs" secondAttribute="height" multiplier="375:79" id="WNI-iX-Enr"/>
-                                                </constraints>
-                                            </imageView>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rzf-0G-n4j">
-                                                <rect key="frame" x="0.0" y="3025" width="375" height="73"/>
-                                                <subviews>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="zJT-Fg-xLw">
-                                                        <rect key="frame" x="20" y="9.5" width="335" height="54.5"/>
-                                                        <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" text="KEY BISCAYNE COMMUNITY FOUNDATION" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OaB-gA-cd3">
-                                                                <rect key="frame" x="0.0" y="0.0" width="335" height="19.5"/>
-                                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
-                                                                <color key="textColor" red="0.37254901959999998" green="0.67450980390000004" blue="0.87450980389999999" alpha="1" colorSpace="calibratedRGB"/>
-                                                                <nil key="highlightedColor"/>
-                                                            </label>
-                                                            <stackView opaque="NO" contentMode="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="6qk-1U-Jjg">
-                                                                <rect key="frame" x="57.5" y="34.5" width="220" height="20"/>
-                                                                <subviews>
-                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wcV-Bg-ym1">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
-                                                                        <constraints>
-                                                                            <constraint firstAttribute="width" constant="20" id="iUA-XR-ddp"/>
-                                                                        </constraints>
-                                                                        <state key="normal" image="facebook-footer-icon"/>
-                                                                    </button>
-                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y1Y-jg-N5h">
-                                                                        <rect key="frame" x="50" y="0.0" width="20" height="20"/>
-                                                                        <state key="normal" image="twitter-footer-icon"/>
-                                                                    </button>
-                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="25g-Kg-SdQ">
-                                                                        <rect key="frame" x="100" y="0.0" width="20" height="20"/>
-                                                                        <state key="normal" image="google-footer-icon"/>
-                                                                    </button>
-                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l5j-1U-Rjd">
-                                                                        <rect key="frame" x="150" y="0.0" width="20" height="20"/>
-                                                                        <state key="normal" image="youtube-footer-icon"/>
-                                                                    </button>
-                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ehJ-zA-JCS">
-                                                                        <rect key="frame" x="200" y="0.0" width="20" height="20"/>
-                                                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                                                        <state key="normal" image="instagram-footer-icon"/>
-                                                                    </button>
-                                                                </subviews>
-                                                                <constraints>
-                                                                    <constraint firstItem="Y1Y-jg-N5h" firstAttribute="width" secondItem="wcV-Bg-ym1" secondAttribute="width" id="0eL-aX-i2J"/>
-                                                                    <constraint firstItem="25g-Kg-SdQ" firstAttribute="width" secondItem="wcV-Bg-ym1" secondAttribute="width" id="987-EP-ADy"/>
-                                                                    <constraint firstItem="ehJ-zA-JCS" firstAttribute="width" secondItem="wcV-Bg-ym1" secondAttribute="width" id="Sfw-Jc-pyQ"/>
-                                                                    <constraint firstAttribute="height" constant="20" id="kfd-Ie-Lxv"/>
-                                                                    <constraint firstItem="l5j-1U-Rjd" firstAttribute="width" secondItem="wcV-Bg-ym1" secondAttribute="width" id="vjl-j2-rjo"/>
-                                                                </constraints>
-                                                            </stackView>
-                                                        </subviews>
-                                                        <constraints>
-                                                            <constraint firstAttribute="trailing" secondItem="OaB-gA-cd3" secondAttribute="trailing" id="KJ5-G7-qns"/>
-                                                            <constraint firstItem="OaB-gA-cd3" firstAttribute="leading" secondItem="zJT-Fg-xLw" secondAttribute="leading" id="ozg-eB-pNw"/>
-                                                        </constraints>
-                                                    </stackView>
-                                                </subviews>
-                                                <constraints>
-                                                    <constraint firstAttribute="trailing" secondItem="zJT-Fg-xLw" secondAttribute="trailing" constant="20" id="Moy-v3-rdI"/>
-                                                    <constraint firstItem="zJT-Fg-xLw" firstAttribute="leading" secondItem="rzf-0G-n4j" secondAttribute="leading" constant="20" id="uR1-dw-AVM"/>
-                                                    <constraint firstItem="zJT-Fg-xLw" firstAttribute="centerX" secondItem="rzf-0G-n4j" secondAttribute="centerX" id="ybi-QU-TJm"/>
-                                                    <constraint firstItem="zJT-Fg-xLw" firstAttribute="centerY" secondItem="rzf-0G-n4j" secondAttribute="centerY" id="zod-ka-yw8"/>
-                                                </constraints>
-                                            </view>
-                                        </subviews>
-                                        <color key="backgroundColor" red="0.0039215686269999999" green="0.17254901959999999" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
-                                        <constraints>
-                                            <constraint firstItem="gzg-aS-58N" firstAttribute="leading" secondItem="aPk-Bt-5c0" secondAttribute="leading" id="1FW-cs-L64"/>
-                                            <constraint firstItem="laL-Yy-VTm" firstAttribute="top" secondItem="0cL-Ge-tRH" secondAttribute="bottom" constant="16" id="1Fq-Ab-hyD"/>
-                                            <constraint firstItem="VHy-lc-j0p" firstAttribute="leading" secondItem="aPk-Bt-5c0" secondAttribute="leading" constant="8" id="2v3-gE-GPf"/>
-                                            <constraint firstItem="gzg-aS-58N" firstAttribute="top" secondItem="laL-Yy-VTm" secondAttribute="bottom" constant="16" id="3nX-gW-1qI"/>
-                                            <constraint firstAttribute="trailing" secondItem="rzf-0G-n4j" secondAttribute="trailing" id="4Vq-Y7-mBU"/>
-                                            <constraint firstAttribute="trailing" secondItem="gzg-aS-58N" secondAttribute="trailing" id="4u7-sT-oNm"/>
-                                            <constraint firstAttribute="trailing" secondItem="laL-Yy-VTm" secondAttribute="trailing" constant="8" id="6O3-iG-9u6"/>
-                                            <constraint firstItem="92G-XL-fGc" firstAttribute="leading" secondItem="aPk-Bt-5c0" secondAttribute="leading" constant="8" id="7Pk-Xf-YHm"/>
-                                            <constraint firstItem="Eda-t1-ete" firstAttribute="leading" secondItem="aPk-Bt-5c0" secondAttribute="leading" constant="8" id="8ji-Gj-J02"/>
-                                            <constraint firstAttribute="trailing" secondItem="92G-XL-fGc" secondAttribute="trailing" constant="8" id="Cob-P1-Abq"/>
-                                            <constraint firstItem="czx-Ve-dLn" firstAttribute="leading" secondItem="aPk-Bt-5c0" secondAttribute="leading" constant="8" id="Cqf-M4-cmQ"/>
-                                            <constraint firstItem="SeD-5T-dBA" firstAttribute="top" secondItem="ryb-hx-x6x" secondAttribute="bottom" constant="16" id="Eq4-CS-aY1"/>
-                                            <constraint firstAttribute="trailing" secondItem="czx-Ve-dLn" secondAttribute="trailing" constant="8" id="FiK-hJ-tn0"/>
-                                            <constraint firstAttribute="trailing" secondItem="7X8-aR-pFt" secondAttribute="trailing" constant="8" id="HIP-Dd-Ujf"/>
-                                            <constraint firstItem="0cL-Ge-tRH" firstAttribute="top" secondItem="aPk-Bt-5c0" secondAttribute="top" id="IrW-tr-h7f"/>
-                                            <constraint firstAttribute="trailing" secondItem="0cL-Ge-tRH" secondAttribute="trailing" id="JS8-2S-RAm"/>
-                                            <constraint firstItem="H1r-BY-grL" firstAttribute="leading" secondItem="aPk-Bt-5c0" secondAttribute="leading" id="JoJ-2T-e3F"/>
-                                            <constraint firstItem="rzf-0G-n4j" firstAttribute="top" secondItem="IeH-0i-kxs" secondAttribute="bottom" id="JsD-zZ-Vcp"/>
-                                            <constraint firstItem="ryb-hx-x6x" firstAttribute="top" secondItem="gzg-aS-58N" secondAttribute="bottom" constant="16" id="KSG-ui-wwq"/>
-                                            <constraint firstAttribute="trailing" secondItem="IeH-0i-kxs" secondAttribute="trailing" id="L5N-Lg-Uc1"/>
-                                            <constraint firstItem="laL-Yy-VTm" firstAttribute="leading" secondItem="aPk-Bt-5c0" secondAttribute="leading" constant="8" id="MJP-WC-8QR"/>
-                                            <constraint firstAttribute="trailing" secondItem="SeD-5T-dBA" secondAttribute="trailing" constant="8" id="NSP-94-jkr"/>
-                                            <constraint firstItem="La4-sL-T1G" firstAttribute="top" secondItem="H1r-BY-grL" secondAttribute="bottom" constant="16" id="OMg-wz-gzM"/>
-                                            <constraint firstItem="H1r-BY-grL" firstAttribute="top" secondItem="Eda-t1-ete" secondAttribute="bottom" constant="16" id="QRs-DJ-tqh"/>
-                                            <constraint firstItem="dJH-ys-74H" firstAttribute="top" secondItem="czx-Ve-dLn" secondAttribute="bottom" constant="16" id="ROX-u1-L2m"/>
-                                            <constraint firstItem="rzf-0G-n4j" firstAttribute="leading" secondItem="aPk-Bt-5c0" secondAttribute="leading" id="S3L-SI-nBN"/>
-                                            <constraint firstItem="Eda-t1-ete" firstAttribute="top" secondItem="jLF-H3-KqG" secondAttribute="bottom" constant="16" id="SLb-HN-B8a"/>
-                                            <constraint firstItem="92G-XL-fGc" firstAttribute="top" secondItem="7X8-aR-pFt" secondAttribute="bottom" constant="16" id="SVO-sp-Dhz"/>
-                                            <constraint firstItem="La4-sL-T1G" firstAttribute="leading" secondItem="aPk-Bt-5c0" secondAttribute="leading" constant="8" id="SsV-pv-7oT"/>
-                                            <constraint firstAttribute="height" constant="3122" id="TuH-a6-u8d"/>
-                                            <constraint firstAttribute="trailing" secondItem="VHy-lc-j0p" secondAttribute="trailing" constant="8" id="U0S-C9-HRi"/>
-                                            <constraint firstItem="0cL-Ge-tRH" firstAttribute="leading" secondItem="aPk-Bt-5c0" secondAttribute="leading" id="UUf-jC-jSD"/>
-                                            <constraint firstAttribute="trailing" secondItem="vee-bf-ChS" secondAttribute="trailing" constant="8" id="VK3-68-wHN"/>
-                                            <constraint firstItem="jLF-H3-KqG" firstAttribute="leading" secondItem="aPk-Bt-5c0" secondAttribute="leading" constant="8" id="Vxm-nG-E5o"/>
-                                            <constraint firstItem="7X8-aR-pFt" firstAttribute="top" secondItem="dJH-ys-74H" secondAttribute="bottom" constant="16" id="XcX-47-Uod"/>
-                                            <constraint firstAttribute="trailing" secondItem="La4-sL-T1G" secondAttribute="trailing" constant="8" id="Xyk-ct-97C"/>
-                                            <constraint firstAttribute="trailing" secondItem="ryb-hx-x6x" secondAttribute="trailing" constant="8" id="YNy-dx-MyP"/>
-                                            <constraint firstItem="jLF-H3-KqG" firstAttribute="top" secondItem="VHy-lc-j0p" secondAttribute="bottom" constant="16" id="bXO-4A-wUa"/>
-                                            <constraint firstItem="vee-bf-ChS" firstAttribute="top" secondItem="92G-XL-fGc" secondAttribute="bottom" constant="16" id="hde-Dd-gYv"/>
-                                            <constraint firstAttribute="trailing" secondItem="jLF-H3-KqG" secondAttribute="trailing" constant="8" id="jcl-WW-MuH"/>
-                                            <constraint firstItem="IeH-0i-kxs" firstAttribute="top" secondItem="vee-bf-ChS" secondAttribute="bottom" constant="16" id="kcj-eb-NqJ"/>
-                                            <constraint firstAttribute="bottom" secondItem="rzf-0G-n4j" secondAttribute="bottom" constant="24" id="nVt-p5-6V5"/>
-                                            <constraint firstItem="vee-bf-ChS" firstAttribute="leading" secondItem="aPk-Bt-5c0" secondAttribute="leading" constant="8" id="oKa-V8-Oq9"/>
-                                            <constraint firstItem="czx-Ve-dLn" firstAttribute="top" secondItem="La4-sL-T1G" secondAttribute="bottom" constant="16" id="oNu-ba-rKw"/>
-                                            <constraint firstAttribute="trailing" secondItem="dJH-ys-74H" secondAttribute="trailing" constant="8" id="p2B-PB-sXe"/>
-                                            <constraint firstItem="7X8-aR-pFt" firstAttribute="leading" secondItem="aPk-Bt-5c0" secondAttribute="leading" constant="8" id="pif-si-PSD"/>
-                                            <constraint firstItem="SeD-5T-dBA" firstAttribute="leading" secondItem="aPk-Bt-5c0" secondAttribute="leading" constant="8" id="pun-Yn-1Qy"/>
-                                            <constraint firstItem="ryb-hx-x6x" firstAttribute="leading" secondItem="aPk-Bt-5c0" secondAttribute="leading" constant="8" id="qh2-Jl-5UF"/>
-                                            <constraint firstItem="VHy-lc-j0p" firstAttribute="top" secondItem="SeD-5T-dBA" secondAttribute="bottom" constant="8" id="rXB-CC-oAZ"/>
-                                            <constraint firstAttribute="trailing" secondItem="Eda-t1-ete" secondAttribute="trailing" constant="8" id="ssv-I5-F4N"/>
-                                            <constraint firstAttribute="trailing" secondItem="H1r-BY-grL" secondAttribute="trailing" id="vAh-iF-MeQ"/>
-                                            <constraint firstItem="dJH-ys-74H" firstAttribute="leading" secondItem="aPk-Bt-5c0" secondAttribute="leading" constant="8" id="vjH-4B-7Yk"/>
-                                            <constraint firstItem="IeH-0i-kxs" firstAttribute="leading" secondItem="aPk-Bt-5c0" secondAttribute="leading" id="z6r-8O-ZuS"/>
-                                        </constraints>
-                                    </view>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="aPk-Bt-5c0" secondAttribute="bottom" id="7Ft-i7-2Ej"/>
-                                    <constraint firstAttribute="trailing" secondItem="aPk-Bt-5c0" secondAttribute="trailing" id="KEE-ol-Fc5"/>
-                                    <constraint firstItem="aPk-Bt-5c0" firstAttribute="leading" secondItem="TBt-fg-Tl3" secondAttribute="leading" id="gSA-dp-K33"/>
-                                    <constraint firstAttribute="height" constant="3122" id="qYn-jE-tvT"/>
-                                    <constraint firstItem="aPk-Bt-5c0" firstAttribute="top" secondItem="TBt-fg-Tl3" secondAttribute="top" id="x4l-1F-Cym"/>
-                                </constraints>
-                            </scrollView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="TBt-fg-Tl3" firstAttribute="leading" secondItem="p6u-Gh-qFu" secondAttribute="leading" id="Asb-sU-hnP"/>
-                            <constraint firstItem="TBt-fg-Tl3" firstAttribute="top" secondItem="p6u-Gh-qFu" secondAttribute="top" id="FFI-3c-ezG"/>
-                            <constraint firstItem="aPk-Bt-5c0" firstAttribute="width" secondItem="7tf-uW-nWY" secondAttribute="width" id="Xsk-Wo-tww"/>
-                            <constraint firstItem="TBt-fg-Tl3" firstAttribute="bottom" secondItem="p6u-Gh-qFu" secondAttribute="bottom" id="mGI-QO-5VB"/>
-                            <constraint firstItem="TBt-fg-Tl3" firstAttribute="trailing" secondItem="p6u-Gh-qFu" secondAttribute="trailing" id="vil-Mp-UgB"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="p6u-Gh-qFu"/>
-                    </view>
-                    <toolbarItems/>
-                    <navigationItem key="navigationItem" id="Bcd-E6-jHT">
-                        <barButtonItem key="leftBarButtonItem" image="1-header-nav-1" id="ijk-II-fk1">
-                            <color key="tintColor" red="0.60392156860000001" green="0.6588235294" blue="0.69803921570000005" alpha="1" colorSpace="calibratedRGB"/>
-                            <connections>
-                                <segue destination="uyd-fs-atr" kind="show" id="yB9-Fn-Gpf"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
-                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
-                    <size key="freeformSize" width="375" height="3230"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="FK6-KE-cVj" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="8463.2000000000007" y="897.75112443778119"/>
-        </scene>
         <!--Status Reef Restoration View Controller-->
         <scene sceneID="uUK-ny-O48">
             <objects>
@@ -335,7 +26,7 @@ The area around Key Biscayne and Virginia Key is part of the designated critical
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8u6-On-fNY">
-                                <rect key="frame" x="0.0" y="64" width="375" height="707"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="751"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GE2-4f-jI4">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="707"/>
@@ -484,7 +175,7 @@ The area around Key Biscayne and Virginia Key is part of the designated critical
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IRt-CL-ib3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="8462" y="2949"/>
+            <point key="canvasLocation" x="10729" y="3503"/>
         </scene>
         <!--Navigation-->
         <scene sceneID="87V-jJ-sdF">
@@ -492,25 +183,348 @@ The area around Key Biscayne and Virginia Key is part of the designated critical
                 <viewControllerPlaceholder storyboardName="Navigation" id="uyd-fs-atr" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BjU-oR-Okf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="9363.2000000000007" y="897.75112443778119"/>
+            <point key="canvasLocation" x="11482" y="1082"/>
+        </scene>
+        <!--Reef Restoration View Controller-->
+        <scene sceneID="5hf-Xs-R7a">
+            <objects>
+                <viewController id="8Cz-6h-j6g" customClass="ReefRestorationViewController" customModule="Citizen_Scientist_Project" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="q9D-bn-tpC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="4000"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Br-Hf-2bd">
+                                <rect key="frame" x="0.0" y="64" width="375" height="3936"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SQR-hT-Sgh" userLabel="Mini Challenge View">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="3518.5"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="reef-restoration" translatesAutoresizingMaskIntoConstraints="NO" id="V9W-Hb-1i4">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="225"/>
+                                            </imageView>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3GO-Ah-lPt" userLabel="Red Box 1">
+                                                <rect key="frame" x="0.0" y="225" width="375" height="243.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="THE RESCUE A REEF SPONSORED DIVE TRIP ON SEPTEMBER 16, 2017 HAS BEEN POSTPONED DUE TO DAMAGE CAUSED BY HURRICANE IRMA." lineBreakMode="wordWrap" numberOfLines="10" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="VQC-eV-5sQ">
+                                                        <rect key="frame" x="16" y="16" width="343" height="119.5"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zWp-Hp-uNn">
+                                                        <rect key="frame" x="16" y="167.5" width="343" height="44"/>
+                                                        <color key="backgroundColor" red="0.93485409019999999" green="0.33095580340000003" blue="0.31995838879999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="44" id="Dp2-vi-NW8"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                                        <state key="normal" title="LEARN MORE">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <segue destination="xBd-dB-EE5" kind="show" id="pKC-Xh-u3X"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.33296501639999998" green="0.072392754259999997" blue="0.087315432730000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstItem="zWp-Hp-uNn" firstAttribute="top" secondItem="VQC-eV-5sQ" secondAttribute="bottom" constant="32" id="4ka-ZI-Bt2"/>
+                                                    <constraint firstAttribute="trailing" secondItem="VQC-eV-5sQ" secondAttribute="trailing" constant="16" id="5yw-wS-woU"/>
+                                                    <constraint firstAttribute="bottom" secondItem="zWp-Hp-uNn" secondAttribute="bottom" constant="32" id="DLr-yH-Wo7"/>
+                                                    <constraint firstItem="VQC-eV-5sQ" firstAttribute="top" secondItem="3GO-Ah-lPt" secondAttribute="top" constant="16" id="H19-KT-OEW"/>
+                                                    <constraint firstAttribute="trailing" secondItem="zWp-Hp-uNn" secondAttribute="trailing" constant="16" id="J6t-H2-FNy"/>
+                                                    <constraint firstItem="VQC-eV-5sQ" firstAttribute="leading" secondItem="3GO-Ah-lPt" secondAttribute="leading" constant="16" id="a5k-SE-BHE"/>
+                                                    <constraint firstItem="zWp-Hp-uNn" firstAttribute="leading" secondItem="3GO-Ah-lPt" secondAttribute="leading" constant="16" id="eyy-aB-qon"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SbQ-Mg-POS" userLabel="Blue Box 1">
+                                                <rect key="frame" x="0.0" y="751.5" width="375" height="1672.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="RESCUE A REEF SPONSORED DIVE TRIP" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="SOc-bw-d3c">
+                                                        <rect key="frame" x="16" y="32" width="343" height="48"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                                        <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" bouncesZoom="NO" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G1f-mU-EPl">
+                                                        <rect key="frame" x="16" y="88" width="343" height="422"/>
+                                                        <mutableString key="text">Join the Key Biscayne Citizen Science Project for our second annual Reef Restoration Day! 
+
+Have you ever wondered what marine biologists do? Are you interested in diving alongside University of Miami coral reef experts? Rescue A Reef coral restoration expeditions offer you a hands-on experience to work with live corals in their natural habitat! 
+
+Key Biscayne residents are invited to join a KBCF Citizen-Scientist-Project-sponsored dive trip with University of Miami Rosenstiel School’s Rescue A Reef Program. Dive the Key Biscayne Coral Nursery, learn about the staghorn coral restoration efforts, and participate in a new coral out-planting project!</mutableString>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                    </textView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="KEY BISCAYNE REEF RESTORATION" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="UT0-yN-aBb">
+                                                        <rect key="frame" x="16" y="526" width="343" height="48"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                                        <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" bouncesZoom="NO" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0MS-u9-zmj">
+                                                        <rect key="frame" x="16" y="590" width="343" height="1050.5"/>
+                                                        <mutableString key="text">Staghorn corals (Acropora cervicornis) are  important coral reef engineers, providing essential habitat for many other reef organisms. Unfortunately, coral populations have drastically declined and are threatened with extinction due to climate change, pollution, disease, overfishing, and habitat destruction. Staghorn corals have been designated on the IUCN red list as “critically endangered,” and are listed as “threatened” under the Endangered Species Act.  The National Marine Fisheries Service has designated Florida as one of four critical habitats in the world for staghorn coral.
+
+While populations of staghorn coral still exist throughout Florida and the Florida Keys, they are small, fragmented, and genetically isolated. Without the flow of genes between populations, they grow weaker over time and are less able to cope with changes in the environment.
+
+The University of Miami’s (UM) coral restoration lab (Lirman Lab) focuses on
+propagating threatened Caribbean staghorn coral in underwater coral nurseries. Nursery-reared corals are then out-planted to local reefs to enhance staghorn populations and promote natural recovery.
+
+Out of the Lirman Lab came Rescue A Reef, a citizen science project designed to support coral reef research and restoration activities through outreach, education, and engagement. Their mission is to educate and engage the local community, increase scientific literacy in coastal and coral reef conservation, and foster ocean stewardship.
+
+The area around Key Biscayne and Virginia Key is part of the designated critical habitat of staghorn coral, and therefore its protection is paramount.  The aim of this and future trips are to get the Key Biscayne community involved in awareness, protection, and enhancement of their surrounding local environment.</mutableString>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                    </textView>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.0039215686269999999" green="0.17254901959999999" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="0MS-u9-zmj" secondAttribute="trailing" constant="16" id="0hU-DN-PXE"/>
+                                                    <constraint firstItem="0MS-u9-zmj" firstAttribute="top" secondItem="UT0-yN-aBb" secondAttribute="bottom" constant="16" id="0iU-LZ-tVb"/>
+                                                    <constraint firstAttribute="trailing" secondItem="G1f-mU-EPl" secondAttribute="trailing" constant="16" id="70d-gF-QoB"/>
+                                                    <constraint firstAttribute="trailing" secondItem="UT0-yN-aBb" secondAttribute="trailing" constant="16" id="Cp4-Up-oRq"/>
+                                                    <constraint firstItem="G1f-mU-EPl" firstAttribute="top" secondItem="SOc-bw-d3c" secondAttribute="bottom" constant="8" id="Omq-JE-7lQ"/>
+                                                    <constraint firstItem="0MS-u9-zmj" firstAttribute="leading" secondItem="SbQ-Mg-POS" secondAttribute="leading" constant="16" id="Pzg-s2-DhU"/>
+                                                    <constraint firstAttribute="trailing" secondItem="SOc-bw-d3c" secondAttribute="trailing" constant="16" id="QUe-1E-hJb"/>
+                                                    <constraint firstItem="UT0-yN-aBb" firstAttribute="leading" secondItem="SbQ-Mg-POS" secondAttribute="leading" constant="16" id="Yor-xe-5fD"/>
+                                                    <constraint firstAttribute="bottom" secondItem="0MS-u9-zmj" secondAttribute="bottom" constant="32" id="a8C-Fo-Qws"/>
+                                                    <constraint firstItem="SOc-bw-d3c" firstAttribute="top" secondItem="SbQ-Mg-POS" secondAttribute="top" constant="32" id="gGp-KO-t54"/>
+                                                    <constraint firstItem="SOc-bw-d3c" firstAttribute="leading" secondItem="SbQ-Mg-POS" secondAttribute="leading" constant="16" id="iLa-P3-wGx"/>
+                                                    <constraint firstItem="UT0-yN-aBb" firstAttribute="top" secondItem="G1f-mU-EPl" secondAttribute="bottom" constant="16" id="jDI-TL-MgX"/>
+                                                    <constraint firstItem="G1f-mU-EPl" firstAttribute="leading" secondItem="SbQ-Mg-POS" secondAttribute="leading" constant="16" id="kNU-eo-Phf"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" horizontalHuggingPriority="255" verticalHuggingPriority="255" horizontalCompressionResistancePriority="755" verticalCompressionResistancePriority="755" translatesAutoresizingMaskIntoConstraints="NO" id="oYA-5L-i7a" userLabel="Blue Box 2">
+                                                <rect key="frame" x="0.0" y="2704" width="375" height="610.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="HALF-DAY DIVE" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="hHT-aY-Zfw">
+                                                        <rect key="frame" x="16" y="32" width="343" height="24"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                                        <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" bouncesZoom="NO" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5i0-vd-8AE">
+                                                        <rect key="frame" x="16" y="72" width="343" height="117.5"/>
+                                                        <string key="text">The trip will be comprised of a half-day dive excursion leaving from Diver’s Paradise of Key Biscayne at 7:30am, beginning with a short demonstration on coral nursery maintenance and out-planting methods.</string>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                    </textView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="CORAL OUT-PLANTING" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="ru2-Ei-ajz">
+                                                        <rect key="frame" x="16" y="205.5" width="343" height="24"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                                        <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" bouncesZoom="NO" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lYQ-ee-CSe">
+                                                        <rect key="frame" x="16" y="245.5" width="343" height="138"/>
+                                                        <string key="text">At the Key Biscayne Coral Nursery, divers will help with cleaning the coral nursery trees and collecting coral clippings for out-planting, followed by a trip to Diver’s Paradise Reef where the coral fragments will be out-planted.</string>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                    </textView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="FAMILY ACTIVITIES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="9LO-tV-Byd">
+                                                        <rect key="frame" x="16" y="399.5" width="343" height="24"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                                        <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="zrd-mG-Pdj">
+                                                        <rect key="frame" x="16" y="439.5" width="343" height="139"/>
+                                                        <string key="text">After returning from the dive at about 1:30pm, the families of the participants are encouraged to join the citizen scientist divers and the Rescue A Reef staff at Diver’s Paradise for some food and drinks. Our team will be hosting educational activities for all to learn about coral reefs.</string>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                        <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.0039215686269999999" green="0.17254901959999999" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstItem="lYQ-ee-CSe" firstAttribute="top" secondItem="ru2-Ei-ajz" secondAttribute="bottom" constant="16" id="0GO-Ol-ay6"/>
+                                                    <constraint firstItem="5i0-vd-8AE" firstAttribute="top" secondItem="hHT-aY-Zfw" secondAttribute="bottom" constant="16" id="33n-yd-WMe"/>
+                                                    <constraint firstAttribute="trailing" secondItem="5i0-vd-8AE" secondAttribute="trailing" constant="16" id="8cs-XB-v0X"/>
+                                                    <constraint firstItem="hHT-aY-Zfw" firstAttribute="leading" secondItem="oYA-5L-i7a" secondAttribute="leading" constant="16" id="A1S-Z3-ttK"/>
+                                                    <constraint firstAttribute="trailing" secondItem="ru2-Ei-ajz" secondAttribute="trailing" constant="16" id="HYt-dA-c0M"/>
+                                                    <constraint firstItem="lYQ-ee-CSe" firstAttribute="leading" secondItem="oYA-5L-i7a" secondAttribute="leading" constant="16" id="LZr-hf-o0x"/>
+                                                    <constraint firstItem="zrd-mG-Pdj" firstAttribute="leading" secondItem="oYA-5L-i7a" secondAttribute="leading" constant="16" id="R8X-5q-qy2"/>
+                                                    <constraint firstItem="ru2-Ei-ajz" firstAttribute="leading" secondItem="oYA-5L-i7a" secondAttribute="leading" constant="16" id="ZHz-Cu-mtA"/>
+                                                    <constraint firstItem="5i0-vd-8AE" firstAttribute="leading" secondItem="oYA-5L-i7a" secondAttribute="leading" constant="16" id="Zsh-Sp-pgs"/>
+                                                    <constraint firstItem="ru2-Ei-ajz" firstAttribute="top" secondItem="5i0-vd-8AE" secondAttribute="bottom" constant="16" id="a0A-wg-Dww"/>
+                                                    <constraint firstItem="zrd-mG-Pdj" firstAttribute="top" secondItem="9LO-tV-Byd" secondAttribute="bottom" constant="16" id="bBa-6F-cN2"/>
+                                                    <constraint firstAttribute="trailing" secondItem="9LO-tV-Byd" secondAttribute="trailing" constant="16" id="hVS-dM-EGC"/>
+                                                    <constraint firstAttribute="trailing" secondItem="lYQ-ee-CSe" secondAttribute="trailing" constant="16" id="kLZ-po-6yN"/>
+                                                    <constraint firstItem="9LO-tV-Byd" firstAttribute="top" secondItem="lYQ-ee-CSe" secondAttribute="bottom" constant="16" id="mK0-IU-qYF"/>
+                                                    <constraint firstAttribute="bottom" secondItem="zrd-mG-Pdj" secondAttribute="bottom" constant="32" id="n3c-Qd-Sr3"/>
+                                                    <constraint firstAttribute="trailing" secondItem="zrd-mG-Pdj" secondAttribute="trailing" constant="16" id="nZy-8w-lSp"/>
+                                                    <constraint firstItem="9LO-tV-Byd" firstAttribute="leading" secondItem="oYA-5L-i7a" secondAttribute="leading" constant="16" id="rBw-hD-FK3"/>
+                                                    <constraint firstAttribute="trailing" secondItem="hHT-aY-Zfw" secondAttribute="trailing" constant="16" id="uOd-I0-Ig0"/>
+                                                    <constraint firstItem="hHT-aY-Zfw" firstAttribute="top" secondItem="oYA-5L-i7a" secondAttribute="top" constant="32" id="vry-G9-gMa"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4YN-U8-dru" userLabel="Footer View">
+                                                <rect key="frame" x="0.0" y="3393.5" width="375" height="125"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="1U7-kB-XfY">
+                                                        <rect key="frame" x="20" y="35" width="335" height="54.5"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" text="KEY BISCAYNE COMMUNITY FOUNDATION" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7pg-LR-rhP">
+                                                                <rect key="frame" x="0.0" y="0.0" width="335" height="19.5"/>
+                                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
+                                                                <color key="textColor" red="0.37254901959999998" green="0.67450980390000004" blue="0.87450980389999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <stackView opaque="NO" contentMode="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="2xS-T9-lkZ">
+                                                                <rect key="frame" x="57.5" y="34.5" width="220" height="20"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jO3-Ag-mYc">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="width" constant="20" id="ThZ-rr-wtH"/>
+                                                                        </constraints>
+                                                                        <state key="normal" image="facebook-footer-icon"/>
+                                                                    </button>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qbs-pO-xT5">
+                                                                        <rect key="frame" x="50" y="0.0" width="20" height="20"/>
+                                                                        <state key="normal" image="twitter-footer-icon"/>
+                                                                    </button>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6eR-5f-cgs">
+                                                                        <rect key="frame" x="100" y="0.0" width="20" height="20"/>
+                                                                        <state key="normal" image="google-footer-icon"/>
+                                                                    </button>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jD7-ks-eq0">
+                                                                        <rect key="frame" x="150" y="0.0" width="20" height="20"/>
+                                                                        <state key="normal" image="youtube-footer-icon"/>
+                                                                    </button>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rBt-lb-QP9">
+                                                                        <rect key="frame" x="200" y="0.0" width="20" height="20"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                                        <state key="normal" image="instagram-footer-icon"/>
+                                                                    </button>
+                                                                </subviews>
+                                                                <constraints>
+                                                                    <constraint firstItem="jD7-ks-eq0" firstAttribute="width" secondItem="jO3-Ag-mYc" secondAttribute="width" id="akg-EV-3DH"/>
+                                                                    <constraint firstItem="rBt-lb-QP9" firstAttribute="width" secondItem="jO3-Ag-mYc" secondAttribute="width" id="dix-4T-mpb"/>
+                                                                    <constraint firstAttribute="height" constant="20" id="fuJ-2N-GAj"/>
+                                                                    <constraint firstItem="qbs-pO-xT5" firstAttribute="width" secondItem="jO3-Ag-mYc" secondAttribute="width" id="o9m-Eu-fG3"/>
+                                                                    <constraint firstItem="6eR-5f-cgs" firstAttribute="width" secondItem="jO3-Ag-mYc" secondAttribute="width" id="xoy-vI-2u3"/>
+                                                                </constraints>
+                                                            </stackView>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstItem="7pg-LR-rhP" firstAttribute="leading" secondItem="1U7-kB-XfY" secondAttribute="leading" id="R15-yr-dgn"/>
+                                                            <constraint firstAttribute="trailing" secondItem="7pg-LR-rhP" secondAttribute="trailing" id="oc4-Rn-EkF"/>
+                                                        </constraints>
+                                                    </stackView>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.18823529410000001" green="0.1960784314" blue="0.25098039220000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="125" id="VO2-Zf-qFx"/>
+                                                    <constraint firstItem="1U7-kB-XfY" firstAttribute="centerX" secondItem="4YN-U8-dru" secondAttribute="centerX" id="Ziz-yB-1SA"/>
+                                                    <constraint firstItem="1U7-kB-XfY" firstAttribute="centerY" secondItem="4YN-U8-dru" secondAttribute="centerY" id="fc0-ZW-nHB"/>
+                                                </constraints>
+                                            </view>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="reef-restoration-3" translatesAutoresizingMaskIntoConstraints="NO" id="Gra-Kd-Rjq">
+                                                <rect key="frame" x="0.0" y="2424" width="375" height="280"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="Gra-Kd-Rjq" secondAttribute="height" multiplier="75:56" id="akR-LW-Ql4"/>
+                                                </constraints>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" image="foundation-key-logos" translatesAutoresizingMaskIntoConstraints="NO" id="1Ny-fi-ac3">
+                                                <rect key="frame" x="0.0" y="3314.5" width="375" height="79"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="1Ny-fi-ac3" secondAttribute="height" multiplier="375:79" id="wza-es-d4B"/>
+                                                </constraints>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="reef-restoration-2" translatesAutoresizingMaskIntoConstraints="NO" id="RiZ-GS-gbF">
+                                                <rect key="frame" x="0.0" y="468.5" width="375" height="283"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.18823529410000001" green="0.1960784314" blue="0.25098039220000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="3GO-Ah-lPt" firstAttribute="leading" secondItem="SQR-hT-Sgh" secondAttribute="leading" id="23M-lv-uYm"/>
+                                            <constraint firstItem="V9W-Hb-1i4" firstAttribute="width" secondItem="V9W-Hb-1i4" secondAttribute="height" multiplier="5:3" identifier="WaterWatchMainImageAspectRatio" id="3uv-HW-S4d"/>
+                                            <constraint firstItem="RiZ-GS-gbF" firstAttribute="width" secondItem="RiZ-GS-gbF" secondAttribute="height" multiplier="375:284" constant="1" id="4za-QO-G8l"/>
+                                            <constraint firstAttribute="trailing" secondItem="V9W-Hb-1i4" secondAttribute="trailing" id="5aN-XG-IwE"/>
+                                            <constraint firstAttribute="trailing" secondItem="SbQ-Mg-POS" secondAttribute="trailing" id="80Q-bv-yBn"/>
+                                            <constraint firstAttribute="trailing" secondItem="RiZ-GS-gbF" secondAttribute="trailing" id="Bcx-Mw-gKy"/>
+                                            <constraint firstItem="oYA-5L-i7a" firstAttribute="top" secondItem="Gra-Kd-Rjq" secondAttribute="bottom" id="EJ9-Ek-WfT"/>
+                                            <constraint firstItem="Gra-Kd-Rjq" firstAttribute="leading" secondItem="SQR-hT-Sgh" secondAttribute="leading" id="Fga-Pl-S41"/>
+                                            <constraint firstItem="V9W-Hb-1i4" firstAttribute="leading" secondItem="SQR-hT-Sgh" secondAttribute="leading" id="I2i-B4-JnA"/>
+                                            <constraint firstItem="oYA-5L-i7a" firstAttribute="leading" secondItem="SQR-hT-Sgh" secondAttribute="leading" id="I8H-o3-OHJ"/>
+                                            <constraint firstItem="3GO-Ah-lPt" firstAttribute="top" secondItem="V9W-Hb-1i4" secondAttribute="bottom" id="Jax-KV-Yhm"/>
+                                            <constraint firstItem="SbQ-Mg-POS" firstAttribute="top" secondItem="RiZ-GS-gbF" secondAttribute="bottom" id="KlM-qA-wFu"/>
+                                            <constraint firstItem="V9W-Hb-1i4" firstAttribute="top" secondItem="SQR-hT-Sgh" secondAttribute="top" id="Liz-ie-xFD"/>
+                                            <constraint firstAttribute="trailing" secondItem="3GO-Ah-lPt" secondAttribute="trailing" id="Py5-vn-3u7"/>
+                                            <constraint firstItem="1Ny-fi-ac3" firstAttribute="top" secondItem="oYA-5L-i7a" secondAttribute="bottom" id="R5k-bb-Bir"/>
+                                            <constraint firstItem="4YN-U8-dru" firstAttribute="leading" secondItem="SQR-hT-Sgh" secondAttribute="leading" id="RNl-Mf-nis"/>
+                                            <constraint firstItem="Gra-Kd-Rjq" firstAttribute="width" secondItem="Gra-Kd-Rjq" secondAttribute="height" multiplier="75:56" id="WNy-gR-B7L"/>
+                                            <constraint firstAttribute="trailing" secondItem="Gra-Kd-Rjq" secondAttribute="trailing" id="YaJ-gj-zhA"/>
+                                            <constraint firstItem="4YN-U8-dru" firstAttribute="top" secondItem="1Ny-fi-ac3" secondAttribute="bottom" id="aKy-Rz-i9m"/>
+                                            <constraint firstItem="RiZ-GS-gbF" firstAttribute="leading" secondItem="SQR-hT-Sgh" secondAttribute="leading" id="eUw-S2-hT9"/>
+                                            <constraint firstItem="SbQ-Mg-POS" firstAttribute="leading" secondItem="SQR-hT-Sgh" secondAttribute="leading" id="eWh-eJ-Yck"/>
+                                            <constraint firstAttribute="trailing" secondItem="oYA-5L-i7a" secondAttribute="trailing" id="flJ-YL-iaW"/>
+                                            <constraint firstAttribute="trailing" secondItem="1Ny-fi-ac3" secondAttribute="trailing" id="mTS-gk-G1k"/>
+                                            <constraint firstAttribute="bottom" secondItem="4YN-U8-dru" secondAttribute="bottom" id="nub-x2-8zg"/>
+                                            <constraint firstItem="Gra-Kd-Rjq" firstAttribute="top" secondItem="SbQ-Mg-POS" secondAttribute="bottom" id="ofS-rV-GM0"/>
+                                            <constraint firstItem="RiZ-GS-gbF" firstAttribute="top" secondItem="3GO-Ah-lPt" secondAttribute="bottom" id="vRr-Uj-fG1"/>
+                                            <constraint firstAttribute="trailing" secondItem="4YN-U8-dru" secondAttribute="trailing" id="vSq-cY-XkU"/>
+                                            <constraint firstItem="1Ny-fi-ac3" firstAttribute="leading" secondItem="SQR-hT-Sgh" secondAttribute="leading" id="yOr-u9-CIy"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.18823529410000001" green="0.1960784314" blue="0.25098039220000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="SQR-hT-Sgh" firstAttribute="width" secondItem="1Br-Hf-2bd" secondAttribute="width" identifier="WaterWatchMainViewWidth" id="2lc-TP-EEF"/>
+                                    <constraint firstItem="SQR-hT-Sgh" firstAttribute="height" secondItem="1Br-Hf-2bd" secondAttribute="height" priority="250" identifier="WaterWatchMainViewHeight" id="5Ua-4s-kud"/>
+                                    <constraint firstAttribute="trailing" secondItem="SQR-hT-Sgh" secondAttribute="trailing" identifier="WaterWatchMainViewTrailing" id="NmM-pJ-Y6g"/>
+                                    <constraint firstAttribute="bottom" secondItem="SQR-hT-Sgh" secondAttribute="bottom" identifier="WaterWatchMainViewBottom" id="TIQ-bd-Vg9"/>
+                                    <constraint firstItem="SQR-hT-Sgh" firstAttribute="top" secondItem="1Br-Hf-2bd" secondAttribute="top" identifier="WaterWatchMainViewTop" id="aF3-CW-DrQ"/>
+                                    <constraint firstItem="SQR-hT-Sgh" firstAttribute="leading" secondItem="1Br-Hf-2bd" secondAttribute="leading" identifier="WaterWatchMainViewLeading" id="eP0-gW-WZ2"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="i8l-tY-4SK" firstAttribute="bottom" secondItem="1Br-Hf-2bd" secondAttribute="bottom" identifier="WaterWatchScrollViewBottom" id="8db-m6-zdZ"/>
+                            <constraint firstItem="i8l-tY-4SK" firstAttribute="trailing" secondItem="1Br-Hf-2bd" secondAttribute="trailing" identifier="WaterWatchScrollViewTrailing" id="ebE-b3-kgs"/>
+                            <constraint firstItem="1Br-Hf-2bd" firstAttribute="leading" secondItem="i8l-tY-4SK" secondAttribute="leading" identifier="WaterWatchScrollViewLeading" id="lcd-Fl-bbK"/>
+                            <constraint firstItem="1Br-Hf-2bd" firstAttribute="top" secondItem="i8l-tY-4SK" secondAttribute="top" identifier="WaterWatchScrollViewTop" id="xqi-1K-Sgw"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="i8l-tY-4SK"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="yFm-hh-vJk">
+                        <barButtonItem key="leftBarButtonItem" image="1-header-nav-1" id="McI-9E-rIK">
+                            <color key="tintColor" red="0.60392156860000001" green="0.6588235294" blue="0.69803921570000005" alpha="1" colorSpace="calibratedRGB"/>
+                        </barButtonItem>
+                    </navigationItem>
+                    <size key="freeformSize" width="375" height="4000"/>
+                    <connections>
+                        <segue destination="uyd-fs-atr" kind="show" id="Mge-r1-C3y"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="q2g-JK-QDN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="10729" y="1083"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="PLJ-da-dlP">
+        <scene sceneID="OeW-sp-Boc">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="hyM-hC-Sa7" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="lDN-C8-6GM" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="P4h-bG-YLO">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="HHC-pK-Joc">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="jm9-KL-Fp0" kind="relationship" relationship="rootViewController" id="nlp-0I-bWi"/>
+                        <segue destination="8Cz-6h-j6g" kind="relationship" relationship="rootViewController" id="9qg-Gp-QZz"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="y1s-Bx-Ft1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TgO-gq-mRb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="8463" y="-1065"/>
+            <point key="canvasLocation" x="10729" y="-1692"/>
         </scene>
     </scenes>
     <resources>
