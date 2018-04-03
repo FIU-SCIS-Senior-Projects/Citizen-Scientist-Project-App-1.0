@@ -38,19 +38,22 @@
                                                 </constraints>
                                             </imageView>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tDy-89-07z">
-                                                <rect key="frame" x="8" y="241" width="359" height="205"/>
+                                                <rect key="frame" x="0.0" y="225" width="375" height="228"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="ciO-1k-I1C">
-                                                        <rect key="frame" x="8" y="16" width="343" height="123"/>
+                                                        <rect key="frame" x="8" y="16" width="359" height="88"/>
                                                         <string key="text">THE 2017-18 KEY CHALLENGE LAUNCHES &amp; REGISTRATION OPENS ON SEPTEMBER 27, 2017. REGISTRATION MUST BE COMPLETED BY NOVEMBER 10, 2017.</string>
-                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
                                                         <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zQe-id-Pe5">
-                                                        <rect key="frame" x="15.5" y="155" width="328" height="30"/>
+                                                    <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="751" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="zQe-id-Pe5">
+                                                        <rect key="frame" x="23.5" y="136" width="328" height="60"/>
                                                         <color key="backgroundColor" red="0.94901960780000005" green="0.21176470589999999" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="60" id="C7y-ul-7tR"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
                                                         <state key="normal" title="VIEW THE 2016-17 KEY CHALLENGE WINNERS">
                                                             <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         </state>
@@ -58,23 +61,22 @@
                                                 </subviews>
                                                 <color key="backgroundColor" red="0.35686274509999999" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="bottom" secondItem="zQe-id-Pe5" secondAttribute="bottom" constant="20" id="6n9-MA-1Xy"/>
+                                                    <constraint firstAttribute="bottom" secondItem="zQe-id-Pe5" secondAttribute="bottom" constant="32" id="6n9-MA-1Xy"/>
                                                     <constraint firstItem="ciO-1k-I1C" firstAttribute="top" secondItem="tDy-89-07z" secondAttribute="top" constant="16" id="8nU-aa-4mt"/>
                                                     <constraint firstAttribute="trailing" secondItem="ciO-1k-I1C" secondAttribute="trailing" constant="8" id="AqC-rl-FFF"/>
                                                     <constraint firstItem="ciO-1k-I1C" firstAttribute="leading" secondItem="tDy-89-07z" secondAttribute="leading" constant="8" id="IXx-yV-198"/>
                                                     <constraint firstAttribute="width" secondItem="tDy-89-07z" secondAttribute="height" multiplier="359:508" constant="214.12795275590551" id="cHi-fd-9KG"/>
-                                                    <constraint firstItem="zQe-id-Pe5" firstAttribute="top" secondItem="ciO-1k-I1C" secondAttribute="bottom" constant="16" id="pAM-lo-wSS"/>
-                                                    <constraint firstItem="zQe-id-Pe5" firstAttribute="centerX" secondItem="tDy-89-07z" secondAttribute="centerX" id="vzU-SJ-p2w"/>
+                                                    <constraint firstItem="zQe-id-Pe5" firstAttribute="top" secondItem="ciO-1k-I1C" secondAttribute="bottom" constant="32" id="pAM-lo-wSS"/>
                                                 </constraints>
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WELCOME TO THE 2017-18 KEY CHALLENGE: HUMAN IMPACT" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="o8R-0G-B4G">
-                                                <rect key="frame" x="8" y="454" width="359" height="60"/>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="25"/>
+                                                <rect key="frame" x="16" y="469" width="343" height="48"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
                                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="19" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="71y-YK-cPG">
-                                                <rect key="frame" x="8" y="530" width="359" height="297.5"/>
+                                                <rect key="frame" x="16" y="533" width="343" height="297.5"/>
                                                 <string key="text">The Citizen Scientist Project of the Key Biscayne Community Foundation and the Village of Key Biscayne sponsor the Key Challenge. Following the example of The Fairchild Challenge and its wider audience and area of concern, the Key Challenge is an island-wide initiative directed at increasing student’s appreciation and knowledge of the island’s natural resources.
 
 The Challenge incorporates 4 disciplines – art, writing, informatics, and science. These disciplines are further broken down into individual and/or group challenges open to various grade levels.</string>
@@ -83,46 +85,46 @@ The Challenge incorporates 4 disciplines – art, writing, informatics, and scie
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="key-challenge-barnacle" translatesAutoresizingMaskIntoConstraints="NO" id="cqg-A2-nXL">
-                                                <rect key="frame" x="0.0" y="843.5" width="375" height="284"/>
+                                                <rect key="frame" x="0.0" y="846.5" width="375" height="284"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="cqg-A2-nXL" secondAttribute="height" multiplier="375:284" id="bXk-1l-OAK"/>
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MINI CHALLENGE #2" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="Sp6-0o-JTz">
-                                                <rect key="frame" x="8" y="1892.5" width="359" height="30"/>
+                                                <rect key="frame" x="16" y="1915.5" width="343" height="30"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="25"/>
                                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="20" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="l8u-v5-pEU">
-                                                <rect key="frame" x="8" y="1938.5" width="359" height="139"/>
+                                                <rect key="frame" x="8" y="1961.5" width="359" height="139"/>
                                                 <string key="text">With advances in technology and more games and apps to keep our minds occupied, we are spending less time noticing the world around us. Combining technology and environmentalism is new technique that allows people to not just live in the world, but to see it and experience their environment as well.</string>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1vO-lP-APk">
-                                                <rect key="frame" x="139" y="2093.5" width="97" height="30"/>
+                                                <rect key="frame" x="16" y="2116.5" width="343" height="33"/>
                                                 <color key="backgroundColor" red="0.37254901959999998" green="0.67450980390000004" blue="0.87450980389999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
                                                 <state key="normal" title="LEARN MORE">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="THE 2017-18 PROGRAM" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="P0O-qs-NpU">
-                                                <rect key="frame" x="8" y="2139.5" width="359" height="30"/>
+                                                <rect key="frame" x="8" y="2181.5" width="359" height="30"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="25"/>
                                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Download the 2017-18 Key Challenge program. " lineBreakMode="tailTruncation" numberOfLines="20" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="sqP-4v-L19">
-                                                <rect key="frame" x="8" y="2185.5" width="359" height="40"/>
+                                                <rect key="frame" x="16" y="2227.5" width="343" height="40"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KZs-nc-Or0">
-                                                <rect key="frame" x="89" y="2241.5" width="196" height="167"/>
+                                                <rect key="frame" x="89" y="2283.5" width="196" height="167"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" relation="lessThanOrEqual" constant="167" id="Pp4-TB-5k3"/>
                                                     <constraint firstAttribute="width" secondItem="KZs-nc-Or0" secondAttribute="height" multiplier="196:167" id="k9F-iZ-b51"/>
@@ -130,18 +132,18 @@ The Challenge incorporates 4 disciplines – art, writing, informatics, and scie
                                                 <state key="normal" image="key-challenge-prezi"/>
                                             </button>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cfn-wm-HZQ">
-                                                <rect key="frame" x="8" y="2424.5" width="359" height="125"/>
+                                                <rect key="frame" x="0.0" y="2466.5" width="375" height="157"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="KEY CHALLENGE REGISTRATION CAN ONLY BE COMPLETED ONLINE" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="dwd-jZ-4mu">
-                                                        <rect key="frame" x="8" y="16" width="343" height="47"/>
+                                                        <rect key="frame" x="16" y="16" width="343" height="47"/>
                                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
                                                         <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kbt-2A-aMz">
-                                                        <rect key="frame" x="130.5" y="79" width="97" height="30"/>
+                                                        <rect key="frame" x="16" y="95" width="343" height="30"/>
                                                         <color key="backgroundColor" red="0.94901960780000005" green="0.21176470589999999" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
                                                         <state key="normal" title="LEARN MORE">
                                                             <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         </state>
@@ -149,35 +151,36 @@ The Challenge incorporates 4 disciplines – art, writing, informatics, and scie
                                                 </subviews>
                                                 <color key="backgroundColor" red="0.35686274509999999" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="bottom" secondItem="Kbt-2A-aMz" secondAttribute="bottom" constant="16" id="3av-8c-1Qz"/>
+                                                    <constraint firstAttribute="trailing" secondItem="Kbt-2A-aMz" secondAttribute="trailing" constant="16" id="2Dq-Eu-WKy"/>
+                                                    <constraint firstAttribute="bottom" secondItem="Kbt-2A-aMz" secondAttribute="bottom" constant="32" id="3av-8c-1Qz"/>
                                                     <constraint firstItem="dwd-jZ-4mu" firstAttribute="top" secondItem="Cfn-wm-HZQ" secondAttribute="top" constant="16" id="7sD-e7-UVC"/>
-                                                    <constraint firstItem="dwd-jZ-4mu" firstAttribute="leading" secondItem="Cfn-wm-HZQ" secondAttribute="leading" constant="8" id="9rJ-us-bQc"/>
-                                                    <constraint firstItem="Kbt-2A-aMz" firstAttribute="centerX" secondItem="Cfn-wm-HZQ" secondAttribute="centerX" id="cwM-kL-0ja"/>
-                                                    <constraint firstItem="Kbt-2A-aMz" firstAttribute="top" secondItem="dwd-jZ-4mu" secondAttribute="bottom" constant="16" id="tJ0-Cw-1us"/>
-                                                    <constraint firstAttribute="trailing" secondItem="dwd-jZ-4mu" secondAttribute="trailing" constant="8" id="zy2-yZ-ot6"/>
+                                                    <constraint firstItem="dwd-jZ-4mu" firstAttribute="leading" secondItem="Cfn-wm-HZQ" secondAttribute="leading" constant="16" id="9rJ-us-bQc"/>
+                                                    <constraint firstItem="Kbt-2A-aMz" firstAttribute="leading" secondItem="Cfn-wm-HZQ" secondAttribute="leading" constant="16" id="gIp-6C-xdH"/>
+                                                    <constraint firstItem="Kbt-2A-aMz" firstAttribute="top" secondItem="dwd-jZ-4mu" secondAttribute="bottom" constant="32" id="tJ0-Cw-1us"/>
+                                                    <constraint firstAttribute="trailing" secondItem="dwd-jZ-4mu" secondAttribute="trailing" constant="16" id="zy2-yZ-ot6"/>
                                                 </constraints>
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="REGISTERED &amp; READY TO PARTICIPATE? HERE ARE THE 2017-18 KEY CHALLENGE PROJECTS" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="SAV-Fg-GtT">
-                                                <rect key="frame" x="8" y="2565.5" width="359" height="119.5"/>
+                                                <rect key="frame" x="8" y="2639.5" width="359" height="119.5"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="25"/>
                                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="20" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="kGO-7O-QIz">
-                                                <rect key="frame" x="8" y="2701" width="359" height="158.5"/>
+                                                <rect key="frame" x="8" y="2775" width="359" height="158.5"/>
                                                 <string key="text">The Citizen Scientist Project’s goal is to secure a future Key Biscayne characterized by the same bounty of natural resources that exist today, thus maintaining the title of “Island Paradise,” while the Key Biscayne Citizen Scientist Lab provides a place to record and organize your findings in and around our island and to learn more about our island.</string>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="key-challenge-pollution" translatesAutoresizingMaskIntoConstraints="NO" id="zom-y9-UlB">
-                                                <rect key="frame" x="0.0" y="2875.5" width="375" height="284"/>
+                                                <rect key="frame" x="0.0" y="2949.5" width="375" height="284"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="zom-y9-UlB" secondAttribute="height" multiplier="375:284" id="VmO-V9-dDX"/>
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="19" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="If1-r5-wni">
-                                                <rect key="frame" x="8" y="3175.5" width="359" height="376.5"/>
+                                                <rect key="frame" x="8" y="3249.5" width="359" height="376.5"/>
                                                 <string key="text">This year’s Key Challenge theme will revolve around Human Impact. The Citizen Science Project is proud to be the recipient of a grant from the Environmental Protection Agency for the purpose of ensuring long term health of shoreline waters of Key Biscayne. As such, it is important to remember that humans have a major impact on all environments, and that aquatic and shoreline environments in particular have been critical to Key Biscayne’s development and history. We will therefore be focusing our challenges broadly on human impacts on these important environments.
 
 The Citizen Scientist Project’s Key Challenge is sponsored by the Key Biscayne Community Foundation, the Village of Key Biscayne, the Fairchild Tropical Botanic Garden, the University of Miami Rosenstiel School of Marine &amp; Atmospheric Science, and the Knight Foundation.</string>
@@ -186,22 +189,22 @@ The Citizen Scientist Project’s Key Challenge is sponsored by the Key Biscayne
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w5Q-Vi-kpl">
-                                                <rect key="frame" x="0.0" y="3560" width="375" height="350"/>
+                                                <rect key="frame" x="0.0" y="3634" width="375" height="350"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="w5Q-Vi-kpl" secondAttribute="height" multiplier="15:14" id="N8G-Ic-G6w"/>
                                                 </constraints>
                                             </containerView>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="foundation-key-logos" translatesAutoresizingMaskIntoConstraints="NO" id="jdV-DX-fsh">
-                                                <rect key="frame" x="0.0" y="3910" width="375" height="79"/>
+                                                <rect key="frame" x="0.0" y="3984" width="375" height="79"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="jdV-DX-fsh" secondAttribute="height" multiplier="375:79" id="0Pk-dN-ATY"/>
                                                 </constraints>
                                             </imageView>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WeL-Gi-SAB">
-                                                <rect key="frame" x="0.0" y="3990" width="375" height="76"/>
+                                                <rect key="frame" x="0.0" y="4064" width="375" height="2"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Qob-iF-8XJ">
-                                                        <rect key="frame" x="20" y="11" width="335" height="54.5"/>
+                                                        <rect key="frame" x="20" y="-26.5" width="335" height="54.5"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="center" text="KEY BISCAYNE COMMUNITY FOUNDATION" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SrZ-V3-kAF">
                                                                 <rect key="frame" x="0.0" y="0.0" width="335" height="19.5"/>
@@ -260,7 +263,7 @@ The Citizen Scientist Project’s Key Challenge is sponsored by the Key Biscayne
                                                 </constraints>
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="38" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="OpR-hB-yda">
-                                                <rect key="frame" x="8" y="1143" width="359" height="733"/>
+                                                <rect key="frame" x="16" y="1146" width="343" height="753"/>
                                                 <string key="text">The Challenge starts on September 27, 2017. Registration must be completed by November 10, 2017. And, the Key Challenge concludes on March 31, 2018. Awards will be announced on April 19, 2018. Each individual/ group challenge will be judged by grade groupings. Grades are separated by the following breakdown: Pre-K, Kindergarten and First grade (K), Second and Third grades (3), Fourth and Fifth grades (5), Sixth through Eighth grades (M), Ninth and Tenth grades (H1), Eleventh and Twelfth grades (H2).
 
 There is also an At-Home category to each of these age groups. Students who are Key Biscayne residents may provide an entry even if their teacher and/or school is not participating in the Key Challenge. Only those projects listed in this brochure which are marked with an asterisk (*) can be entered in the At-Home category.
@@ -276,35 +279,37 @@ As such, it is important to remember that humans have a major impact on all envi
                                         <color key="backgroundColor" red="0.0039215686269999999" green="0.17254901959999999" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstItem="w5Q-Vi-kpl" firstAttribute="leading" secondItem="N8c-f5-E03" secondAttribute="leading" id="17A-Ug-0dh"/>
-                                            <constraint firstAttribute="trailing" secondItem="Sp6-0o-JTz" secondAttribute="trailing" constant="8" id="18W-T4-5C2"/>
+                                            <constraint firstAttribute="trailing" secondItem="Sp6-0o-JTz" secondAttribute="trailing" constant="16" id="18W-T4-5C2"/>
                                             <constraint firstItem="71y-YK-cPG" firstAttribute="top" secondItem="o8R-0G-B4G" secondAttribute="bottom" constant="16" id="1je-hq-Wnq"/>
-                                            <constraint firstAttribute="trailing" secondItem="sqP-4v-L19" secondAttribute="trailing" constant="8" id="4Ug-nT-uB7"/>
+                                            <constraint firstAttribute="trailing" secondItem="sqP-4v-L19" secondAttribute="trailing" constant="16" id="4Ug-nT-uB7"/>
                                             <constraint firstItem="zom-y9-UlB" firstAttribute="leading" secondItem="N8c-f5-E03" secondAttribute="leading" id="54t-66-UBE"/>
                                             <constraint firstItem="sqP-4v-L19" firstAttribute="top" secondItem="P0O-qs-NpU" secondAttribute="bottom" constant="16" id="5v1-Bj-1Qn"/>
                                             <constraint firstAttribute="trailing" secondItem="l8u-v5-pEU" secondAttribute="trailing" constant="8" id="692-4r-CPt"/>
                                             <constraint firstItem="WeL-Gi-SAB" firstAttribute="leading" secondItem="N8c-f5-E03" secondAttribute="leading" id="7dP-I0-i17"/>
-                                            <constraint firstItem="tDy-89-07z" firstAttribute="top" secondItem="Uyx-l5-cBv" secondAttribute="bottom" constant="16" id="8qu-X0-6dX"/>
+                                            <constraint firstItem="tDy-89-07z" firstAttribute="top" secondItem="Uyx-l5-cBv" secondAttribute="bottom" id="8qu-X0-6dX"/>
                                             <constraint firstItem="P0O-qs-NpU" firstAttribute="leading" secondItem="N8c-f5-E03" secondAttribute="leading" constant="8" id="9PT-pA-02I"/>
+                                            <constraint firstAttribute="trailing" secondItem="1vO-lP-APk" secondAttribute="trailing" constant="16" id="A5E-ab-3ds"/>
                                             <constraint firstAttribute="trailing" secondItem="cqg-A2-nXL" secondAttribute="trailing" id="BZY-GJ-Spv"/>
-                                            <constraint firstItem="71y-YK-cPG" firstAttribute="leading" secondItem="N8c-f5-E03" secondAttribute="leading" constant="8" id="Ctm-gm-Ozf"/>
-                                            <constraint firstAttribute="trailing" secondItem="Cfn-wm-HZQ" secondAttribute="trailing" constant="8" id="DD1-F2-k9b"/>
+                                            <constraint firstItem="71y-YK-cPG" firstAttribute="leading" secondItem="N8c-f5-E03" secondAttribute="leading" constant="16" id="Ctm-gm-Ozf"/>
+                                            <constraint firstAttribute="trailing" secondItem="Cfn-wm-HZQ" secondAttribute="trailing" id="DD1-F2-k9b"/>
                                             <constraint firstItem="KZs-nc-Or0" firstAttribute="centerX" secondItem="N8c-f5-E03" secondAttribute="centerX" id="Egx-A9-uDb"/>
                                             <constraint firstItem="Cfn-wm-HZQ" firstAttribute="top" secondItem="KZs-nc-Or0" secondAttribute="bottom" constant="16" id="Ih6-ZR-7rU"/>
                                             <constraint firstAttribute="height" constant="4236" id="JyM-57-ueE"/>
                                             <constraint firstAttribute="bottom" secondItem="WeL-Gi-SAB" secondAttribute="bottom" constant="170" id="KKv-UR-Nnt"/>
                                             <constraint firstItem="Sp6-0o-JTz" firstAttribute="top" secondItem="OpR-hB-yda" secondAttribute="bottom" constant="16" id="Kle-LH-7bA"/>
-                                            <constraint firstItem="OpR-hB-yda" firstAttribute="leading" secondItem="N8c-f5-E03" secondAttribute="leading" constant="8" id="Ldz-AW-HZd"/>
+                                            <constraint firstItem="OpR-hB-yda" firstAttribute="leading" secondItem="N8c-f5-E03" secondAttribute="leading" constant="16" id="Ldz-AW-HZd"/>
                                             <constraint firstAttribute="trailing" secondItem="jdV-DX-fsh" secondAttribute="trailing" id="ODb-Ne-LHS"/>
                                             <constraint firstItem="If1-r5-wni" firstAttribute="top" secondItem="zom-y9-UlB" secondAttribute="bottom" constant="16" id="OXl-hT-T5s"/>
                                             <constraint firstItem="1vO-lP-APk" firstAttribute="top" secondItem="l8u-v5-pEU" secondAttribute="bottom" constant="16" id="Oad-EH-sAP"/>
-                                            <constraint firstItem="o8R-0G-B4G" firstAttribute="leading" secondItem="N8c-f5-E03" secondAttribute="leading" constant="8" id="PDp-40-i6c"/>
+                                            <constraint firstItem="o8R-0G-B4G" firstAttribute="leading" secondItem="N8c-f5-E03" secondAttribute="leading" constant="16" id="PDp-40-i6c"/>
                                             <constraint firstItem="Uyx-l5-cBv" firstAttribute="leading" secondItem="N8c-f5-E03" secondAttribute="leading" id="QNd-n3-A01"/>
-                                            <constraint firstAttribute="trailing" secondItem="OpR-hB-yda" secondAttribute="trailing" constant="8" id="QX4-7R-WL5"/>
-                                            <constraint firstAttribute="trailing" secondItem="71y-YK-cPG" secondAttribute="trailing" constant="8" id="SJR-qR-Qlu"/>
+                                            <constraint firstAttribute="trailing" secondItem="OpR-hB-yda" secondAttribute="trailing" constant="16" id="QX4-7R-WL5"/>
+                                            <constraint firstAttribute="trailing" secondItem="71y-YK-cPG" secondAttribute="trailing" constant="16" id="SJR-qR-Qlu"/>
                                             <constraint firstItem="jdV-DX-fsh" firstAttribute="top" secondItem="w5Q-Vi-kpl" secondAttribute="bottom" id="UXY-Uy-MK9"/>
-                                            <constraint firstAttribute="trailing" secondItem="o8R-0G-B4G" secondAttribute="trailing" constant="8" id="UeB-dL-V5j"/>
+                                            <constraint firstAttribute="trailing" secondItem="o8R-0G-B4G" secondAttribute="trailing" constant="16" id="UeB-dL-V5j"/>
+                                            <constraint firstItem="1vO-lP-APk" firstAttribute="leading" secondItem="N8c-f5-E03" secondAttribute="leading" constant="16" id="VOV-H3-jFM"/>
                                             <constraint firstItem="If1-r5-wni" firstAttribute="leading" secondItem="N8c-f5-E03" secondAttribute="leading" constant="8" id="VR2-cg-tP7"/>
-                                            <constraint firstItem="Cfn-wm-HZQ" firstAttribute="leading" secondItem="N8c-f5-E03" secondAttribute="leading" constant="8" id="W02-Ux-Xl9"/>
+                                            <constraint firstItem="Cfn-wm-HZQ" firstAttribute="leading" secondItem="N8c-f5-E03" secondAttribute="leading" id="W02-Ux-Xl9"/>
                                             <constraint firstItem="l8u-v5-pEU" firstAttribute="leading" secondItem="N8c-f5-E03" secondAttribute="leading" constant="8" id="WEZ-Uf-Ksg"/>
                                             <constraint firstItem="SAV-Fg-GtT" firstAttribute="top" secondItem="Cfn-wm-HZQ" secondAttribute="bottom" constant="16" id="YFp-7Q-GDE"/>
                                             <constraint firstAttribute="trailing" secondItem="kGO-7O-QIz" secondAttribute="trailing" constant="8" id="Zw1-tV-UcY"/>
@@ -312,26 +317,25 @@ As such, it is important to remember that humans have a major impact on all envi
                                             <constraint firstItem="OpR-hB-yda" firstAttribute="top" secondItem="cqg-A2-nXL" secondAttribute="bottom" constant="16" id="bPY-Fk-eEh"/>
                                             <constraint firstAttribute="trailing" secondItem="Uyx-l5-cBv" secondAttribute="trailing" id="cBv-nh-QPS"/>
                                             <constraint firstAttribute="trailing" secondItem="w5Q-Vi-kpl" secondAttribute="trailing" id="cHT-Dk-psB"/>
-                                            <constraint firstItem="1vO-lP-APk" firstAttribute="centerX" secondItem="N8c-f5-E03" secondAttribute="centerX" id="fId-Rn-Ahq"/>
                                             <constraint firstAttribute="trailing" secondItem="P0O-qs-NpU" secondAttribute="trailing" constant="8" id="fO3-Jc-ved"/>
                                             <constraint firstItem="SAV-Fg-GtT" firstAttribute="leading" secondItem="N8c-f5-E03" secondAttribute="leading" constant="8" id="hH2-h0-0xh"/>
-                                            <constraint firstItem="tDy-89-07z" firstAttribute="leading" secondItem="N8c-f5-E03" secondAttribute="leading" constant="8" id="kCu-WU-jR5"/>
+                                            <constraint firstItem="tDy-89-07z" firstAttribute="leading" secondItem="N8c-f5-E03" secondAttribute="leading" id="kCu-WU-jR5"/>
                                             <constraint firstItem="Uyx-l5-cBv" firstAttribute="top" secondItem="N8c-f5-E03" secondAttribute="top" id="kIv-JY-Zty"/>
                                             <constraint firstItem="WeL-Gi-SAB" firstAttribute="top" secondItem="jdV-DX-fsh" secondAttribute="bottom" constant="1" id="kY1-nC-37D"/>
-                                            <constraint firstAttribute="trailing" secondItem="tDy-89-07z" secondAttribute="trailing" constant="8" id="lK0-5B-QM4"/>
-                                            <constraint firstItem="sqP-4v-L19" firstAttribute="leading" secondItem="N8c-f5-E03" secondAttribute="leading" constant="8" id="loA-31-fMJ"/>
+                                            <constraint firstAttribute="trailing" secondItem="tDy-89-07z" secondAttribute="trailing" id="lK0-5B-QM4"/>
+                                            <constraint firstItem="sqP-4v-L19" firstAttribute="leading" secondItem="N8c-f5-E03" secondAttribute="leading" constant="16" id="loA-31-fMJ"/>
                                             <constraint firstAttribute="trailing" secondItem="If1-r5-wni" secondAttribute="trailing" constant="8" id="msL-io-3r3"/>
                                             <constraint firstAttribute="trailing" secondItem="WeL-Gi-SAB" secondAttribute="trailing" id="oPB-aU-HHf"/>
                                             <constraint firstAttribute="trailing" secondItem="SAV-Fg-GtT" secondAttribute="trailing" constant="8" id="ok1-ib-hhO"/>
                                             <constraint firstItem="jdV-DX-fsh" firstAttribute="leading" secondItem="N8c-f5-E03" secondAttribute="leading" id="pvO-x4-HWz"/>
                                             <constraint firstItem="zom-y9-UlB" firstAttribute="top" secondItem="kGO-7O-QIz" secondAttribute="bottom" constant="16" id="pze-LL-FNA"/>
-                                            <constraint firstItem="Sp6-0o-JTz" firstAttribute="leading" secondItem="N8c-f5-E03" secondAttribute="leading" constant="8" id="qas-y0-VF8"/>
+                                            <constraint firstItem="Sp6-0o-JTz" firstAttribute="leading" secondItem="N8c-f5-E03" secondAttribute="leading" constant="16" id="qas-y0-VF8"/>
                                             <constraint firstItem="kGO-7O-QIz" firstAttribute="top" secondItem="SAV-Fg-GtT" secondAttribute="bottom" constant="16" id="uVT-hU-9yL"/>
                                             <constraint firstItem="cqg-A2-nXL" firstAttribute="leading" secondItem="N8c-f5-E03" secondAttribute="leading" id="v4I-3m-LOA"/>
                                             <constraint firstItem="cqg-A2-nXL" firstAttribute="top" secondItem="71y-YK-cPG" secondAttribute="bottom" constant="16" id="vEu-qA-VdW"/>
                                             <constraint firstItem="kGO-7O-QIz" firstAttribute="leading" secondItem="N8c-f5-E03" secondAttribute="leading" constant="8" id="vcL-r8-FaG"/>
-                                            <constraint firstItem="o8R-0G-B4G" firstAttribute="top" secondItem="tDy-89-07z" secondAttribute="bottom" constant="8" id="wSC-P5-ekn"/>
-                                            <constraint firstItem="P0O-qs-NpU" firstAttribute="top" secondItem="1vO-lP-APk" secondAttribute="bottom" constant="16" id="xbq-SG-4In"/>
+                                            <constraint firstItem="o8R-0G-B4G" firstAttribute="top" secondItem="tDy-89-07z" secondAttribute="bottom" constant="16" id="wSC-P5-ekn"/>
+                                            <constraint firstItem="P0O-qs-NpU" firstAttribute="top" secondItem="1vO-lP-APk" secondAttribute="bottom" constant="32" id="xbq-SG-4In"/>
                                             <constraint firstItem="KZs-nc-Or0" firstAttribute="top" secondItem="sqP-4v-L19" secondAttribute="bottom" constant="16" id="yJT-M1-yB3"/>
                                             <constraint firstAttribute="trailing" secondItem="zom-y9-UlB" secondAttribute="trailing" id="yqf-PZ-luF"/>
                                             <constraint firstItem="w5Q-Vi-kpl" firstAttribute="top" secondItem="If1-r5-wni" secondAttribute="bottom" constant="8" id="zTG-8j-Ise"/>
