@@ -22,6 +22,7 @@
         <!--Navigation Table View Controller-->
         <scene sceneID="lZF-B5-je6">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LV7-D6-Q74" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tableViewController id="OYm-TY-SzU" customClass="NavigationTableViewController" customModule="Citizen_Scientist_Project" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="70" estimatedRowHeight="-1" sectionHeaderHeight="70" sectionFooterHeight="28" id="zjp-Mz-DBi">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -110,9 +111,8 @@
                         <segue destination="Bl3-Ls-afj" kind="show" identifier="segueToNews" id="J2F-7y-fFp"/>
                     </connections>
                 </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="LV7-D6-Q74" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7512.8000000000002" y="-3160.5697151424292"/>
+            <point key="canvasLocation" x="7844" y="-3802"/>
         </scene>
         <!--Profile View Controller-->
         <scene sceneID="1as-4o-o2w">
@@ -2088,7 +2088,7 @@ We also hope to set up three Atlantic sites for less intense testing which will 
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fEf-HY-mWt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5441" y="-3896"/>
+            <point key="canvasLocation" x="5441" y="-4018"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="bh0-rM-yhT">
@@ -4223,6 +4223,6 @@ The area around Key Biscayne and Virginia Key is part of the designated critical
         <segue reference="3gI-fe-vtX"/>
         <segue reference="hno-WS-Bw2"/>
         <segue reference="bpx-hV-XQv"/>
-        <segue reference="sKg-fI-YSX"/>
+        <segue reference="7TH-r5-Fee"/>
     </inferredMetricsTieBreakers>
 </document>

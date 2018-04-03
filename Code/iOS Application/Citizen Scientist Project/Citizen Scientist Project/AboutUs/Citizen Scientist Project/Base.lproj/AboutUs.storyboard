@@ -1,0 +1,502 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="RdL-i5-SQ7">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue</string>
+            <string>HelveticaNeue-Bold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--About Us View Controller-->
+        <scene sceneID="h8v-wj-hPY">
+            <objects>
+                <viewController id="qf5-Qb-95I" customClass="AboutUsViewController" customModule="Citizen_Scientist_Project" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Vvm-Km-ziR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="3000"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="70C-Wt-6Tp">
+                                <rect key="frame" x="0.0" y="64" width="375" height="2936"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qv3-jU-0UD">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="2936"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="about-header" translatesAutoresizingMaskIntoConstraints="NO" id="Jzy-cN-jdJ">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="225"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="Jzy-cN-jdJ" secondAttribute="height" multiplier="5:3" id="QKk-R7-I3Y"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WELCOME TO THE CITIZEN SCIENTIST PROJECT" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="Dg7-JN-E77">
+                                                <rect key="frame" x="8" y="241" width="359" height="60"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="25"/>
+                                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="19" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="7SY-qJ-RIn">
+                                                <rect key="frame" x="8" y="317" width="359" height="198.5"/>
+                                                <string key="text">Our mission is to have citizen and professional scientists monitor and protect resources and to share information on the most critical natural resources of Key Biscayne and Virginia Key.
+
+Established by the Key Biscayne Community Foundation, the Citizen Scientist Project seeks to have Key residents work with professional scientists to achieve four goals:
+</string>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="19" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U3e-rT-rAj">
+                                                <rect key="frame" x="8" y="515.5" width="359" height="240"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment>
+                                                        <string key="content">	1.	</string>
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <font key="NSFont" size="17" name="HelveticaNeue"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" headIndent="36" minimumLineHeight="20" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                                <tabStops>
+                                                                    <textTab alignment="left" location="11">
+                                                                        <options/>
+                                                                    </textTab>
+                                                                    <textTab alignment="natural" location="36">
+                                                                        <options/>
+                                                                    </textTab>
+                                                                </tabStops>
+                                                            </paragraphStyle>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment>
+                                                        <string key="content">Learn about the natural resources of Key Biscayne and Virginia Key; 
+</string>
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <font key="NSFont" size="17" name="HelveticaNeue"/>
+                                                            <real key="NSKern" value="0.0"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" headIndent="36" minimumLineHeight="20" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                                <tabStops>
+                                                                    <textTab alignment="left" location="11">
+                                                                        <options/>
+                                                                    </textTab>
+                                                                    <textTab alignment="natural" location="36">
+                                                                        <options/>
+                                                                    </textTab>
+                                                                </tabStops>
+                                                            </paragraphStyle>
+                                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <real key="NSStrokeWidth" value="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment>
+                                                        <string key="content">	2.	</string>
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <font key="NSFont" size="17" name="HelveticaNeue"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" headIndent="36" minimumLineHeight="20" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                                <tabStops>
+                                                                    <textTab alignment="left" location="11">
+                                                                        <options/>
+                                                                    </textTab>
+                                                                    <textTab alignment="natural" location="36">
+                                                                        <options/>
+                                                                    </textTab>
+                                                                </tabStops>
+                                                            </paragraphStyle>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment>
+                                                        <string key="content">Experience the natural resources of the Key through participation in field trips; 
+</string>
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <font key="NSFont" size="17" name="HelveticaNeue"/>
+                                                            <real key="NSKern" value="0.0"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" headIndent="36" minimumLineHeight="20" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                                <tabStops>
+                                                                    <textTab alignment="left" location="11">
+                                                                        <options/>
+                                                                    </textTab>
+                                                                    <textTab alignment="natural" location="36">
+                                                                        <options/>
+                                                                    </textTab>
+                                                                </tabStops>
+                                                            </paragraphStyle>
+                                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <real key="NSStrokeWidth" value="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment>
+                                                        <string key="content">	3.	</string>
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <font key="NSFont" size="17" name="HelveticaNeue"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" headIndent="36" minimumLineHeight="20" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                                <tabStops>
+                                                                    <textTab alignment="left" location="11">
+                                                                        <options/>
+                                                                    </textTab>
+                                                                    <textTab alignment="natural" location="36">
+                                                                        <options/>
+                                                                    </textTab>
+                                                                </tabStops>
+                                                            </paragraphStyle>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment>
+                                                        <string key="content">Participate in citizen scientist projects, which are directed at protecting the natural resources of the Island; and 
+</string>
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <font key="NSFont" size="17" name="HelveticaNeue"/>
+                                                            <real key="NSKern" value="0.0"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" headIndent="36" minimumLineHeight="20" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                                <tabStops>
+                                                                    <textTab alignment="left" location="11">
+                                                                        <options/>
+                                                                    </textTab>
+                                                                    <textTab alignment="natural" location="36">
+                                                                        <options/>
+                                                                    </textTab>
+                                                                </tabStops>
+                                                            </paragraphStyle>
+                                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <real key="NSStrokeWidth" value="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment>
+                                                        <string key="content">	4.	</string>
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <font key="NSFont" size="17" name="HelveticaNeue"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" headIndent="36" minimumLineHeight="20" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                                <tabStops>
+                                                                    <textTab alignment="left" location="11">
+                                                                        <options/>
+                                                                    </textTab>
+                                                                    <textTab alignment="natural" location="36">
+                                                                        <options/>
+                                                                    </textTab>
+                                                                </tabStops>
+                                                            </paragraphStyle>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="Suggest projects for the Citizen Scientist Project.">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <font key="NSFont" size="17" name="HelveticaNeue"/>
+                                                            <real key="NSKern" value="0.0"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" headIndent="36" minimumLineHeight="20" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                                <tabStops>
+                                                                    <textTab alignment="left" location="11">
+                                                                        <options/>
+                                                                    </textTab>
+                                                                    <textTab alignment="natural" location="36">
+                                                                        <options/>
+                                                                    </textTab>
+                                                                </tabStops>
+                                                            </paragraphStyle>
+                                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <real key="NSStrokeWidth" value="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hn1-Xj-HB8">
+                                                <rect key="frame" x="0.0" y="772" width="375" height="893"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EXPLORE THE CITIZEN SCIENTIST PROJECT LAB" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GjH-cs-aHU">
+                                                        <rect key="frame" x="8" y="16" width="359" height="60"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="25"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="19" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="oFt-Kc-0zh">
+                                                        <rect key="frame" x="8" y="92" width="359" height="99.5"/>
+                                                        <string key="text">An overview of the Citizen Scientist Project Lab is shown below, however the lab is only offered online. Click here to go to the full site. (link this entire section to https://www.keyscience.org) </string>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="sKE-v2-gv2">
+                                                        <rect key="frame" x="8" y="208" width="359" height="278"/>
+                                                        <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="sfv-aB-d15">
+                                                            <size key="itemSize" width="50" height="50"/>
+                                                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                        </collectionViewFlowLayout>
+                                                        <cells>
+                                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="b5P-wD-tiR">
+                                                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                                    <autoresizingMask key="autoresizingMask"/>
+                                                                </view>
+                                                            </collectionViewCell>
+                                                        </cells>
+                                                    </collectionView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GET INVOLVED WITH THE CITIZEN SCIENTIST PROJECT’S PROGRAMS" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gii-ve-Vht">
+                                                        <rect key="frame" x="8" y="502" width="359" height="89.5"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="25"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="qIl-h2-mgV">
+                                                        <rect key="frame" x="8" y="607.5" width="359" height="269.5"/>
+                                                        <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="LVF-gK-6b0">
+                                                            <size key="itemSize" width="50" height="50"/>
+                                                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                        </collectionViewFlowLayout>
+                                                        <cells>
+                                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="wOS-DH-Jea">
+                                                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                                    <autoresizingMask key="autoresizingMask"/>
+                                                                </view>
+                                                            </collectionViewCell>
+                                                        </cells>
+                                                    </collectionView>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="qIl-h2-mgV" secondAttribute="bottom" constant="16" id="03s-pR-yvY"/>
+                                                    <constraint firstAttribute="trailing" secondItem="qIl-h2-mgV" secondAttribute="trailing" constant="8" id="0Yd-Lu-Tky"/>
+                                                    <constraint firstAttribute="trailing" secondItem="GjH-cs-aHU" secondAttribute="trailing" constant="8" id="1QZ-Uz-Wcc"/>
+                                                    <constraint firstItem="GjH-cs-aHU" firstAttribute="top" secondItem="hn1-Xj-HB8" secondAttribute="top" constant="16" id="3Pb-nT-tYS"/>
+                                                    <constraint firstItem="sKE-v2-gv2" firstAttribute="top" secondItem="oFt-Kc-0zh" secondAttribute="bottom" constant="16" id="A70-mu-qMf"/>
+                                                    <constraint firstItem="sKE-v2-gv2" firstAttribute="leading" secondItem="hn1-Xj-HB8" secondAttribute="leading" constant="8" id="AGT-Wd-xoJ"/>
+                                                    <constraint firstItem="oFt-Kc-0zh" firstAttribute="leading" secondItem="hn1-Xj-HB8" secondAttribute="leading" constant="8" id="Db3-RD-w1O"/>
+                                                    <constraint firstItem="qIl-h2-mgV" firstAttribute="top" secondItem="gii-ve-Vht" secondAttribute="bottom" constant="16" id="FEA-NI-8OJ"/>
+                                                    <constraint firstAttribute="trailing" secondItem="gii-ve-Vht" secondAttribute="trailing" constant="8" id="FVb-5X-dyC"/>
+                                                    <constraint firstAttribute="bottom" secondItem="sKE-v2-gv2" secondAttribute="bottom" constant="407" id="K4L-X6-pg1"/>
+                                                    <constraint firstAttribute="trailing" secondItem="oFt-Kc-0zh" secondAttribute="trailing" constant="8" id="TDu-4s-aOE"/>
+                                                    <constraint firstItem="gii-ve-Vht" firstAttribute="top" secondItem="sKE-v2-gv2" secondAttribute="bottom" constant="16" id="XfF-2D-bN2"/>
+                                                    <constraint firstAttribute="width" secondItem="hn1-Xj-HB8" secondAttribute="height" multiplier="75:76" constant="-506.25" id="glM-oL-ywf"/>
+                                                    <constraint firstItem="gii-ve-Vht" firstAttribute="leading" secondItem="hn1-Xj-HB8" secondAttribute="leading" constant="8" id="mKd-7h-coU"/>
+                                                    <constraint firstItem="GjH-cs-aHU" firstAttribute="leading" secondItem="hn1-Xj-HB8" secondAttribute="leading" constant="8" id="mkv-0f-yeB"/>
+                                                    <constraint firstItem="qIl-h2-mgV" firstAttribute="leading" secondItem="hn1-Xj-HB8" secondAttribute="leading" constant="8" id="pK3-kL-KOb"/>
+                                                    <constraint firstAttribute="trailing" secondItem="sKE-v2-gv2" secondAttribute="trailing" constant="8" id="pTc-iA-slp"/>
+                                                    <constraint firstItem="oFt-Kc-0zh" firstAttribute="top" secondItem="GjH-cs-aHU" secondAttribute="bottom" constant="16" id="yEX-7P-REE"/>
+                                                </constraints>
+                                            </view>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CITIZEN SCIENTIST PROJECT" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="G73-ih-9lk">
+                                                <rect key="frame" x="8" y="1681" width="359" height="60"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="25"/>
+                                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="19" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="yNX-Z5-3PH">
+                                                <rect key="frame" x="8" y="1757" width="359" height="356.5"/>
+                                                <string key="text">The mission of the Citizen Scientist Project is to use citizen and professional scientists to monitor and to protect resources, and to share information on the most critical natural resources of Key Biscayne and Virginia Key. Our vision is a future Key Biscayne characterized by the same bounty and quality of natural resources that exist today, thus maintaining the title of Island Paradise.
+
+The Citizen Scientist Project falls under the charitable umbrella of the Key Biscayne Community Foundation whose mission is to enable, facilitate, and empower residents to make a positive difference in the local, greater, and global community through programs, grant making, fiscal scholarship, and community leadership.</string>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="THANK YOU TO THE CITIZEN SCIENTIST PROJECT’S PARTNERS" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="Bxb-3p-prO">
+                                                <rect key="frame" x="8" y="2129.5" width="359" height="60"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="25"/>
+                                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="foundation-key-logos" translatesAutoresizingMaskIntoConstraints="NO" id="SBW-pj-lAt">
+                                                <rect key="frame" x="0.0" y="2205.5" width="375" height="79"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="SBW-pj-lAt" secondAttribute="height" multiplier="375:79" id="UFe-qW-rT5"/>
+                                                </constraints>
+                                            </imageView>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F1g-70-vDh">
+                                                <rect key="frame" x="0.0" y="2287" width="375" height="76"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="n7h-lY-3Hj">
+                                                        <rect key="frame" x="20" y="11" width="335" height="54.5"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" text="KEY BISCAYNE COMMUNITY FOUNDATION" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8mE-rS-QhQ">
+                                                                <rect key="frame" x="0.0" y="0.0" width="335" height="19.5"/>
+                                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
+                                                                <color key="textColor" red="0.37254901959999998" green="0.67450980390000004" blue="0.87450980389999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <stackView opaque="NO" contentMode="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="G6m-3R-6jo">
+                                                                <rect key="frame" x="57.5" y="34.5" width="220" height="20"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dvi-8t-nRF">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="width" constant="20" id="6xr-oc-OXv"/>
+                                                                        </constraints>
+                                                                        <state key="normal" image="facebook-footer-icon"/>
+                                                                    </button>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BM9-0a-3SA">
+                                                                        <rect key="frame" x="50" y="0.0" width="20" height="20"/>
+                                                                        <state key="normal" image="twitter-footer-icon"/>
+                                                                    </button>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dQY-6Z-IBF">
+                                                                        <rect key="frame" x="100" y="0.0" width="20" height="20"/>
+                                                                        <state key="normal" image="google-footer-icon"/>
+                                                                    </button>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0c1-WB-m7w">
+                                                                        <rect key="frame" x="150" y="0.0" width="20" height="20"/>
+                                                                        <state key="normal" image="youtube-footer-icon"/>
+                                                                    </button>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dar-uI-v9f">
+                                                                        <rect key="frame" x="200" y="0.0" width="20" height="20"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                                        <state key="normal" image="instagram-footer-icon"/>
+                                                                    </button>
+                                                                </subviews>
+                                                                <constraints>
+                                                                    <constraint firstItem="0c1-WB-m7w" firstAttribute="width" secondItem="Dvi-8t-nRF" secondAttribute="width" id="Gyy-bm-1WO"/>
+                                                                    <constraint firstItem="Dar-uI-v9f" firstAttribute="width" secondItem="Dvi-8t-nRF" secondAttribute="width" id="TWF-f0-IdO"/>
+                                                                    <constraint firstAttribute="height" constant="20" id="gWw-81-Glm"/>
+                                                                    <constraint firstItem="BM9-0a-3SA" firstAttribute="width" secondItem="Dvi-8t-nRF" secondAttribute="width" id="kf5-fn-gta"/>
+                                                                    <constraint firstItem="dQY-6Z-IBF" firstAttribute="width" secondItem="Dvi-8t-nRF" secondAttribute="width" id="xiv-Pm-RDy"/>
+                                                                </constraints>
+                                                            </stackView>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstItem="8mE-rS-QhQ" firstAttribute="leading" secondItem="n7h-lY-3Hj" secondAttribute="leading" id="Ih4-5b-HXP"/>
+                                                            <constraint firstAttribute="trailing" secondItem="8mE-rS-QhQ" secondAttribute="trailing" id="TfG-rf-YGM"/>
+                                                        </constraints>
+                                                    </stackView>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="n7h-lY-3Hj" firstAttribute="centerY" secondItem="F1g-70-vDh" secondAttribute="centerY" id="btS-NN-DqK"/>
+                                                    <constraint firstItem="n7h-lY-3Hj" firstAttribute="centerX" secondItem="F1g-70-vDh" secondAttribute="centerX" id="j8m-Fy-GKN"/>
+                                                    <constraint firstItem="n7h-lY-3Hj" firstAttribute="leading" secondItem="F1g-70-vDh" secondAttribute="leading" constant="20" id="jCb-wD-fwQ"/>
+                                                    <constraint firstAttribute="trailing" secondItem="n7h-lY-3Hj" secondAttribute="trailing" constant="20" id="r7L-A8-k8d"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.0039215686269999999" green="0.17254901959999999" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="Jzy-cN-jdJ" secondAttribute="trailing" id="04k-9f-u2p"/>
+                                            <constraint firstAttribute="trailing" secondItem="Dg7-JN-E77" secondAttribute="trailing" constant="8" id="2qP-Qe-Le5"/>
+                                            <constraint firstAttribute="trailing" secondItem="U3e-rT-rAj" secondAttribute="trailing" constant="8" id="39F-Yq-l5O"/>
+                                            <constraint firstItem="F1g-70-vDh" firstAttribute="leading" secondItem="qv3-jU-0UD" secondAttribute="leading" id="87N-QW-7Ts"/>
+                                            <constraint firstAttribute="trailing" secondItem="Bxb-3p-prO" secondAttribute="trailing" constant="8" id="8lF-nY-yqX"/>
+                                            <constraint firstItem="7SY-qJ-RIn" firstAttribute="leading" secondItem="qv3-jU-0UD" secondAttribute="leading" constant="8" id="BaG-yx-OHN"/>
+                                            <constraint firstItem="U3e-rT-rAj" firstAttribute="leading" secondItem="qv3-jU-0UD" secondAttribute="leading" constant="8" id="C9G-bc-Qq9"/>
+                                            <constraint firstAttribute="trailing" secondItem="F1g-70-vDh" secondAttribute="trailing" id="CP5-lM-eOq"/>
+                                            <constraint firstItem="Dg7-JN-E77" firstAttribute="top" secondItem="Jzy-cN-jdJ" secondAttribute="bottom" constant="16" id="EqF-9I-hfJ"/>
+                                            <constraint firstItem="yNX-Z5-3PH" firstAttribute="leading" secondItem="qv3-jU-0UD" secondAttribute="leading" constant="8" id="IQd-xb-zdm"/>
+                                            <constraint firstItem="SBW-pj-lAt" firstAttribute="top" secondItem="Bxb-3p-prO" secondAttribute="bottom" constant="16" id="JdH-6V-HOF"/>
+                                            <constraint firstItem="F1g-70-vDh" firstAttribute="top" secondItem="SBW-pj-lAt" secondAttribute="bottom" constant="2.5" id="JmB-MI-usq"/>
+                                            <constraint firstItem="Bxb-3p-prO" firstAttribute="top" secondItem="yNX-Z5-3PH" secondAttribute="bottom" constant="16" id="JwD-Jl-gLf"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="1436" id="Ljw-Pc-vYR"/>
+                                            <constraint firstAttribute="height" constant="2936" id="OQy-zZ-VcV"/>
+                                            <constraint firstItem="SBW-pj-lAt" firstAttribute="leading" secondItem="qv3-jU-0UD" secondAttribute="leading" id="Oam-tF-YV6"/>
+                                            <constraint firstItem="Jzy-cN-jdJ" firstAttribute="leading" secondItem="qv3-jU-0UD" secondAttribute="leading" id="RrO-Pr-VGr"/>
+                                            <constraint firstItem="yNX-Z5-3PH" firstAttribute="top" secondItem="G73-ih-9lk" secondAttribute="bottom" constant="16" id="SXB-f8-Sy8"/>
+                                            <constraint firstItem="U3e-rT-rAj" firstAttribute="top" secondItem="7SY-qJ-RIn" secondAttribute="bottom" id="UeK-fx-f1h"/>
+                                            <constraint firstItem="G73-ih-9lk" firstAttribute="leading" secondItem="qv3-jU-0UD" secondAttribute="leading" constant="8" id="X4c-gH-uh7"/>
+                                            <constraint firstAttribute="trailing" secondItem="hn1-Xj-HB8" secondAttribute="trailing" id="XXW-GQ-F5I"/>
+                                            <constraint firstAttribute="bottom" secondItem="F1g-70-vDh" secondAttribute="bottom" constant="573" id="dbR-jP-ypO"/>
+                                            <constraint firstItem="hn1-Xj-HB8" firstAttribute="leading" secondItem="qv3-jU-0UD" secondAttribute="leading" id="hXz-Ap-jYw"/>
+                                            <constraint firstItem="7SY-qJ-RIn" firstAttribute="top" secondItem="Dg7-JN-E77" secondAttribute="bottom" constant="16" id="kSd-Vr-cwl"/>
+                                            <constraint firstItem="Jzy-cN-jdJ" firstAttribute="top" secondItem="qv3-jU-0UD" secondAttribute="top" id="lVm-zQ-mpj"/>
+                                            <constraint firstAttribute="trailing" secondItem="G73-ih-9lk" secondAttribute="trailing" constant="8" id="lzC-p4-Bwv"/>
+                                            <constraint firstAttribute="trailing" secondItem="7SY-qJ-RIn" secondAttribute="trailing" constant="8" id="oNZ-lc-dls"/>
+                                            <constraint firstAttribute="trailing" secondItem="yNX-Z5-3PH" secondAttribute="trailing" constant="8" id="pgF-o5-IFF"/>
+                                            <constraint firstItem="Dg7-JN-E77" firstAttribute="leading" secondItem="qv3-jU-0UD" secondAttribute="leading" constant="8" id="rJG-An-8Hq"/>
+                                            <constraint firstItem="G73-ih-9lk" firstAttribute="top" secondItem="hn1-Xj-HB8" secondAttribute="bottom" constant="16" id="rbP-tu-GIy"/>
+                                            <constraint firstItem="hn1-Xj-HB8" firstAttribute="top" secondItem="U3e-rT-rAj" secondAttribute="bottom" constant="16" id="seM-sR-eOs"/>
+                                            <constraint firstItem="Bxb-3p-prO" firstAttribute="leading" secondItem="qv3-jU-0UD" secondAttribute="leading" constant="8" id="v8G-Ew-NNC"/>
+                                            <constraint firstAttribute="trailing" secondItem="SBW-pj-lAt" secondAttribute="trailing" id="yBy-jZ-5cD"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="qv3-jU-0UD" secondAttribute="trailing" id="Nol-IV-clL"/>
+                                    <constraint firstAttribute="bottom" secondItem="qv3-jU-0UD" secondAttribute="bottom" id="TiZ-tC-iqB"/>
+                                    <constraint firstItem="qv3-jU-0UD" firstAttribute="top" secondItem="70C-Wt-6Tp" secondAttribute="top" id="Zeh-hS-T0b"/>
+                                    <constraint firstItem="qv3-jU-0UD" firstAttribute="leading" secondItem="70C-Wt-6Tp" secondAttribute="leading" id="nEP-Jd-XWV"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0039215686269999999" green="0.17254901959999999" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="70C-Wt-6Tp" firstAttribute="bottom" secondItem="5Du-9C-ZIZ" secondAttribute="bottom" id="1hr-Bh-47u"/>
+                            <constraint firstItem="70C-Wt-6Tp" firstAttribute="leading" secondItem="5Du-9C-ZIZ" secondAttribute="leading" id="Dwh-qd-iLV"/>
+                            <constraint firstItem="70C-Wt-6Tp" firstAttribute="top" secondItem="5Du-9C-ZIZ" secondAttribute="top" id="Vlo-mc-Cx6"/>
+                            <constraint firstItem="70C-Wt-6Tp" firstAttribute="trailing" secondItem="5Du-9C-ZIZ" secondAttribute="trailing" id="m6Z-Sd-qvz"/>
+                            <constraint firstItem="qv3-jU-0UD" firstAttribute="width" secondItem="Vvm-Km-ziR" secondAttribute="width" id="t6W-GT-ypu"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="5Du-9C-ZIZ"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="qg9-JR-vAB">
+                        <barButtonItem key="leftBarButtonItem" image="1-header-nav-1" id="ktg-dv-MVf">
+                            <color key="tintColor" red="0.60392156860000001" green="0.6588235294" blue="0.69803921570000005" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <segue destination="uyd-fs-atr" kind="show" id="mdV-S4-830"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <size key="freeformSize" width="375" height="3000"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8O0-od-4Bs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="12391.200000000001" y="793.40329835082468"/>
+        </scene>
+        <!--Navigation-->
+        <scene sceneID="87V-jJ-sdF">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BjU-oR-Okf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder storyboardName="Navigation" id="uyd-fs-atr" sceneMemberID="viewController"/>
+            </objects>
+            <point key="canvasLocation" x="13364.799999999999" y="792.50374812593714"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="B5e-lx-sVb">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="RdL-i5-SQ7" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="4YD-Zd-oy6">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="qf5-Qb-95I" kind="relationship" relationship="rootViewController" id="fxf-Cz-9QK"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dwX-ma-wi8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="12391" y="-1063"/>
+        </scene>
+        <!--Navigation-->
+        <scene sceneID="GUP-ys-hIE">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Navigation" id="Epv-g9-oSN" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NOe-rd-T5n" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="11556" y="-508"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="1-header-nav-1" width="37" height="37"/>
+        <image name="about-header" width="1800" height="1000"/>
+        <image name="facebook-footer-icon" width="64" height="64"/>
+        <image name="foundation-key-logos" width="1000" height="206"/>
+        <image name="google-footer-icon" width="64" height="64"/>
+        <image name="instagram-footer-icon" width="64" height="64"/>
+        <image name="twitter-footer-icon" width="64" height="64"/>
+        <image name="youtube-footer-icon" width="64" height="64"/>
+    </resources>
+</document>

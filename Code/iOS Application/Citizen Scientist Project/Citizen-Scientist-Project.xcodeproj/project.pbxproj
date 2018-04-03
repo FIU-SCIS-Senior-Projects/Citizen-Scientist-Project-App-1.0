@@ -12,6 +12,29 @@
 		2235A2C52063B2F400DEDC9E /* CollapsibleTableViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2235A2C42063B2F400DEDC9E /* CollapsibleTableViewHeader.swift */; };
 		2235A2C72063B33600DEDC9E /* CollapsibleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2235A2C62063B33600DEDC9E /* CollapsibleTableViewCell.swift */; };
 		2235A2C92063B38D00DEDC9E /* CollapsibleGraphChartTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2235A2C82063B38D00DEDC9E /* CollapsibleGraphChartTable.swift */; };
+		2238FC932073024B00BCAE3F /* ReusableHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2238FC922073024B00BCAE3F /* ReusableHeader.swift */; };
+		2238FC9B207307A200BCAE3F /* Navigation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2238FC99207307A200BCAE3F /* Navigation.storyboard */; };
+		2238FC9D2073080800BCAE3F /* Homepage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2238FC9C2073080800BCAE3F /* Homepage.storyboard */; };
+		2238FC9F20730D7900BCAE3F /* ContactUs.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2238FC9E20730D7900BCAE3F /* ContactUs.storyboard */; };
+		2238FCA22073107400BCAE3F /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2238FCA02073107400BCAE3F /* Profile.storyboard */; };
+		2238FCA5207310B000BCAE3F /* GeoHunt.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2238FCA3207310B000BCAE3F /* GeoHunt.storyboard */; };
+		2238FCA7207310FA00BCAE3F /* Learn.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2238FCA6207310FA00BCAE3F /* Learn.storyboard */; };
+		2238FCAA2073113300BCAE3F /* Explore.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2238FCA82073113300BCAE3F /* Explore.storyboard */; };
+		2238FCAC2073117C00BCAE3F /* Record.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2238FCAB2073117C00BCAE3F /* Record.storyboard */; };
+		2238FCAF207311F800BCAE3F /* Review.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2238FCAD207311F800BCAE3F /* Review.storyboard */; };
+		2238FCB12073125600BCAE3F /* OurPartners.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2238FCB02073125600BCAE3F /* OurPartners.storyboard */; };
+		2238FCB4207312AA00BCAE3F /* NewsLetter.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2238FCB2207312AA00BCAE3F /* NewsLetter.storyboard */; };
+		2238FCB6207312F000BCAE3F /* OurBiomes.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2238FCB5207312F000BCAE3F /* OurBiomes.storyboard */; };
+		2238FCB92073132C00BCAE3F /* AboutUs.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2238FCB72073132C00BCAE3F /* AboutUs.storyboard */; };
+		2238FCBC207313AB00BCAE3F /* Events.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2238FCBA207313AB00BCAE3F /* Events.storyboard */; };
+		2238FCBE207313E900BCAE3F /* News.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2238FCBD207313E900BCAE3F /* News.storyboard */; };
+		2238FCC12073143900BCAE3F /* FieldActivities.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2238FCBF2073143900BCAE3F /* FieldActivities.storyboard */; };
+		2238FCC32073147200BCAE3F /* LectureSeries.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2238FCC22073147200BCAE3F /* LectureSeries.storyboard */; };
+		2238FCC6207314E900BCAE3F /* ReefRestoration.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2238FCC4207314E900BCAE3F /* ReefRestoration.storyboard */; };
+		2238FCC92073154200BCAE3F /* SeaLevelRise.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2238FCC72073154200BCAE3F /* SeaLevelRise.storyboard */; };
+		2238FCCC207316AE00BCAE3F /* KeyChallenge.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2238FCCA207316AE00BCAE3F /* KeyChallenge.storyboard */; };
+		2238FCCF2073177600BCAE3F /* WaterWatch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2238FCCE2073177600BCAE3F /* WaterWatch.storyboard */; };
+		2238FCF22073301F00BCAE3F /* MiniChallenge.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2238FCF02073301F00BCAE3F /* MiniChallenge.storyboard */; };
 		22395D01204E432600177243 /* NavigationPages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22395D00204E432600177243 /* NavigationPages.swift */; };
 		22395D052052798600177243 /* WaterWatchContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22395D042052798600177243 /* WaterWatchContent.swift */; };
 		22395D072052830600177243 /* WaterWatchContentManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22395D062052830600177243 /* WaterWatchContentManager.swift */; };
@@ -27,13 +50,11 @@
 		2299225A203E58FA006CE1AB /* segueToTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22992259203E58FA006CE1AB /* segueToTable.swift */; };
 		229E61432022A79200D4BDDA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229E61422022A79200D4BDDA /* AppDelegate.swift */; };
 		229E61452022A79200D4BDDA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229E61442022A79200D4BDDA /* ViewController.swift */; };
-		229E61482022A79200D4BDDA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 229E61462022A79200D4BDDA /* Main.storyboard */; };
 		229E614B2022A79200D4BDDA /* Citizen_Scientist_Project.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 229E61492022A79200D4BDDA /* Citizen_Scientist_Project.xcdatamodeld */; };
 		229E614D2022A79200D4BDDA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 229E614C2022A79200D4BDDA /* Assets.xcassets */; };
 		229E61502022A79200D4BDDA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 229E614E2022A79200D4BDDA /* LaunchScreen.storyboard */; };
 		229E615B2022A79200D4BDDA /* Citizen_Scientist_ProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229E615A2022A79200D4BDDA /* Citizen_Scientist_ProjectTests.swift */; };
 		229E61662022A79200D4BDDA /* Citizen_Scientist_ProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229E61652022A79200D4BDDA /* Citizen_Scientist_ProjectUITests.swift */; };
-		22BDC762206FB0130019F3AB /* ReusableHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BDC761206FB0130019F3AB /* ReusableHeader.swift */; };
 		22CA83B2206E348800287889 /* iNaturalistDownloadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CA83B1206E348800287889 /* iNaturalistDownloadView.swift */; };
 		22CA83B6206E52EC00287889 /* iNaturalistVimeoTutorialsPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CA83B5206E52EC00287889 /* iNaturalistVimeoTutorialsPageViewController.swift */; };
 		22CA83B8206E55D300287889 /* iNaturalistVimeoTutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CA83B7206E55D300287889 /* iNaturalistVimeoTutorialViewController.swift */; };
@@ -89,6 +110,29 @@
 		2235A2C42063B2F400DEDC9E /* CollapsibleTableViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollapsibleTableViewHeader.swift; sourceTree = "<group>"; };
 		2235A2C62063B33600DEDC9E /* CollapsibleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollapsibleTableViewCell.swift; sourceTree = "<group>"; };
 		2235A2C82063B38D00DEDC9E /* CollapsibleGraphChartTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollapsibleGraphChartTable.swift; sourceTree = "<group>"; };
+		2238FC922073024B00BCAE3F /* ReusableHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableHeader.swift; sourceTree = "<group>"; };
+		2238FC9A207307A200BCAE3F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Citizen Scientist Project/Base.lproj/Navigation.storyboard"; sourceTree = "<group>"; };
+		2238FC9C2073080800BCAE3F /* Homepage.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Homepage.storyboard; sourceTree = "<group>"; };
+		2238FC9E20730D7900BCAE3F /* ContactUs.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ContactUs.storyboard; sourceTree = "<group>"; };
+		2238FCA12073107400BCAE3F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Citizen Scientist Project/Base.lproj/Profile.storyboard"; sourceTree = "<group>"; };
+		2238FCA4207310B000BCAE3F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Citizen Scientist Project/Base.lproj/GeoHunt.storyboard"; sourceTree = "<group>"; };
+		2238FCA6207310FA00BCAE3F /* Learn.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Learn.storyboard; sourceTree = "<group>"; };
+		2238FCA92073113300BCAE3F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Citizen Scientist Project/Base.lproj/Explore.storyboard"; sourceTree = "<group>"; };
+		2238FCAB2073117C00BCAE3F /* Record.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Record.storyboard; sourceTree = "<group>"; };
+		2238FCAE207311F800BCAE3F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Citizen Scientist Project/Base.lproj/Review.storyboard"; sourceTree = "<group>"; };
+		2238FCB02073125600BCAE3F /* OurPartners.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = OurPartners.storyboard; sourceTree = "<group>"; };
+		2238FCB3207312AA00BCAE3F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Citizen Scientist Project/Base.lproj/NewsLetter.storyboard"; sourceTree = "<group>"; };
+		2238FCB5207312F000BCAE3F /* OurBiomes.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = OurBiomes.storyboard; sourceTree = "<group>"; };
+		2238FCB82073132C00BCAE3F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Citizen Scientist Project/Base.lproj/AboutUs.storyboard"; sourceTree = "<group>"; };
+		2238FCBB207313AB00BCAE3F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Citizen Scientist Project/Base.lproj/Events.storyboard"; sourceTree = "<group>"; };
+		2238FCBD207313E900BCAE3F /* News.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = News.storyboard; sourceTree = "<group>"; };
+		2238FCC02073143900BCAE3F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Citizen Scientist Project/Base.lproj/FieldActivities.storyboard"; sourceTree = "<group>"; };
+		2238FCC22073147200BCAE3F /* LectureSeries.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LectureSeries.storyboard; sourceTree = "<group>"; };
+		2238FCC5207314E900BCAE3F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Citizen Scientist Project/Base.lproj/ReefRestoration.storyboard"; sourceTree = "<group>"; };
+		2238FCC82073154200BCAE3F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Citizen Scientist Project/Base.lproj/SeaLevelRise.storyboard"; sourceTree = "<group>"; };
+		2238FCCB207316AE00BCAE3F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Citizen Scientist Project/Base.lproj/KeyChallenge.storyboard"; sourceTree = "<group>"; };
+		2238FCCE2073177600BCAE3F /* WaterWatch.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = WaterWatch.storyboard; sourceTree = "<group>"; };
+		2238FCF12073301F00BCAE3F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Citizen Scientist Project/KeyChallenge/Citizen Scientist Project/Base.lproj/MiniChallenge.storyboard"; sourceTree = "<group>"; };
 		22395D00204E432600177243 /* NavigationPages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationPages.swift; sourceTree = "<group>"; };
 		22395D042052798600177243 /* WaterWatchContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterWatchContent.swift; sourceTree = "<group>"; };
 		22395D062052830600177243 /* WaterWatchContentManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterWatchContentManager.swift; sourceTree = "<group>"; };
@@ -105,7 +149,6 @@
 		229E613F2022A79200D4BDDA /* Citizen-Scientist-Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Citizen-Scientist-Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		229E61422022A79200D4BDDA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		229E61442022A79200D4BDDA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		229E61472022A79200D4BDDA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		229E614A2022A79200D4BDDA /* Citizen_Scientist_Project.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Citizen_Scientist_Project.xcdatamodel; sourceTree = "<group>"; };
 		229E614C2022A79200D4BDDA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		229E614F2022A79200D4BDDA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -116,7 +159,6 @@
 		229E61612022A79200D4BDDA /* Citizen-Scientist-ProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Citizen-Scientist-ProjectUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		229E61652022A79200D4BDDA /* Citizen_Scientist_ProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Citizen_Scientist_ProjectUITests.swift; sourceTree = "<group>"; };
 		229E61672022A79200D4BDDA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		22BDC761206FB0130019F3AB /* ReusableHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableHeader.swift; sourceTree = "<group>"; };
 		22CA83B1206E348800287889 /* iNaturalistDownloadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iNaturalistDownloadView.swift; sourceTree = "<group>"; };
 		22CA83B5206E52EC00287889 /* iNaturalistVimeoTutorialsPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iNaturalistVimeoTutorialsPageViewController.swift; sourceTree = "<group>"; };
 		22CA83B7206E55D300287889 /* iNaturalistVimeoTutorialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iNaturalistVimeoTutorialViewController.swift; sourceTree = "<group>"; };
@@ -182,6 +224,14 @@
 			path = Helper;
 			sourceTree = "<group>";
 		};
+		2238FC912073021600BCAE3F /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				2238FC922073024B00BCAE3F /* ReusableHeader.swift */,
+			);
+			path = Header;
+			sourceTree = "<group>";
+		};
 		22395CFD204E42F400177243 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -229,16 +279,10 @@
 			path = Footer;
 			sourceTree = "<group>";
 		};
-		228FA9C320477E21003610B3 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Resources;
-			sourceTree = "<group>";
-		};
 		22992227203E51FF006CE1AB /* Navigation */ = {
 			isa = PBXGroup;
 			children = (
+				2238FC99207307A200BCAE3F /* Navigation.storyboard */,
 				22395CFD204E42F400177243 /* Model */,
 				22F78C91202D153D0001049D /* View */,
 				2299222E203E53A6006CE1AB /* Controller */,
@@ -249,6 +293,7 @@
 		22992228203E5254006CE1AB /* Homepage */ = {
 			isa = PBXGroup;
 			children = (
+				2238FC9C2073080800BCAE3F /* Homepage.storyboard */,
 				2299222B203E5284006CE1AB /* Model */,
 				2299222A203E527B006CE1AB /* View */,
 				22992229203E5273006CE1AB /* Controller */,
@@ -309,6 +354,7 @@
 		2299222F203E53E2006CE1AB /* KeyChallenge */ = {
 			isa = PBXGroup;
 			children = (
+				2238FCCA207316AE00BCAE3F /* KeyChallenge.storyboard */,
 				22992230203E5405006CE1AB /* Controller */,
 			);
 			path = KeyChallenge;
@@ -325,6 +371,7 @@
 		22992233203E5433006CE1AB /* AboutUs */ = {
 			isa = PBXGroup;
 			children = (
+				2238FCB72073132C00BCAE3F /* AboutUs.storyboard */,
 				22992256203E56E2006CE1AB /* Controller */,
 			);
 			path = AboutUs;
@@ -333,6 +380,7 @@
 		22992234203E543F006CE1AB /* ContactUs */ = {
 			isa = PBXGroup;
 			children = (
+				2238FC9E20730D7900BCAE3F /* ContactUs.storyboard */,
 				22992255203E56D7006CE1AB /* Controller */,
 			);
 			path = ContactUs;
@@ -341,6 +389,7 @@
 		22992235203E5449006CE1AB /* Events */ = {
 			isa = PBXGroup;
 			children = (
+				2238FCBA207313AB00BCAE3F /* Events.storyboard */,
 				22992254203E56CA006CE1AB /* Controller */,
 			);
 			path = Events;
@@ -349,22 +398,25 @@
 		22992236203E5453006CE1AB /* Explore */ = {
 			isa = PBXGroup;
 			children = (
+				2238FCA82073113300BCAE3F /* Explore.storyboard */,
 				22992253203E56C0006CE1AB /* Controller */,
 			);
 			path = Explore;
 			sourceTree = "<group>";
 		};
-		22992237203E5459006CE1AB /* FieldActivity */ = {
+		22992237203E5459006CE1AB /* FieldActivities */ = {
 			isa = PBXGroup;
 			children = (
+				2238FCBF2073143900BCAE3F /* FieldActivities.storyboard */,
 				22992252203E56B4006CE1AB /* Controller */,
 			);
-			path = FieldActivity;
+			path = FieldActivities;
 			sourceTree = "<group>";
 		};
 		22992238203E5462006CE1AB /* GeoHunt */ = {
 			isa = PBXGroup;
 			children = (
+				2238FCA3207310B000BCAE3F /* GeoHunt.storyboard */,
 				22992251203E56A9006CE1AB /* Controller */,
 			);
 			path = GeoHunt;
@@ -373,6 +425,7 @@
 		22992239203E546C006CE1AB /* Learn */ = {
 			isa = PBXGroup;
 			children = (
+				2238FCA6207310FA00BCAE3F /* Learn.storyboard */,
 				22992250203E569C006CE1AB /* Controller */,
 			);
 			path = Learn;
@@ -381,6 +434,7 @@
 		2299223A203E5475006CE1AB /* LectureSeries */ = {
 			isa = PBXGroup;
 			children = (
+				2238FCC22073147200BCAE3F /* LectureSeries.storyboard */,
 				2299224F203E5690006CE1AB /* Controller */,
 			);
 			path = LectureSeries;
@@ -389,6 +443,7 @@
 		2299223B203E547D006CE1AB /* NewsLetters */ = {
 			isa = PBXGroup;
 			children = (
+				2238FCB2207312AA00BCAE3F /* NewsLetter.storyboard */,
 				2299224E203E5682006CE1AB /* Controller */,
 			);
 			path = NewsLetters;
@@ -397,6 +452,7 @@
 		2299223C203E5489006CE1AB /* OurBiomes */ = {
 			isa = PBXGroup;
 			children = (
+				2238FCB5207312F000BCAE3F /* OurBiomes.storyboard */,
 				6D8D70BC203E68EA00503CA9 /* Controller */,
 			);
 			path = OurBiomes;
@@ -405,6 +461,7 @@
 		2299223D203E54F9006CE1AB /* News */ = {
 			isa = PBXGroup;
 			children = (
+				2238FCBD207313E900BCAE3F /* News.storyboard */,
 				2299224C203E5668006CE1AB /* Controller */,
 			);
 			path = News;
@@ -413,6 +470,7 @@
 		2299223E203E5505006CE1AB /* OurPartners */ = {
 			isa = PBXGroup;
 			children = (
+				2238FCB02073125600BCAE3F /* OurPartners.storyboard */,
 				2299224B203E564C006CE1AB /* Controller */,
 			);
 			path = OurPartners;
@@ -421,6 +479,7 @@
 		2299223F203E5510006CE1AB /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				2238FCA02073107400BCAE3F /* Profile.storyboard */,
 				2299224A203E5630006CE1AB /* Controller */,
 			);
 			path = Profile;
@@ -429,6 +488,7 @@
 		22992240203E5518006CE1AB /* Record */ = {
 			isa = PBXGroup;
 			children = (
+				2238FCAB2073117C00BCAE3F /* Record.storyboard */,
 				22992249203E5626006CE1AB /* Controller */,
 			);
 			path = Record;
@@ -437,6 +497,7 @@
 		22992241203E551F006CE1AB /* ReefRestoration */ = {
 			isa = PBXGroup;
 			children = (
+				2238FCC4207314E900BCAE3F /* ReefRestoration.storyboard */,
 				22992248203E561C006CE1AB /* Controller */,
 			);
 			path = ReefRestoration;
@@ -445,6 +506,7 @@
 		22992242203E5553006CE1AB /* Review */ = {
 			isa = PBXGroup;
 			children = (
+				2238FCAD207311F800BCAE3F /* Review.storyboard */,
 				22992247203E5611006CE1AB /* Controller */,
 			);
 			path = Review;
@@ -453,10 +515,8 @@
 		22992243203E555C006CE1AB /* SeaLevelRise */ = {
 			isa = PBXGroup;
 			children = (
-				22E33DB9203E900200A0259A /* Model */,
-				22E33DB8203E8FE100A0259A /* View */,
+				2238FCC72073154200BCAE3F /* SeaLevelRise.storyboard */,
 				22992246203E5608006CE1AB /* Controller */,
-				228FA9C320477E21003610B3 /* Resources */,
 			);
 			path = SeaLevelRise;
 			sourceTree = "<group>";
@@ -464,6 +524,7 @@
 		22992244203E5564006CE1AB /* WaterWatch */ = {
 			isa = PBXGroup;
 			children = (
+				2238FCCE2073177600BCAE3F /* WaterWatch.storyboard */,
 				22395D032052792000177243 /* Model */,
 				22395D022052791000177243 /* View */,
 				22992245203E55FD006CE1AB /* Controller */,
@@ -635,9 +696,8 @@
 		229E61412022A79200D4BDDA /* Citizen Scientist Project */ = {
 			isa = PBXGroup;
 			children = (
-				229E61462022A79200D4BDDA /* Main.storyboard */,
 				22E377BE206E24FB00D277F2 /* Storyboard.swift */,
-				22BDC75F206FAFE20019F3AB /* Header */,
+				2238FC912073021600BCAE3F /* Header */,
 				22992228203E5254006CE1AB /* Homepage */,
 				2262D2E3203E316600FB8AFB /* Footer */,
 				22992227203E51FF006CE1AB /* Navigation */,
@@ -656,7 +716,7 @@
 				2299223A203E5475006CE1AB /* LectureSeries */,
 				22992239203E546C006CE1AB /* Learn */,
 				22992238203E5462006CE1AB /* GeoHunt */,
-				22992237203E5459006CE1AB /* FieldActivity */,
+				22992237203E5459006CE1AB /* FieldActivities */,
 				22992236203E5453006CE1AB /* Explore */,
 				22992235203E5449006CE1AB /* Events */,
 				22992234203E543F006CE1AB /* ContactUs */,
@@ -686,14 +746,6 @@
 			path = "Citizen Scientist ProjectUITests";
 			sourceTree = "<group>";
 		};
-		22BDC75F206FAFE20019F3AB /* Header */ = {
-			isa = PBXGroup;
-			children = (
-				22BDC761206FB0130019F3AB /* ReusableHeader.swift */,
-			);
-			path = Header;
-			sourceTree = "<group>";
-		};
 		22CA83B3206E527C00287889 /* iNaturalistDownload */ = {
 			isa = PBXGroup;
 			children = (
@@ -712,27 +764,13 @@
 			path = iNaturalistVimeoTutorials;
 			sourceTree = "<group>";
 		};
-		22E33DB8203E8FE100A0259A /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		22E33DB9203E900200A0259A /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
 		22E377B4206CE22F00D277F2 /* MiniChallenge */ = {
 			isa = PBXGroup;
 			children = (
+				2238FCF02073301F00BCAE3F /* MiniChallenge.storyboard */,
 				22E377B7206CE25B00D277F2 /* Model */,
 				22E377B6206CE25400D277F2 /* View */,
 				22E377B5206CE24B00D277F2 /* Controller */,
-				22CA83B4206E52A000287889 /* iNaturalistVimeoTutorials */,
 			);
 			path = MiniChallenge;
 			sourceTree = "<group>";
@@ -742,6 +780,7 @@
 			children = (
 				22E377B8206CE29300D277F2 /* MiniChallengeViewController.swift */,
 				22CA83B3206E527C00287889 /* iNaturalistDownload */,
+				22CA83B4206E52A000287889 /* iNaturalistVimeoTutorials */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -886,9 +925,30 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2238FCC12073143900BCAE3F /* FieldActivities.storyboard in Resources */,
 				229E61502022A79200D4BDDA /* LaunchScreen.storyboard in Resources */,
+				2238FCC32073147200BCAE3F /* LectureSeries.storyboard in Resources */,
+				2238FCB4207312AA00BCAE3F /* NewsLetter.storyboard in Resources */,
+				2238FCA7207310FA00BCAE3F /* Learn.storyboard in Resources */,
+				2238FCB6207312F000BCAE3F /* OurBiomes.storyboard in Resources */,
+				2238FCAA2073113300BCAE3F /* Explore.storyboard in Resources */,
+				2238FC9F20730D7900BCAE3F /* ContactUs.storyboard in Resources */,
+				2238FCCC207316AE00BCAE3F /* KeyChallenge.storyboard in Resources */,
 				229E614D2022A79200D4BDDA /* Assets.xcassets in Resources */,
-				229E61482022A79200D4BDDA /* Main.storyboard in Resources */,
+				2238FCA5207310B000BCAE3F /* GeoHunt.storyboard in Resources */,
+				2238FCBC207313AB00BCAE3F /* Events.storyboard in Resources */,
+				2238FCAF207311F800BCAE3F /* Review.storyboard in Resources */,
+				2238FCC92073154200BCAE3F /* SeaLevelRise.storyboard in Resources */,
+				2238FC9D2073080800BCAE3F /* Homepage.storyboard in Resources */,
+				2238FC9B207307A200BCAE3F /* Navigation.storyboard in Resources */,
+				2238FCA22073107400BCAE3F /* Profile.storyboard in Resources */,
+				2238FCBE207313E900BCAE3F /* News.storyboard in Resources */,
+				2238FCB92073132C00BCAE3F /* AboutUs.storyboard in Resources */,
+				2238FCC6207314E900BCAE3F /* ReefRestoration.storyboard in Resources */,
+				2238FCAC2073117C00BCAE3F /* Record.storyboard in Resources */,
+				2238FCCF2073177600BCAE3F /* WaterWatch.storyboard in Resources */,
+				2238FCB12073125600BCAE3F /* OurPartners.storyboard in Resources */,
+				2238FCF22073301F00BCAE3F /* MiniChallenge.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -952,8 +1012,8 @@
 				22F78C8F202D0F900001049D /* CollectionViewCell.swift in Sources */,
 				6D021C10203E2E72003E35D5 /* FieldActivityViewController.swift in Sources */,
 				229E614B2022A79200D4BDDA /* Citizen_Scientist_Project.xcdatamodeld in Sources */,
+				2238FC932073024B00BCAE3F /* ReusableHeader.swift in Sources */,
 				6D37E60A203C897100FF4BBA /* NewsViewController.swift in Sources */,
-				22BDC762206FB0130019F3AB /* ReusableHeader.swift in Sources */,
 				22395D01204E432600177243 /* NavigationPages.swift in Sources */,
 				6D021C08203E2E2F003E35D5 /* SeaLevelRiseViewController.swift in Sources */,
 				22594978202DAA0C0047E055 /* CollectionViewContentManager.swift in Sources */,
@@ -1000,12 +1060,108 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		229E61462022A79200D4BDDA /* Main.storyboard */ = {
+		2238FC99207307A200BCAE3F /* Navigation.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				229E61472022A79200D4BDDA /* Base */,
+				2238FC9A207307A200BCAE3F /* Base */,
 			);
-			name = Main.storyboard;
+			name = Navigation.storyboard;
+			sourceTree = "<group>";
+		};
+		2238FCA02073107400BCAE3F /* Profile.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2238FCA12073107400BCAE3F /* Base */,
+			);
+			name = Profile.storyboard;
+			sourceTree = "<group>";
+		};
+		2238FCA3207310B000BCAE3F /* GeoHunt.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2238FCA4207310B000BCAE3F /* Base */,
+			);
+			name = GeoHunt.storyboard;
+			sourceTree = "<group>";
+		};
+		2238FCA82073113300BCAE3F /* Explore.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2238FCA92073113300BCAE3F /* Base */,
+			);
+			name = Explore.storyboard;
+			sourceTree = "<group>";
+		};
+		2238FCAD207311F800BCAE3F /* Review.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2238FCAE207311F800BCAE3F /* Base */,
+			);
+			name = Review.storyboard;
+			sourceTree = "<group>";
+		};
+		2238FCB2207312AA00BCAE3F /* NewsLetter.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2238FCB3207312AA00BCAE3F /* Base */,
+			);
+			name = NewsLetter.storyboard;
+			sourceTree = "<group>";
+		};
+		2238FCB72073132C00BCAE3F /* AboutUs.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2238FCB82073132C00BCAE3F /* Base */,
+			);
+			name = AboutUs.storyboard;
+			sourceTree = "<group>";
+		};
+		2238FCBA207313AB00BCAE3F /* Events.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2238FCBB207313AB00BCAE3F /* Base */,
+			);
+			name = Events.storyboard;
+			sourceTree = "<group>";
+		};
+		2238FCBF2073143900BCAE3F /* FieldActivities.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2238FCC02073143900BCAE3F /* Base */,
+			);
+			name = FieldActivities.storyboard;
+			sourceTree = "<group>";
+		};
+		2238FCC4207314E900BCAE3F /* ReefRestoration.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2238FCC5207314E900BCAE3F /* Base */,
+			);
+			name = ReefRestoration.storyboard;
+			sourceTree = "<group>";
+		};
+		2238FCC72073154200BCAE3F /* SeaLevelRise.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2238FCC82073154200BCAE3F /* Base */,
+			);
+			name = SeaLevelRise.storyboard;
+			sourceTree = "<group>";
+		};
+		2238FCCA207316AE00BCAE3F /* KeyChallenge.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2238FCCB207316AE00BCAE3F /* Base */,
+			);
+			name = KeyChallenge.storyboard;
+			sourceTree = "<group>";
+		};
+		2238FCF02073301F00BCAE3F /* MiniChallenge.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2238FCF12073301F00BCAE3F /* Base */,
+			);
+			name = MiniChallenge.storyboard;
 			sourceTree = "<group>";
 		};
 		229E614E2022A79200D4BDDA /* LaunchScreen.storyboard */ = {
@@ -1133,7 +1289,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = R89DGE8VGB;
+				DEVELOPMENT_TEAM = 2EAVSD837T;
 				INFOPLIST_FILE = "Citizen Scientist Project/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Key.Biscayne.Citizen-Scientist-Project2";
@@ -1151,7 +1307,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = R89DGE8VGB;
+				DEVELOPMENT_TEAM = 2EAVSD837T;
 				INFOPLIST_FILE = "Citizen Scientist Project/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Key.Biscayne.Citizen-Scientist-Project2";

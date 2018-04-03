@@ -112,7 +112,7 @@ class NavigationTableViewController: UITableViewController{
             segueIdentifier = "segueToOurBiomes"
             self.performSegue(withIdentifier: segueIdentifier, sender: self)
         case 20:
-            segueIdentifier = "segueToNewsletter"
+            segueIdentifier = "segueToNewsLetter"
             self.performSegue(withIdentifier: segueIdentifier, sender: self)
         case 21:
             segueIdentifier = "segueToOurPartners"
