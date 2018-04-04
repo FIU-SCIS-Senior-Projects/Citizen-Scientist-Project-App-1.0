@@ -57,6 +57,9 @@
                                                         <state key="normal" title="VIEW THE 2016-17 KEY CHALLENGE WINNERS">
                                                             <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         </state>
+                                                        <connections>
+                                                            <segue destination="lcb-s0-lvO" kind="show" id="NcE-BB-LrO"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" red="0.35686274509999999" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -385,7 +388,7 @@ As such, it is important to remember that humans have a major impact on all envi
                 <viewControllerPlaceholder storyboardName="Navigation" id="uyd-fs-atr" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BjU-oR-Okf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6403.1999999999998" y="1428.4857571214393"/>
+            <point key="canvasLocation" x="6364" y="1451"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="yRQ-B8-nc2">
@@ -404,6 +407,14 @@ As such, it is important to remember that humans have a major impact on all envi
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2XX-Pr-NtV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="5583" y="-1034"/>
+        </scene>
+        <!--MiniChallenge-->
+        <scene sceneID="Rqx-N5-1cg">
+            <objects>
+                <viewControllerPlaceholder storyboardName="MiniChallenge" id="lcb-s0-lvO" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jkh-8V-DSg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6348" y="-73"/>
         </scene>
     </scenes>
     <resources>

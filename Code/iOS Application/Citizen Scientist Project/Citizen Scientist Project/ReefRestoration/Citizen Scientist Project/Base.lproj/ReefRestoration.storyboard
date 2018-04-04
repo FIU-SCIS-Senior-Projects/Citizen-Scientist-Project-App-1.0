@@ -497,12 +497,12 @@ The area around Key Biscayne and Virginia Key is part of the designated critical
                     <navigationItem key="navigationItem" id="yFm-hh-vJk">
                         <barButtonItem key="leftBarButtonItem" image="1-header-nav-1" id="McI-9E-rIK">
                             <color key="tintColor" red="0.60392156860000001" green="0.6588235294" blue="0.69803921570000005" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <segue destination="uyd-fs-atr" kind="show" id="bUZ-AK-8hM"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <size key="freeformSize" width="375" height="4000"/>
-                    <connections>
-                        <segue destination="uyd-fs-atr" kind="show" id="Mge-r1-C3y"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="q2g-JK-QDN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

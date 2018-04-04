@@ -10,12 +10,13 @@ import UIKit
 
 class iNaturalistVimeoTutorialViewController: UIViewController {
 
-    @IBOutlet weak var vimeoTutorialView: UIImageView!
+    @IBOutlet weak var vimeoTutorialButton: UIButton!
     @IBOutlet weak var vimeoTutorialTextView: UITextView!
+    private var vimeoLink: URL?
     
     var image: UIImage? {
         didSet {
-            self.vimeoTutorialView?.image = image
+            self.vimeoTutorialButton?.setImage(image, for: .normal)
         }
     }
     
@@ -25,12 +26,23 @@ class iNaturalistVimeoTutorialViewController: UIViewController {
         }
     }
     
+    var link: URL? {
+        didSet {
+            self.vimeoLink = link
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.vimeoTutorialView.image = image
-        self.vimeoTutorialTextView.text = text
+        self.vimeoTutorialButton?.setImage(image, for: .normal)
+        vimeoTutorialButton.addTarget(self, action: #selector(handleOnVimeoClick), for: .touchUpInside)
+        self.vimeoTutorialTextView?.text = text
         
+    }
+    
+    @objc private func handleOnVimeoClick(){
+        UIApplication.shared.open(vimeoLink!, options: [:], completionHandler: nil)
     }
 
 }

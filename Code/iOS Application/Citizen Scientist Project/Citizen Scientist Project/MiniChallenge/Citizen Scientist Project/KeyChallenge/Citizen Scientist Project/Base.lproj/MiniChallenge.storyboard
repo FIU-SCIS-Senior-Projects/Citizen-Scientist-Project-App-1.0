@@ -64,6 +64,9 @@
                                                         <state key="normal" title=" Download iNaturalist">
                                                             <color key="titleColor" red="0.37254901959999998" green="0.67450980390000004" blue="0.87450980389999999" alpha="1" colorSpace="calibratedRGB"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="clickDownloadiNaturalistAppButton:" destination="zgW-s1-nEC" eventType="touchUpInside" id="Af6-ba-1L9"/>
+                                                        </connections>
                                                     </button>
                                                     <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" bouncesZoom="NO" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cOn-SU-gj9">
                                                         <rect key="frame" x="16" y="212.5" width="343" height="482.5"/>
@@ -85,6 +88,9 @@ Many of us are familiar with the more visible species: natives like turtles, man
                                                         <state key="normal" title="Make an Observation">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="clickMakeAnObservationButton:" destination="zgW-s1-nEC" eventType="touchUpInside" id="8dk-ST-jYW"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" red="0.33296501639999998" green="0.072392754259999997" blue="0.087315432730000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -242,6 +248,9 @@ Many of us are familiar with the more visible species: natives like turtles, man
                                                         <state key="normal" title="Register Online">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="clickRegisterOnlineButton:" destination="zgW-s1-nEC" eventType="touchUpInside" id="GWv-7B-Cgd"/>
+                                                        </connections>
                                                     </button>
                                                     <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" bouncesZoom="NO" editable="NO" text="• The Mini Challenge involves observing, photographing, and identifying organisms using iNaturalist." selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QQw-vI-XdU">
                                                         <rect key="frame" x="16" y="137" width="343" height="77"/>
@@ -510,12 +519,13 @@ Many of us are familiar with the more visible species: natives like turtles, man
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" verticalHuggingPriority="252" image="vimeo-1" translatesAutoresizingMaskIntoConstraints="NO" id="py8-5a-YLe">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SY3-cG-CUL">
                                 <rect key="frame" x="16" y="52" width="343" height="190"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="py8-5a-YLe" secondAttribute="height" multiplier="343:190" id="Mm8-C2-oR7"/>
+                                    <constraint firstAttribute="width" secondItem="SY3-cG-CUL" secondAttribute="height" multiplier="343:190" id="2eg-gN-YYh"/>
                                 </constraints>
-                            </imageView>
+                                <state key="normal" image="vimeo-1"/>
+                            </button>
                             <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" verticalHuggingPriority="248" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" bouncesZoom="NO" editable="NO" text="1. DOWNLOAD THE iNATURALIST APP AND CREATE AN ACCOUNT." textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wB7-gT-78L">
                                 <rect key="frame" x="0.0" y="274" width="375" height="393"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -524,24 +534,24 @@ Many of us are familiar with the more visible species: natives like turtles, man
                             </textView>
                         </subviews>
                         <constraints>
+                            <constraint firstItem="wB7-gT-78L" firstAttribute="top" secondItem="SY3-cG-CUL" secondAttribute="bottom" constant="32" id="1n2-H2-j2J"/>
                             <constraint firstItem="beP-nL-CUO" firstAttribute="bottom" secondItem="wB7-gT-78L" secondAttribute="bottom" id="8IS-ga-BXu"/>
                             <constraint firstItem="beP-nL-CUO" firstAttribute="trailing" secondItem="wB7-gT-78L" secondAttribute="trailing" id="JI8-vX-50A"/>
-                            <constraint firstItem="beP-nL-CUO" firstAttribute="trailing" secondItem="py8-5a-YLe" secondAttribute="trailing" constant="16" id="LD8-Mu-DGh"/>
-                            <constraint firstItem="py8-5a-YLe" firstAttribute="top" secondItem="beP-nL-CUO" secondAttribute="top" constant="32" id="ZNV-Jx-oo0"/>
-                            <constraint firstItem="wB7-gT-78L" firstAttribute="top" secondItem="py8-5a-YLe" secondAttribute="bottom" constant="32" id="ePG-ZJ-VHp"/>
+                            <constraint firstItem="SY3-cG-CUL" firstAttribute="top" secondItem="beP-nL-CUO" secondAttribute="top" constant="32" id="OyZ-tH-vtZ"/>
+                            <constraint firstItem="SY3-cG-CUL" firstAttribute="leading" secondItem="beP-nL-CUO" secondAttribute="leading" constant="16" id="Zav-pe-dwM"/>
                             <constraint firstItem="wB7-gT-78L" firstAttribute="leading" secondItem="beP-nL-CUO" secondAttribute="leading" id="mll-UA-UCp"/>
-                            <constraint firstItem="py8-5a-YLe" firstAttribute="leading" secondItem="beP-nL-CUO" secondAttribute="leading" constant="16" id="nLP-kA-dxH"/>
+                            <constraint firstItem="beP-nL-CUO" firstAttribute="trailing" secondItem="SY3-cG-CUL" secondAttribute="trailing" constant="16" id="vne-Ti-8pA"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="beP-nL-CUO"/>
                     </view>
                     <connections>
+                        <outlet property="vimeoTutorialButton" destination="SY3-cG-CUL" id="rSq-50-Gnp"/>
                         <outlet property="vimeoTutorialTextView" destination="wB7-gT-78L" id="uFO-sY-pBI"/>
-                        <outlet property="vimeoTutorialView" destination="py8-5a-YLe" id="uY6-s0-yV7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cce-VT-1hB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4374" y="5554"/>
+            <point key="canvasLocation" x="4373.6000000000004" y="5553.3733133433288"/>
         </scene>
     </scenes>
     <resources>

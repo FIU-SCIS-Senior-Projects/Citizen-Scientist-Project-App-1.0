@@ -34,7 +34,7 @@ class iNaturalistDownloadStepsPageViewController: UIPageViewController {
     ]
     
     lazy var controllers: [UIViewController] = {
-        let storyboard = UIStoryboard(name: Storyboard.name, bundle: nil)
+        let storyboard = UIStoryboard(name: Storyboard.miniChallenge, bundle: nil)
         var controllers = [UIViewController]()
         
         if let images = self.images {

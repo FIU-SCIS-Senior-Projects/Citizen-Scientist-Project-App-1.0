@@ -27,6 +27,12 @@ class iNaturalistVimeoTutorialsPageViewController: UIPageViewController {
         UIImage(named: "vimeo-3")!,
     ]
     
+    var vimeoButtonLinks: [URL] = [
+        URL(string: "https://vimeo.com/162581545")!,
+        URL(string: "https://vimeo.com/167431843")!,
+        URL(string: "https://vimeo.com/167341998")!,
+    ]
+    
     var iNaturalistVideoTitlesData: [String] = [
         "MAKING AN OBSERVATION ON A MOBILE DEVICE",
         "ADDING AN OBSERVATION VIA THE WEB",
@@ -34,7 +40,7 @@ class iNaturalistVimeoTutorialsPageViewController: UIPageViewController {
     ]
     
     lazy var controllers: [UIViewController] = {
-        let storyboard = UIStoryboard(name: Storyboard.name, bundle: nil)
+        let storyboard = UIStoryboard(name: Storyboard.miniChallenge, bundle: nil)
         var controllers = [UIViewController]()
         
         if let images = self.vimeoImages {
@@ -83,7 +89,7 @@ class iNaturalistVimeoTutorialsPageViewController: UIPageViewController {
                 if let iNaturalistVimeoTutorialVC = viewController as? iNaturalistVimeoTutorialViewController{
                     iNaturalistVimeoTutorialVC.image = self.vimeoImages?[index]
                     iNaturalistVimeoTutorialVC.text = self.iNaturalistVideoTitles?[index]
-                    
+                    iNaturalistVimeoTutorialVC.link = self.vimeoButtonLinks[index]
                     self.pageViewControllerDelegate?.turnPageController(to: index)
                 }
             }
@@ -102,7 +108,7 @@ extension iNaturalistVimeoTutorialsPageViewController: UIPageViewControllerDataS
                 return controllers[index - 1] // previous controller
             }
         }
-        return nil // does not wrap around
+        return controllers.last // wraps around to last view controller
     }
     
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController? {
@@ -112,7 +118,7 @@ extension iNaturalistVimeoTutorialsPageViewController: UIPageViewControllerDataS
             }
         }
         
-        return nil // does not wrap around
+        return controllers.first // wraps around to last view controller
     }
     
 }

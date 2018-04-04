@@ -24,6 +24,8 @@ struct Storyboard {
     
     // MARK: - Mini-Challenge
     
+    static let miniChallenge = "MiniChallenge"
+    
     static let iNaturalistStepViewController = "iNaturalistDownloadStepViewController"
     static let showiNaturalistDownloadStepsPageVC = "showiNaturalistDownloadStepsPageVC"
     
