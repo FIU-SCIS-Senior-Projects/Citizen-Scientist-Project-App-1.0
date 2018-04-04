@@ -10,6 +10,24 @@ import UIKit
 
 class KeyChallengeViewController: UIViewController {
 
+    
+    
+    @IBAction func clickViewWinnersButton(_ sender: UIButton) {
+        //TODO: ???
+    }
+    @IBAction func clickDownloadKeyChallengeProgramButton(_ sender: UIButton) {
+        UIApplication.shared.open(URL(string: "https://www.keyscience.org/wp-content/uploads/2017/02/kc-2017-brochure-FINAL-WEB.pdf")!, options: [:], completionHandler: nil)
+    }
+    @IBAction func clickIssuuPresentationButton(_ sender: UIButton) {
+        UIApplication.shared.open(URL(string: "https://issuu.com/kbcf/docs/kc-2017-brochure-final-web")!, options: [:], completionHandler: nil)
+    }
+    @IBAction func clickLearnMoreRedButton(_ sender: UIButton) {
+        UIApplication.shared.open(URL(string: "https://www.keyscience.org/projects/key-challenge/")!, options: [:], completionHandler: nil)
+        
+    }
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
