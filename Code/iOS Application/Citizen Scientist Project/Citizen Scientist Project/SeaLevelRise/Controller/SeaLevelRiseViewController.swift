@@ -10,7 +10,7 @@ import UIKit
 
 class SeaLevelRiseViewController: UIViewController {
 
-    let segueId = "goToWebView"
+    let segueId = "segueToWebView"
     let PDF = "pdf"
     
     @IBAction func surveyResultsButtonPressed(_ sender: UIButton) {

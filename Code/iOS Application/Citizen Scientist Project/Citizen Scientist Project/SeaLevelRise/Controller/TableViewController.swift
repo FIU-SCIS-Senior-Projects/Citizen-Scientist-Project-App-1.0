@@ -11,7 +11,7 @@ import UIKit
 class TableViewController: UITableViewController {
     
     
-    let segueId = "goToWebView"
+    let segueId = "segueToWebView"
     let PDF = "pdf"
     let PPTX = "pptx"
     
