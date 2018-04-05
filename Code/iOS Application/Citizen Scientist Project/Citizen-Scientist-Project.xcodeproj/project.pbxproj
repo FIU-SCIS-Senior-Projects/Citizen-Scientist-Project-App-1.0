@@ -25,6 +25,8 @@
 		2207B7A62075CC3E00A4DE90 /* VKB-Adaptation-Strategies-v2.ppt in Resources */ = {isa = PBXBuildFile; fileRef = 2207B7962075CC3E00A4DE90 /* VKB-Adaptation-Strategies-v2.ppt */; };
 		2207B7A72075CC3E00A4DE90 /* Agenda-for-SLR-Townhall-11-10-2016.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 2207B7972075CC3E00A4DE90 /* Agenda-for-SLR-Townhall-11-10-2016.pdf */; };
 		2207B7A82075CC3E00A4DE90 /* Survey-Results-2-6-2017.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 2207B7982075CC3E00A4DE90 /* Survey-Results-2-6-2017.pdf */; };
+		2207B7AB2075DBFC00A4DE90 /* ReusableFooterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2207B7AA2075DBFC00A4DE90 /* ReusableFooterViewController.swift */; };
+		2207B7AD2075DC2400A4DE90 /* Footer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2207B7AC2075DC2400A4DE90 /* Footer.storyboard */; };
 		2235A2C02063B1EE00DEDC9E /* CollapsibleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2235A2BF2063B1EE00DEDC9E /* CollapsibleTableViewController.swift */; };
 		2235A2C32063B26A00DEDC9E /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2235A2C22063B26A00DEDC9E /* Extensions.swift */; };
 		2235A2C52063B2F400DEDC9E /* CollapsibleTableViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2235A2C42063B2F400DEDC9E /* CollapsibleTableViewHeader.swift */; };
@@ -60,7 +62,7 @@
 		22594972202D969F0047E055 /* SectionFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22594971202D969F0047E055 /* SectionFooterView.swift */; };
 		22594976202DA6EC0047E055 /* CollectionViewCellContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22594975202DA6EC0047E055 /* CollectionViewCellContent.swift */; };
 		22594978202DAA0C0047E055 /* CollectionViewContentManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22594977202DAA0C0047E055 /* CollectionViewContentManager.swift */; };
-		2259497B202DCCEC0047E055 /* SectionFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2259497A202DCCEC0047E055 /* SectionFooter.swift */; };
+		2259497B202DCCEC0047E055 /* Footer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2259497A202DCCEC0047E055 /* Footer.swift */; };
 		22891A3D202DEBE7000FEBB4 /* SocialNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22891A3C202DEBE7000FEBB4 /* SocialNetwork.swift */; };
 		228FA9A02047788B003610B3 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228FA99F2047788B003610B3 /* WebViewController.swift */; };
 		228FA9A2204778B3003610B3 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228FA9A1204778B3003610B3 /* TableViewController.swift */; };
@@ -141,6 +143,8 @@
 		2207B7962075CC3E00A4DE90 /* VKB-Adaptation-Strategies-v2.ppt */ = {isa = PBXFileReference; lastKnownFileType = file; name = "VKB-Adaptation-Strategies-v2.ppt"; path = "../../../../../../../../../Desktop/FileResources/Sea-Level-Rise/Resources/VKB-Adaptation-Strategies-v2.ppt"; sourceTree = "<group>"; };
 		2207B7972075CC3E00A4DE90 /* Agenda-for-SLR-Townhall-11-10-2016.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "Agenda-for-SLR-Townhall-11-10-2016.pdf"; path = "../../../../../../../../../Desktop/FileResources/Sea-Level-Rise/Resources/Agenda-for-SLR-Townhall-11-10-2016.pdf"; sourceTree = "<group>"; };
 		2207B7982075CC3E00A4DE90 /* Survey-Results-2-6-2017.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "Survey-Results-2-6-2017.pdf"; path = "../../../../../../../../../Desktop/FileResources/Sea-Level-Rise/Resources/Survey-Results-2-6-2017.pdf"; sourceTree = "<group>"; };
+		2207B7AA2075DBFC00A4DE90 /* ReusableFooterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableFooterViewController.swift; sourceTree = "<group>"; };
+		2207B7AC2075DC2400A4DE90 /* Footer.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Footer.storyboard; sourceTree = "<group>"; };
 		2235A2BF2063B1EE00DEDC9E /* CollapsibleTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollapsibleTableViewController.swift; sourceTree = "<group>"; };
 		2235A2C22063B26A00DEDC9E /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		2235A2C42063B2F400DEDC9E /* CollapsibleTableViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollapsibleTableViewHeader.swift; sourceTree = "<group>"; };
@@ -176,7 +180,7 @@
 		22594971202D969F0047E055 /* SectionFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionFooterView.swift; sourceTree = "<group>"; };
 		22594975202DA6EC0047E055 /* CollectionViewCellContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCellContent.swift; sourceTree = "<group>"; };
 		22594977202DAA0C0047E055 /* CollectionViewContentManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewContentManager.swift; sourceTree = "<group>"; };
-		2259497A202DCCEC0047E055 /* SectionFooter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionFooter.swift; sourceTree = "<group>"; };
+		2259497A202DCCEC0047E055 /* Footer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Footer.swift; sourceTree = "<group>"; };
 		22891A3C202DEBE7000FEBB4 /* SocialNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialNetwork.swift; sourceTree = "<group>"; };
 		228FA99F2047788B003610B3 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		228FA9A1204778B3003610B3 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
@@ -308,6 +312,14 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		2207B7A92075DBC900A4DE90 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2207B7AA2075DBFC00A4DE90 /* ReusableFooterViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		2235A2C12063B23600DEDC9E /* Helper */ = {
 			isa = PBXGroup;
 			children = (
@@ -365,8 +377,10 @@
 		2262D2E3203E316600FB8AFB /* Footer */ = {
 			isa = PBXGroup;
 			children = (
+				2207B7AC2075DC2400A4DE90 /* Footer.storyboard */,
 				2299222D203E5328006CE1AB /* Model */,
 				2299222C203E5303006CE1AB /* View */,
+				2207B7A92075DBC900A4DE90 /* Controller */,
 			);
 			path = Footer;
 			sourceTree = "<group>";
@@ -429,7 +443,7 @@
 		2299222D203E5328006CE1AB /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				2259497A202DCCEC0047E055 /* SectionFooter.swift */,
+				2259497A202DCCEC0047E055 /* Footer.swift */,
 				22891A3C202DEBE7000FEBB4 /* SocialNetwork.swift */,
 			);
 			path = Model;
@@ -1022,6 +1036,7 @@
 				2207B79D2075CC3E00A4DE90 /* MDPL_17Feb2016.pdf in Resources */,
 				2238FCC12073143900BCAE3F /* FieldActivities.storyboard in Resources */,
 				2207B7852075C46300A4DE90 /* PreviousWinners.storyboard in Resources */,
+				2207B7AD2075DC2400A4DE90 /* Footer.storyboard in Resources */,
 				229E61502022A79200D4BDDA /* LaunchScreen.storyboard in Resources */,
 				2207B7A22075CC3E00A4DE90 /* Agenda-for-SLR-Townhall-02-16-2017.pdf in Resources */,
 				2238FCC32073147200BCAE3F /* LectureSeries.storyboard in Resources */,
@@ -1100,12 +1115,13 @@
 				22E377BF206E24FB00D277F2 /* Storyboard.swift in Sources */,
 				229E61452022A79200D4BDDA /* ViewController.swift in Sources */,
 				6D021C16203E3133003E35D5 /* NewslettersViewController.swift in Sources */,
-				2259497B202DCCEC0047E055 /* SectionFooter.swift in Sources */,
+				2259497B202DCCEC0047E055 /* Footer.swift in Sources */,
 				2299225A203E58FA006CE1AB /* segueToTable.swift in Sources */,
 				6D021C0C203E2E52003E35D5 /* ReefRestorationViewController.swift in Sources */,
 				22E377BD206E23DB00D277F2 /* iNaturalistDownloadStepsPageViewController.swift in Sources */,
 				6D021C0E203E2E63003E35D5 /* LectureSeriesViewController.swift in Sources */,
 				6D021BFE203E2A0C003E35D5 /* LearnViewController.swift in Sources */,
+				2207B7AB2075DBFC00A4DE90 /* ReusableFooterViewController.swift in Sources */,
 				22891A3D202DEBE7000FEBB4 /* SocialNetwork.swift in Sources */,
 				229E61432022A79200D4BDDA /* AppDelegate.swift in Sources */,
 				22E377B9206CE29300D277F2 /* MiniChallengeViewController.swift in Sources */,

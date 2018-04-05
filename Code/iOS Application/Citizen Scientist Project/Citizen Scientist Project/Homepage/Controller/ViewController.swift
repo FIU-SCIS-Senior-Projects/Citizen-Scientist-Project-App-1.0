@@ -17,7 +17,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     @IBOutlet weak var collectionView: UICollectionView!
     
     var cellContent: [HomepageCell] = ContentManager.fetchCellContent()
-    var sectionFooter: [Icon] = SectionFooter.fetchIcons()
+    //var sectionFooter: [Icon] = SectionFooter.fetchIcons()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,7 +27,6 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
 
         collectionView.dataSource = self
         collectionView.delegate = self
-        //setUpNavBar()
         
         ReusableHeader.setUpNavBar(navigationController: self.navigationController, navigationItem: self.navigationItem)
         
@@ -160,19 +159,19 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     @IBAction func openFacebook(_ sender: UIButton) {
         SocialNetwork.Facebook.openPage()
     }
-    
+
     @IBAction func openTwitter(_ sender: UIButton) {
         SocialNetwork.Twitter.openPage()
     }
-    
+
     @IBAction func openGooglePlus(_ sender: UIButton) {
         SocialNetwork.GooglePlus.openPage()
     }
-    
+
     @IBAction func openYoutube(_ sender: UIButton) {
         SocialNetwork.YouTube.openPage()
     }
-    
+
     @IBAction func openInstagram(_ sender: UIButton) {
         SocialNetwork.Instagram.openPage()
     }
@@ -183,9 +182,6 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView
     {
         let sectionFooterView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: Storyboard.sectionFooterView, for: indexPath) as! SectionFooterView
-        
-        let icon = sectionFooter[indexPath.row]
-        sectionFooterView.icon = icon
         
         return sectionFooterView
     }

@@ -17,6 +17,14 @@
         </array>
     </customFonts>
     <scenes>
+        <!--Footer-->
+        <scene sceneID="rbB-pg-7g8">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Footer" id="aR9-eD-TXc" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="I1H-rG-PGj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6170" y="-2705"/>
+        </scene>
         <!--FieldActivities-->
         <scene sceneID="l0H-Xb-TTr">
             <objects>
@@ -47,7 +55,7 @@
                 <viewControllerPlaceholder storyboardName="Navigation" id="ukN-mJ-wpU" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="69U-eD-GRn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5780" y="-2727"/>
+            <point key="canvasLocation" x="5390" y="-2705"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -160,87 +168,79 @@
                                     <rect key="frame" x="0.0" y="185" width="375" height="125"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="fUT-Yo-O4E">
-                                            <rect key="frame" x="8" y="35.5" width="359" height="54.5"/>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="ee0-oU-slt">
+                                            <rect key="frame" x="16" y="34" width="343" height="55.5"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="center" text="KEY BISCAYNE COMMUNITY FOUNDATION" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pCV-uw-31F">
-                                                    <rect key="frame" x="0.0" y="0.0" width="359" height="19.5"/>
-                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="center" text="KEY BISCAYNE COMMUNITY FOUNDATION" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9O5-1V-6Br">
+                                                    <rect key="frame" x="0.0" y="0.0" width="343" height="20.5"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
                                                     <color key="textColor" red="0.37254901959999998" green="0.67450980390000004" blue="0.87450980389999999" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <stackView opaque="NO" contentMode="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="vGs-2j-Vib">
-                                                    <rect key="frame" x="69.5" y="34.5" width="220" height="20"/>
+                                                <stackView opaque="NO" contentMode="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="agT-Fm-AE4">
+                                                    <rect key="frame" x="61.5" y="35.5" width="220" height="20"/>
                                                     <subviews>
-                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7yD-4G-ClX">
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z2o-Gd-NHp">
                                                             <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
                                                             <constraints>
-                                                                <constraint firstAttribute="width" constant="20" id="V7E-R1-L6h"/>
+                                                                <constraint firstAttribute="width" constant="20" id="VVw-Qz-doT"/>
                                                             </constraints>
                                                             <state key="normal" image="facebook-footer-icon"/>
                                                             <connections>
-                                                                <action selector="openFacebook:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GUZ-2t-e09"/>
+                                                                <action selector="openFacebook:" destination="BYZ-38-t0r" eventType="touchUpInside" id="D54-lc-yjf"/>
                                                             </connections>
                                                         </button>
-                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ptI-cx-LJm">
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wDa-AV-23G">
                                                             <rect key="frame" x="50" y="0.0" width="20" height="20"/>
                                                             <state key="normal" image="twitter-footer-icon"/>
                                                             <connections>
-                                                                <action selector="openTwitter:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JTr-oR-Oao"/>
+                                                                <action selector="openTwitter:" destination="BYZ-38-t0r" eventType="touchUpInside" id="N2p-3I-JO4"/>
                                                             </connections>
                                                         </button>
-                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IXo-Iv-oek">
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sxy-xd-5i5">
                                                             <rect key="frame" x="100" y="0.0" width="20" height="20"/>
                                                             <state key="normal" image="google-footer-icon"/>
                                                             <connections>
-                                                                <action selector="openGooglePlus:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RKz-Lg-Mqd"/>
+                                                                <action selector="openGooglePlus:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XGl-fH-wdu"/>
                                                             </connections>
                                                         </button>
-                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u0z-w7-GU9">
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ka8-i1-dqO">
                                                             <rect key="frame" x="150" y="0.0" width="20" height="20"/>
                                                             <state key="normal" image="youtube-footer-icon"/>
                                                             <connections>
-                                                                <action selector="openYoutube:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hQG-nK-2HP"/>
+                                                                <action selector="openYoutube:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tTc-V0-cu0"/>
                                                             </connections>
                                                         </button>
-                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rdt-ln-9mc">
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QOa-uP-SUX">
                                                             <rect key="frame" x="200" y="0.0" width="20" height="20"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                             <state key="normal" image="instagram-footer-icon"/>
                                                             <connections>
-                                                                <action selector="openInstagram:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rap-vD-CEC"/>
+                                                                <action selector="openInstagram:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zWk-MA-NDR"/>
                                                             </connections>
                                                         </button>
                                                     </subviews>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="20" id="3DB-Lu-ILz"/>
-                                                        <constraint firstItem="Rdt-ln-9mc" firstAttribute="width" secondItem="7yD-4G-ClX" secondAttribute="width" id="BT5-uU-jbG"/>
-                                                        <constraint firstItem="IXo-Iv-oek" firstAttribute="width" secondItem="7yD-4G-ClX" secondAttribute="width" id="FJd-Mg-XEa"/>
-                                                        <constraint firstItem="u0z-w7-GU9" firstAttribute="width" secondItem="7yD-4G-ClX" secondAttribute="width" id="egf-5k-g2E"/>
-                                                        <constraint firstItem="ptI-cx-LJm" firstAttribute="width" secondItem="7yD-4G-ClX" secondAttribute="width" id="ewe-Cc-kk1"/>
+                                                        <constraint firstItem="Sxy-xd-5i5" firstAttribute="width" secondItem="z2o-Gd-NHp" secondAttribute="width" id="5YS-EP-9J3"/>
+                                                        <constraint firstItem="wDa-AV-23G" firstAttribute="width" secondItem="z2o-Gd-NHp" secondAttribute="width" id="7Gk-Ll-wOg"/>
+                                                        <constraint firstItem="QOa-uP-SUX" firstAttribute="width" secondItem="z2o-Gd-NHp" secondAttribute="width" id="7bn-aB-Fze"/>
+                                                        <constraint firstAttribute="height" constant="20" id="Iqs-vR-orm"/>
+                                                        <constraint firstItem="Ka8-i1-dqO" firstAttribute="width" secondItem="z2o-Gd-NHp" secondAttribute="width" id="WCZ-sF-zQa"/>
                                                     </constraints>
                                                 </stackView>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="pCV-uw-31F" firstAttribute="leading" secondItem="fUT-Yo-O4E" secondAttribute="leading" id="Sbt-d5-GvY"/>
-                                                <constraint firstAttribute="trailing" secondItem="pCV-uw-31F" secondAttribute="trailing" id="z0I-vZ-Lkn"/>
+                                                <constraint firstAttribute="trailing" secondItem="9O5-1V-6Br" secondAttribute="trailing" id="U0i-4i-thu"/>
+                                                <constraint firstItem="9O5-1V-6Br" firstAttribute="leading" secondItem="ee0-oU-slt" secondAttribute="leading" id="hmI-Aq-qu8"/>
                                             </constraints>
                                         </stackView>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="fUT-Yo-O4E" firstAttribute="centerX" secondItem="9Bl-An-OuW" secondAttribute="centerX" id="GFW-Nu-wN3"/>
-                                        <constraint firstItem="fUT-Yo-O4E" firstAttribute="leading" secondItem="9Bl-An-OuW" secondAttribute="leadingMargin" id="H2N-fE-jSe"/>
-                                        <constraint firstItem="fUT-Yo-O4E" firstAttribute="centerY" secondItem="9Bl-An-OuW" secondAttribute="centerY" id="Mih-et-bXE"/>
-                                        <constraint firstAttribute="trailingMargin" secondItem="fUT-Yo-O4E" secondAttribute="trailing" id="s5O-YT-5y4"/>
+                                        <constraint firstItem="ee0-oU-slt" firstAttribute="centerX" secondItem="9Bl-An-OuW" secondAttribute="centerX" id="31r-pd-ePf"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="ee0-oU-slt" secondAttribute="trailing" constant="8" id="XYT-cg-tcN"/>
+                                        <constraint firstItem="ee0-oU-slt" firstAttribute="centerY" secondItem="9Bl-An-OuW" secondAttribute="centerY" id="mLd-rS-6ab"/>
+                                        <constraint firstItem="ee0-oU-slt" firstAttribute="leading" secondItem="9Bl-An-OuW" secondAttribute="leadingMargin" constant="8" id="mZJ-yN-kMg"/>
                                     </constraints>
-                                    <connections>
-                                        <outlet property="facebookButton" destination="7yD-4G-ClX" id="jvd-bT-3Yf"/>
-                                        <outlet property="footerLabel" destination="pCV-uw-31F" id="y0u-1v-nh9"/>
-                                        <outlet property="googlePlusButton" destination="IXo-Iv-oek" id="XWN-lM-oQd"/>
-                                        <outlet property="instagramButton" destination="Rdt-ln-9mc" id="phK-Lk-CAB"/>
-                                        <outlet property="twitterButton" destination="ptI-cx-LJm" id="HUM-Rp-qca"/>
-                                        <outlet property="youtubeButton" destination="u0z-w7-GU9" id="Ivv-ev-vnz"/>
-                                    </connections>
                                 </collectionReusableView>
                             </collectionView>
                         </subviews>

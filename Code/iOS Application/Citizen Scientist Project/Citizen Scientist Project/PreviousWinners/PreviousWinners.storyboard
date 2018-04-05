@@ -51,7 +51,7 @@
                                                     </imageView>
                                                     <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" bouncesZoom="NO" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JCh-Zp-O34">
                                                         <rect key="frame" x="16" y="353" width="343" height="523.5"/>
-                                                        <mutableString key="text">The 2016-2017 Key Challenge has been our biggest year yet!  Nearly 1000 students participated from all the Key schools and submitted amazing work in all categories.
+                                                        <string key="text">The 2016-2017 Key Challenge has been our biggest year yet!  Nearly 1000 students participated from all the Key schools and submitted amazing work in all categories.
 
 Our theme this year was water quality and shoreline conservation, in line with our EPA grant for environmental education, “Establishing the stewardship methodology to ensure the longterm health of shoreline waters of a developed barrier island.” 
 
@@ -59,7 +59,7 @@ We encouraged students to look closer at the aquatic environments around them an
 
 We had a total of 45 prize-winning entries by classes, groups, and individuals, ranging from Pre-K to 11th Grade.
 
-Congratulations to everyone that participated!</mutableString>
+Congratulations to everyone that participated!</string>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -95,85 +95,32 @@ Congratulations to everyone that participated!</mutableString>
                                                     <constraint firstAttribute="width" secondItem="dfZ-js-VRF" secondAttribute="height" multiplier="1:1" id="eCp-Mu-cHm"/>
                                                 </constraints>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BlN-Ux-ZjM" userLabel="Footer View">
+                                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KM1-lY-QD0" userLabel="Footer">
                                                 <rect key="frame" x="0.0" y="1508.5" width="375" height="125"/>
-                                                <subviews>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="St9-3J-CqQ">
-                                                        <rect key="frame" x="20" y="35" width="335" height="54.5"/>
-                                                        <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" text="KEY BISCAYNE COMMUNITY FOUNDATION" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="U05-Ty-PEJ">
-                                                                <rect key="frame" x="0.0" y="0.0" width="335" height="19.5"/>
-                                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
-                                                                <color key="textColor" red="0.37254901959999998" green="0.67450980390000004" blue="0.87450980389999999" alpha="1" colorSpace="calibratedRGB"/>
-                                                                <nil key="highlightedColor"/>
-                                                            </label>
-                                                            <stackView opaque="NO" contentMode="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="PN4-IL-Wrl">
-                                                                <rect key="frame" x="57.5" y="34.5" width="220" height="20"/>
-                                                                <subviews>
-                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MFg-Hn-rRr">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
-                                                                        <constraints>
-                                                                            <constraint firstAttribute="width" constant="20" id="jW9-0R-Ncn"/>
-                                                                        </constraints>
-                                                                        <state key="normal" image="facebook-footer-icon"/>
-                                                                    </button>
-                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HEU-4a-vy3">
-                                                                        <rect key="frame" x="50" y="0.0" width="20" height="20"/>
-                                                                        <state key="normal" image="twitter-footer-icon"/>
-                                                                    </button>
-                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VuL-jk-Huk">
-                                                                        <rect key="frame" x="100" y="0.0" width="20" height="20"/>
-                                                                        <state key="normal" image="google-footer-icon"/>
-                                                                    </button>
-                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nQ6-a6-d8w">
-                                                                        <rect key="frame" x="150" y="0.0" width="20" height="20"/>
-                                                                        <state key="normal" image="youtube-footer-icon"/>
-                                                                    </button>
-                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XqD-1h-8D2">
-                                                                        <rect key="frame" x="200" y="0.0" width="20" height="20"/>
-                                                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                                                        <state key="normal" image="instagram-footer-icon"/>
-                                                                    </button>
-                                                                </subviews>
-                                                                <constraints>
-                                                                    <constraint firstItem="VuL-jk-Huk" firstAttribute="width" secondItem="MFg-Hn-rRr" secondAttribute="width" id="SGN-VP-4RB"/>
-                                                                    <constraint firstItem="XqD-1h-8D2" firstAttribute="width" secondItem="MFg-Hn-rRr" secondAttribute="width" id="hor-Rl-vck"/>
-                                                                    <constraint firstItem="nQ6-a6-d8w" firstAttribute="width" secondItem="MFg-Hn-rRr" secondAttribute="width" id="o2D-0u-2R1"/>
-                                                                    <constraint firstAttribute="height" constant="20" id="t6c-Gu-5Ml"/>
-                                                                    <constraint firstItem="HEU-4a-vy3" firstAttribute="width" secondItem="MFg-Hn-rRr" secondAttribute="width" id="yUR-IW-u9c"/>
-                                                                </constraints>
-                                                            </stackView>
-                                                        </subviews>
-                                                        <constraints>
-                                                            <constraint firstAttribute="trailing" secondItem="U05-Ty-PEJ" secondAttribute="trailing" id="2TH-FR-Tif"/>
-                                                            <constraint firstItem="U05-Ty-PEJ" firstAttribute="leading" secondItem="St9-3J-CqQ" secondAttribute="leading" id="4VA-gl-RZ0"/>
-                                                        </constraints>
-                                                    </stackView>
-                                                </subviews>
-                                                <color key="backgroundColor" red="0.18823529410000001" green="0.1960784314" blue="0.25098039220000001" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
-                                                    <constraint firstItem="St9-3J-CqQ" firstAttribute="centerY" secondItem="BlN-Ux-ZjM" secondAttribute="centerY" id="Y1j-eG-DJG"/>
-                                                    <constraint firstAttribute="height" constant="125" id="Yn2-pa-OgS"/>
-                                                    <constraint firstItem="St9-3J-CqQ" firstAttribute="centerX" secondItem="BlN-Ux-ZjM" secondAttribute="centerX" id="cTg-rZ-Iaq"/>
+                                                    <constraint firstAttribute="height" constant="125" id="G2K-NK-H5G"/>
                                                 </constraints>
-                                            </view>
+                                                <connections>
+                                                    <segue destination="8UM-eM-bZs" kind="embed" id="bY4-Kh-dYa"/>
+                                                </connections>
+                                            </containerView>
                                         </subviews>
                                         <color key="backgroundColor" red="0.18823529410000001" green="0.1960784314" blue="0.25098039220000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstItem="32k-ZW-4iG" firstAttribute="top" secondItem="41k-SS-NuK" secondAttribute="top" id="56W-Dy-kua"/>
                                             <constraint firstItem="jhG-up-2Cd" firstAttribute="top" secondItem="32k-ZW-4iG" secondAttribute="bottom" id="97m-LS-yLm"/>
+                                            <constraint firstItem="KM1-lY-QD0" firstAttribute="top" secondItem="dfZ-js-VRF" secondAttribute="bottom" id="GP7-vS-mGO"/>
+                                            <constraint firstItem="KM1-lY-QD0" firstAttribute="leading" secondItem="41k-SS-NuK" secondAttribute="leading" id="IqJ-wf-vAd"/>
                                             <constraint firstAttribute="trailing" secondItem="dfZ-js-VRF" secondAttribute="trailing" id="NRc-fh-KDT"/>
                                             <constraint firstItem="32k-ZW-4iG" firstAttribute="leading" secondItem="41k-SS-NuK" secondAttribute="leading" id="Oiq-E8-qv2"/>
                                             <constraint firstAttribute="trailing" secondItem="32k-ZW-4iG" secondAttribute="trailing" id="UcX-e2-X3r"/>
                                             <constraint firstItem="jhG-up-2Cd" firstAttribute="leading" secondItem="41k-SS-NuK" secondAttribute="leading" id="VX0-Mg-OQm"/>
+                                            <constraint firstAttribute="bottom" secondItem="KM1-lY-QD0" secondAttribute="bottom" id="Y3S-CG-YLG"/>
                                             <constraint firstItem="32k-ZW-4iG" firstAttribute="width" secondItem="32k-ZW-4iG" secondAttribute="height" multiplier="5:3" identifier="WaterWatchMainImageAspectRatio" id="hzt-yS-jJ2"/>
-                                            <constraint firstAttribute="bottom" secondItem="BlN-Ux-ZjM" secondAttribute="bottom" id="kcj-W3-jbg"/>
                                             <constraint firstAttribute="trailing" secondItem="jhG-up-2Cd" secondAttribute="trailing" id="l0j-iG-C9s"/>
-                                            <constraint firstItem="BlN-Ux-ZjM" firstAttribute="top" secondItem="dfZ-js-VRF" secondAttribute="bottom" id="m21-CN-lLY"/>
+                                            <constraint firstAttribute="trailing" secondItem="KM1-lY-QD0" secondAttribute="trailing" id="pnP-cr-hLu"/>
                                             <constraint firstItem="dfZ-js-VRF" firstAttribute="top" secondItem="jhG-up-2Cd" secondAttribute="bottom" id="rdQ-ds-sSw"/>
-                                            <constraint firstAttribute="trailing" secondItem="BlN-Ux-ZjM" secondAttribute="trailing" id="tVG-5O-RI3"/>
                                             <constraint firstItem="dfZ-js-VRF" firstAttribute="leading" secondItem="41k-SS-NuK" secondAttribute="leading" id="uPj-52-QXb"/>
-                                            <constraint firstItem="BlN-Ux-ZjM" firstAttribute="leading" secondItem="41k-SS-NuK" secondAttribute="leading" id="zGC-zB-p7d"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -204,14 +151,17 @@ Congratulations to everyone that participated!</mutableString>
             </objects>
             <point key="canvasLocation" x="5192.8000000000002" y="5794.9025487256376"/>
         </scene>
+        <!--Footer-->
+        <scene sceneID="l0m-2Z-dcF">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Footer" id="8UM-eM-bZs" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="94X-h8-mq6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5751" y="5887"/>
+        </scene>
     </scenes>
     <resources>
-        <image name="facebook-footer-icon" width="64" height="64"/>
-        <image name="google-footer-icon" width="64" height="64"/>
-        <image name="instagram-footer-icon" width="64" height="64"/>
         <image name="key-challenge-winners" width="925" height="638"/>
         <image name="previous-winners-header-image" width="1400" height="695"/>
-        <image name="twitter-footer-icon" width="64" height="64"/>
-        <image name="youtube-footer-icon" width="64" height="64"/>
     </resources>
 </document>

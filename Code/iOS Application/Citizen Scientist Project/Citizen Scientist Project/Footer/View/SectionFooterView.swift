@@ -16,23 +16,15 @@ class SectionFooterView: UICollectionReusableView {
     @IBOutlet weak var instagramButton: UIButton!
     @IBOutlet weak var footerLabel: UILabel!
     
-    var icon: Icon! {
-        didSet {
-            if let iconImage = UIImage(named: icon.sourceName){
-                switch icon.type {
-                case .Facebook:
-                    facebookButton.setImage(iconImage, for: .normal)
-                case .Twitter:
-                    twitterButton.setImage(iconImage, for: .normal)
-                case .GooglePlus:
-                    googlePlusButton.setImage(iconImage, for: .normal)
-                case .Youtube:
-                    youtubeButton.setImage(iconImage, for: .normal)
-                case .Instagram:
-                    instagramButton.setImage(iconImage, for: .normal)
-                }
-            }
-        }
+    func setup(content: FooterSection){
+        
+        footerLabel.text = content.title
+        
+        facebookButton.setImage(UIImage(named: FooterIcon.Facebook.rawValue), for: .normal)
+        twitterButton.setImage(UIImage(named: FooterIcon.Twitter.rawValue), for: .normal)
+        googlePlusButton.setImage(UIImage(named: FooterIcon.GooglePlus.rawValue), for: .normal)
+        youtubeButton.setImage(UIImage(named: FooterIcon.Youtube.rawValue), for: .normal)
+        instagramButton.setImage(UIImage(named: FooterIcon.Instagram.rawValue), for: .normal)
     }
     
 }

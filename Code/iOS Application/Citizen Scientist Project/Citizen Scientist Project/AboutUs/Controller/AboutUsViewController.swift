@@ -10,6 +10,11 @@ import UIKit
 
 class AboutUsViewController: UIViewController {
 
+    @IBAction func clickLabFullSiteButton(_ sender: UIButton) {
+        UIApplication.shared.open(URL(string: "https://www.keyscience.org")!, options: [:], completionHandler: nil)
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         ReusableHeader.setUpNavBar(navigationController: self.navigationController, navigationItem: self.navigationItem)
