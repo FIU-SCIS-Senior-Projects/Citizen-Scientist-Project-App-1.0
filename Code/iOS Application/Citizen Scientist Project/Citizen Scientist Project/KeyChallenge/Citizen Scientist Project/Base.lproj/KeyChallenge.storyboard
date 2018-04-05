@@ -62,7 +62,7 @@
                                                     </label>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="uup-Or-twf">
                                                         <rect key="frame" x="16" y="191.5" width="343" height="60"/>
-                                                        <color key="backgroundColor" red="0.94901960780000005" green="0.21176470589999999" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="backgroundColor" red="0.94117647059999998" green="0.3294117647" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="60" id="WqH-LQ-UT5"/>
                                                         </constraints>
@@ -75,7 +75,7 @@
                                                         </connections>
                                                     </button>
                                                 </subviews>
-                                                <color key="backgroundColor" red="0.35686274509999999" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="backgroundColor" red="0.33333333329999998" green="0.078431372550000003" blue="0.094117647060000004" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstItem="4C3-SE-K9d" firstAttribute="leading" secondItem="Eig-FN-Nwp" secondAttribute="leading" constant="16" id="Dvq-3m-inU"/>
                                                     <constraint firstItem="4C3-SE-K9d" firstAttribute="top" secondItem="Eig-FN-Nwp" secondAttribute="top" constant="16" id="MdS-Cn-h9z"/>
@@ -231,7 +231,7 @@ As such, it is important to remember that humans have a major impact on all envi
                                                     </label>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mS5-y4-ZAf">
                                                         <rect key="frame" x="16" y="96" width="343" height="44"/>
-                                                        <color key="backgroundColor" red="0.94901960780000005" green="0.21176470589999999" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="backgroundColor" red="0.94117647059999998" green="0.3294117647" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="44" id="wy6-qj-6V6"/>
                                                         </constraints>
@@ -244,7 +244,7 @@ As such, it is important to remember that humans have a major impact on all envi
                                                         </connections>
                                                     </button>
                                                 </subviews>
-                                                <color key="backgroundColor" red="0.35686274509999999" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="backgroundColor" red="0.33333333329999998" green="0.078431372550000003" blue="0.094117647060000004" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="bottom" secondItem="mS5-y4-ZAf" secondAttribute="bottom" constant="32" id="3hS-C5-SWb"/>
                                                     <constraint firstItem="3lm-qx-xOE" firstAttribute="top" secondItem="QbM-bp-jvs" secondAttribute="top" constant="16" id="Ao0-TE-3IO"/>

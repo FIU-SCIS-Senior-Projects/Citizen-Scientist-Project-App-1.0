@@ -18,6 +18,8 @@ class WebViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        ReusableHeader.setUpNavBar(navigationController: self.navigationController, navigationItem: self.navigationItem)
+        
         // TODO: error checking for path and url
         let path = Bundle.main.path(forResource: resourceName, ofType: resourceExtension)
         

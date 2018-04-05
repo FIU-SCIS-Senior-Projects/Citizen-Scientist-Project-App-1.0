@@ -91,8 +91,7 @@ The Village of Key Biscayne and the Key Biscayne Community Foundation are workin
                                                     <color key="titleColor" red="0.37254901959999998" green="0.67450980390000004" blue="0.87450980389999999" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="secondFinalReportButtonPressed:" destination="Ukv-wq-SWZ" eventType="touchUpInside" id="Lkr-FS-eUA"/>
-                                                    <action selector="surveyResultsButtonPressed:" destination="lSf-Zo-CgR" eventType="touchUpInside" id="JSp-b3-ACj"/>
+                                                    <action selector="surveyResultsButtonPressed:" destination="lSf-Zo-CgR" eventType="touchUpInside" id="N46-RP-gLa"/>
                                                 </connections>
                                             </button>
                                         </subviews>

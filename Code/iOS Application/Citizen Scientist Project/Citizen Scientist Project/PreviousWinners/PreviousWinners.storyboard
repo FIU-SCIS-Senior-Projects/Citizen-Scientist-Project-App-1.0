@@ -86,7 +86,7 @@ Congratulations to everyone that participated!</mutableString>
                                                         <rect key="frame" x="0.0" y="-0.5" width="375" height="375"/>
                                                     </containerView>
                                                 </subviews>
-                                                <color key="backgroundColor" red="0.34139746430000001" green="0.056113466620000003" blue="0.076615460220000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" red="0.33333333329999998" green="0.078431372550000003" blue="0.094117647060000004" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstItem="xif-VO-wNx" firstAttribute="top" secondItem="dfZ-js-VRF" secondAttribute="top" id="6b4-lt-ZaR"/>
                                                     <constraint firstAttribute="trailing" secondItem="xif-VO-wNx" secondAttribute="trailing" id="MrQ-Je-Pc1"/>

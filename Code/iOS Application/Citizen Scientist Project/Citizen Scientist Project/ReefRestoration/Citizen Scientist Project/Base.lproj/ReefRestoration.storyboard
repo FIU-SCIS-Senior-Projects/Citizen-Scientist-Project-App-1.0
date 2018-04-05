@@ -213,7 +213,7 @@
                                                     </label>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zWp-Hp-uNn">
                                                         <rect key="frame" x="16" y="167.5" width="343" height="44"/>
-                                                        <color key="backgroundColor" red="0.93485409019999999" green="0.33095580340000003" blue="0.31995838879999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="backgroundColor" red="0.94117647059999998" green="0.3294117647" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="44" id="Dp2-vi-NW8"/>
                                                         </constraints>
@@ -226,7 +226,7 @@
                                                         </connections>
                                                     </button>
                                                 </subviews>
-                                                <color key="backgroundColor" red="0.33296501639999998" green="0.072392754259999997" blue="0.087315432730000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" red="0.33333333329999998" green="0.078431372550000003" blue="0.094117647060000004" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstItem="zWp-Hp-uNn" firstAttribute="top" secondItem="VQC-eV-5sQ" secondAttribute="bottom" constant="32" id="4ka-ZI-Bt2"/>
                                                     <constraint firstAttribute="trailing" secondItem="VQC-eV-5sQ" secondAttribute="trailing" constant="16" id="5yw-wS-woU"/>
@@ -248,11 +248,11 @@
                                                     </label>
                                                     <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" bouncesZoom="NO" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G1f-mU-EPl">
                                                         <rect key="frame" x="16" y="88" width="343" height="422"/>
-                                                        <mutableString key="text">Join the Key Biscayne Citizen Science Project for our second annual Reef Restoration Day! 
+                                                        <string key="text">Join the Key Biscayne Citizen Science Project for our second annual Reef Restoration Day! 
 
 Have you ever wondered what marine biologists do? Are you interested in diving alongside University of Miami coral reef experts? Rescue A Reef coral restoration expeditions offer you a hands-on experience to work with live corals in their natural habitat! 
 
-Key Biscayne residents are invited to join a KBCF Citizen-Scientist-Project-sponsored dive trip with University of Miami Rosenstiel School’s Rescue A Reef Program. Dive the Key Biscayne Coral Nursery, learn about the staghorn coral restoration efforts, and participate in a new coral out-planting project!</mutableString>
+Key Biscayne residents are invited to join a KBCF Citizen-Scientist-Project-sponsored dive trip with University of Miami Rosenstiel School’s Rescue A Reef Program. Dive the Key Biscayne Coral Nursery, learn about the staghorn coral restoration efforts, and participate in a new coral out-planting project!</string>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -265,7 +265,7 @@ Key Biscayne residents are invited to join a KBCF Citizen-Scientist-Project-spon
                                                     </label>
                                                     <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" bouncesZoom="NO" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0MS-u9-zmj">
                                                         <rect key="frame" x="16" y="590" width="343" height="1050.5"/>
-                                                        <mutableString key="text">Staghorn corals (Acropora cervicornis) are  important coral reef engineers, providing essential habitat for many other reef organisms. Unfortunately, coral populations have drastically declined and are threatened with extinction due to climate change, pollution, disease, overfishing, and habitat destruction. Staghorn corals have been designated on the IUCN red list as “critically endangered,” and are listed as “threatened” under the Endangered Species Act.  The National Marine Fisheries Service has designated Florida as one of four critical habitats in the world for staghorn coral.
+                                                        <string key="text">Staghorn corals (Acropora cervicornis) are  important coral reef engineers, providing essential habitat for many other reef organisms. Unfortunately, coral populations have drastically declined and are threatened with extinction due to climate change, pollution, disease, overfishing, and habitat destruction. Staghorn corals have been designated on the IUCN red list as “critically endangered,” and are listed as “threatened” under the Endangered Species Act.  The National Marine Fisheries Service has designated Florida as one of four critical habitats in the world for staghorn coral.
 
 While populations of staghorn coral still exist throughout Florida and the Florida Keys, they are small, fragmented, and genetically isolated. Without the flow of genes between populations, they grow weaker over time and are less able to cope with changes in the environment.
 
@@ -274,7 +274,7 @@ propagating threatened Caribbean staghorn coral in underwater coral nurseries. N
 
 Out of the Lirman Lab came Rescue A Reef, a citizen science project designed to support coral reef research and restoration activities through outreach, education, and engagement. Their mission is to educate and engage the local community, increase scientific literacy in coastal and coral reef conservation, and foster ocean stewardship.
 
-The area around Key Biscayne and Virginia Key is part of the designated critical habitat of staghorn coral, and therefore its protection is paramount.  The aim of this and future trips are to get the Key Biscayne community involved in awareness, protection, and enhancement of their surrounding local environment.</mutableString>
+The area around Key Biscayne and Virginia Key is part of the designated critical habitat of staghorn coral, and therefore its protection is paramount.  The aim of this and future trips are to get the Key Biscayne community involved in awareness, protection, and enhancement of their surrounding local environment.</string>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
