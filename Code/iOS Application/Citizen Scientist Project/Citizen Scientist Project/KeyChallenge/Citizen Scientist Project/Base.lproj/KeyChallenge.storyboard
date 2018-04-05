@@ -23,7 +23,7 @@
                 <viewControllerPlaceholder storyboardName="Navigation" id="uyd-fs-atr" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BjU-oR-Okf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6519" y="1540"/>
+            <point key="canvasLocation" x="6444" y="1563"/>
         </scene>
         <!--MiniChallenge-->
         <scene sceneID="Rqx-N5-1cg">
@@ -71,7 +71,7 @@
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
                                                         <connections>
-                                                            <action selector="clickViewWinnersButton:" destination="oDC-2P-VCt" eventType="touchUpInside" id="Rqp-jj-LRT"/>
+                                                            <segue destination="vbA-lT-hVG" kind="show" id="eLa-cl-iCj"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -469,6 +469,14 @@ The Citizen Scientist Project’s Key Challenge is sponsored by the Key Biscayne
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oK3-y0-pbh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="5767" y="-1244"/>
+        </scene>
+        <!--PreviousWinners-->
+        <scene sceneID="Psh-6G-4d0">
+            <objects>
+                <viewControllerPlaceholder storyboardName="PreviousWinners" id="vbA-lT-hVG" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qqI-18-ttz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6415" y="-280"/>
         </scene>
     </scenes>
     <resources>

@@ -10,11 +10,6 @@ import UIKit
 
 class KeyChallengeViewController: UIViewController {
 
-    
-    
-    @IBAction func clickViewWinnersButton(_ sender: UIButton) {
-        //TODO: ???
-    }
     @IBAction func clickDownloadKeyChallengeProgramButton(_ sender: UIButton) {
         UIApplication.shared.open(URL(string: "https://www.keyscience.org/wp-content/uploads/2017/02/kc-2017-brochure-FINAL-WEB.pdf")!, options: [:], completionHandler: nil)
     }

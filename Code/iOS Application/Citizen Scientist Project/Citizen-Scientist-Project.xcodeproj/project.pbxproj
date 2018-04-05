@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2207B7852075C46300A4DE90 /* PreviousWinners.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2207B7842075C46300A4DE90 /* PreviousWinners.storyboard */; };
+		2207B7872075C4AE00A4DE90 /* PreviousWinnersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2207B7862075C4AE00A4DE90 /* PreviousWinnersViewController.swift */; };
 		2235A2C02063B1EE00DEDC9E /* CollapsibleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2235A2BF2063B1EE00DEDC9E /* CollapsibleTableViewController.swift */; };
 		2235A2C32063B26A00DEDC9E /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2235A2C22063B26A00DEDC9E /* Extensions.swift */; };
 		2235A2C52063B2F400DEDC9E /* CollapsibleTableViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2235A2C42063B2F400DEDC9E /* CollapsibleTableViewHeader.swift */; };
@@ -105,6 +107,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2207B7842075C46300A4DE90 /* PreviousWinners.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PreviousWinners.storyboard; sourceTree = "<group>"; };
+		2207B7862075C4AE00A4DE90 /* PreviousWinnersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviousWinnersViewController.swift; sourceTree = "<group>"; };
 		2235A2BF2063B1EE00DEDC9E /* CollapsibleTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollapsibleTableViewController.swift; sourceTree = "<group>"; };
 		2235A2C22063B26A00DEDC9E /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		2235A2C42063B2F400DEDC9E /* CollapsibleTableViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollapsibleTableViewHeader.swift; sourceTree = "<group>"; };
@@ -216,6 +220,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2207B7802075C41800A4DE90 /* PreviousWinners */ = {
+			isa = PBXGroup;
+			children = (
+				2207B7842075C46300A4DE90 /* PreviousWinners.storyboard */,
+				2207B7832075C44400A4DE90 /* Model */,
+				2207B7822075C43E00A4DE90 /* View */,
+				2207B7812075C43000A4DE90 /* Controller */,
+			);
+			path = PreviousWinners;
+			sourceTree = "<group>";
+		};
+		2207B7812075C43000A4DE90 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2207B7862075C4AE00A4DE90 /* PreviousWinnersViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2207B7822075C43E00A4DE90 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2207B7832075C44400A4DE90 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		2235A2C12063B23600DEDC9E /* Helper */ = {
 			isa = PBXGroup;
 			children = (
@@ -707,6 +744,7 @@
 				22992241203E551F006CE1AB /* ReefRestoration */,
 				2299222F203E53E2006CE1AB /* KeyChallenge */,
 				22E377B4206CE22F00D277F2 /* MiniChallenge */,
+				2207B7802075C41800A4DE90 /* PreviousWinners */,
 				22992240203E5518006CE1AB /* Record */,
 				2299223F203E5510006CE1AB /* Profile */,
 				2299223E203E5505006CE1AB /* OurPartners */,
@@ -926,6 +964,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2238FCC12073143900BCAE3F /* FieldActivities.storyboard in Resources */,
+				2207B7852075C46300A4DE90 /* PreviousWinners.storyboard in Resources */,
 				229E61502022A79200D4BDDA /* LaunchScreen.storyboard in Resources */,
 				2238FCC32073147200BCAE3F /* LectureSeries.storyboard in Resources */,
 				2238FCB4207312AA00BCAE3F /* NewsLetter.storyboard in Resources */,
@@ -1013,6 +1052,7 @@
 				6D021C10203E2E72003E35D5 /* FieldActivityViewController.swift in Sources */,
 				229E614B2022A79200D4BDDA /* Citizen_Scientist_Project.xcdatamodeld in Sources */,
 				2238FC932073024B00BCAE3F /* ReusableHeader.swift in Sources */,
+				2207B7872075C4AE00A4DE90 /* PreviousWinnersViewController.swift in Sources */,
 				6D37E60A203C897100FF4BBA /* NewsViewController.swift in Sources */,
 				22395D01204E432600177243 /* NavigationPages.swift in Sources */,
 				6D021C08203E2E2F003E35D5 /* SeaLevelRiseViewController.swift in Sources */,

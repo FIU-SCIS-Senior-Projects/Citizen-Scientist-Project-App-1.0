@@ -20,32 +20,32 @@ class MiniChallengeViewController: UIViewController, SKStoreProductViewControlle
     
     @IBAction func clickDownloadiNaturalistAppButton(_ sender: UIButton) {
         
-        // App Store URL.
-        let appStoreLink = "https://itunes.apple.com/us/app/inaturalist/id421397028?mt=8"
-        
-        /* First create a URL, then check whether there is an installed app that can
-         open it on the device. */
-        if let url = URL(string: appStoreLink), UIApplication.shared.canOpenURL(url) {
-            // Attempt to open the URL.
-            UIApplication.shared.open(url, options: [:], completionHandler: {(success: Bool) in
-                if success {
-                    print("Launching \(url) was successful")
-                }})
-        }
-        
-//        // Create a product dictionary using the App Store's iTunes identifer.
-//        let parametersDict = [SKStoreProductParameterITunesItemIdentifier: 421397028]
+//        // App Store URL.
+//        let appStoreLink = "https://itunes.apple.com/us/app/inaturalist/id421397028?mt=8"
 //
-//        /* Attempt to load it, present the store product view controller if success
-//         and print an error message, otherwise. */
-//        storeProductViewController.loadProduct(withParameters: parametersDict, completionBlock: { (status: Bool, error: Error?) -> Void in
-//            if status {
-//                self.present(self.storeProductViewController, animated: true, completion: nil)
-//            }
-//            else {
-//                if let error = error {
-//                    print("Error: \(error.localizedDescription)")
-//                }}})
+//        /* First create a URL, then check whether there is an installed app that can
+//         open it on the device. */
+//        if let url = URL(string: appStoreLink), UIApplication.shared.canOpenURL(url) {
+//            // Attempt to open the URL.
+//            UIApplication.shared.open(url, options: [:], completionHandler: {(success: Bool) in
+//                if success {
+//                    print("Launching \(url) was successful")
+//                }})
+//        }
+        
+        // Create a product dictionary using the App Store's iTunes identifer.
+        let parametersDict = [SKStoreProductParameterITunesItemIdentifier: 421397028]
+
+        /* Attempt to load it, present the store product view controller if success
+         and print an error message, otherwise. */
+        storeProductViewController.loadProduct(withParameters: parametersDict, completionBlock: { (status: Bool, error: Error?) -> Void in
+            if status {
+                self.present(self.storeProductViewController, animated: true, completion: nil)
+            }
+            else {
+                if let error = error {
+                    print("Error: \(error.localizedDescription)")
+                }}})
     }
     @IBAction func clickMakeAnObservationButton(_ sender: UIButton) {
         UIApplication.shared.open(URL(string: "https://www.inaturalist.org/projects/2017-18-mini-challenge-2")!, options: [:], completionHandler: nil)
