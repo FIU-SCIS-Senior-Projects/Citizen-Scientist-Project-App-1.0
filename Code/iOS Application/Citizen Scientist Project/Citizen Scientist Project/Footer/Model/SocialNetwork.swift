@@ -14,12 +14,7 @@ struct SocialNetworkUrl {
     let page: String
     
     func openPage() {
-        let schemeUrl = NSURL(string: scheme)!
-        if UIApplication.shared.canOpenURL(schemeUrl as URL) {
-            UIApplication.shared.open(schemeUrl as URL, options: [:], completionHandler: nil)
-        } else {
-            UIApplication.shared.open(NSURL(string: page)! as URL, options: [:], completionHandler: nil)
-        }
+        ExternalAppManager.openPage(scheme: self.scheme, page: self.page)
     }
 }
 

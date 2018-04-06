@@ -10,62 +10,43 @@ import UIKit
 
 class SeaLevelRiseViewController: UIViewController {
 
-    let segueId = "segueToWebView"
-    let PDF = "pdf"
+    let seaLevelRiseContent = SeaLevelRiseContentManager.fetchContent()
+    
+    @IBOutlet var seaLevelRiseView: SeaLevelRiseView!
+    
+    var delegate: WebViewControllerDelegate?
     
     @IBAction func surveyResultsButtonPressed(_ sender: UIButton) {
-        displayFileResource(fileName: "Survey-Results-2-6-2017", fileExtension: PDF)
+        
+        // Check if file resource exists. If it exists display it within the the app using a webview, else launch default web browser and go to link provided by the SeaLevelRiseContentManager
+        
+        if let surveyResource = seaLevelRiseContent.surveyResource, let _ = Bundle.main.path(forResource: surveyResource.resource, ofType: surveyResource.fileType.rawValue) {
+            performSegue(withIdentifier: WebViewController.segueId, sender: self)
+        }
+        else if let surveyLink = seaLevelRiseContent.surveyLink {
+            ExternalAppManager.openPage(page: surveyLink.url.absoluteString)
+        }
     }
     
     // Prezi Presentation
     @IBAction func preziPresentationButtonPressed(_ sender: UIButton) {
-        let page = "https://prezi.com/embed/cj5dj1zp9ujg/?bgcolor=ffffff&lock_to_path=0&autoplay=0&autohide_ctrls=0&landing_data=bHVZZmNaNDBIWnNjdEVENDRhZDFNZGNIUE43MHdLNWpsdFJLb2ZHanI5aEFub3ZObExNbWNaSVR1b1JYZGJMTVFBPT0&landing_sign=-Wwf32H6Hg-0vgwKlb7IbvFkJefHCjRWxICXzd2tyI0"
-        openPage(scheme: "", page: page)
+        let page = seaLevelRiseContent.preziImage.link.url.absoluteString
+        ExternalAppManager.openPage(page: page)
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         ReusableHeader.setUpNavBar(navigationController: self.navigationController, navigationItem: self.navigationItem)
+        seaLevelRiseView.setup(content: seaLevelRiseContent)
     }
     
-    func displayFileResource(fileName: String, fileExtension: String)
-    {
-        resourceName = fileName
-        resourceExtension = fileExtension
-        
-        performSegue(withIdentifier: segueId, sender: self)
-    }
-    
-    
-    // Footer Section
-    @IBAction func openFacebook(_ sender: UIButton) {
-        SocialNetwork.Facebook.openPage()
-    }
-    
-    @IBAction func openTwitter(_ sender: UIButton) {
-        SocialNetwork.Twitter.openPage()
-    }
-    
-    @IBAction func openGooglePlus(_ sender: UIButton) {
-        SocialNetwork.GooglePlus.openPage()
-    }
-    
-    @IBAction func openYoutube(_ sender: UIButton) {
-        SocialNetwork.YouTube.openPage()
-    }
-    
-    @IBAction func openInstagram(_ sender: UIButton) {
-        SocialNetwork.Instagram.openPage()
-    }
-    
-    // TODO: This function should be reused instead
-    func openPage(scheme: String, page: String) {
-        let schemeUrl = NSURL(string: scheme)!
-        if UIApplication.shared.canOpenURL(schemeUrl as URL) {
-            UIApplication.shared.open(schemeUrl as URL, options: [:], completionHandler: nil)
-        } else {
-            UIApplication.shared.open(NSURL(string: page)! as URL, options: [:], completionHandler: nil)
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == WebViewController.segueId{
+            if let webViewController = segue.destination as? WebViewController{
+                delegate = webViewController
+                delegate?.loadResource(resource: (seaLevelRiseContent.surveyResource?.resource)!, type: (seaLevelRiseContent.surveyResource?.fileType.rawValue)!)
+            }
         }
     }
+    
 }

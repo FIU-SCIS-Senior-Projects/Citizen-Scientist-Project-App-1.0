@@ -10,15 +10,13 @@ import UIKit
 
 class TableViewController: UITableViewController {
     
-    
-    let segueId = "segueToWebView"
     let PDF = "pdf"
     let PPTX = "pptx"
     
-    //displayFileResource(fileName: "", fileExtension: PDF)
-    //openPage(scheme: "", page: "")
+    var resource: String?
+    var ext: String?
     
-    
+    var delegate: WebViewControllerDelegate?
     
     // 1st Townhall Community Forum
     @IBAction func firstAgendaButtonPressed(_ sender: UIButton) {
@@ -31,14 +29,14 @@ class TableViewController: UITableViewController {
         displayFileResource(fileName: "Vulnerability_assessment_11-11-2016", fileExtension: PDF)
     }
     @IBAction func firstYoutubePart1ButtonPressed(_ sender: UIButton) {
-        openPage(scheme: "youtube://9JcaAzFVneM", page: "https://www.youtube.com/watch?v=9JcaAzFVneM")
+        ExternalAppManager.openPage(scheme: "youtube://9JcaAzFVneM", page: "https://www.youtube.com/watch?v=9JcaAzFVneM")
     }
     @IBAction func firstYoutubePart2ButtonPressed(_ sender: UIButton) {
         
-        openPage(scheme: "youtube://BLKoeOMG7bA", page: "https://www.youtube.com/watch?v=BLKoeOMG7bA")
+        ExternalAppManager.openPage(scheme: "youtube://BLKoeOMG7bA", page: "https://www.youtube.com/watch?v=BLKoeOMG7bA")
     }
     @IBAction func firstYoutubePart3ButtonPressed(_ sender: UIButton) {
-        openPage(scheme: "youtube://HA7JKK1RKh4", page: "https://www.youtube.com/watch?v=HA7JKK1RKh4")
+        ExternalAppManager.openPage(scheme: "youtube://HA7JKK1RKh4", page: "https://www.youtube.com/watch?v=HA7JKK1RKh4")
     }
     
     // 2nd Townhall Community Forum
@@ -64,7 +62,7 @@ class TableViewController: UITableViewController {
         displayFileResource(fileName: "VKB-Adaptation-Strategies-v2", fileExtension: PDF)
     }
     @IBAction func secondYoutubeVideoButtonPressed(_ sender: UIButton) {
-        openPage(scheme: "youtube://-n83qzHdHUA", page: "https://www.youtube.com/watch?v=-n83qzHdHUA")
+        ExternalAppManager.openPage(scheme: "youtube://-n83qzHdHUA", page: "https://www.youtube.com/watch?v=-n83qzHdHUA")
     }
     @IBAction func secondFurtherInfoButtonPressed(_ sender: UIButton) {
         displayFileResource(fileName: "MDPL_17Feb2016", fileExtension: PDF)
@@ -107,18 +105,18 @@ class TableViewController: UITableViewController {
     
     func displayFileResource(fileName: String, fileExtension: String)
     {
-        resourceName = fileName
-        resourceExtension = fileExtension
+        self.resource = fileName
+        self.ext = fileExtension
         
-        performSegue(withIdentifier: segueId, sender: self)
+        performSegue(withIdentifier: WebViewController.segueId, sender: self)
     }
     
-    func openPage(scheme: String, page: String) {
-        let schemeUrl = NSURL(string: scheme)!
-        if UIApplication.shared.canOpenURL(schemeUrl as URL) {
-            UIApplication.shared.open(schemeUrl as URL, options: [:], completionHandler: nil)
-        } else {
-            UIApplication.shared.open(NSURL(string: page)! as URL, options: [:], completionHandler: nil)
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == WebViewController.segueId{
+            if let webViewController = segue.destination as? WebViewController{
+                delegate = webViewController
+                delegate?.loadResource(resource: self.resource!, type: self.ext!)
+            }
         }
     }
     

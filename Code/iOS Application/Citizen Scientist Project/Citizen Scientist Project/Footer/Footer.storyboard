@@ -27,16 +27,16 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="125"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="PXC-y3-bhn">
-                                        <rect key="frame" x="77.5" y="34.5" width="220" height="55.5"/>
+                                        <rect key="frame" x="8" y="35" width="359" height="55.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="center" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="biH-G7-XJc">
-                                                <rect key="frame" x="0.0" y="0.0" width="220" height="20.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="359" height="20.5"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
                                                 <color key="textColor" red="0.37254901959999998" green="0.67450980390000004" blue="0.87450980389999999" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <stackView opaque="NO" contentMode="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="Mmu-Cr-oQm">
-                                                <rect key="frame" x="0.0" y="35.5" width="220" height="20"/>
+                                                <rect key="frame" x="69.5" y="35.5" width="220" height="20"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ie4-ka-QHv">
                                                         <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
@@ -92,7 +92,8 @@
                                     </stackView>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="PXC-y3-bhn" firstAttribute="centerX" secondItem="hwM-cV-CP5" secondAttribute="centerX" id="6BL-eg-AJf"/>
+                                    <constraint firstAttribute="trailing" secondItem="PXC-y3-bhn" secondAttribute="trailing" constant="8" id="0gm-gR-OBW"/>
+                                    <constraint firstItem="PXC-y3-bhn" firstAttribute="leading" secondItem="hwM-cV-CP5" secondAttribute="leading" constant="8" id="4pH-hI-Vu6"/>
                                     <constraint firstAttribute="height" constant="125" id="JCo-QU-YEv"/>
                                     <constraint firstItem="PXC-y3-bhn" firstAttribute="centerY" secondItem="hwM-cV-CP5" secondAttribute="centerY" id="cZi-Ll-pUk"/>
                                 </constraints>

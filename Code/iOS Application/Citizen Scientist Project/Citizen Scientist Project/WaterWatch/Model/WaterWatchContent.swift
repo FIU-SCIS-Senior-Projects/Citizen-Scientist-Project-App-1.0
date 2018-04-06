@@ -21,10 +21,3 @@ struct WaterWatchContent {
     var nutrients: Link
     var chlorophyllA: Link
 }
-
-struct Link {
-    var text: String
-    var url: URL
-}
-
-
