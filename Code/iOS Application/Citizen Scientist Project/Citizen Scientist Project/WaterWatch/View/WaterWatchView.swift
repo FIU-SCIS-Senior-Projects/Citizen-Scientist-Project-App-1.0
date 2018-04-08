@@ -8,13 +8,9 @@
 
 import UIKit
 
-//protocol WaterWatchViewDelegate: class {
-//    func setUp(content: WaterWatchContent)
-//}
-
 class WaterWatchView: UIView {
     
-    @IBOutlet weak var waterWatchimageView: UIImageView!
+    @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var headerLabel1: UILabel!
     @IBOutlet weak var biscayneBayWaterWatchLogo: UIImageView!
     @IBOutlet weak var bodyTextView1: UITextView!
@@ -28,7 +24,7 @@ class WaterWatchView: UIView {
     
     func setUp(content: WaterWatchContent)
     {
-        waterWatchimageView.image = UIImage(named: content.imageName)
+        imageView.image = UIImage(named: content.imageName)
         biscayneBayWaterWatchLogo.image = UIImage(named: content.biscayneBayLogoImageName)
         
         headerLabel1.text = content.headerLabel1
@@ -43,3 +39,4 @@ class WaterWatchView: UIView {
         
     }
 }
+

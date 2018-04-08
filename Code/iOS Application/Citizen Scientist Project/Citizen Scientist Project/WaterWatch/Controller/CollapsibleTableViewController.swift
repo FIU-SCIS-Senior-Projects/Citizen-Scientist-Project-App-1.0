@@ -13,7 +13,7 @@ import UIKit
 //
 class CollapsibleTableViewController: UITableViewController {
     
-    var sections = sectionsData
+    var sections = CollapsibleTableContentManager.fetchTableContent()
     
     static weak var delegate: WaterWatchContainerViewDelegate?
     
@@ -25,23 +25,12 @@ class CollapsibleTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Disable tableview scrolling
-        //tableView.isScrollEnabled = false
-        
         // Auto resizing the height of the cell
-        tableView.estimatedRowHeight = 44.0
+        tableView.estimatedRowHeight = UITableViewAutomaticDimension
         tableView.rowHeight = UITableViewAutomaticDimension
         tableView.sectionHeaderHeight = UITableViewAutomaticDimension
         tableView.sectionFooterHeight = UITableViewAutomaticDimension
         
-        tableView.backgroundColor = UIColor.blue
-        
-//        // Hide additional empty rows in tableView
-//        tableView.tableFooterView = UIView()
-        
-//        self.size
-        
-        //self.title = "Apple Products"
     }
     
 }
@@ -49,44 +38,44 @@ class CollapsibleTableViewController: UITableViewController {
 //
 // MARK: - View Controller DataSource and Delegate
 //
+
 extension CollapsibleTableViewController {
     
     override func numberOfSections(in tableView: UITableView) -> Int {
         return sections.count
     }
     
+    // Display all rows for a section that is expanded. If section is collapsed return 0 rows to display for that section
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return sections[section].collapsed ? 0 : sections[section].items.count
+        let collapsed = sections[section].collapsed
+        return collapsed ? 0 : sections[section].items.count
     }
     
-    // Cell
+    // Table Row Cell
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell: CollapsibleTableViewCell = tableView.dequeueReusableCell(withIdentifier: "cell") as? CollapsibleTableViewCell ??
-            CollapsibleTableViewCell(style: .default, reuseIdentifier: "cell")
         
-        let item = sections[indexPath.section].items[indexPath.row]
+        let cell: WaterWatchTableViewCell = tableView.dequeueReusableCell(withIdentifier: "WaterWatchTableViewCell") as! WaterWatchTableViewCell
         
-        cell.chartTitle.text = item.title
-        cell.chartImageView.image = UIImage(named: item.chartImage)
-        cell.legendImageView.image = UIImage(named: item.legendImage)
+        let waterWatchChartContent = sections[indexPath.section].items[indexPath.row]
+        cell.setUp(content: waterWatchChartContent)
         
         return cell
     }
     
+    // Table Row Height
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return UITableViewAutomaticDimension
     }
     
-    // Header
+    
+    // Table Header
     override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        let header = tableView.dequeueReusableHeaderFooterView(withIdentifier: "header") as? CollapsibleTableViewHeader ?? CollapsibleTableViewHeader(reuseIdentifier: "header")
         
-        header.titleLabel.text = sections[section].header
-        header.arrowLabel.text = ">"
-        header.setCollapsed(sections[section].collapsed)
-        
-        header.section = section
+        let header = tableView.dequeueReusableCell(withIdentifier: "WaterWatchTableViewHeaderCell") as! WaterWatchTableViewHeaderCell
         header.delegate = self
+        
+        let waterWatchSection = sections[section]
+        header.setUp(content: waterWatchSection, section: section)
         
         return header
     }
@@ -99,6 +88,12 @@ extension CollapsibleTableViewController {
         return 1.0
     }
     
+    
+    // Signal the WaterWatchViewController container's height constraint to update its size to wrap tableview
+    override func viewDidLayoutSubviews() {
+        CollapsibleTableViewController.delegate?.setContainerHeight(height: tableViewHeight)
+    }
+    
 }
 
 //
@@ -106,33 +101,18 @@ extension CollapsibleTableViewController {
 //
 extension CollapsibleTableViewController: CollapsibleTableViewHeaderDelegate {
     
-    func toggleSection(_ header: CollapsibleTableViewHeader, section: Int) {
+    func toggleSection(_ header: WaterWatchTableViewHeaderCell, section: Int) {
         let collapsed = !sections[section].collapsed
         
         // Toggle collapse
         sections[section].collapsed = collapsed
-        header.setCollapsed(collapsed)
+        header.updateArrowDirection(collapsed)
         
-//        tableView.rowHeight = UITableViewAutomaticDimension
-//        tableView.sectionHeaderHeight = UITableViewAutomaticDimension
-        
-//        var height = tableViewHeight
-//        CollapsibleTableViewController.delegate?.setContainerHeight(height: 5000)
-        
-        //
         tableView.reloadSections(NSIndexSet(index: section) as IndexSet, with: .automatic)
+        tableView.reloadData()
         
-        
-//        tableView.rowHeight = UITableViewAutomaticDimension
-//        tableView.sectionHeaderHeight = UITableViewAutomaticDimension
-        
-        // change container height after reloading the sections
-        //DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(1), execute: {
-            // Put your code which should be executed with a delay here
-            let height = self.tableViewHeight
-            CollapsibleTableViewController.delegate?.setContainerHeight(height: height)
-        //})
         
     }
     
 }
+

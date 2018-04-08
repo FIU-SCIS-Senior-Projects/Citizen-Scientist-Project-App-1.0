@@ -20,4 +20,5 @@ struct WaterWatchContent {
     var dissolvedOxygen: Link
     var nutrients: Link
     var chlorophyllA: Link
+    
 }

@@ -1,79 +1,49 @@
 //
-//  CollapsibleTableViewHeader.swift
+//  WaterWatchTableViewHeaderCell.swift
 //  Citizen-Scientist-Project
 //
-//  Created by David Gonzalez on 3/22/18.
+//  Created by David Gonzalez on 3/26/18.
 //  Copyright © 2018 Key Biscayne. All rights reserved.
 //
 
 import UIKit
 
 protocol CollapsibleTableViewHeaderDelegate {
-    func toggleSection(_ header: CollapsibleTableViewHeader, section: Int)
+    func toggleSection(_ header: WaterWatchTableViewHeaderCell, section: Int)
 }
 
-class CollapsibleTableViewHeader: UITableViewHeaderFooterView {
+class WaterWatchTableViewHeaderCell: UITableViewCell {
+    
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var arrowImageView: UIImageView!
     
     var delegate: CollapsibleTableViewHeaderDelegate?
-    var section: Int = 0
+    var section: Int?
     
-    let titleLabel = UILabel()
-    let arrowLabel = UILabel()
-    
-    override init(reuseIdentifier: String?) {
-        super.init(reuseIdentifier: reuseIdentifier)
-        
-        // Content View
-        contentView.backgroundColor = UIColor(hex: 0xDFE7EA)
-        
-        let marginGuide = contentView.layoutMarginsGuide
-        
-        // Arrow label
-        contentView.addSubview(arrowLabel)
-        arrowLabel.textColor = UIColor(hex: 0xEF453E)
-        arrowLabel.translatesAutoresizingMaskIntoConstraints = false
-        arrowLabel.widthAnchor.constraint(equalToConstant: 12).isActive = true
-        arrowLabel.topAnchor.constraint(equalTo: marginGuide.topAnchor).isActive = true
-        arrowLabel.trailingAnchor.constraint(equalTo: marginGuide.trailingAnchor).isActive = true
-        arrowLabel.bottomAnchor.constraint(equalTo: marginGuide.bottomAnchor).isActive = true
-        
-        // Title label
-        contentView.addSubview(titleLabel)
-        titleLabel.textColor = UIColor(hex: 0x3D394F)
-        titleLabel.translatesAutoresizingMaskIntoConstraints = false
-        titleLabel.topAnchor.constraint(equalTo: marginGuide.topAnchor).isActive = true
-        titleLabel.trailingAnchor.constraint(equalTo: marginGuide.trailingAnchor).isActive = true
-        titleLabel.bottomAnchor.constraint(equalTo: marginGuide.bottomAnchor).isActive = true
-        titleLabel.leadingAnchor.constraint(equalTo: marginGuide.leadingAnchor).isActive = true
-        titleLabel.font = UIFont(name: "HelveticaNeue", size: 18)
-        
-        //
-        // Call tapHeader when tapping on this header
-        //
-        addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(CollapsibleTableViewHeader.tapHeader(_:))))
+    override func awakeFromNib() {
+        addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(tapHeader(_:))))
+        super.awakeFromNib()
     }
     
-    required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+    func setUp(content: WaterWatchSection, section: Int){
+        titleLabel.text = content.header
+        self.section = section
+        updateArrowDirection(content.collapsed)
     }
     
-    //
-    // Trigger toggle section when tapping on the header
-    //
+    func updateArrowDirection(_ collapsed: Bool) {
+        self.arrowImageView.image = UIImage(named: collapsed ? "down-arrow" : "up-arrow")
+    }
+    
+    
+    //MARK: - Trigger toggle section when tapping on the header
+    
     @objc func tapHeader(_ gestureRecognizer: UITapGestureRecognizer) {
-        guard let cell = gestureRecognizer.view as? CollapsibleTableViewHeader else {
+        guard let cell = gestureRecognizer.view as? WaterWatchTableViewHeaderCell else {
             return
         }
         
-        delegate?.toggleSection(self, section: cell.section)
-    }
-    
-    func setCollapsed(_ collapsed: Bool) {
-        //
-        // Animate the arrow rotation (see Extensions.swf)
-        //
-        arrowLabel.rotate(collapsed ? .pi / 2 : .pi * 3 / 2)
+        delegate?.toggleSection(self, section: cell.section!)
     }
     
 }
-

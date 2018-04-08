@@ -13,11 +13,29 @@ protocol WaterWatchContainerViewDelegate: class {
 }
 
 //TODO: create an extension with implementation
-class WaterWatchViewController: UIViewController, WaterWatchContainerViewDelegate {
+class WaterWatchViewController: UIViewController {
+    
+    @IBOutlet weak var waterWatchView: WaterWatchView!
+    
+    @IBOutlet public weak var heightConstraint: NSLayoutConstraint!
+    
+    @IBOutlet weak var collapsibleTableView: UIView!
     
     let waterWatchContent = WaterWatchContentManager.fetchContentData()
     
-    @IBOutlet weak var waterWatchView: WaterWatchView!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        CollapsibleTableViewController.delegate = self
+        
+        if let collapsibleTableViewController = self.childViewControllers.first as? CollapsibleTableViewController {
+            setContainerHeight(height: collapsibleTableViewController.tableViewHeight)
+        }
+        
+        ReusableHeader.setUpNavBar(navigationController: self.navigationController, navigationItem: self.navigationItem)
+        waterWatchView.setUp(content: waterWatchContent)
+    }
     
     @IBAction func clickLearnMoreButton(_ sender: UIButton) {
         UIApplication.shared.open(waterWatchContent.learnMore.url, options: [:], completionHandler: nil)
@@ -32,45 +50,14 @@ class WaterWatchViewController: UIViewController, WaterWatchContainerViewDelegat
         UIApplication.shared.open(waterWatchContent.chlorophyllA.url, options: [:], completionHandler: nil)
     }
     
-    
-    @IBOutlet public weak var collapsibleTableViewContainerHeight: NSLayoutConstraint!
-    
-    //TODO: create an extension with implementation
+}
+
+// MARK: - WaterWatchContainerViewDelegate
+
+extension WaterWatchViewController: WaterWatchContainerViewDelegate {
     // Set Container View height constraint to resize depending on its internal table collapsible state
     func setContainerHeight(height: CGFloat) {
-        collapsibleTableViewContainerHeight.constant = height
+        heightConstraint?.constant = height
     }
-
-    
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        if let collapsibleTableViewController = self.childViewControllers.first as? CollapsibleTableViewController {
-            setContainerHeight(height: collapsibleTableViewController.tableViewHeight)
-        }
-        
-        CollapsibleTableViewController.delegate = self
-
-        
-//        let storyboard = UIStoryboard(name: "ChecklistDetail", bundle: nil)
-//        let aVC = storyboard.instantiateViewController(withIdentifier: "ChecklistDetailViewController") as? ChecklistDetailViewController
-        ReusableHeader.setUpNavBar(navigationController: self.navigationController, navigationItem: self.navigationItem)
-        
-        waterWatchView.setUp(content: waterWatchContent)
-        
-        
-        
-        // Reference to WaterWatchView class
-        //let waterWatchView = Bundle.main.loadNibNamed("WaterWatchView", owner: self, options: nil)![0] as? WaterWatchView
-       
-        // Pass data model to be loaded in WaterWatchView
-//        waterWatchView?.setUp(content: waterWatchContent)
-        
-        
-        //let vc = storyboard?.instantiateViewControllerWithIdentifier("test") as! UIViewController
-        //self
-        //container.addSubview(vc.view)
-    }
-
 }
+

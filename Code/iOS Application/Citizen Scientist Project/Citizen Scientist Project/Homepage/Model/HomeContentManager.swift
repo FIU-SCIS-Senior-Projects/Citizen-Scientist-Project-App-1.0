@@ -13,7 +13,7 @@ import UIKit
 extension Array where Iterator.Element == HomepageCell {
     func nextAvailableCell(fromIndex: Int) -> HomepageCell{
         
-        let cpsLabIndex = ContentManager.getPageId(page: .CSPLab)
+        let cpsLabIndex = HomeContentManager.getPageId(page: .CSPLab)
         let cspLabChildren = self[cpsLabIndex].expandableProperty?.childrenCount
         let cspLabExpandedProperty = self[cpsLabIndex].expandableProperty?.isExpanded
         
@@ -41,7 +41,7 @@ extension Array where Iterator.Element == HomepageCell {
     }
     
     func getCellId(page: Page) -> Int {
-        let index = ContentManager.getPageId(page: page)
+        let index = HomeContentManager.getPageId(page: page)
         return self[index].id
     }
     
@@ -58,7 +58,7 @@ extension Array where Iterator.Element == HomepageCell {
 
 
 
-class ContentManager{
+class HomeContentManager {
     
     static let headerLabelFontSizeSuperCell: CGFloat = 14
     static let subHeaderLabelFontSizeSuperCell: CGFloat = 22
@@ -122,7 +122,7 @@ class ContentManager{
     
     private class func getContentData() -> [HomepageCell]
     {
-        let numbOfCells = ContentManager.getNumberOfCells()
+        let numbOfCells = HomeContentManager.getNumberOfCells()
         var contentData = [HomepageCell?](repeating: nil, count: numbOfCells)
         
         let pages = Array(HomepageContent.keys)

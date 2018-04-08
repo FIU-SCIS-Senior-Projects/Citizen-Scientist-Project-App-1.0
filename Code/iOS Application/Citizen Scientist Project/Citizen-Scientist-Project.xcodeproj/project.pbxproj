@@ -33,6 +33,7 @@
 		222BB5B12077A5620070354B /* VKB-Adaptation-Strategies-v2.ppt in Resources */ = {isa = PBXBuildFile; fileRef = 222BB5A12077A5610070354B /* VKB-Adaptation-Strategies-v2.ppt */; };
 		222BB5B22077A5620070354B /* Agenda-for-SLR-Townhall-11-10-2016.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 222BB5A22077A5610070354B /* Agenda-for-SLR-Townhall-11-10-2016.pdf */; };
 		222BB5B32077A5620070354B /* Survey-Results-2-6-2017.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 222BB5A32077A5620070354B /* Survey-Results-2-6-2017.pdf */; };
+		222BB5B5207A984D0070354B /* CollapsibleTableContentManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222BB5B4207A984D0070354B /* CollapsibleTableContentManager.swift */; };
 		2235A2C02063B1EE00DEDC9E /* CollapsibleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2235A2BF2063B1EE00DEDC9E /* CollapsibleTableViewController.swift */; };
 		2235A2C32063B26A00DEDC9E /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2235A2C22063B26A00DEDC9E /* Extensions.swift */; };
 		2235A2C52063B2F400DEDC9E /* CollapsibleTableViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2235A2C42063B2F400DEDC9E /* CollapsibleTableViewHeader.swift */; };
@@ -66,8 +67,8 @@
 		22395D072052830600177243 /* WaterWatchContentManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22395D062052830600177243 /* WaterWatchContentManager.swift */; };
 		22395D0B20528DE800177243 /* WaterWatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22395D0A20528DE800177243 /* WaterWatchView.swift */; };
 		22594972202D969F0047E055 /* SectionFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22594971202D969F0047E055 /* SectionFooterView.swift */; };
-		22594976202DA6EC0047E055 /* CollectionViewCellContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22594975202DA6EC0047E055 /* CollectionViewCellContent.swift */; };
-		22594978202DAA0C0047E055 /* CollectionViewContentManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22594977202DAA0C0047E055 /* CollectionViewContentManager.swift */; };
+		22594976202DA6EC0047E055 /* HomeCellContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22594975202DA6EC0047E055 /* HomeCellContent.swift */; };
+		22594978202DAA0C0047E055 /* HomeContentManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22594977202DAA0C0047E055 /* HomeContentManager.swift */; };
 		2259497B202DCCEC0047E055 /* Footer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2259497A202DCCEC0047E055 /* Footer.swift */; };
 		22891A3D202DEBE7000FEBB4 /* SocialNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22891A3C202DEBE7000FEBB4 /* SocialNetwork.swift */; };
 		228FA9A02047788B003610B3 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228FA99F2047788B003610B3 /* WebViewController.swift */; };
@@ -75,7 +76,7 @@
 		22992258203E5814006CE1AB /* NavigationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22992257203E5814006CE1AB /* NavigationTableViewController.swift */; };
 		2299225A203E58FA006CE1AB /* segueToTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22992259203E58FA006CE1AB /* segueToTable.swift */; };
 		229E61432022A79200D4BDDA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229E61422022A79200D4BDDA /* AppDelegate.swift */; };
-		229E61452022A79200D4BDDA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229E61442022A79200D4BDDA /* ViewController.swift */; };
+		229E61452022A79200D4BDDA /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229E61442022A79200D4BDDA /* HomeViewController.swift */; };
 		229E614B2022A79200D4BDDA /* Citizen_Scientist_Project.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 229E61492022A79200D4BDDA /* Citizen_Scientist_Project.xcdatamodeld */; };
 		229E614D2022A79200D4BDDA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 229E614C2022A79200D4BDDA /* Assets.xcassets */; };
 		229E61502022A79200D4BDDA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 229E614E2022A79200D4BDDA /* LaunchScreen.storyboard */; };
@@ -89,7 +90,7 @@
 		22E377BB206E22AA00D277F2 /* iNaturalistDownloadStepViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E377BA206E22AA00D277F2 /* iNaturalistDownloadStepViewController.swift */; };
 		22E377BD206E23DB00D277F2 /* iNaturalistDownloadStepsPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E377BC206E23DB00D277F2 /* iNaturalistDownloadStepsPageViewController.swift */; };
 		22E377BF206E24FB00D277F2 /* Storyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E377BE206E24FB00D277F2 /* Storyboard.swift */; };
-		22F78C8F202D0F900001049D /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F78C8E202D0F900001049D /* CollectionViewCell.swift */; };
+		22F78C8F202D0F900001049D /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F78C8E202D0F900001049D /* HomeCollectionViewCell.swift */; };
 		6D021BFE203E2A0C003E35D5 /* LearnViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D021BFD203E2A0C003E35D5 /* LearnViewController.swift */; };
 		6D021C00203E2A36003E35D5 /* ExploreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D021BFF203E2A36003E35D5 /* ExploreViewController.swift */; };
 		6D021C02203E2A47003E35D5 /* RecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D021C01203E2A47003E35D5 /* RecordViewController.swift */; };
@@ -157,6 +158,7 @@
 		222BB5A12077A5610070354B /* VKB-Adaptation-Strategies-v2.ppt */ = {isa = PBXFileReference; lastKnownFileType = file; name = "VKB-Adaptation-Strategies-v2.ppt"; path = "../../../../../../../../../Desktop/FileResources/Sea-Level-Rise/Resources/VKB-Adaptation-Strategies-v2.ppt"; sourceTree = "<group>"; };
 		222BB5A22077A5610070354B /* Agenda-for-SLR-Townhall-11-10-2016.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "Agenda-for-SLR-Townhall-11-10-2016.pdf"; path = "../../../../../../../../../Desktop/FileResources/Sea-Level-Rise/Resources/Agenda-for-SLR-Townhall-11-10-2016.pdf"; sourceTree = "<group>"; };
 		222BB5A32077A5620070354B /* Survey-Results-2-6-2017.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "Survey-Results-2-6-2017.pdf"; path = "../../../../../../../../../Desktop/FileResources/Sea-Level-Rise/Resources/Survey-Results-2-6-2017.pdf"; sourceTree = "<group>"; };
+		222BB5B4207A984D0070354B /* CollapsibleTableContentManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollapsibleTableContentManager.swift; sourceTree = "<group>"; };
 		2235A2BF2063B1EE00DEDC9E /* CollapsibleTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollapsibleTableViewController.swift; sourceTree = "<group>"; };
 		2235A2C22063B26A00DEDC9E /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		2235A2C42063B2F400DEDC9E /* CollapsibleTableViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollapsibleTableViewHeader.swift; sourceTree = "<group>"; };
@@ -190,8 +192,8 @@
 		22395D062052830600177243 /* WaterWatchContentManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterWatchContentManager.swift; sourceTree = "<group>"; };
 		22395D0A20528DE800177243 /* WaterWatchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterWatchView.swift; sourceTree = "<group>"; };
 		22594971202D969F0047E055 /* SectionFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionFooterView.swift; sourceTree = "<group>"; };
-		22594975202DA6EC0047E055 /* CollectionViewCellContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCellContent.swift; sourceTree = "<group>"; };
-		22594977202DAA0C0047E055 /* CollectionViewContentManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewContentManager.swift; sourceTree = "<group>"; };
+		22594975202DA6EC0047E055 /* HomeCellContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCellContent.swift; sourceTree = "<group>"; };
+		22594977202DAA0C0047E055 /* HomeContentManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeContentManager.swift; sourceTree = "<group>"; };
 		2259497A202DCCEC0047E055 /* Footer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Footer.swift; sourceTree = "<group>"; };
 		22891A3C202DEBE7000FEBB4 /* SocialNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialNetwork.swift; sourceTree = "<group>"; };
 		228FA99F2047788B003610B3 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
@@ -200,7 +202,7 @@
 		22992259203E58FA006CE1AB /* segueToTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = segueToTable.swift; sourceTree = "<group>"; };
 		229E613F2022A79200D4BDDA /* Citizen-Scientist-Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Citizen-Scientist-Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		229E61422022A79200D4BDDA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		229E61442022A79200D4BDDA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		229E61442022A79200D4BDDA /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		229E614A2022A79200D4BDDA /* Citizen_Scientist_Project.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Citizen_Scientist_Project.xcdatamodel; sourceTree = "<group>"; };
 		229E614C2022A79200D4BDDA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		229E614F2022A79200D4BDDA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -219,7 +221,7 @@
 		22E377BA206E22AA00D277F2 /* iNaturalistDownloadStepViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iNaturalistDownloadStepViewController.swift; sourceTree = "<group>"; };
 		22E377BC206E23DB00D277F2 /* iNaturalistDownloadStepsPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iNaturalistDownloadStepsPageViewController.swift; sourceTree = "<group>"; };
 		22E377BE206E24FB00D277F2 /* Storyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboard.swift; sourceTree = "<group>"; };
-		22F78C8E202D0F900001049D /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		22F78C8E202D0F900001049D /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
 		6D021BFD203E2A0C003E35D5 /* LearnViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnViewController.swift; sourceTree = "<group>"; };
 		6D021BFF203E2A36003E35D5 /* ExploreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreViewController.swift; sourceTree = "<group>"; };
 		6D021C01203E2A47003E35D5 /* RecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordViewController.swift; sourceTree = "<group>"; };
@@ -409,6 +411,7 @@
 				22395D042052798600177243 /* WaterWatchContent.swift */,
 				22395D062052830600177243 /* WaterWatchContentManager.swift */,
 				2235A2C82063B38D00DEDC9E /* CollapsibleGraphChartTable.swift */,
+				222BB5B4207A984D0070354B /* CollapsibleTableContentManager.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -459,7 +462,7 @@
 		22992229203E5273006CE1AB /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				229E61442022A79200D4BDDA /* ViewController.swift */,
+				229E61442022A79200D4BDDA /* HomeViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -467,7 +470,7 @@
 		2299222A203E527B006CE1AB /* View */ = {
 			isa = PBXGroup;
 			children = (
-				22F78C8E202D0F900001049D /* CollectionViewCell.swift */,
+				22F78C8E202D0F900001049D /* HomeCollectionViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -475,8 +478,8 @@
 		2299222B203E5284006CE1AB /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				22594975202DA6EC0047E055 /* CollectionViewCellContent.swift */,
-				22594977202DAA0C0047E055 /* CollectionViewContentManager.swift */,
+				22594975202DA6EC0047E055 /* HomeCellContent.swift */,
+				22594977202DAA0C0047E055 /* HomeContentManager.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -1153,7 +1156,7 @@
 				22CA83BA206E593600287889 /* iNaturalistVimeoTutorialView.swift in Sources */,
 				6D021C14203E3126003E35D5 /* OurBiomesViewController.swift in Sources */,
 				222BB58C20774ED50070354B /* ExternalAppManager.swift in Sources */,
-				22594976202DA6EC0047E055 /* CollectionViewCellContent.swift in Sources */,
+				22594976202DA6EC0047E055 /* HomeCellContent.swift in Sources */,
 				2235A2C72063B33600DEDC9E /* CollapsibleTableViewCell.swift in Sources */,
 				2235A2C52063B2F400DEDC9E /* CollapsibleTableViewHeader.swift in Sources */,
 				22395D0B20528DE800177243 /* WaterWatchView.swift in Sources */,
@@ -1165,7 +1168,7 @@
 				2235A2C92063B38D00DEDC9E /* CollapsibleGraphChartTable.swift in Sources */,
 				22CA83B6206E52EC00287889 /* iNaturalistVimeoTutorialsPageViewController.swift in Sources */,
 				22E377BF206E24FB00D277F2 /* Storyboard.swift in Sources */,
-				229E61452022A79200D4BDDA /* ViewController.swift in Sources */,
+				229E61452022A79200D4BDDA /* HomeViewController.swift in Sources */,
 				6D021C16203E3133003E35D5 /* NewslettersViewController.swift in Sources */,
 				2259497B202DCCEC0047E055 /* Footer.swift in Sources */,
 				222BB58E2077521D0070354B /* InternalAppStructures.swift in Sources */,
@@ -1173,6 +1176,7 @@
 				6D021C0C203E2E52003E35D5 /* ReefRestorationViewController.swift in Sources */,
 				22E377BD206E23DB00D277F2 /* iNaturalistDownloadStepsPageViewController.swift in Sources */,
 				6D021C0E203E2E63003E35D5 /* LectureSeriesViewController.swift in Sources */,
+				222BB5B5207A984D0070354B /* CollapsibleTableContentManager.swift in Sources */,
 				6D021BFE203E2A0C003E35D5 /* LearnViewController.swift in Sources */,
 				2207B7AB2075DBFC00A4DE90 /* ReusableFooterViewController.swift in Sources */,
 				22891A3D202DEBE7000FEBB4 /* SocialNetwork.swift in Sources */,
@@ -1190,7 +1194,7 @@
 				22395D072052830600177243 /* WaterWatchContentManager.swift in Sources */,
 				6D021C12203E3117003E35D5 /* AboutUsViewController.swift in Sources */,
 				6D021C0A203E2E3F003E35D5 /* WaterWatchViewController.swift in Sources */,
-				22F78C8F202D0F900001049D /* CollectionViewCell.swift in Sources */,
+				22F78C8F202D0F900001049D /* HomeCollectionViewCell.swift in Sources */,
 				6D021C10203E2E72003E35D5 /* FieldActivityViewController.swift in Sources */,
 				229E614B2022A79200D4BDDA /* Citizen_Scientist_Project.xcdatamodeld in Sources */,
 				2238FC932073024B00BCAE3F /* ReusableHeader.swift in Sources */,
@@ -1198,7 +1202,7 @@
 				6D37E60A203C897100FF4BBA /* NewsViewController.swift in Sources */,
 				22395D01204E432600177243 /* NavigationPages.swift in Sources */,
 				6D021C08203E2E2F003E35D5 /* SeaLevelRiseViewController.swift in Sources */,
-				22594978202DAA0C0047E055 /* CollectionViewContentManager.swift in Sources */,
+				22594978202DAA0C0047E055 /* HomeContentManager.swift in Sources */,
 				222BB58A20773D520070354B /* SeaLevelRiseContentManager.swift in Sources */,
 				228FA9A2204778B3003610B3 /* TableViewController.swift in Sources */,
 				6D021C04203E2A52003E35D5 /* ReviewViewController.swift in Sources */,

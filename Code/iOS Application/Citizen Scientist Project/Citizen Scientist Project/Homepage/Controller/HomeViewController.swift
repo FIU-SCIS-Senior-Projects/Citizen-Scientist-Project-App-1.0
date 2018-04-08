@@ -12,18 +12,18 @@ let RGB: CGFloat = 255.0
 let fullOpacity: CGFloat = 1.0
 
 
-class ViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+class HomeViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
     @IBOutlet weak var collectionView: UICollectionView!
     
-    var cellContent: [HomepageCell] = ContentManager.fetchCellContent()
+    var cellContent: [HomepageCell] = HomeContentManager.fetchCellContent()
     //var sectionFooter: [Icon] = SectionFooter.fetchIcons()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // Update Id of cell content. Hidden cells should not have a valid id
-        ContentManager.updateCellContentIds(cells: &cellContent)
+        HomeContentManager.updateCellContentIds(cells: &cellContent)
 
         collectionView.dataSource = self
         collectionView.delegate = self
@@ -57,7 +57,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: Storyboard.cellContentView, for: indexPath) as!  CollectionViewCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: Storyboard.cellContentView, for: indexPath) as!  HomeCollectionViewCell
         
         let screenWidth = self.collectionView.frame.size.width
         
@@ -107,21 +107,21 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         
         // Update Id of cell content. Hidden cells should not have a valid id
         if cspLabExpanded! {
-            ContentManager.updateCellContentIds(cells: &cellContent)
+            HomeContentManager.updateCellContentIds(cells: &cellContent)
         }
         
         // If expanded, update all cells' id before getting the cell ids for CSP Lab children
         // If not expanded, update all cells' id after getting cell ids for CSP Lab children
         // Cells to be expanded/collapsed when CSPLab Cell is clicked
         var indexPaths = [IndexPath]()
-        let cspLabChildren = ContentManager.getPageChildren(page: .CSPLab) // dynamically get the CSPLab children
+        let cspLabChildren = HomeContentManager.getPageChildren(page: .CSPLab) // dynamically get the CSPLab children
         for page in cspLabChildren {
             indexPaths.append(IndexPath(row: cellContent.getCellId(page: page), section: 0))
         }
         
         // Update Id of cell content. Hidden cells should not have a valid id
         if !cspLabExpanded! {
-            ContentManager.updateCellContentIds(cells: &cellContent)
+            HomeContentManager.updateCellContentIds(cells: &cellContent)
         }
         
         collectionView.performBatchUpdates({
@@ -129,13 +129,13 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
                 collectionView.insertItems(at: indexPaths)
                 
                 // Updates the arrow image to 'up' when CSP Lab children are 'expanded'
-                ContentManager.arrowImageName = ContentManager.UP_ARROW_IMAGE_NAME
+                HomeContentManager.arrowImageName = HomeContentManager.UP_ARROW_IMAGE_NAME
                 
             }else{
                 collectionView.deleteItems(at: indexPaths)
                 
                 // Updates the arrow image to 'down' when CSP Lab children are 'hidden'
-                ContentManager.arrowImageName = ContentManager.DOWN_ARROW_IMAGE_NAME
+                HomeContentManager.arrowImageName = HomeContentManager.DOWN_ARROW_IMAGE_NAME
                 
             }
             

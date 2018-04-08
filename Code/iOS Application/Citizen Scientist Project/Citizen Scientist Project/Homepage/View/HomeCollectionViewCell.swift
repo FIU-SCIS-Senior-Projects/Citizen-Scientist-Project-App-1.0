@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CollectionViewCell: UICollectionViewCell {
+class HomeCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet private weak var imageView: UIImageView!
     @IBOutlet private weak var arrowImageView: UIImageView!
@@ -41,7 +41,7 @@ class CollectionViewCell: UICollectionViewCell {
         imageView.clipsToBounds = true
         
         // Setup label properties
-        let properties = ContentManager.getCellLabelsProperties(cell: content)
+        let properties = HomeContentManager.getCellLabelsProperties(cell: content)
         setUpLabelProperties(properties: properties)
         
         // Setup cell image dimensions
@@ -57,8 +57,8 @@ class CollectionViewCell: UICollectionViewCell {
     private func populateCellContent(content: HomepageCell)
     {
         imageView.image = UIImage(named: content.imageName)
-        shadowImageView.image = UIImage(named: ContentManager.SHADOW_IMAGE_NAME)
-        arrowImageView.image = UIImage(named: ContentManager.arrowImageName)
+        shadowImageView.image = UIImage(named: HomeContentManager.SHADOW_IMAGE_NAME)
+        arrowImageView.image = UIImage(named: HomeContentManager.arrowImageName)
         headerLabel.text = content.labelHeader
         subHeaderLabel.text = content.labelSubHeader
     }
@@ -117,26 +117,26 @@ class CollectionViewCell: UICollectionViewCell {
         let regularCellWidth = screenWidth / 2
         let cellHeight = regularCellWidth
         
-        let leftMargin = regularCellWidth * CollectionViewCell.leftMarginPercentage / 100.0
-        let bottomMagin = cellHeight * CollectionViewCell.bottomMarginPercentage / 100.0
+        let leftMargin = regularCellWidth * HomeCollectionViewCell.leftMarginPercentage / 100.0
+        let bottomMagin = cellHeight * HomeCollectionViewCell.bottomMarginPercentage / 100.0
         
         
         if cellType == HomepageCell.CellType.Super
         {
             // Here the height of the stacks is equal to the sum of the height of both labels and the spacing between the labels
-            let stackHeight = CollectionViewCell.inBetweenLabelSpacing + ContentManager.headerLabelFontSizeSuperCell + ContentManager.subHeaderLabelFontSizeSuperCell
+            let stackHeight = HomeCollectionViewCell.inBetweenLabelSpacing + HomeContentManager.headerLabelFontSizeSuperCell + HomeContentManager.subHeaderLabelFontSizeSuperCell
             
             // Stack constraints
-            leftMarginLabelsConstraint.constant = ContentManager.labelLeftRightPadding
-            rightMarginLabelsConstraint.constant = ContentManager.labelLeftRightPadding
+            leftMarginLabelsConstraint.constant = HomeContentManager.labelLeftRightPadding
+            rightMarginLabelsConstraint.constant = HomeContentManager.labelLeftRightPadding
             bottomMarginLabelsConstraint.constant = -(cellHeight - stackHeight)/2
             
             // Setup height of labels using a constraints
-            headerLabelHeightConstraint.constant = ContentManager.headerLabelFontSizeSuperCell
-            subHeaderLabelHeightConstraint.constant = ContentManager.subHeaderLabelFontSizeSuperCell
+            headerLabelHeightConstraint.constant = HomeContentManager.headerLabelFontSizeSuperCell
+            subHeaderLabelHeightConstraint.constant = HomeContentManager.subHeaderLabelFontSizeSuperCell
             
             // Space between labels of super cell
-            labelsStackContainer.spacing = CollectionViewCell.inBetweenLabelSpacing
+            labelsStackContainer.spacing = HomeCollectionViewCell.inBetweenLabelSpacing
             
         }
         else if cellType == HomepageCell.CellType.Regular
@@ -147,11 +147,11 @@ class CollectionViewCell: UICollectionViewCell {
             bottomMarginLabelsConstraint.constant = -bottomMagin
             
             // Setup height of labels using a constraints
-            headerLabelHeightConstraint.constant = ContentManager.headerLabelFontSizeRegularCell
-            subHeaderLabelHeightConstraint.constant = ContentManager.subHeaderLabelFontSizeRegularCell
+            headerLabelHeightConstraint.constant = HomeContentManager.headerLabelFontSizeRegularCell
+            subHeaderLabelHeightConstraint.constant = HomeContentManager.subHeaderLabelFontSizeRegularCell
             
             // Space between labels of regular cell
-            labelsStackContainer.spacing = CollectionViewCell.noInBetweenLabelSpacing
+            labelsStackContainer.spacing = HomeCollectionViewCell.noInBetweenLabelSpacing
             
         }
         else

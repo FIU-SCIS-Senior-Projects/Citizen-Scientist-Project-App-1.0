@@ -16,12 +16,12 @@ class WaterWatchContentManager {
     
     private static let bodyText1 =
         "Biscayne Bay Water Watch (BBWW) is a community-based volunteer water quality monitoring program developed and managed by the UF/IFAS Sea Grant Extension Program in Miami-Dade County. The goal of BBWW is to garner attention to the health of Biscayne Bay and promote awareness about the importance of water quality on our local environment and economy."
-        + "\n\n" +
-        "UF/IFAS Sea Grant Extension is partnering with local organizations to adopt water monitoring sites throughout Biscayne Bay and surrounding waters. Their volunteers are trained to collect chemical and physical parameters once a month at their adopted site(s). Field-based data includes temperature, pH, salinity, and dissolved oxygen. Water samples are collected for analysis of total nitrogen, total phosphorus, ammonia, silica, and chlorophyll a."
-        + "\n\n" +
-        "The Key Biscayne Community Foundation (through the Citizen Science Project) received a two-year Environmental Education grant from the EPA for water quality and shoreline conservation on Key Biscayne. We are using this grant not only to create educational opportunities for the residents and visitors of the Key, but also to set up more water testing sites. In 2017, we’re sponsoring the first year of a new site near Bear Cut, where one of our partners, Miami Rowing Club, will begin monthly water testing starting in March."
-        + "\n\n" +
-        "We also hope to set up three Atlantic sites for less intense testing which will include temperature, pH, salinity, and dissolved oxygen."
+            + "\n\n" +
+            "UF/IFAS Sea Grant Extension is partnering with local organizations to adopt water monitoring sites throughout Biscayne Bay and surrounding waters. Their volunteers are trained to collect chemical and physical parameters once a month at their adopted site(s). Field-based data includes temperature, pH, salinity, and dissolved oxygen. Water samples are collected for analysis of total nitrogen, total phosphorus, ammonia, silica, and chlorophyll a."
+            + "\n\n" +
+            "The Key Biscayne Community Foundation (through the Citizen Science Project) received a two-year Environmental Education grant from the EPA for water quality and shoreline conservation on Key Biscayne. We are using this grant not only to create educational opportunities for the residents and visitors of the Key, but also to set up more water testing sites. In 2017, we’re sponsoring the first year of a new site near Bear Cut, where one of our partners, Miami Rowing Club, will begin monthly water testing starting in March."
+            + "\n\n" +
+    "We also hope to set up three Atlantic sites for less intense testing which will include temperature, pH, salinity, and dissolved oxygen."
     
     private static let bodyText2 = "Here are some fact sheets from the Biscayne Bay Water Watch to better understand the following data being collected and reported."
     
@@ -36,7 +36,7 @@ class WaterWatchContentManager {
         "dissolvedOxygen" : Link(text: "Dissolved Oxygen", url: URL(string: "http://sfyl.ifas.ufl.edu/media/sfylifasufledu/miami-dade/documents/sea-grant/Dissolved-Oxygen.pdf")!),
         "nutrients" : Link(text: "Nutrients", url: URL(string: "http://sfyl.ifas.ufl.edu/media/sfylifasufledu/miami-dade/documents/sea-grant/Nutrients.pdf")!),
         "chlorophyllA" : Link(text: "Chlorophyll a", url: URL(string: "http://sfyl.ifas.ufl.edu/media/sfylifasufledu/miami-dade/documents/sea-grant/Chlorophyll-a.pdf")!),
-    ]
+        ]
     
     private class func getContentData() -> WaterWatchContent
     {
@@ -56,3 +56,4 @@ class WaterWatchContentManager {
         return contentData
     }
 }
+
