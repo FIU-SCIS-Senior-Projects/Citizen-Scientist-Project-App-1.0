@@ -59,11 +59,11 @@ extension Array where Iterator.Element == NavigationPageCell {
 class NavigationPageContentManager {
     
     private static let CSPLAB_CHILDREN_COUNT = 4
-    static let CSPLAB_CHILDREN_DEFAULT_VISIBILITY = true // false = children not visible by default, true children visible by default
+    static let CSPLAB_CHILDREN_DEFAULT_VISIBILITY = false // false = children not visible by default, true children visible by default
     private static let PROGRAMS_CHILDREN_COUNT = 6
-    static let PROGRAMS_CHILDREN_DEFAULT_VISIBILITY = true // false = children not visible by default, true children visible by default
+    static let PROGRAMS_CHILDREN_DEFAULT_VISIBILITY = false // false = children not visible by default, true children visible by default
     private static let RESOURCES_CHILDREN_COUNT = 5
-    static let RESOURCES_CHILDREN_DEFAULT_VISIBILITY = true // false = children not visible by default, true children visible by default
+    static let RESOURCES_CHILDREN_DEFAULT_VISIBILITY = false // false = children not visible by default, true children visible by default
     static let DOWN_ARROW_IMAGE_NAME = "downwards-arrow-key"
     static let UP_ARROW_IMAGE_NAME = "upwards-arrow-key"
     

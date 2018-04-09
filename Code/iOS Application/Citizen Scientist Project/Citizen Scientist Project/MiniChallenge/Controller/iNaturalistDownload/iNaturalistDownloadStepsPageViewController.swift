@@ -14,34 +14,19 @@ protocol iNaturalistDownloadStepsPageVCDelegate: class {
 }
 
 class iNaturalistDownloadStepsPageViewController: UIPageViewController {
-
-    var images: [UIImage]?
-    var iNaturalistSteps: [String]?
     
     weak var pageViewControllerDelegate: iNaturalistDownloadStepsPageVCDelegate?
     
-    
-    var imageData: [UIImage] = [
-        UIImage(named: "iphone-icon")!,
-        UIImage(named: "search-icon")!,
-        UIImage(named: "camera-icon")!,
-    ]
-    
-    var iNaturalistStepsData: [String] = [
-        "1. DOWNLOAD THE iNATURALIST APP AND CREATE AN ACCOUNT.",
-        "2. SEARCH iNATURALIST PROJECTS FOR “2017-18 MINI CHALLENGE #2” AND JOIN THE PROJECT.",
-        "3. WHILE MAKING YOUR OBSERVATIONS, ADD THEM TO THE “2017-18 MINI CHALLENGE #2” PROJECT.",
-    ]
+    let downloadContent = iNaturalistContentManager.fetchDownloadContent()
     
     lazy var controllers: [UIViewController] = {
         let storyboard = UIStoryboard(name: Storyboard.miniChallenge, bundle: nil)
         var controllers = [UIViewController]()
         
-        if let images = self.images {
-            for image in images {
-                let iNaturalistDownloadStepVC = storyboard.instantiateViewController(withIdentifier: Storyboard.iNaturalistStepViewController)
-                controllers.append(iNaturalistDownloadStepVC)
-            }
+        
+        for _ in downloadContent {
+            let iNaturalistDownloadStepVC = storyboard.instantiateViewController(withIdentifier: Storyboard.iNaturalistStepViewController)
+            controllers.append(iNaturalistDownloadStepVC)
         }
         
         self.pageViewControllerDelegate?.setupPageController(numberOfPages: controllers.count)
@@ -51,9 +36,6 @@ class iNaturalistDownloadStepsPageViewController: UIPageViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        images = imageData
-        iNaturalistSteps = iNaturalistStepsData
         
 
         automaticallyAdjustsScrollViewInsets = false
@@ -82,8 +64,8 @@ class iNaturalistDownloadStepsPageViewController: UIPageViewController {
         for (index, vc) in controllers.enumerated(){
             if viewController === vc{
                 if let iNaturalistImageVC = viewController as? iNaturalistDownloadStepViewController{
-                    iNaturalistImageVC.image = self.images?[index]
-                    iNaturalistImageVC.text = self.iNaturalistSteps?[index]
+                    iNaturalistImageVC.image = self.downloadContent[index].imageName
+                    iNaturalistImageVC.text = self.downloadContent[index].title
                     
                     self.pageViewControllerDelegate?.turnPageController(to: index)
                 }

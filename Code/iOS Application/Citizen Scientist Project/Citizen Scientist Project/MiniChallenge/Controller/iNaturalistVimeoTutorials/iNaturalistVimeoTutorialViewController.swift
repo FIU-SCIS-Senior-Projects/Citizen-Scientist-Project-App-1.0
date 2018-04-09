@@ -14,34 +14,42 @@ class iNaturalistVimeoTutorialViewController: UIViewController {
     @IBOutlet weak var vimeoTutorialTextView: UITextView!
     private var vimeoLink: URL?
     
-    var image: UIImage? {
+    var image: String? {
         didSet {
-            self.vimeoTutorialButton?.setImage(image, for: .normal)
+            guard let img = image else { return }
+            self.vimeoTutorialButton?.setImage(UIImage(named: img), for: .normal)
         }
     }
     
     var text: String? {
         didSet {
-            self.vimeoTutorialTextView?.text = text
+            guard let txt = text else { return }
+            self.vimeoTutorialTextView?.text = txt
         }
     }
     
     var link: URL? {
         didSet {
-            self.vimeoLink = link
+            guard let url = link else { return }
+            self.vimeoLink = url
         }
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        self.vimeoTutorialButton?.setImage(image, for: .normal)
+        
         vimeoTutorialButton.addTarget(self, action: #selector(handleOnVimeoClick), for: .touchUpInside)
-        self.vimeoTutorialTextView?.text = text
+        
+        guard let img = image else { return }
+        guard let txt = text else { return }
+
+        self.vimeoTutorialButton?.setImage(UIImage(named: img), for: .normal)
+        self.vimeoTutorialTextView?.text = txt
         
     }
     
     @objc private func handleOnVimeoClick(){
+        //guard let link = vimeoLink else { return }
         UIApplication.shared.open(vimeoLink!, options: [:], completionHandler: nil)
     }
 

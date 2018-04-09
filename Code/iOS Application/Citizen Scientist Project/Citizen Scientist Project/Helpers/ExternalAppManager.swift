@@ -9,6 +9,18 @@
 import Foundation
 import UIKit
 
+struct ExternalApp {
+    var title: String
+    var scheme: String?
+    var page: String
+    
+    init(title: String, scheme: String? = nil, page: String){
+        self.title = title
+        self.scheme = scheme
+        self.page = page
+    }
+}
+
 class ExternalAppManager {
     
     static func openPage(scheme: String? = nil, page: String) {

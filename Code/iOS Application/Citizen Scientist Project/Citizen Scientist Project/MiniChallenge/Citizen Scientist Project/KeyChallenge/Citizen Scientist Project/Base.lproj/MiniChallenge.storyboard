@@ -29,7 +29,7 @@
         <scene sceneID="sfP-Tu-nh6">
             <objects>
                 <viewController id="zgW-s1-nEC" customClass="MiniChallengeViewController" customModule="Citizen_Scientist_Project" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="jUq-Bv-iux">
+                    <view key="view" contentMode="scaleToFill" id="jUq-Bv-iux" customClass="MiniChallengeView" customModule="Citizen_Scientist_Project" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="4000"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -37,7 +37,7 @@
                                 <rect key="frame" x="0.0" y="20" width="375" height="3980"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WA9-Qa-Z5H" userLabel="Mini Challenge View">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="3712.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="3696.5"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mini-challenge-header" translatesAutoresizingMaskIntoConstraints="NO" id="Fgs-Fd-Adk">
                                                 <rect key="frame" x="0.0" y="0.0" width="375" height="225"/>
@@ -224,7 +224,7 @@ Many of us are familiar with the more visible species: natives like turtles, man
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j9t-VQ-64G" userLabel="Red Box 1">
-                                                <rect key="frame" x="0.0" y="2219" width="375" height="1368.5"/>
+                                                <rect key="frame" x="0.0" y="2219" width="375" height="1352.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2017-18 MINI CHALLENGE #2 RULES" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="QNR-CK-voD">
                                                         <rect key="frame" x="16" y="16" width="343" height="48"/>
@@ -232,14 +232,31 @@ Many of us are familiar with the more visible species: natives like turtles, man
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" bouncesZoom="NO" editable="NO" text="• The Mini Challenge will run from February 15, 2018 through March 14, 2018" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lDw-vt-D3w">
-                                                        <rect key="frame" x="16" y="72" width="343" height="57"/>
+                                                    <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" bouncesZoom="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lDw-vt-D3w">
+                                                        <rect key="frame" x="16" y="72" width="343" height="1172.5"/>
+                                                        <mutableString key="text">• The Mini Challenge will run from February 15, 2018 through March 14, 2018
+
+• The Mini Challenge involves observing, photographing, and identifying organisms using iNaturalist.
+
+• The goal is to identify the largest number of organisms and most species. Two awards will be given out: (1) One for the most total observations; and (2) One for most number of different species observed.
+
+• The observations must be made on Virginia Key or Key Biscayne. Observations made outside Virginia Key or Key Biscayne will not be counted! Observations can be made in the parks on the Keys (i.e. Crandon, Bill Baggs, Virginia Key Park), in Key Biscayne municipality, or offshore of either island (as long as it is not too far that it can be confused for another coast).
+
+• In order to participate in the mini challenge, you must register online and provide the following information: iNaturalist username, Your full name (if participating as an individual), School name, Grade, Teacher’s name, and Whether you are participating as an individual or as a class.
+
+• Entire classes may participate in the challenge by having their teacher manage an iNaturalist account for the whole class. This may be better for younger classes, especially if the children in younger classes do not have phones. Individual students may also participate in the mini challenge by using their own iNaturalist accounts. Classes with older students will probably be better suited for participating in this manner. However, either way of participating is acceptable for all grades. Please be sure to note on the registration form if you are participating as an individual or a class.
+
+• Registration must be submitted by February 22, 2018.
+
+• Tutorials on how to use iNaturalist will be uploaded online. If you have any questions or concerns, please contact us.
+
+• Make sure photographs are clear. Unclear photos will be difficult to identify</mutableString>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                     </textView>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ltS-zD-9x2">
-                                                        <rect key="frame" x="16" y="1292.5" width="343" height="44"/>
+                                                        <rect key="frame" x="16" y="1276.5" width="343" height="44"/>
                                                         <color key="backgroundColor" red="0.94117647059999998" green="0.3294117647" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="44" id="7os-P6-cwB"/>
@@ -252,99 +269,23 @@ Many of us are familiar with the more visible species: natives like turtles, man
                                                             <action selector="clickRegisterOnlineButton:" destination="zgW-s1-nEC" eventType="touchUpInside" id="GWv-7B-Cgd"/>
                                                         </connections>
                                                     </button>
-                                                    <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" bouncesZoom="NO" editable="NO" text="• The Mini Challenge involves observing, photographing, and identifying organisms using iNaturalist." selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QQw-vI-XdU">
-                                                        <rect key="frame" x="16" y="137" width="343" height="77"/>
-                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
-                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                                    </textView>
-                                                    <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" bouncesZoom="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DLh-nK-uRD">
-                                                        <rect key="frame" x="16" y="222" width="343" height="117.5"/>
-                                                        <string key="text">• The goal is to identify the largest number of organisms and most species. Two awards will be given out: (1) One for the most total observations; and (2) One for most number of different species observed.</string>
-                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
-                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                                    </textView>
-                                                    <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" bouncesZoom="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bUJ-GP-qXP">
-                                                        <rect key="frame" x="16" y="347.5" width="343" height="199"/>
-                                                        <string key="text">• The observations must be made on Virginia Key or Key Biscayne. Observations made outside Virginia Key or Key Biscayne will not be counted! Observations can be made in the parks on the Keys (i.e. Crandon, Bill Baggs, Virginia Key Park), in Key Biscayne municipality, or offshore of either island (as long as it is not too far that it can be confused for another coast).</string>
-                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
-                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                                    </textView>
-                                                    <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" bouncesZoom="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dc1-kj-bDc">
-                                                        <rect key="frame" x="16" y="554.5" width="343" height="178.5"/>
-                                                        <string key="text">• In order to participate in the mini challenge, you must register online and provide the following information: iNaturalist username, Your full name (if participating as an individual), School name, Grade, Teacher’s name, and Whether you are participating as an individual or as a class.</string>
-                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
-                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                                    </textView>
-                                                    <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" bouncesZoom="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6C8-7t-ci8">
-                                                        <rect key="frame" x="16" y="741" width="343" height="320.5"/>
-                                                        <string key="text">• Entire classes may participate in the challenge by having their teacher manage an iNaturalist account for the whole class. This may be better for younger classes, especially if the children in younger classes do not have phones. Individual students may also participate in the mini challenge by using their own iNaturalist accounts. Classes with older students will probably be better suited for participating in this manner. However, either way of participating is acceptable for all grades. Please be sure to note on the registration form if you are participating as an individual or a class.</string>
-                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
-                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                                    </textView>
-                                                    <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" bouncesZoom="NO" editable="NO" text="• Registration must be submitted by February 22, 2018." selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4gd-NA-ZdC">
-                                                        <rect key="frame" x="16" y="1069.5" width="343" height="57"/>
-                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
-                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                                    </textView>
-                                                    <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" bouncesZoom="NO" editable="NO" text="• Tutorials on how to use iNaturalist will be uploaded online. If you have any questions or concerns, please contact us." selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jNb-dg-iZ3">
-                                                        <rect key="frame" x="16" y="1134.5" width="343" height="77"/>
-                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
-                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                                    </textView>
-                                                    <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" bouncesZoom="NO" editable="NO" text="• Make sure photographs are clear. Unclear photos will be difficult to identify." selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vzS-j6-NyD">
-                                                        <rect key="frame" x="16" y="1219.5" width="343" height="57"/>
-                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
-                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                                    </textView>
                                                 </subviews>
                                                 <color key="backgroundColor" red="0.33333333329999998" green="0.078431372550000003" blue="0.094117647060000004" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="trailing" secondItem="ltS-zD-9x2" secondAttribute="trailing" constant="16" id="2F0-lO-Hk1"/>
-                                                    <constraint firstItem="jNb-dg-iZ3" firstAttribute="top" secondItem="4gd-NA-ZdC" secondAttribute="bottom" constant="8" id="3cD-tx-OLs"/>
-                                                    <constraint firstAttribute="trailing" secondItem="QQw-vI-XdU" secondAttribute="trailing" constant="16" id="6Tj-xO-LhR"/>
-                                                    <constraint firstItem="vzS-j6-NyD" firstAttribute="top" secondItem="jNb-dg-iZ3" secondAttribute="bottom" constant="8" id="6ab-6g-wb6"/>
-                                                    <constraint firstItem="dc1-kj-bDc" firstAttribute="leading" secondItem="j9t-VQ-64G" secondAttribute="leading" constant="16" id="75Y-xr-Sx4"/>
-                                                    <constraint firstItem="bUJ-GP-qXP" firstAttribute="top" secondItem="DLh-nK-uRD" secondAttribute="bottom" constant="8" id="FGf-UJ-6Vc"/>
                                                     <constraint firstItem="QNR-CK-voD" firstAttribute="leading" secondItem="j9t-VQ-64G" secondAttribute="leading" constant="16" id="GNm-GD-CvB"/>
-                                                    <constraint firstAttribute="trailing" secondItem="dc1-kj-bDc" secondAttribute="trailing" constant="16" id="J8X-a4-deu"/>
-                                                    <constraint firstItem="6C8-7t-ci8" firstAttribute="top" secondItem="dc1-kj-bDc" secondAttribute="bottom" constant="8" id="JVx-T3-8fW"/>
-                                                    <constraint firstItem="6C8-7t-ci8" firstAttribute="leading" secondItem="j9t-VQ-64G" secondAttribute="leading" constant="16" id="KPH-rK-7TH"/>
                                                     <constraint firstItem="lDw-vt-D3w" firstAttribute="top" secondItem="QNR-CK-voD" secondAttribute="bottom" constant="8" id="LVQ-Xv-TVR"/>
-                                                    <constraint firstItem="bUJ-GP-qXP" firstAttribute="leading" secondItem="j9t-VQ-64G" secondAttribute="leading" constant="16" id="O1a-tK-5nC"/>
                                                     <constraint firstAttribute="trailing" secondItem="QNR-CK-voD" secondAttribute="trailing" constant="16" id="QOq-cs-g6L"/>
                                                     <constraint firstItem="ltS-zD-9x2" firstAttribute="leading" secondItem="j9t-VQ-64G" secondAttribute="leading" constant="16" id="S0Z-nI-fCh"/>
-                                                    <constraint firstAttribute="trailing" secondItem="4gd-NA-ZdC" secondAttribute="trailing" constant="16" id="T2E-yd-UeI"/>
-                                                    <constraint firstItem="ltS-zD-9x2" firstAttribute="top" secondItem="vzS-j6-NyD" secondAttribute="bottom" constant="16" id="Udp-6E-BHt"/>
-                                                    <constraint firstAttribute="trailing" secondItem="bUJ-GP-qXP" secondAttribute="trailing" constant="16" id="WJV-C6-4vj"/>
-                                                    <constraint firstItem="QQw-vI-XdU" firstAttribute="top" secondItem="lDw-vt-D3w" secondAttribute="bottom" constant="8" id="YoS-52-mL3"/>
-                                                    <constraint firstItem="jNb-dg-iZ3" firstAttribute="leading" secondItem="j9t-VQ-64G" secondAttribute="leading" constant="16" id="aPw-Xp-Z9C"/>
-                                                    <constraint firstItem="vzS-j6-NyD" firstAttribute="leading" secondItem="j9t-VQ-64G" secondAttribute="leading" constant="16" id="bT0-uh-yO2"/>
-                                                    <constraint firstAttribute="trailing" secondItem="jNb-dg-iZ3" secondAttribute="trailing" constant="16" id="cXx-wh-FYQ"/>
-                                                    <constraint firstAttribute="trailing" secondItem="DLh-nK-uRD" secondAttribute="trailing" constant="16" id="cl7-du-528"/>
-                                                    <constraint firstAttribute="trailing" secondItem="vzS-j6-NyD" secondAttribute="trailing" constant="16" id="cvf-Rb-3u2"/>
-                                                    <constraint firstItem="dc1-kj-bDc" firstAttribute="top" secondItem="bUJ-GP-qXP" secondAttribute="bottom" constant="8" id="d8d-2d-4vD"/>
-                                                    <constraint firstItem="DLh-nK-uRD" firstAttribute="top" secondItem="QQw-vI-XdU" secondAttribute="bottom" constant="8" id="dP2-7h-szc"/>
-                                                    <constraint firstItem="DLh-nK-uRD" firstAttribute="leading" secondItem="j9t-VQ-64G" secondAttribute="leading" constant="16" id="gl6-Io-5kA"/>
-                                                    <constraint firstItem="QQw-vI-XdU" firstAttribute="leading" secondItem="j9t-VQ-64G" secondAttribute="leading" constant="16" id="iKV-Mu-tNP"/>
+                                                    <constraint firstItem="ltS-zD-9x2" firstAttribute="top" secondItem="lDw-vt-D3w" secondAttribute="bottom" constant="32" id="ktd-R7-Of2"/>
                                                     <constraint firstItem="lDw-vt-D3w" firstAttribute="leading" secondItem="j9t-VQ-64G" secondAttribute="leading" constant="16" id="p84-B5-xgD"/>
                                                     <constraint firstAttribute="trailing" secondItem="lDw-vt-D3w" secondAttribute="trailing" constant="16" id="r1b-EJ-KAF"/>
-                                                    <constraint firstAttribute="trailing" secondItem="6C8-7t-ci8" secondAttribute="trailing" constant="16" id="tjX-FI-JgS"/>
-                                                    <constraint firstItem="4gd-NA-ZdC" firstAttribute="top" secondItem="6C8-7t-ci8" secondAttribute="bottom" constant="8" id="uDM-e7-jO9"/>
                                                     <constraint firstItem="QNR-CK-voD" firstAttribute="top" secondItem="j9t-VQ-64G" secondAttribute="top" constant="16" id="v5x-Sk-M8c"/>
                                                     <constraint firstAttribute="bottom" secondItem="ltS-zD-9x2" secondAttribute="bottom" constant="32" id="yFT-5d-Shf"/>
-                                                    <constraint firstItem="4gd-NA-ZdC" firstAttribute="leading" secondItem="j9t-VQ-64G" secondAttribute="leading" constant="16" id="ydS-zd-J7e"/>
                                                 </constraints>
                                             </view>
                                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F97-KM-b8W" userLabel="Footer">
-                                                <rect key="frame" x="0.0" y="3587.5" width="375" height="125"/>
+                                                <rect key="frame" x="0.0" y="3571.5" width="375" height="125"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="125" id="yAm-HG-0bh"/>
                                                 </constraints>
@@ -397,12 +338,27 @@ Many of us are familiar with the more visible species: natives like turtles, man
                             <constraint firstItem="tDf-sr-kTa" firstAttribute="trailing" secondItem="8J8-uU-Tu4" secondAttribute="trailing" identifier="WaterWatchScrollViewTrailing" id="REd-36-ovs"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="tDf-sr-kTa"/>
+                        <connections>
+                            <outlet property="bodyText1" destination="eFU-5C-jgX" id="aVx-5f-jJO"/>
+                            <outlet property="bodyText2" destination="cOn-SU-gj9" id="Pc2-VA-SI9"/>
+                            <outlet property="bodyText3" destination="EKu-GU-Bi2" id="hud-Zf-AUL"/>
+                            <outlet property="bodyText4" destination="lDw-vt-D3w" id="t9L-iG-qMg"/>
+                            <outlet property="downloadiNaturalistButton" destination="lSW-ZZ-cXr" id="MWg-HJ-BAj"/>
+                            <outlet property="headerImageView" destination="Fgs-Fd-Adk" id="YF8-BQ-Z33"/>
+                            <outlet property="headerLabel1" destination="SPm-Rg-c7S" id="s6F-9R-Jhh"/>
+                            <outlet property="headerLabel2" destination="yqD-0R-4aW" id="xVv-Bp-WgP"/>
+                            <outlet property="headerLabel3" destination="Y95-WB-wkr" id="RvX-rF-fbG"/>
+                            <outlet property="headerLabel4" destination="QNR-CK-voD" id="KFG-sS-p1V"/>
+                            <outlet property="makeAnObservationButton" destination="sig-fI-yUt" id="w8L-bL-Rwf"/>
+                            <outlet property="registerOnlineButton" destination="ltS-zD-9x2" id="llF-wl-odT"/>
+                        </connections>
                     </view>
                     <navigationItem key="navigationItem" id="Ifr-Tr-f6I"/>
                     <size key="freeformSize" width="375" height="4000"/>
                     <connections>
                         <outlet property="iNaturalistDownloadView" destination="SI9-Ku-9b8" id="FlO-VE-bGs"/>
                         <outlet property="iNaturalistVimeoTutorialView" destination="vm8-yp-M5v" id="D95-wq-nH2"/>
+                        <outlet property="miniChallengeView" destination="jUq-Bv-iux" id="O3A-W5-XHR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IWo-dj-Ypv" userLabel="First Responder" sceneMemberID="firstResponder"/>

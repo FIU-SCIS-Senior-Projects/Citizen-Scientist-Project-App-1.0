@@ -13,23 +13,28 @@ class iNaturalistDownloadStepViewController: UIViewController {
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var stepsTextView: UITextView!
     
-    var image: UIImage? {
+    var image: String? {
         didSet {
-            self.imageView?.image = image
+            guard let img = image else { return }
+            self.imageView?.image = UIImage(named: img)
         }
     }
     
     var text: String? {
         didSet {
-            self.stepsTextView?.text = text
+            guard let txt = text else { return }
+            self.stepsTextView?.text = txt
         }
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        self.imageView.image = image
-        self.stepsTextView.text = text
+        
+        guard let img = self.image else{ return }
+        guard let txt = text else { return }
+        
+        self.imageView?.image = UIImage(named: img)
+        self.stepsTextView?.text = txt
     }
 
 }

@@ -124,10 +124,6 @@ class NavigationTableViewController: UITableViewController{
             let pageIndexPath = IndexPath(row: navigationPageCellContent.getCellId(page: page), section: 0)
             self.tableView.reloadRows(at: [pageIndexPath], with: .automatic)
             
-            // Updates page expandable property
-//            let pageCellId = navigationPageCellContent.getCellId(page: page)
-//            navigationPageCellContent[pageCellId].expandableProperty?.isExpanded = pageExpanded
-            
         }, completion: { (true) in
             self.tableView.reloadRows(at: self.tableView.indexPathsForVisibleRows!, with: .automatic)
         })

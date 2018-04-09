@@ -16,50 +16,64 @@ class MiniChallengeViewController: UIViewController, SKStoreProductViewControlle
     
     @IBOutlet weak var iNaturalistDownloadView: iNaturalistDownloadView!
     @IBOutlet weak var iNaturalistVimeoTutorialView: iNaturalistVimeoTutorialView!
-   
     
-    @IBAction func clickDownloadiNaturalistAppButton(_ sender: UIButton) {
-        
-//        // App Store URL.
-//        let appStoreLink = "https://itunes.apple.com/us/app/inaturalist/id421397028?mt=8"
-//
-//        /* First create a URL, then check whether there is an installed app that can
-//         open it on the device. */
-//        if let url = URL(string: appStoreLink), UIApplication.shared.canOpenURL(url) {
-//            // Attempt to open the URL.
-//            UIApplication.shared.open(url, options: [:], completionHandler: {(success: Bool) in
-//                if success {
-//                    print("Launching \(url) was successful")
-//                }})
-//        }
-        
-        // Create a product dictionary using the App Store's iTunes identifer.
-        let parametersDict = [SKStoreProductParameterITunesItemIdentifier: 421397028]
-
-        /* Attempt to load it, present the store product view controller if success
-         and print an error message, otherwise. */
-        storeProductViewController.loadProduct(withParameters: parametersDict, completionBlock: { (status: Bool, error: Error?) -> Void in
-            if status {
-                self.present(self.storeProductViewController, animated: true, completion: nil)
-            }
-            else {
-                if let error = error {
-                    print("Error: \(error.localizedDescription)")
-                }}})
-    }
-    @IBAction func clickMakeAnObservationButton(_ sender: UIButton) {
-        UIApplication.shared.open(URL(string: "https://www.inaturalist.org/projects/2017-18-mini-challenge-2")!, options: [:], completionHandler: nil)
-    }
-    @IBAction func clickRegisterOnlineButton(_ sender: UIButton) {
-        UIApplication.shared.open(URL(string: "https://www.keyscience.org/projects/key-challenge/mini/")!, options: [:], completionHandler: nil)
-    }
+    @IBOutlet var miniChallengeView: MiniChallengeView!
+   
+    let miniChallengeContent = MiniChallengeContentManager.fetchContent()
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         storeProductViewController.delegate = self
+        
+        miniChallengeView.setUp(content: miniChallengeContent)
+        
         ReusableHeader.setUpNavBar(navigationController: self.navigationController, navigationItem: self.navigationItem)
     }
+    
+    
+    @IBAction func clickDownloadiNaturalistAppButton(_ sender: UIButton) {
+        
+        // Create a product dictionary using the App Store's iTunes identifer.
+        let parametersDict = [SKStoreProductParameterITunesItemIdentifier: miniChallengeContent.downloadiNaturalist.scheme!]
+        
+        /* Attempt to load it, present the store product view controller if success
+         and print an error message, otherwise. */
+        storeProductViewController.loadProduct(withParameters: parametersDict, completionBlock: { (status: Bool, error: Error?) -> Void in
+            if status {
+                self.present(self.storeProductViewController, animated: true, completion: nil)
+                return
+            }
+            else {
+                if let error = error {
+                    print("Error: \(error.localizedDescription)")
+                }}})
+        
+        
+        // App Store URL. Attempt to open application link using user's default web-browser
+        let appStoreLink = miniChallengeContent.downloadiNaturalist.page
+
+        /* First create a URL, then check whether there is an installed app that can
+         open it on the device. */
+        if let url = URL(string: appStoreLink), UIApplication.shared.canOpenURL(url) {
+            // Attempt to open the URL.
+            UIApplication.shared.open(url, options: [:], completionHandler: {(success: Bool) in
+                if success {
+                    print("Launching \(url) was successful")
+                }})
+        }
+        
+        
+    }
+    
+    @IBAction func clickMakeAnObservationButton(_ sender: UIButton) {
+        UIApplication.shared.open(miniChallengeContent.makeAnObservation.url, options: [:], completionHandler: nil)
+    }
+    @IBAction func clickRegisterOnlineButton(_ sender: UIButton) {
+        UIApplication.shared.open(miniChallengeContent.registerOnline.url, options: [:], completionHandler: nil)
+    }
+    
+    
     
     // MARK: - iNaturalist Download Steps & Vimeo Tutorial Navigation
     
