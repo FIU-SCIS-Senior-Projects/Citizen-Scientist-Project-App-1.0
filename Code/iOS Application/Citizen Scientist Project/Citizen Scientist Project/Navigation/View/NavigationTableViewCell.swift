@@ -14,6 +14,18 @@ class NavigationTableViewCell: UITableViewCell {
     @IBOutlet weak var pageIconImage: UIImageView!
     @IBOutlet weak var openImageView: UIImageView!
     
+    func setUp(content: NavigationPageCell) {
+        pageNameLabel.text = content.title
+        pageIconImage.image = UIImage(named: content.imageName)
+        openImageView.image = UIImage(named: content.arrowImageName!)
+        
+        if((content.expandableProperty?.childrenCount)! > 0) {
+            openImageView.isHidden = false
+        }else{
+            openImageView.isHidden = true
+        }
+        
+    }
     
     override func awakeFromNib() {
         super.awakeFromNib()
