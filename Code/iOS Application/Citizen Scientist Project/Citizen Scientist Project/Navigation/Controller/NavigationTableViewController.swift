@@ -16,6 +16,9 @@ class NavigationTableViewController: UITableViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // Update Id of cell content. Hidden cells should not have a valid id
+        NavigationPageContentManager.updateCellContentIds(cells: &navigationPageCellContent)
+        
         tableView.layoutMargins = UIEdgeInsets.zero
         tableView.separatorInset = UIEdgeInsets.zero
         ReusableHeader.setUpNavBar(navigationController: self.navigationController, navigationItem: self.navigationItem)

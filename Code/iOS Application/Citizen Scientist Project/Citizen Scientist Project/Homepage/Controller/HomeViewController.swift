@@ -131,13 +131,13 @@ class HomeViewController: UIViewController, UICollectionViewDelegate, UICollecti
                 collectionView.insertItems(at: indexPaths)
                 
                 // Updates the arrow image to 'up' when CSP Lab children are 'expanded'
-                HomeContentManager.arrowImageName = HomeContentManager.UP_ARROW_IMAGE_NAME
+                cellContent[cspLabIndex].arrowImageName = HomeContentManager.UP_ARROW_IMAGE_NAME
                 
             }else{
                 collectionView.deleteItems(at: indexPaths)
                 
                 // Updates the arrow image to 'down' when CSP Lab children are 'hidden'
-                HomeContentManager.arrowImageName = HomeContentManager.DOWN_ARROW_IMAGE_NAME
+                cellContent[cspLabIndex].arrowImageName = HomeContentManager.DOWN_ARROW_IMAGE_NAME
                 
             }
             

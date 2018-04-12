@@ -19,13 +19,14 @@ struct HomepageCell {
     var labelSubHeader: String
     var cellType: CellType
     var expandableProperty: Expandable?
+    var arrowImageName: String?
     
     enum CellType {
         case Regular // half of full width
         case Super   // full width
     }
     
-    init(id: Int, page: Page, parent: Page, imageName: String, labelHeader: String, labelSubHeader: String, cellType: CellType){
+    init(id: Int, page: Page, parent: Page, imageName: String, labelHeader: String, labelSubHeader: String, cellType: CellType, arrowImageName: String? = HomeContentManager.DOWN_ARROW_IMAGE_NAME){
         self.id = id
         self.page = page
         self.parent = parent
@@ -33,6 +34,7 @@ struct HomepageCell {
         self.labelHeader = labelHeader
         self.labelSubHeader = labelSubHeader
         self.cellType = cellType
+        self.arrowImageName = arrowImageName
     }
     
     var setCellId:Int {
