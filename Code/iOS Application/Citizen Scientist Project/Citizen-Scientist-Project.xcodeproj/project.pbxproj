@@ -79,6 +79,9 @@
 		22891A3D202DEBE7000FEBB4 /* SocialNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22891A3C202DEBE7000FEBB4 /* SocialNetwork.swift */; };
 		228FA9A02047788B003610B3 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228FA99F2047788B003610B3 /* WebViewController.swift */; };
 		228FA9A2204778B3003610B3 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228FA9A1204778B3003610B3 /* TableViewController.swift */; };
+		2292AC89207F76C8002DAD23 /* LectureSeriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2292AC88207F76C8002DAD23 /* LectureSeriesView.swift */; };
+		2292AC8B207F76E3002DAD23 /* LectureSeriesContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2292AC8A207F76E3002DAD23 /* LectureSeriesContent.swift */; };
+		2292AC8D207F76F1002DAD23 /* LectureSeriesContentManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2292AC8C207F76F1002DAD23 /* LectureSeriesContentManager.swift */; };
 		22992258203E5814006CE1AB /* NavigationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22992257203E5814006CE1AB /* NavigationTableViewController.swift */; };
 		2299225A203E58FA006CE1AB /* segueToTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22992259203E58FA006CE1AB /* segueToTable.swift */; };
 		229E61432022A79200D4BDDA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229E61422022A79200D4BDDA /* AppDelegate.swift */; };
@@ -210,6 +213,9 @@
 		22891A3C202DEBE7000FEBB4 /* SocialNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialNetwork.swift; sourceTree = "<group>"; };
 		228FA99F2047788B003610B3 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		228FA9A1204778B3003610B3 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		2292AC88207F76C8002DAD23 /* LectureSeriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LectureSeriesView.swift; sourceTree = "<group>"; };
+		2292AC8A207F76E3002DAD23 /* LectureSeriesContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LectureSeriesContent.swift; sourceTree = "<group>"; };
+		2292AC8C207F76F1002DAD23 /* LectureSeriesContentManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LectureSeriesContentManager.swift; sourceTree = "<group>"; };
 		22992257203E5814006CE1AB /* NavigationTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationTableViewController.swift; sourceTree = "<group>"; };
 		22992259203E58FA006CE1AB /* segueToTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = segueToTable.swift; sourceTree = "<group>"; };
 		229E613F2022A79200D4BDDA /* Citizen-Scientist-Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Citizen-Scientist-Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -461,6 +467,23 @@
 			path = Footer;
 			sourceTree = "<group>";
 		};
+		2292AC86207F75D0002DAD23 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2292AC8A207F76E3002DAD23 /* LectureSeriesContent.swift */,
+				2292AC8C207F76F1002DAD23 /* LectureSeriesContentManager.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2292AC87207F75DA002DAD23 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2292AC88207F76C8002DAD23 /* LectureSeriesView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		22992227203E51FF006CE1AB /* Navigation */ = {
 			isa = PBXGroup;
 			children = (
@@ -617,6 +640,8 @@
 			isa = PBXGroup;
 			children = (
 				2238FCC22073147200BCAE3F /* LectureSeries.storyboard */,
+				2292AC86207F75D0002DAD23 /* Model */,
+				2292AC87207F75DA002DAD23 /* View */,
 				2299224F203E5690006CE1AB /* Controller */,
 			);
 			path = LectureSeries;
@@ -1182,6 +1207,7 @@
 				2235A2C52063B2F400DEDC9E /* CollapsibleTableViewHeader.swift in Sources */,
 				22395D0B20528DE800177243 /* WaterWatchView.swift in Sources */,
 				2235A2C02063B1EE00DEDC9E /* CollapsibleTableViewController.swift in Sources */,
+				2292AC89207F76C8002DAD23 /* LectureSeriesView.swift in Sources */,
 				22CA83B8206E55D300287889 /* iNaturalistVimeoTutorialViewController.swift in Sources */,
 				6D021C02203E2A47003E35D5 /* RecordViewController.swift in Sources */,
 				22CA83B2206E348800287889 /* iNaturalistDownloadView.swift in Sources */,
@@ -1201,6 +1227,7 @@
 				222BB5B5207A984D0070354B /* CollapsibleTableContentManager.swift in Sources */,
 				6D021BFE203E2A0C003E35D5 /* LearnViewController.swift in Sources */,
 				2207B7AB2075DBFC00A4DE90 /* ReusableFooterViewController.swift in Sources */,
+				2292AC8B207F76E3002DAD23 /* LectureSeriesContent.swift in Sources */,
 				22891A3D202DEBE7000FEBB4 /* SocialNetwork.swift in Sources */,
 				222BB588207737210070354B /* SeaLevelRiseView.swift in Sources */,
 				229E61432022A79200D4BDDA /* AppDelegate.swift in Sources */,
@@ -1209,6 +1236,7 @@
 				6D021C18203E3142003E35D5 /* OurPartnersViewController.swift in Sources */,
 				6D37E600203C869D00FF4BBA /* ProfileViewController.swift in Sources */,
 				228FA9A02047788B003610B3 /* WebViewController.swift in Sources */,
+				2292AC8D207F76F1002DAD23 /* LectureSeriesContentManager.swift in Sources */,
 				6D37E608203C893A00FF4BBA /* EventsViewController.swift in Sources */,
 				220A9829207BBE6000FB5752 /* MiniChallengeContentManager.swift in Sources */,
 				22992258203E5814006CE1AB /* NavigationTableViewController.swift in Sources */,
