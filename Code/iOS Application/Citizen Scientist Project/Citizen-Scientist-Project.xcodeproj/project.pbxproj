@@ -82,6 +82,20 @@
 		2292AC89207F76C8002DAD23 /* LectureSeriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2292AC88207F76C8002DAD23 /* LectureSeriesView.swift */; };
 		2292AC8B207F76E3002DAD23 /* LectureSeriesContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2292AC8A207F76E3002DAD23 /* LectureSeriesContent.swift */; };
 		2292AC8D207F76F1002DAD23 /* LectureSeriesContentManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2292AC8C207F76F1002DAD23 /* LectureSeriesContentManager.swift */; };
+		2292AC982080D1CF002DAD23 /* BiomesBeaches.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2292AC972080D1CF002DAD23 /* BiomesBeaches.storyboard */; };
+		2292AC9A2080D1E8002DAD23 /* BiomesGreenSpaces.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2292AC992080D1E8002DAD23 /* BiomesGreenSpaces.storyboard */; };
+		2292AC9C2080D1FD002DAD23 /* BiomesBikingWalkingPaths.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2292AC9B2080D1FD002DAD23 /* BiomesBikingWalkingPaths.storyboard */; };
+		2292AC9E2080D20C002DAD23 /* BiomesMangrove.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2292AC9D2080D20C002DAD23 /* BiomesMangrove.storyboard */; };
+		2292ACA02080D21E002DAD23 /* BiomesCoralReefs.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2292AC9F2080D21E002DAD23 /* BiomesCoralReefs.storyboard */; };
+		2292ACA22080D234002DAD23 /* BiomesWaterWays.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2292ACA12080D234002DAD23 /* BiomesWaterWays.storyboard */; };
+		2292ACA42080D270002DAD23 /* BiomesSeagrasses.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2292ACA32080D270002DAD23 /* BiomesSeagrasses.storyboard */; };
+		2292ACAD2080D2FB002DAD23 /* BiomesSeagrassesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2292ACAC2080D2FB002DAD23 /* BiomesSeagrassesViewController.swift */; };
+		2292ACAF2080D343002DAD23 /* BiomesBeachesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2292ACAE2080D343002DAD23 /* BiomesBeachesViewController.swift */; };
+		2292ACB12080D35B002DAD23 /* BiomesGreenSpacesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2292ACB02080D35B002DAD23 /* BiomesGreenSpacesViewController.swift */; };
+		2292ACB32080D37E002DAD23 /* BiomesBikingWalkingPathsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2292ACB22080D37E002DAD23 /* BiomesBikingWalkingPathsViewController.swift */; };
+		2292ACB52080D39A002DAD23 /* BiomesMangroveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2292ACB42080D39A002DAD23 /* BiomesMangroveViewController.swift */; };
+		2292ACB72080D3B7002DAD23 /* BiomesCoralReefsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2292ACB62080D3B7002DAD23 /* BiomesCoralReefsViewController.swift */; };
+		2292ACB92080D3CB002DAD23 /* BiomesWaterWaysViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2292ACB82080D3CB002DAD23 /* BiomesWaterWaysViewController.swift */; };
 		22992258203E5814006CE1AB /* NavigationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22992257203E5814006CE1AB /* NavigationTableViewController.swift */; };
 		2299225A203E58FA006CE1AB /* segueToTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22992259203E58FA006CE1AB /* segueToTable.swift */; };
 		229E61432022A79200D4BDDA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229E61422022A79200D4BDDA /* AppDelegate.swift */; };
@@ -216,6 +230,20 @@
 		2292AC88207F76C8002DAD23 /* LectureSeriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LectureSeriesView.swift; sourceTree = "<group>"; };
 		2292AC8A207F76E3002DAD23 /* LectureSeriesContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LectureSeriesContent.swift; sourceTree = "<group>"; };
 		2292AC8C207F76F1002DAD23 /* LectureSeriesContentManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LectureSeriesContentManager.swift; sourceTree = "<group>"; };
+		2292AC972080D1CF002DAD23 /* BiomesBeaches.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BiomesBeaches.storyboard; sourceTree = "<group>"; };
+		2292AC992080D1E8002DAD23 /* BiomesGreenSpaces.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BiomesGreenSpaces.storyboard; sourceTree = "<group>"; };
+		2292AC9B2080D1FD002DAD23 /* BiomesBikingWalkingPaths.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BiomesBikingWalkingPaths.storyboard; sourceTree = "<group>"; };
+		2292AC9D2080D20C002DAD23 /* BiomesMangrove.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BiomesMangrove.storyboard; sourceTree = "<group>"; };
+		2292AC9F2080D21E002DAD23 /* BiomesCoralReefs.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BiomesCoralReefs.storyboard; sourceTree = "<group>"; };
+		2292ACA12080D234002DAD23 /* BiomesWaterWays.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BiomesWaterWays.storyboard; sourceTree = "<group>"; };
+		2292ACA32080D270002DAD23 /* BiomesSeagrasses.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BiomesSeagrasses.storyboard; sourceTree = "<group>"; };
+		2292ACAC2080D2FB002DAD23 /* BiomesSeagrassesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiomesSeagrassesViewController.swift; sourceTree = "<group>"; };
+		2292ACAE2080D343002DAD23 /* BiomesBeachesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiomesBeachesViewController.swift; sourceTree = "<group>"; };
+		2292ACB02080D35B002DAD23 /* BiomesGreenSpacesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiomesGreenSpacesViewController.swift; sourceTree = "<group>"; };
+		2292ACB22080D37E002DAD23 /* BiomesBikingWalkingPathsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiomesBikingWalkingPathsViewController.swift; sourceTree = "<group>"; };
+		2292ACB42080D39A002DAD23 /* BiomesMangroveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiomesMangroveViewController.swift; sourceTree = "<group>"; };
+		2292ACB62080D3B7002DAD23 /* BiomesCoralReefsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiomesCoralReefsViewController.swift; sourceTree = "<group>"; };
+		2292ACB82080D3CB002DAD23 /* BiomesWaterWaysViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiomesWaterWaysViewController.swift; sourceTree = "<group>"; };
 		22992257203E5814006CE1AB /* NavigationTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationTableViewController.swift; sourceTree = "<group>"; };
 		22992259203E58FA006CE1AB /* segueToTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = segueToTable.swift; sourceTree = "<group>"; };
 		229E613F2022A79200D4BDDA /* Citizen-Scientist-Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Citizen-Scientist-Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -484,6 +512,134 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		2292AC8E2080D10C002DAD23 /* BiomesBeaches */ = {
+			isa = PBXGroup;
+			children = (
+				2292AC972080D1CF002DAD23 /* BiomesBeaches.storyboard */,
+				2292ACA52080D298002DAD23 /* Controller */,
+			);
+			path = BiomesBeaches;
+			sourceTree = "<group>";
+		};
+		2292AC8F2080D125002DAD23 /* BiomesSeagrasses */ = {
+			isa = PBXGroup;
+			children = (
+				2292ACA32080D270002DAD23 /* BiomesSeagrasses.storyboard */,
+				2292ACAB2080D2C2002DAD23 /* Controller */,
+			);
+			path = BiomesSeagrasses;
+			sourceTree = "<group>";
+		};
+		2292AC902080D139002DAD23 /* BiomesWaterWays */ = {
+			isa = PBXGroup;
+			children = (
+				2292ACA12080D234002DAD23 /* BiomesWaterWays.storyboard */,
+				2292ACAA2080D2BB002DAD23 /* Controller */,
+			);
+			path = BiomesWaterWays;
+			sourceTree = "<group>";
+		};
+		2292AC912080D142002DAD23 /* BiomesCoralReefs */ = {
+			isa = PBXGroup;
+			children = (
+				2292AC9F2080D21E002DAD23 /* BiomesCoralReefs.storyboard */,
+				2292ACA92080D2B5002DAD23 /* Controller */,
+			);
+			path = BiomesCoralReefs;
+			sourceTree = "<group>";
+		};
+		2292AC922080D150002DAD23 /* BiomesMangrove */ = {
+			isa = PBXGroup;
+			children = (
+				2292AC9D2080D20C002DAD23 /* BiomesMangrove.storyboard */,
+				2292ACA82080D2AE002DAD23 /* Controller */,
+			);
+			path = BiomesMangrove;
+			sourceTree = "<group>";
+		};
+		2292AC932080D162002DAD23 /* BiomesBikingWalkingPaths */ = {
+			isa = PBXGroup;
+			children = (
+				2292AC9B2080D1FD002DAD23 /* BiomesBikingWalkingPaths.storyboard */,
+				2292ACA72080D2A7002DAD23 /* Controller */,
+			);
+			path = BiomesBikingWalkingPaths;
+			sourceTree = "<group>";
+		};
+		2292AC942080D171002DAD23 /* BiomesGreenSpaces */ = {
+			isa = PBXGroup;
+			children = (
+				2292AC992080D1E8002DAD23 /* BiomesGreenSpaces.storyboard */,
+				2292ACA62080D2A1002DAD23 /* Controller */,
+			);
+			path = BiomesGreenSpaces;
+			sourceTree = "<group>";
+		};
+		2292AC962080D1A2002DAD23 /* OurBiomes */ = {
+			isa = PBXGroup;
+			children = (
+				2238FCB5207312F000BCAE3F /* OurBiomes.storyboard */,
+				6D8D70BC203E68EA00503CA9 /* Controller */,
+			);
+			path = OurBiomes;
+			sourceTree = "<group>";
+		};
+		2292ACA52080D298002DAD23 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2292ACAE2080D343002DAD23 /* BiomesBeachesViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2292ACA62080D2A1002DAD23 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2292ACB02080D35B002DAD23 /* BiomesGreenSpacesViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2292ACA72080D2A7002DAD23 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2292ACB22080D37E002DAD23 /* BiomesBikingWalkingPathsViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2292ACA82080D2AE002DAD23 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2292ACB42080D39A002DAD23 /* BiomesMangroveViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2292ACA92080D2B5002DAD23 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2292ACB62080D3B7002DAD23 /* BiomesCoralReefsViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2292ACAA2080D2BB002DAD23 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2292ACB82080D3CB002DAD23 /* BiomesWaterWaysViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2292ACAB2080D2C2002DAD23 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2292ACAC2080D2FB002DAD23 /* BiomesSeagrassesViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		22992227203E51FF006CE1AB /* Navigation */ = {
 			isa = PBXGroup;
 			children = (
@@ -659,8 +815,14 @@
 		2299223C203E5489006CE1AB /* OurBiomes */ = {
 			isa = PBXGroup;
 			children = (
-				2238FCB5207312F000BCAE3F /* OurBiomes.storyboard */,
-				6D8D70BC203E68EA00503CA9 /* Controller */,
+				2292AC962080D1A2002DAD23 /* OurBiomes */,
+				2292AC8E2080D10C002DAD23 /* BiomesBeaches */,
+				2292AC942080D171002DAD23 /* BiomesGreenSpaces */,
+				2292AC932080D162002DAD23 /* BiomesBikingWalkingPaths */,
+				2292AC922080D150002DAD23 /* BiomesMangrove */,
+				2292AC912080D142002DAD23 /* BiomesCoralReefs */,
+				2292AC902080D139002DAD23 /* BiomesWaterWays */,
+				2292AC8F2080D125002DAD23 /* BiomesSeagrasses */,
 			);
 			path = OurBiomes;
 			sourceTree = "<group>";
@@ -1141,18 +1303,23 @@
 				222BB5A52077A5620070354B /* Townhall-Fact-Sheet-11-10-2016.pdf in Resources */,
 				2238FCA7207310FA00BCAE3F /* Learn.storyboard in Resources */,
 				2238FCB6207312F000BCAE3F /* OurBiomes.storyboard in Resources */,
+				2292AC9C2080D1FD002DAD23 /* BiomesBikingWalkingPaths.storyboard in Resources */,
 				222BB5B12077A5620070354B /* VKB-Adaptation-Strategies-v2.ppt in Resources */,
 				2238FCAA2073113300BCAE3F /* Explore.storyboard in Resources */,
 				222BB5A92077A5620070354B /* Vulnerability_assessment_11-11-2016.pdf in Resources */,
 				222BB5AC2077A5620070354B /* Workshop-Summary-Report_06232017.pdf in Resources */,
+				2292ACA22080D234002DAD23 /* BiomesWaterWays.storyboard in Resources */,
 				2238FC9F20730D7900BCAE3F /* ContactUs.storyboard in Resources */,
 				2238FCCC207316AE00BCAE3F /* KeyChallenge.storyboard in Resources */,
 				222BB5A72077A5620070354B /* VKB-Adaptation-Strategies-v2.pptx in Resources */,
 				229E614D2022A79200D4BDDA /* Assets.xcassets in Resources */,
+				2292ACA42080D270002DAD23 /* BiomesSeagrasses.storyboard in Resources */,
 				2238FCA5207310B000BCAE3F /* GeoHunt.storyboard in Resources */,
 				2238FCBC207313AB00BCAE3F /* Events.storyboard in Resources */,
+				2292ACA02080D21E002DAD23 /* BiomesCoralReefs.storyboard in Resources */,
 				222BB5A62077A5620070354B /* 100-Resilient-Cities.pdf in Resources */,
 				2238FCAF207311F800BCAE3F /* Review.storyboard in Resources */,
+				2292AC9A2080D1E8002DAD23 /* BiomesGreenSpaces.storyboard in Resources */,
 				2238FCC92073154200BCAE3F /* SeaLevelRise.storyboard in Resources */,
 				222BB5AE2077A5620070354B /* Greater-Miami-and-the-Beaches-Resilience-Strategy.pdf in Resources */,
 				2238FC9D2073080800BCAE3F /* Homepage.storyboard in Resources */,
@@ -1165,11 +1332,13 @@
 				2238FCBE207313E900BCAE3F /* News.storyboard in Resources */,
 				222BB5B02077A5620070354B /* Workshop-Powerpoint-Slides.pdf in Resources */,
 				2238FCB92073132C00BCAE3F /* AboutUs.storyboard in Resources */,
+				2292AC9E2080D20C002DAD23 /* BiomesMangrove.storyboard in Resources */,
 				222BB5B22077A5620070354B /* Agenda-for-SLR-Townhall-11-10-2016.pdf in Resources */,
 				2238FCC6207314E900BCAE3F /* ReefRestoration.storyboard in Resources */,
 				222BB5AD2077A5620070354B /* Agenda-for-SLR-Townhall-02-16-2017.pdf in Resources */,
 				2238FCAC2073117C00BCAE3F /* Record.storyboard in Resources */,
 				2238FCCF2073177600BCAE3F /* WaterWatch.storyboard in Resources */,
+				2292AC982080D1CF002DAD23 /* BiomesBeaches.storyboard in Resources */,
 				2238FCB12073125600BCAE3F /* OurPartners.storyboard in Resources */,
 				2238FCF22073301F00BCAE3F /* MiniChallenge.storyboard in Resources */,
 			);
@@ -1202,10 +1371,12 @@
 				220A9827207BBB4600FB5752 /* MiniChallengeView.swift in Sources */,
 				222BB58C20774ED50070354B /* ExternalAppManager.swift in Sources */,
 				22594976202DA6EC0047E055 /* HomeCellContent.swift in Sources */,
+				2292ACB12080D35B002DAD23 /* BiomesGreenSpacesViewController.swift in Sources */,
 				220A9825207BB9E000FB5752 /* MiniChallengeContent.swift in Sources */,
 				2235A2C72063B33600DEDC9E /* CollapsibleTableViewCell.swift in Sources */,
 				2235A2C52063B2F400DEDC9E /* CollapsibleTableViewHeader.swift in Sources */,
 				22395D0B20528DE800177243 /* WaterWatchView.swift in Sources */,
+				2292ACB72080D3B7002DAD23 /* BiomesCoralReefsViewController.swift in Sources */,
 				2235A2C02063B1EE00DEDC9E /* CollapsibleTableViewController.swift in Sources */,
 				2292AC89207F76C8002DAD23 /* LectureSeriesView.swift in Sources */,
 				22CA83B8206E55D300287889 /* iNaturalistVimeoTutorialViewController.swift in Sources */,
@@ -1218,6 +1389,8 @@
 				229E61452022A79200D4BDDA /* HomeViewController.swift in Sources */,
 				6D021C16203E3133003E35D5 /* NewslettersViewController.swift in Sources */,
 				2259497B202DCCEC0047E055 /* Footer.swift in Sources */,
+				2292ACAD2080D2FB002DAD23 /* BiomesSeagrassesViewController.swift in Sources */,
+				2292ACAF2080D343002DAD23 /* BiomesBeachesViewController.swift in Sources */,
 				222BB58E2077521D0070354B /* InternalAppStructures.swift in Sources */,
 				2299225A203E58FA006CE1AB /* segueToTable.swift in Sources */,
 				6D021C0C203E2E52003E35D5 /* ReefRestorationViewController.swift in Sources */,
@@ -1227,6 +1400,7 @@
 				222BB5B5207A984D0070354B /* CollapsibleTableContentManager.swift in Sources */,
 				6D021BFE203E2A0C003E35D5 /* LearnViewController.swift in Sources */,
 				2207B7AB2075DBFC00A4DE90 /* ReusableFooterViewController.swift in Sources */,
+				2292ACB92080D3CB002DAD23 /* BiomesWaterWaysViewController.swift in Sources */,
 				2292AC8B207F76E3002DAD23 /* LectureSeriesContent.swift in Sources */,
 				22891A3D202DEBE7000FEBB4 /* SocialNetwork.swift in Sources */,
 				222BB588207737210070354B /* SeaLevelRiseView.swift in Sources */,
@@ -1237,6 +1411,7 @@
 				6D37E600203C869D00FF4BBA /* ProfileViewController.swift in Sources */,
 				228FA9A02047788B003610B3 /* WebViewController.swift in Sources */,
 				2292AC8D207F76F1002DAD23 /* LectureSeriesContentManager.swift in Sources */,
+				2292ACB52080D39A002DAD23 /* BiomesMangroveViewController.swift in Sources */,
 				6D37E608203C893A00FF4BBA /* EventsViewController.swift in Sources */,
 				220A9829207BBE6000FB5752 /* MiniChallengeContentManager.swift in Sources */,
 				22992258203E5814006CE1AB /* NavigationTableViewController.swift in Sources */,
@@ -1258,6 +1433,7 @@
 				228FA9A2204778B3003610B3 /* TableViewController.swift in Sources */,
 				6D021C04203E2A52003E35D5 /* ReviewViewController.swift in Sources */,
 				220A982B207BC66C00FB5752 /* iNaturalistContent.swift in Sources */,
+				2292ACB32080D37E002DAD23 /* BiomesBikingWalkingPathsViewController.swift in Sources */,
 				2235A2C32063B26A00DEDC9E /* Extensions.swift in Sources */,
 				22395D052052798600177243 /* WaterWatchContent.swift in Sources */,
 				22594972202D969F0047E055 /* SectionFooterView.swift in Sources */,
