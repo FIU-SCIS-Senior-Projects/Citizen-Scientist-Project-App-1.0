@@ -100,7 +100,7 @@ Inspection of coral reefs by Citizen Scientists, particularly those who snorkel 
                                         </constraints>
                                     </view>
                                 </subviews>
-                                <color key="backgroundColor" red="0.18823529410000001" green="0.1960784314" blue="0.25098039220000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.08235294118" green="0.090196078430000007" blue="0.1529411765" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="tog-BV-aSj" secondAttribute="bottom" identifier="WaterWatchMainViewBottom" id="4lV-VH-ib2"/>
                                     <constraint firstItem="tog-BV-aSj" firstAttribute="height" secondItem="78w-ey-400" secondAttribute="height" priority="250" identifier="WaterWatchMainViewHeight" id="5CG-Kd-UOu"/>
@@ -111,7 +111,6 @@ Inspection of coral reefs by Citizen Scientists, particularly those who snorkel 
                                 </constraints>
                             </scrollView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="laf-k1-4TJ" firstAttribute="trailing" secondItem="78w-ey-400" secondAttribute="trailing" identifier="WaterWatchScrollViewTrailing" id="Df7-qX-CwI"/>
                             <constraint firstItem="78w-ey-400" firstAttribute="leading" secondItem="laf-k1-4TJ" secondAttribute="leading" identifier="WaterWatchScrollViewLeading" id="Hby-jw-N9W"/>

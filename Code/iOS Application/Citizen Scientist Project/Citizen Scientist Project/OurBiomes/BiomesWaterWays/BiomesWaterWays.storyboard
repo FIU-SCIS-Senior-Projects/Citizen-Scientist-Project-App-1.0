@@ -100,7 +100,7 @@ Observant Citizen Scientists reporting on the health of the Key’s waterways wi
                                         </constraints>
                                     </view>
                                 </subviews>
-                                <color key="backgroundColor" red="0.18823529410000001" green="0.1960784314" blue="0.25098039220000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.08235294118" green="0.090196078430000007" blue="0.1529411765" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="DNZ-9z-lbS" firstAttribute="width" secondItem="Cun-Qy-TGE" secondAttribute="width" identifier="WaterWatchMainViewWidth" id="1I1-K0-2cd"/>
                                     <constraint firstAttribute="trailing" secondItem="DNZ-9z-lbS" secondAttribute="trailing" identifier="WaterWatchMainViewTrailing" id="Mra-od-kjc"/>
@@ -111,7 +111,6 @@ Observant Citizen Scientists reporting on the health of the Key’s waterways wi
                                 </constraints>
                             </scrollView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="Lug-Fa-Cex" firstAttribute="trailing" secondItem="Cun-Qy-TGE" secondAttribute="trailing" identifier="WaterWatchScrollViewTrailing" id="Fxy-3X-l1D"/>
                             <constraint firstItem="Cun-Qy-TGE" firstAttribute="top" secondItem="Lug-Fa-Cex" secondAttribute="top" identifier="WaterWatchScrollViewTop" id="pMl-i7-kWv"/>

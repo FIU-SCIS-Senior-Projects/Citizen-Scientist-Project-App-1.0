@@ -5,7 +5,7 @@
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13771"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -17,7 +17,6 @@
         <!--Navigation Table View Controller-->
         <scene sceneID="lZF-B5-je6">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="LV7-D6-Q74" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tableViewController id="OYm-TY-SzU" customClass="NavigationTableViewController" customModule="Citizen_Scientist_Project" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="70" estimatedRowHeight="-1" sectionHeaderHeight="70" sectionFooterHeight="28" id="zjp-Mz-DBi">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -106,46 +105,47 @@
                         <segue destination="jEC-6l-SfH" kind="show" identifier="segueToNews" id="eZw-EN-CJY"/>
                     </connections>
                 </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LV7-D6-Q74" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="7844" y="-3802"/>
         </scene>
         <!--Homepage-->
         <scene sceneID="Mcs-Ul-W9X">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ZAQ-hC-7zG" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewControllerPlaceholder storyboardName="Homepage" id="2zh-UY-3Dl" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZAQ-hC-7zG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="8831" y="-4646"/>
         </scene>
         <!--Profile-->
         <scene sceneID="UwE-aY-wH6">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ty4-JM-nqO" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewControllerPlaceholder storyboardName="Profile" id="imt-Uk-MSW" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ty4-JM-nqO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="8811" y="-4582"/>
         </scene>
         <!--LectureSeries-->
         <scene sceneID="p8U-fv-aH9">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="BK9-b5-yP2" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewControllerPlaceholder storyboardName="LectureSeries" id="GSH-eY-bAj" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BK9-b5-yP2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="8846" y="-3855"/>
         </scene>
         <!--GeoHunt-->
         <scene sceneID="9FD-P2-VWn">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="wB3-ay-cB3" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewControllerPlaceholder storyboardName="GeoHunt" id="F7b-nS-xXu" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wB3-ay-cB3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="8822" y="-4513"/>
         </scene>
         <!--Learn-->
         <scene sceneID="Fhq-yJ-e9Z">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Jws-Lp-JBH" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewControllerPlaceholder storyboardName="Learn" id="8xV-zi-7Zd" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jws-Lp-JBH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="8806" y="-4446"/>
         </scene>
@@ -160,112 +160,112 @@
         <!--ContactUs-->
         <scene sceneID="zjN-ym-sRf">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Lvf-GR-5oh" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewControllerPlaceholder storyboardName="ContactUs" id="8HL-AV-QAd" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lvf-GR-5oh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="7419" y="-3345"/>
         </scene>
         <!--Explore-->
         <scene sceneID="XVw-J4-ar7">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Kmt-gX-Keo" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewControllerPlaceholder storyboardName="Explore" id="4fJ-mi-NFd" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kmt-gX-Keo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="8816" y="-4368"/>
         </scene>
         <!--Review-->
         <scene sceneID="fqt-30-Lsw">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="CEk-GK-a8c" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewControllerPlaceholder storyboardName="Review" id="yvR-Cq-q6O" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CEk-GK-a8c" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="8814" y="-4220"/>
         </scene>
         <!--SeaLevelRise-->
         <scene sceneID="e57-cE-snp">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="qjK-6S-FM9" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewControllerPlaceholder storyboardName="SeaLevelRise" id="EuN-CR-ddb" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qjK-6S-FM9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="8843" y="-4077"/>
         </scene>
         <!--WaterWatch-->
         <scene sceneID="hnT-NW-wCC">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="cX1-TC-GgO" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewControllerPlaceholder storyboardName="WaterWatch" id="9l6-of-ivV" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cX1-TC-GgO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="8838" y="-4001"/>
         </scene>
         <!--Events-->
         <scene sceneID="dE7-yK-9De">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="iut-0V-bX2" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewControllerPlaceholder storyboardName="Events" id="Gb1-T6-ceG" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iut-0V-bX2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="8812" y="-3706"/>
         </scene>
         <!--AboutUs-->
         <scene sceneID="aoI-uj-TGu">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="TSS-za-TPK" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewControllerPlaceholder storyboardName="AboutUs" id="6gW-D1-JKf" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TSS-za-TPK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="8822" y="-3578"/>
         </scene>
         <!--OurBiomes-->
         <scene sceneID="iOh-yn-xWX">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ck7-zf-6dj" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewControllerPlaceholder storyboardName="OurBiomes" id="RFa-GZ-rGv" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ck7-zf-6dj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="8833" y="-3515"/>
         </scene>
         <!--NewsLetter-->
         <scene sceneID="laD-7c-6iN">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Hab-fD-QJj" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewControllerPlaceholder storyboardName="NewsLetter" id="Qu1-Bh-sKh" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hab-fD-QJj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="8262" y="-3345"/>
         </scene>
         <!--OurPartners-->
         <scene sceneID="lqA-vE-p9K">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="QEP-s7-4PB" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewControllerPlaceholder storyboardName="OurPartners" id="6Ds-eK-RIN" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QEP-s7-4PB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="7844" y="-3345"/>
         </scene>
         <!--FieldActivities-->
         <scene sceneID="tlB-Yc-wkG">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="vRE-KZ-WjX" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewControllerPlaceholder storyboardName="FieldActivities" id="hKx-8r-tVK" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vRE-KZ-WjX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="8840" y="-3782"/>
         </scene>
         <!--KeyChallenge-->
         <scene sceneID="hJd-1J-Coe">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="O5U-9r-ZH6" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewControllerPlaceholder storyboardName="KeyChallenge" id="rCF-pD-6ne" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="O5U-9r-ZH6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="8846" y="-4149"/>
         </scene>
         <!--Record-->
         <scene sceneID="yQ5-Pz-af0">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="zbx-O7-hlT" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewControllerPlaceholder storyboardName="Record" id="e57-NC-1a6" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zbx-O7-hlT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="8814" y="-4296"/>
         </scene>
         <!--ReefRestoration-->
         <scene sceneID="0sL-9E-PwF">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="nnt-UD-U6B" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewControllerPlaceholder storyboardName="ReefRestoration" id="lca-6M-8GU" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nnt-UD-U6B" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="8858" y="-3927"/>
         </scene>

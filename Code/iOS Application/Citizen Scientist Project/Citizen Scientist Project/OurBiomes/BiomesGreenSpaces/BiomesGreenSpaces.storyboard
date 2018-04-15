@@ -98,7 +98,7 @@ Citizen Scientist awareness of the hazards that can reduce the recreational pote
                                         </constraints>
                                     </view>
                                 </subviews>
-                                <color key="backgroundColor" red="0.18823529410000001" green="0.1960784314" blue="0.25098039220000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.08235294118" green="0.090196078430000007" blue="0.1529411765" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="Efi-pn-hHw" firstAttribute="height" secondItem="76U-KO-KJx" secondAttribute="height" priority="250" identifier="WaterWatchMainViewHeight" id="E5A-6J-6ig"/>
                                     <constraint firstItem="Efi-pn-hHw" firstAttribute="top" secondItem="76U-KO-KJx" secondAttribute="top" identifier="WaterWatchMainViewTop" id="I1O-C2-SGR"/>
@@ -109,7 +109,6 @@ Citizen Scientist awareness of the hazards that can reduce the recreational pote
                                 </constraints>
                             </scrollView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="wcL-uC-Aip" firstAttribute="bottom" secondItem="76U-KO-KJx" secondAttribute="bottom" identifier="WaterWatchScrollViewBottom" id="k7p-Sk-9fu"/>
                             <constraint firstItem="76U-KO-KJx" firstAttribute="top" secondItem="wcL-uC-Aip" secondAttribute="top" identifier="WaterWatchScrollViewTop" id="mWN-uG-537"/>

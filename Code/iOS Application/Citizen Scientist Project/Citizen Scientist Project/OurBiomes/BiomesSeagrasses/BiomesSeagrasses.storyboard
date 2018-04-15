@@ -96,7 +96,7 @@ Protection of these habitats is essential for the sustainability of marine resou
                                         </constraints>
                                     </view>
                                 </subviews>
-                                <color key="backgroundColor" red="0.18823529410000001" green="0.1960784314" blue="0.25098039220000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.08235294118" green="0.090196078430000007" blue="0.1529411765" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="thZ-Mg-dEt" firstAttribute="height" secondItem="KwP-cK-yv7" secondAttribute="height" priority="250" identifier="WaterWatchMainViewHeight" id="E5e-vK-apq"/>
                                     <constraint firstItem="thZ-Mg-dEt" firstAttribute="width" secondItem="KwP-cK-yv7" secondAttribute="width" identifier="WaterWatchMainViewWidth" id="KvR-Ld-8bY"/>
@@ -107,7 +107,6 @@ Protection of these habitats is essential for the sustainability of marine resou
                                 </constraints>
                             </scrollView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="KwP-cK-yv7" firstAttribute="top" secondItem="Yxg-Iv-NJL" secondAttribute="top" identifier="WaterWatchScrollViewTop" id="2Oy-ge-gZe"/>
                             <constraint firstItem="Yxg-Iv-NJL" firstAttribute="bottom" secondItem="KwP-cK-yv7" secondAttribute="bottom" identifier="WaterWatchScrollViewBottom" id="5My-Pe-ldX"/>

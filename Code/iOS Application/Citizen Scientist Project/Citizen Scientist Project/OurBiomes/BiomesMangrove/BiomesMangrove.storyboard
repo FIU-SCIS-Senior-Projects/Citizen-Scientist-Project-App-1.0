@@ -98,7 +98,7 @@ Flooding by salt water can also damage the trees as exemplified by the storm sur
                                         </constraints>
                                     </view>
                                 </subviews>
-                                <color key="backgroundColor" red="0.18823529410000001" green="0.1960784314" blue="0.25098039220000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.08235294118" green="0.090196078430000007" blue="0.1529411765" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="6rf-sp-Y1g" firstAttribute="width" secondItem="S4f-EL-e05" secondAttribute="width" identifier="WaterWatchMainViewWidth" id="6Xh-pF-KiD"/>
                                     <constraint firstAttribute="bottom" secondItem="6rf-sp-Y1g" secondAttribute="bottom" identifier="WaterWatchMainViewBottom" id="IBR-Tj-KUV"/>
@@ -109,7 +109,6 @@ Flooding by salt water can also damage the trees as exemplified by the storm sur
                                 </constraints>
                             </scrollView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="S4f-EL-e05" firstAttribute="leading" secondItem="ZYA-oj-So6" secondAttribute="leading" identifier="WaterWatchScrollViewLeading" id="BMf-TW-gwu"/>
                             <constraint firstItem="S4f-EL-e05" firstAttribute="top" secondItem="ZYA-oj-So6" secondAttribute="top" identifier="WaterWatchScrollViewTop" id="FqX-j9-Y5e"/>

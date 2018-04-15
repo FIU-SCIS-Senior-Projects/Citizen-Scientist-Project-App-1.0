@@ -145,15 +145,6 @@ Our lecture series topics vary from core topics in environmental science &amp; c
                                                     <constraint firstItem="uxj-6K-QjX" firstAttribute="leading" secondItem="09d-OB-GBW" secondAttribute="leading" constant="16" id="xGx-B4-Kdk"/>
                                                 </constraints>
                                             </view>
-                                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c5O-qO-X4f" userLabel="Footer">
-                                                <rect key="frame" x="0.0" y="5936" width="375" height="125"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="125" id="JMz-yt-9xp"/>
-                                                </constraints>
-                                                <connections>
-                                                    <segue destination="LER-0V-GzW" kind="embed" id="Ah0-hA-v6U"/>
-                                                </connections>
-                                            </containerView>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ypX-k0-07x">
                                                 <rect key="frame" x="0.0" y="906" width="375" height="5030"/>
                                                 <subviews>
@@ -169,17 +160,18 @@ Our lecture series topics vary from core topics in environmental science &amp; c
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WHAT IS A CITIZEN SCIENTIST?" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="xPP-Ph-wda">
                                                                 <rect key="frame" x="16" y="282" width="343" height="24"/>
                                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
-                                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                <color key="textColor" red="0.23921568630000001" green="0.22352941179999999" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZFI-Gz-USI">
                                                                 <rect key="frame" x="16" y="322" width="343" height="226"/>
                                                                 <string key="text">If you go to Google and type in citizen science, you will get over two million hits. So what is a this anyway? You may have heard it on the radio or read about it in the paper, but what is it really? Citizen science is a way for you, the general public, to be directly involved in the process of scientific data collection and be engaged in scientific thinking. The purpose is to have volunteers beachesbecome amateur scientists while working with a group of professional scientists.</string>
-                                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                <color key="textColor" red="0.23921568630000001" green="0.22352941179999999" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
                                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                             </textView>
                                                         </subviews>
+                                                        <color key="backgroundColor" red="0.95686274510000002" green="0.96470588239999999" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
                                                         <constraints>
                                                             <constraint firstItem="cCg-Ja-wz1" firstAttribute="top" secondItem="Zmd-SY-pEr" secondAttribute="top" id="0pt-3D-myb"/>
                                                             <constraint firstItem="cCg-Ja-wz1" firstAttribute="leading" secondItem="Zmd-SY-pEr" secondAttribute="leading" id="JEy-PW-o3E"/>
@@ -205,17 +197,18 @@ Our lecture series topics vary from core topics in environmental science &amp; c
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BILL BAGGS STATE PARK" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="2Lw-kS-FqI">
                                                                 <rect key="frame" x="16" y="282.5" width="343" height="24"/>
                                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
-                                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                <color key="textColor" red="0.23921568630000001" green="0.22352941179999999" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aeD-SF-T6x">
                                                                 <rect key="frame" x="16" y="322.5" width="343" height="283.5"/>
                                                                 <mutableString key="text">Dr. Elizabeth Golden talks to us about Bill Baggs State Park. The State Park has a unique history and a number of natural resources that the public can utilize! Bill Baggs Cape Florida State Park is the home of a historic lighthouse built in 1825 and reconstructed in 1846, and is the oldest standing structure in Miami-Dade County. Visitors come to the park to sunbathe, swim and picnic on more than one mile of sandy Atlantic beachfront, currently ranked #7 on the list of “Top 10 Beaches in America” by Dr. Stephen Leatherman, aka ‘Dr. Beach.’ Biking and kayaking are popular activities.</mutableString>
-                                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                <color key="textColor" red="0.23921568630000001" green="0.22352941179999999" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
                                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                             </textView>
                                                         </subviews>
+                                                        <color key="backgroundColor" red="0.95686274510000002" green="0.96470588239999999" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
                                                         <constraints>
                                                             <constraint firstAttribute="trailing" secondItem="Vhq-Yy-QNu" secondAttribute="trailing" id="AgL-Kg-ojs"/>
                                                             <constraint firstItem="Vhq-Yy-QNu" firstAttribute="top" secondItem="end-H9-TdV" secondAttribute="top" id="OJZ-ZY-a9K"/>
@@ -241,17 +234,18 @@ Our lecture series topics vary from core topics in environmental science &amp; c
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CHANGING BY DEGREES – THE FATE OF CORAL REEF ECOSYSTEMS IN AN ERA OF CLIMATE CHANGE" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="ERK-wR-cF1">
                                                                 <rect key="frame" x="16" y="282.5" width="343" height="95.5"/>
                                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
-                                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                <color key="textColor" red="0.23921568630000001" green="0.22352941179999999" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mfm-t1-TCb">
                                                                 <rect key="frame" x="16" y="394" width="343" height="207"/>
                                                                 <string key="text">Dr. Andrew Baker’s lecture about the declining health of coral reefs around the world, and how research at the Rosenstiel School can help understand, prevent, and reverse these declines. The lecture discusses the effects of climate change on coral reefs, in particular the phenomenon of coral ‘bleaching’, and the question of whether corals can adapt to increasing temperatures and ocean acidification.</string>
-                                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                <color key="textColor" red="0.23921568630000001" green="0.22352941179999999" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
                                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                             </textView>
                                                         </subviews>
+                                                        <color key="backgroundColor" red="0.95686274510000002" green="0.96470588239999999" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
                                                         <constraints>
                                                             <constraint firstItem="AnR-fd-pKZ" firstAttribute="top" secondItem="TqC-Va-gz8" secondAttribute="top" id="3mB-TH-uyj"/>
                                                             <constraint firstAttribute="trailing" secondItem="ERK-wR-cF1" secondAttribute="trailing" constant="16" id="8vv-bq-MJg"/>
@@ -277,17 +271,18 @@ Our lecture series topics vary from core topics in environmental science &amp; c
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HURRICANE SEASON &amp; FORECASTING" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="QCR-1o-SKE">
                                                                 <rect key="frame" x="16" y="282.5" width="343" height="48"/>
                                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
-                                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                <color key="textColor" red="0.23921568630000001" green="0.22352941179999999" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tkh-zU-MFZ">
                                                                 <rect key="frame" x="16" y="346.5" width="343" height="245.5"/>
                                                                 <mutableString key="text">A lecture on the general topic of Atlantic hurricanes by Dr. Aberson will be presented. The presentation will include the current information we have about these destructive events. June 1st every year marks the start of Hurricane Season, and no, we do not mean the UM football season. It’s the time of year when we all should be making sure we have our hurricane kit ready so we do not need to scramble at the last minute. This will last through November 30th and hopefully no longer, though that has happened in the past.</mutableString>
-                                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                <color key="textColor" red="0.23921568630000001" green="0.22352941179999999" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
                                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                             </textView>
                                                         </subviews>
+                                                        <color key="backgroundColor" red="0.95686274510000002" green="0.96470588239999999" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
                                                         <constraints>
                                                             <constraint firstAttribute="trailing" secondItem="QCR-1o-SKE" secondAttribute="trailing" constant="16" id="6Ef-UC-wtM"/>
                                                             <constraint firstAttribute="trailing" secondItem="Tkh-zU-MFZ" secondAttribute="trailing" constant="16" id="7AW-Gg-EuA"/>
@@ -313,17 +308,18 @@ Our lecture series topics vary from core topics in environmental science &amp; c
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="INVASIVE SPECIES IN KEY BISCAYNE &amp; SOUTH FLORIDA" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="OM9-Hf-YQe">
                                                                 <rect key="frame" x="16" y="282.5" width="343" height="48"/>
                                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
-                                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                <color key="textColor" red="0.23921568630000001" green="0.22352941179999999" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FCv-xu-KAr">
                                                                 <rect key="frame" x="16" y="346.5" width="343" height="111.5"/>
                                                                 <string key="text">Tom Jackson discusses Invasive Species! Tom is employed by NOAA as a fisheries biologist but is a wealth of knowledge about invasive species. Invasive species are a problem that we all see on a daily basis.</string>
-                                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                <color key="textColor" red="0.23921568630000001" green="0.22352941179999999" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
                                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                             </textView>
                                                         </subviews>
+                                                        <color key="backgroundColor" red="0.95686274510000002" green="0.96470588239999999" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
                                                         <constraints>
                                                             <constraint firstItem="FCv-xu-KAr" firstAttribute="leading" secondItem="hkt-q7-shN" secondAttribute="leading" constant="16" id="Bfc-rN-yp9"/>
                                                             <constraint firstItem="OM9-Hf-YQe" firstAttribute="leading" secondItem="hkt-q7-shN" secondAttribute="leading" constant="16" id="Cek-K8-Ss3"/>
@@ -349,17 +345,18 @@ Our lecture series topics vary from core topics in environmental science &amp; c
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MARINE INVERTEBRATE IDENTIFICATION" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="6g1-dt-rr2">
                                                                 <rect key="frame" x="16" y="282.5" width="343" height="48"/>
                                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
-                                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                <color key="textColor" red="0.23921568630000001" green="0.22352941179999999" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mQY-Tj-pHa">
                                                                 <rect key="frame" x="16" y="346.5" width="343" height="188"/>
                                                                 <string key="text">This course will introduce you to the most common sea sponges, octocorals (soft corals), crustaceans, echinoderms and mollusks that you’re likely to encounter when diving or snorkeling on southeast Florida coral reefs. A test will be administered at the end of the class and all participants will receive a resource CD-ROM of images from the course for future reference.</string>
-                                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                <color key="textColor" red="0.23921568630000001" green="0.22352941179999999" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
                                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                             </textView>
                                                         </subviews>
+                                                        <color key="backgroundColor" red="0.95686274510000002" green="0.96470588239999999" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
                                                         <constraints>
                                                             <constraint firstItem="I4O-aB-2Yd" firstAttribute="top" secondItem="cuG-oU-hyH" secondAttribute="top" id="BxD-jU-MfK"/>
                                                             <constraint firstItem="mQY-Tj-pHa" firstAttribute="leading" secondItem="cuG-oU-hyH" secondAttribute="leading" constant="16" id="G7L-1x-bYo"/>
@@ -385,17 +382,18 @@ Our lecture series topics vary from core topics in environmental science &amp; c
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="REEF FISH IDENTIFICATION" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="fKq-4Z-xOc">
                                                                 <rect key="frame" x="16" y="282.5" width="343" height="24"/>
                                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
-                                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                <color key="textColor" red="0.23921568630000001" green="0.22352941179999999" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tOL-DV-IPW">
                                                                 <rect key="frame" x="16" y="322.5" width="343" height="226"/>
                                                                 <string key="text">REEF Fish Identification: A beginner course that teaches the basics of “fishwatching” including identification of 50 commonly sighted species found in the tropical western Atlantic. All materials provided. An evaluation will be conducted at the end of the training. Anyone scoring an 80% or better on the test and who goes on to complete two fish surveys will become an Experience Level 2 volunteer for Reef Environmental Education Foundation (REEF).</string>
-                                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                <color key="textColor" red="0.23921568630000001" green="0.22352941179999999" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
                                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                             </textView>
                                                         </subviews>
+                                                        <color key="backgroundColor" red="0.95686274510000002" green="0.96470588239999999" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
                                                         <constraints>
                                                             <constraint firstItem="tOL-DV-IPW" firstAttribute="top" secondItem="fKq-4Z-xOc" secondAttribute="bottom" constant="16" id="0Fj-Nd-vBg"/>
                                                             <constraint firstItem="FH6-XB-GhA" firstAttribute="leading" secondItem="tFn-Wt-ZtO" secondAttribute="leading" id="1En-KY-7sF"/>
@@ -421,17 +419,18 @@ Our lecture series topics vary from core topics in environmental science &amp; c
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="STONY CORAL IDENTIFICATION" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="wdG-3F-jgd">
                                                                 <rect key="frame" x="16" y="282.5" width="343" height="24"/>
                                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
-                                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                <color key="textColor" red="0.23921568630000001" green="0.22352941179999999" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LFZ-Ih-dl2">
                                                                 <rect key="frame" x="16" y="322.5" width="343" height="150"/>
                                                                 <string key="text">This course will introduce you to roughly thirty species of stony corals that are found within Miami-Dade, Broward, Palm Beach and Martin counties. A knowledge review will be administered at the end of the class and all participants will receive a resource CD-ROM of images from the course for future reference.</string>
-                                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                <color key="textColor" red="0.23921568630000001" green="0.22352941179999999" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
                                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                             </textView>
                                                         </subviews>
+                                                        <color key="backgroundColor" red="0.95686274510000002" green="0.96470588239999999" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
                                                         <constraints>
                                                             <constraint firstItem="LFZ-Ih-dl2" firstAttribute="top" secondItem="wdG-3F-jgd" secondAttribute="bottom" constant="16" id="6Ui-DD-Ywx"/>
                                                             <constraint firstAttribute="trailing" secondItem="wdG-3F-jgd" secondAttribute="trailing" constant="16" id="7A0-tu-lmM"/>
@@ -457,17 +456,18 @@ Our lecture series topics vary from core topics in environmental science &amp; c
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="YOUTH FISHING CLINIC" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="8MP-bu-Nbm">
                                                                 <rect key="frame" x="16" y="282.5" width="343" height="24"/>
                                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
-                                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                <color key="textColor" red="0.23921568630000001" green="0.22352941179999999" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2W3-th-G5w">
                                                                 <rect key="frame" x="16" y="322.5" width="343" height="207"/>
                                                                 <string key="text">The Youth Fishing Clinic is designed to create responsible marine resource stewards by teaching children about Florida’s marine ecosystems. Kids will learn about the animals that live in our marine environment, how to tie a knot and bait a hook, fishing regulations, proper casting and release techniques. Most importantly, this event will serve as a way for the community to learn more about becoming a Citizen Scientist.</string>
-                                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                <color key="textColor" red="0.23921568630000001" green="0.22352941179999999" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
                                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                             </textView>
                                                         </subviews>
+                                                        <color key="backgroundColor" red="0.95686274510000002" green="0.96470588239999999" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
                                                         <constraints>
                                                             <constraint firstItem="2W3-th-G5w" firstAttribute="top" secondItem="8MP-bu-Nbm" secondAttribute="bottom" constant="16" id="2iu-jz-vSz"/>
                                                             <constraint firstItem="8MP-bu-Nbm" firstAttribute="top" secondItem="wYx-lY-J8I" secondAttribute="bottom" constant="32" id="3RH-3E-eQB"/>
@@ -482,7 +482,6 @@ Our lecture series topics vary from core topics in environmental science &amp; c
                                                         </constraints>
                                                     </view>
                                                 </subviews>
-                                                <color key="backgroundColor" red="0.95686274510000002" green="0.96470588239999999" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstItem="hkt-q7-shN" firstAttribute="top" secondItem="gbS-y6-F7I" secondAttribute="bottom" id="4lD-XD-gpg"/>
                                                     <constraint firstAttribute="trailing" secondItem="Zmd-SY-pEr" secondAttribute="trailing" id="67t-pV-H2a"/>
@@ -516,6 +515,15 @@ Our lecture series topics vary from core topics in environmental science &amp; c
                                                     <constraint firstItem="cuG-oU-hyH" firstAttribute="leading" secondItem="ypX-k0-07x" secondAttribute="leading" id="zyi-2h-XCI"/>
                                                 </constraints>
                                             </view>
+                                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c5O-qO-X4f" userLabel="Footer">
+                                                <rect key="frame" x="0.0" y="5936" width="375" height="125"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="125" id="JMz-yt-9xp"/>
+                                                </constraints>
+                                                <connections>
+                                                    <segue destination="LER-0V-GzW" kind="embed" id="Ah0-hA-v6U"/>
+                                                </connections>
+                                            </containerView>
                                         </subviews>
                                         <constraints>
                                             <constraint firstItem="ypX-k0-07x" firstAttribute="top" secondItem="09d-OB-GBW" secondAttribute="bottom" id="5eF-Jj-b34"/>
@@ -534,7 +542,7 @@ Our lecture series topics vary from core topics in environmental science &amp; c
                                         </constraints>
                                     </view>
                                 </subviews>
-                                <color key="backgroundColor" red="0.18823529410000001" green="0.1960784314" blue="0.25098039220000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.08235294118" green="0.090196078430000007" blue="0.1529411765" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="hrO-Dz-shI" secondAttribute="bottom" identifier="WaterWatchMainViewBottom" id="832-uG-YrD"/>
                                     <constraint firstItem="hrO-Dz-shI" firstAttribute="top" secondItem="iEm-xt-iOd" secondAttribute="top" identifier="WaterWatchMainViewTop" id="K2h-bf-UL2"/>

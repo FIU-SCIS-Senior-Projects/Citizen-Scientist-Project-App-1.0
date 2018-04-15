@@ -102,7 +102,7 @@ Citizen Scientist inspection of the paths and reporting on features detrimental 
                                         </constraints>
                                     </view>
                                 </subviews>
-                                <color key="backgroundColor" red="0.18823529410000001" green="0.1960784314" blue="0.25098039220000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.08235294118" green="0.090196078430000007" blue="0.1529411765" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="NbL-rW-mF1" firstAttribute="height" secondItem="YIR-XO-YMt" secondAttribute="height" priority="250" identifier="WaterWatchMainViewHeight" id="61p-U4-MxZ"/>
                                     <constraint firstAttribute="trailing" secondItem="NbL-rW-mF1" secondAttribute="trailing" identifier="WaterWatchMainViewTrailing" id="JpA-7i-jco"/>
@@ -113,7 +113,6 @@ Citizen Scientist inspection of the paths and reporting on features detrimental 
                                 </constraints>
                             </scrollView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="YIR-XO-YMt" firstAttribute="leading" secondItem="5iy-81-xxT" secondAttribute="leading" identifier="WaterWatchScrollViewLeading" id="Nib-hW-JjQ"/>
                             <constraint firstItem="YIR-XO-YMt" firstAttribute="top" secondItem="5iy-81-xxT" secondAttribute="top" identifier="WaterWatchScrollViewTop" id="m0v-hm-6de"/>

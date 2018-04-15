@@ -234,7 +234,7 @@ Many of us are familiar with the more visible species: natives like turtles, man
                                                     </label>
                                                     <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" bouncesZoom="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lDw-vt-D3w">
                                                         <rect key="frame" x="16" y="72" width="343" height="1172.5"/>
-                                                        <mutableString key="text">• The Mini Challenge will run from February 15, 2018 through March 14, 2018
+                                                        <string key="text">• The Mini Challenge will run from February 15, 2018 through March 14, 2018
 
 • The Mini Challenge involves observing, photographing, and identifying organisms using iNaturalist.
 
@@ -250,7 +250,7 @@ Many of us are familiar with the more visible species: natives like turtles, man
 
 • Tutorials on how to use iNaturalist will be uploaded online. If you have any questions or concerns, please contact us.
 
-• Make sure photographs are clear. Unclear photos will be difficult to identify</mutableString>
+• Make sure photographs are clear. Unclear photos will be difficult to identify</string>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -319,7 +319,7 @@ Many of us are familiar with the more visible species: natives like turtles, man
                                         </constraints>
                                     </view>
                                 </subviews>
-                                <color key="backgroundColor" red="0.18823529410000001" green="0.1960784314" blue="0.25098039220000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.08235294118" green="0.090196078430000007" blue="0.1529411765" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="WA9-Qa-Z5H" secondAttribute="bottom" identifier="WaterWatchMainViewBottom" id="1jF-S2-AYl"/>
                                     <constraint firstAttribute="trailing" secondItem="WA9-Qa-Z5H" secondAttribute="trailing" identifier="WaterWatchMainViewTrailing" id="7fo-bL-pMi"/>
@@ -330,7 +330,6 @@ Many of us are familiar with the more visible species: natives like turtles, man
                                 </constraints>
                             </scrollView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="tDf-sr-kTa" firstAttribute="bottom" secondItem="8J8-uU-Tu4" secondAttribute="bottom" identifier="WaterWatchScrollViewBottom" id="4Oo-xf-6lP"/>
                             <constraint firstItem="8J8-uU-Tu4" firstAttribute="leading" secondItem="tDf-sr-kTa" secondAttribute="leading" identifier="WaterWatchScrollViewLeading" id="61q-q5-ntv"/>

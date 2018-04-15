@@ -1,83 +1,232 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ffx-Nb-Bvf">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="q3U-aM-HVY">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
         <array key="HelveticaNeue.ttc">
             <string>HelveticaNeue</string>
+            <string>HelveticaNeue-Bold</string>
         </array>
     </customFonts>
     <scenes>
         <!--Our Partners View Controller-->
-        <scene sceneID="pmH-YC-lEr">
+        <scene sceneID="3za-Lx-OF9">
             <objects>
-                <viewController storyboardIdentifier="UIViewController-YFL-T1-tRh" id="YFL-T1-tRh" customClass="OurPartnersViewController" customModule="Citizen_Scientist_Project" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="K1N-G3-nc3">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <viewController id="hEX-oa-KzH" customClass="OurPartnersViewController" customModule="Citizen_Scientist_Project" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kzh-NS-qBo">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="4000"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Our Partners Page" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0br-b0-p7a">
-                                <rect key="frame" x="117" y="323.5" width="141" height="20"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
-                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="60O-XT-NIV">
+                                <rect key="frame" x="0.0" y="64" width="375" height="3936"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wJW-Ch-Mhu" userLabel="Mini Challenge View">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1755"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="partners-header" translatesAutoresizingMaskIntoConstraints="NO" id="UHB-yQ-ZWV">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="225"/>
+                                            </imageView>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Uut-iL-oH8" userLabel="Blue Box 1">
+                                                <rect key="frame" x="0.0" y="225" width="375" height="637.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="THE CITIZEN SCIENTIST PROJECT’S PARTNERS" lineBreakMode="wordWrap" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ogK-lb-czJ">
+                                                        <rect key="frame" x="16" y="16" width="343" height="48"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" bouncesZoom="NO" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vlL-h7-8vf">
+                                                        <rect key="frame" x="16" y="72" width="343" height="158"/>
+                                                        <string key="text">The Key Biscayne Citizen Scientist Project’s partners include Key Biscayne Community Foundation, Village of Key Biscayne, University of Miami Rosenstiel School of Marine and Atmospheric Science, Knight Foundation, The Fairchild Challenge, and Google Earth.</string>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                    </textView>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3cT-vZ-V55">
+                                                        <rect key="frame" x="0.0" y="246.5" width="375" height="375"/>
+                                                        <subviews>
+                                                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GUG-oz-Ynl">
+                                                                <rect key="frame" x="0.0" y="-0.5" width="375" height="375"/>
+                                                            </containerView>
+                                                        </subviews>
+                                                        <color key="backgroundColor" red="0.34139746430000001" green="0.056113466620000003" blue="0.076615460220000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="3cT-vZ-V55" secondAttribute="height" multiplier="1:1" id="3hN-cd-m9o"/>
+                                                            <constraint firstItem="GUG-oz-Ynl" firstAttribute="top" secondItem="3cT-vZ-V55" secondAttribute="top" id="RlN-Zi-SYL"/>
+                                                            <constraint firstAttribute="bottom" secondItem="GUG-oz-Ynl" secondAttribute="bottom" id="iCD-zC-nQW"/>
+                                                            <constraint firstItem="GUG-oz-Ynl" firstAttribute="leading" secondItem="3cT-vZ-V55" secondAttribute="leading" id="nKc-Tb-yWL"/>
+                                                            <constraint firstAttribute="trailing" secondItem="GUG-oz-Ynl" secondAttribute="trailing" id="nhy-ts-ady"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.0039215686269999999" green="0.17254901959999999" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="3cT-vZ-V55" secondAttribute="trailing" id="1sl-4C-gIo"/>
+                                                    <constraint firstAttribute="bottom" secondItem="3cT-vZ-V55" secondAttribute="bottom" constant="16" id="2WR-zM-l4W"/>
+                                                    <constraint firstItem="3cT-vZ-V55" firstAttribute="leading" secondItem="Uut-iL-oH8" secondAttribute="leading" id="CQw-L5-aof"/>
+                                                    <constraint firstItem="ogK-lb-czJ" firstAttribute="top" secondItem="Uut-iL-oH8" secondAttribute="top" constant="16" id="I8n-lO-Uzl"/>
+                                                    <constraint firstItem="3cT-vZ-V55" firstAttribute="top" secondItem="vlL-h7-8vf" secondAttribute="bottom" constant="16" id="Ok6-nA-wgi"/>
+                                                    <constraint firstItem="vlL-h7-8vf" firstAttribute="top" secondItem="ogK-lb-czJ" secondAttribute="bottom" constant="8" id="Zka-mE-zEd"/>
+                                                    <constraint firstAttribute="trailing" secondItem="vlL-h7-8vf" secondAttribute="trailing" constant="16" id="c5a-aU-VO1"/>
+                                                    <constraint firstItem="vlL-h7-8vf" firstAttribute="leading" secondItem="Uut-iL-oH8" secondAttribute="leading" constant="16" id="goY-nJ-vbd"/>
+                                                    <constraint firstAttribute="trailing" secondItem="ogK-lb-czJ" secondAttribute="trailing" constant="16" id="lqi-DC-6Rg"/>
+                                                    <constraint firstItem="ogK-lb-czJ" firstAttribute="leading" secondItem="Uut-iL-oH8" secondAttribute="leading" constant="16" id="seS-bB-Eae"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eqh-H3-7iU" userLabel="Blue Box 2">
+                                                <rect key="frame" x="0.0" y="863" width="375" height="767"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="THE CITIZEN SCIENTIST PROJECT’S SPONSORS" lineBreakMode="wordWrap" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SYu-Jc-KE3">
+                                                        <rect key="frame" x="16" y="16" width="343" height="48"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AkI-UC-9sx">
+                                                        <rect key="frame" x="0.0" y="376" width="375" height="375"/>
+                                                        <subviews>
+                                                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ylM-uh-1gC">
+                                                                <rect key="frame" x="0.0" y="0.0" width="375" height="375"/>
+                                                            </containerView>
+                                                        </subviews>
+                                                        <color key="backgroundColor" red="0.0039215686269999999" green="0.17254901959999999" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="bottom" secondItem="ylM-uh-1gC" secondAttribute="bottom" id="0nL-vZ-bkE"/>
+                                                            <constraint firstAttribute="width" secondItem="AkI-UC-9sx" secondAttribute="height" multiplier="1:1" id="18y-kg-kCF"/>
+                                                            <constraint firstItem="ylM-uh-1gC" firstAttribute="top" secondItem="AkI-UC-9sx" secondAttribute="top" id="GXe-dZ-79h"/>
+                                                            <constraint firstAttribute="trailing" secondItem="ylM-uh-1gC" secondAttribute="trailing" id="OvD-5w-qbB"/>
+                                                            <constraint firstItem="ylM-uh-1gC" firstAttribute="leading" secondItem="AkI-UC-9sx" secondAttribute="leading" id="sCP-hf-4HQ"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" bouncesZoom="NO" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="78y-jg-pJD">
+                                                        <rect key="frame" x="16" y="80" width="343" height="280"/>
+                                                        <string key="text">The Key Biscayne Citizen Scientist Project would like to thank &amp; recognize our many program sponsors: Biscayne Bay Waterkeepers, Florida Park Service, The Islander News, KeyBis, Key Biscayne K-8 Center, Key Biscayne Magazine, Key Biscayne Chamber of Commerce, Key Biscayne Community Church Day School, Key Biscayne Presbyterian Church School, MAST Academy, Principals’ Coalition, Marjory Stoneman Douglas Biscayne Nature Center, St. Agnes Academy KB, and St. Christopher’s by the Sea.</string>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                    </textView>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.0039215686269999999" green="0.17254901959999999" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="78y-jg-pJD" secondAttribute="trailing" constant="16" id="58i-gk-H9Y"/>
+                                                    <constraint firstItem="SYu-Jc-KE3" firstAttribute="top" secondItem="eqh-H3-7iU" secondAttribute="top" constant="16" id="MbJ-UN-bLL"/>
+                                                    <constraint firstAttribute="trailing" secondItem="AkI-UC-9sx" secondAttribute="trailing" id="QRq-lz-ihI"/>
+                                                    <constraint firstAttribute="trailing" secondItem="SYu-Jc-KE3" secondAttribute="trailing" constant="16" id="ReK-rK-ikX"/>
+                                                    <constraint firstItem="78y-jg-pJD" firstAttribute="leading" secondItem="eqh-H3-7iU" secondAttribute="leading" constant="16" id="UiT-qH-P8i"/>
+                                                    <constraint firstItem="AkI-UC-9sx" firstAttribute="leading" secondItem="eqh-H3-7iU" secondAttribute="leading" id="c2R-Aj-HxY"/>
+                                                    <constraint firstAttribute="bottom" secondItem="AkI-UC-9sx" secondAttribute="bottom" constant="16" id="ewq-F1-hcC"/>
+                                                    <constraint firstItem="SYu-Jc-KE3" firstAttribute="leading" secondItem="eqh-H3-7iU" secondAttribute="leading" constant="16" id="gZu-ga-81O"/>
+                                                    <constraint firstItem="AkI-UC-9sx" firstAttribute="top" secondItem="78y-jg-pJD" secondAttribute="bottom" constant="16" id="kML-Ej-d10"/>
+                                                    <constraint firstItem="78y-jg-pJD" firstAttribute="top" secondItem="SYu-Jc-KE3" secondAttribute="bottom" constant="16" id="ycN-Ns-5Az"/>
+                                                </constraints>
+                                            </view>
+                                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hZw-bO-gjY" userLabel="Footer">
+                                                <rect key="frame" x="0.0" y="1630" width="375" height="125"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="125" id="Ksb-Wh-NWF"/>
+                                                </constraints>
+                                                <connections>
+                                                    <segue destination="KAQ-Q8-c9I" kind="embed" id="6u5-03-arg"/>
+                                                </connections>
+                                            </containerView>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.18823529410000001" green="0.1960784314" blue="0.25098039220000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="eqh-H3-7iU" firstAttribute="leading" secondItem="wJW-Ch-Mhu" secondAttribute="leading" id="16U-ym-ov2"/>
+                                            <constraint firstItem="UHB-yQ-ZWV" firstAttribute="leading" secondItem="wJW-Ch-Mhu" secondAttribute="leading" id="1xE-Oe-VHS"/>
+                                            <constraint firstItem="UHB-yQ-ZWV" firstAttribute="top" secondItem="wJW-Ch-Mhu" secondAttribute="top" id="3MX-89-zL6"/>
+                                            <constraint firstAttribute="trailing" secondItem="UHB-yQ-ZWV" secondAttribute="trailing" id="7Fc-kO-eeb"/>
+                                            <constraint firstItem="hZw-bO-gjY" firstAttribute="top" secondItem="eqh-H3-7iU" secondAttribute="bottom" id="LBM-ud-eI3"/>
+                                            <constraint firstAttribute="trailing" secondItem="eqh-H3-7iU" secondAttribute="trailing" id="PKJ-ZH-HAG"/>
+                                            <constraint firstItem="Uut-iL-oH8" firstAttribute="leading" secondItem="wJW-Ch-Mhu" secondAttribute="leading" id="QIR-N8-pGq"/>
+                                            <constraint firstItem="Uut-iL-oH8" firstAttribute="top" secondItem="UHB-yQ-ZWV" secondAttribute="bottom" id="UFH-FI-zfS"/>
+                                            <constraint firstAttribute="trailing" secondItem="Uut-iL-oH8" secondAttribute="trailing" id="Vat-tT-D0m"/>
+                                            <constraint firstItem="eqh-H3-7iU" firstAttribute="top" secondItem="Uut-iL-oH8" secondAttribute="bottom" id="b0J-ig-kiS"/>
+                                            <constraint firstAttribute="bottom" secondItem="hZw-bO-gjY" secondAttribute="bottom" id="c5Q-jW-yHh"/>
+                                            <constraint firstAttribute="trailing" secondItem="hZw-bO-gjY" secondAttribute="trailing" id="hyK-Pf-MJ3"/>
+                                            <constraint firstItem="hZw-bO-gjY" firstAttribute="leading" secondItem="wJW-Ch-Mhu" secondAttribute="leading" id="w4y-2r-DpI"/>
+                                            <constraint firstItem="UHB-yQ-ZWV" firstAttribute="width" secondItem="UHB-yQ-ZWV" secondAttribute="height" multiplier="5:3" identifier="WaterWatchMainImageAspectRatio" id="zgS-NX-Ble"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.08235294118" green="0.090196078430000007" blue="0.1529411765" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="wJW-Ch-Mhu" firstAttribute="width" secondItem="60O-XT-NIV" secondAttribute="width" identifier="WaterWatchMainViewWidth" id="5lg-6O-jS1"/>
+                                    <constraint firstItem="wJW-Ch-Mhu" firstAttribute="height" secondItem="60O-XT-NIV" secondAttribute="height" priority="250" identifier="WaterWatchMainViewHeight" id="Bl0-Zs-Zqz"/>
+                                    <constraint firstItem="wJW-Ch-Mhu" firstAttribute="top" secondItem="60O-XT-NIV" secondAttribute="top" identifier="WaterWatchMainViewTop" id="EHB-FZ-irX"/>
+                                    <constraint firstItem="wJW-Ch-Mhu" firstAttribute="leading" secondItem="60O-XT-NIV" secondAttribute="leading" identifier="WaterWatchMainViewLeading" id="d2N-Xa-fHd"/>
+                                    <constraint firstAttribute="bottom" secondItem="wJW-Ch-Mhu" secondAttribute="bottom" identifier="WaterWatchMainViewBottom" id="kAE-6B-1Fr"/>
+                                    <constraint firstAttribute="trailing" secondItem="wJW-Ch-Mhu" secondAttribute="trailing" identifier="WaterWatchMainViewTrailing" id="kvM-FB-R2Y"/>
+                                </constraints>
+                            </scrollView>
                         </subviews>
-                        <color key="backgroundColor" red="0.0039215686274509803" green="0.17254901960784313" blue="0.28235294117647058" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="0br-b0-p7a" firstAttribute="centerY" secondItem="K1N-G3-nc3" secondAttribute="centerY" id="1ZN-Y9-e1B"/>
-                            <constraint firstItem="0br-b0-p7a" firstAttribute="centerX" secondItem="K1N-G3-nc3" secondAttribute="centerX" id="Nsj-9H-Q1G"/>
+                            <constraint firstItem="60O-XT-NIV" firstAttribute="top" secondItem="8NZ-tV-cRb" secondAttribute="top" identifier="WaterWatchScrollViewTop" id="9Lx-zh-Ufn"/>
+                            <constraint firstItem="8NZ-tV-cRb" firstAttribute="bottom" secondItem="60O-XT-NIV" secondAttribute="bottom" identifier="WaterWatchScrollViewBottom" id="KrF-AI-4cc"/>
+                            <constraint firstItem="60O-XT-NIV" firstAttribute="leading" secondItem="8NZ-tV-cRb" secondAttribute="leading" identifier="WaterWatchScrollViewLeading" id="QZL-r0-4rG"/>
+                            <constraint firstItem="8NZ-tV-cRb" firstAttribute="trailing" secondItem="60O-XT-NIV" secondAttribute="trailing" identifier="WaterWatchScrollViewTrailing" id="XrB-mi-3II"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="pDc-lK-qyX"/>
+                        <viewLayoutGuide key="safeArea" id="8NZ-tV-cRb"/>
                     </view>
-                    <navigationItem key="navigationItem" id="Xa6-Ou-LAm">
-                        <barButtonItem key="leftBarButtonItem" image="1-header-nav-1" id="ilN-Jp-7j1">
+                    <navigationItem key="navigationItem" id="HMh-Go-xhR">
+                        <barButtonItem key="leftBarButtonItem" image="1-header-nav-1" id="OBv-Yb-5z8">
                             <color key="tintColor" red="0.60392156860000001" green="0.6588235294" blue="0.69803921570000005" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
-                                <segue destination="uyd-fs-atr" kind="show" id="G2L-k2-uvh"/>
+                                <segue destination="c5e-hx-32v" kind="show" id="h1Z-KQ-Oeh"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <size key="freeformSize" width="375" height="4000"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="cIE-zd-pRV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lGm-mg-mnp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="15104.799999999999" y="-255.02248875562222"/>
+            <point key="canvasLocation" x="5532" y="5794.9025487256376"/>
         </scene>
         <!--Navigation-->
-        <scene sceneID="87V-jJ-sdF">
+        <scene sceneID="fDz-Ei-o3n">
             <objects>
-                <viewControllerPlaceholder storyboardName="Navigation" id="uyd-fs-atr" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="BjU-oR-Okf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder storyboardName="Navigation" id="c5e-hx-32v" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WWZ-vN-zeq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="15859.200000000001" y="-255.47226386806599"/>
+            <point key="canvasLocation" x="6228" y="4509"/>
+        </scene>
+        <!--Footer-->
+        <scene sceneID="eCs-Xt-vKx">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Footer" id="KAQ-Q8-c9I" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="C94-Oi-eaq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6117" y="5336"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="GWS-Vx-RNY">
+        <scene sceneID="QtW-YN-BXG">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ffx-Nb-Bvf" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="q3U-aM-HVY" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="YhA-e8-Hdq">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="YNp-QF-Xjs">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="YFL-T1-tRh" kind="relationship" relationship="rootViewController" id="7XV-sR-uOo"/>
+                        <segue destination="hEX-oa-KzH" kind="relationship" relationship="rootViewController" id="bDt-DZ-Y1B"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="vOm-Ho-ugx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x3C-N5-p3O" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="15105" y="-1052"/>
+            <point key="canvasLocation" x="5532" y="3493"/>
         </scene>
     </scenes>
     <resources>
         <image name="1-header-nav-1" width="37" height="37"/>
+        <image name="partners-header" width="1800" height="1000"/>
     </resources>
 </document>

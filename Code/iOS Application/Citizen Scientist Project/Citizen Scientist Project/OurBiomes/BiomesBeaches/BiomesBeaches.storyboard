@@ -104,7 +104,7 @@ Citizen Scientist understanding of these hazards provides means to reduce their 
                                         </constraints>
                                     </view>
                                 </subviews>
-                                <color key="backgroundColor" red="0.18823529410000001" green="0.1960784314" blue="0.25098039220000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.08235294118" green="0.090196078430000007" blue="0.1529411765" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="LAH-cu-fGG" firstAttribute="leading" secondItem="97E-Zc-cST" secondAttribute="leading" identifier="WaterWatchMainViewLeading" id="3J3-mt-hLZ"/>
                                     <constraint firstItem="LAH-cu-fGG" firstAttribute="width" secondItem="97E-Zc-cST" secondAttribute="width" identifier="WaterWatchMainViewWidth" id="KgE-YQ-i5C"/>
@@ -115,7 +115,6 @@ Citizen Scientist understanding of these hazards provides means to reduce their 
                                 </constraints>
                             </scrollView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="uGA-NM-n4l" firstAttribute="bottom" secondItem="97E-Zc-cST" secondAttribute="bottom" identifier="WaterWatchScrollViewBottom" id="Mav-bC-qyO"/>
                             <constraint firstItem="uGA-NM-n4l" firstAttribute="trailing" secondItem="97E-Zc-cST" secondAttribute="trailing" identifier="WaterWatchScrollViewTrailing" id="Sjd-Fj-2bi"/>

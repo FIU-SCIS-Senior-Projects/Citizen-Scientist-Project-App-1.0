@@ -29,7 +29,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="PXC-y3-bhn">
                                         <rect key="frame" x="8" y="35" width="359" height="55.5"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="biH-G7-XJc">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" text="KEY BISCAYNE COMMUNITY FOUNDATION" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="biH-G7-XJc">
                                                 <rect key="frame" x="0.0" y="0.0" width="359" height="20.5"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
                                                 <color key="textColor" red="0.37254901959999998" green="0.67450980390000004" blue="0.87450980389999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -43,12 +43,14 @@
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="20" id="fSv-UG-fe1"/>
                                                         </constraints>
+                                                        <state key="normal" image="facebook-footer-icon"/>
                                                         <connections>
                                                             <action selector="openFacebook:" destination="fFf-KC-1Ij" eventType="touchUpInside" id="74t-Ow-hpG"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oTy-0y-jPf">
                                                         <rect key="frame" x="50" y="0.0" width="20" height="20"/>
+                                                        <state key="normal" image="twitter-footer-icon"/>
                                                         <connections>
                                                             <action selector="openTwitter:" destination="fFf-KC-1Ij" eventType="touchUpInside" id="HFD-V5-yli"/>
                                                         </connections>
@@ -107,6 +109,7 @@
                                 </connections>
                             </view>
                         </subviews>
+                        <color key="backgroundColor" red="0.08235294118" green="0.090196078430000007" blue="0.1529411765" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="hwM-cV-CP5" firstAttribute="bottom" secondItem="Lic-oc-4rT" secondAttribute="bottom" id="36S-0c-q2x"/>
                             <constraint firstItem="Lic-oc-4rT" firstAttribute="trailing" secondItem="hwM-cV-CP5" secondAttribute="trailing" id="bz6-Cs-6fA"/>
@@ -1332,5 +1335,7 @@ iQCLAJAAkgCUAJ0AogCtAK8AsQCzALgAuwC9AL8AwQDDAMgA3wDhAONJnUmiSa1JtknJSc1J2EnhSeZJ
 F1wcXClcLFw5XD5cRlxJXE5cVlxZXGtcblxzAAAAAAAAAgEAAAAAAAAAWQAAAAAAAAAAAAAAAAAAXHU
 </mutableData>
         </image>
+        <image name="facebook-footer-icon" width="64" height="64"/>
+        <image name="twitter-footer-icon" width="64" height="64"/>
     </resources>
 </document>
