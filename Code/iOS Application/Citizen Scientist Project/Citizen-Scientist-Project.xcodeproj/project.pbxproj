@@ -89,10 +89,18 @@
 		229E61502022A79200D4BDDA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 229E614E2022A79200D4BDDA /* LaunchScreen.storyboard */; };
 		229E615B2022A79200D4BDDA /* Citizen_Scientist_ProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229E615A2022A79200D4BDDA /* Citizen_Scientist_ProjectTests.swift */; };
 		229E61662022A79200D4BDDA /* Citizen_Scientist_ProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229E61652022A79200D4BDDA /* Citizen_Scientist_ProjectUITests.swift */; };
+		22BE72EA208769FB003BAD05 /* PreviousWinnersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BE72E9208769FB003BAD05 /* PreviousWinnersView.swift */; };
 		22CA83B2206E348800287889 /* iNaturalistDownloadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CA83B1206E348800287889 /* iNaturalistDownloadView.swift */; };
 		22CA83B6206E52EC00287889 /* iNaturalistVimeoTutorialsPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CA83B5206E52EC00287889 /* iNaturalistVimeoTutorialsPageViewController.swift */; };
 		22CA83B8206E55D300287889 /* iNaturalistVimeoTutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CA83B7206E55D300287889 /* iNaturalistVimeoTutorialViewController.swift */; };
 		22CA83BA206E593600287889 /* iNaturalistVimeoTutorialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CA83B9206E593600287889 /* iNaturalistVimeoTutorialView.swift */; };
+		22CF18A820873260001E2648 /* PreviousWinnersCollapsibleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CF18A720873260001E2648 /* PreviousWinnersCollapsibleTableViewController.swift */; };
+		22CF18AA20873699001E2648 /* PreviousWinnersCollapsibleTableContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CF18A920873699001E2648 /* PreviousWinnersCollapsibleTableContent.swift */; };
+		22CF18AC208736C5001E2648 /* PreviousWinnersCollapsibleTableContentManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CF18AB208736C5001E2648 /* PreviousWinnersCollapsibleTableContentManager.swift */; };
+		22CF18AE208745C8001E2648 /* PreviousWinnersCollapsibleTableViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CF18AD208745C7001E2648 /* PreviousWinnersCollapsibleTableViewHeader.swift */; };
+		22CF18B0208745D8001E2648 /* PreviousWinnersCollapsibleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CF18AF208745D8001E2648 /* PreviousWinnersCollapsibleTableViewCell.swift */; };
+		22CF18B2208765ED001E2648 /* PreviousWinnersContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CF18B1208765ED001E2648 /* PreviousWinnersContent.swift */; };
+		22CF18B420876605001E2648 /* PreviousWinnerContentManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CF18B320876605001E2648 /* PreviousWinnerContentManager.swift */; };
 		22E377B9206CE29300D277F2 /* MiniChallengeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E377B8206CE29300D277F2 /* MiniChallengeViewController.swift */; };
 		22E377BB206E22AA00D277F2 /* iNaturalistDownloadStepViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E377BA206E22AA00D277F2 /* iNaturalistDownloadStepViewController.swift */; };
 		22E377BD206E23DB00D277F2 /* iNaturalistDownloadStepsPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E377BC206E23DB00D277F2 /* iNaturalistDownloadStepsPageViewController.swift */; };
@@ -227,10 +235,18 @@
 		229E61612022A79200D4BDDA /* Citizen-Scientist-ProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Citizen-Scientist-ProjectUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		229E61652022A79200D4BDDA /* Citizen_Scientist_ProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Citizen_Scientist_ProjectUITests.swift; sourceTree = "<group>"; };
 		229E61672022A79200D4BDDA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22BE72E9208769FB003BAD05 /* PreviousWinnersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviousWinnersView.swift; sourceTree = "<group>"; };
 		22CA83B1206E348800287889 /* iNaturalistDownloadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iNaturalistDownloadView.swift; sourceTree = "<group>"; };
 		22CA83B5206E52EC00287889 /* iNaturalistVimeoTutorialsPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iNaturalistVimeoTutorialsPageViewController.swift; sourceTree = "<group>"; };
 		22CA83B7206E55D300287889 /* iNaturalistVimeoTutorialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iNaturalistVimeoTutorialViewController.swift; sourceTree = "<group>"; };
 		22CA83B9206E593600287889 /* iNaturalistVimeoTutorialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iNaturalistVimeoTutorialView.swift; sourceTree = "<group>"; };
+		22CF18A720873260001E2648 /* PreviousWinnersCollapsibleTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviousWinnersCollapsibleTableViewController.swift; sourceTree = "<group>"; };
+		22CF18A920873699001E2648 /* PreviousWinnersCollapsibleTableContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviousWinnersCollapsibleTableContent.swift; sourceTree = "<group>"; };
+		22CF18AB208736C5001E2648 /* PreviousWinnersCollapsibleTableContentManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviousWinnersCollapsibleTableContentManager.swift; sourceTree = "<group>"; };
+		22CF18AD208745C7001E2648 /* PreviousWinnersCollapsibleTableViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviousWinnersCollapsibleTableViewHeader.swift; sourceTree = "<group>"; };
+		22CF18AF208745D8001E2648 /* PreviousWinnersCollapsibleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviousWinnersCollapsibleTableViewCell.swift; sourceTree = "<group>"; };
+		22CF18B1208765ED001E2648 /* PreviousWinnersContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviousWinnersContent.swift; sourceTree = "<group>"; };
+		22CF18B320876605001E2648 /* PreviousWinnerContentManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviousWinnerContentManager.swift; sourceTree = "<group>"; };
 		22E377B8206CE29300D277F2 /* MiniChallengeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniChallengeViewController.swift; sourceTree = "<group>"; };
 		22E377BA206E22AA00D277F2 /* iNaturalistDownloadStepViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iNaturalistDownloadStepViewController.swift; sourceTree = "<group>"; };
 		22E377BC206E23DB00D277F2 /* iNaturalistDownloadStepsPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iNaturalistDownloadStepsPageViewController.swift; sourceTree = "<group>"; };
@@ -299,6 +315,7 @@
 			isa = PBXGroup;
 			children = (
 				2207B7862075C4AE00A4DE90 /* PreviousWinnersViewController.swift */,
+				22CF18A720873260001E2648 /* PreviousWinnersCollapsibleTableViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -306,6 +323,9 @@
 		2207B7822075C43E00A4DE90 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				22BE72E9208769FB003BAD05 /* PreviousWinnersView.swift */,
+				22CF18AD208745C7001E2648 /* PreviousWinnersCollapsibleTableViewHeader.swift */,
+				22CF18AF208745D8001E2648 /* PreviousWinnersCollapsibleTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -313,6 +333,10 @@
 		2207B7832075C44400A4DE90 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				22CF18B1208765ED001E2648 /* PreviousWinnersContent.swift */,
+				22CF18B320876605001E2648 /* PreviousWinnerContentManager.swift */,
+				22CF18A920873699001E2648 /* PreviousWinnersCollapsibleTableContent.swift */,
+				22CF18AB208736C5001E2648 /* PreviousWinnersCollapsibleTableContentManager.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -380,6 +404,7 @@
 		2235A2C12063B23600DEDC9E /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				22E377BE206E24FB00D277F2 /* Storyboard.swift */,
 				222BB59220775F1F0070354B /* WebView */,
 				2235A2C22063B26A00DEDC9E /* Extensions.swift */,
 				222BB58B20774ED50070354B /* ExternalAppManager.swift */,
@@ -1018,7 +1043,6 @@
 		229E61412022A79200D4BDDA /* Citizen Scientist Project */ = {
 			isa = PBXGroup;
 			children = (
-				22E377BE206E24FB00D277F2 /* Storyboard.swift */,
 				2238FC912073021600BCAE3F /* Header */,
 				22992228203E5254006CE1AB /* Homepage */,
 				2262D2E3203E316600FB8AFB /* Footer */,
@@ -1304,6 +1328,7 @@
 				220A982D207BC6DF00FB5752 /* iNaturalistContentManager.swift in Sources */,
 				22CA83BA206E593600287889 /* iNaturalistVimeoTutorialView.swift in Sources */,
 				6D021C14203E3126003E35D5 /* OurBiomesViewController.swift in Sources */,
+				22CF18AE208745C8001E2648 /* PreviousWinnersCollapsibleTableViewHeader.swift in Sources */,
 				220A9827207BBB4600FB5752 /* MiniChallengeView.swift in Sources */,
 				222BB58C20774ED50070354B /* ExternalAppManager.swift in Sources */,
 				22594976202DA6EC0047E055 /* HomeCellContent.swift in Sources */,
@@ -1318,6 +1343,7 @@
 				22CA83B8206E55D300287889 /* iNaturalistVimeoTutorialViewController.swift in Sources */,
 				6D021C02203E2A47003E35D5 /* RecordViewController.swift in Sources */,
 				22CA83B2206E348800287889 /* iNaturalistDownloadView.swift in Sources */,
+				22CF18AA20873699001E2648 /* PreviousWinnersCollapsibleTableContent.swift in Sources */,
 				6D9DF564203F3FAC0036C0E2 /* StatusReefRestorationViewController.swift in Sources */,
 				2235A2C92063B38D00DEDC9E /* CollapsibleGraphChartTable.swift in Sources */,
 				22CA83B6206E52EC00287889 /* iNaturalistVimeoTutorialsPageViewController.swift in Sources */,
@@ -1325,6 +1351,7 @@
 				229E61452022A79200D4BDDA /* HomeViewController.swift in Sources */,
 				6D021C16203E3133003E35D5 /* NewslettersViewController.swift in Sources */,
 				2259497B202DCCEC0047E055 /* Footer.swift in Sources */,
+				22CF18B420876605001E2648 /* PreviousWinnerContentManager.swift in Sources */,
 				2292ACAD2080D2FB002DAD23 /* BiomesSeagrassesViewController.swift in Sources */,
 				2292ACAF2080D343002DAD23 /* BiomesBeachesViewController.swift in Sources */,
 				222BB58E2077521D0070354B /* InternalAppStructures.swift in Sources */,
@@ -1344,18 +1371,22 @@
 				22E377B9206CE29300D277F2 /* MiniChallengeViewController.swift in Sources */,
 				6D021C06203E2E1D003E35D5 /* KeyChallengeViewController.swift in Sources */,
 				6D021C18203E3142003E35D5 /* OurPartnersViewController.swift in Sources */,
+				22CF18B2208765ED001E2648 /* PreviousWinnersContent.swift in Sources */,
+				22CF18B0208745D8001E2648 /* PreviousWinnersCollapsibleTableViewCell.swift in Sources */,
 				6D37E600203C869D00FF4BBA /* ProfileViewController.swift in Sources */,
 				228FA9A02047788B003610B3 /* WebViewController.swift in Sources */,
 				2292AC8D207F76F1002DAD23 /* LectureSeriesContentManager.swift in Sources */,
 				2292ACB52080D39A002DAD23 /* BiomesMangroveViewController.swift in Sources */,
 				6D37E608203C893A00FF4BBA /* EventsViewController.swift in Sources */,
 				220A9829207BBE6000FB5752 /* MiniChallengeContentManager.swift in Sources */,
+				22BE72EA208769FB003BAD05 /* PreviousWinnersView.swift in Sources */,
 				22992258203E5814006CE1AB /* NavigationTableViewController.swift in Sources */,
 				6D021C00203E2A36003E35D5 /* ExploreViewController.swift in Sources */,
 				6D021C1A203E314E003E35D5 /* ContactUsViewController.swift in Sources */,
 				22395D072052830600177243 /* WaterWatchContentManager.swift in Sources */,
 				6D021C12203E3117003E35D5 /* AboutUsViewController.swift in Sources */,
 				6D021C0A203E2E3F003E35D5 /* WaterWatchViewController.swift in Sources */,
+				22CF18A820873260001E2648 /* PreviousWinnersCollapsibleTableViewController.swift in Sources */,
 				22F78C8F202D0F900001049D /* HomeCollectionViewCell.swift in Sources */,
 				6D021C10203E2E72003E35D5 /* FieldActivityViewController.swift in Sources */,
 				229E614B2022A79200D4BDDA /* Citizen_Scientist_Project.xcdatamodeld in Sources */,
@@ -1365,6 +1396,7 @@
 				22395D01204E432600177243 /* NavigationPage.swift in Sources */,
 				6D021C08203E2E2F003E35D5 /* SeaLevelRiseViewController.swift in Sources */,
 				22594978202DAA0C0047E055 /* HomeContentManager.swift in Sources */,
+				22CF18AC208736C5001E2648 /* PreviousWinnersCollapsibleTableContentManager.swift in Sources */,
 				222BB58A20773D520070354B /* SeaLevelRiseContentManager.swift in Sources */,
 				228FA9A2204778B3003610B3 /* TableViewController.swift in Sources */,
 				6D021C04203E2A52003E35D5 /* ReviewViewController.swift in Sources */,

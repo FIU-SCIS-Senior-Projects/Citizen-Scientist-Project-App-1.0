@@ -378,7 +378,7 @@ We also hope to set up three Atlantic sites for less intense testing which will 
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JXi-NE-S5W" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6976.8000000000002" y="5457.571214392804"/>
+            <point key="canvasLocation" x="6978" y="4180"/>
         </scene>
     </scenes>
     <resources>

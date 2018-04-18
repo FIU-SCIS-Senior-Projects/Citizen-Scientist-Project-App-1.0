@@ -33,3 +33,17 @@ struct FileResource {
         case PPTX = "pptx"
     }
 }
+
+struct CollapsibleTableHeader {
+    var title: String
+    var arrow: String
+    var collapsed: Bool?
+    var section: Int?
+    
+    init(title: String, arrow: String, collapsed: Bool? = true, section: Int? = nil){
+        self.title = title
+        self.arrow = arrow
+        self.collapsed = collapsed
+        self.section = section
+    }
+}
