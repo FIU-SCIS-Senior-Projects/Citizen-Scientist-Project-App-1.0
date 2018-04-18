@@ -37,9 +37,9 @@ class PreviousWinnersCollapsibleTableViewController: UITableViewController {
 
 }
 
-// MARK: - Table view data source
-
 extension PreviousWinnersCollapsibleTableViewController {
+    
+    // MARK: - Table view data source
     
     override func numberOfSections(in tableView: UITableView) -> Int {
         return sections.count
@@ -87,7 +87,7 @@ extension PreviousWinnersCollapsibleTableViewController {
         return 1.0
     }
     
-    // Signal the WaterWatchViewController container's height constraint to update its size to wrap tableview
+    // Signal the PreviousWinnersViewController container's height constraint to update its size to wrap tableview
     override func viewDidLayoutSubviews() {
         PreviousWinnersCollapsibleTableViewController.delegate?.setContainerHeight(height: tableViewHeight)
     }

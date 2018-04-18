@@ -18,7 +18,7 @@ class PreviousWinnersCollapsibleTableViewHeader: UITableViewCell {
     @IBOutlet private weak var arrowImageView: UIImageView!
     
     var delegate: PreviousWinnersCollapsibleTableViewHeaderDelegate?
-    var section: Int?
+    private var section: Int?
     
     override func awakeFromNib() {
         addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(tapHeader(_:))))

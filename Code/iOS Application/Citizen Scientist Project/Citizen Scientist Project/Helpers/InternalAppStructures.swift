@@ -40,7 +40,7 @@ struct CollapsibleTableHeader {
     var collapsed: Bool?
     var section: Int?
     
-    init(title: String, arrow: String, collapsed: Bool? = true, section: Int? = nil){
+    init(title: String, arrow: String, collapsed: Bool? = false, section: Int? = nil){
         self.title = title
         self.arrow = arrow
         self.collapsed = collapsed

@@ -90,6 +90,14 @@
 		229E615B2022A79200D4BDDA /* Citizen_Scientist_ProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229E615A2022A79200D4BDDA /* Citizen_Scientist_ProjectTests.swift */; };
 		229E61662022A79200D4BDDA /* Citizen_Scientist_ProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229E61652022A79200D4BDDA /* Citizen_Scientist_ProjectUITests.swift */; };
 		22BE72EA208769FB003BAD05 /* PreviousWinnersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BE72E9208769FB003BAD05 /* PreviousWinnersView.swift */; };
+		22BE72EE208798FE003BAD05 /* KeyChallengeCollapsibleTableContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BE72ED208798FE003BAD05 /* KeyChallengeCollapsibleTableContent.swift */; };
+		22BE72F020879916003BAD05 /* KeyChallengeCollapsibleTableContentManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BE72EF20879916003BAD05 /* KeyChallengeCollapsibleTableContentManager.swift */; };
+		22BE72F22087A5ED003BAD05 /* KeyChallengeCollapsibleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BE72F12087A5ED003BAD05 /* KeyChallengeCollapsibleTableViewController.swift */; };
+		22BE72F42087A711003BAD05 /* KeyChallengeCollapsibleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BE72F32087A711003BAD05 /* KeyChallengeCollapsibleTableViewCell.swift */; };
+		22BE72F62087A735003BAD05 /* KeyChallengeCollapsibleTableViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BE72F52087A735003BAD05 /* KeyChallengeCollapsibleTableViewHeader.swift */; };
+		22BE72F82087A74B003BAD05 /* KeyChallengeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BE72F72087A74B003BAD05 /* KeyChallengeView.swift */; };
+		22BE72FA2087A76D003BAD05 /* KeyChallengeContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BE72F92087A76D003BAD05 /* KeyChallengeContent.swift */; };
+		22BE72FC2087A77D003BAD05 /* KeyChallengeContentManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BE72FB2087A77D003BAD05 /* KeyChallengeContentManager.swift */; };
 		22CA83B2206E348800287889 /* iNaturalistDownloadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CA83B1206E348800287889 /* iNaturalistDownloadView.swift */; };
 		22CA83B6206E52EC00287889 /* iNaturalistVimeoTutorialsPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CA83B5206E52EC00287889 /* iNaturalistVimeoTutorialsPageViewController.swift */; };
 		22CA83B8206E55D300287889 /* iNaturalistVimeoTutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CA83B7206E55D300287889 /* iNaturalistVimeoTutorialViewController.swift */; };
@@ -236,6 +244,14 @@
 		229E61652022A79200D4BDDA /* Citizen_Scientist_ProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Citizen_Scientist_ProjectUITests.swift; sourceTree = "<group>"; };
 		229E61672022A79200D4BDDA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		22BE72E9208769FB003BAD05 /* PreviousWinnersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviousWinnersView.swift; sourceTree = "<group>"; };
+		22BE72ED208798FE003BAD05 /* KeyChallengeCollapsibleTableContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyChallengeCollapsibleTableContent.swift; sourceTree = "<group>"; };
+		22BE72EF20879916003BAD05 /* KeyChallengeCollapsibleTableContentManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyChallengeCollapsibleTableContentManager.swift; sourceTree = "<group>"; };
+		22BE72F12087A5ED003BAD05 /* KeyChallengeCollapsibleTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyChallengeCollapsibleTableViewController.swift; sourceTree = "<group>"; };
+		22BE72F32087A711003BAD05 /* KeyChallengeCollapsibleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyChallengeCollapsibleTableViewCell.swift; sourceTree = "<group>"; };
+		22BE72F52087A735003BAD05 /* KeyChallengeCollapsibleTableViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyChallengeCollapsibleTableViewHeader.swift; sourceTree = "<group>"; };
+		22BE72F72087A74B003BAD05 /* KeyChallengeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyChallengeView.swift; sourceTree = "<group>"; };
+		22BE72F92087A76D003BAD05 /* KeyChallengeContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyChallengeContent.swift; sourceTree = "<group>"; };
+		22BE72FB2087A77D003BAD05 /* KeyChallengeContentManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyChallengeContentManager.swift; sourceTree = "<group>"; };
 		22CA83B1206E348800287889 /* iNaturalistDownloadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iNaturalistDownloadView.swift; sourceTree = "<group>"; };
 		22CA83B5206E52EC00287889 /* iNaturalistVimeoTutorialsPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iNaturalistVimeoTutorialsPageViewController.swift; sourceTree = "<group>"; };
 		22CA83B7206E55D300287889 /* iNaturalistVimeoTutorialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iNaturalistVimeoTutorialViewController.swift; sourceTree = "<group>"; };
@@ -693,6 +709,8 @@
 			isa = PBXGroup;
 			children = (
 				2238FCCA207316AE00BCAE3F /* KeyChallenge.storyboard */,
+				22BE72EB20879860003BAD05 /* Model */,
+				22BE72EC20879873003BAD05 /* View */,
 				22992230203E5405006CE1AB /* Controller */,
 			);
 			path = KeyChallenge;
@@ -702,6 +720,7 @@
 			isa = PBXGroup;
 			children = (
 				6D021C05203E2E1D003E35D5 /* KeyChallengeViewController.swift */,
+				22BE72F12087A5ED003BAD05 /* KeyChallengeCollapsibleTableViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -1094,6 +1113,27 @@
 			path = "Citizen Scientist ProjectUITests";
 			sourceTree = "<group>";
 		};
+		22BE72EB20879860003BAD05 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				22BE72F92087A76D003BAD05 /* KeyChallengeContent.swift */,
+				22BE72FB2087A77D003BAD05 /* KeyChallengeContentManager.swift */,
+				22BE72ED208798FE003BAD05 /* KeyChallengeCollapsibleTableContent.swift */,
+				22BE72EF20879916003BAD05 /* KeyChallengeCollapsibleTableContentManager.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		22BE72EC20879873003BAD05 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				22BE72F72087A74B003BAD05 /* KeyChallengeView.swift */,
+				22BE72F52087A735003BAD05 /* KeyChallengeCollapsibleTableViewHeader.swift */,
+				22BE72F32087A711003BAD05 /* KeyChallengeCollapsibleTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		22CA83B3206E527C00287889 /* iNaturalistDownload */ = {
 			isa = PBXGroup;
 			children = (
@@ -1347,12 +1387,16 @@
 				6D9DF564203F3FAC0036C0E2 /* StatusReefRestorationViewController.swift in Sources */,
 				2235A2C92063B38D00DEDC9E /* CollapsibleGraphChartTable.swift in Sources */,
 				22CA83B6206E52EC00287889 /* iNaturalistVimeoTutorialsPageViewController.swift in Sources */,
+				22BE72F22087A5ED003BAD05 /* KeyChallengeCollapsibleTableViewController.swift in Sources */,
+				22BE72F62087A735003BAD05 /* KeyChallengeCollapsibleTableViewHeader.swift in Sources */,
 				22E377BF206E24FB00D277F2 /* Storyboard.swift in Sources */,
 				229E61452022A79200D4BDDA /* HomeViewController.swift in Sources */,
 				6D021C16203E3133003E35D5 /* NewslettersViewController.swift in Sources */,
+				22BE72EE208798FE003BAD05 /* KeyChallengeCollapsibleTableContent.swift in Sources */,
 				2259497B202DCCEC0047E055 /* Footer.swift in Sources */,
 				22CF18B420876605001E2648 /* PreviousWinnerContentManager.swift in Sources */,
 				2292ACAD2080D2FB002DAD23 /* BiomesSeagrassesViewController.swift in Sources */,
+				22BE72F42087A711003BAD05 /* KeyChallengeCollapsibleTableViewCell.swift in Sources */,
 				2292ACAF2080D343002DAD23 /* BiomesBeachesViewController.swift in Sources */,
 				222BB58E2077521D0070354B /* InternalAppStructures.swift in Sources */,
 				2299225A203E58FA006CE1AB /* segueToTable.swift in Sources */,
@@ -1361,10 +1405,12 @@
 				6D021C0E203E2E63003E35D5 /* LectureSeriesViewController.swift in Sources */,
 				220A9820207B407800FB5752 /* NavigationPageContentManager.swift in Sources */,
 				222BB5B5207A984D0070354B /* CollapsibleTableContentManager.swift in Sources */,
+				22BE72F020879916003BAD05 /* KeyChallengeCollapsibleTableContentManager.swift in Sources */,
 				6D021BFE203E2A0C003E35D5 /* LearnViewController.swift in Sources */,
 				2207B7AB2075DBFC00A4DE90 /* ReusableFooterViewController.swift in Sources */,
 				2292ACB92080D3CB002DAD23 /* BiomesWaterWaysViewController.swift in Sources */,
 				2292AC8B207F76E3002DAD23 /* LectureSeriesContent.swift in Sources */,
+				22BE72FA2087A76D003BAD05 /* KeyChallengeContent.swift in Sources */,
 				22891A3D202DEBE7000FEBB4 /* SocialNetwork.swift in Sources */,
 				222BB588207737210070354B /* SeaLevelRiseView.swift in Sources */,
 				229E61432022A79200D4BDDA /* AppDelegate.swift in Sources */,
@@ -1392,6 +1438,7 @@
 				229E614B2022A79200D4BDDA /* Citizen_Scientist_Project.xcdatamodeld in Sources */,
 				2238FC932073024B00BCAE3F /* ReusableHeader.swift in Sources */,
 				2207B7872075C4AE00A4DE90 /* PreviousWinnersViewController.swift in Sources */,
+				22BE72F82087A74B003BAD05 /* KeyChallengeView.swift in Sources */,
 				6D37E60A203C897100FF4BBA /* NewsViewController.swift in Sources */,
 				22395D01204E432600177243 /* NavigationPage.swift in Sources */,
 				6D021C08203E2E2F003E35D5 /* SeaLevelRiseViewController.swift in Sources */,
@@ -1400,6 +1447,7 @@
 				222BB58A20773D520070354B /* SeaLevelRiseContentManager.swift in Sources */,
 				228FA9A2204778B3003610B3 /* TableViewController.swift in Sources */,
 				6D021C04203E2A52003E35D5 /* ReviewViewController.swift in Sources */,
+				22BE72FC2087A77D003BAD05 /* KeyChallengeContentManager.swift in Sources */,
 				220A982B207BC66C00FB5752 /* iNaturalistContent.swift in Sources */,
 				2292ACB32080D37E002DAD23 /* BiomesBikingWalkingPathsViewController.swift in Sources */,
 				2235A2C32063B26A00DEDC9E /* Extensions.swift in Sources */,
