@@ -24,6 +24,10 @@ struct ExternalApp {
 class ExternalAppManager {
     
     static func openPage(scheme: String? = nil, page: String) {
+        openPage(scheme: scheme, page: NSURL(string: page)! as URL)
+    }
+    
+    static func openPage(scheme: String? = nil, page: URL) {
         
         if let appScheme = scheme {
             if let schemeUrl = NSURL(string: appScheme){
@@ -36,7 +40,7 @@ class ExternalAppManager {
         }
         
         // Openning application fail, attempt openning using default browser
-        UIApplication.shared.open(NSURL(string: page)! as URL, options: [:], completionHandler: nil)
-
+        UIApplication.shared.open(page, options: [:], completionHandler: nil)
+        
     }
 }

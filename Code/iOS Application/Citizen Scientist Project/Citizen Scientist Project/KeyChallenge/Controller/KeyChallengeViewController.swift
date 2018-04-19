@@ -14,6 +14,8 @@ protocol KeyChallengeViewControllerDelegate: class {
 
 class KeyChallengeViewController: UIViewController {
 
+    private let keyChallengeContent: KeyChallengeContent = KeyChallengeContentManager.fetchContent()
+    @IBOutlet var keyChallengeView: KeyChallengeView!
     @IBOutlet public weak var heightConstraint: NSLayoutConstraint!
     
     override func viewDidLoad() {
@@ -26,21 +28,20 @@ class KeyChallengeViewController: UIViewController {
         }
 
         ReusableHeader.setUpNavBar(navigationController: self.navigationController, navigationItem: self.navigationItem)
+        keyChallengeView.setUp(content: keyChallengeContent)
     }
     
-    //MARK: - Handle Button Clicks
+    //MARK: - Handle Button Click Events
     
     @IBAction func clickDownloadKeyChallengeProgramButton(_ sender: UIButton) {
-        UIApplication.shared.open(URL(string: "https://www.keyscience.org/wp-content/uploads/2017/02/kc-2017-brochure-FINAL-WEB.pdf")!, options: [:], completionHandler: nil)
+        ExternalAppManager.openPage(page: keyChallengeContent.downloadKeyChallengeProgram.url)
     }
     @IBAction func clickIssuuPresentationButton(_ sender: UIButton) {
-        UIApplication.shared.open(URL(string: "https://issuu.com/kbcf/docs/kc-2017-brochure-final-web")!, options: [:], completionHandler: nil)
+       ExternalAppManager.openPage(page: keyChallengeContent.issuuImageLink.link.url)
     }
     @IBAction func clickLearnMoreRedButton(_ sender: UIButton) {
-        UIApplication.shared.open(URL(string: "https://www.keyscience.org/projects/key-challenge/")!, options: [:], completionHandler: nil)
-        
+        ExternalAppManager.openPage(page: keyChallengeContent.learnMoreRegistration.url)
     }
-
 }
 
 extension KeyChallengeViewController: KeyChallengeViewControllerDelegate {

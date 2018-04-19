@@ -11,14 +11,14 @@ import Foundation
 struct KeyChallengeContent {
     var headerImageName: String
     var headerLabel1: String
-    var viewKeyChallengeWinners: Link
+    var viewKeyChallengeWinners: String
     var headerLabel2: String
     var bodyText1: String
-    var reefImageName1: String
+    var reefImageName: String
     var bodyText2: String
     var headerLabel3: String
     var bodyText3: String
-    var learnMoreMiniChallenge: Link
+    var learnMoreMiniChallenge: String
     var headerLabel4: String
     var downloadKeyChallengeProgram: Link
     var issuuImageLink: ImageLink
