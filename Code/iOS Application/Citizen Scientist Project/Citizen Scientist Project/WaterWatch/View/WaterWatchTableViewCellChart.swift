@@ -8,7 +8,7 @@
 
 import UIKit
 
-class WaterWatchTableViewCell: UITableViewCell {
+class WaterWatchTableViewCellChart: UITableViewCell {
     
 
     @IBOutlet private weak var chartTitle: UILabel!

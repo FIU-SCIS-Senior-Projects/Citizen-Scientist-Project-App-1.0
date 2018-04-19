@@ -54,12 +54,18 @@ extension CollapsibleTableViewController {
     // Table Row Cell
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell: WaterWatchTableViewCell = tableView.dequeueReusableCell(withIdentifier: "WaterWatchTableViewCell") as! WaterWatchTableViewCell
+        if let waterWatchChartContent = sections[indexPath.section].items[indexPath.row] as? WaterWatchChart {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "WaterWatchTableViewCellChart") as! WaterWatchTableViewCellChart
+            cell.setUp(content: waterWatchChartContent)
+            return cell
+        }
+        if let waterWatchTableContent = sections[indexPath.section].items[indexPath.row] as? WaterWatchTable {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "WaterWatchCollapsibleTableViewCellTable") as! WaterWatchCollapsibleTableViewCellTable
+            cell.setUp(content: waterWatchTableContent)
+            return cell
+        }
         
-        let waterWatchChartContent = sections[indexPath.section].items[indexPath.row]
-        cell.setUp(content: waterWatchChartContent)
-        
-        return cell
+        return UITableViewCell()
     }
     
     // Table Row Height
