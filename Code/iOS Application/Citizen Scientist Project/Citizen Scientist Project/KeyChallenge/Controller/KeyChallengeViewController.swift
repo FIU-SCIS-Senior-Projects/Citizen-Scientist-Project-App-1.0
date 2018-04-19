@@ -8,25 +8,45 @@
 
 import UIKit
 
+protocol KeyChallengeViewControllerDelegate: class {
+    func setContainerHeight(height: CGFloat)
+}
+
 class KeyChallengeViewController: UIViewController {
 
-    @IBAction func clickDownloadKeyChallengeProgramButton(_ sender: UIButton) {
-        UIApplication.shared.open(URL(string: "https://www.keyscience.org/wp-content/uploads/2017/02/kc-2017-brochure-FINAL-WEB.pdf")!, options: [:], completionHandler: nil)
-    }
-    @IBAction func clickIssuuPresentationButton(_ sender: UIButton) {
-        UIApplication.shared.open(URL(string: "https://issuu.com/kbcf/docs/kc-2017-brochure-final-web")!, options: [:], completionHandler: nil)
-    }
-    @IBAction func clickLearnMoreRedButton(_ sender: UIButton) {
-        UIApplication.shared.open(URL(string: "https://www.keyscience.org/projects/key-challenge/")!, options: [:], completionHandler: nil)
-        
-    }
-    
-    
+    private let keyChallengeContent: KeyChallengeContent = KeyChallengeContentManager.fetchContent()
+    @IBOutlet var keyChallengeView: KeyChallengeView!
+    @IBOutlet public weak var heightConstraint: NSLayoutConstraint!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        KeyChallengeCollapsibleTableViewController.delegate = self
+        
+        if let keyChallengeCollapsibleTableViewController = self.childViewControllers.first as? KeyChallengeCollapsibleTableViewController {
+            setContainerHeight(height: keyChallengeCollapsibleTableViewController.tableViewHeight)
+        }
 
         ReusableHeader.setUpNavBar(navigationController: self.navigationController, navigationItem: self.navigationItem)
+        keyChallengeView.setUp(content: keyChallengeContent)
     }
+    
+    //MARK: - Handle Button Click Events
+    
+    @IBAction func clickDownloadKeyChallengeProgramButton(_ sender: UIButton) {
+        ExternalAppManager.openPage(page: keyChallengeContent.downloadKeyChallengeProgram.url)
+    }
+    @IBAction func clickIssuuPresentationButton(_ sender: UIButton) {
+       ExternalAppManager.openPage(page: keyChallengeContent.issuuImageLink.link.url)
+    }
+    @IBAction func clickLearnMoreRedButton(_ sender: UIButton) {
+        ExternalAppManager.openPage(page: keyChallengeContent.learnMoreRegistration.url)
+    }
+}
 
+extension KeyChallengeViewController: KeyChallengeViewControllerDelegate {
+    // Set Container View height constraint to resize depending on its internal table collapsible state
+    func setContainerHeight(height: CGFloat) {
+        heightConstraint?.constant = height
+    }
 }

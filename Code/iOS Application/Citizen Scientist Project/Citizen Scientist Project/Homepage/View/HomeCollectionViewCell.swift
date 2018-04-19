@@ -58,7 +58,7 @@ class HomeCollectionViewCell: UICollectionViewCell {
     {
         imageView.image = UIImage(named: content.imageName)
         shadowImageView.image = UIImage(named: HomeContentManager.SHADOW_IMAGE_NAME)
-        arrowImageView.image = UIImage(named: HomeContentManager.arrowImageName)
+        arrowImageView.image = UIImage(named: content.arrowImageName!)
         headerLabel.text = content.labelHeader
         subHeaderLabel.text = content.labelSubHeader
     }

@@ -62,10 +62,10 @@ The Challenge incorporates 4 disciplines – art, writing, informatics, and scie
                                                     </textView>
                                                     <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" bouncesZoom="NO" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YFL-vc-J7O">
                                                         <rect key="frame" x="32" y="400.5" width="327" height="280"/>
-                                                        <mutableString key="text">1.  Learn about the natural resources of Key Biscayne and Virginia Key; 
+                                                        <string key="text">1.  Learn about the natural resources of Key Biscayne and Virginia Key; 
 2.  Experience the natural resources of the Key through participation in field trips; 
 3.  Participate in citizen scientist projects, which are directed at protecting the natural resources of the Island; and 
-4.  Suggest projects for the Citizen Scientist Project.</mutableString>
+4.  Suggest projects for the Citizen Scientist Project.</string>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -154,9 +154,9 @@ The Challenge incorporates 4 disciplines – art, writing, informatics, and scie
                                                     </label>
                                                     <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" bouncesZoom="NO" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hdk-Pj-LxB">
                                                         <rect key="frame" x="16" y="1149.5" width="343" height="401.5"/>
-                                                        <mutableString key="text">The mission of the Citizen Scientist Project is to use citizen and professional scientists to monitor and to protect resources, and to share information on the most critical natural resources of Key Biscayne and Virginia Key. Our vision is a future Key Biscayne characterized by the same bounty and quality of natural resources that exist today, thus maintaining the title of Island Paradise.
+                                                        <string key="text">The mission of the Citizen Scientist Project is to use citizen and professional scientists to monitor and to protect resources, and to share information on the most critical natural resources of Key Biscayne and Virginia Key. Our vision is a future Key Biscayne characterized by the same bounty and quality of natural resources that exist today, thus maintaining the title of Island Paradise.
 
-The Citizen Scientist Project falls under the charitable umbrella of the Key Biscayne Community Foundation whose mission is to enable, facilitate, and empower residents to make a positive difference in the local, greater, and global community through programs, grant making, fiscal scholarship, and community leadership.</mutableString>
+The Citizen Scientist Project falls under the charitable umbrella of the Key Biscayne Community Foundation whose mission is to enable, facilitate, and empower residents to make a positive difference in the local, greater, and global community through programs, grant making, fiscal scholarship, and community leadership.</string>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -235,7 +235,7 @@ The Citizen Scientist Project falls under the charitable umbrella of the Key Bis
                                         </constraints>
                                     </view>
                                 </subviews>
-                                <color key="backgroundColor" red="0.18823529410000001" green="0.1960784314" blue="0.25098039220000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.08235294118" green="0.090196078430000007" blue="0.1529411765" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="RL1-xI-UGe" secondAttribute="trailing" identifier="WaterWatchMainViewTrailing" id="5Th-i5-UXz"/>
                                     <constraint firstItem="RL1-xI-UGe" firstAttribute="width" secondItem="aHO-nW-VyU" secondAttribute="width" identifier="WaterWatchMainViewWidth" id="ZRP-7b-QQ9"/>
@@ -246,7 +246,6 @@ The Citizen Scientist Project falls under the charitable umbrella of the Key Bis
                                 </constraints>
                             </scrollView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="aHO-nW-VyU" firstAttribute="leading" secondItem="c35-bS-3F5" secondAttribute="leading" identifier="WaterWatchScrollViewLeading" id="AAB-rR-3v7"/>
                             <constraint firstItem="c35-bS-3F5" firstAttribute="bottom" secondItem="aHO-nW-VyU" secondAttribute="bottom" identifier="WaterWatchScrollViewBottom" id="cBo-S4-STU"/>

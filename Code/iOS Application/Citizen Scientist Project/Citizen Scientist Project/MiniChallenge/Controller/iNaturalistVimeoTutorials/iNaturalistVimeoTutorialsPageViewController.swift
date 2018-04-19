@@ -20,34 +20,17 @@ class iNaturalistVimeoTutorialsPageViewController: UIPageViewController {
     
     weak var pageViewControllerDelegate: iNaturalistVimeoTutorialsPageVCDelegate?
     
+    let vimeoContent = iNaturalistContentManager.fetchVimeoContent()
     
-    var imageData: [UIImage] = [
-        UIImage(named: "vimeo-1")!,
-        UIImage(named: "vimeo-2")!,
-        UIImage(named: "vimeo-3")!,
-    ]
-    
-    var vimeoButtonLinks: [URL] = [
-        URL(string: "https://vimeo.com/162581545")!,
-        URL(string: "https://vimeo.com/167431843")!,
-        URL(string: "https://vimeo.com/167341998")!,
-    ]
-    
-    var iNaturalistVideoTitlesData: [String] = [
-        "MAKING AN OBSERVATION ON A MOBILE DEVICE",
-        "ADDING AN OBSERVATION VIA THE WEB",
-        "HOW TO TAKE IDENTIFIABLE PHOTOS",
-    ]
     
     lazy var controllers: [UIViewController] = {
         let storyboard = UIStoryboard(name: Storyboard.miniChallenge, bundle: nil)
         var controllers = [UIViewController]()
         
-        if let images = self.vimeoImages {
-            for image in images {
-                let iNaturalistVimeoTutorialVC = storyboard.instantiateViewController(withIdentifier: Storyboard.iNaturalistVimeoTutorialViewController)
-                controllers.append(iNaturalistVimeoTutorialVC)
-            }
+        
+        for _ in vimeoContent {
+            let iNaturalistVimeoTutorialVC = storyboard.instantiateViewController(withIdentifier: Storyboard.iNaturalistVimeoTutorialViewController)
+            controllers.append(iNaturalistVimeoTutorialVC)
         }
         
         self.pageViewControllerDelegate?.setupPageController(numberOfPages: controllers.count)
@@ -57,9 +40,6 @@ class iNaturalistVimeoTutorialsPageViewController: UIPageViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        vimeoImages = imageData
-        iNaturalistVideoTitles = iNaturalistVideoTitlesData
         
         automaticallyAdjustsScrollViewInsets = false
         dataSource = self
@@ -87,9 +67,9 @@ class iNaturalistVimeoTutorialsPageViewController: UIPageViewController {
         for (index, vc) in controllers.enumerated(){
             if viewController === vc {
                 if let iNaturalistVimeoTutorialVC = viewController as? iNaturalistVimeoTutorialViewController{
-                    iNaturalistVimeoTutorialVC.image = self.vimeoImages?[index]
-                    iNaturalistVimeoTutorialVC.text = self.iNaturalistVideoTitles?[index]
-                    iNaturalistVimeoTutorialVC.link = self.vimeoButtonLinks[index]
+                    iNaturalistVimeoTutorialVC.image = self.vimeoContent[index].imageLink.imageName
+                    iNaturalistVimeoTutorialVC.text = self.vimeoContent[index].imageLink.link.text
+                    iNaturalistVimeoTutorialVC.link = self.vimeoContent[index].imageLink.link.url
                     self.pageViewControllerDelegate?.turnPageController(to: index)
                 }
             }

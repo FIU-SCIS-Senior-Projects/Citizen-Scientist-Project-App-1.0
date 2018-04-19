@@ -100,13 +100,15 @@ class HomeViewController: UIViewController, UICollectionViewDelegate, UICollecti
     private func expandCollapseCSPLab()
     {
         // Change CSP Lab expandable property to its opposite
-        let cspLabIndex = cellContent.getCellId(page: .CSPLab)
-        var cspLabExpanded = cellContent[cspLabIndex].expandableProperty?.isExpanded
-        cspLabExpanded = !cspLabExpanded!
-        cellContent[cspLabIndex].expandableProperty?.isExpanded = cspLabExpanded!
+        
+        let cspLabIndex = HomeContentManager.getPageId(page: .CSPLab)
+        let cspLabExpanded = !(cellContent[cspLabIndex].expandableProperty?.isExpanded)!
+        
+        // Updates CSP Lab expandable property
+        cellContent[cspLabIndex].expandableProperty?.isExpanded = cspLabExpanded
         
         // Update Id of cell content. Hidden cells should not have a valid id
-        if cspLabExpanded! {
+        if cspLabExpanded {
             HomeContentManager.updateCellContentIds(cells: &cellContent)
         }
         
@@ -120,22 +122,22 @@ class HomeViewController: UIViewController, UICollectionViewDelegate, UICollecti
         }
         
         // Update Id of cell content. Hidden cells should not have a valid id
-        if !cspLabExpanded! {
+        if !cspLabExpanded {
             HomeContentManager.updateCellContentIds(cells: &cellContent)
         }
         
         collectionView.performBatchUpdates({
-            if cspLabExpanded! {
+            if cspLabExpanded {
                 collectionView.insertItems(at: indexPaths)
                 
                 // Updates the arrow image to 'up' when CSP Lab children are 'expanded'
-                HomeContentManager.arrowImageName = HomeContentManager.UP_ARROW_IMAGE_NAME
+                cellContent[cspLabIndex].arrowImageName = HomeContentManager.UP_ARROW_IMAGE_NAME
                 
             }else{
                 collectionView.deleteItems(at: indexPaths)
                 
                 // Updates the arrow image to 'down' when CSP Lab children are 'hidden'
-                HomeContentManager.arrowImageName = HomeContentManager.DOWN_ARROW_IMAGE_NAME
+                cellContent[cspLabIndex].arrowImageName = HomeContentManager.DOWN_ARROW_IMAGE_NAME
                 
             }
             
@@ -143,9 +145,6 @@ class HomeViewController: UIViewController, UICollectionViewDelegate, UICollecti
             let cspLabIndexPath = IndexPath(row: cellContent.getCellId(page: .CSPLab), section: 0)
             self.collectionView.reloadItems(at: [cspLabIndexPath])
             
-            // Updates CSP Lab expandable property
-            let cspLabCellId = cellContent.getCellId(page: .CSPLab)
-            cellContent[cspLabCellId].expandableProperty?.isExpanded = cspLabExpanded!
             
         }, completion: { (true) in
             self.collectionView.reloadItems(at: self.collectionView.indexPathsForVisibleItems)

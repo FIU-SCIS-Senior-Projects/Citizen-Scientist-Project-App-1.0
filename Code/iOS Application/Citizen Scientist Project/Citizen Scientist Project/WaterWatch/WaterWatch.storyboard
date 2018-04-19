@@ -25,7 +25,7 @@
                 <viewControllerPlaceholder storyboardName="Footer" id="mU0-ou-1DC" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8tH-Vx-hEs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7627" y="3674"/>
+            <point key="canvasLocation" x="7694" y="1532"/>
         </scene>
         <!--Navigation-->
         <scene sceneID="87V-jJ-sdF">
@@ -47,7 +47,7 @@
                                 <rect key="frame" x="0.0" y="64" width="375" height="4936"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rx2-Ry-FIR" customClass="WaterWatchView" customModule="Citizen_Scientist_Project" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1978"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="2478"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="water-watch" translatesAutoresizingMaskIntoConstraints="NO" id="qqh-Lo-jHi">
                                                 <rect key="frame" x="0.0" y="0.0" width="375" height="225"/>
@@ -179,16 +179,16 @@ We also hope to set up three Atlantic sites for less intense testing which will 
                                                 </constraints>
                                             </view>
                                             <containerView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="500" verticalHuggingPriority="500" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="kah-7I-Mip">
-                                                <rect key="frame" x="0.0" y="1553" width="375" height="300"/>
+                                                <rect key="frame" x="0.0" y="1553" width="375" height="800"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="300" id="eGa-LS-Iav"/>
+                                                    <constraint firstAttribute="height" constant="800" id="eGa-LS-Iav"/>
                                                 </constraints>
                                                 <connections>
                                                     <segue destination="wva-E6-Qz1" kind="embed" id="XUH-vl-Z8o"/>
                                                 </connections>
                                             </containerView>
                                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gaj-GU-P0H" userLabel="Footer">
-                                                <rect key="frame" x="0.0" y="1853" width="375" height="125"/>
+                                                <rect key="frame" x="0.0" y="2353" width="375" height="125"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="125" id="YfV-e6-7mb"/>
                                                 </constraints>
@@ -226,7 +226,7 @@ We also hope to set up three Atlantic sites for less intense testing which will 
                                         </connections>
                                     </view>
                                 </subviews>
-                                <color key="backgroundColor" red="0.18823529410000001" green="0.1960784314" blue="0.25098039220000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.08235294118" green="0.090196078430000007" blue="0.1529411765" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="Rx2-Ry-FIR" firstAttribute="top" secondItem="6ni-NH-k0p" secondAttribute="top" identifier="WaterWatchMainViewTop" id="3fW-1V-41Z"/>
                                     <constraint firstAttribute="bottom" secondItem="Rx2-Ry-FIR" secondAttribute="bottom" identifier="WaterWatchMainViewBottom" id="8mH-Mv-ZPt"/>
@@ -287,7 +287,7 @@ We also hope to set up three Atlantic sites for less intense testing which will 
             <objects>
                 <tableViewController id="wva-E6-Qz1" customClass="CollapsibleTableViewController" customModule="Citizen_Scientist_Project" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="jSJ-NA-igR">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="300"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="800"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
@@ -299,8 +299,8 @@ We also hope to set up three Atlantic sites for less intense testing which will 
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T3i-WF-vFv">
-                                            <rect key="frame" x="24" y="18.5" width="44.5" height="20"/>
-                                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                            <rect key="frame" x="24" y="17" width="49" height="23.5"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
                                             <color key="textColor" red="0.23921568630000001" green="0.22352941179999999" blue="0.30980392159999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
@@ -326,7 +326,7 @@ We also hope to set up three Atlantic sites for less intense testing which will 
                                     <outlet property="titleLabel" destination="T3i-WF-vFv" id="mHL-wJ-HJv"/>
                                 </connections>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="WaterWatchTableViewCell" rowHeight="324" id="aZf-3a-wyb" customClass="WaterWatchTableViewCell" customModule="Citizen_Scientist_Project" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="WaterWatchTableViewCellChart" rowHeight="324" id="aZf-3a-wyb" customClass="WaterWatchTableViewCellChart" customModule="Citizen_Scientist_Project" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="85" width="375" height="324"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="aZf-3a-wyb" id="q8a-bJ-wAs">
@@ -369,6 +369,29 @@ We also hope to set up three Atlantic sites for less intense testing which will 
                                     <outlet property="legendImageView" destination="7e5-jU-xTt" id="ZBJ-hy-SLJ"/>
                                 </connections>
                             </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="WaterWatchCollapsibleTableViewCellTable" rowHeight="324" id="VVM-ig-r4m" customClass="WaterWatchCollapsibleTableViewCellTable" customModule="Citizen_Scientist_Project" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="409" width="375" height="324"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="VVM-ig-r4m" id="9bx-0y-79L">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="323.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="water-table-1" translatesAutoresizingMaskIntoConstraints="NO" id="UUW-Pm-EwD">
+                                            <rect key="frame" x="16" y="36" width="343" height="261"/>
+                                        </imageView>
+                                    </subviews>
+                                    <color key="backgroundColor" red="0.95686274510000002" green="0.96470588239999999" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstItem="UUW-Pm-EwD" firstAttribute="leading" secondItem="9bx-0y-79L" secondAttribute="leadingMargin" id="7RR-eT-Qfk"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="UUW-Pm-EwD" secondAttribute="trailing" id="BNy-Ph-13v"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="UUW-Pm-EwD" secondAttribute="bottom" constant="16" id="Dxq-Fn-bdG"/>
+                                        <constraint firstItem="UUW-Pm-EwD" firstAttribute="top" secondItem="9bx-0y-79L" secondAttribute="topMargin" constant="16" id="GBt-1S-Zn8"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="tableImageView" destination="UUW-Pm-EwD" id="zoM-6E-Kjb"/>
+                                </connections>
+                            </tableViewCell>
                         </prototypes>
                         <connections>
                             <outlet property="dataSource" destination="wva-E6-Qz1" id="1a2-Xe-04T"/>
@@ -378,12 +401,13 @@ We also hope to set up three Atlantic sites for less intense testing which will 
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JXi-NE-S5W" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6976.8000000000002" y="5457.571214392804"/>
+            <point key="canvasLocation" x="6118" y="1109"/>
         </scene>
     </scenes>
     <resources>
         <image name="1-header-nav-1" width="37" height="37"/>
         <image name="key-biscayne-water-watch-logo" width="206" height="180"/>
+        <image name="water-table-1" width="313" height="455"/>
         <image name="water-watch" width="1800" height="1000"/>
     </resources>
 </document>

@@ -73,8 +73,6 @@ class HomeContentManager {
     private static let CSPLAB_CHILDREN_COUNT = 4
     static let CSPLAB_CHILDREN_DEFAULT_VISIBILITY = false // false = children not visible by default, true children visible by default
     
-    static var arrowImageName = DOWN_ARROW_IMAGE_NAME // arrow is pointing down by default
-    
     
     private static var HomepageContent: Dictionary<Page, HomepageCell> = [
         
@@ -88,7 +86,7 @@ class HomeContentManager {
         
         .ReefRestoration: HomepageCell(id: nextPageId(), page: .ReefRestoration, parent: .ReefRestoration, imageName: "5-reef-restoration-home", labelHeader: "KEY BISCAYNE", labelSubHeader: "REEF RESTORATION", cellType: .Regular),
         
-        .CSPLab: HomepageCell(id: nextPageId(), page: .CSPLab, parent: .CSPLab, imageName: "6-lab-home-new", labelHeader: "Welcome to the", labelSubHeader: "CSP LAB", cellType: .Super),
+        .CSPLab: HomepageCell(id: nextPageId(), page: .CSPLab, parent: .CSPLab, imageName: "6-lab-home-new", labelHeader: "Welcome to the", labelSubHeader: "CSP LAB", cellType: .Super, arrowImageName: getDefaultArrowImageName(page: .CSPLab)),
         
         .Learn: HomepageCell(id: nextPageId(), page: .Learn, parent: .CSPLab, imageName: "7-lab-learn", labelHeader: "CSP LAB", labelSubHeader: "LEARN", cellType: .Regular),
         
@@ -236,5 +234,18 @@ class HomeContentManager {
             }
             
         }
+    }
+    
+    
+    class func getDefaultArrowImageName(page: Page) -> String{
+        
+        var pageVisibility: Bool
+        
+        switch(page){
+            case .CSPLab: pageVisibility = HomeContentManager.CSPLAB_CHILDREN_DEFAULT_VISIBILITY
+            default: pageVisibility = false
+        }
+        
+        return pageVisibility ? HomeContentManager.UP_ARROW_IMAGE_NAME : HomeContentManager.DOWN_ARROW_IMAGE_NAME
     }
 }
