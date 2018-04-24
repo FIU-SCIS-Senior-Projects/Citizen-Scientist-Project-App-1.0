@@ -1,43 +1,39 @@
 //
-//  iNaturalistDownloadStepsViewController.swift
+//  AboutUsGetInvolvedPageViewController.swift
 //  Citizen-Scientist-Project
 //
-//  Created by David Gonzalez on 3/30/18.
+//  Created by David Gonzalez on 4/24/18.
 //  Copyright © 2018 Key Biscayne. All rights reserved.
 //
 
 import UIKit
 
-protocol iNaturalistDownloadStepsPageVCDelegate: class {
-    func setupPageController(numberOfPages: Int)
-    func turnPageController(to index: Int)
-}
+class AboutUsGetInvolvedPageViewController: UIPageViewController {
 
-class iNaturalistDownloadStepsPageViewController: UIPageViewController {
+    let getInvolvedContent: [AboutUsGetInvolvedContent] = AboutUsContentManager.fetchGetInvolvedContent()
     
-    weak var pageViewControllerDelegate: iNaturalistDownloadStepsPageVCDelegate?
-    
-    let downloadContent = iNaturalistContentManager.fetchDownloadContent()
+    weak var pageViewControllerDelegate: HorizontalPageViewControllerDelegate?
     
     lazy var controllers: [UIViewController] = {
-        let storyboard = UIStoryboard(name: Storyboard.MiniChallenge, bundle: nil)
+        let storyboard = UIStoryboard(name: Storyboard.AboutUs, bundle: nil)
         var controllers = [UIViewController]()
         
         
-        for _ in downloadContent {
-            let iNaturalistDownloadStepVC = storyboard.instantiateViewController(withIdentifier: Storyboard.iNaturalistStepViewController)
-            controllers.append(iNaturalistDownloadStepVC)
+        for _ in getInvolvedContent {
+            let aboutUsGetInvolvedVC = storyboard.instantiateViewController(withIdentifier: Storyboard.AboutUsGetInvolvedViewController)
+            controllers.append(aboutUsGetInvolvedVC)
         }
+        
         
         self.pageViewControllerDelegate?.setupPageController(numberOfPages: controllers.count)
         
         return controllers
     }()
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-
         automaticallyAdjustsScrollViewInsets = false
         dataSource = self
         delegate = self
@@ -62,10 +58,12 @@ class iNaturalistDownloadStepsPageViewController: UIPageViewController {
     
     func configureDisplaying(viewController: UIViewController){
         for (index, vc) in controllers.enumerated(){
-            if viewController === vc{
-                if let iNaturalistImageVC = viewController as? iNaturalistDownloadStepViewController{
-                    iNaturalistImageVC.image = self.downloadContent[index].imageName
-                    iNaturalistImageVC.text = self.downloadContent[index].title
+            if viewController === vc {
+                if let aboutUsGetInvolvedVC = viewController as? AboutUsGetInvolvedViewController{
+                    aboutUsGetInvolvedVC.image = self.getInvolvedContent[index].imageName
+                    aboutUsGetInvolvedVC.title = self.getInvolvedContent[index].title
+                    aboutUsGetInvolvedVC.text = self.getInvolvedContent[index].text
+                    aboutUsGetInvolvedVC.button = self.getInvolvedContent[index].button
                     
                     self.pageViewControllerDelegate?.turnPageController(to: index)
                 }
@@ -75,9 +73,10 @@ class iNaturalistDownloadStepsPageViewController: UIPageViewController {
 
 }
 
+
 // MARK: - UIPageViewControllerDataSource
 
-extension iNaturalistDownloadStepsPageViewController: UIPageViewControllerDataSource {
+extension AboutUsGetInvolvedPageViewController: UIPageViewControllerDataSource {
     
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
         if let index = controllers.index(of: viewController){
@@ -85,7 +84,7 @@ extension iNaturalistDownloadStepsPageViewController: UIPageViewControllerDataSo
                 return controllers[index - 1] // previous controller
             }
         }
-        return nil // does not wrap around
+        return controllers.last // wraps around to last view controller
     }
     
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController? {
@@ -95,20 +94,21 @@ extension iNaturalistDownloadStepsPageViewController: UIPageViewControllerDataSo
             }
         }
         
-        return nil // does not wrap around
+        return controllers.first // wraps around to first view controller
     }
     
 }
 
+
 // MARK: - UIPageViewControllerDelegate
 
-extension iNaturalistDownloadStepsPageViewController: UIPageViewControllerDelegate{
+extension AboutUsGetInvolvedPageViewController: UIPageViewControllerDelegate{
     func pageViewController(_ pageViewController: UIPageViewController, willTransitionTo pendingViewControllers: [UIViewController]) {
-        self.configureDisplaying(viewController: pendingViewControllers.first as! iNaturalistDownloadStepViewController)
+        self.configureDisplaying(viewController: pendingViewControllers.first as! AboutUsGetInvolvedViewController)
     }
     func pageViewController(_ pageViewController: UIPageViewController, didFinishAnimating finished: Bool, previousViewControllers: [UIViewController], transitionCompleted completed: Bool) {
         if !completed{
-            self.configureDisplaying(viewController: previousViewControllers.first as! iNaturalistDownloadStepViewController)
+            self.configureDisplaying(viewController: previousViewControllers.first as! AboutUsGetInvolvedViewController)
         }
     }
 }

@@ -23,7 +23,7 @@
                 <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="S4E-j8-r8H" customClass="iNaturalistVimeoTutorialsPageViewController" customModule="Citizen_Scientist_Project" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QBe-IY-Vat" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4158" y="8566"/>
+            <point key="canvasLocation" x="4260" y="5877"/>
         </scene>
         <!--Mini Challenge View Controller-->
         <scene sceneID="sfP-Tu-nh6">
@@ -378,7 +378,7 @@ Many of us are familiar with the more visible species: natives like turtles, man
                 <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="cdt-wZ-fwc" customClass="iNaturalistDownloadStepsPageViewController" customModule="Citizen_Scientist_Project" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="32F-0s-I30" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5193" y="8566"/>
+            <point key="canvasLocation" x="5986" y="5414"/>
         </scene>
         <!--Naturalist Download Step View Controller-->
         <scene sceneID="Jsz-Hq-sr5">
@@ -419,7 +419,7 @@ Many of us are familiar with the more visible species: natives like turtles, man
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="m4V-Nd-G22" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5945" y="5553"/>
+            <point key="canvasLocation" x="6791" y="5545"/>
         </scene>
         <!--Naturalist Vimeo Tutorial View Controller-->
         <scene sceneID="iJw-Lq-Of2">
@@ -461,7 +461,7 @@ Many of us are familiar with the more visible species: natives like turtles, man
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cce-VT-1hB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4314" y="6012"/>
+            <point key="canvasLocation" x="3510" y="6008"/>
         </scene>
     </scenes>
     <resources>

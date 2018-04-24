@@ -32,7 +32,7 @@ class iNaturalistDownloadStepViewController: UIViewController {
         
         guard let img = self.image else{ return }
         guard let txt = text else { return }
-        
+
         self.imageView?.image = UIImage(named: img)
         self.stepsTextView?.text = txt
     }

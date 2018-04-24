@@ -24,12 +24,23 @@ struct Storyboard {
     
     // MARK: - Mini-Challenge
     
-    static let miniChallenge = "MiniChallenge"
+    static let MiniChallenge = "MiniChallenge"
     
     static let iNaturalistStepViewController = "iNaturalistDownloadStepViewController"
     static let showiNaturalistDownloadStepsPageVC = "showiNaturalistDownloadStepsPageVC"
     
     static let iNaturalistVimeoTutorialViewController = "iNaturalistVimeoTutorialViewController"
     static let showiNaturalistVimeoTutorialPageVC = "showiNaturalistVimeoTutorialPageVC"
+    
+    
+    // MARK: - About Us
+    
+    static let AboutUs = "AboutUs"
+    
+    static let AboutUsExploreViewController = "AboutUsExploreViewController"
+    static let segueToAboutUsExploreViewController = "segueToAboutUsExploreViewController"
+    
+    static let AboutUsGetInvolvedViewController = "AboutUsGetInvolvedViewController"
+    static let segueToAboutUsGetInvolvedViewController = "segueToAboutUsGetInvolvedViewController"
     
 }

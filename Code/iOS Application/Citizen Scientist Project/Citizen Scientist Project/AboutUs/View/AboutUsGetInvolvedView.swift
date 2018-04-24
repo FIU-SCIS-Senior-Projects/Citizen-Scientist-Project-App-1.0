@@ -1,20 +1,18 @@
 //
-//  iNaturalistDownloadView.swift
+//  AboutUsGetInvolvedView.swift
 //  Citizen-Scientist-Project
 //
-//  Created by David Gonzalez on 3/30/18.
+//  Created by David Gonzalez on 4/24/18.
 //  Copyright © 2018 Key Biscayne. All rights reserved.
 //
 
 import UIKit
 
-class iNaturalistDownloadView: UIView {
-
+class AboutUsGetInvolvedView: UIView {
     @IBOutlet weak var pageControl: UIPageControl!
-
 }
 
-extension iNaturalistDownloadView: iNaturalistDownloadStepsPageVCDelegate{
+extension AboutUsGetInvolvedView: HorizontalPageViewControllerDelegate{
     
     func setupPageController(numberOfPages: Int) {
         pageControl.numberOfPages = numberOfPages

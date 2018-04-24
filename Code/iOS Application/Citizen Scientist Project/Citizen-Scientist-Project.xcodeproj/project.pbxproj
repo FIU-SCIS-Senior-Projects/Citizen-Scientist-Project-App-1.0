@@ -110,6 +110,14 @@
 		22CF18B0208745D8001E2648 /* PreviousWinnersCollapsibleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CF18AF208745D8001E2648 /* PreviousWinnersCollapsibleTableViewCell.swift */; };
 		22CF18B2208765ED001E2648 /* PreviousWinnersContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CF18B1208765ED001E2648 /* PreviousWinnersContent.swift */; };
 		22CF18B420876605001E2648 /* PreviousWinnerContentManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CF18B320876605001E2648 /* PreviousWinnerContentManager.swift */; };
+		22DD10D6208EF6EA004872C7 /* AboutUsExplorePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DD10D5208EF6EA004872C7 /* AboutUsExplorePageViewController.swift */; };
+		22DD10D8208EF700004872C7 /* AboutUsGetInvolvedPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DD10D7208EF700004872C7 /* AboutUsGetInvolvedPageViewController.swift */; };
+		22DD10DA208EF9BA004872C7 /* AboutUsExploreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DD10D9208EF9BA004872C7 /* AboutUsExploreViewController.swift */; };
+		22DD10DE208EFD00004872C7 /* AboutUsContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DD10DD208EFD00004872C7 /* AboutUsContent.swift */; };
+		22DD10E0208EFD12004872C7 /* AboutUsContentManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DD10DF208EFD12004872C7 /* AboutUsContentManager.swift */; };
+		22DD10E2208F147C004872C7 /* AboutUsExploreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DD10E1208F147C004872C7 /* AboutUsExploreView.swift */; };
+		22DD10E4208F1495004872C7 /* AboutUsGetInvolvedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DD10E3208F1495004872C7 /* AboutUsGetInvolvedView.swift */; };
+		22DD10E6208F1AAF004872C7 /* AboutUsGetInvolvedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DD10E5208F1AAF004872C7 /* AboutUsGetInvolvedViewController.swift */; };
 		22E377B9206CE29300D277F2 /* MiniChallengeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E377B8206CE29300D277F2 /* MiniChallengeViewController.swift */; };
 		22E377BB206E22AA00D277F2 /* iNaturalistDownloadStepViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E377BA206E22AA00D277F2 /* iNaturalistDownloadStepViewController.swift */; };
 		22E377BD206E23DB00D277F2 /* iNaturalistDownloadStepsPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E377BC206E23DB00D277F2 /* iNaturalistDownloadStepsPageViewController.swift */; };
@@ -265,6 +273,14 @@
 		22CF18AF208745D8001E2648 /* PreviousWinnersCollapsibleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviousWinnersCollapsibleTableViewCell.swift; sourceTree = "<group>"; };
 		22CF18B1208765ED001E2648 /* PreviousWinnersContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviousWinnersContent.swift; sourceTree = "<group>"; };
 		22CF18B320876605001E2648 /* PreviousWinnerContentManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviousWinnerContentManager.swift; sourceTree = "<group>"; };
+		22DD10D5208EF6EA004872C7 /* AboutUsExplorePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsExplorePageViewController.swift; sourceTree = "<group>"; };
+		22DD10D7208EF700004872C7 /* AboutUsGetInvolvedPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsGetInvolvedPageViewController.swift; sourceTree = "<group>"; };
+		22DD10D9208EF9BA004872C7 /* AboutUsExploreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsExploreViewController.swift; sourceTree = "<group>"; };
+		22DD10DD208EFD00004872C7 /* AboutUsContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsContent.swift; sourceTree = "<group>"; };
+		22DD10DF208EFD12004872C7 /* AboutUsContentManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsContentManager.swift; sourceTree = "<group>"; };
+		22DD10E1208F147C004872C7 /* AboutUsExploreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsExploreView.swift; sourceTree = "<group>"; };
+		22DD10E3208F1495004872C7 /* AboutUsGetInvolvedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsGetInvolvedView.swift; sourceTree = "<group>"; };
+		22DD10E5208F1AAF004872C7 /* AboutUsGetInvolvedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsGetInvolvedViewController.swift; sourceTree = "<group>"; };
 		22E377B8206CE29300D277F2 /* MiniChallengeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniChallengeViewController.swift; sourceTree = "<group>"; };
 		22E377BA206E22AA00D277F2 /* iNaturalistDownloadStepViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iNaturalistDownloadStepViewController.swift; sourceTree = "<group>"; };
 		22E377BC206E23DB00D277F2 /* iNaturalistDownloadStepsPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iNaturalistDownloadStepsPageViewController.swift; sourceTree = "<group>"; };
@@ -732,6 +748,8 @@
 			isa = PBXGroup;
 			children = (
 				2238FCB72073132C00BCAE3F /* AboutUs.storyboard */,
+				22DD10DC208EFCEA004872C7 /* Model */,
+				22DD10DB208EFCE2004872C7 /* View */,
 				22992256203E56E2006CE1AB /* Controller */,
 			);
 			path = AboutUs;
@@ -1038,6 +1056,8 @@
 			isa = PBXGroup;
 			children = (
 				6D021C11203E3117003E35D5 /* AboutUsViewController.swift */,
+				22DD10D3208EF691004872C7 /* AboutUsExplore */,
+				22DD10D4208EF6A5004872C7 /* AboutUsGetInvolved */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -1155,6 +1175,42 @@
 			path = iNaturalistVimeoTutorials;
 			sourceTree = "<group>";
 		};
+		22DD10D3208EF691004872C7 /* AboutUsExplore */ = {
+			isa = PBXGroup;
+			children = (
+				22DD10D5208EF6EA004872C7 /* AboutUsExplorePageViewController.swift */,
+				22DD10D9208EF9BA004872C7 /* AboutUsExploreViewController.swift */,
+			);
+			path = AboutUsExplore;
+			sourceTree = "<group>";
+		};
+		22DD10D4208EF6A5004872C7 /* AboutUsGetInvolved */ = {
+			isa = PBXGroup;
+			children = (
+				22DD10D7208EF700004872C7 /* AboutUsGetInvolvedPageViewController.swift */,
+				22DD10E5208F1AAF004872C7 /* AboutUsGetInvolvedViewController.swift */,
+			);
+			path = AboutUsGetInvolved;
+			sourceTree = "<group>";
+		};
+		22DD10DB208EFCE2004872C7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				22DD10E1208F147C004872C7 /* AboutUsExploreView.swift */,
+				22DD10E3208F1495004872C7 /* AboutUsGetInvolvedView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		22DD10DC208EFCEA004872C7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				22DD10DD208EFD00004872C7 /* AboutUsContent.swift */,
+				22DD10DF208EFD12004872C7 /* AboutUsContentManager.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		22E377B4206CE22F00D277F2 /* MiniChallenge */ = {
 			isa = PBXGroup;
 			children = (
@@ -1179,9 +1235,9 @@
 		22E377B6206CE25400D277F2 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				220A9826207BBB4600FB5752 /* MiniChallengeView.swift */,
 				22CA83B1206E348800287889 /* iNaturalistDownloadView.swift */,
 				22CA83B9206E593600287889 /* iNaturalistVimeoTutorialView.swift */,
-				220A9826207BBB4600FB5752 /* MiniChallengeView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1374,6 +1430,7 @@
 				22CF18AE208745C8001E2648 /* PreviousWinnersCollapsibleTableViewHeader.swift in Sources */,
 				220A9827207BBB4600FB5752 /* MiniChallengeView.swift in Sources */,
 				222BB58C20774ED50070354B /* ExternalAppManager.swift in Sources */,
+				22DD10D8208EF700004872C7 /* AboutUsGetInvolvedPageViewController.swift in Sources */,
 				22594976202DA6EC0047E055 /* HomeCellContent.swift in Sources */,
 				2292ACB12080D35B002DAD23 /* BiomesGreenSpacesViewController.swift in Sources */,
 				220A9825207BB9E000FB5752 /* MiniChallengeContent.swift in Sources */,
@@ -1387,6 +1444,7 @@
 				6D021C02203E2A47003E35D5 /* RecordViewController.swift in Sources */,
 				22CA83B2206E348800287889 /* iNaturalistDownloadView.swift in Sources */,
 				22CF18AA20873699001E2648 /* PreviousWinnersCollapsibleTableContent.swift in Sources */,
+				22DD10D6208EF6EA004872C7 /* AboutUsExplorePageViewController.swift in Sources */,
 				6D9DF564203F3FAC0036C0E2 /* StatusReefRestorationViewController.swift in Sources */,
 				2235A2C92063B38D00DEDC9E /* CollapsibleGraphChartTable.swift in Sources */,
 				22CA83B6206E52EC00287889 /* iNaturalistVimeoTutorialsPageViewController.swift in Sources */,
@@ -1403,6 +1461,7 @@
 				2292ACAF2080D343002DAD23 /* BiomesBeachesViewController.swift in Sources */,
 				222BB58E2077521D0070354B /* InternalAppStructures.swift in Sources */,
 				2299225A203E58FA006CE1AB /* segueToTable.swift in Sources */,
+				22DD10E2208F147C004872C7 /* AboutUsExploreView.swift in Sources */,
 				6D021C0C203E2E52003E35D5 /* ReefRestorationViewController.swift in Sources */,
 				226BDBCB20889B4900FAC995 /* WaterWatchCollapsibleTableViewCellTable.swift in Sources */,
 				22E377BD206E23DB00D277F2 /* iNaturalistDownloadStepsPageViewController.swift in Sources */,
@@ -1415,11 +1474,14 @@
 				2292ACB92080D3CB002DAD23 /* BiomesWaterWaysViewController.swift in Sources */,
 				2292AC8B207F76E3002DAD23 /* LectureSeriesContent.swift in Sources */,
 				22BE72FA2087A76D003BAD05 /* KeyChallengeContent.swift in Sources */,
+				22DD10E6208F1AAF004872C7 /* AboutUsGetInvolvedViewController.swift in Sources */,
 				22891A3D202DEBE7000FEBB4 /* SocialNetwork.swift in Sources */,
 				222BB588207737210070354B /* SeaLevelRiseView.swift in Sources */,
+				22DD10E4208F1495004872C7 /* AboutUsGetInvolvedView.swift in Sources */,
 				229E61432022A79200D4BDDA /* AppDelegate.swift in Sources */,
 				22E377B9206CE29300D277F2 /* MiniChallengeViewController.swift in Sources */,
 				6D021C06203E2E1D003E35D5 /* KeyChallengeViewController.swift in Sources */,
+				22DD10DA208EF9BA004872C7 /* AboutUsExploreViewController.swift in Sources */,
 				6D021C18203E3142003E35D5 /* OurPartnersViewController.swift in Sources */,
 				22CF18B2208765ED001E2648 /* PreviousWinnersContent.swift in Sources */,
 				22CF18B0208745D8001E2648 /* PreviousWinnersCollapsibleTableViewCell.swift in Sources */,
@@ -1428,6 +1490,7 @@
 				2292AC8D207F76F1002DAD23 /* LectureSeriesContentManager.swift in Sources */,
 				2292ACB52080D39A002DAD23 /* BiomesMangroveViewController.swift in Sources */,
 				6D37E608203C893A00FF4BBA /* EventsViewController.swift in Sources */,
+				22DD10DE208EFD00004872C7 /* AboutUsContent.swift in Sources */,
 				220A9829207BBE6000FB5752 /* MiniChallengeContentManager.swift in Sources */,
 				22BE72EA208769FB003BAD05 /* PreviousWinnersView.swift in Sources */,
 				22992258203E5814006CE1AB /* NavigationTableViewController.swift in Sources */,
@@ -1457,6 +1520,7 @@
 				2235A2C32063B26A00DEDC9E /* Extensions.swift in Sources */,
 				22395D052052798600177243 /* WaterWatchContent.swift in Sources */,
 				22594972202D969F0047E055 /* SectionFooterView.swift in Sources */,
+				22DD10E0208EFD12004872C7 /* AboutUsContentManager.swift in Sources */,
 				6D0DCF2E203B5AC3000F5D62 /* NavigationTableViewCell.swift in Sources */,
 				6D37E602203C884B00FF4BBA /* GeoHuntViewController.swift in Sources */,
 				22E377BB206E22AA00D277F2 /* iNaturalistDownloadStepViewController.swift in Sources */,

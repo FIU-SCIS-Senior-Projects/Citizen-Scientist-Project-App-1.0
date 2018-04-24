@@ -24,7 +24,7 @@ class iNaturalistVimeoTutorialsPageViewController: UIPageViewController {
     
     
     lazy var controllers: [UIViewController] = {
-        let storyboard = UIStoryboard(name: Storyboard.miniChallenge, bundle: nil)
+        let storyboard = UIStoryboard(name: Storyboard.MiniChallenge, bundle: nil)
         var controllers = [UIViewController]()
         
         
@@ -98,7 +98,7 @@ extension iNaturalistVimeoTutorialsPageViewController: UIPageViewControllerDataS
             }
         }
         
-        return controllers.first // wraps around to last view controller
+        return controllers.first // wraps around to first view controller
     }
     
 }
