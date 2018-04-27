@@ -23,6 +23,11 @@ struct ImageLink {
     var link: Link
 }
 
+struct SegueButton {
+    var text: String
+    var page: Page
+}
+
 struct FileResource {
     var text: String
     var resource: String

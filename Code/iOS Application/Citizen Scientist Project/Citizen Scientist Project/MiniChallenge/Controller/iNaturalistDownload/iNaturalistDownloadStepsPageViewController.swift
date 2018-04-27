@@ -20,7 +20,7 @@ class iNaturalistDownloadStepsPageViewController: UIPageViewController {
     let downloadContent = iNaturalistContentManager.fetchDownloadContent()
     
     lazy var controllers: [UIViewController] = {
-        let storyboard = UIStoryboard(name: Storyboard.miniChallenge, bundle: nil)
+        let storyboard = UIStoryboard(name: Storyboard.MiniChallenge, bundle: nil)
         var controllers = [UIViewController]()
         
         

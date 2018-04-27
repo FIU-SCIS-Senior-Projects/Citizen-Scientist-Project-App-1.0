@@ -15,6 +15,7 @@ class iNaturalistDownloadView: UIView {
 }
 
 extension iNaturalistDownloadView: iNaturalistDownloadStepsPageVCDelegate{
+    
     func setupPageController(numberOfPages: Int) {
         pageControl.numberOfPages = numberOfPages
     }
@@ -22,6 +23,5 @@ extension iNaturalistDownloadView: iNaturalistDownloadStepsPageVCDelegate{
     func turnPageController(to index: Int) {
         pageControl.currentPage = index
     }
-    
     
 }
